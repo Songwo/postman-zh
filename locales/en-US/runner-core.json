@@ -1,0 +1,219 @@
+{
+ "cli_installer": {
+  "heading": "Install Postman CLI",
+  "unix_description_start": "Use the command below to",
+  "unix_description_link": "install the Postman CLI",
+  "unix_description_end": "on macOS, Linux (x64) or Windows Subsystem for Linux (WSL)",
+  "copy_tooltip": "Copy to clipboard",
+  "install_in_terminal": "Install in Terminal",
+  "unexpected_command_tooltip": "This installer command isn't recognized. Copy it to review and run it manually.",
+  "installation_guide_link": "Installation Guide",
+  "learn_how_to": "Learn how to",
+  "install_postman_cli_on_windows": "install the Postman CLI on Windows"
+ },
+ "performance_test_form": {
+  "run_choice": {
+   "in_app_web_warning": "Available only in the Postman desktop app."
+  }
+ },
+ "data_file_upgrade": {
+  "heading": "Upgrade to use data files",
+  "description": "Data files let you drive monitors, functional and performance collection runs with test data. Upgrade your plan to get started."
+ },
+ "test_data_upgrade": {
+  "heading": "Upgrade to use datasets and data files",
+  "description": "Datasets and data files let you drive your collection runs with test data. Both are available on paid plans. Upgrade your plan to get started."
+ },
+ "errors": {
+  "forbidden": {
+   "start": {
+    "title": "Access denied due to security policies",
+    "description": "You cannot run the collection until access is restored. Contact your team admin for assistance."
+   },
+   "save": {
+    "title": "Access denied due to security policies",
+    "description": "Your collection runs can't be synced to the cloud until access is restored. Contact your team admin for assistance."
+   }
+  },
+  "cloud_performance_run": {
+   "ambiguous_submit": {
+    "title": "Cloud test status unconfirmed",
+    "description": "We could not confirm whether your cloud test started. Check Run History before trying again."
+   },
+   "navigation_failed": {
+    "title": "Cloud test started",
+    "description": "Your cloud test started but could not be opened. You can open it from Run History."
+   }
+  }
+ },
+ "run_completion": {
+  "titles": {
+   "success": "Collection ran successfully",
+   "with_issues": "Collection ran with issues",
+   "did_not_finish": "Collection run didn't finish"
+  },
+  "subtitles": {
+   "stopped_at": "Stopped at {percentage}%",
+   "stopped_after_error": "Encountered an unexpected error at {percentage}%",
+   "completed_with_errors": "{count, plural, =0 {Run completed with errors} one {Run completed with {count, number} error} other {Run completed with {count, number} errors}}"
+  },
+  "untitled_collection": "Untitled collection",
+  "chips": {
+   "tests_failed": "{total, plural, one {{failed, number} of {total, number} test failed} other {{failed, number} of {total, number} tests failed}}",
+   "errors": "{count, plural, one {{count, number} error} other {{count, number} errors}}"
+  }
+ },
+ "data_file": {
+  "toasts": {
+   "saved_to_workspace": "Data file saved to workspace",
+   "save_to_workspace_failed": "Failed to save data file to workspace. Please try again.",
+   "storage_limit_reached": "Your workspace storage limit has been reached.",
+   "content_read_failed": "Could not detect file content, please select a file again to upload",
+   "settings_saved": "Data file settings saved",
+   "settings_save_failed": "Failed to save settings. Please try again.",
+   "dataset_created": "Dataset created",
+   "dataset_create_failed": "Failed to create dataset. Please try again."
+  },
+  "dataset_no_create_permission": "You don't have permission to create a dataset in this workspace.",
+  "dataset_upgrade_required": "Upgrade your plan to save data files as datasets.",
+  "dataset_upgrade_aria_label": "Save as dataset. Upgrade your plan to save data files as datasets.",
+  "dataset_file_too_large": "This file is too large to save as a dataset. Pick a file under {limitMb} MB, or save it to the workspace instead.",
+  "query_label": "Query",
+  "saved_file_hint": "Save this file as a dataset to filter, sort, and clean rows with SQL.",
+  "local_file_hint": "This file is only on your computer. Save it as a dataset to reuse it anywhere, and to filter, sort and clean rows with SQL.",
+  "save_as_dataset": "Save as dataset",
+  "reading_datafile": "Reading datafile",
+  "no_views_cta": "No views yet. <cta>Create one</cta>"
+ },
+ "data_view": {
+  "run_query": "Run Query",
+  "save": "Save",
+  "save_as_new_view": "Save as new view",
+  "reset": "Reset",
+  "no_edit_view_permission": "You don't have permission to edit views in this dataset."
+ },
+ "iteration_strategy": {
+  "iterations_label": "Iterations",
+  "iterations_tooltip": "No. of times to loop through the collection during the run.",
+  "iterations_aria": "Iterations",
+  "label": "Iteration strategy",
+  "tooltip": "How the extra iterations get their data when the view’s rows run out.",
+  "round_robin": "Round robin",
+  "round_robin_description": "Run a set number of iterations. If the rows run out, continue from the first row for the remaining iterations.",
+  "repeat_last": "Repeat last",
+  "repeat_last_description": "Run a set number of iterations. If the rows run out, continue using the last row for the remaining iterations.",
+  "stop_at_end": "Stop at end",
+  "stop_at_end_description": "Run a set number of iterations. If the rows run out, stop the run.",
+  "datafile_fewer": "Only the first {count} of {rows, plural, one {# row} other {# rows}} will run.",
+  "datafile_equal": "Each of the {rows, plural, one {# row} other {# rows}} will run once.",
+  "datafile_more": "Each of the {rows, plural, one {# row} other {# rows}} will run once, then the last row repeats for the remaining {extra, plural, one {# iteration} other {# iterations}}."
+ },
+ "run_type": {
+  "functional_description": "Validate request correctness and test results",
+  "performance_description": "Measure response times and load behavior"
+ },
+ "results_header": {
+  "run_actions": "Run actions",
+  "view_more_actions": "View more actions",
+  "schedule": "Schedule",
+  "postman_cli": "Postman CLI",
+  "configure_ci_cd": "Configure CI/CD",
+  "new_run": "New Run",
+  "run_again": "Run Again",
+  "rerun": "Rerun",
+  "preparing_run": "Preparing run",
+  "debug_with_ai": "Debug with AI",
+  "analyze_with_ai": "Analyze with AI",
+  "ci_cd_callout": {
+   "heading": "Run on every push",
+   "content": "Generate a CI/CD configuration to run this collection in your pipeline and catch breaking API changes.",
+   "configure_button": "Configure CI/CD"
+  }
+ },
+ "results_request_list_item": {
+  "no_tests_found": "No tests found",
+  "request_could_not_be_sent": "Request could not be sent"
+ },
+ "mock_bindings": {
+  "title": "Assign mocks",
+  "title_info": "Following variables and host URLs in this collection can be mocked",
+  "urls_column": "URLs",
+  "mock_column": "MOCK",
+  "scenario_column": "SCENARIO",
+  "empty_heading": "No mocks assigned",
+  "empty_description": "Point a URL in this collection at a mock to intercept its requests during the run.",
+  "add_url": "Add URL",
+  "url_placeholder": "Enter a URL",
+  "url_aria_label": "URL to mock",
+  "url_invalid_warning": "This is not a valid URL.",
+  "remove_url_aria_label": "Remove URL",
+  "mock_aria_label": "Mock",
+  "select_mock_placeholder": "Select mock",
+  "mocks_group": "Mocks",
+  "mock_servers_group": "Mock servers",
+  "create_with_ai": "Create with AI",
+  "create_new_mock": "Create new mock",
+  "scenario_aria_label": "Scenario",
+  "select_scenario_placeholder": "Select scenario",
+  "scenarios_loading": "Loading...",
+  "use_mock_aria_label": "Use this mock for the run",
+  "mock_enabled_tooltip": "Mock enabled — requests are served by the mock",
+  "mock_disabled_tooltip": "Mock disabled — requests pass through to the real host"
+ },
+ "empty_state": {
+  "functional": {
+   "heading": "Run a collection to validate your requests",
+   "description": "Drag a collection here, or get started below.",
+   "new_collection_name": "Functional Test Collection",
+   "empty_collection": {
+    "heading": "This collection has no requests",
+    "description": "Add a request to it, or ask AI to build one for you."
+   },
+   "empty_folder": {
+    "heading": "This folder has no requests",
+    "description": "Add a request to it, or ask AI to build one for you."
+   }
+  },
+  "performance": {
+   "heading": "Set up your performance test using a collection",
+   "description": "Drag a collection here, or get started below.",
+   "new_collection_name": "Performance Test Collection",
+   "empty_collection": {
+    "heading": "This collection has no requests",
+    "description": "Add the requests to put under load, or ask AI to build them."
+   },
+   "empty_folder": {
+    "heading": "This folder has no requests",
+    "description": "Add the requests to put under load, or ask AI to build them."
+   },
+   "sample_collection_name": "Performance Test Sample"
+  },
+  "sample_collection_name": "Postman Echo Sample",
+  "learn_more": "Learn more",
+  "ask_ai": "Ask AI",
+  "create_collection": "Create new collection",
+  "add_requests": "Add Requests",
+  "import": "Import",
+  "import_requests": "Import Requests",
+  "try_sample": "Try a sample collection",
+  "open_request": "Open request",
+  "errors": {
+   "create_collection": "Unable to create a collection. Try again later.",
+   "add_request": "Unable to add a request. Try again later.",
+   "import_requests": "Unable to import requests. Try again later.",
+   "sample_collection": "Unable to create a sample collection. Try again later."
+  },
+  "request_added": {
+   "title": "Request added to {collectionName}",
+   "go_back": "Go back",
+   "functional": {
+    "description": "Please update the request and save before attempting a collection run.",
+    "run": "Run collection"
+   },
+   "performance": {
+    "description": "Please update the request and save before attempting a performance run.",
+    "run": "Run performance test"
+   }
+  }
+ }
+}

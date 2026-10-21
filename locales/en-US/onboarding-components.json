@@ -1,0 +1,29 @@
+{
+ "copy_link": {
+  "copy_invite_text": "Copy Invite Link",
+  "copied_text": "Copied",
+  "unable_to_generate_text": "Something went wrong while generating the link.",
+  "no_permission_to_copy_text": "You do not have admin permission to perform this action"
+ },
+ "curl_import_modal": {
+  "heading": "Import cURL into a collection",
+  "request_input": {
+   "placeholder": "e.g. Get all users",
+   "label_text": "Request name"
+  },
+  "collection_input": {
+   "list_placeholder": "Select or create a new collection",
+   "text_input_placeholder": "New Collection",
+   "label_text": "Collection name",
+   "label_info_text": "Collections let you group related requests, making them easier to access and run."
+  },
+  "secondary_button_text": "Import without saving",
+  "primary_button_text": "Import into collection"
+ },
+ "leave_onboarding_confirm_modal": {
+  "heading": "Leave onboarding setup?",
+  "body_text": "Leaving this page will lose your progress in the integration setup. Are you sure you want to continue?",
+  "cancel_button_text": "Stay on this page",
+  "confirm_button_text": "Leave page"
+ }
+}

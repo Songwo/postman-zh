@@ -1,0 +1,104 @@
+{
+ "onboarding_modal": {
+  "title": "Test LLMs with AI requests",
+  "description": "Try out your prompts with LLMs from <0>OpenAI, Google, Anthropic</0> and more.",
+  "step_1": "Create a new AI request by clicking on ‘New’ in the sidebar.",
+  "step_2": "Select an LLM model to work with.",
+  "step_3": "Authorize and store your credentials in Vault.",
+  "step_4": "Pass the user prompt and optionally, the system prompt and hit ‘Send’.",
+  "cta": "Get started"
+ },
+ "agent": {
+  "errors": {
+   "agent_not_connected": "Switch to Postman Desktop Agent to make an LLM request.",
+   "agent_not_supported": "You're using an older version of Postman Desktop Agent which does not support LLM requests. Update the Desktop Agent and try again.",
+   "agent_not_ready": "Make sure the Desktop Agent is installed and running."
+  },
+  "openai": {
+   "response": {
+    "network_meta": {
+     "http_status_codes": {
+      "401": {
+       "detail": "Invalid Authentication. <button>Pass the correct auth credentials</button>",
+       "label": "Invalid Authentication"
+      },
+      "403": {
+       "detail": "Country, region, or territory not supported",
+       "label": "Territory Forbidden"
+      },
+      "429": {
+       "detail": "You exceeded your current quota, please check your plan and billing details",
+       "label": "Insufficient Quota"
+      },
+      "500": {
+       "detail": "The server had an error while processing your request",
+       "label": "Server Error"
+      },
+      "503": {
+       "detail": "The engine is currently overloaded, please try again later",
+       "label": "Engine Overload"
+      }
+     }
+    }
+   }
+  }
+ },
+ "errors": {
+  "model_not_selected": "Select a model to send an AI request."
+ },
+ "send_button": {
+  "tooltips": {
+   "no_send_permission": "You don't have permission to send requests in this workspace."
+  }
+ },
+ "tools": {
+  "local_tools": {
+   "section_title": "Toolsets",
+   "tool_count": "{count, plural, =1 {# tool} other {# tools}}",
+   "empty_title": "No local tools found",
+   "empty_description": "Create a local tool in AI tools workbench to add it to this request.",
+   "ungrouped_group_label": "Ungrouped tools",
+   "no_matching_tools": "No tools match the current search and filter.",
+   "controls": {
+    "search_tooltip": "Search",
+    "search_placeholder": "Search tools",
+    "filter_tooltip": "Filter",
+    "filter_enabled_tooltip": "Filter (enabled)",
+    "filter_disabled_tooltip": "Filter (disabled)",
+    "select_all": "Select all",
+    "deselect_all": "Deselect all",
+    "filter_all": "Show all",
+    "filter_enabled": "Enabled",
+    "filter_disabled": "Disabled"
+   }
+  },
+  "overrides": {
+   "button": "Override",
+   "edit_button": "Edit override",
+   "badge": "Overridden",
+   "count": "{count, plural, =1 {# tool overridden} other {# tools overridden}}",
+   "panel_title": "Override MCP tool",
+   "local_tool_label": "Override with local tool",
+   "parts_label": "Parts to override",
+   "parts": {
+    "description": "Description",
+    "input_schema": "Parameters",
+    "implementation": "Implementation"
+   },
+   "part_descriptions": {
+    "description": "Replace the model-facing description",
+    "input_schema": "Replace the input schema",
+    "implementation": "Run the local tool instead of the MCP call"
+   },
+   "diff_original": "MCP original",
+   "diff_override": "Local override",
+   "diff_empty": "Not provided",
+   "apply_button": "Apply",
+   "clear_button": "Clear",
+   "remove_button": "Remove override",
+   "cancel_button": "Cancel",
+   "no_matching_tools": "No local tools match this MCP tool name.",
+   "status_prefix": "Overriding"
+  }
+ }
+}

@@ -1,0 +1,1120 @@
+{
+  "header": {
+    "settings_button": "工作区设置",
+    "back_button_aria_label": "返回工作区概览",
+    "menu_button_aria_label": "更多工作区操作",
+    "info_menu": {
+      "activity_feed_cta": "活动日志",
+      "info_cta": "工作区信息"
+    },
+    "options_menu": {
+      "ask_ai": "询问 AI",
+      "post_update": "发布动态",
+      "invite_and_manage_members": "邀请和管理成员",
+      "activity_log": "活动日志",
+      "move": "移动",
+      "archive": "归档",
+      "delete": "删除",
+      "copy_workspace_id": "复制工作区 ID",
+      "copied": "已复制！",
+      "find_in_workspace": "在工作区中查找",
+      "customize_workspace_theme": "自定义工作区主题"
+    }
+  },
+  "name": {
+    "placeholder": "工作区名称",
+    "renaming_warning": "重命名工作区会更改其 URL，请确保分享更新后的工作区 URL。",
+    "toast": {
+      "label": "无法保存更改",
+      "description": "请重试。"
+    }
+  },
+  "container": {
+    "tabs": {
+      "overview": "文档",
+      "updates": "动态",
+      "settings": "设置",
+      "issues": "问题",
+      "apps": "应用",
+      "popover_text": {
+        "updates": "你有新的动态！"
+      }
+    },
+    "actions": {
+      "contributors": "贡献者",
+      "tags": "标签"
+    },
+    "explore_templates": "探索工作区模板",
+    "view_activity": "查看工作区活动",
+    "applying_template": "正在应用工作区模板..."
+  },
+  "context_bar": {
+    "activity": {
+      "title": "活动"
+    }
+  },
+  "contributors": {
+    "heading": "贡献者",
+    "heading_recent": "最近的贡献者",
+    "load_error": "无法加载贡献者，请尝试重新加载。",
+    "reload": "重新加载",
+    "empty_state": "为此工作区做出贡献的人会显示在这里。",
+    "more": "还有 {count} 位",
+    "view_all": "查看全部{count, plural, =1 {# 位贡献者} other {# 位贡献者}}"
+  },
+  "meta": {
+    "by": "作者",
+    "unknown_user": "未知用户",
+    "views": "{count} 次查看",
+    "workspace_owned_by_tooltip": "此工作区归 {creatorName} 所有"
+  },
+  "contributors_modal": {
+    "heading": "贡献者",
+    "team": "{count, plural, =1 {# 名团队成员} other {# 名团队成员}}为此工作区做出了贡献。",
+    "private": "{count, plural, =1 {# 位私密用户} other {# 位私密用户}}",
+    "self": "你",
+    "close_button": "关闭"
+  },
+  "templates": {
+    "heading": "使用模板快速设置工作区",
+    "more": "更多模板",
+    "toast": {
+      "title": "无法应用模板",
+      "description": "只是线路出了点小故障，请稍后再试。"
+    }
+  },
+  "templates_modal": {
+    "heading": "工作区模板",
+    "feedback_msg": "提供反馈或建议新模板",
+    "empty_state": {
+      "title": "糟糕，无法加载模板",
+      "description": "系统出了点小问题，请稍后再试。"
+    },
+    "toast": {
+      "title": "无法应用模板",
+      "description": "只是线路出了点小故障，请重试。",
+      "close_button": "关闭"
+    },
+    "use_template_button": "使用模板",
+    "collections_heading": "已生成的集合："
+  },
+  "requested_access_section": {
+    "heading": "已申请访问（{count}）",
+    "approve_cta": "批准",
+    "deny_cta": "拒绝",
+    "view_all": "显示全部"
+  },
+  "user_group_popover": {
+    "count_label": "{count, plural, =1 {# 名成员} other {# 名成员}}",
+    "members_loading": "正在加载成员…",
+    "members_unavailable": "无法加载成员，请重试。",
+    "view_group": "查看群组",
+    "no_members": "此群组中没有成员。",
+    "trigger_label": "群组成员"
+  },
+  "general_access_section": {
+    "labels": {
+      "org_section": "常规访问权限",
+      "team_section": "管理访问权限",
+      "partner_section": "谁有访问权限",
+      "can_access_label": "可以访问",
+      "viewer": "查看者",
+      "cant_access": "无法访问"
+    },
+    "dropdown": {
+      "internal": {
+        "team_label": "{name} 中的所有人",
+        "personal_label": "只有你和受邀的人"
+      },
+      "public": {
+        "label": "互联网上的任何人"
+      }
+    },
+    "banners": {
+      "team_ws_rfa_in_review_other": "{name} 申请向你的团队开放访问权限，正在审核中。",
+      "org_ws_rfa_in_review_other": "{name} 申请向你的组织开放访问权限，正在审核中。",
+      "org_ws_rfa_in_review_self": "你申请向组织开放访问权限，正在审核中。",
+      "review_their_prefix": "审核他们的",
+      "review_request_link": "申请。"
+    },
+    "view_in_settings": "在设置中查看"
+  },
+  "description_new": {
+    "heading": "工作区描述",
+    "empty_state": "添加文档，帮助他人快速上手…",
+    "empty_state_uneditable": "还没有添加文档。",
+    "personal_ws_empty_state": "添加文档和笔记，让一切井井有条…",
+    "add": "添加工作区描述",
+    "show_less": "收起",
+    "show_more": "展开更多",
+    "toast": {
+      "title": "无法保存更改",
+      "description": "请重试。"
+    }
+  },
+  "pin_component": {
+    "heading": "已固定的集合",
+    "featured_heading": "精选集合",
+    "featured_hint_message": "把集合固定在这里，让大家更容易发现此工作区中的集合。如果没有固定的集合，将显示最热门的集合。",
+    "edit_featured_collection": "编辑精选集合",
+    "hint_msg": "把重要的集合固定在这里，让大家更容易发现。",
+    "no_collections_msg": "此工作区还没有固定任何集合。",
+    "tooltip": {
+      "all_pins_full": "最多只能固定 {limit} 个集合",
+      "no_collections": "向此工作区添加集合后即可固定。",
+      "all_collections_pinned": "此工作区中的所有集合都已固定。"
+    },
+    "pinned_collection": {
+      "select_placeholder": "选择集合",
+      "empty_msg": "未找到集合",
+      "pin_button": "固定集合",
+      "add_msg": "向此工作区添加集合后即可固定。",
+      "toast": {
+        "create_error": {
+          "title": "无法固定集合",
+          "description": "只是线路出了点小故障，请重试。"
+        },
+        "remove_error": {
+          "title": "无法移除已固定的集合",
+          "description": "只是线路出了点小故障，请重试。"
+        },
+        "environment_error": {
+          "title": "无法选择环境",
+          "description": "只是线路出了点小故障，请重试。"
+        }
+      }
+    },
+    "pinned_document": {
+      "pin_button": "将文档固定到概览",
+      "add_readme_button": "添加工作区 README",
+      "write_with_ai_button": "用 AI 撰写",
+      "select_placeholder": "选择要固定的文档",
+      "empty_msg": "此工作区中还没有文档。",
+      "toast": {
+        "pin_error": {
+          "title": "无法固定文档",
+          "description": "只是线路出了点小故障，请重试。"
+        },
+        "create_error": {
+          "title": "无法添加 README",
+          "description": "只是线路出了点小故障，请重试。"
+        }
+      }
+    },
+    "environment": {
+      "no_environment": "无环境",
+      "no_environment_msg": "你的工作区还没有任何环境。",
+      "selection_msg": "选择你为此集合推荐的环境。"
+    },
+    "remove_modal": {
+      "heading": "取消固定？",
+      "content": "取消后，<1>{name}</1> 集合将不再固定在工作区概览中。",
+      "cancel_button": "取消",
+      "remove_button": "移除"
+    }
+  },
+  "info_modal": {
+    "heading": "工作区信息",
+    "creator_label": "创建者",
+    "private_user": "私密用户",
+    "workspace_id_label": "工作区 ID",
+    "workspace_id_copied": "已复制",
+    "copy_workspace_id": "复制工作区 ID",
+    "update_time_label": "已更新"
+  },
+  "summary": {
+    "about": "简介",
+    "no_summary_msg": "还没有添加摘要。",
+    "empty_suggestion": "添加简短摘要…",
+    "error_msg": "摘要不能超过 140 个字符，较长内容请写在描述中。",
+    "toast": {
+      "label": "无法保存更改",
+      "description": "请重试"
+    }
+  },
+  "categories": {
+    "heading": "分类"
+  },
+  "partner_actions": {
+    "heading": "作为{role}，你可以",
+    "role_separator": "、",
+    "role_separator_final": "和",
+    "learn_more": "了解更多",
+    "actions": {
+      "view_resources": "查看所有资源",
+      "edit_resources": "编辑所有资源",
+      "send_api_requests": "发送 API 请求",
+      "watch_entities": "关注实体",
+      "comment_on_entities": "协作并添加评论",
+      "build_and_test_apis": "构建和测试 API",
+      "manage_partners": "邀请合作伙伴"
+    }
+  },
+  "partner_onboarding": {
+    "shared_partner_workspace_onboarding": {
+      "heading": "Postman 中的合作伙伴协作变得更好了！",
+      "description": {
+        "header": "我们改进了你与其他组织协作的方式。",
+        "points": {
+          "partner_access": {
+            "header": "为团队提供无缝的合作伙伴访问",
+            "text": "现在，成员可以从自己的团队加入合作伙伴工作区。"
+          },
+          "partnership_settings": {
+            "header": "集中管理合作关系",
+            "text": "新的<Link><Text>合作关系页面</Text></Link>让你在一处管理所有合作关系。"
+          }
+        }
+      },
+      "close": "关闭",
+      "cta": "了解详情"
+    },
+    "shared_partner_workspace_banner": {
+      "heading": "欢迎来到你的合作伙伴工作区！",
+      "description": "现在你无需切换团队即可与多个组织无缝协作。前往<1><0>合作关系页面</0></1>管理你的所有合作关系。",
+      "cta_text": "了解更多"
+    },
+    "heading": "欢迎加入，{name}。很高兴你来到我们的合作伙伴工作区",
+    "content": "作为此工作区的合作伙伴，你可以：",
+    "item1": "查看工作区的所有资源",
+    "item2": "探索 Postman 集合并阅读 API 文档",
+    "item3": "使用集合和环境发送 API 请求",
+    "learn_more": "了解更多",
+    "got_it": "知道了"
+  },
+  "partner_workspace_meta": {
+    "heading": "合作伙伴",
+    "member_count": "（{count} 名成员）",
+    "tooltip": "合作伙伴无法看到其他合作伙伴，也无法修改此工作区",
+    "view_all": "查看所有合作伙伴"
+  },
+  "team_creator_banner": {
+    "welcome_banner": {
+      "heading": "推荐的入门步骤",
+      "content": "很高兴你来到这里。以下是让团队快速上手的一些方法。"
+    },
+    "add_projects": "向工作区添加项目",
+    "manage_team": "壮大和管理团队",
+    "explore_advanced_features": "探索高级功能",
+    "automate_collections": "自动化并优化你的集合",
+    "learn_more": "了解更多",
+    "cards": {
+      "template": {
+        "title": "从模板开始",
+        "description": "探索并从 50 多个集合模板中选择。"
+      },
+      "import": {
+        "title": "导入你的项目",
+        "description": "从桌面、GitHub 等导入项目。",
+        "modal_subtitle": "要导入内容，你需要一个 Postman 账号。"
+      },
+      "move": {
+        "title": "移动你的集合",
+        "description": "将你的集合转移到此工作区。"
+      },
+      "invite": {
+        "title": "邀请队友",
+        "description": "组建强大的团队，帮你开发强大的 API。",
+        "modal_subtitle": "你需要一个账号才能继续探索 Postman。"
+      },
+      "permissions": {
+        "title": "了解权限",
+        "description": "了解权限并为队友分配合适的权限。"
+      },
+      "environments": {
+        "title": "创建环境",
+        "description": "创建环境，为集合应用变量。"
+      },
+      "authorization": {
+        "title": "设置授权",
+        "description": "设置所需的授权以访问数据。"
+      },
+      "documentation": {
+        "title": "添加文档",
+        "description": "帮助他人了解如何使用你的端点。"
+      },
+      "tests": {
+        "title": "为集合添加测试",
+        "description": "编写测试脚本或使用代码片段来校验数据。"
+      },
+      "monitors": {
+        "title": "监视集合",
+        "description": "设置监视器，在出错时收到通知。"
+      },
+      "runner": {
+        "title": "试试集合运行器",
+        "description": "同时运行多个请求。"
+      },
+      "scripts": {
+        "title": "脚本和测试",
+        "description": "了解如何编写脚本来自动化工作流。"
+      },
+      "collection_monitor": {
+        "title": "集合监视器",
+        "description": "了解如何设置监视器，在出错时收到通知。"
+      },
+      "collection_runner": {
+        "title": "集合运行器",
+        "description": "了解如何创建并自动化测试序列。"
+      }
+    }
+  },
+  "team_joiner_banner": {
+    "welcome_banner": {
+      "heading": "👋 欢迎来到你的新团队工作区，{name}",
+      "content": "很高兴你来到这里。以下是让团队快速上手的一些方法。"
+    },
+    "cards": {
+      "request": {
+        "title": "发送请求",
+        "description": "试着发送一些请求，看看你的队友构建了什么。"
+      },
+      "invite": {
+        "title": "邀请队友",
+        "description": "组建强大的团队，帮你开发强大的 API 并扩大影响力。",
+        "modal_subtitle": "你需要一个账号才能继续探索 Postman。"
+      },
+      "request_access": {
+        "title": {
+          "edit_is_pending": "编辑申请正在等待审核",
+          "request_edit_access": "申请编辑权限"
+        },
+        "text": {
+          "request_in_progress": "你的申请正在处理中，获批后我们会通过邮件通知你。",
+          "only_have_view_access": "你只有查看权限。如需修改，请向管理员申请编辑权限。"
+        }
+      }
+    }
+  },
+  "configure_multi_partner_workspace_banner": {
+    "heading": "欢迎来到你的合作伙伴工作区！",
+    "content": {
+      "link_preceding_text": "你可以在此工作区中邀请外部合作伙伴并与之协作。为防止合作伙伴互相看到对方，你可以启用",
+      "link_text": "多合作方模式。"
+    }
+  },
+  "tags": {
+    "new": "新",
+    "beta": "测试版"
+  },
+  "workspace_sandbox": {
+    "page_title": "正在配置沙盒工作区",
+    "loading_label": "加载中",
+    "error_title": "无法加载你的沙盒工作区",
+    "error_description": "设置沙盒工作区时出错，请稍后重试。"
+  },
+  "workspace_settings": {
+    "heading": "工作区设置",
+    "readonly_tooltip": "你没有更改工作区类型的权限。",
+    "network_error": {
+      "heading": "无法加载设置",
+      "description": "只是线路出了点小故障，请尝试重新加载。",
+      "primary_action_text": "重新加载"
+    },
+    "banner": {
+      "description": "协作者角色已被编辑者和查看者角色取代，不能再分配给任何人。了解更多关于新的",
+      "primary_action_text": "工作区角色"
+    },
+    "pending_requests": {
+      "label": "待处理的申请（{count}）"
+    },
+    "asset_type": {
+      "heading": "资产类型",
+      "description": "为此工作区指定资产类型以便分类。一个工作区同一时间只能有一种资产类型。",
+      "placeholder": "选择资产类型",
+      "readonly_hint": "你没有更改资产类型的权限。",
+      "not_git_connected_hint": "将此工作区连接到 Git 后才能更改其资产类型。",
+      "toast_success": "资产类型已更新",
+      "toast_error": "无法更新资产类型，请重试。",
+      "next_steps": {
+        "heading": "后续步骤",
+        "subtitle": "在关联了 Git 的工作区目录中运行此命令，即可开始捕获 API 调用和测试结果。",
+        "dismiss": "忽略",
+        "checking_registration": "正在检查应用清单注册情况…"
+      }
+    },
+    "visibility": {
+      "workspace_type_container_heading": "工作区类型",
+      "change_workspace_type_cta": "更改",
+      "workspace_type_modal_header": "更改工作区类型",
+      "professional_plan_name": "专业版",
+      "enterprise_plan_name": "企业版",
+      "team_plan_name": "团队",
+      "upgrade_plan_button": "升级套餐",
+      "upgrade_plan_button_for": "升级套餐以使用{label}",
+      "upgrade_plan_text": "升级套餐即可创建合作伙伴工作区。",
+      "plan_downgrade_banner_text": "由于新套餐不再支持合作伙伴工作区，所有合作伙伴都已从此工作区中移除。要继续使用此工作区，请更改工作区可见性",
+      "contact_your_team_admin": "有关启用合作伙伴工作区的详情，请联系团队管理员。",
+      "heading": "谁可以访问此工作区？",
+      "team_visibility_disabled_text": "你需要加入团队才能创建团队工作区。",
+      "developer_role_required_text": "你需要拥有团队的开发者角色才能选择此选项。",
+      "private_visibility_disabled_text": "升级到 {enterprisePlanName} 套餐，即可与成员私密协作。",
+      "partner_visibility_disabled_text": "升级套餐即可与外部合作伙伴协作。",
+      "visibility_unavailable_text": "此选项目前在你所在的地区不可用。",
+      "do_not_have_access": "你没有将此工作区转换为私有工作区的权限。",
+      "only_admin_access": "只有此工作区的管理员可以更改可见性。",
+      "only_admin_change_type": "只有工作区管理员可以更改类型。",
+      "description": "决定谁可以访问你的工作区。",
+      "git_connected_restriction": "目前只有内部工作区支持 Git 连接。要改为公共或合作伙伴工作区，请先断开工作区与 Git 的连接。",
+      "disconnect_to_change": "断开连接以更改",
+      "pending_visibility_request_tooltip": "存在待处理的工作区可见性变更申请时，无法执行此操作。",
+      "remove_partners_checkbox_label": "移除所有合作伙伴",
+      "select_workspace_access_level_aria_label": "选择工作区访问级别",
+      "workspace_access_options_aria_label": "工作区访问选项",
+      "back_button_aria_label": "返回",
+      "update_team_profile_modal": {
+        "description": "在将团队资料设为公开之前，请更新团队域名并确认其符合公开条件。团队域名用于在 Postman 上识别你的团队。",
+        "confirm_cta_text": "继续"
+      },
+      "tag_content": {
+        "new": "新",
+        "upgrade_plan": "升级套餐",
+        "activate_trial": "免费试用",
+        "unlocked": "已解锁"
+      },
+      "toasts": {
+        "request_sent": "申请已发送",
+        "invalid_workspace_name": "工作区名称无效",
+        "visibility_change_failed": "无法更改可见性",
+        "workspace_type_change_failed": "无法更改工作区类型",
+        "update_visibility_error": "只是线路出了点小故障，请重试。",
+        "update_visibility_orgs_error": "无法向你的组织开放访问权限",
+        "visibility_status_changed": {
+          "title": "此工作区现在是{status}工作区",
+          "title_internal_workspace": "此工作区现在是内部工作区",
+          "access_updated_title": "工作区访问权限已更新",
+          "public": {
+            "description": "现在所有人都可以查看。"
+          },
+          "private": {
+            "description": "现在只有受邀加入此工作区的成员可以访问。",
+            "access_updated_description": "现在只有你和受邀加入此工作区的成员可以访问。"
+          },
+          "team": {
+            "description": "现在所有团队成员都可以访问。",
+            "access_updated_description": "现在所有团队成员都可以访问。"
+          },
+          "partner": {
+            "description": "现在可以邀请合作伙伴加入此工作区。"
+          },
+          "personal": {
+            "description": "现在只有你可以查看。",
+            "access_updated_description": "现在只有你和受邀加入此工作区的成员可以访问。"
+          }
+        }
+      },
+      "public_visibility_warnings": {
+        "generic_warning": "此工作区中的所有数据都将公开。",
+        "public_team_profile_warning": "此工作区中的所有数据以及你的<1>团队资料</1>都将公开。",
+        "public_user_profile_warning": "此工作区中的所有数据以及你的<1>用户资料</1>都将公开。",
+        "banner": {
+          "heading": "你将此工作区设为<1>{transitionVisibilityStatus}</1>工作区的申请正在审核中。",
+          "show_more_link": "展开更多",
+          "primary_action_text": "取消申请"
+        }
+      },
+      "dropdown_options": {
+        "personal": {
+          "label": "仅限我自己",
+          "helperText": "个人"
+        },
+        "team": {
+          "label": "{teamName} 中的所有人",
+          "helperText": "团队 {appendTeamSize}"
+        },
+        "private": {
+          "label": "仅限受邀的团队成员",
+          "helperText": "私有"
+        },
+        "partner": {
+          "label": "仅限受邀的合作伙伴和团队成员",
+          "helperText": "合作伙伴"
+        },
+        "public": {
+          "label": "互联网上的任何人",
+          "helperText": "公开"
+        }
+      },
+      "simplified_visibility_dropdown_options": {
+        "internal": {
+          "label": "内部",
+          "helperText": "在团队内部构建和测试 API。",
+          "radio_options": {
+            "team": {
+              "label": "{teamName} 中的所有人",
+              "helperText": "{appendTeamSize, plural, =0 {} =1 {# 名成员} other {# 名成员}}"
+            },
+            "organization": {
+              "helperText": "组织，{appendTeamSize, plural, =0 {0 名成员} =1 {# 名成员} other {# 名成员}}"
+            },
+            "squad": {
+              "helperText": "团队，{appendTeamSize, plural, =0 {0 名成员} =1 {# 名成员} other {# 名成员}}"
+            },
+            "personal": {
+              "label": "只有你和受邀的人"
+            }
+          },
+          "labelWithAccess": {
+            "personal": "内部（仅限你自己）",
+            "team": "团队中的所有人",
+            "private": "内部（仅限你和受邀的团队成员）"
+          }
+        },
+        "partner": {
+          "label": "合作伙伴",
+          "helperText": "与受信任的合作伙伴安全地共享 API。"
+        },
+        "public": {
+          "label": "公开",
+          "helperText": "让全世界都能访问你的 API。"
+        }
+      },
+      "internal_access_dropdown_options": {
+        "team": {
+          "label_with_name": "{teamName} 中的所有人",
+          "label_without_name": "团队中的所有人",
+          "helperText": "{teamSize, plural, =0 {} =1 {# 名成员} other {# 名成员}}"
+        },
+        "invited_only": {
+          "label": "只有你和受邀的人",
+          "partner_label": "只有你和受邀的合作伙伴"
+        }
+      },
+      "update_visibility": {
+        "primary_action_text": "更新",
+        "secondary_action_text": "取消",
+        "has_community_manager": {
+          "primary_action_text": "申请更改可见性",
+          "textarea_label": "添加说明（可选）"
+        }
+      },
+      "update_visibility_modal": {
+        "primary_action_text": "更改可见性",
+        "secondary_action_text": "取消",
+        "title": "将可见性更改为{visibilityStatus}？",
+        "team": {
+          "personal": {
+            "description": "更改后，所有团队成员都将被移除，只有你可以访问此工作区。"
+          }
+        },
+        "private": {
+          "personal": {
+            "description": "更改后，所有受邀的团队成员都将被移除，只有你可以访问此工作区。"
+          }
+        },
+        "public": {
+          "private": {
+            "description": "更改后，此工作区将不再出现在公共 API 网络上，只有受邀成员仍可访问。"
+          }
+        }
+      },
+      "simplified_visibility_change_modal": {
+        "raise_rfa_request": {
+          "primary_action_text": "提交申请"
+        },
+        "primary_action_text": "保存更改",
+        "secondary_action_text": "取消"
+      }
+    },
+    "role_settings_container": {
+      "heading": "此工作区中的成员",
+      "search_input_placeholder": "按姓名或邮箱搜索",
+      "invite_button_text": "邀请",
+      "invite_people": "管理成员",
+      "manage_access_label": "管理访问权限",
+      "can_access_label": "可以访问",
+      "select_role_aria_label": "选择角色",
+      "role_dropdown_aria_label": "更改 {memberName} 的角色，当前为{currentRole}",
+      "user_list_label": "{firstUser}、{secondUser} 和{count, plural, =1 {另外 # 人} other {另外 # 人}}",
+      "show_more": "展开更多",
+      "permission_not_available": "你没有执行此操作的权限",
+      "toasts": {
+        "success": {
+          "access_removed": "已移除工作区访问权限",
+          "access_updated": "工作区访问权限已更新",
+          "guest_role_updated": {
+            "title": "角色已更新"
+          }
+        },
+        "error": {
+          "access_removal_failed": "无法移除访问权限",
+          "access_update_failed": "无法更新角色",
+          "no_slot_available": "无法分配编辑者角色",
+          "guest_role_update_failed": {
+            "title": "无法更新角色",
+            "description": "只是线路出了点小故障，请重试。"
+          },
+          "auto_approval_disabled": {
+            "title": "你没有转换的权限",
+            "description": "请联系团队管理员将此访客转换为开发者。"
+          }
+        }
+      },
+      "back_button_aria_label": "返回"
+    },
+    "discussions": {
+      "heading": "讨论",
+      "toggle_discussions_label": "任何有工作区访问权限的人都可以查看和参与讨论",
+      "toggle_discussion_visibility": {
+        "toasts": {
+          "success": {
+            "description": "现在只有工作区管理员可以查看和参与讨论。"
+          },
+          "error": {
+            "title": "无法隐藏讨论",
+            "description": "只是线路出了点小故障，请重试。"
+          }
+        },
+        "modal": {
+          "heading": {
+            "hide_discussions": "隐藏讨论？",
+            "show_discussions": "显示讨论？"
+          },
+          "description": {
+            "hide_discussions": "从现在起，在重新开启此设置之前，只有工作区管理员可以查看和参与讨论。",
+            "show_discussions": "从现在起，所有有权访问此工作区的人都可以查看和参与讨论。"
+          },
+          "primary_action_text": "确认",
+          "secondary_action_text": "取消"
+        }
+      }
+    },
+    "move_workspace": {
+      "heading": "移动此工作区",
+      "description": "将工作区从 {teamName} 的团队移动到你组织中的其他团队。",
+      "description_personal_workspace": "将工作区移动到团队以进行协作。你只能在团队中邀请他人并与之协作",
+      "primary_action_text": "移动工作区",
+      "disabled_tooltip_single_squad": "你的组织中没有其他团队可以接收此工作区，因此无法移动。",
+      "disabled_tooltip": "你没有组织中其他团队的访问权限，因此无法移动此工作区。"
+    },
+    "add_to_namespace": {
+      "label": {
+        "add": "添加到命名空间",
+        "added": "已添加到命名空间"
+      },
+      "other_namespaces": "及另外 {count} 个{count, plural, one {命名空间} other {命名空间}}",
+      "path_label": "路径",
+      "network_breadcrumb": "API 网络",
+      "description": "申请将此工作区添加到统一 API 网络中的某个命名空间。",
+      "cta": "添加到命名空间",
+      "pending_label": "{namespaceName} 的申请待处理",
+      "go_to_approval_requests": "前往审批申请",
+      "status_error": "无法加载命名空间状态。只是线路出了点小故障，请重试。",
+      "toast": {
+        "success": {
+          "title": "申请已提交",
+          "description": "已提交将此工作区添加到 {namespaceName} 的申请。"
+        },
+        "error": {
+          "title": "无法提交申请",
+          "description": "只是线路出了点小故障，请重试。"
+        }
+      }
+    },
+    "configure_sidebar": {
+      "heading": "侧边栏面板",
+      "description": "为此工作区中的所有人自定义侧边栏显示哪些面板。",
+      "tooltip_content": "侧边栏中至少要有一个元素",
+      "network_error": {
+        "heading": "配置设置不可用",
+        "description": "无法获取你的配置数据，请稍后再试。",
+        "primary_action_text": "重试"
+      },
+      "settings_update_error": {
+        "heading": "无法更新侧边栏面板",
+        "description": "更新侧边栏配置时出错，请重试。"
+      }
+    },
+    "configure_multi_partner_workspace": {
+      "banner": {
+        "heading": "要与多个组织协作？",
+        "description": "启用多合作方模式，限制合作伙伴互相看到对方",
+        "invoke_modal_cta": "启用多合作方模式",
+        "configured": {
+          "heading": "多合作方模式",
+          "description": "合作伙伴无法看到其他合作伙伴，也无法修改此工作区。",
+          "tooltip": "合作伙伴无法互相看到对方，并且所有合作伙伴都只能是查看者角色",
+          "badge": "开"
+        }
+      },
+      "modal": {
+        "heading": "与多个合作伙伴私密协作",
+        "description": "启用多合作方模式，即可在同一工作区中与多个合作伙伴组织私密协作。",
+        "pointers": {
+          "0": {
+            "headline": "合作伙伴无法互相看到对方",
+            "info": "合作伙伴只能看到你的团队成员。"
+          },
+          "1": {
+            "headline": "合作伙伴无法编辑此工作区 ",
+            "info": "他们可以查看所有工作区资源并发送请求"
+          }
+        },
+        "note": "为防止意外泄露数据，此操作无法撤销。",
+        "action_button": "启用多合作方模式",
+        "cancel": "取消"
+      },
+      "error_toast": {
+        "title": "无法启用多合作方模式",
+        "description": "只是线路出了点小故障，请重试。"
+      }
+    },
+    "partner_listing": {
+      "heading": "合作伙伴",
+      "info": "只有你的团队成员可以看到这些",
+      "not_found": "未找到合作伙伴",
+      "members": "名成员"
+    },
+    "partner_workspace_info_text": "更改工作区类型后，你将成为<1><0>合作伙伴管理者</0></1>。",
+    "cleanup_workspace": {
+      "heading": "归档或删除",
+      "description": "归档会将此工作区从视图中移除并关闭监视器。你可以随时恢复，也可以永久删除。",
+      "primary_action_text": "删除工作区",
+      "secondary_action_text": "归档工作区"
+    },
+    "restore_workspace": {
+      "heading": "此工作区已归档",
+      "description": "它已从视图中移除，监视器已关闭。",
+      "primary_action_text": "删除工作区",
+      "secondary_action_text": "恢复工作区"
+    },
+    "delete_workspace": {
+      "heading": "删除工作区",
+      "description": "工作区一旦删除，其中的数据也将永久消失。",
+      "primary_action_text": "删除工作区",
+      "modal": {
+        "heading": "删除工作区？",
+        "description": "<0>{workspaceName}</0> 中的所有内容都将被永久删除。",
+        "confirm_workspace_input_label": "输入工作区名称以确认",
+        "primary_action_text": "删除工作区",
+        "secondary_action_text": "取消"
+      },
+      "toast": {
+        "success": {
+          "detailed_description": "{workspaceType}工作区 {workspaceName} 已删除。",
+          "generic_description": "工作区已删除。"
+        },
+        "error": {
+          "title": "无法删除工作区",
+          "description": "只是线路出了点小故障，请重试。"
+        }
+      }
+    },
+    "modal": {
+      "delete": {
+        "heading": "删除工作区？",
+        "description": "<1>{workspaceName}</1> 中的所有内容都将被永久删除。",
+        "delete_associated_drafts_checkbox_label": "同时删除有待处理更改的关联工作区",
+        "confirm_workspace_input_label": "输入“Delete”以确认",
+        "confirmation_text": "delete",
+        "primary_action_text": "删除工作区",
+        "secondary_action_text": "取消",
+        "toast": {
+          "success": {
+            "detailed_description": "工作区已删除",
+            "generic_description": "工作区已删除"
+          },
+          "error": {
+            "title": "无法删除工作区",
+            "description": "只是线路出了点小故障，请重试。"
+          }
+        }
+      }
+    },
+    "access_requests": {
+      "approve_cta": "批准",
+      "deny_cta": "拒绝",
+      "info_text": "<boldText>{name}</boldText> 申请成为此工作区的<boldText>{requested_role}</boldText>。",
+      "info_text_partner": "<boldText>{name}</boldText> 申请以合作伙伴身份加入此工作区。",
+      "info_text_partner_with_email": "<boldText>{name}</boldText> <emailText>（{email}）</emailText>申请以合作伙伴身份加入此工作区。",
+      "deny_modal": {
+        "title": "拒绝申请？",
+        "label_text": "添加说明",
+        "info_text": {
+          "editor_request_text": "成为此工作区编辑者的申请将被拒绝。",
+          "viewer_request_text": "访问此工作区的申请将被拒绝。",
+          "partner_editor_request_text": "成为此工作区合作伙伴编辑者的申请将被拒绝。",
+          "default": "访问此工作区的申请将被拒绝。"
+        },
+        "placeholder_text": "简要说明拒绝此申请的原因",
+        "validation_message": "说明最多只能有 500 个字符。",
+        "cancel_cta": "取消",
+        "submit_cta": "拒绝申请"
+      }
+    },
+    "action_requests": {
+      "toast_content": {
+        "request_retracted": {
+          "description": "申请已取消"
+        }
+      },
+      "info_text": " 申请将此工作区设为<1>{visibility}</1>工作区。",
+      "ex_team_member_info_text": "<0>一位前团队成员希望将此工作区的可见性更改为<1>{visibility}</1></0>",
+      "ex_team_member_name": "一位前团队成员",
+      "team_visibility_change_text": "你的团队资料也将被公开。",
+      "approve_cta": "批准",
+      "deny_cta": "拒绝",
+      "deny_modal": {
+        "default": {
+          "title": "申请他人执行操作",
+          "message": "此对话框可用于请求有权限的其他用户代为执行某项操作。",
+          "placeholder": "简要说明你希望对方执行此操作的原因。",
+          "submit_cta": "发送申请"
+        },
+        "title": "拒绝申请？",
+        "label_text": "添加说明（可选）",
+        "placeholder_text": "简要说明拒绝其申请的原因。",
+        "validation_message": "说明最多只能有 500 个字符。",
+        "cancel_cta": "取消",
+        "submit_cta": "拒绝申请",
+        "info_text": "<0>{username}</0> 将 <2>{entity_name}</2> 设为<4>{visibility}</4>工作区的申请将被拒绝。",
+        "description": {
+          "team": "<strong>{name}</strong> 申请向你的团队开放此工作区访问权限，该申请将被拒绝。",
+          "org": "<strong>{name}</strong> 申请向你的组织开放此工作区访问权限，该申请将被拒绝。",
+          "partner": "<strong>{name}</strong> 申请将此工作区设为合作伙伴工作区，该申请将被拒绝。",
+          "public": "<strong>{name}</strong> 申请将此工作区设为公共工作区，该申请将被拒绝。"
+        }
+      },
+      "info_text_for_type": {
+        "team": "<userLink><strong>{name}</strong></userLink> 申请向你的团队开放此工作区的访问权限。",
+        "org": "<userLink><strong>{name}</strong></userLink> 申请向你的组织开放此工作区的访问权限。",
+        "partner": "<userLink><strong>{name}</strong></userLink> 申请将此工作区设为合作伙伴工作区，受邀的团队成员和外部合作伙伴将可以访问它。",
+        "public": "<userLink><strong>{name}</strong></userLink> 申请将此工作区设为公共工作区，Postman API 网络中的任何人都将可以访问它。"
+      }
+    },
+    "pinned_document": {
+      "heading": "工作区概览",
+      "description": "选择要固定在概览中的文档。",
+      "select_placeholder": "选择文档",
+      "empty_state": "此工作区中还没有文档。",
+      "toast": {
+        "error": {
+          "title": "无法更新已固定的文档",
+          "description": "更新已固定的文档时出错，请重试。"
+        }
+      }
+    },
+    "workspace_theme": {
+      "heading": "工作区主题",
+      "description": "让工作区主题体现其内容和团队特色，打造独特的工作区。这些更改会对所有成员生效。",
+      "settings_fetch_error": {
+        "heading": "无法加载工作区主题",
+        "description": "加载主题时出错，请刷新或稍后再试。"
+      },
+      "settings_update_error": {
+        "heading": "更新主题失败",
+        "description": "无法更新工作区主题，更新主题时出错。"
+      },
+      "workspace_theme_onboarding_toast": {
+        "heading": "此工作区使用了不同的主题",
+        "description": "工作区管理员为此工作区设置了不同的主题。你的主题偏好在其他地方仍然有效。"
+      },
+      "accent_color_picker": {
+        "heading": "强调色",
+        "description": "按钮和高亮的颜色。",
+        "placeholder": "未选择颜色"
+      },
+      "theme_color_picker": {
+        "heading": "主题色",
+        "description": "整体界面颜色。"
+      },
+      "primary_action_text": "应用主题",
+      "secondary_action_text": "恢复默认",
+      "thumbnail_label": "预览"
+    }
+  },
+  "workspace_rfa": {
+    "modal": {
+      "workspace_rfa_title": "申请编辑？",
+      "entity_rfa_title": "申请编辑？",
+      "info_text": "工作区管理员会审核你编辑此工作区资源的申请。获批后，你将成为编辑者。",
+      "partner_workspace_info_text": "工作区管理员会审核此申请。获批后，你可以在此工作区中创建、编辑、复刻和导出资源",
+      "entity_info_text": "你编辑此{entityType}的申请将被审核。获批后，你将成为编辑者。",
+      "placeholder_text": "一段简短的说明，帮助审核人批准你的申请",
+      "cancel_cta": "取消",
+      "submit_cta": "发送申请",
+      "validation_message": "说明最多只能有 140 个字符。",
+      "blank_state": {
+        "title": "无法申请访问权限",
+        "description": "该{entityType}位于你无权访问的工作区中。",
+        "button_text": "好的"
+      },
+      "optional": "可选",
+      "label_info_text": "添加说明",
+      "dropdown": {
+        "role_dropdown_label": "选择角色",
+        "approver_dropdown_label": "申请发送给"
+      }
+    },
+    "creating_request": {
+      "title_text": "申请编辑"
+    },
+    "pending_request": {
+      "title_text": "申请审核中",
+      "info_text": "工作区管理员正在审核你的编辑权限申请。"
+    },
+    "toast_error_messages": {
+      "update_roles_permission_denied": {
+        "title": "你需要访问权限",
+        "message": "你需要是编辑者才能管理此元素的角色。"
+      },
+      "creator_not_part_of_team": {
+        "title": "找不到申请人",
+        "message": "他们可能已离开你的团队或删除了 Postman 账号。"
+      },
+      "failed_access_request": {
+        "title": "申请失败",
+        "message": "你尝试批准的申请失败了。"
+      },
+      "expired_access_request": {
+        "title": "申请已过期",
+        "message": "访问申请会在 30 天后过期。你仍然可以通过与对方共享元素来授予访问权限。"
+      },
+      "model_does_not_exist": {
+        "title": "无法发送申请",
+        "message": "由于元素已被删除，此申请无法完成。"
+      },
+      "model_not_found_in_workspace": {
+        "title": "无法发送申请",
+        "message": "由于元素已被删除或移动，此申请无法完成。"
+      },
+      "approved_access_request": {
+        "message": "此申请已被处理。"
+      },
+      "rejected_access_request": {
+        "message": "此申请已被处理。"
+      },
+      "approver_not_part_of_team": {
+        "title": "无法批准申请",
+        "message": "哎呀！看起来你无法批准此申请。"
+      },
+      "invalid_approver_for_request": {
+        "title": "无法批准申请",
+        "message": "哎呀！看起来你无法批准此申请。"
+      },
+      "not_part_of_any_team": {
+        "title": "无法批准申请",
+        "message": "哎呀！看起来你无法批准此申请。"
+      },
+      "team_member_slots_full": {
+        "title": "无法批准申请"
+      },
+      "partner_editor_slots_full": {
+        "title": "无法批准申请",
+        "message": "没有可用的付费席位。我们已通知合作伙伴管理者增加席位。"
+      },
+      "auto_approval_disabled": {
+        "title": "你没有批准的权限",
+        "message": "请联系团队管理员将此访客转换为开发者。"
+      },
+      "user_already_has_requested_role": {
+        "title": "你已经拥有此访问权限",
+        "message": "如果需要不同级别的访问权限，请创建新的申请"
+      },
+      "instance_not_found_error": {
+        "title": "无法创建申请",
+        "message": "由于实体已被删除，此申请无法完成。"
+      },
+      "request_already_approved": {
+        "title": "已收到申请",
+        "message": "看起来已经有人批准了此申请。"
+      },
+      "request_already_rejected": {
+        "title": "已收到申请",
+        "message": "看起来已经有人拒绝了此申请。"
+      },
+      "request_expired": {
+        "message": "此申请已过期。"
+      },
+      "model_deleted": {
+        "title": "无法响应申请",
+        "message": "由于元素已被删除，此申请无法完成。"
+      },
+      "default": {
+        "title": "无法响应申请",
+        "message": "只是线路出了点小故障，请重试。"
+      },
+      "default_submit": {
+        "title": "无法创建申请",
+        "message": "出了点问题"
+      },
+      "default_load": {
+        "title": "无法加载数据",
+        "message": "出了点问题"
+      },
+      "default_approve": {
+        "title": "无法批准申请",
+        "message": "只是线路出了点小故障，请重试。"
+      },
+      "default_deny": {
+        "title": "无法拒绝申请",
+        "message": "只是线路出了点小故障，请重试。"
+      },
+      "request_exists": {
+        "title": "你已有一个申请正在审核中",
+        "message": "工作区管理员回复后你会收到通知。"
+      }
+    },
+    "toast_info_map": {
+      "pending_approval": {
+        "title": "申请等待批准",
+        "message": "申请获批后你会收到通知。"
+      }
+    },
+    "toast_success_map": {
+      "name": "已发送访问申请",
+      "entity_title": "已发送编辑申请",
+      "description": "申请获批后你会收到通知。"
+    },
+    "upgrade_admin_to_partner_manager": {
+      "success": {
+        "title": "你现在是合作伙伴管理者",
+        "description": "这个新角色允许你批准或拒绝合作伙伴工作区的申请。"
+      },
+      "error": {
+        "title": "访问被拒绝",
+        "description": "你需要合作伙伴管理者角色才能查看此申请。"
+      }
+    },
+    "request_processed_message": "此申请已被处理。",
+    "share_request_approval": {
+      "approve_button": "批准",
+      "deny_button": "拒绝"
+    },
+    "access_request_approval": {
+      "completed_message": "此申请已被处理。"
+    },
+    "workspace_access_request_approval": {
+      "respond_button": "回复申请"
+    }
+  },
+  "workspace_tools": {
+    "invite_to_workspace": {
+      "invite_prompt_with_name": "你即将邀请一位用户加入工作区“{workspaceName}”。",
+      "invite_prompt_without_name": "你即将邀请一位用户加入当前工作区。",
+      "email_label": "邮箱：",
+      "role_label": "角色：",
+      "not_specified": "（未指定）",
+      "confirm_prompt": "是否批准此邀请？",
+      "error_email_required": "邀请用户加入工作区需要提供邮箱",
+      "error_role_required": "邀请用户加入工作区需要指定角色"
+    },
+    "manage_document_pin": {
+      "prompt_pin": "你即将固定一个文档。",
+      "prompt_pin_with_workspace": "你即将在工作区“{workspaceName}”中固定一个文档。",
+      "prompt_unpin": "你即将取消固定一个文档。",
+      "prompt_unpin_with_workspace": "你即将在工作区“{workspaceName}”中取消固定一个文档。",
+      "document_label": "文档：",
+      "document_id_fallback": "（ID：{documentId}）",
+      "action_label": "操作：",
+      "action_pin": "固定到工作区概览",
+      "action_unpin": "从工作区概览取消固定",
+      "description_pin": "这会在工作区概览中展示该文档。一次只能固定一个文档，之前固定的文档将被替换。",
+      "description_unpin": "这会将该文档从工作区概览中移除。",
+      "confirm_prompt": "是否批准此文档固定变更？",
+      "error_document_id_required": "管理文档固定需要提供 documentId",
+      "error_should_pin_required": "shouldPin 必须是明确的布尔值（true 表示固定，false 表示取消固定）",
+      "error_args_unparseable": "无法解析文档固定工具的参数"
+    }
+  }
+}

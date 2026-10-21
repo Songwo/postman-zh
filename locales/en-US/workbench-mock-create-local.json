@@ -1,0 +1,151 @@
+{
+ "tab_title": "New Mock",
+ "sections": {
+  "source": "Source",
+  "access": "Access",
+  "state": "State",
+  "state_info": "Manage stateful data in mocks using <code>pm.state</code>."
+ },
+ "form": {
+  "heading": "New mock",
+  "name_label": "Name",
+  "name_default": "New Mock",
+  "name_placeholder": "Service or feature you want to mock",
+  "name_required_tooltip": "Give the mock a name to continue.",
+  "url_label": "Mock URL",
+  "local_port_label": "Port",
+  "local_url_helper": "",
+  "check_availability_cta": "Check",
+  "check_port_cta": "Check",
+  "port_available": "Port is available.",
+  "port_unavailable": "Port is already in use. Choose a different one.",
+  "port_check_failed": "Could not check port availability. Try again.",
+  "slug_unavailable": "Slug is already taken. Choose a different one.",
+  "slug_check_failed": "Could not check slug availability. Try again.",
+  "submit_cta": "Create Mock",
+  "cancel_cta": "Cancel",
+  "create_in_progress": "Creating…",
+  "deploy_heading": "New Mock Server",
+  "deploy_cta": "Create & Deploy",
+  "deploy_in_progress": "Deploying…"
+ },
+ "cloud_config": {
+  "badge": "Cloud",
+  "summary": "(Optional)",
+  "summary_tooltip": "Push to cloud to run your mock on Postman servers.",
+  "collapsed_action": "Configure",
+  "description": "Push to cloud to run your mock on Postman servers.",
+  "url_label": "URL",
+  "mock_auth_label": "Access"
+ },
+ "source_selector": {
+  "section_label": "Choose a source",
+  "blank": {
+   "label": "Start with template"
+  },
+  "spec": {
+   "label": "Specification",
+   "helper": "Responses are generated from the selected API spec.",
+   "picker_placeholder": "Choose a specification",
+   "picker_empty": "No specs in this workspace yet."
+  },
+  "collection": {
+   "label": "Collection",
+   "helper": "Responses are generated from the collection's saved examples.",
+   "picker_placeholder": "Select or create a collection",
+   "picker_empty": "No Collections in this workspace yet."
+  }
+ },
+ "mock_server_create": {
+  "source_label": "Generate from"
+ },
+ "mock_source_picker": {
+  "tab_all": "All",
+  "tab_mocks": "Mocks",
+  "tab_collections": "Collections",
+  "tab_specs": "Specs",
+  "search_placeholder": "Search…",
+  "empty": "Nothing here yet. Create a mock or generate one using collection or spec and deploy.",
+  "empty_collection": "Nothing here yet. Create a collection to get started.",
+  "empty_spec": "Nothing here yet. Create a spec to get started.",
+  "empty_mock": "Nothing here yet. Create a mock to get started.",
+  "empty_short": "Nothing here yet.",
+  "change_source": "Change",
+  "create_collection": "Create collection",
+  "create_spec": "Create spec",
+  "create_mock": "Create mock",
+  "empty_import": "Import"
+ },
+ "sync": {
+  "keep_in_sync_collection_label": "Auto-update this mock when the collection changes",
+  "keep_in_sync_spec_label": "Auto-update this mock when the API spec changes",
+  "keep_in_sync_collection_label_local": "Auto-update this mock when the collection changes (after pushing to cloud)",
+  "keep_in_sync_spec_label_local": "Auto-update this mock when the API spec changes (after pushing to cloud)",
+  "keep_in_sync_collection_helper": "Regenerated automatically when the collection/API spec changes.",
+  "keep_in_sync_spec_helper": "Regenerated automatically when the collection/API spec changes.",
+  "keep_in_sync_collection_helper_local": "After pushing to cloud, regenerated automatically when the collection/API spec changes.",
+  "keep_in_sync_spec_helper_local": "After pushing to cloud, regenerated automatically when the collection/API spec changes."
+ },
+ "import_area": {
+  "idle_inline": "Drop a Collection or Spec, or <browse>browse</browse>",
+  "file_replace": "Replace",
+  "file_remove": "Remove"
+ },
+ "ai_section": {
+  "divider_text": "or",
+  "title": "Create with Postman AI",
+  "local": {
+   "card_mock_external": {
+    "title": "Mock external APIs present in your codebase",
+    "description": "We'll scan your repo for outbound calls and stand up a local mock that responds like those services."
+   },
+   "card_mock_own": {
+    "title": "Mock your own APIs",
+    "description": "Create a digital twin of the endpoints your service exposes."
+   }
+  },
+  "cloud": {
+   "card_mock_external": {
+    "title": "Mock an external API my service depends on",
+    "description": "Describe the API and Postman AI will create the mock for you."
+   },
+   "card_generate_new": {
+    "title": "An end-to-end checkout service",
+    "description": "Sketch a brand-new service end-to-end with endpoints, schemas, and realistic example data."
+   }
+  }
+ },
+ "mock_auth": {
+  "public_label": "Make this mock public",
+  "summary": "Private by default: only workspace members or a valid <code>x-api-key</code> can call it. Make it public so anyone with the URL can."
+ },
+ "deploy_modal": {
+  "title": "Deploy config",
+  "push_and_deploy_title": "Push mock to cloud and deploy",
+  "redeploy_title": "Redeploy Mock Server",
+  "name_label": "Name",
+  "name_placeholder": "Enter a name for the deployed mock server",
+  "url_label": "URL",
+  "public_label": "Allow public access",
+  "access_helper": "Private mocks can be accessed using a valid <code>x-api-key</code> header.",
+  "sessions_label": "Enable sessions",
+  "sessions_helper": "Each caller gets an isolated copy of the mock state, identified by the <code>x-mock-session</code> header or <code>pm_mock_session</code> cookie.",
+  "auto_deploy_label": "Auto deploy when mock changes",
+  "auto_deploy_helper": "Redeploy mock server when mock changes.",
+  "deploy_button": "Deploy",
+  "redeploy_button": "Redeploy",
+  "cancel_button": "Cancel"
+ },
+ "errors": {
+  "unsupported_input": "Couldn't recognize this file as a collection or spec.",
+  "unsupported_spec_version": "This API spec version is not supported yet.",
+  "name_required": "Mock name is required.",
+  "local_port_invalid": "Enter a port from 1 to 65535.",
+  "slug_invalid": "Use lowercase letters, numbers, or hyphens. Must start with a letter or number.",
+  "source_picker_required_spec": "Select an OpenAPI spec or drop a file to continue.",
+  "source_picker_required_collection": "Select a collection or drop a file to continue.",
+  "source_picker_required_existing": "Select a code mock to continue.",
+  "cloud_spec_fetch_failed": "Couldn't load that spec from this workspace. Try again in a moment.",
+  "cloud_collection_fetch_failed": "Couldn't load that collection from this workspace. Try again in a moment."
+ }
+}

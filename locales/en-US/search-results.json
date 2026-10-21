@@ -1,0 +1,142 @@
+{
+ "metadata": {
+  "title": "Search"
+ },
+ "title": "Search results",
+ "sidebar_sections": {
+  "tags": {
+   "title": "Tag"
+  },
+  "title": "Filter by",
+  "workspace_type": {
+   "title": "Visibility"
+  },
+  "private_network": {
+   "title": "Private API Network only",
+   "label": "Private API Network"
+  },
+  "type": {
+   "title": "Type",
+   "all": "All"
+  }
+ },
+ "error_sections": {
+  "no_results": {
+   "title": "No results found",
+   "text": "Try checking your spelling, adjusting your filters, or trying a different search term.",
+   "sub_text": "Note: If you are looking for matches within schema files, switch to <1><0>search within APIs</0></1>"
+  },
+  "server_error": {
+   "heading": "Unable to search",
+   "text": "We are having trouble searching right now."
+  },
+  "user_offline": {
+   "heading": "Unable to search as you are offline",
+   "text": "You need to be online to carry out a search"
+  },
+  "query_too_long": {
+   "heading": "Search query too long",
+   "text": "Try searching with a shorter query"
+  },
+  "empty_state": {
+   "heading": "Discover elements",
+   "text": "Add a search query or filter by tags to see results."
+  }
+ },
+ "scope": {
+  "default_title": "Personal space",
+  "team_title": "Team {teamName}"
+ },
+ "sort_label": "Sort by",
+ "spell_corrections": {
+  "no_results_text": "No results found for \"{query}\"",
+  "sub_texts": {
+   "did_you_mean": "Did you mean to search for <1><0>{suggestion}</0></1>?",
+   "base_subtext": "Showing {count, select, lessThanTen {< 10} other {{count}}} results for \"{correctedQueryText}\" instead",
+   "subtext_with_type": "Showing {count, select, lessThanTen {< 10} other {{count}}} {type} for \"{correctedQueryText}\" instead",
+   "subtext_for_team_scope": "Showing {count, select, lessThanTen {< 10} other {{count}}} results for \"{correctedQueryText}\" in your {teamName} instead",
+   "subtext_for_public_scope": "Showing {count, select, lessThanTen {< 10} other {{count}}} results for \"{correctedQueryText}\" in the {scope} instead",
+   "subtext_for_team_scope_with_type": "Showing {count, select, lessThanTen {< 10} other {{count}}} {type} for \"{correctedQueryText}\" in your {teamName} instead",
+   "subtext_for_public_scope_with_type": "Showing {count, select, lessThanTen {< 10} other {{count}}} {type} for \"{correctedQueryText}\" in the {scope} instead"
+  }
+ },
+ "sort_options": {
+  "relevance": "Most relevant",
+  "views": "Most views",
+  "updated_at": "Most recent"
+ },
+ "sub_text": {
+  "results_found": "{result}: {count, select, lessThanTen {< 10} other {{count}}} results found",
+  "results_found_with_type": "{result}: {count, select, lessThanTen {< 10} other {{count}}} {type}",
+  "results_found_with_tag": "{result}: {count, select, lessThanTen {< 10} other {{count}}} results found for \"{tag}\"",
+  "results_found_with_tag_and_type": "{result}: {count, select, lessThanTen {< 10} other {{count}}} {type} found for \"{tag}\""
+ },
+ "filter_button_text": "Filter",
+ "sidebar": {
+  "need_help": {
+   "title": "Need help with a product feature?",
+   "subtitle": "Search in Postman Learning Center"
+  }
+ },
+ "tag_sub_heading": {
+  "clear_all_button": "Clear all"
+ },
+ "results": {
+  "item": {
+   "entity_type": {
+    "folder": "Folder",
+    "api": "API",
+    "workspace": "Workspace",
+    "team": "Team",
+    "flow": "Flow",
+    "collection": "Collection",
+    "request": "Request",
+    "environment": "Environment",
+    "document": "Document",
+    "mock": "Code Mock"
+   },
+   "featured_label": "Featured",
+   "trending_label": "Trending",
+   "showcased_in_label": "Showcased in:",
+   "meta_info": {
+    "last_updated": "Last Updated: ",
+    "collections": "Collections: ",
+    "apis": "APIs: ",
+    "views": "Views: ",
+    "workspaces": "Workspaces: ",
+    "forks": "Forks: ",
+    "watchers": "Watchers: ",
+    "grpc_request": "gRPC Request",
+    "graphql_request": "GraphQL Request",
+    "mqtt_request": "MQTT Request",
+    "llm_request": "AI Request",
+    "ws_raw_request": "WebSocket Request",
+    "ws_socket_io_request": "Socket.IO Request",
+    "mcp_request": "MCP Request",
+    "http_request": "HTTP Request",
+    "publisher_name": "By <1><0>{publisherName}</0></1>",
+    "verified_tooltip": "Verified",
+    "workspace_name": "In <1><0><0>{workspaceName}</0></0></1>"
+   },
+   "visibility_icon_tooltip": {
+    "public": "Public {content}",
+    "private": "Private {content}",
+    "team": "Team {content}",
+    "personal": "Personal {content}",
+    "partner": "Partner {content}",
+    "entity_type": {
+     "folder": "folder",
+     "api": "API",
+     "workspace": "workspace",
+     "team": "team",
+     "flow": "flow",
+     "collection": "collection",
+     "request": "request",
+     "environment": "environment",
+     "document": "document",
+     "mock": "code mock"
+    }
+   }
+  }
+ }
+}

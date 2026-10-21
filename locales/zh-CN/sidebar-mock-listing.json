@@ -1,0 +1,46 @@
+{
+  "error": {
+    "something_went_wrong": "出了点问题",
+    "unexpected_error": "加载模拟服务器时发生意外错误，请重试。",
+    "try_again": "重试"
+  },
+  "mock_server": {
+    "message": "模拟服务器让你无需真正搭建后端，就能模拟集合中的端点及其对应的响应。",
+    "create_mock_server": "创建模拟服务器",
+    "create_classic_mock_server": "经典模拟服务器",
+    "create_code_mock": "模拟",
+    "offline_error": "恢复联网后即可执行此操作。",
+    "permission_error": "你没有执行此操作的权限。",
+    "not_signed_error": "你需要一个账号才能继续探索 Postman。",
+    "no_team_error": "你需要登录团队才能执行此操作",
+    "no_mock_server": "你还没有任何模拟服务器。",
+    "inactive_mock": "无法对已停用的模拟服务器执行此操作。",
+    "offline": "你已离线",
+    "request_access": "申请访问权限"
+  },
+  "filesystem": {
+    "no_mocks": "仓库中没有找到模拟",
+    "no_mocks_message": "将模拟清单文件添加到已连接仓库的 postman/mocks 文件夹中，即可在这里看到它们。",
+    "search_placeholder": "搜索模拟",
+    "empty_state": {
+      "title": "创建你的第一个模拟",
+      "description": "直接在文件系统中模拟端点和响应。本地模拟存放在你的代码库中，并与 Git 工作流保持同步。",
+      "learn_more": "了解更多",
+      "create": "创建"
+    }
+  },
+  "sidebar_mock_list_item": {
+    "read_only": "只读",
+    "copy_url": "复制模拟 URL",
+    "copy_success": "模拟 URL 已复制",
+    "rename": "重命名",
+    "manage_roles": "管理角色",
+    "move": "移动",
+    "delete": "删除",
+    "open_new_tab": "在新标签页中打开"
+  },
+  "sidebar_no_results_found": {
+    "text": "未找到“{searchQuery}”的结果",
+    "message": "请换个关键词重试，并检查拼写。"
+  }
+}

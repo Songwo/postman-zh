@@ -1,0 +1,10 @@
+{
+ "no_changed_files": "No changed files",
+ "no_changed_files_description": "Your git directory is clean",
+ "commit_message_placeholder": "Commit message",
+ "tree_aria_label": "Unstaged files",
+ "commit_button": "Commit",
+ "commit_button_tooltip": "Commit all unstaged files and reload list",
+ "commit_button_tooltip_loading": "Committing…",
+ "git_status_aria_label": "Git status: {status}"
+}

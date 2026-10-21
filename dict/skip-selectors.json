@@ -1,0 +1,12 @@
+[
+  "[data-testid=\"entity-tab-header-breadcrumb\"]",
+  "[data-testid=\"aether-breadcrumb-portal-item__list\"]",
+  ".entity-tab-header__name",
+  ".documentation-body h1",
+  ".documentation-body h2",
+  ".documentation-body h3",
+  ".documentation-body h4",
+  ".documentation-body p",
+  ".documentation-body li",
+  "[data-testid=\"search-bar-content-text\"] mark"
+]

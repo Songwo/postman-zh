@@ -1,0 +1,216 @@
+{
+ "info_pane_mock_listing": {
+  "header": {
+   "text": "Mock servers",
+   "new_button": "New",
+   "tooltip": "Create mock server"
+  },
+  "list": {
+   "connection_error_state": {
+    "text": "Unable to load mock servers"
+   },
+   "error_fetching_state": {
+    "text": "There was an unexpected error while loading mock servers. Please try again.",
+    "button": "Try again"
+   },
+   "no_mock_state": {
+    "collection_text": "There are no mock servers created for this collection.",
+    "environment_text": "No mock server uses this environment."
+   },
+   "default_state": {
+    "show_more": "Show {mocksLength} more",
+    "show_less": "Show less"
+   }
+  }
+ },
+ "constants": {
+  "error": {
+   "permission_error": "You don't have permission to take this action.",
+   "offline_error": "You can take this action once you’re back online."
+  }
+ },
+ "delete_confirmation": {
+  "delete": "Delete",
+  "deleting": "Deleting",
+  "toast_delete_confirmation": "Mock server deleted",
+  "toast_delete_error": "Unable to delete the mock"
+ },
+ "local_mock_logs_panel": {
+  "state_tab_count": "State ({count})",
+  "logs_tab_count": "Logs ({count})",
+  "logs_load_failed": "Failed to load logs",
+  "logs_waiting_title": "Waiting for requests…",
+  "logs_waiting_subtitle": "Send requests to the mock server to see their logs",
+  "logs_no_match": "No matching logs",
+  "logs_no_match_subtitle": "Try adjusting the filters",
+  "logs_retry": "Retry",
+  "logs_start_to_run_title": "No logs yet",
+  "logs_start_to_run": "Start mock server to see logs here",
+  "local_run_desktop_only_title": "Desktop app only",
+  "local_run_desktop_only_description": "Local runs aren't available in the browser. Use the Postman desktop app, or deploy as a Mock Server."
+ },
+ "mock_start_history": {
+  "last_n": "Last {count}",
+  "source_app": "App",
+  "source_cli": "CLI",
+  "source_cli_filter": "Postman CLI",
+  "source_ci": "CI",
+  "you": "You",
+  "avatar_aria": "Started by {who}",
+  "avatar_unknown": "Unknown starter",
+  "trigger_label": "{when} · {source}",
+  "started_by_you": "Started by you · {when}",
+  "started_by_other": "Started by {who} · {when}",
+  "cli_by_you": "postman mock run · by you · {when}",
+  "cli_by_other": "postman mock run · by {who} · {when}",
+  "ci_meta": "{who} · {when}",
+  "yesterday": "Yesterday, {time}",
+  "other_day": "{date}, {time}",
+  "calls": "{count, plural, one {# call} other {# calls}}",
+  "running_duration": "running {duration}",
+  "ran_duration": "ran {duration}",
+  "placeholder": "History",
+  "unnamed_mock": "Mock",
+  "previous_starts": "Previous starts",
+  "tab_count": "Previous starts {count}",
+  "history": "History",
+  "open_aria": "Open previous starts",
+  "open_history_aria": "Open history",
+  "select_aria": "Select a previous start to view its logs and state",
+  "last_n_starts": "Last {count} starts",
+  "filter_count_aria": "Number of starts to show",
+  "filter_started_by": "Started by",
+  "filter_started_by_aria": "Filter starts by who started them",
+  "filter_status": "Status",
+  "filter_status_aria": "Filter starts by status",
+  "filter_source": "Source",
+  "filter_source_aria": "Filter starts by source",
+  "search_starts": "Search starts",
+  "col_start_time": "Start time",
+  "col_source": "Source",
+  "col_started_by": "Started by",
+  "col_duration": "Duration",
+  "col_calls": "Calls",
+  "col_errors": "Errors",
+  "col_status": "Status",
+  "empty_title": "No starts yet",
+  "list_load_failed": "Couldn't load previous starts",
+  "duration_h": "{count}h",
+  "duration_m": "{count}m",
+  "duration_s": "{count}s",
+  "entity_missing_mock": "This mock is no longer available",
+  "entity_missing_simulation": "This simulation is no longer available",
+  "status_running": "Running",
+  "status_stopped": "Stopped",
+  "refresh": "Refresh",
+  "kept_for_days": "Kept for {count} days",
+  "history_last_days": "History for last {count} days",
+  "identity_source": "Source",
+  "identity_by": "By",
+  "identity_started": "Started",
+  "identity_ended": "Ended",
+  "identity_duration": "Duration",
+  "identity_calls": "Calls",
+  "log_col_time": "Time",
+  "log_col_method": "Method",
+  "log_col_path": "Path",
+  "log_col_status": "Status",
+  "log_col_latency": "Latency",
+  "log_col_example": "Matched example",
+  "log_col_called_by": "Called by",
+  "logs_load_failed": "Failed to load logs",
+  "mock_start_load_failed": "This mock start could not be loaded.",
+  "simulation_start_load_failed": "This simulation start could not be loaded.",
+  "mock_start_entity": "Mock start",
+  "simulation_start_entity": "Simulation start",
+  "unnamed_simulation": "Simulation",
+  "start_tab_stale": "This tab is out of date. Close it and reopen the start from history.",
+  "previous_start": "Previous start",
+  "previous_start_with_id": "Previous start · {startId}",
+  "open_mock": "Open mock",
+  "open_simulation": "Open simulation",
+  "simulation_started": "Simulation started",
+  "simulation_stopped": "Simulation stopped",
+  "back_to_logs": "Back to logs"
+ },
+ "mock_filter_bar": {
+  "filter_label": "Filter",
+  "session_placeholder": "Session",
+  "session_all_sessions": "All sessions",
+  "caller_placeholder": "Caller",
+  "filter_by_header": "Header",
+  "session_footer": "Use the <code>pm_mock_session</code> cookie or <code>x-mock-session</code> header to scope logs and state to a session.",
+  "session_disabled_value": "Default session",
+  "session_disabled_hint": "Sessions are turned off for this mock, so all traffic shares one state. Enable sessions in the mock's settings to scope logs and state per caller.",
+  "local_server_live": "Local server running",
+  "session_delete": "Delete session"
+ },
+ "caller_identity": {
+  "title_private": "Private mock",
+  "title_public": "Public mock",
+  "body_private": "Use a valid <code>x-api-key</code> or access from Postman to use this private mock.",
+  "body_public": "This mock can be accessed by anyone.",
+  "badge_aria_private": "Private mock: callers are verified. Open caller identity details.",
+  "badge_aria_public": "Public mock: callers aren't verified. Open caller identity details."
+ },
+ "local_mock_state_panel": {
+  "key_list": {
+   "search_placeholder": "Filter keys…",
+   "no_keys": "No state keys",
+   "no_matching_keys": "No keys match"
+  },
+  "value_view": {
+   "tree": "Tree",
+   "raw": "Raw"
+  },
+  "toolbar": {
+   "session_label": "Session",
+   "session_info_tooltip": "Each session is a separate copy of pm.state. Anyone with mock access can view any session.",
+   "large_values_truncated": "Large values truncated",
+   "clear_session_state": "Clear session data",
+   "delete_logs_and_state": "Delete logs and state",
+   "delete_logs_and_state_tooltip": "Delete all logs and pm.state keys",
+   "delete_session": "Delete session"
+  },
+  "messages": {
+   "loading_state": "Loading state…",
+   "failed_to_read": "Failed to read state",
+   "refresh_failed": "Couldn't refresh — showing the last read.",
+   "no_state_yet": "No states yet",
+   "state_appears_here": "Use <pmState>pm.state</pmState> to persist data in mocks. <docsLink>Learn about states.</docsLink>",
+   "start_mock_to_write": "Start the mock and write to pm.state.",
+   "shared_empty": "Shared state is empty",
+   "shared_empty_subtitle": "State from callers without a session shows up here.",
+   "your_session_empty": "Your session is empty",
+   "session_empty": "This session is empty",
+   "session_empty_subtitle": "Send a request to this session to add state.",
+   "isolated_no_session": "Send a request to start your session",
+   "isolated_no_session_subtitle": "This mock is Isolated, so your first request gets its own session (shown as \"Yours\")."
+  },
+  "toasts": {
+   "key_reset": "Reset \"{key}\"",
+   "reset_failed": "Failed to reset state key",
+   "session_cleared": "Session state cleared",
+   "logs_and_state_deleted": "Logs and state deleted",
+   "clear_failed": "Failed to clear state",
+   "session_deleted": "Session deleted",
+   "session_delete_failed": "Failed to delete session"
+  },
+  "modals": {
+   "reset_key_title": "Reset state key",
+   "reset_key_body_prefix": "This will permanently delete ",
+   "reset_key_body_suffix": " from pm.state. This cannot be undone.",
+   "cancel": "Cancel",
+   "reset": "Reset",
+   "clear_session_title": "Clear session data",
+   "delete_logs_and_state_title": "Delete logs and state",
+   "clear_session_body_prefix": "This will permanently delete all keys in ",
+   "clear_session_body_suffix": " and can’t be undone.",
+   "delete_logs_and_state_body": "This will permanently delete all logs and pm.state keys and can’t be undone.",
+   "delete_session_title": "Delete session",
+   "delete_session_confirm": "Delete session",
+   "delete_session_body_prefix": "This will permanently delete ",
+   "delete_session_body_suffix": ", including all its logs and data, and can’t be undone."
+  }
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "error": {
+  "title": "Please refresh",
+  "description": "Could not fetch data of all user groups."
+ },
+ "user_group_dynamic_content": {
+  "user_group_not_allowed": {
+   "title": "Upgrade your plan to use groups",
+   "description": "<Para>Only teams on our <Strong>Enterprise</Strong> plan can use groups to efficiently manage access across the team and easily onboard new members. Learn more about <Link><LinkText>groups</LinkText></Link></Para>",
+   "primary_button": "Contact sales",
+   "secondary_button": "View plan"
+  },
+  "heading": "Groups",
+  "create_group_button": "Create group",
+  "no_group_creation_permission": "You do not have permission to create groups."
+ },
+ "manage_groups": {
+  "no_group": {
+   "title": "No groups created yet",
+   "description": "<Para>Groups allow your team to efficiently manage access across team members and easily onboard new members. Learn more about <Link><LinkText>groups</LinkText></Link></Para>",
+   "primary_button": "Create group"
+  },
+  "no_group_found": " No groups found",
+  "no_group_found_matching_query": "No groups found matching '{query}'"
+ },
+ "edit_user_group": {
+  "back_link_label": "Groups",
+  "breadcrumb_aria_label": "Edit group breadcrumb"
+ },
+ "desktop_view_group_actions": {
+  "tooltip": {
+   "can_not_update_user_group": "You do not have permission to add members to the group",
+   "default": "Add group members"
+  },
+  "view_group_details": "View group details"
+ },
+ "user_group": {
+  "member_text": "{count, plural, =0 {No members} =1 {# member} other {# members}}",
+  "no_summary": "No description added",
+  "remaining_part": "{count, plural, =1 {# other} other {# others}}",
+  "no_role_assigned": "No role assigned",
+  "single_role": "{role} role",
+  "multiple_roles": "{roles} roles"
+ },
+ "add_user_in_group_modal": {
+  "success_msg": "Group members added",
+  "error": {
+   "title": "Unable to add members to this group",
+   "description": "Something went wrong. Please try again."
+  },
+  "heading": "Add members to {groupName}",
+  "subheading": "Members you add will be assigned all roles from this group.",
+  "search_label": "Search by name or email address",
+  "cancel_button": "Cancel",
+  "add_members_button": "Add members"
+ },
+ "add_users": {
+  "added_to_group": "Added to group",
+  "search_input_placeholder": "e.g. cooper, emma@yourcompany.com"
+ },
+ "group_actions": {
+  "role": {
+   "placeholder": "Role",
+   "selected_text": "{count, plural, =1 {# role} other {# roles}}"
+  },
+  "member": {
+   "empty_state_message": "No users found",
+   "placeholder": "Member",
+   "selected_text": "{count, plural, =1 {# member} other {# members}}"
+  },
+  "search_text_placeholder": "Search by group name"
+ },
+ "manage_roles": {
+  "label": "Roles",
+  "helper_text": "Select roles you want to assign to the members of this group.",
+  "tool_tips": {
+   "non_admin": "Only Admins and Super Admins can edit roles on groups.",
+   "manager": "Groups with managers can only be assigned the developer role.",
+   "non_super_admin": "You do not have permissions to assign this user role."
+  }
+ }
+}

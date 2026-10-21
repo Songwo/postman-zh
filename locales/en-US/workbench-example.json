@@ -1,0 +1,828 @@
+{
+ "editor": {
+  "fork_recommendation_tooltip": {
+   "title": "Create a fork to save changes",
+   "msg": "You don't have permission to make changes to this collection. Fork the collection to your workspace to save changes.",
+   "action": "Create Fork & Save"
+  },
+  "save": {
+   "text": {
+    "save": "Save",
+    "saving": "Saving..."
+   },
+   "tooltip": {
+    "title": "Create a fork to save changes",
+    "response_limit_exceeded": "Response exceeded the 5 MB limit",
+    "delete": "Delete example",
+    "no_changes": "No new changes to save.",
+    "save_response": "Save response",
+    "save_response_git": "Save changes to Postman & Github"
+   }
+  },
+  "header": {
+   "placeholder": "Example Name"
+  },
+  "send_button_text": "Try",
+  "tabs": {
+   "params": "Params",
+   "headers": "Headers",
+   "body": "Body"
+  },
+  "content_pane": {
+   "header": {
+    "actions": {
+     "share": {
+      "label": "Share",
+      "tooltip": "Share example"
+     },
+     "delete": "Delete",
+     "filter": {
+      "tooltip": "Filter",
+      "input": {
+       "json_placeholder": "Filter using JSONPath: $.story",
+       "xml_placeholder": "Filter using XPath: /story"
+      },
+      "error": {
+       "syntax_error": {
+        "heading": "Syntax error",
+        "desc": "Invalid syntax input"
+       },
+       "no_match_error": {
+        "heading": "No match found",
+        "desc": "Try filtering on a different key"
+       },
+       "filtered_data_size_unsupported_error": "Filtered data exceeds 50 MB. Try refining the filter.",
+       "default_error": "An error occurred in filtering the response"
+      }
+     }
+    }
+   }
+  }
+ },
+ "response": {
+  "network_meta": {
+   "aria_label_unavailable": "Network information unavailable for XHR requests.",
+   "aria_label_connection": "Network connection {status}.",
+   "details_unavailable_tooltip_heading": "Network details unavailable",
+   "details_unavailable_tooltip_msg": "This request was sent using the Browser agent. For detailed network information, send requests through the Postman Desktop agent.",
+   "heading": "Network",
+   "agent": "Agent",
+   "http_version": "HTTP Version",
+   "local_address": "Local Address",
+   "remote_address": "Remote Address",
+   "tls_protocol": "TLS Protocol",
+   "cipher": "Cipher Name",
+   "certificate": "Certificate CN",
+   "issuer": "Issuer CN",
+   "valid": "Valid Until",
+   "certificate_warning": "Certificate verification failed",
+   "http_status_codes": {
+    "100": {
+     "detail": "Everything alright. Proceed with the request."
+    },
+    "101": {
+     "detail": "Request to 'upgrade' the connection received. Switching protocol."
+    },
+    "102": {
+     "detail": "Processing the response. No response available yet."
+    },
+    "103": {
+     "detail": "This is an indication for the client to start pre-loading resources while the server is preparing a response."
+    },
+    "122": {
+     "detail": "This is a non-standard IE7-only code which means the URI is longer than a maximum of 2083 characters."
+    },
+    "200": {
+     "detail": "Request successful. The server has responded as required."
+    },
+    "201": {
+     "detail": "A new resource was created successfully."
+    },
+    "202": {
+     "detail": "The request has been received but has not yet been acted upon."
+    },
+    "203": {
+     "detail": "The returned metadata is not exactly the same as is available from the origin server, but is collected from a local or a third-party copy."
+    },
+    "204": {
+     "detail": "There is no content to send for this request except for headers."
+    },
+    "205": {
+     "detail": "Reset the document that sent this request."
+    },
+    "206": {
+     "detail": "Part of the resource is received as per the 'Range' header."
+    },
+    "207": {
+     "detail": "This is a situation that calls for multiple status codes. One isn't enough."
+    },
+    "208": {
+     "detail": "Used inside a <code>dav:propstat</code> response element to avoid repeatedly enumerating the internal members of multiple bindings to the same collection."
+    },
+    "226": {
+     "detail": "The server has fulfilled a <code>GET</code> request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance."
+    },
+    "300": {
+     "detail": "The request has more than one possible response."
+    },
+    "301": {
+     "detail": "The URL of the requested resource has been changed permanently and you should have received the new URL in the response."
+    },
+    "302": {
+     "detail": "The URL of requested resource has been changed 'for now'. So, keep using the current URL for future requests."
+    },
+    "303": {
+     "detail": "Redirected to another URL for the requested resource."
+    },
+    "304": {
+     "detail": "The response has not been modified. Continue using the same cached version of the response."
+    },
+    "305": {
+     "detail": "Many HTTP clients (such as Mozilla and Internet Explorer) do not correctly handle responses with this status code, primarily for security reasons."
+    },
+    "306": {
+     "detail": "No longer used. Originally meant \"Subsequent requests should use the specified proxy.\""
+    },
+    "307": {
+     "detail": "The resource is available temporarily at a different URL. Do use the same request method while making a request to the new URL."
+    },
+    "308": {
+     "detail": "The resource has been moved permanently to a different URL. Do use the same request method while making a request to the new URL."
+    },
+    "400": {
+     "detail": "The server could not understand the request. Maybe a bad syntax?"
+    },
+    "401": {
+     "detail": "The request is unauthenticated. <button>Pass the correct auth credentials</button>."
+    },
+    "402": {
+     "detail": "Access to the requested resource requires payment."
+    },
+    "403": {
+     "detail": "Access to the resource is prohibited. <button>Try with different auth credentials</button>?"
+    },
+    "404": {
+     "detail": "Requested resource could not be found."
+    },
+    "405": {
+     "detail": "Use of the request method is not allowed on the resource."
+    },
+    "406": {
+     "detail": "The server could not find any relevant content after performing 'server-driven content negotiation'."
+    },
+    "407": {
+     "detail": "The request is unauthenticated. <button>Configure Proxy</button>."
+    },
+    "408": {
+     "detail": "It was taking too long to process the request. So the connection is terminated."
+    },
+    "409": {
+     "detail": "The request conflicts with the current state of the server. So, it could not be processed."
+    },
+    "410": {
+     "detail": "Requested content is permanently deleted from the server."
+    },
+    "411": {
+     "detail": "Request could not be processed because 'content-length' header is required but not passed."
+    },
+    "412": {
+     "detail": "The server doesn't meet the criteria set in request header."
+    },
+    "413": {
+     "detail": "Request is too large for the server to process."
+    },
+    "414": {
+     "detail": "That's too long a URI and the server is not having it."
+    },
+    "415": {
+     "detail": "The media format of the requested data is not supported by the server."
+    },
+    "416": {
+     "detail": "The range specified by the 'Range' header in the request cannot be fulfilled. The range might also be outside the targeted URI's data size."
+    },
+    "417": {
+     "detail": "The expectation indicated by the 'Expect' request header field cannot be fulfilled."
+    },
+    "418": {
+     "detail": "And I refuse to brew coffee!"
+    },
+    "419": {
+     "detail": "The Cross-Site Request Forgery (CSRF) validation has failed."
+    },
+    "420": {
+     "detail": "This is a 4xx error. There must be something odd with the request."
+    },
+    "421": {
+     "detail": "The request was directed at a server that is unable to send back a response."
+    },
+    "422": {
+     "detail": "The request was well-formed but had semantic errors."
+    },
+    "423": {
+     "detail": "The requested resource is locked."
+    },
+    "424": {
+     "detail": "The request failed due to failure of a previous request."
+    },
+    "425": {
+     "detail": "The server is unwilling to risk processing a request that might be replayed."
+    },
+    "426": {
+     "detail": "Could not process the request with the current protocol. Look for the 'Upgrade' response header to know the supported protocol(s)."
+    },
+    "428": {
+     "detail": "The origin server requires the request to be conditional in order to prevent a conflict."
+    },
+    "429": {
+     "detail": "Request could not be processed because too many requests have been sent in a given time."
+    },
+    "431": {
+     "detail": "Headers are too large for the server to process."
+    },
+    "444": {
+     "detail": "An nginx HTTP server extension. The server returns no information to the client and closes the connection (useful as a deterrent for malware)."
+    },
+    "449": {
+     "detail": "The request couldn't be processed because it doesn't contain the required information."
+    },
+    "450": {
+     "detail": "Parental controls block access to the resource."
+    },
+    "451": {
+     "detail": "Requested resources cannot legally be provided, e.g. a web page censored by a government."
+    },
+    "460": {
+     "detail": "The connection was closed before the timeout period elapsed."
+    },
+    "463": {
+     "detail": "The 'X-Forwarded-For' header contains too many IP addresses."
+    },
+    "464": {
+     "detail": "HTTP request protocol is incompatible."
+    },
+    "494": {
+     "detail": "Either the request or some headers are too large to be processed."
+    },
+    "495": {
+     "detail": "The client certificate couldn't be verified. <button>Configure the correct SSL Certificate</button>."
+    },
+    "496": {
+     "detail": "Missing client certificate. <button>Configure the correct SSL Certificate</button>."
+    },
+    "497": {
+     "detail": "An unsecured (HTTP) request was sent to a secured (HTTPS) port."
+    },
+    "498": {
+     "detail": "Auth token is invalid. <button>Pass the correct auth token</button>."
+    },
+    "499": {
+     "detail": "The connection was closed before the server could complete the task."
+    },
+    "500": {
+     "detail": "The server has encountered a situation it does not know how to handle."
+    },
+    "501": {
+     "detail": "The request method is not supported by the server and thus could not be handled."
+    },
+    "502": {
+     "detail": "The server, working as a gateway got an invalid response."
+    },
+    "503": {
+     "detail": "The server is down (maybe for maintenance or maybe overloaded)."
+    },
+    "504": {
+     "detail": "The server, working as a gateway did not get a response in time."
+    },
+    "505": {
+     "detail": "The HTTP version used in the request is not supported by the server."
+    },
+    "506": {
+     "detail": "The server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process."
+    },
+    "507": {
+     "detail": "The method could not be performed on the resource because the server is unable to store the representation needed to successfully complete the request."
+    },
+    "508": {
+     "detail": "The server detected an infinite loop while processing the request."
+    },
+    "509": {
+     "detail": "The web hosting service has exceeded the available bandwidth."
+    },
+    "510": {
+     "detail": "Further extensions to the request are required for the server to fulfill it."
+    },
+    "511": {
+     "detail": "The client needs to authenticate to gain network access."
+    },
+    "520": {
+     "detail": "Something's wrong and no idea what."
+    },
+    "521": {
+     "detail": "Connection to cloudflare was successful, but could not connect to the origin server."
+    },
+    "522": {
+     "detail": "Connection timed out before Cloudflare could connect to the origin server."
+    },
+    "523": {
+     "detail": "Could not reach the origin server."
+    },
+    "524": {
+     "detail": "Connection timed out before the origin server could complete the request."
+    },
+    "525": {
+     "detail": "SSL handshake failed with the origin server."
+    },
+    "526": {
+     "detail": "Connection could not be established with origin server due to invalid SSL certificate."
+    },
+    "527": {
+     "detail": "There's an error between Cloudflare and origin's railgun server."
+    },
+    "529": {
+     "detail": "Could not process the request because the server is overloaded."
+    },
+    "530": {
+     "detail": "Could not connect to the server."
+    },
+    "561": {
+     "detail": "The identity Provider (IdP) returned an error during the authentication process."
+    },
+    "598": {
+     "detail": "There has been a network read timeout behind the proxy to a HTTP client in front of the proxy."
+    },
+    "599": {
+     "detail": "There has been a connection timeout behind the proxy to a HTTP client in front of the proxy."
+    },
+    "1XX": {
+     "detail": "This is a 1xx response. The response should carry some information."
+    },
+    "2XX": {
+     "detail": "This is a 2xx response, so everything must be alright."
+    },
+    "3XX": {
+     "detail": "This is a 3xx response. The response should direct you somewhere else."
+    },
+    "4XX": {
+     "detail": "This is a 4xx error. There must be something odd with the request."
+    },
+    "5XX": {
+     "detail": "This is a 5xx response. Something's not right with the server."
+    }
+   }
+  },
+  "status_meta_label": "Status:",
+  "status_meta": {
+   "aria_label": "Response status: {status} ({code})"
+  },
+  "timing_meta": {
+   "label": "Time:",
+   "phase_cached": "Cache",
+   "tooltip_row": {
+    "event": "EVENT",
+    "event_row_value": "TIME",
+    "prepare": "Prepare",
+    "wait": "Socket Initialization",
+    "dns": "DNS Lookup",
+    "tcp": "TCP Handshake",
+    "secure_handshake": "SSL Handshake",
+    "first_byte": "Waiting (TTFB)",
+    "download": "Download",
+    "process": "Process",
+    "total": "Total"
+   },
+   "unavailable_tooltip": {
+    "title": "Response time unavailable",
+    "msg": "For a full breakdown of the response time, send requests through the Postman Desktop Agent."
+   },
+   "aria_label": "Response time: {time}"
+  },
+  "perf_test": {
+   "load_test_cta": "Load test",
+   "run_cta": "Run performance test",
+   "dismiss": "Not now",
+   "nudge": "See how this request holds up under load.",
+   "create_error": "Couldn't set up a collection to run the performance test. Try again."
+  },
+  "size_meta": {
+   "label": "Size:",
+   "tooltip": {
+    "title": "Response Size",
+    "rows": {
+     "body": "Body",
+     "headers": "Headers",
+     "uncompressed": "Uncompressed"
+    },
+    "xhr_agent_used": "For accurate size breakdowns, send requests through the Postman Desktop agent.",
+    "xhr_agent_not_used": "All size calculations are approximate",
+    "request_size_title": "Request Size"
+   },
+   "aria_label": "Response size: {size}"
+  },
+  "meta_actions": {
+   "cancel_response": "Cancel",
+   "save_as_example": "Save Response",
+   "view_more_tooltip": "View more actions",
+   "menu_item": {
+    "update_example": "Update example",
+    "save_response_to_file": "Save response to file",
+    "clear_response": "Clear response",
+    "add_to_jira_cloud": "Add to Jira Cloud"
+   },
+   "disable_save_response_reason": {
+    "activeSSEStream": "Close the stream to save the response.",
+    "no_permission": "You need Editor access on this collection to save an example.",
+    "media_message": "Can't save examples for media type responses.",
+    "size_exceeded": "Responses over 5 MB can't be saved as examples.",
+    "request_not_saved": "Save this request to create examples.",
+    "ongoing_request": "Loading response.",
+    "reusable_request": "This request is linked and doesn't support saving examples."
+   },
+   "disable_download_response_reason": {
+    "activeSSEStream": "Close the stream to download the response.",
+    "empty_body": "Saving response body to file requires body to not be empty.",
+    "no_permission": "You need Editor access on this collection to save an example."
+   },
+   "disable_clear_response_reason": {
+    "activeSSEStream": "Close the stream to clear the response."
+   }
+  },
+  "loading_message": "Sending request...",
+  "loading_active_env_message": "Fetching active environment and sending request",
+  "heading": "Response",
+  "empty_view_message": {
+   "without_url": "Send request to get a response",
+   "with_url": "Send request to get a response",
+   "sending_request": "Sending request...",
+   "ai_banner": {
+    "header_text": "Organize your growing collection with Postman AI",
+    "button_text": "Organize collection"
+   }
+  },
+  "error_view_message": {
+   "request": "Could not send request",
+   "response": "Could not get response",
+   "script": "There was an error in evaluating the {scriptPhase} script",
+   "troubleshoot": "Learn about troubleshooting requests",
+   "fallback": "Something went wrong"
+  },
+  "grw_1632_errors": {
+   "err_orion_localhost_request": {
+    "title": "Cloud agent error: cannot send request.",
+    "description": "When testing an API locally, you need to use the Postman Desktop Agent. You currently have a different Agent selected, which can’t send requests to the Localhost.",
+    "safari_description": "When testing an API locally, you need to use the Postman Desktop Agent. Safari doesn’t support the desktop agent. Try switching browsers."
+   },
+   "err_pm_cors": {
+    "title": "CORS error: cannot send request.",
+    "description": "The request is blocked because of the Cross-Origin Resource Sharing (CORS) policy.",
+    "safari_description": "The request is blocked because of the Cross-Origin Resource Sharing (CORS) policy. You need to use the Postman Desktop Agent. Safari doesn’t support the desktop agent. Try switching browsers."
+   },
+   "err_pm_mixed_content": {
+    "title": "Mixed content error: cannot send request.",
+    "description": "The request has been blocked because it requested an insecure HTTP resource.",
+    "safari_description": "The request has been blocked because it requested an insecure HTTP resource. You need to use the Postman Desktop Agent. Safari doesn’t support the desktop agent. Try switching browsers."
+   }
+  },
+  "errors": {
+   "default_text": "Error",
+   "message_default": "Error: {errorMessage}",
+   "action_label": "View in console",
+   "switch_agent": "Use Postman's Desktop Agent",
+   "cloud_agent": {
+    "bad_request": "Make sure the request URL, variables, and other attributes are valid.",
+    "unauth_not_reachable": "Unable to reach the Cloud Agent. Try later or select a different agent.",
+    "forbidden": "You've reached the monthly usage limit of Cloud Agent calls. Select a different agent.",
+    "rate_limit_exceeded": "Cloud Agent rate limit exceeded. Try again later or select a different agent.",
+    "internal_error": "Couldn't send this request. Select a different agent.",
+    "error_orion": {
+     "ipv6_request": "Cannot send requests to IPv6 addresses. Select a different agent.",
+     "request_abort": "Request is taking longer than 30 seconds to fulfill. Use another agent to send a request without time limitations.",
+     "request_timeout": "Request timed out",
+     "blocked_request": "Cannot send requests to reserved address. Make sure address is publicly accessible or select a different agent.",
+     "localhost_request": "Cannot send requests to localhost. Select a different agent.",
+     "enotfound": "Couldn't resolve host. Make sure the domain is publicly accessible or select a different agent.",
+     "enodata": "Couldn't resolve host. Make sure the domain is publicly accessible or select a different agent."
+    }
+   },
+   "general": {
+    "etimedout": "Request timed out",
+    "esockettimedout": "Response timed out"
+   },
+   "access_proxy": {
+    "unauthorized": "You're not authorized to use the referenced {count, plural, one {secret} other {secrets}} with current API. {count, plural, one {Ref} other {Refs}}: \"{refs}\"",
+    "unsupported_vault_type": "This proxy isn't configured for the vault type used by the referenced {count, plural, one {secret} other {secrets}}. {count, plural, one {Ref} other {Refs}}: \"{refs}\"",
+    "decrypt_failed": "Postman couldn't decrypt the referenced {count, plural, one {secret} other {secrets}}. {count, plural, one {Ref} other {Refs}}: \"{refs}\"",
+    "missing_ref": "The referenced {count, plural, one {secret} other {secrets}} couldn't be found. {count, plural, one {Ref} other {Refs}}: \"{refs}\"",
+    "resolve_error": "Couldn't resolve secrets in this request.",
+    "revoked": "Your access was revoked. Reconnect Passport and try again.",
+    "rate_limited": "Too many requests through the proxy. Please retry shortly.",
+    "origin_error": "Couldn't reach the target server.",
+    "client_cert_required": "Your certificate is missing. Re-enable Secured Access Proxy in settings.",
+    "client_cert_untrusted": "Your certificate isn't trusted by the proxy. Reconnect Passport.",
+    "client_cert_expired": "Your certificate expired. Reconnect Passport.",
+    "client_cert_identity_missing": "Your certificate is missing identity info. Reconnect Passport.",
+    "identity_revoked": "Your access was revoked.",
+    "http_unsupported": "Only HTTPS request URLs are supported. Use an https:// URL, or disable Secured Access Proxy in settings.",
+    "missing": "Certificates are missing. Enable Secured Access Proxy in settings to provision certificates.",
+    "expired": "Certificates are expired or expiring soon. Reconnect Passport.",
+    "config": "Enabled but host/port is not configured.",
+    "handshake": "mTLS handshake failed. Reconnect Passport.",
+    "open_passport_action": "Open Passport settings"
+   },
+   "cors": "The request has been blocked because of the CORS policy",
+   "mixed_content": "The request has been blocked because it requested an insecure HTTP resource",
+   "parse": {
+    "hpe_invalid_constant": "The server returned a malformed response",
+    "default_message": "Parse Error: ",
+    "hpe_invalid_header_token": {
+     "invalid_header_char": "There seems to be an invalid character in the response header value",
+     "invalid_header_token": "There seems to be an invalid character in response header key or value"
+    },
+    "hpe_invalid_content_length": {
+     "invalid_char": "There seems to be an invalid character in the \"Content-Length\" response header",
+     "empty": "The response header \"Content-Length\" can't be empty"
+    },
+    "hpe_unexpected_content_length": {
+     "chunked_encoding": "The response headers can't include \"Content-Length\" with chunked encoding",
+     "transfer_encoding": "\"Content-Length\" and \"Transfer-Encoding\" can't be present in the response headers together",
+     "duplicate": "The response has a duplicate \"Content-Length\" header"
+    }
+   },
+   "response_size_limit_exceeded": {
+    "name": "Error",
+    "message": "Maximum response size reached",
+    "action_label": "Increase response size limit"
+   }
+  },
+  "security_warning": {
+   "heading": "View security warnings ",
+   "desc": "Security warnings indicate that there are potential security risks that your API might be vulnerable to.",
+   "button_label": "Got It"
+  },
+  "viewer_tabs": {
+   "body": {
+    "label": "Body",
+    "text_viewer": {
+     "languages": {
+      "json": "JSON",
+      "xml": "XML",
+      "html": "HTML",
+      "yaml": "YAML",
+      "javascript": "JavaScript",
+      "text": "Text",
+      "auto": "Auto",
+      "base64": "Base64",
+      "hex": "Hex",
+      "raw": "Raw",
+      "markdown": "Markdown"
+     },
+     "pretty_wrap_tooltip": "Wrap Line",
+     "pretty_search_tooltip": "Search",
+     "copy_button_tooltip": "Copy",
+     "wrap_lines": "Wrap Lines",
+     "unwrap_lines": "Unwrap Lines",
+     "wrap_lines_aria_label": "Toggle line wrapping",
+     "search": "Search",
+     "search_aria_label": "Search in response",
+     "schema": "Schema",
+     "show_schema": "Show Schema",
+     "hide_schema": "Hide Schema",
+     "schema_toggle_aria_label": "Toggle schema view",
+     "copy": "Copy",
+     "copied": "Copied",
+     "copy_error": "Error",
+     "copy_response_aria_label": "Copy response",
+     "response_copied_aria_label": "Response copied to clipboard",
+     "copy_failed_aria_label": "Failed to copy response",
+     "filter_aria_label": "Toggle response filter",
+     "formatting_label": "Formatting...",
+     "preview": {
+      "error_heading": "{title} failed to load",
+      "title": "That wasn't supposed to happen.",
+      "reload_button": "<span><text>Reload the {title} </text></span><text> or try again later.</text>"
+     },
+     "visualize": {
+      "empty": {
+       "title": "Set up visualizer",
+       "desc": "<0>To visualize responses, add a pm.visualizer.set() method to the test or pre-request scripts for your request. Learn more about </0><1>visualizing responses</1><2>.</2>"
+      },
+      "refresh": {
+       "tooltip": "Refresh Visualization",
+       "error_toast": "Something went wrong while running your scripts. Check Postman Console for more info.",
+       "error_message_fallback": "Something went wrong while rendering the visualization."
+      },
+      "with_postbot": {
+       "loading_response": "Working on it...",
+       "generating_script": "Generating script with Postbot...",
+       "error_after_loaded": {
+        "text": "Couldn't generate visualization.",
+        "description": "<0>Try again with Postbot or set up a visualizer on your own using pm.visualizer.set() method in the scripts tab. Learn more about </0><1>visualizing responses</1><2>.</2>",
+        "button_label": "Try again",
+        "retrying": "Retrying..."
+       },
+       "button_label": "Visualize Response",
+       "visualizer_list": {
+        "table": "Table",
+        "linear_chart": "Linear Chart",
+        "bar_graph": "Bar Graph",
+        "trigger_prompt": "Set up with a prompt"
+       },
+       "empty": {
+        "title": "Visualize response with Postbot",
+        "desc": "<0>You can also set up the visualizer yourself by using a pm.visualizer.set() method in tests or pre-request scripts tab. Learn more about </0><1>visualizing responses</1><2>.</2>"
+       },
+       "toggle_options_aria_label": "Toggle visualization options",
+       "disabled_while_executing_tooltip": "Response Loading"
+      }
+     },
+     "tabs": {
+      "pretty": "Pretty",
+      "raw": "Raw",
+      "preview": "Preview",
+      "visualize": "Visualize"
+     }
+    },
+    "sse_stream_viewer": {
+     "comment_inspector_label": "Comment",
+     "timeline": {
+      "id_title": "ID",
+      "copy_tooltip": "Click to copy",
+      "retry_label": "Retry",
+      "size_label": "Size",
+      "notification": "New messages",
+      "empty_summary": "empty",
+      "toolbar": {
+       "input_placeholder": "Search",
+       "dropdown_button": "All messages",
+       "menu_item": "All Messages",
+       "clear_button": "Clear messages"
+      }
+     }
+    },
+    "table_viewer": {
+     "errors": {
+      "heading": "Couldn't generate table view",
+      "data_error": "Unable to parse response body to generate table. Check the response to make sure it is valid JSON or XML, or change the language setting.",
+      "response_size": "Response body is too large to generate table."
+     }
+    },
+    "preview_viewer": {
+     "errors": {
+      "heading": "Couldn't generate preview",
+      "data_error": "Unable to parse the {language} body into a preview.",
+      "response_size": "Response body is too large to generate preview."
+     }
+    }
+   },
+   "cookies": {
+    "label": "Cookies",
+    "empty_cookies_viewer": {
+     "title": "No cookies received from the server",
+     "desc": "All your cookies and their associated domains will appear here."
+    },
+    "table_headers": {
+     "name": "Name",
+     "value": "Value",
+     "domain": "Domain",
+     "path": "Path",
+     "expires": "Expires",
+     "http_only": "HttpOnly",
+     "secure": "Secure"
+    },
+    "xhr_agent_used_on_browser_empty_state": {
+     "title": "No cookies available",
+     "message": "Postman can't access cookies when sending requests through a browser. To capture and manage cookies, try the Postman Desktop Agent."
+    }
+   },
+   "headers": {
+    "label": "Headers",
+    "types": {
+     "accept_ranges": "Indicates whether the client can request part of a file instead of having to download the whole thing.",
+     "access_control_allow_credentials": "Indicates whether to expose the response to frontend JavaScript code. When used in response to a preflight request, it indicates whether or not the actual request can be made using credentials.",
+     "access_control_allow_headers": "Used in response to a preflight request. Specifies which HTTP headers can be used in the actual request.",
+     "access_control_allow_origin": "Specifies a URI that may access the response.",
+     "access_control_allow_methods": "Used in response to a preflight request. Specifies which method or methods can access the resource.",
+     "access_control_expose_headers": "Specifies which headers can be exposed as part of the response.",
+     "access_control_max_age": "Specifies the amount of time in seconds that the results of a preflight request can be cached.",
+     "access_control_request_method": "Used in preflight requests. Tells the server what HTTP method will be used in the actual request.",
+     "access_control_request_headers": "Used in preflight requests. Tells the server what HTTP headers will be used in the actual request.",
+     "age": "Indicates the number of seconds the object has been in a proxy cache.",
+     "allow": "An entity header specifying the supported methods for a resource. Must be sent in response to an HTTP 405 - Method Not Allowed response.",
+     "cache_control": "A general header specifying rules for caching in both requests and responses. Rules for length of cache are measured in seconds.",
+     "connection": "A general header specifying whether the current network connection will stay open once the current transaction finishes.",
+     "content_encoding": "An entity header indicating the encoding method applied to the entity body.",
+     "content_language": "An entity header indicating the intended language audience.",
+     "content_length": "An entity header indicating the size of the entity-body, in bytes.",
+     "content_location": "An entity header specifying the URL to use to access the resource without further content negotiation.",
+     "content_md5": "An entity header containing a Base64-encoded digest of the entity body.",
+     "content_disposition": "Indicates if the response content is displayed in the browser or as an attachment that is saved locally.",
+     "content_range": "Indicates where a partial message belongs in a full body message.",
+     "content_type": "Indicates the resource's media type.",
+     "date": "A general header containing the date and time the message was sent.",
+     "etag": "Identifies a specific resource version.",
+     "expires": "Indicates the date and time after which a response is considered stale.",
+     "last_modified": "Indicates the date and time a resource was last modified.",
+     "link": "Indicates a typed relationship with another resource, where the relation type is defined by RFC 5988.",
+     "location": "Indicates the URL to redirect a page to.",
+     "p3p": "Specifies P3P (Platform for Privacy Preference Project) policy, an obsolete protocol allowing websites to declare how they'll use information collected from users. Mostly applies to older versions of Internet Explorer and Edge.",
+     "pragma": "A general header that is implementation specific and may have various effects along the request-response chain.",
+     "proxy_authenticate": "Specifies the authentication method necessary to access a resource behind a proxy server.",
+     "refresh": "Indicates where the client should redirect to. This is a proprietary, non-standard header extension introduced by Netscape and supported by most web browsers.",
+     "retry_after": "Indicates how many seconds to wait before making a follow-up request.",
+     "server": "Contains information about how the server handles requests.",
+     "set_cookie": "Sends cookies from the server to the user agent.",
+     "status": "HTTP/2 specific pseudo-header that indicates the status of the response.",
+     "strict_transport_security": "Lets websites tell a browser that they should only be accessed via HTTPS.",
+     "trailer": "Indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding.",
+     "transfer_encoding": "Specifying the form of encoding used to transfer the entity to the user.",
+     "vary": "Determines how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one.",
+     "via": "Added by proxies and used to track message forwards, avoid request loops and identify protocol capabilities of senders.",
+     "warning": "Contains information about possible problems with the message status.",
+     "www_authenticate": "Specifies the authentication method that should be used to access a resource.",
+     "x_requested_with": "Identifies Ajax requests. Most JavaScript frameworks send this header with value of XMLHttpRequest.",
+     "x_do_not_track": "Can be used to ask a web application to not track a user. Note: this header is largely ignored by web application.",
+     "dnt": "Can be used to ask a web application to not track a user. This is Mozilla's version of the X-Do-Not-Track header (since Firefox 4.0 Beta 11). Safari and IE9 also support this header. Note: this header is largely ignored by web application.",
+     "x_forwarded_for": "Identifies the originating IP address of a client connecting to a web server through an HTTP proxy or load balancer.",
+     "x_frame_options": "Used to avoid clickjacking attacks by making sure their content is not embedded into other sites.",
+     "x_xss_protection": "Stops pages from loading when they detect reflected cross-site scripting (XSS) attacks.",
+     "x_content_type_options": "Can be used to opt out of MIME type sniffing a response away from the declared content-type.",
+     "x_forwarded_proto": "Identifies the protocol (HTTP or HTTPS) that a client used to connect to your proxy or load balancer.",
+     "x_powered_by": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application."
+    }
+   },
+   "tests": {
+    "label": "Test Results",
+    "empty_test_results": {
+     "title": "There are no tests for this request",
+     "desc": "Write a test script to automate debugging. Learn more about <1><0>writing tests</0></1>",
+     "with_postbot": {
+      "trigger_prompt": "There are no tests for this request",
+      "title": "There are no tests for this request",
+      "desc": "Write a test script to automate debugging. Learn more about <1><0>writing tests</0></1>",
+      "error_after_loaded": {
+       "text": "Couldn’t generate tests.",
+       "button_label": "Try again",
+       "error_muted_button_label": "Refresh results"
+      },
+      "secondary_button_label": "Generate Tests",
+      "tertiary_button_tooltip": "Refresh results",
+      "loading_text": "Working on it..."
+     }
+    },
+    "viewer": {
+     "tabs": {
+      "passed": "Passed",
+      "skipped": "Skipped",
+      "failed": "Failed"
+     },
+     "menu_results_label": "Result type",
+     "refresh_results_tooltip": "Refresh results",
+     "empty_message": "No tests available for the selected filter",
+     "status": {
+      "passed": "passed",
+      "skipped": "skipped",
+      "failed": "failed"
+     },
+     "with_postbot": {
+      "error_after_loaded": "Couldn’t fix the test.",
+      "button_label": "Try again",
+      "loading_text": "Working on it...",
+      "fix_test_button": "Fix test",
+      "trigger_prompt": {
+       "with_error_msg_and_name": "Fix pm.test(\"{testName}\"), which currently throws  {errorName}: {errorMessage}",
+       "with_error_msg": "Fix pm.test(\"{testName}\"), which currently throws  error: {errorMessage}",
+       "default": "Fix pm.test(\"{testName}\")"
+      }
+     },
+     "error": {
+      "with_postbot": {
+       "prefix_message": "Couldn't evaluate the test script",
+       "suffix_message": "Couldn't fix the tests.",
+       "try_again_button": "Try again",
+       "fix_script_button": "Fix script with AI",
+       "refresh_text": "Refresh results",
+       "loading_text": "Working on it..."
+      }
+     }
+    }
+   },
+   "security": "Security"
+  },
+  "schema_editor": {
+   "error_boundary": {
+    "title": "Schema editor failed to load",
+    "description": "An unexpected error occurred while loading the schema editor."
+   }
+  },
+  "example": {
+   "status_selector_label": {
+    "short": "Status",
+    "long": "Status Code"
+   },
+   "status_input_placeholder": "Enter Response Code",
+   "tabs": {
+    "body": "Body",
+    "headers": "Headers"
+   }
+  }
+ }
+}

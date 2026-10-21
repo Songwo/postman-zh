@@ -1,0 +1,278 @@
+{
+ "entity_type_icon": {
+  "label": "Webhook"
+ },
+ "webhook_workbench": {
+  "loading": "Loading webhook...",
+  "header": {
+   "title": "Webhook",
+   "rename_input_label": "Webhook name",
+   "rename_button_label": "Rename webhook",
+   "invoke_url_input_label": "Webhook invocation URL",
+   "share_button": "Share",
+   "copy_share_link": "Copy share link",
+   "copied_share_link": "Copied share link",
+   "copy_webhook_url": "Webhook URL",
+   "copy_invoke_link": "Copy invoke link",
+   "copied_invoke_link": "Copied invoke link",
+   "copy_error_toast": "Unable to copy webhook link",
+   "copy_invoke_url_success_toast": "Link copied",
+   "start_button": "Start",
+   "pause_button": "Pause",
+   "save_button": "Save",
+   "saving_button": "Saving..."
+  },
+  "empty_state": {
+   "title": "No requests received yet",
+   "description": "Send a request to the endpoint below. It will appear here once received.",
+   "events_title": "No events received",
+   "events_description": "Events received on this webhook URL will show up here.",
+   "configure_routing": "Configure webhook",
+   "receive_sample_event": "Receive a Mock Event",
+   "receive_sample_event_success_toast": "Mock event sent",
+   "receive_sample_event_error_toast": "Unable to send mock event",
+   "select_request_title": "Select a request to inspect",
+   "endpoint_label": "Listener endpoint",
+   "copy_url": "Copy URL",
+   "copied": "Copied",
+   "copy_error_toast": "Unable to copy endpoint URL",
+   "illustration_aria_label": "Webhook events preview",
+   "forwarding_section_title": "Forward with CLI"
+  },
+  "tabs": {
+   "events": "Events",
+   "routing": "Routing",
+   "scripts": "Scripts",
+   "settings": "Settings"
+  },
+  "scripts": {
+   "events": {
+    "before_request": "On event",
+    "after_response": "On response"
+   },
+   "descriptions": {
+    "before_request": "\"On event\" scripts are written in JavaScript and run when a webhook event is received.",
+    "after_response": "\"On response\" scripts are written in JavaScript and run after a static or forwarded response is received."
+   },
+   "placeholders": {
+    "before_request": "Write tests for received events in JavaScript.",
+    "after_response": "Write tests for static or forwarded response in JavaScript."
+   },
+   "tooltips": {
+    "before_request": "This script is run against each event received.",
+    "after_response": "This script is run against the static or forwarded response."
+   },
+   "saving": "Saving...",
+   "unsaved": "Unsaved changes",
+   "load_error": {
+    "title": "Unable to load scripts",
+    "description": "Something went wrong while loading webhook scripts."
+   }
+  },
+  "cli_commands": {
+   "title": "Forward events to your local server using the Postman CLI",
+   "alternate_title": "Forward with CLI",
+   "copy": "Copy",
+   "copied": "Copied"
+  },
+  "requests_sidebar": {
+   "summary": "Showing {shown} of {total}",
+   "new_requests": "New requests",
+   "loading_more": "Loading requests...",
+   "all_event_types": "All event types",
+   "clear_all_events": "Delete All",
+   "empty_event": "(empty)",
+   "delete_all_confirmation": {
+    "title": "Delete all requests?",
+    "description": "Are you sure? This can't be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete all"
+   }
+  },
+  "load_error": {
+   "title": "Unable to load webhook",
+   "description": "Something went wrong while loading this webhook.",
+   "retry": "Retry"
+  },
+  "settings": {
+   "title": "Webhook settings",
+   "description": "Settings for this webhook will be available soon.",
+   "environment": {
+    "heading": "Environment",
+    "selector_label": "Linked environment",
+    "confirmation": {
+     "title": "Change environment?",
+     "description": "This could cause your existing webhook authentication or response behaviour to stop working if it relies on environment variables.",
+     "cancel": "Cancel",
+     "confirm": "Confirm"
+    }
+   },
+   "endpoint_auth": {
+    "heading": "Endpoint Auth",
+    "description": "Require incoming requests to include matching credentials before they are accepted.",
+    "type_label": "Auth type",
+    "header_key_label": "Header key",
+    "header_key_placeholder": "Authorization",
+    "api_key_label": "API key",
+    "username_label": "Username",
+    "password_label": "Password",
+    "load_error_message": "Endpoint auth settings are unavailable.",
+    "load_error_disabled_tooltip": "Endpoint auth settings can't be edited because they failed to load."
+   }
+  },
+  "routing_settings": {
+   "add_response_target": "Add routing rule",
+   "delete_response_target": "Delete",
+   "enabled": "Enabled",
+   "disabled": "Disabled",
+   "not_available": "N/A",
+   "event_endpoint_label": "Events received on",
+   "response_target_label": "Response target",
+   "save_success_toast": "Routing rule saved",
+   "tunnel_forwarding_failure_toast": "Unable to establish local forwarding. If another Postman app or CLI instance is open, it might already be handling forwarding.",
+   "web_tunnel_forwarding_failure_toast": "Local forwarding is enabled for this webhook but is only supported on Desktop App",
+   "empty_state": {
+    "title": "No routing rules configured.",
+    "description": "Add a routing rule to get started."
+   },
+   "forward": {
+    "title": "Forward",
+    "description": "Forward events to a local host or a public URL.",
+    "endpoint_label": "Forward endpoint",
+    "endpoint_placeholder": "https://example.com/webhook",
+    "forward_locally_label": "Forward locally"
+   },
+   "respond": {
+    "title": "Respond",
+    "description": "Send a response for events received on this webhook.",
+    "status_code_label": "Status code",
+    "status_code_placeholder": "200",
+    "headers_label": "Headers",
+    "no_headers": "No headers configured.",
+    "body_label": "Body"
+   },
+   "create": {
+    "title": "Create routing rule",
+    "description": "Configure how this webhook responds to requests received on a path.",
+    "type_label": "Type",
+    "method_label": "Method",
+    "path_label": "Path",
+    "path_placeholder": "/incoming",
+    "create_button": "Create routing rule"
+   },
+   "validation": {
+    "mutation_in_progress": "A routing rule update is already in progress.",
+    "no_changes": "No rules changes to save.",
+    "duplicate_rule": "A routing rule already exists for this method and path.",
+    "forward_url_required": "Enter a forward URL to create a routing rule.",
+    "forward_url_required_short": "Forward URL is required.",
+    "unsupported_forwarding_path": "Path parameters and wildcards are not supported yet. Support is coming soon.",
+    "self_forwarding_endpoint": "Webhook public endpoint URLs cannot be used as forwarding targets.",
+    "local_forward_endpoint_on_web": "Local forwarding is not supported on web. Use the desktop app, Postman CLI or a public endpoint.",
+    "invalid_status_code": "Enter a status code between 100 and 599.",
+    "invalid_status_code_short": "Status code must be between 100 and 599.",
+    "static_body_too_long": "Response body cannot exceed {maxLength} characters.",
+    "static_header_too_long": "Header key/value cannot exceed {maxLength} characters.",
+    "header_key_required": "Header key is required when header value is set."
+   }
+  },
+  "workbench": {
+   "title": "Webhook dashboard",
+   "description": "Request history is available for this webhook."
+  },
+  "sidebar": {
+   "delete_confirmation": {
+    "title": "Delete {webhookName}?",
+    "description": "Are you sure you want to delete this webhook? This can't be undone.",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting..."
+   },
+   "status_indicator": {
+    "active_label": "Status: Active",
+    "inactive_label": "Status: Inactive"
+   }
+  },
+  "request_inspector": {
+   "title": "Request inspector",
+   "description": "Detailed request inspection for webhook {listenerId} will be added in the next iteration.",
+   "loading_title": "Loading request",
+   "loading_description": "This should take just a moment",
+   "load_error_title": "Unable to load request details",
+   "load_error_description": "Try again in some time",
+   "unavailable_title": "Request details unavailable",
+   "unavailable_description": "Select the request again to load its details.",
+   "removed_request_title": "Request not found",
+   "removed_request_description": "This request might have been automatically removed.",
+   "copy_path_aria_label": "Copy request URL",
+   "copy_path_success_toast": "Request URL copied",
+   "replay_button": "Replay",
+   "replaying_button": "Replaying...",
+   "open_as_http_request_button": "Open as HTTP request",
+   "save_request_button": "Save request",
+   "save_request_button_tooltip": "Save request to a collection",
+   "collapse_inspector_button": "Collapse inspector",
+   "collapse_request_panel_button": "Collapse request",
+   "expand_request_panel_button": "Expand request",
+   "collapse_response_panel_button": "Collapse response",
+   "expand_response_panel_button": "Expand response",
+   "response_sent_back": "Response",
+   "waiting_title": "Waiting ",
+   "waiting_description": "The response will appear here once it is available.",
+   "body_type": "Body Type: {bodyType}",
+   "collapsed_labels": {
+    "timeline": "Timeline",
+    "events": "Event",
+    "response": "Response"
+   },
+   "no_request_body_title": "No request body",
+   "no_request_body_description": "This request contained no body.",
+   "no_response_body_title": "No response or response too large",
+   "no_response_body_description": "This response contained no body or the body was too large.",
+   "no_headers_title": "No headers",
+   "no_headers_description": "No headers were captured.",
+   "logs": {
+    "empty_title": "No logs",
+    "empty_description": "Console logs from webhook scripts will appear here.",
+    "load_error_title": "Unable to load logs",
+    "load_error_description": "Something went wrong while loading script logs.",
+    "new_logs": "New logs",
+    "text_language": "Text"
+   },
+   "test_results": {
+    "empty_title": "Write tests to automate debugging",
+    "empty_description": "Use scripts to write assertions and verify that the webhook request is handled as expected.",
+    "load_error_title": "Unable to load test results",
+    "load_error_description": "Something went wrong while loading script test results.",
+    "script_error_title": "Couldn't evaluate script",
+    "script_error_description": "Couldn’t evaluate the {scriptLabel} script.",
+    "script_error_description_fallback": "Couldn’t evaluate the script.",
+    "passed": "passed",
+    "failed": "failed",
+    "skipped": "skipped"
+   },
+   "tabs": {
+    "body": "Body",
+    "headers": "Headers",
+    "test_results": "Test Results",
+    "logs": "Logs"
+   }
+  },
+  "not_found": {
+   "title": "Webhook not found",
+   "description": "This webhook is unavailable or may have been deleted.",
+   "go_to_workspace": "Go to workspace overview",
+   "go_to_workspaces": "View all workspaces"
+  },
+  "permissions": {
+   "pause_disabled_tooltip": "You don't have permission to pause this webhook.",
+   "start_disabled_tooltip": "You don't have permission to start this webhook.",
+   "rename_disabled_tooltip": "You don't have permission to rename this webhook.",
+   "edit_routing_disabled_tooltip": "You don't have permission to edit routing settings.",
+   "edit_settings_disabled_tooltip": "You don't have permission to edit webhook settings.",
+   "receive_sample_event_disabled_tooltip": "You don't have permission to send a sample event.",
+   "replay_disabled_tooltip": "You don't have permission to replay requests.",
+   "clear_events_disabled_tooltip": "You don't have permission to delete events."
+  }
+ }
+}

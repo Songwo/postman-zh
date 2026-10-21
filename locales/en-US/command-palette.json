@@ -1,0 +1,18 @@
+{
+ "empty_state": {
+  "no_commands_found": "No commands found"
+ },
+ "result_list": {
+  "aria_label": "Command palette results"
+ },
+ "sections": {
+  "recently_used": "Recently Used",
+  "other_commands": "Other Commands"
+ },
+ "dialog": {
+  "aria_label": "Command palette"
+ },
+ "input": {
+  "aria_label": "Type a command"
+ }
+}

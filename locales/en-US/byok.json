@@ -1,0 +1,37 @@
+{
+ "overview": {
+  "heading": "BYOK Encryption",
+  "description": "Manage encryption for environment and global variables and request history for your organization.",
+  "cta": "Contact Postman support",
+  "last_updated": "Last updated"
+ },
+ "status": {
+  "heading": "Encryption status",
+  "completed": "Encrypted",
+  "progress": "Encrypting...",
+  "failed": "Failed",
+  "pending": "Pending"
+ },
+ "key": {
+  "heading": "Key",
+  "arn": "Key configured",
+  "status": "Status",
+  "active": "Active",
+  "inactive": "Inactive"
+ },
+ "elements": {
+  "environments": "Environments",
+  "globals": "Globals",
+  "history": "History",
+  "collectionRuns": "Collection Runs",
+  "monitorRuns": "Monitor Runs"
+ },
+ "disabled": {
+  "heading": "Secure your data with BYOK Encryption",
+  "description": "Bring your own key (BYOK) to secure global variables, environments and request history for your organization."
+ },
+ "error": {
+  "heading": "Something went wrong",
+  "description": "We could not load your BYOK settings. Please try again later."
+ }
+}

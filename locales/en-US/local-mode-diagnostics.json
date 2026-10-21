@@ -1,0 +1,44 @@
+{
+ "workspace_config": {
+  "missing_dir": "The .postman directory is missing.",
+  "missing_file": "The resources.yaml file is missing in the .postman directory.",
+  "invalid_structure": "Invalid resources.yaml: file must contain a YAML object.",
+  "missing_workspace_id": "Invalid resources.yaml: missing or invalid workspace.id field.",
+  "empty_workspace_id": "Invalid resources.yaml: workspace.id must not be empty.",
+  "invalid_yaml_format": "Invalid YAML format in resources.yaml: {errorMessage}",
+  "read_error": "Failed to read resources.yaml: {errorMessage}",
+  "invalid_local_resources": "Invalid resources.yaml: localResources must be an object mapping entity types to arrays of paths.",
+  "invalid_cloud_resources": "Invalid resources.yaml: cloudResources must be an object mapping entity types to path-id mappings.",
+  "unknown_entity_type_local": "Invalid resources.yaml: localResources.{key} is not a recognized entity type.",
+  "invalid_local_value": "Invalid resources.yaml: localResources.{key} must be an array of strings.",
+  "unknown_entity_type_cloud": "Invalid resources.yaml: cloudResources.{key} is not a recognized entity type.",
+  "invalid_cloud_value": "Invalid resources.yaml: cloudResources.{key} must be an object mapping paths to cloud IDs."
+ },
+ "workflows_config": {
+  "read_error": "Failed to read workflows.yaml: {errorMessage}",
+  "invalid_yaml_format": "Invalid YAML format in workflows.yaml: {errorMessage}",
+  "invalid_structure": "Invalid workflows.yaml: file must contain a YAML object.",
+  "unknown_workflow_key": "Invalid workflows.yaml: '{key}' is not a recognized workflow.",
+  "invalid_workflow_array": "Invalid workflows.yaml: '{workflow}' must be an array of relation entries.",
+  "syntax_error_not_object": "Invalid workflows.yaml: entry at {workflow}[{index}] is not an object.",
+  "syntax_error_missing_spec": "Invalid workflows.yaml: entry at {workflow}[{index}] is missing a non-empty 'spec' field.",
+  "syntax_error_missing_collection": "Invalid workflows.yaml: entry at {workflow}[{index}] is missing a non-empty 'collection' field.",
+  "syntax_error_invalid_options": "Invalid workflows.yaml: entry at {workflow}[{index}] has invalid 'options' (must be a map of string/boolean values).",
+  "duplicate_entry": "Duplicate entry in '{workflow}': spec '{spec}' and collection '{collection}' appear more than once.",
+  "missing_spec_path": "Spec file referenced by '{workflow}' does not exist: {path}",
+  "missing_collection_path": "Collection file referenced by '{workflow}' does not exist: {path}",
+  "missing_counterpart": "Spec '{spec}' and collection '{collection}' exist in '{fromWorkflow}' but are missing from '{toWorkflow}'.",
+  "options_mismatch": "Options for spec '{spec}' and collection '{collection}' differ between the two workflows."
+ },
+ "header_actions": {
+  "fix_issues_button": "Fix Issues",
+  "fix_all_no_issues_tooltip": "No issues",
+  "fix_issues_disabled_tooltip": "No fixable issues"
+ },
+ "fix_toasts": {
+  "workspace_config_success": "Updated workspace ID in resources.yaml",
+  "workspace_config_error": "Failed to update workspace ID in resources.yaml",
+  "workflows_config_success": "Sanitized workflows.yaml",
+  "workflows_config_error": "Failed to sanitize workflows.yaml"
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "entity_type_icon": {
+  "label": "Flow"
+ },
+ "status_indicator": {
+  "deployed": "Status: Deployed"
+ }
+}

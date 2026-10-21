@@ -1,0 +1,57 @@
+{
+ "purchase_plan_empty_state": {
+  "enterprise": {
+   "title": "Upgrade to start using the Private API Network",
+   "description": "With the Private API Network, teams can always access available elements, organize them into folders and make them easy to discover and use.",
+   "primary_button": "Upgrade to enterprise",
+   "secondary_button": "Learn more"
+  },
+  "solution": {
+   "title": "Hey, what's this? It’s the Private API Network!",
+   "description": "With the Private API Network, teams can always access available elements, organize them into folders and make them easy to discover and use. Private Network can be accessed once you purchase Postman’s Internal API Management solution.",
+   "primary_button": "Purchase solution",
+   "secondary_button": "Learn more"
+  },
+  "ask_admin": {
+   "title": "Hey, what's this? It’s the Private API Network!",
+   "description": "With the Private API Network, teams can access and organize elements into folders and make their discovery easy. Request an admin to purchase Postman’s Internal API Management solution to access Private API Network."
+  }
+ },
+ "header": "Private API Network",
+ "view_network": "View Network",
+ "no_access": {
+  "title": "You don't have access",
+  "description": "You do not have permission to view this Private API Network setting"
+ },
+ "not_enough_permission": {
+  "title": "You don’t have permission to view these settings",
+  "description": "Only members with Network Manager, or Super Admin role can view and edit these settings."
+ },
+ "settings": {
+  "restricted_access": {
+   "enabled": {
+    "title": "Approval process is enabled",
+    "subtext": "API Network Managers and folder managers can review and approve elements to be added to the network."
+   },
+   "disabled": {
+    "title": "Approval process is disabled",
+    "subtext": "API Network Managers and folder managers can review and approve elements to be added to the network."
+   }
+  },
+  "tooltip": "Approval process is no longer optional. Assign folder managers to delegate work."
+ },
+ "errors": {
+  "private_network_permissions": "Something went wrong while fetching Private network permissions",
+  "private_network_access_restriction": "Something went wrong while fetching Private network access restriction status"
+ },
+ "approval_process_warning_modal": {
+  "heading": "Enable approval process?",
+  "para1": "Once enabled, this cannot be changed.",
+  "para2": "As a quality measure, the approval process is now recommended for teams that use the Private API Network.",
+  "para3": "The approval process ensures that only specific team members can approve or add elements to your Private API Network.",
+  "primary_button": "Enable approval",
+  "secondary_button": "Cancel",
+  "success_msg": "Approval process enabled.",
+  "error_msg": "Something went wrong while updating Private network access restriction"
+ }
+}

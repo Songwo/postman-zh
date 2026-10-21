@@ -1,0 +1,225 @@
+{
+ "widgets": {
+  "error": {
+   "title": "Your widget didn't load",
+   "description": "Looks like something went wrong.",
+   "help-link": "Learn more"
+  }
+ },
+ "agent-mode": {
+  "personalized-title": "{userName}, how would you like to use Postman today?",
+  "title": "How would you like to use Postman today?",
+  "textarea-placeholder": "Tell us what you want to build...",
+  "submit-button-text": "Let's Go",
+  "submit-button-disabled-tooltip": "You need edit access to a workspace to use the agent. Create a workspace or ask for edit access.",
+  "suggestions-title": "Suggestions to get started with:",
+  "suggestions-loading-message": "Getting personalized suggestions..."
+ },
+ "pending-items": {
+  "title": "Needs your attention",
+  "team-join-requests": {
+   "title_singular": "Request to join team pending",
+   "title_plural": "Requests to join team pending"
+  },
+  "pending-request-for-access": {
+   "title_singular": "Pending request for access",
+   "title_plural": "Pending requests for access",
+   "requested-access": "{userName} requested access to {model}",
+   "requested-access-to": "<userLink>{userName}</userLink> requested access to <entityLink>{entityName}</entityLink>.",
+   "requested-access-to_withLabel": "<userLink>{userName}</userLink> requested access to <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "requested-access-partner-to": "<userLink>{userName}</userLink> requested access as a partner to <entityLink>{entityName}</entityLink>.",
+   "requested-access-partner-to_withLabel": "<userLink>{userName}</userLink> requested access as a partner to <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "approve-button": "Approve",
+   "deny-button": "Deny",
+   "approve-success": "Request approved",
+   "deny-success": "Request denied",
+   "approve-error-title": "Approval Failed",
+   "approve-error": "An error occurred while approving the request",
+   "deny-error-title": "Denial Failed",
+   "deny-error": "An error occurred while denying the request",
+   "already-actioned": "This request has already been resolved"
+  },
+  "pending-request-for-edit": {
+   "title_singular": "Pending request for edit",
+   "title_plural": "Pending requests for edit",
+   "requested-edit": "{userName} requested edit access to {model}",
+   "requested-edit-to": "<userLink>{userName}</userLink> requested edit access to <entityLink>{entityName}</entityLink>.",
+   "requested-edit-to_withLabel": "<userLink>{userName}</userLink> requested edit access to <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "requested-role-access-to": "<userLink>{userName}</userLink> requested {role} access to <entityLink>{entityName}</entityLink>.",
+   "requested-role-access-to_withLabel": "<userLink>{userName}</userLink> requested {role} access to <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "approve-button": "Approve",
+   "deny-button": "Deny",
+   "approve-success": "Edit request approved",
+   "deny-success": "Edit request denied",
+   "approve-error-title": "Approval Failed",
+   "approve-error": "An error occurred while approving the edit request",
+   "deny-error-title": "Denial Failed",
+   "deny-error": "An error occurred while denying the edit request",
+   "already-actioned": "This edit request has already been resolved",
+   "respond-button": "Respond to Request"
+  },
+  "pending-request-for-action": {
+   "title_singular": "Pending request for action",
+   "title_plural": "Pending requests for action",
+   "requested-make-public": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> a public workspace.",
+   "requested-make-public_withLabel": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> {entityLabel} a public workspace.",
+   "requested-make-team": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> a team workspace.",
+   "requested-make-team_withLabel": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> {entityLabel} a team workspace.",
+   "requested-make-partner": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> a partner workspace.",
+   "requested-make-partner_withLabel": "<userLink>{userName}</userLink> is requesting to make <entityLink>{entityName}</entityLink> {entityLabel} a partner workspace.",
+   "requested-publish-docs": "<userLink>{userName}</userLink> is requesting to publish documentation for <entityLink>{entityName}</entityLink>.",
+   "requested-publish-docs_withLabel": "<userLink>{userName}</userLink> is requesting to publish documentation for <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "requested-action-default": "<userLink>{userName}</userLink> is requesting action on <entityLink>{entityName}</entityLink>.",
+   "requested-action-default_withLabel": "<userLink>{userName}</userLink> is requesting action on <entityLink>{entityName}</entityLink> {entityLabel}.",
+   "approve-button": "Approve",
+   "deny-button": "Deny",
+   "approve-success": "Action request approved",
+   "deny-success": "Action request denied",
+   "already-actioned": "This action request has already been resolved",
+   "respond-button": "Respond to Request"
+  },
+  "pr-assigned-to-me": {
+   "title_singular": "PR awaiting your review",
+   "title_plural": "PRs awaiting your review",
+   "opened-by": "Opened by"
+  },
+  "pr-opened-by-me": {
+   "title_singular": "PR opened by you",
+   "title_plural": "PRs opened by you"
+  },
+  "loading": "Loading...",
+  "show-more": "Show More",
+  "failed-to-load-more-items": "Failed to load more items. Please try again later.",
+  "empty": {
+   "title": "All caught up!",
+   "description": "Requests to access, edit, and take action on resources, PRs raised by you and ones that require your review, plus other actions that need your attention will appear here."
+  }
+ },
+ "continue-work": {
+  "title": "Pick up where you left off",
+  "recents": {
+   "title": "Recents",
+   "loading": "Loading...",
+   "error": {
+    "title": "Unable to load recent items",
+    "description": "There was an error fetching your recent work.",
+    "retry": "Retry"
+   },
+   "empty": {
+    "title": "No recent items",
+    "description": "Start working with collections, requests, and workspaces to see them here."
+   },
+   "show-more": "Show More",
+   "loading-more": "Loading more..."
+  },
+  "favourites": {
+   "title": "Favorites",
+   "loading": "Loading...",
+   "error": {
+    "title": "Unable to load favorite items",
+    "description": "There was an error fetching your favorite items.",
+    "retry": "Retry"
+   },
+   "empty": {
+    "title": "No favorite items",
+    "description": "Mark collections or workspaces as favorites to see them here."
+   },
+   "show-more": "Show More",
+   "loading-more": "Loading more..."
+  },
+  "external": "External"
+ },
+ "announcements": {
+  "edit-announcement": "Edit announcement",
+  "create-announcement": "Announcement",
+  "description": "Share org-wide alerts with your teammates on their homepage",
+  "disabled-tooltip": "You do not have permission to manage announcements. Please contact your admin.",
+  "modal": {
+   "create-title": "Create announcement",
+   "edit-title": "Edit announcement",
+   "description": "Share org-wide updates, breaking changes, mandatory migrations or reminders with your teammates on their homepage.",
+   "type-label": "Type",
+   "title-label": "Title",
+   "message-label": "Message",
+   "remove-after-label": "Remove after",
+   "save-disabled-tooltip": "Please fill in all fields.",
+   "create-success": "Announcement created successfully",
+   "update-success": "Announcement updated successfully",
+   "delete-success": "Announcement deleted successfully",
+   "create-error": "Failed to create announcement",
+   "update-error": "Failed to update announcement",
+   "delete-error": "Failed to delete announcement",
+   "preview-title": "Announcement preview",
+   "edit-button": "Edit",
+   "delete-button": "Delete",
+   "preview-button": "Preview",
+   "publish-button": "Publish",
+   "update-button": "Update",
+   "expiry-options": {
+    "7-days": "7 days",
+    "14-days": "14 days",
+    "30-days": "30 days"
+   },
+   "delete-confirmation": {
+    "title": "Delete announcement?",
+    "message": "Once deleted, this announcement will no longer be visible to your teammates."
+   },
+   "type-options": {
+    "informational": "Informational",
+    "critical": "Critical"
+   },
+   "type-tooltip": {
+    "informational": "To announce feature launches, training opportunities, and remind your teammates about best API practices. Teammates can immediately dismiss informational announcements.",
+    "critical": "To announce breaking changes, security alerts, and mandatory migrations. Teammates can’t dismiss critical announcement before the end date."
+   },
+   "preview-topic": "Announcement title goes here",
+   "preview-description": "Announcement message will appear here"
+  },
+  "dismiss-announcement": "Dismiss announcement",
+  "copy-link": "Copy link",
+  "link-copied": "Link copied",
+  "copy-link-error": "Failed to copy link. Please try again.",
+  "posted-by": "Posted by {name}",
+  "updated-by": "Updated by {name}",
+  "originally-posted-by": "Originally posted by {name}",
+  "edited-time-ago": "Edited {time}",
+  "unable-to-load-error-title": "Unable to load announcement",
+  "unable-to-load-error-description": "Please try again by reloading the page.",
+  "show-more": "Show More"
+ },
+ "readme": {
+  "edit-readme": "Edit ReadMe",
+  "create-readme": "ReadMe",
+  "description": "Guide your team with notes, links, and key resources to help them get started",
+  "disabled-tooltip": "You do not have permission to manage ReadMe. Please contact your admin.",
+  "modal": {
+   "create-title": "Organization ReadMe",
+   "edit-title": "Organization ReadMe",
+   "description": "Help your teammates get started the right way. Add notes, links, and guidance to important workspaces or resources. This README appears on every team member’s homepage. Only organization admins can edit this content.",
+   "create-success": "ReadMe created successfully",
+   "update-success": "ReadMe updated successfully",
+   "delete-success-title": "ReadMe unpublished",
+   "delete-success-description": "You can republish it anytime from the Add Widgets > ReadMe option.",
+   "create-error": "Failed to create ReadMe",
+   "update-error": "Failed to update ReadMe",
+   "delete-error": "Failed to delete ReadMe",
+   "unpublish-button": "Unpublish",
+   "cancel-button": "Cancel",
+   "publish-button": "Publish",
+   "update-button": "Update",
+   "unpublish-title": "Unpublish ReadMe?",
+   "unpublish-description": "Once unpublished, this ReadMe will no longer be visible to your teammates. You can republish it anytime from the Add Widgets > ReadMe option."
+  },
+  "updated-by": "Updated by {name}",
+  "updated-by-you": "Updated by You",
+  "unable-to-load-error-title": "Unable to load ReadMe",
+  "unable-to-load-error-description": "Please try again by reloading the page.",
+  "show-more": "Show More ↓"
+ },
+ "add-widget-button": {
+  "text": "Add Widgets",
+  "request-widget": {
+   "title": "Request a widget"
+  }
+ }
+}

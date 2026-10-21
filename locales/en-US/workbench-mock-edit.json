@@ -1,0 +1,36 @@
+{
+ "mock_edit_tab": {
+  "something_went_wrong": "Something went wrong",
+  "unexpected_error": "There was an unexpected error loading mock server. Please try again.",
+  "try_again": "Try Again",
+  "not_signed_in_error": "You need an account to continue exploring Postman.",
+  "mock_server": "Mock server"
+ },
+ "mock_edit_container": {
+  "default_disabled_tooltip_text": "No new changes to save for this mock server",
+  "invalid_name_header_delay_text": "Enter mock name, valid fixed network delay, and header keys to update mock server.",
+  "invalid_name_header_text": "Enter mock name and header keys to update mock server.",
+  "invalid_name_delay_text": "Enter a name and valid fixed network delay to update mock server.",
+  "invalid_delay_header_text": "Enter a valid fixed network delay and header keys to update mock server.",
+  "invalid_name": "Enter a name for this mock server.",
+  "invalid_delay": "Enter a valid fixed network delay.",
+  "invalid_header": "Enter header keys for response matching.",
+  "update_mock_text": "Update Mock Server",
+  "cancel": "Cancel",
+  "changes_saved": "Changes saved",
+  "update_success_msg": "You updated the {name} Mock Server.",
+  "unable_to_edit": "Unable to edit mock"
+ },
+ "mock_edit_form": {
+  "make_payment": "Make Payment",
+  "user_billing_action": "Your team does not have access to certain Postman services due to non-payment of invoices. Pay the current invoice to continue.",
+  "default_action": "Your team does not have access to certain Postman services due to non-payment of invoices.Contact your team’s billing manager for more information about your team’s payment.",
+  "try_again": "Try again",
+  "cannot_access_server": "Cannot access Postman servers",
+  "subtitle": "Your team has disabled syncing with Postman services. Contact support to resume using these features.",
+  "internet_error": "Please check your internet connection and try again.",
+  "collection_fetch_error": "An error occurred while fetching collection information.",
+  "unexpected_error": "There was an unexpected error. Please try again.",
+  "environment_store_error": "Error occurred while fetching workspace environments"
+ }
+}

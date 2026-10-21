@@ -1,0 +1,22 @@
+{
+ "permission_load": {
+  "banner_message": "Permissions couldn't be loaded for some specs.",
+  "retry_button": "Retry"
+ },
+ "entity_type_icon": {
+  "label": "Specification"
+ },
+ "bulk_delete": {
+  "heading": "Delete {count, plural, one {# spec} other {# specs}}",
+  "confirmation_line1": "Are you sure you want to permanently delete {count, plural, one {this spec} other {these # specs}}?",
+  "confirmation_line2": "This action cannot be undone.",
+  "over_limit_title": "Cannot delete more than {max} specs at a time",
+  "over_limit_description": "{specCount} specs selected. Select {max} or fewer and try again.",
+  "partial_failure": "{deletedCount} of {totalCount} specs deleted. {failedCount} could not be deleted.",
+  "error": "Unable to delete specs",
+  "cancel": "Cancel",
+  "confirm": "Delete",
+  "summary_label": "{count, plural, one {# Spec} other {# Specs}}",
+  "summary_note": "Cannot be restored once deleted"
+ }
+}

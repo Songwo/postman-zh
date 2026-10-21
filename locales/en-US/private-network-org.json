@@ -1,0 +1,372 @@
+{
+ "addToNetworkModal": {
+  "previousResponse": "Previous response:",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Add a message (optional)",
+  "messageRequiredError": "Please provide a message for your request.",
+  "messageLengthError": "Message must be less than {maxLength} characters.",
+  "requesterInfoBanner": "Your request will be sent to the network admins and team managers for approval.",
+  "cancel": "Cancel",
+  "fallbackEntityName": "workspace",
+  "successAddToast": "Successfully added {entityName} to the network.",
+  "successRequestToast": "Request to add {entityName} has been sent for review.",
+  "errorAddToast": "Failed to add to the network. Please try again.",
+  "errorRequestToast": "Failed to request to add to the network. Please try again.",
+  "charactersCount": "{current}/{max} characters"
+ },
+ "requests": {
+  "approveModal": {
+   "header": "Approve request to add workspace to Private API Network",
+   "footer": "Approve Request",
+   "infoMessage": "This workspace will be added to your Private API Network and will be visible to your team members."
+  },
+  "denyModal": {
+   "header": "Deny request to add workspace",
+   "footer": "Deny Request",
+   "reasonLabel": "Reason for denying",
+   "reasonOptional": "(Optional)",
+   "reasonPlaceholder": "Add a reason for denying this request"
+  },
+  "cancelModal": {
+   "header": "Cancel request to add workspace",
+   "confirmation": "Are you sure you want to cancel this request? This action cannot be undone.",
+   "footer": "Cancel request"
+  },
+  "common": {
+   "requestedBy": "Requested by {requesterName}",
+   "requestedByPrefix": "Requested by",
+   "cancel": "Cancel",
+   "workspace": "Workspace",
+   "team": "Team",
+   "requesterComment": "Requester Comment",
+   "updatedOn": "Updated on",
+   "lastUpdated": "Last updated",
+   "viewWorkspace": "View workspace",
+   "defaultUser": "User",
+   "defaultRequester": "The requester"
+  },
+  "item": {
+   "approve": "Approve",
+   "deny": "Deny",
+   "cancelRequest": "Cancel request",
+   "you": "(You)"
+  },
+  "listing": {
+   "noRequestsHeader": "No pending requests",
+   "noRequestsMessage": "There are no pending requests to review at this time.",
+   "errorLoading": "Error loading requests",
+   "tryAgain": "Please try again later.",
+   "header": "Pending requests ({count})",
+   "loadMore": "Load more"
+  },
+  "navigation": {
+   "pendingRequests": "Pending Requests"
+  },
+  "toasts": {
+   "approveSuccessTitle": "Request approved",
+   "approveSuccessDesc": "{requesterName} will be notified that the workspace has been added to the network",
+   "denySuccessTitle": "Request denied",
+   "denySuccessDesc": "{requesterName} will be notified of your response",
+   "cancelSuccessTitle": "Request cancelled",
+   "cancelSuccessDesc": "Your request has been cancelled successfully",
+   "errorTitle": "Failed to {action} request"
+  }
+ },
+ "sidebar": {
+  "searchPlaceholder": "Search Private API Network",
+  "heading": "Private API Network",
+  "tooltipAdd": "Add to Network",
+  "tooltipRequests": "Pending requests"
+ },
+ "tagFilter": {
+  "moreTags": "+ more tags",
+  "moreTagsCount": "+ more tags ({count})",
+  "searchPlaceholder": "Search tags",
+  "noTagsFound": "No tags found",
+  "clearSelected": "Clear selected",
+  "loadingResults": "Loading results…",
+  "idleDescription": "Check your spelling or try a different term"
+ },
+ "addToNetworkCta": {
+  "pathLabel": "Path:"
+ },
+ "fork": {
+  "needWorkspaceTitle": "You need at least one workspace to fork",
+  "failedTitle": "Failed to fork",
+  "createWorkspaceFirst": "Create a workspace first",
+  "tryAgain": "Please try again"
+ },
+ "migrationTable": {
+  "workspacesCount": "Workspaces ({count})",
+  "status": "Status",
+  "changeType": "Change Type",
+  "existingTags": "Existing Tags",
+  "newlyAddedTags": "Newly Added Tags",
+  "badgeInProgress": "In Progress",
+  "badgeStatus": {
+   "Completed": "Completed",
+   "Error": "Error",
+   "notStarted": "Not started"
+  },
+  "changeTypeLabel": {
+   "PUBLISH_WORKSPACE_AND_UPDATE_TAGS": "Workspace addition and tag addition",
+   "PUBLISH_WORKSPACE": "Workspace addition",
+   "UPDATE_TAGS": "Tag addition",
+   "UNAFFECTED": "Unaffected"
+  }
+ },
+ "misc": {
+  "workspaceRemoved": "1 workspace removed",
+  "workspaceRemoveError": "Something went wrong while removing the workspace",
+  "idCopied": "ID copied to clipboard",
+  "copyId": "Copy ID",
+  "removeWorkspace": "Remove workspace from network"
+ },
+ "bulkAdd": {
+  "header": "Add workspaces to the Private API Network",
+  "description": "Make workspaces easily discoverable for your team by adding them to the network.",
+  "addStage": {
+   "workspaces": "Workspaces",
+   "show": "Show:",
+   "addedWorkspaces": "Added workspaces",
+   "addingCount": "{count, plural, =1 {Adding # Workspace} other {Adding # Workspaces}}",
+   "review": "Review",
+   "cancel": "Cancel",
+   "searchPlaceholder": "Search workspaces",
+   "filterTags": "Filter by tags",
+   "noTags": "No tags found"
+  },
+  "reviewStage": {
+   "title": "Review",
+   "addedTitle": "Workspaces that will be added",
+   "addedDescription": "All the below Workspaces will be added to the network.",
+   "requestedTitle": "Workspaces that will be requested to add",
+   "requestedDescription": "A request will be sent to add the below workspaces to the network.",
+   "add": "Add",
+   "requestToAdd": "Request to Add",
+   "back": "Back",
+   "remove": "Remove"
+  },
+  "table": {
+   "columns": {
+    "workspaces": "Workspaces",
+    "tags": "Tags",
+    "lastUpdated": "Last updated",
+    "workspace": "Workspace"
+   },
+   "loadMore": "Load more",
+   "emptyTitle": "No workspaces found",
+   "emptyDescription": "Try adjusting your search or filters to find workspaces."
+  },
+  "toasts": {
+   "successBothTitle": "Added and requests sent",
+   "successBothDesc": "Workspaces you have access to were added. Requests were sent to network and teams managers for the others.",
+   "successAddedTitle": "Workspaces added",
+   "successAddedDesc": "{count, plural, =1 {Successfully added # workspace to the network.} other {Successfully added # workspaces to the network.}}",
+   "successRequestedTitle": "Requests sent",
+   "successRequestedDesc": "Requests were sent to network and teams managers for review.",
+   "errorTitle": "Failed to add workspaces"
+  }
+ },
+ "removeWorkspaceModal": {
+  "heading": "Remove Workspace from network?",
+  "content_before": "Once removed, your team will no longer be able to discover",
+  "content_after": "workspace on the Private API Network. The workspace will not be deleted from your account.",
+  "footer": {
+   "cancel": "Cancel",
+   "remove": "Remove"
+  }
+ },
+ "workspaces": {
+  "addedTo": "Added to",
+  "privateApiNetwork": "Private API Network",
+  "noEntitiesFound": "No entities found in this workspace",
+  "collections": "Collections",
+  "specs": "Specs",
+  "flows": "Flows",
+  "sdks": "SDKs",
+  "environments": "Environments",
+  "variableCount": "{count, plural, one {# variable} other {# variables}}",
+  "requestCount": "{count, plural, one {# request} other {# requests}}",
+  "fork": {
+   "action": "Fork",
+   "actionOffline": "Get online to create a fork.",
+   "countOffline": "Get online to view existing forks.",
+   "countLabel": "{count, plural, one {# fork} other {# forks}}",
+   "noForks": "No forks",
+   "latestFork": "Most recent fork",
+   "createdOn": "Created {date} ago",
+   "signInTitle": "Sign in to create a fork",
+   "signInSubtitle": "You need to be logged in to fork a collection. Go ahead and create an account. It's free!"
+  },
+  "generated": "Generated {time}",
+  "openWorkspace": "Open Workspace",
+  "copyLink": "Copy link",
+  "copied": "Copied!",
+  "showAllElements": "Show all {count} elements",
+  "updated": "Updated {time}",
+  "contributors": "Contributors",
+  "workspacesInTeam": "Workspaces in {teamName}",
+  "noWorkspacesFound": "No workspaces found",
+  "workspacesWillAppear": "Workspaces published to this team will appear here",
+  "workspacesWillAppearInNetwork": "Workspaces published to your Private API Network will appear here",
+  "byCreator": "By {name}",
+  "byPrefix": "By ",
+  "collectionsCount": "{count} collections"
+ },
+ "teamOverview": {
+  "title": "{teamName}'s Private API Network",
+  "description": "Discover reusable APIs across your Organisation.",
+  "workspacesTitle": "Workspaces in Private API Network"
+ },
+ "sort": {
+  "label": "Sort by",
+  "recentlyAdded": "Recently added",
+  "aToZ": "A-Z"
+ },
+ "pagination": {
+  "loading": "Loading...",
+  "noItemsFound": "No items found",
+  "itemsPerPage": "Items per page",
+  "rangeOfTotal": "{start}-{end} of {total}",
+  "newer": "Newer",
+  "older": "Older"
+ },
+ "errors": {
+  "loadFailedTitle": "Couldn't load the data",
+  "loadFailedDescription": "Just a faulty wire. Try reloading.",
+  "workspaceUpdatesLoadFailed": "Unable to load workspace updates. Try reloading.",
+  "reload": "Reload"
+ },
+ "workspaceUpdates": {
+  "title": "Latest Workspace Updates",
+  "description": "See the latest updates from workspaces you follow from your organization",
+  "teamTitle": "Latest Workspace Updates",
+  "teamDescription": "See the latest updates from workspaces you follow from the team {teamName}",
+  "empty": "No workspace updates yet",
+  "endOfList": "You're all caught up!",
+  "readMore": "Read more",
+  "showLess": "Show less",
+  "verifiedTooltip": "Verified",
+  "comments": {
+   "comment_count": "{count, plural, =0 {No comments} =1 {# comment} other {# comments}}"
+  },
+  "feed": {
+   "view_count": "{count, plural, =0 {No views} =1 {{formattedCount} view} other {{formattedCount} views}}"
+  },
+  "reactions": {
+   "profilePublicRequired": "Please make your profile public to add a reaction.",
+   "signInHeading": "Sign in to add a reaction",
+   "genericError": "Something went wrong. Please try again.",
+   "addReactionAria": "Add reaction"
+  }
+ },
+ "agent_mode": {
+  "loading": "Loading Agent Mode...",
+  "headerLabel": "AI",
+  "headerTooltip": "AI"
+ },
+ "statusBar": {
+  "leftSidebar": "Left Sidebar",
+  "rightSidebar": "Right Sidebar",
+  "hideLeftSidebar": "Hide left sidebar",
+  "showLeftSidebar": "Show left sidebar",
+  "hideRightSidebar": "Hide right sidebar",
+  "showRightSidebar": "Show right sidebar",
+  "entityCountOrgs": "{squadCount, plural, one {# Team} other {# Teams}}, {workspaceCount, plural, one {# Workspace} other {# Workspaces}}",
+  "entityCountNonOrgs": "{workspaceCount, plural, one {# Workspace} other {# Workspaces}}"
+ },
+ "sidebar_nav": {
+  "team_logo_home_aria": "Go to homepage — {title}",
+  "search_placeholder": "Search Private API Network"
+ },
+ "emptyNetworkHome": {
+  "welcomeTitle": "Welcome to the Private API Network",
+  "description": "This is a central directory of all workspaces in your organization. Your teams can discover available workspaces and use tags to organize and find them easily.",
+  "addWorkspaces": "Add Workspaces",
+  "requestToAddWorkspaces": "Request to Add Workspaces",
+  "actionsDisabledTooltip": "A team admin can add you to the Internal API Management solution to add elements in the Private API Network.",
+  "contributeTitle": "Contribute to the Private API Network",
+  "requestWorkspacesCard": {
+   "title": "Request workspaces from where you build",
+   "description": "Add workspaces directly from where you create and manage them."
+  },
+  "approvalsCard": {
+   "title": "Get quick approvals from designated managers",
+   "description": "Add comments and let Team Managers and Network Managers help review and curate workspaces with intent."
+  }
+ },
+ "migrationUpgrade": {
+  "heading": "Private API Network",
+  "subheading": "Make your APIs, collections, and workspaces easily discoverable for everyone in your organization.",
+  "title": "Upgrade to access the Private API Network",
+  "description": "The Private API Network is available on Enterprise plans. Upgrade your plan to unlock centralised API discovery for your organization.",
+  "primaryButton": "Upgrade to Enterprise",
+  "secondaryButton": "Learn more",
+  "backToHome": "Home"
+ },
+ "migrationInfo": {
+  "title": "Migrate to the new Private API Network",
+  "description": "The new Private API Network makes it easier to distribute and discover internal APIs as your org scales.",
+  "feature1Title": "Publish workspaces, not individual elements",
+  "feature1Description": "Add a workspace and all its collections, specs, and flows become discoverable.",
+  "feature2Title": "Organization that scales with your org",
+  "feature2Description": "Teams define ownership. Tags replace folders for flexible filtering and discovery.",
+  "migrationTitle": "What happens during migration",
+  "migrationItem1Prefix": "Existing folders and sub-folders are converted to",
+  "migrationItem2Prefix": "Previously published elements are mapped back to their",
+  "migrationItem3": "You'll review and confirm the workspaces that will be added to the new Private API Network.",
+  "migrationNote": "You can complete the migration in multiple sessions. Your workspace contents will not be changed.",
+  "migrationSkipNote": "If you skip migration, only workspaces that were previously added to the network will be available.",
+  "workspaceTags": "workspace tags",
+  "workspaces": "workspaces",
+  "migrateButton": "Migrate",
+  "skipMigrationButton": "Skip",
+  "learnMoreButton": "Learn more",
+  "bannerAlt": "Migration illustration",
+  "waitingForNetworkManager": "Ask your Network Manager to migrate to the new Private Network experience",
+  "inProgressBannerTitle": "Private Network migration is in progress",
+  "inProgressBannerBody": "Migration has been initiated by <0>{ownerName}</0>. Please wait while it completes or reach out for updates."
+ },
+ "migrationPage": {
+  "step1Label": "Apply migration changes",
+  "step2Label": "Complete Migration",
+  "step1Title": "Apply migration changes",
+  "step1Description": "Review the workspaces affected by this migration. Depending on your setup, workspaces may be added to the network, updated with tags, or both. You can migrate in batches and retry failures before completing the migration.",
+  "step1Note": "Workspaces already present at the root of the previous network won't appear.",
+  "bannerTitle": "Moonbase Alpha-4",
+  "bannerDescription": "You are currently logged in from Moonbase Alpha-4, located on Luna.",
+  "selectedItemsTitle": "{count, plural, =1 {# workspace selected for changes} other {# workspaces selected for changes}}",
+  "migrateButton": "Apply",
+  "cancelButton": "Cancel",
+  "migrationInProgressTitle": "Migration of {count, plural, =1 {# workspace} other {# workspaces}} is in progress",
+  "migrationInProgressDescription": "Applying migration changes to {count, plural, =1 {# workspace} other {# workspaces}}",
+  "noMigrationEntitiesTitle": "No changes to apply",
+  "noMigrationEntitiesDescription": "No workspaces require changes in this step. You can continue to complete the migration.",
+  "closeButton": "Exit and Resume Later",
+  "nextButton": "Next",
+  "step2Heading": "Complete Migration",
+  "step2Description": "Finalise your upgrade to the new Private API Network. Once completed, your organisation will use the new workspace based model.",
+  "step2ReadyText": "You're ready to complete the migration.",
+  "step2AfterFinishing": "After finishing:",
+  "step2Item1": "The new Private API Network becomes active",
+  "step2Item2Prefix": "Migration ",
+  "step2Item2Bold": "cannot be restarted",
+  "step2ExitNote": "You can exit and return later before completing this step.",
+  "finishMigrationButton": "Finish Migration",
+  "takeToPrivateNetworkButton": "Complete",
+  "exitModalTitle": "Leave migration?",
+  "exitModalDescription": "Workspaces that have already been migrated won't appear when you return. You can resume migration for the remaining workspaces at any time.",
+  "exitModalCancelButton": "Cancel",
+  "exitModalExitButton": "Exit Migration",
+  "skipModalTitle": "Skip Migration?",
+  "skipModalDescription": "If you skip migration, only workspaces that were previously added to the network will be available.",
+  "skipModalCancelButton": "Cancel",
+  "skipModalConfirmButton": "Skip",
+  "backButton": "Back",
+  "nextButtonDisabledTooltip": "Apply changes to at least one workspace to continue.",
+  "checkboxTooltipUnaffected": "This workspace is unaffected by the migration",
+  "checkboxTooltipCompleted": "Migration is complete for this workspace",
+  "checkboxTooltipInProgress": "Migration is in progress"
+ }
+}

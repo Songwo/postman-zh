@@ -1,0 +1,46 @@
+{
+ "error": {
+  "something_went_wrong": "Something went wrong",
+  "unexpected_error": "There was an unexpected error loading mock servers. Please try again.",
+  "try_again": "Try Again"
+ },
+ "mock_server": {
+  "message": "Mock servers let you simulate endpoints and their corresponding responses in a collection without actually setting up a back end.",
+  "create_mock_server": "Create mock server",
+  "create_classic_mock_server": "Classic Mock Server",
+  "create_code_mock": "Mock",
+  "offline_error": "You can take this action once you're back online.",
+  "permission_error": "You don't have permission to take this action.",
+  "not_signed_error": "You need an account to continue exploring Postman.",
+  "no_team_error": "You need to be signed-in to a team to perform this action",
+  "no_mock_server": "You don't have any mock servers.",
+  "inactive_mock": "This action cannot be taken on a deactivated mock server.",
+  "offline": "You're Offline",
+  "request_access": "Request Access"
+ },
+ "filesystem": {
+  "no_mocks": "No mocks found in repository",
+  "no_mocks_message": "Add mock manifest files to the postman/mocks folder in your connected repository to see them here.",
+  "search_placeholder": "Search mocks",
+  "empty_state": {
+   "title": "Create your first Mock",
+   "description": "Simulate endpoints and responses right from your file system. Local Mocks live in your codebase and stay in sync with your Git workflow.",
+   "learn_more": "Learn more",
+   "create": "Create"
+  }
+ },
+ "sidebar_mock_list_item": {
+  "read_only": "Read only",
+  "copy_url": "Copy Mock URL",
+  "copy_success": "Mock URL copied",
+  "rename": "Rename",
+  "manage_roles": "Manage Roles",
+  "move": "Move",
+  "delete": "Delete",
+  "open_new_tab": "Open In New Tab"
+ },
+ "sidebar_no_results_found": {
+  "text": "No results found for \"{searchQuery}\"",
+  "message": "Please try again using different keywords, and don't forget to check for typos."
+ }
+}

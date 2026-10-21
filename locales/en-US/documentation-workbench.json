@@ -1,0 +1,183 @@
+{
+ "side_navigation_bar": {
+  "heading": "Introduction",
+  "title": "JUMP TO"
+ },
+ "config_bar": {
+  "view_collection": "View collection",
+  "language_settings": "Language settings",
+  "fork_no_permission_tooltip": "You do not have access to perform this action.",
+  "publish_documentation_status": {
+   "retract_text": "Withdraw request",
+   "drop_down_items": {
+    "copy_publish_link": "Copy published link",
+    "respond_to_publish_request": "Respond to Publish Request",
+    "edit_requested_publish_settings": "Edit requested publish settings",
+    "edit_published_documentation": "Edit published documentation",
+    "approve_deny_publish_request": "Approve/Deny Publish Request"
+   },
+   "documentation_config_bar": {
+    "pending_publish": "Pending publish",
+    "published": "Docs published",
+    "publish": "Publish docs"
+   },
+   "published_url_label": "This collection is published at:",
+   "publish_limit_reached_tooltip": "You've reached your limit to publish documentation. You can unpublish existing documentation in your team or contact support to increase the limit.",
+   "publish_feature_disabled_tooltip": "This feature is currently unavailable in your region.",
+   "spam_tooltip": "We've temporarily blocked you from publishing documents as your content did not meet our community standards. Please try again later or contact support.",
+   "withdraw_publish_confirmation": {
+    "heading": "Withdraw Request?",
+    "description": "Are you sure you want to withdraw the request to publish this collection's documentation?",
+    "confirm_button_text": "Confirm",
+    "cancel_button_text": "Cancel"
+   }
+  }
+ },
+ "run_time_entity": {
+  "request_info": {
+   "headers": "Request Headers",
+   "query_params": "Query Params",
+   "path_variables": "Path Variables",
+   "request_body": {
+    "body_label": "Body",
+    "query_label": "Query",
+    "graphql_variables_label": "GraphQL Variables",
+    "error_view": {
+     "title": "Couldn't load request body",
+     "message": "Just a faulty wire. Try reloading."
+    },
+    "documentation_body_types": {
+     "raw": "raw",
+     "graphql_label": "graphql",
+     "graphql_query": "QUERY",
+     "graphql_variables": "VARIABLES",
+     "url_encoded": "urlencoded",
+     "form_data_label": "form-data",
+     "binary_body_label": "file"
+    }
+   },
+   "examples": {
+    "error": {
+     "title": "Couldn't load examples",
+     "message": "Just a faulty wire. Try reloading."
+    },
+    "title": "Example",
+    "request_label": "Request",
+    "response_label": "Response",
+    "tab_labels": {
+     "body": "Body",
+     "header": "Headers ({length})"
+    },
+    "open_example_button": {
+     "try_example_label": "Try Example "
+    },
+    "response_body": {
+     "no_response_body": "No response body",
+     "request_does_not_return_response_body": "This request doesn't return any response body."
+    },
+    "response_header": {
+     "no_response_header": "No response headers",
+     "request_does_not_return_response_header": "This request doesn't return any response headers."
+    }
+   }
+  },
+  "next_entities": {
+   "next_entity_title": "Next in this {type}"
+  },
+  "update_api_error_message": "Couldn't update description. Please try again.",
+  "unsaved_changes": "Unsaved changes",
+  "copy_link_button": {
+   "link_copied": "Link copied",
+   "copy_link_message": "Copy link to this {entityName}"
+  },
+  "description_editor": {
+   "description_preview": {
+    "edit_description_tooltip": "Edit description",
+    "no_description_label": "This {entityType} doesn't have a description."
+   },
+   "editor_switch_warning_modal": {
+    "heading": "Switch to the new Postman Editor?",
+    "content": "Some HTML elements in your description may not be supported in the new Postman Editor yet.",
+    "checkbox_label": "Don't show this warning again",
+    "action_buttons": {
+     "cancel": "Cancel",
+     "switch_to_postman_editor": "Switch to Postman Editor"
+    }
+   },
+   "mode": {
+    "edit": "Edit",
+    "preview": "Preview"
+   },
+   "popover": {
+    "about_editor": "About classic Markdown editor",
+    "description": "This is the classic Markdown editor that supports Git flavoured Markdown formatting.",
+    "suggest_improvement_label": "Suggest improvements"
+   },
+   "editor_menu_option": {
+    "markdown": "Markdown editor",
+    "postman": "Postman editor"
+   },
+   "action_buttons": {
+    "save": "Save",
+    "cancel": "Cancel"
+   }
+  },
+  "editor_options": {
+   "postman_editor": "Postman editor",
+   "markdown_editor": "Markdown editor"
+  },
+  "entity_auth": {
+   "error": {
+    "title": "Couldn't load authorization",
+    "message": "Just a faulty wire. Try reloading."
+   },
+   "authorization_label": "Authorization",
+   "content": "This {entityType} is using an authorization helper from {authEntityType} <5>{authEntityName}</5>"
+  }
+ },
+ "network_error": {
+  "update_version_message": "Something went wrong while updating version"
+ },
+ "retract_request": {
+  "success": {
+   "toast": {
+    "title": "Request to publish withdrawn successfully.",
+    "description": "This request has been removed from the Community Managers' queue."
+   }
+  },
+  "failure": {
+   "toast": {
+    "description": "Failed to withdraw publish request. Please try again."
+   }
+  }
+ },
+ "document_error": {
+  "is_git_linked_mode": {
+   "title": "Collection not found",
+   "message": "We could not find the collection you are looking for"
+  },
+  "invalid_version": {
+   "title": "Unable to load",
+   "message": "Invalid Version provided"
+  }
+ },
+ "documentation_workbench_title": "Documentation",
+ "request_overview": {
+  "documentation_title": "Documentation",
+  "view_collection_documentation": "View complete documentation",
+  "request_snippet": "Code Snippet"
+ },
+ "version_dropdown_label": "Version",
+ "language_dropdown": {
+  "label": "Language",
+  "search_placeholder_label": "Search by Language name",
+  "no_search_result_placeholder_text": "No matching languages"
+ },
+ "no_matching_languages": "No matching languages.",
+ "language_selection_dropdown": "Language selection dropdown",
+ "new_workspace": "New Workspace (to be modified)",
+ "open_request_button": {
+  "try_request_button_label": "Try Request",
+  "open_request_button_label": "Open request"
+ }
+}

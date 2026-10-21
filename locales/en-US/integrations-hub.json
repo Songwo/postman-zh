@@ -1,0 +1,390 @@
+{
+ "page": {
+  "title": "Postman Integrations & App Marketplace",
+  "description": "Browse and connect Postman with the tools your team already uses — Slack, Jira, GitHub, and more — all from one integrations marketplace.",
+  "heading": "Integrations",
+  "subtitle": "Discover, install, and manage integrations."
+ },
+ "listing": {
+  "searchPlaceholder": "Search for integrations",
+  "connectedOnlyLabel": "Team-Connected Integrations Only",
+  "connectedEmpty": "Your team has no connected integrations.",
+  "loading": "Loading integrations…",
+  "empty": "No integrations found",
+  "noResults": "No integrations matching \"{query}\"",
+  "error": "Couldn’t load integrations",
+  "error_description": "Something went wrong while loading integrations. Please try again.",
+  "retry_button_label": "Try again"
+ },
+ "card": {
+  "connected": "Connected",
+  "byline": "by {author}"
+ },
+ "requestIntegration": {
+  "title": "Don’t see what you’re looking for?",
+  "description": "Request a new integration for the Postman team to review.",
+  "buttonLabel": "Request integration"
+ },
+ "integratedServices": {
+  "sectionTitle": "API Catalog - Integrated Services",
+  "sectionDescription": "Connect your API Catalog Integrated Services to GitHub repositories.",
+  "connectButton": "Connect Service",
+  "connectPermissionTooltip": "Only members with the API Catalog Manager role can access Service discovery page",
+  "columns": {
+   "workspace": "Workspace",
+   "repository": "Repository"
+  },
+  "emptyState": "No integrated services found",
+  "errorTitle": "Couldn’t load integrated services",
+  "errorDescription": "Something went wrong while loading integrated services. Please try again.",
+  "errorRetry": "Try again"
+ },
+ "details": {
+  "notFoundTitle": "Integration not found",
+  "notFoundBody": "We couldn’t find an integration for this address.",
+  "tabs": {
+   "overview": "Overview",
+   "connections": "Connections"
+  },
+  "backToHub": "Back to Integrations",
+  "integrationBy": "Integration by {author}",
+  "aboutPublisher": "About the Publisher",
+  "viewPublisherProfile": "View the {author} profile",
+  "mediaPrevious": "Previous media",
+  "mediaNext": "Next media",
+  "mediaExpand": "View larger image",
+  "mediaClose": "Close media viewer",
+  "mediaViewerLabel": "Media viewer",
+  "mediaCounter": "{current} of {total}",
+  "mediaImageAlt": "Integration media {current} of {total}",
+  "connectIntegration": "Connect Integration",
+  "signInToConnect": "Sign in to connect"
+ },
+ "viewDocs": "View Docs",
+ "connectButton": "Connect",
+ "postmanUser": "Postman User",
+ "connectionSection": {
+  "connectedBadge": "Connected",
+  "nameSuffix": "{name} (you)",
+  "otherTeamUsers_one": "+{count} other team user",
+  "otherTeamUsers_other": "+{count} other team users",
+  "disconnectSuccess": "{appName} disconnected successfully.",
+  "disconnectError": "Failed to disconnect {appName}. Please try again.",
+  "table": {
+   "name": "Name",
+   "team": "Team",
+   "connectedBy": "Connected by",
+   "email": "Email",
+   "disconnect": "Disconnect"
+  },
+  "wiz": {
+   "disconnectModal": {
+    "heading": "Disconnect Wiz?",
+    "body": "Disconnecting will permanently delete the team's stored security posture and related findings. This cannot be undone. Reconnecting will start a fresh security scan.",
+    "cancel": "Cancel",
+    "confirm": "Disconnect Wiz"
+   }
+  },
+  "jira": {
+   "title": "Create and View Jira Issues",
+   "description": "Create Jira issues or link existing ones from a collection, response, or monitor, and track their status without leaving Postman.",
+   "jiraSite": "Jira site",
+   "otherSites_one": "+ {count} other",
+   "otherSites_other": "+ {count} others"
+  },
+  "github_app": {
+   "title": "Connected GitHub Accounts",
+   "description": "GitHub Organizations that Postman has been given access to.",
+   "githubUsername": "GitHub Username",
+   "githubOrganization": "GitHub Organization"
+  },
+  "ecosystem": {
+   "connectedBadge": "Connected",
+   "connectButton": "Connect Project",
+   "connectNoPermission": "You don't have permission to connect this app. Contact a team admin.",
+   "viewDocs": "View Docs",
+   "neverUsed": "Never",
+   "removeSuccess": "Removed from workspace successfully.",
+   "removeError": "Failed to remove from workspace. Please try again.",
+   "loadError": "Connected workspaces could not be loaded.",
+   "reload": "Reload",
+   "removeModal": {
+    "title": "Remove {appName} from {workspaceName}?",
+    "body": "Postman will stop running {appName} in this workspace. You can connect it again at any time.",
+    "cancel": "Cancel",
+    "confirm": "Remove"
+   },
+   "disconnectAll": "Disconnect All",
+   "disconnectAllNoPermission": "You don't have permission to disconnect this app. Contact a team admin.",
+   "disconnectAllSuccess": "{appName} disconnected from all workspaces.",
+   "disconnectAllError": "Failed to disconnect {appName}. Please try again.",
+   "disconnectAllModal": {
+    "title": "Disconnect {appName} from all workspaces?",
+    "body": "Postman will stop running {appName} in every connected workspace. You can connect it again at any time.",
+    "cancel": "Cancel",
+    "confirm": "Disconnect All"
+   },
+   "table": {
+    "workspace": "Workspace",
+    "lastUsed": "Last Used",
+    "remove": "Remove from workspace",
+    "removeNoPermission": "You don't have permission to remove this app from this workspace."
+   }
+  },
+  "gateway": {
+   "connectedBadge": "Connected",
+   "authTitle": "{appName} - ({authLabel})",
+   "tableDescription": "Cloud connectors enable teams to bring APIs into the API Catalog. API specifications then appear in the API Catalog with metadata, including the associated environments and clusters. Collections are automatically generated for further API development in Postman.",
+   "authLabel": {
+    "accessKey": "Access Key Auth",
+    "assumeRole": "IAM Role Auth"
+   },
+   "connectButton": "Connect Gateway",
+   "connectNoPermission": "You don't have permission to connect this gateway. Contact a team admin.",
+   "connectPlanRequired": "Gateway connections are available on Postman Enterprise plans.",
+   "viewDocs": "View Docs",
+   "neverUsed": "Never",
+   "removeSuccess": "Gateway connection removed successfully.",
+   "removeError": "Failed to remove the gateway connection. Please try again.",
+   "removeModal": {
+    "title": "Remove {instanceName} from {appName}?",
+    "body": "Postman will stop discovering and importing services from this gateway instance. You can connect it again at any time.",
+    "cancel": "Cancel",
+    "confirm": "Remove"
+   },
+   "disconnectAll": "Disconnect All",
+   "disconnectAllNoPermission": "You don't have permission to disconnect this gateway. Contact a team admin.",
+   "disconnectAllSuccess": "{appName} disconnected from all gateway instances.",
+   "disconnectAllError": "Failed to disconnect {appName}. Please try again.",
+   "disconnectAllModal": {
+    "title": "Disconnect all {appName} instances?",
+    "body": "Postman will stop discovering and importing services from every connected {appName} instance. You can connect them again at any time.",
+    "cancel": "Cancel",
+    "confirm": "Disconnect All"
+   },
+   "table": {
+    "instanceName": "Instance Name",
+    "postmanTeam": "Postman Team",
+    "lastUsed": "Last Used",
+    "discoveredServices": "Discovered Services",
+    "remove": "Remove connection",
+    "removeNoPermission": "You don't have permission to remove this gateway connection."
+   }
+  }
+ },
+ "personalNotifications": {
+  "title": "Personal Notifications",
+  "description": "Get personal notifications about important events, like when teammates mention you in comments or when tokens or keys are exposed.",
+  "connectedBadge": "Connected",
+  "connectButton": "Connect",
+  "nameSuffix": "{name} (you)",
+  "otherTeamUsers_one": "+{count} other team user",
+  "otherTeamUsers_other": "+{count} other team users",
+  "disconnectSuccess": "Personal notifications disconnected successfully.",
+  "disconnectError": "Failed to disconnect personal notifications. Please try again.",
+  "table": {
+   "name": "Name",
+   "email": "Email",
+   "disconnect": "Disconnect"
+  }
+ },
+ "slackChannel": {
+  "privateChannel": "Private Channel",
+  "channelUnavailable": "Channel unavailable",
+  "loginForChannelInfo": "Log in to see channel info",
+  "workspaceColumn": "Slack Workspace",
+  "channelColumn": "Slack Channel"
+ },
+ "ms_teams": {
+  "tenantColumn": "Organization",
+  "connectionColumn": "Connection info",
+  "privateChannel": "Private Channel",
+  "channelUnavailable": "Channel unavailable",
+  "chatUnavailable": "Chat unavailable",
+  "loginForConnectionInfo": "Log in to see connection info",
+  "sharedChannel": "Shared channel",
+  "archivedTooltip": "This channel has been archived",
+  "conversationTypeLabel": "Conversation type",
+  "conversationTypeChannel": "Channel",
+  "conversationTypeGroupChat": "Group chat",
+  "teamLabel": "Team",
+  "channelLabel": "Channel",
+  "channelDescription": "Must be a standard or shared channel. Private channels are not supported.",
+  "channelPlaceholder": "Type to search for a channel",
+  "channelLoadError": "Couldn’t load channels. Please try again.",
+  "teamPlaceholder": "Type to search for a team",
+  "groupChatLabel": "Group chat",
+  "groupChatPlaceholder": "Type to search for a group chat",
+  "groupChatLoadError": "Couldn’t load group chats. Please try again."
+ },
+ "workspaceNotifications": {
+  "title": "Workspace Notifications",
+  "description": "Get updates any time your teammates add or change a request, collection, or environment, or when someone posts a workspace update.",
+  "addButton": "Connect Workspace",
+  "deleteError": "Couldn’t delete the channel integration.",
+  "table": {
+   "workspace": "Workspace",
+   "privateWorkspace": "Private workspace",
+   "privateWorkspaceTooltip": "You are not a member of this workspace"
+  },
+  "pagination": {
+   "itemsPerPage": "Items per page",
+   "range": "{start}-{end} of {total}"
+  },
+  "modal": {
+   "createHeading": "Connect a channel",
+   "editHeading": "Edit channel integration",
+   "postmanWorkspaceLabel": "Postman workspace",
+   "postmanWorkspacePlaceholder": "Select a workspace",
+   "slackWorkspaceLabel": "{appName} workspace",
+   "slackWorkspacePlaceholder": "Select a workspace",
+   "channelLabel": "{appName} channel",
+   "channelPlaceholder": "Select a channel",
+   "channelConnected": "— connected",
+   "channelLoadError": "Couldn’t load channels. Please try again.",
+   "frequencyLabel": "Send notifications…",
+   "frequencyRealtime": "In real time",
+   "frequencyPeriodic": "Periodically, in digest form",
+   "frequencyPeriodicBadge": "New",
+   "eventsHeading": "when someone…",
+   "eventWorkspaceUpdate": "Posts a workspace update",
+   "eventPullRequest": "Creates or merges a workspace pull request",
+   "eventCreate": "Adds a request, collection, or environment",
+   "eventDelete": "Deletes a request, collection, or environment",
+   "eventUpdate": "Edits a request or a collection",
+   "digest": {
+    "dayLabel": "Day of the week",
+    "dayPlaceholder": "Select days",
+    "timeLabel": "Time",
+    "timezoneLabel": "Timezone",
+    "timezonePlaceholder": "Select timezone",
+    "everyday": "Every day",
+    "weekdays": "Weekdays",
+    "weekends": "Weekends"
+   },
+   "connectPrompt": "Connect your {appName} account to choose a channel.",
+   "connectButton": "Connect {appName}",
+   "connecting": "Connecting…",
+   "connectError": "Couldn’t connect to {appName}. Please try again.",
+   "cancel": "Cancel",
+   "submitCreate": "Connect",
+   "submitEdit": "Save changes",
+   "createSuccess": "Channel connected successfully.",
+   "updateSuccess": "Channel connection updated.",
+   "createError": "Failed to connect the channel integration.",
+   "createErrorRetry": "Failed to connect the channel integration. Please try again.",
+   "updateError": "Failed to update the channel integration.",
+   "updateErrorRetry": "Failed to update the channel integration. Please try again.",
+   "errors": {
+    "noPermissionWorkspace": "You don’t have permission to manage channel integrations in this workspace.",
+    "noPermissionSubscription": "You don’t have permission to change this channel integration. Ask a workspace admin to make the change.",
+    "otherTeamOwnsSubscription": "This channel integration belongs to another team. Only that team can change it.",
+    "reauthorizeRequired": "Your {appName} connection has expired. Reconnect {appName} and try again.",
+    "notFound": "This channel integration no longer exists. Refresh the page and try again.",
+    "channelAlreadyConnected": "This channel is already connected to another integration.",
+    "destinationAlreadyConnected": "This destination is already connected.",
+    "workspaceAlreadyConnected": "This workspace already has a channel integration.",
+    "limitReached": "You’ve reached the maximum number of channel integrations for this workspace.",
+    "slackWorkspaceMismatch": "Your team is already connected to a different {appName} workspace. Disconnect it before connecting this one.",
+    "workspaceNotEligible": "Channel integrations aren’t available for this workspace type.",
+    "workspaceUpdateEventOnly": "In a public workspace, an integration can only notify this channel about workspace updates.",
+    "destinationTypeImmutable": "This integration’s destination type can’t be changed. Disconnect it and connect a new one.",
+    "reconnectToChangeWorkspace": "To move this integration to another {appName} workspace, disconnect it and connect again."
+   }
+  }
+ },
+ "monitorNotifications": {
+  "title": "Monitor Notifications",
+  "description": "Continuously track the health and performance of your APIs and automatically send the results of each monitor run to a {appName} channel.",
+  "addButton": "Connect Monitor",
+  "table": {
+   "monitor": "Monitor"
+  },
+  "pagination": {
+   "itemsPerPage": "Items per page",
+   "range": "{start}-{end} of {total}"
+  },
+  "modal": {
+   "createHeading": "Connect a channel",
+   "editHeading": "Edit monitor integration",
+   "monitorLabel": "Monitor",
+   "monitorPlaceholder": "Select a monitor",
+   "frequencyLabel": "Send notifications for…",
+   "frequencyAllRuns": "Every completed run",
+   "frequencyOnlyFailures": "Failures only (and first consequent successful run)",
+   "cancel": "Cancel",
+   "submitCreate": "Connect",
+   "submitEdit": "Save changes",
+   "createSuccess": "Monitor connected successfully.",
+   "updateSuccess": "Monitor connection updated.",
+   "createError": "Failed to connect the monitor integration. Please try again.",
+   "updateError": "Failed to update the monitor integration. Please try again."
+  }
+ },
+ "delete_modal": {
+  "heading": "Delete integration?",
+  "body": "Deleting this integration will cease any actions it performs immediately. Are you sure you wish to continue?",
+  "confirm": "Delete integration",
+  "confirm_in_progress": "Deleting…",
+  "cancel": "Cancel",
+  "success": "Integration deleted successfully.",
+  "error": "Something went wrong while deleting your integration. Please try again."
+ },
+ "integrationSections": {
+  "actions": {
+   "connect": "Add integration",
+   "runlog_label": "View run log",
+   "edit_label": "Edit integration",
+   "delete_label": "Delete integration",
+   "creator_only_edit": "Only the integration creator can edit this configuration.",
+   "creator_only_delete": "Only the integration creator can delete it."
+  },
+  "columns": {
+   "name": "Name",
+   "monitor": "Monitor",
+   "collection": "Collection",
+   "entity": "Entity",
+   "status": "Status",
+   "workspace": "Workspace",
+   "created_by": "Created by",
+   "last_run": "Last run"
+  },
+  "status": {
+   "running": "Running",
+   "success": "Success",
+   "failed": "Failed"
+  },
+  "empty_value": "—",
+  "error": {
+   "title": "Failed to load this integration's connections",
+   "description": "The data could not be loaded.",
+   "reload": "Reload"
+  }
+ },
+ "slackWorkspaceSelect": {
+  "addWorkspace": "Add another workspace",
+  "connected": "Connected"
+ },
+ "agentTasks": {
+  "title": "Agent Tasks",
+  "description": "Mention @Postman in {appName} to start Agent Mode tasks and review status updates in-thread.",
+  "connectedBadge": "Connected",
+  "otherTeamUsers_one": "+{count} other team user",
+  "otherTeamUsers_other": "+{count} other team users",
+  "table": {
+   "name": "Name",
+   "email": "Email",
+   "orgIdentifier": "Slack Workspace",
+   "remove": "Remove"
+  },
+  "connectModal": {
+   "heading": "Connect Agent Tasks",
+   "body": "Select the {appName} Workspace you would like to connect.",
+   "cancel": "Cancel",
+   "confirm": "Connect",
+   "noWorkspaces": "No Slack workspaces are connected yet. Add one to get started."
+  },
+  "removeError": "Couldn’t turn off Agent Tasks for that workspace. Please try again.",
+  "enableError": "Couldn’t turn on Agent Tasks for that workspace. Please try again."
+ }
+}

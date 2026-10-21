@@ -1,0 +1,696 @@
+{
+ "sandbox_terms_modal": {
+  "heading": "Activate Sandbox environment",
+  "intro": "By activating, you acknowledge and agree that the following usage requirements apply to your organization's use of the Sandbox environment as part of the Documentation referenced in your Agreement with Postman:",
+  "bullet_1": "Sandbox is provided for testing and evaluation purposes only",
+  "bullet_2": "Customer shall only use test or dummy data in Sandbox; production data and personal data must not be submitted",
+  "bullet_3": "Postman may delete Sandbox data at any time",
+  "bullet_4": "Sandbox is provided \"as-is\", with no service level commitments, Indemnities, or warranties",
+  "bullet_5": "Usage and feature limitations may apply",
+  "accept_button": "Accept & activate",
+  "decline_button": "Cancel",
+  "accept_error": "Failed to activate Sandbox environment. Please try again."
+ },
+ "common": {
+  "readonly_tooltip_message": "This setting is managed by your organization, and can't be changed for your team.",
+  "no_permission_tooltip": "You don't have permission to perform this action.",
+  "upgrade_to_invite_people": "Upgrade to invite people to the team",
+  "upgrade_to_add_people": "Upgrade to add people to the team"
+ },
+ "request_to_join_approval": {
+  "completed_message": "This request has already been processed.",
+  "approve_button": "Approve",
+  "deny_button": "Deny",
+  "request_approved": "Request approved.",
+  "request_denied": "Request denied.",
+  "request_resolved": "This request has been resolved.",
+  "approval_failed": "Approval Failed",
+  "denial_failed": "Denial Failed",
+  "something_went_wrong": "Something went wrong",
+  "denial_reason_title": "Why are you denying this request?",
+  "denial_reason": {
+   "select_a_reason": "Select a reason:",
+   "reasons": {
+    "unknown_person": "I don’t recognize this person",
+    "not_in_org": "They’re not part of our organization",
+    "different_team": "They belong to a different team in our organization",
+    "no_budget": "There’s no budget for additional members",
+    "other": "Other"
+   },
+   "other_placeholder": "Enter a reason",
+   "other_input_label": "Reason for denying this request",
+   "deny_request": "Deny request",
+   "approve_instead": "Approve instead"
+  }
+ },
+ "team_resources": {
+  "blank_state": {
+   "title": "Need more control over team resources?",
+   "description": "Unlock advanced settings for workspaces, collections, and more with Postman <1>Enterprise</1> plan.",
+   "upgrade_to_enterprise": "Upgrade to Enterprise",
+   "learn_more": "Learn more"
+  },
+  "blank_state_with_external_package": {
+   "title": "Need more control over team resources?",
+   "description": "Unlock advanced settings for workspaces, collections, and more with Postman <1>Enterprise</1> plan."
+  },
+  "workspace_management": {
+   "errors": {
+    "unable_to_save": "Unable to save changes at the moment. Please try again.",
+    "flag_and_entities": {
+     "title": "Something went wrong",
+     "description": "An error occurred while fetching settings"
+    },
+    "custom_message_too_long": {
+     "message": "Your message is too long. The limit is {limit} characters."
+    }
+   },
+   "changes_saved": "Changes saved",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "workspaces": "Workspaces"
+   },
+   "title": "Workspace Management",
+   "description": "Give granular controls to team members, making it easier to ",
+   "learn_more": {
+    "prefix": "manage workspaces",
+    "link": "Learn more"
+   },
+   "description_suffix": "",
+   "people_can_create_workspace": {
+    "label": "Who can create {lower}-wide internal workspaces?",
+    "options": {
+     "all_members": {
+      "label": "All {lower} members",
+      "helper_text": "Except partners and guests."
+     },
+     "specifics": {
+      "label": "Specific people or groups",
+      "helper_text": "Other {lower} members will require their approval."
+     },
+     "company_systems": {
+      "label": "Company systems handle workspace creation",
+      "helper_text": "Only selected people and groups can create workspaces directly in Postman."
+     }
+    }
+   },
+   "search_for_members": {
+    "placeholder": "Search...",
+    "empty_message": "No users found"
+   },
+   "specific_members": {
+    "label": "Select people and groups"
+   },
+   "allowed_members": {
+    "label": "Select people and groups"
+   },
+   "custom_message": {
+    "label": "Custom message",
+    "helper_text": "Shown to organization members when they try to create a workspace in Postman.",
+    "placeholder": "Explain why workspace creation is disabled and where users can request a workspace..."
+   },
+   "save": "Save Changes",
+   "cancel": "Cancel",
+   "forbidden_message": "Only team admins can manage resources in the team."
+  },
+  "tag_management": {
+   "who_can_manage": {
+    "label": "Who can create, edit, or delete tags in your {lower}?",
+    "options": {
+     "standard": {
+      "label": "All members can create, no one can edit or delete",
+      "helper_text": "Anyone can create tags. Tags cannot be edited or deleted once created."
+     },
+     "edit_restricted": {
+      "label": "All members can create, specific people can edit or delete",
+      "helper_text": "Anyone can create tags. Only selected people or groups can edit or delete them."
+     },
+     "fully_restricted": {
+      "label": "Specific people or groups",
+      "helper_text": "Only selected people or groups can create, edit, or delete tags. Other {lower} members can still use tags."
+     }
+    }
+   },
+   "allowed_members": {
+    "label": "Select people and groups"
+   },
+   "search_for_members": {
+    "placeholder": "Search...",
+    "empty_message": "No users found"
+   },
+   "errors": {
+    "unable_to_save": "Unable to save changes at the moment. Please try again.",
+    "teams_unavailable": "We couldn't load your team's members right now, so these settings can't be edited. Refresh to try again."
+   },
+   "save": "Save Changes",
+   "cancel": "Cancel"
+  },
+  "collection_management": {
+   "title": "Collections",
+   "description": "Manage sharing of collections within your organization.",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "collections": "Collections"
+   },
+   "allow_editors": "Allow Editors to share collections with Guests",
+   "editors_can_share": "Editors can share collections with guests",
+   "enable_share_collection": "When enabled, editors can share collections with people outside the {lower}.",
+   "sharing_with_guests": {
+    "enabled": {
+     "title": "Sharing with Guests enabled",
+     "description": "Team members can share collections with people outside the team."
+    },
+    "disabled": {
+     "title": "Sharing with Guests disabled",
+     "description": "Team members can't share collections with people outside the team."
+    }
+   },
+   "error": {
+    "update_settings": {
+     "title": "Couldn't update setting",
+     "description": "Just a faulty wire. Please try again."
+    },
+    "fetching_settings": {
+     "title": "Something went wrong",
+     "description": "An error occurred while fetching settings"
+    },
+    "permission_denied": {
+     "title": "Permission denied",
+     "description": "Only team admins can modify export settings"
+    },
+    "update_export_settings": {
+     "title": "Failed to update export settings",
+     "description": "An error occurred while updating export settings. Please try again."
+    }
+   },
+   "forbidden_message": "Only team admins can manage resources in the team.",
+   "block_exports": "Block collection exports",
+   "block_exports_description": "When enabled, editors and viewers are prevented from exporting collections.",
+   "exports_blocked": {
+    "title": "Collection exports are blocked",
+    "description": "Editors and viewers cannot export collections"
+   },
+   "exports_allowed": {
+    "title": "Collection exports are allowed",
+    "description": "Editors and viewers can export collections"
+   }
+  },
+  "external_package_management": {
+   "title": "External packages",
+   "description": "Allow team members to use packages from external registries like npm and JSR in their scripts.",
+   "read_only_description": "Use packages from external registries like npm and JSR in your scripts.",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "collections": "External packages"
+   },
+   "allow_packages": "{upper} members can use external packages",
+   "allow_packages_description": "Choose whether {lower} members can use none, all, or selected external packages.",
+   "read_only_package_description": "Packages that can be used in the scripts.",
+   "package_options": {
+    "allow_all": "Allow all packages",
+    "allow_selected": "Allow selected packages",
+    "allow_none": "Don't allow"
+   },
+   "add_packages": {
+    "title": "Allowed packages",
+    "description": "Add a list of packages that can be used by your {lower}.",
+    "learn_more": {
+     "prefix": "Learn",
+     "link": "how to allow external packages"
+    },
+    "placeholder": "e.g. npm:lodash@*, jsr:@opensrc/*@*",
+    "add_button": "Add package",
+    "validation": {
+     "empty": "Enter package name",
+     "too_long": "Package pattern must not exceed {maxLength} characters",
+     "invalid_registry": "Package name must start with a registry (e.g. npm: or jsr:)",
+     "invalid_format": "Enter valid package name and version (e.g. npm:lodash@1.1.0 or npm:lodash@*)"
+    }
+   },
+   "banner": {
+    "scope_restricted": {
+     "title": "Use more packages",
+     "description": "Contact your admin to add more packages to this list."
+    },
+    "scope_none": {
+     "title": "External packages not allowed",
+     "description": "Contact your admin to enable external packages for your team."
+    },
+    "upgrade_enterprise": {
+     "title": "Upgrade to manage allowed packages",
+     "description": "Allow specific packages from external registries by upgrading to the enterprise plan. <1>Learn about Postman enterprise plans.</1>",
+     "primary_button": "Upgrade to enterprise"
+    }
+   },
+   "error": {
+    "title": "Something went wrong",
+    "description": "Couldn't load the external package configurations.",
+    "button": "Try again",
+    "updating_settings_toast": "Failed to update settings for external packages. Please try again.",
+    "fetching_settings_toast": "Failed to load settings for external packages. Please try again."
+   },
+   "feature_not_available": {
+    "title": "Feature not available",
+    "description": "External package settings are not available for your team."
+   },
+   "private_packages": {
+    "title": "Private npm packages",
+    "description": "Configure access to private npm packages.",
+    "learn_more": {
+     "prefix": "Learn",
+     "link": "how to add private packages"
+    },
+    "token_input": {
+     "label": "Token",
+     "placeholder": "Enter your token",
+     "delete_button_tooltip": "Delete token"
+    },
+    "scope_input": {
+     "label": "Scope",
+     "placeholder": "e.g. @postman, @acme",
+     "validation": {
+      "empty": "Scope cannot be empty"
+     },
+     "read_only_label": "Private package scopes"
+    },
+    "save": "Save"
+   }
+  },
+  "vault_management": {
+   "title": "Vault",
+   "description": "Manage your team's vault settings, control access, and keep sensitive information secure across your workspaces.",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "vault": "Vault"
+   },
+   "allow_export": "{upper} members can export their vault data",
+   "allow_export_description": "When enabled, {lower} members can export their data from the vault.",
+   "allow_encrypted_export": "Allow encrypted export",
+   "allow_encrypted_export_description": "{upper} members can export their vault data with encryption.",
+   "allow_unencrypted_export": "Allow unencrypted export",
+   "allow_unencrypted_export_description": "{upper} members can export their vault data in plaintext.",
+   "save": "Save",
+   "vault_export": {
+    "enabled": {
+     "title": "Vault export is on",
+     "description": "Your team can export their vault data."
+    },
+    "disabled": {
+     "title": "Vault export is off",
+     "description": "Your team can't export their vault data."
+    }
+   },
+   "error": {
+    "update_settings": {
+     "title": "Couldn't update setting",
+     "description": "Just a faulty wire. Please try again."
+    },
+    "fetching_settings": {
+     "title": "Something went wrong",
+     "description": "An error occurred while fetching settings"
+    }
+   },
+   "forbidden_message": "Only team admins can manage resources in the team."
+  },
+  "mock_management": {
+   "title": "Mock Servers",
+   "description": "Manage mock servers within your organization",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "mock_servers": "Mock Servers"
+   },
+   "disable_public_mock": "{upper} members can create public mock servers",
+   "disable_public_mock_description": "When enabled, {lower} members can create both public and private mock servers.",
+   "public_mock_creation": {
+    "enabled": {
+     "title": "Creating public mock servers enabled"
+    },
+    "disabled": {
+     "title": "Creating public mock servers disabled"
+    }
+   },
+   "error": {
+    "update_settings": {
+     "title": "Couldn't update setting",
+     "description": "Just a faulty wire. Please try again."
+    },
+    "fetching_settings": {
+     "title": "Something went wrong",
+     "description": "An error occurred while fetching settings"
+    }
+   },
+   "forbidden_message": "Only team admins can manage resources in the team."
+  },
+  "code_mock_management": {
+   "title": "Mocks",
+   "description": "Manage mocks within your organization",
+   "require_approval": "Require approval for publishing public mocks",
+   "require_approval_description": "When enabled, public mocks created by {lower} members must be reviewed and approved by an admin before they can be published.",
+   "require_approval_disabled_tooltip": "Enable public Mock Servers to require approval for publishing mocks.",
+   "create_public_code_mocks": "Create public mocks",
+   "create_public_code_mocks_description": "When enabled, {lower} members can create mocks that are publicly accessible. When disabled, only private mocks can be created.",
+   "error": {
+    "update_settings": {
+     "title": "Couldn't update setting",
+     "description": "Just a faulty wire. Please try again."
+    },
+    "fetching_settings": {
+     "title": "Something went wrong",
+     "description": "An error occurred while fetching settings"
+    }
+   }
+  },
+  "live_session_management": {
+   "title": "Live Sessions",
+   "description": "Manage live sessions within your organization.",
+   "breadcrumbs": {
+    "team_resources": "Team resources",
+    "collections": "Live Sessions"
+   },
+   "allow_users": "Allow users to start live sessions",
+   "start_live_sessions": "{upper} members can start live sessions",
+   "enable_live_session": "This will enable users in the {lower} to start live sessions.",
+   "when_enabled": "When enabled, {lower} members can collaborate in real time using live sessions.",
+   "error": {
+    "update_settings": {
+     "title": "Couldn't update setting",
+     "description": "Just a faulty wire. Please try again."
+    }
+   },
+   "forbidden_message": "Only team admins can manage resources in the team."
+  },
+  "sandbox_team_management": {
+   "heading": "Sandbox team members",
+   "description": "Add members from your team to the sandbox team.",
+   "search_placeholder": "Search for team members to add...",
+   "search_empty": "No team members found",
+   "add_button": "Add",
+   "members_count": "{count, plural, one {# member} other {# members}}",
+   "empty_state": "No members in the sandbox team yet. Add members from your team above.",
+   "toast": {
+    "add_success": "{count, plural, one {# member added} other {# members added}} to sandbox team.",
+    "add_error": "Failed to add {count, plural, one {# member} other {# members}}.",
+    "no_slots": "No available slots in the sandbox team. Please free up a slot before adding new members."
+   }
+  },
+  "wrapper": {
+   "title": "{upper} resources",
+   "description": "Make it easier to manage resources in your {lower}.",
+   "management_options": {
+    "workspace": {
+     "title": "Create {lower}-wide workspaces",
+     "description": "Define whether {lower}-wide workspaces can be created without approval."
+    },
+    "collection": {
+     "title": "Share with guests",
+     "description": "Define whether collections can be shared with people outside the {lower}."
+    },
+    "mock": {
+     "title": "Manage mock servers",
+     "description": "Define publishing and visibility rules for mock servers."
+    },
+    "external_packages": {
+     "title": "Use external packages",
+     "description": "Define whether external packages can be used in scripts, and which ones."
+    },
+    "live_sessions": {
+     "title": "Start live sessions",
+     "description": "Define whether live sessions can be started."
+    },
+    "vault": {
+     "title": "Export vault data",
+     "description": "Define whether vault data can be exported."
+    },
+    "sandbox_team": {
+     "title": "Manage sandbox team",
+     "description": "Add members to the sandbox team."
+    },
+    "tags": {
+     "title": "Manage tags",
+     "description": "Define who can create, edit, or delete tags in your {lower}."
+    },
+    "organizations": {
+     "title": "Organizations",
+     "description": "Upgrade your team to an Organization to unlock advanced resource management."
+    }
+   },
+   "collapse_all": "Collapse all",
+   "expand_all": "Expand all"
+  },
+  "organization_management": {
+   "callout": {
+    "description_lead": "Upgrade your team to an Organization. <1>Learn about Organizations</1>.",
+    "description_detail": "This migration may take some time (Estimated: {duration}) and users may experience some small disruptions during the migration, so it's best to do this outside of normal working hours.",
+    "learn_more": "Learn about Organizations",
+    "contact_support": "Please contact support to complete this migration.",
+    "upgrade_button": "Upgrade",
+    "create_support_ticket": "Create support ticket"
+   },
+   "status": {
+    "in_progress": "Migration in progress...",
+    "already_running": "Migration already in progress.",
+    "retrying": "Retrying migration...",
+    "completed": "Migration completed successfully. Please refresh the page to see your upgraded experience.",
+    "failed": "Migration failed.",
+    "partial": "Migration partially completed.",
+    "rolled_back": "Migration was rolled back.",
+    "current_status_prefix": "Current status: {status}"
+   },
+   "toast": {
+    "completed": "Your team has been upgraded to an Organization.",
+    "failed": "Migration failed. Please try again or contact support.",
+    "partial": "Migration partially completed. Please contact support to resolve.",
+    "initiate_failed": "Failed to start migration."
+   },
+   "errors": {
+    "eligibility_generic": "Unable to check migration eligibility. Please try again later.",
+    "initiate_generic": "Unable to start migration. Please try again.",
+    "super_admin_required": "Only SuperAdmins can perform this action."
+   },
+   "tooltips": {
+    "super_admin_required": "Only SuperAdmins can start the migration.",
+    "not_eligible": "This team is not eligible for self-serve migration."
+   },
+   "support_ticket": {
+    "support_assisted": {
+     "subject": "Migrate to Organizations — support-assisted",
+     "intro": "I'd like to migrate my team to an Organization. My team isn't self-serve eligible."
+    },
+    "migration_failed": {
+     "subject": "Migrate to Organizations — {status}",
+     "intro": "My self-serve migration didn't complete successfully. Please help investigate."
+    }
+   },
+   "summary": {
+    "labels": {
+     "role": "ROLE",
+     "size": "TEAM SIZE",
+     "state": "MIGRATION STATE"
+    },
+    "roles": {
+     "super_admin": "SuperAdmin",
+     "admin": "Admin",
+     "member": "Member"
+    },
+    "sizes": {
+     "small": "Small",
+     "medium": "Medium",
+     "large": "Large"
+    },
+    "states": {
+     "not_started": "Not started",
+     "in_progress": "In progress",
+     "completed": "Completed",
+     "partial": "Partially completed",
+     "rolled_back": "Rolled back",
+     "failed": "Failed"
+    },
+    "na": "—"
+   }
+  }
+ },
+ "team_access": {
+  "title": "Team access",
+  "description": "Manage how people from your organization can join this team.",
+  "description_with_domain": "Manage how people from @{domain} can join this team.",
+  "verify_email_banner": {
+   "title": "Verify your email address to manage team access settings",
+   "description": "We sent a verification email to {userEmail}.",
+   "resend_cta": "Resend verification email",
+   "verified_cta": "I've Verified My Email"
+  },
+  "join_via_link": {
+   "settings": "Resource link settings",
+   "title": "Allow people to automatically join from resource links",
+   "description": "People from @{domain} can automatically join this team when accessing a link to a shared resource."
+  },
+  "team_discovery": {
+   "title": "Make this team discoverable",
+   "description": "People from @{domain} can see this team and request to join.",
+   "auto_join": {
+    "title": "Allow people to automatically join this team",
+    "description": "People from @{domain} can automatically join this team through team discovery.",
+    "settings": "Team join settings",
+    "domain_toggle_aria_label": "Auto-join for @{domain}",
+    "all_domains": {
+     "title": "Allow auto-join for all domains",
+     "title_single_domain": "Allow auto-join for your domain",
+     "description": "Anyone from any of your verified domains can automatically join this team through team discovery. You can also allow auto-join for each domain individually.",
+     "description_single_domain": "Anyone from your verified domain can automatically join this team through team discovery.",
+     "enabled_count": "Auto-join is on for {count} of {total} domains"
+    },
+    "confirm_modal": {
+     "enable": {
+      "heading": "Enable auto-join for all domains?",
+      "body": "This applies to all {count, plural, one {# domain} other {# domains}} on your team. Anyone with a matching email can join without waiting for an invite. You can turn this off at any time."
+     },
+     "disable": {
+      "heading": "Turn off auto-join for all domains?",
+      "body": "This applies to all {count, plural, one {# domain} other {# domains}} on your team. Anyone with a matching email cannot automatically join without an invite. You can turn this back on at any time."
+     },
+     "cancel_cta": "Cancel",
+     "confirm_cta": "Confirm"
+    },
+    "toast": {
+     "domain_enabled": {
+      "title": "Auto-join enabled",
+      "description": "Anyone from your @{domain} domain can now join without an invitation."
+     },
+     "domain_disabled": {
+      "title": "Auto-join turned off",
+      "description": "Anyone from your @{domain} domain will now require an invitation to join."
+     },
+     "all_enabled": {
+      "title": "Auto-join enabled for all domains",
+      "description": "Anyone from your verified domains can now join without an invitation."
+     },
+     "all_disabled": {
+      "title": "Auto-join turned off for all domains",
+      "description": "Anyone from your verified domains will now require an invitation to join."
+     },
+     "error": {
+      "title": "That did not work",
+      "description": "Looks like that was our fault. Try again."
+     }
+    }
+   },
+   "join_guidelines": {
+    "title": "Ask a screening question",
+    "label": "Screening question",
+    "placeholder": "e.g. Why do you want to join this team?",
+    "validation_message": "Please limit your question to 500 characters",
+    "save_cta": "Save Question",
+    "cancel_cta": "Cancel",
+    "success_toast": {
+     "title": "Changes saved",
+     "description": "Pending team members must answer this question when requesting to join your team."
+    },
+    "error_toast": {
+     "title": "Unable to save question",
+     "description": "Something went wrong when saving your question. Please try again."
+    }
+   },
+   "settings": "Team discovery settings"
+  },
+  "nudge": {
+   "initial_toast": {
+    "title": "Invites sent. Let other coworkers from @{domain} join automatically",
+    "description": "This way your coworkers can discover and automatically join your team.",
+    "enable_auto_join": "Enable Auto-Join",
+    "view_settings": "View Settings"
+   },
+   "enable_success_toast": {
+    "title": "Your team access settings have been updated",
+    "description": "Your team members will now have a smoother onboarding experience",
+    "view_settings": "View Settings"
+   },
+   "enable_error_toast": {
+    "title": "Failed to update team access settings",
+    "description": "Please try again or contact support."
+   }
+  }
+ },
+ "readonly_members": {
+  "editor_tag": "ADMIN",
+  "readonly_tag": "READ ONLY",
+  "editor_tooltip": "Can edit all shared workspaces and manage members, roles, billing, and team settings.",
+  "readonly_tooltip": "Can view shared workspaces but can’t make changes or manage team settings. Personal workspaces are unaffected."
+ },
+ "orgs_access": {
+  "title": "Organization access",
+  "orgs_discovery": {
+   "title": "Make this organization discoverable"
+  }
+ },
+ "tags": {
+  "page": {
+   "heading": "Tags",
+   "description": "Create and manage tags to organize elements across your organization. Use status tags to track lifecycle stages of collections, and standard tags to group and surface related elements.",
+   "create_button_label": "Create tag"
+  },
+  "not_supported_message": "Tag management isn't supported for your team.",
+  "not_enabled_message": "Tag management isn't enabled for your team.",
+  "table": {
+   "search_placeholder": "Search by tag name",
+   "type_filter_placeholder": "Filter by type",
+   "load_error": "Failed to load tags. Please try again.",
+   "column_name": "Name",
+   "column_type": "Type",
+   "column_applied_to": "Applied to",
+   "column_created_by": "Created by",
+   "column_created_on": "Created on",
+   "column_updated_by": "Updated by",
+   "column_last_updated": "Last updated",
+   "type_badge_status": "status",
+   "type_badge_default": "standard",
+   "type_filter_status": "Status",
+   "type_filter_default": "Standard",
+   "action_edit": "Edit",
+   "action_delete": "Delete"
+  },
+  "create_modal": {
+   "heading": "Create tag",
+   "tag_type_label": "Tag type",
+   "standard_type_label": "Standard",
+   "standard_type_helper": "Organize and discover elements across your organization.",
+   "status_type_label": "Status",
+   "status_type_helper": "Track lifecycle stages of collections.",
+   "name_label": "Name",
+   "tag_name_placeholder": "Enter tag name",
+   "status_name_placeholder": "Enter status name",
+   "cancel_button_label": "Cancel",
+   "create_button_label": "Create",
+   "create_button_pending_label": "Creating…"
+  },
+  "edit_modal": {
+   "heading_tag": "Edit tag",
+   "heading_status_tag": "Edit status tag",
+   "name_placeholder": "Enter tag name",
+   "cancel_button_label": "Cancel",
+   "save_button_label": "Save",
+   "save_button_pending_label": "Saving…"
+  },
+  "delete_modal": {
+   "heading": "Delete tag",
+   "description": "<bold>{tagName}</bold> will be permanently deleted{count, plural, =0 {} one { and removed from # element} other { and removed from # elements}}.",
+   "confirm_input_label": "Enter \"delete\" to confirm",
+   "confirmation_text": "delete",
+   "cancel_button_label": "Cancel",
+   "delete_button_label": "Delete",
+   "delete_button_pending_label": "Deleting…"
+  },
+  "validation": {
+   "max_length_error": "Tags cannot exceed 64 characters.",
+   "min_length_error": "Tags must be at least 2 characters.",
+   "invalid_characters_error": "Tags must begin and end with a Unicode letter or number. Characters allowed in between: Unicode letters, numbers, spaces, and _ @ . / : -",
+   "duplicate_slug_error": "A tag with this name already exists for your team.",
+   "create_emoji_required_error": "Select an emoji before creating this status tag.",
+   "save_emoji_required_error": "Select an emoji before saving this status tag."
+  },
+  "mutations": {
+   "create_error": "Failed to create tag. Please try again.",
+   "update_error": "Failed to update tag. Please try again.",
+   "delete_error": "Failed to delete tag. Please try again."
+  }
+ }
+}

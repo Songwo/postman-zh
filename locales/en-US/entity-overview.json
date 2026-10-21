@@ -1,0 +1,17 @@
+{
+ "name": {
+  "placeholder": "Untitled {entityName}"
+ },
+ "summary": {
+  "placeholder": {
+   "editable": "Add a summary to outline the purpose of this {entityName}.",
+   "readOnly": "No summary added yet."
+  }
+ },
+ "description": {
+  "placeholder": {
+   "no_description": "No description added yet.",
+   "default": "Add {entityName} description"
+  }
+ }
+}

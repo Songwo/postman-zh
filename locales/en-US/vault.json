@@ -1,0 +1,1190 @@
+{
+ "title": "Postman Vault",
+ "passport_secrets": {
+  "title": "Passport Secrets",
+  "description": "API credentials you've been granted across the network. Each is a <0>secret reference</0> - a pointer that resolves at runtime through the Passport proxy, so the real value is never stored or shown. Use one in a request, an environment, or copy it to use outside Postman. ",
+  "columns": {
+   "name": "Name",
+   "reference": "Reference",
+   "namespace": "Namespace",
+   "environment": "Environment",
+   "workspace": "Workspace",
+   "scope": "Scope"
+  },
+  "copy": {
+   "copy": "Copy",
+   "copied": "Copied"
+  },
+  "search_placeholder": "Search passport secrets",
+  "empty": {
+   "error": {
+    "title": "Couldn't load secrets",
+    "description": "Something went wrong while loading your secrets. Please try again.",
+    "retry": "Retry"
+   },
+   "no_records": {
+    "title": "No secrets yet",
+    "description": "Secrets that you've been granted access to on Passport will appear here.",
+    "refresh": "Refresh"
+   },
+   "no_matches": {
+    "title": "No matching secrets",
+    "description": "Try adjusting your search or filters.",
+    "clear": "Clear search and filters"
+   }
+  }
+ },
+ "personal_vault": {
+  "breadcrumb_root": "Personal Vault",
+  "save_button": "Save",
+  "save_button_saving": "Saving"
+ },
+ "shared_vault": {
+  "breadcrumb_root": "Shared Vault",
+  "workbench": {
+   "description": "Store and share secrets within your workspace. Shared Vault secrets are workspace-specific, accessible to workspace members, and available across devices. ",
+   "team_description": "Store and share secrets across your team. Access to each secret is controlled by its scope. ",
+   "learn_more": "Learn more",
+   "save": {
+    "button": "Save",
+    "button_saving": "Saving",
+    "error": "Failed to save Shared Vault",
+    "tooltip_unsaved": "Save changes to shared vault",
+    "tooltip_saved": "No unsaved changes"
+   },
+   "load_error": {
+    "title": "Failed to load Shared Vaults",
+    "message": "It's not you, it's us. We hit a snag on our end. Please try again."
+   },
+   "disabled_by_admin": {
+    "title": "Shared Vault is currently disabled",
+    "description": "The Shared Vault has been disabled by a team administrator.<br/>You won't be able to access its contents until it is enabled.",
+    "learn_more": "Learn More"
+   },
+   "forbidden": {
+    "title": "Access Denied",
+    "description": "You don't have the required permissions to view this Shared Vault.<br/>If you believe this is an error, please contact your workspace owner to request access."
+   }
+  },
+  "sidebar": {
+   "tab_label": "Shared Vaults",
+   "search_placeholder": "Search shared vaults",
+   "create": {
+    "option_label": "Shared Vault",
+    "heading": "Create Shared Vault",
+    "tooltip": "Create Shared Vault"
+   },
+   "empty_state": {
+    "title": "It's a bit quiet in here...",
+    "description": "Securely share secrets with your team"
+   },
+   "error_state": {
+    "heading": "Failed to load Shared Vaults",
+    "description": "It's not you, it's us. We hit a snag on our end",
+    "retry": "Try Again"
+   }
+  },
+  "secrets": {
+   "key_column": "Key",
+   "value_column": "Value",
+   "scope_column": "Scope",
+   "domains_column": "Allowed domains",
+   "share": "Share",
+   "manage_sharing": "Manage sharing",
+   "view_only": "View only"
+  },
+  "sharing_modal": {
+   "share_title": "Share",
+   "manage_sharing_title": "Manage sharing",
+   "access_heading": "Who can access this secret",
+   "only_this_workspace_title": "Only this workspace",
+   "only_this_workspace_description": "Visible only to members of {workspaceName}. This is the default for new secrets.",
+   "specific_workspaces_title": "Specific workspaces",
+   "specific_workspaces_description": "Choose which other workspaces in this team can use this secret.",
+   "team_wide_title": "All workspaces (team-wide)",
+   "team_wide_description": "Every current and future workspace in this team can use this secret.",
+   "search_workspaces_placeholder": "Select workspaces",
+   "workspaces_label": "Workspaces",
+   "workspaces_helper_text": "Select which workspaces in this team can use this secret.",
+   "workspaces_inline_label_plural": "{count} workspaces",
+   "no_workspaces_found": "No workspaces found",
+   "loading_workspaces": "Loading workspaces...",
+   "access_info": "Members of shared workspaces can view and use this secret's value, but only {workspaceName} can change or revoke its sharing, since this secret belongs to this workspace.",
+   "cancel": "Cancel",
+   "save_changes": "Save changes",
+   "access_info_team_scoped": "Members of each workspace in the team can view and use shared secret references in requests.",
+   "access_info_workspace_owned": "Members of only this workspace can view and use shared secrets references in requests.",
+   "access_info_workspace_shared": "Members of the selected workspaces can view and use shared secrets references in requests."
+  },
+  "external": {
+   "edit": "Edit external secret",
+   "relink": "Re-link external secret"
+  }
+ },
+ "external_providers": {
+  "hashicorp": {
+   "label": "HashiCorp Vault",
+   "fields": {
+    "url": {
+     "label": "Server URL",
+     "help": "Base URL of your Vault server, including the port if non-standard (e.g. https://vault.example.com:8200). Must be reachable over HTTPS."
+    },
+    "namespace": {
+     "label": "Namespace",
+     "help": "Vault Enterprise / HCP namespace. Leave blank for open-source Vault."
+    }
+   },
+   "auth": {
+    "oidc": {
+     "label": "OIDC (per-user SSO)",
+     "issuer": {
+      "label": "OIDC issuer URL",
+      "help": "Your identity provider's issuer URL. Postman discovers its endpoints via /.well-known/openid-configuration."
+     },
+     "clientId": {
+      "label": "OIDC client ID",
+      "help": "The public client ID registered with your identity provider for Postman."
+     },
+     "mount": {
+      "label": "Vault auth mount path",
+      "help": "Path where Vault's JWT/OIDC auth method is enabled (default: jwt)."
+     },
+     "role": {
+      "label": "Vault role"
+     },
+     "scopes": {
+      "label": "Additional scopes",
+      "help": "Optional extra OIDC scopes, space-separated. 'openid' is always requested."
+     }
+    },
+    "approle": {
+     "label": "AppRole (machine)",
+     "mount": {
+      "label": "Vault auth mount path"
+     },
+     "roleId": {
+      "label": "Role ID"
+     },
+     "secretId": {
+      "label": "Secret ID"
+     }
+    }
+   },
+   "reference": {
+    "mountPath": {
+     "label": "Secrets engine mount"
+    },
+    "kvVersion": {
+     "label": "KV engine version",
+     "v2": "KV version 2",
+     "v1": "KV version 1"
+    },
+    "path": {
+     "label": "Secret path"
+    },
+    "selector": {
+     "label": "Field selector",
+     "help": "JSON Pointer to a single field within the secret (e.g. /password). Required when the secret has more than one field."
+    },
+    "secretVersion": {
+     "label": "Secret version",
+     "help": "Optional specific version to read (KV v2 only). Defaults to the latest version."
+    }
+   }
+  },
+  "azure": {
+   "label": "Azure Key Vault",
+   "fields": {
+    "tenantId": {
+     "label": "Directory (tenant) ID",
+     "help": "The Microsoft Entra directory (tenant) that owns your Key Vaults. Every secret linked through this connection authenticates against this directory."
+    },
+    "cloud": {
+     "label": "Azure cloud"
+    }
+   },
+   "auth": {
+    "service_principal": {
+     "label": "Service principal (client secret)",
+     "clientId": {
+      "label": "Application (client) ID"
+     },
+     "clientSecret": {
+      "label": "Client secret"
+     }
+    },
+    "entra_user": {
+     "label": "Microsoft Entra user (sign in on this device)",
+     "clientId": {
+      "label": "Custom app (client) ID",
+      "help": "Bring your own Entra app. Requires the desktop redirect URI plus admin consent. The app must be registered in this connection's directory (tenant)."
+     }
+    }
+   },
+   "reference": {
+    "secretIdentifier": {
+     "label": "Secret identifier",
+     "help": "Copy the \"Secret Identifier\" from the secret in the Azure portal. Omit the trailing version to always read the latest value."
+    }
+   }
+  },
+  "oidc": {
+   "launch": {
+    "redirecting": "Redirecting you to your identity provider…",
+    "error_title": "Couldn't start sign-in",
+    "error_missing_connection": "This sign-in link is missing its connection reference. Close this window and try connecting again from Postman.",
+    "error_generic": "We couldn't start the sign-in. Make sure you're signed in to Postman and try again."
+   },
+   "callback": {
+    "completing": "Completing sign-in…",
+    "success_title": "You're connected",
+    "success_body": "You can close this window and return to Postman.",
+    "error_title": "Sign-in failed",
+    "error_missing_params": "This callback is missing required parameters. Close this window and try connecting again from Postman.",
+    "error_generic": "We couldn't complete the sign-in. Close this window and try again from Postman."
+   }
+  }
+ },
+ "providers": {
+  "onePassword": "1Password Account",
+  "secretsManager": "AWS Secrets Manager",
+  "azure": "Azure Key Vault",
+  "hashicorp": "HashiCorp Vault"
+ },
+ "consent_modal": {
+  "title": "Grant Vault access for this execution?",
+  "description": "Scripts in this request may access vault secrets directly or by running other requests from your workspace. Only proceed if you trust the source of this request and any requests it triggers.",
+  "trust_level": "Grant vault access for:",
+  "trust_collection": "Only this collection",
+  "trust_workspace": "Entire Workspace",
+  "deny_cta": "Deny Access",
+  "allow_cta": "Grant Access"
+ },
+ "learn_more": "Learn more",
+ "kv_container": {
+  "help_text": "Store sensitive data locally. Local Vault secrets work across workspaces, are only accessible to you, remain on your device, and are never synced.<4></4>",
+  "learn_more": "Learn more"
+ },
+ "kv_container_cloud": {
+  "help_text": "Securely sync your sensitive data to your Personal Vault on the cloud using end-to-end encryption, accessible across devices and workspaces. ",
+  "learn_more": "Learn more"
+ },
+ "kv_editor": {
+  "guided_auth_heading": "Created with guided auth",
+  "add_new_secret": "Add new secret",
+  "session_secrets": {
+   "heading": "Session variables",
+   "help_text": "Unshared secret variables from your environments, collections, or globals are stored in the Local Vault and displayed here.",
+   "open_environment": "Open Environment",
+   "open_collection": "Open Collection",
+   "open_globals": "Open Globals",
+   "globals_label": "Globals"
+  },
+  "delete_secret": "Delete secret",
+  "hide_secret": "Hide secret",
+  "show_secret": "Show secret",
+  "value_placeholder": "Value"
+ },
+ "azure": {
+  "label": {
+   "text": "Secret Identifier",
+   "info": "Present on the secret details page in the vault"
+  },
+  "invalid_identifier": "Invalid Secret Identifier",
+  "note": "Note: If you do not include the version ID, the latest version will be fetched while resolving this secret.{0}",
+  "use_button": "Use"
+ },
+ "hashicorp": {
+  "secret": {
+   "engine": "Secret Engine",
+   "path": "Secret Path",
+   "key": "Secret Key",
+   "engine_version": "Secret Engine Version",
+   "radio_button": {
+    "engine_version": {
+     "version1": "Version 1",
+     "version2": "Version 2"
+    }
+   }
+  },
+  "path_error": "Path cannot end with /",
+  "use_button": "Use"
+ },
+ "onepassword": {
+  "auth_modal": {
+   "get_help": {
+    "title": "Reach out to Postman support",
+    "documentation": "View Documentation"
+   },
+   "heading": "Authenticate {provider_name}",
+   "service_token": {
+    "title": "Invalid service account token",
+    "invalid_error": "Please enter a valid service account token",
+    "ops_start": "Service account token should start with ops_",
+    "invalid_response": "Invalid response received while trying to authenticate token"
+   },
+   "auth_failed": "Authentication failed",
+   "auth_retry": "Please check your credentials and try again.",
+   "text_input": {
+    "label": "Service account token",
+    "helper_text": "This token allows a service account to authenticate with 1Password CLI."
+   },
+   "button": {
+    "text": "Create a service account token",
+    "cancel": "Cancel",
+    "authenticate": "Authenticate"
+   }
+  },
+  "secret_editor": {
+   "label": {
+    "text": "Secret reference URI",
+    "info_text": "The secret reference URI format is: {op_format}",
+    "helper_text": "This is a combination of the vault name, item, section, and field where a secret is stored in your 1Password account."
+   },
+   "validation_message": "Invalid secret reference URI",
+   "button": {
+    "use": "Use"
+   }
+  }
+ },
+ "onboarding": {
+  "unlock_vault": {
+   "open_vault_button": "Open Vault",
+   "heading": "Enter your vault key",
+   "seconday_text": "Unlock vault and access its secrets by entering this device's vault key.",
+   "banner": {
+    "text": "Switch to Desktop Agent, and we'll automatically get the vault key from your native password manager every time."
+   },
+   "text_input": {
+    "placeholder": "Enter vault key"
+   },
+   "get_help": {
+    "support": {
+     "title": "Reach out to Postman support"
+    },
+    "documentation": {
+     "title": "View Documentation"
+    }
+   },
+   "vault_link_external_text": "Already using a secret manager? Set it up with Postman:",
+   "primary_button": {
+    "text": "Open Vault"
+   },
+   "keychain": {
+    "button": {
+     "text": "Unlock with native password manager"
+    },
+    "absent": "No vault key is saved in your native password manager. Enter the key manually to unlock your vault.",
+    "error": "Couldn't get the vault key from your native password manager. Try again, or enter the key manually."
+   },
+   "error": {
+    "invalid_key": "That vault key isn't valid. Check the key and try again.",
+    "keychain_key_invalid": "The vault key saved in your native password manager isn't valid. Enter the key manually to unlock your vault.",
+    "unknown": "Couldn't unlock your vault. Try again."
+   },
+   "reset_vault": {
+    "help_text": "Couldn't find the key?",
+    "text": "Reset vault",
+    "warning_text": "This will permanently delete all your existing vaults secrets from all your devices. A fresh new vault will be created with a new vault key.",
+    "button": {
+     "cancel": "Cancel"
+    }
+   }
+  },
+  "encryption_details": {
+   "ftux_flow": {
+    "heading": "Locally store secrets in vault",
+    "description": "Use vault secrets across workspaces in requests, test scripts, authorizations, environments, etc., using"
+   },
+   "cta_text": "Open Vault",
+   "heading": "Save your vault key",
+   "text": "This unique key for your account will be needed when you sign out and sign in. Losing the key will result in the loss of all your secrets. Vault secrets can't be accessed when logged out.",
+   "checkbox": {
+    "label": "Save this key to native password manager",
+    "helperText": "This will make your vault access seamless every time you sign in."
+   },
+   "agent_not_ready": "Make sure the desktop agent is running to save your vault key.",
+   "unsupported_agent": "Switch to the Desktop Agent to save your vault key."
+  },
+  "onboarding": {
+   "text": "Use these vault secrets in requests, authorizations, environments, etc., by invoking them with<1></1><2>{secretLabel}</2>. Vault secrets work across workspaces, stay local and aren't synced.",
+   "title": {
+    "created": "Vault created",
+    "reset": "Vault reset",
+    "encrypted": "Vault encrypted"
+   },
+   "error": {
+    "message": "Something went wrong. Please try again."
+   },
+   "loader": {
+    "text": "Assigning a vault key and creating your local encrypted vault..."
+   },
+   "details": {
+    "title": "Vault created with your first secret saved"
+   },
+   "heading": "Locally store sensitive data in vault as secrets",
+   "setup": {
+    "button": "Set up Vault"
+   }
+  },
+  "get_help": {
+   "support": {
+    "title": "Reach out to Postman support"
+   },
+   "documentation": {
+    "title": "View Documentation"
+   }
+  }
+ },
+ "migration": {
+  "heading": "New vault improvement: Encrypt your secrets",
+  "text": "Add an extra layer of security by encrypting your secrets on your local storage. Don’t worry your secrets will be safe.",
+  "button": {
+   "text": "Encrypt Vault"
+  }
+ },
+ "reusable": {
+  "link_vault": {
+   "text": "Link Vault"
+  },
+  "loader": {
+   "text": "Almost there! We’re loading your Vault."
+  },
+  "user_key_container": {
+   "tooltip": {
+    "copied": "Copied",
+    "copy_key": "Copy Vault key",
+    "show_key": "Show Vault key",
+    "hide_key": "Hide Vault key"
+   },
+   "button": {
+    "tooltip": "Download Vault key"
+   }
+  },
+  "vault_integration_title_button": {
+   "text": "Set up external vault"
+  },
+  "vault_integration_use_existing_vault": {
+   "text": "Use from existing vault"
+  },
+  "auth_modal": {
+   "get_help": {
+    "title": "Reach out to Postman support"
+   },
+   "connecting": {
+    "content": "{provider} setup should open in your browser. ",
+    "paste_in": "and paste it in.",
+    "if_not": "If not,"
+   },
+   "documentation": {
+    "title": "View Documentation"
+   },
+   "modal": {
+    "heading": "Connecting to {provider}",
+    "text": "This may take up to 60 seconds.",
+    "cancel_button": "Cancel"
+   },
+   "error": {
+    "title": "Authentication failed",
+    "text": "Vault not supported",
+    "unexpected_error": "Something went wrong while trying to authenticate. Please try again, or contact support if the issue continues."
+   }
+  },
+  "desktop_agent_banner": {
+   "text": "This request is using secrets stored in vault. To use vault secrets, you need to switch to the Postman Desktop Agent.",
+   "link": "Use Postman Desktop Agent",
+   "provider_not_resolved": "{provider} must be connected to resolve the linked secrets. ",
+   "reauthenticate": "Re-authenticate",
+   "generic_provider_label": "The linked vaults"
+  },
+  "integration_editor": {
+   "heading": "Link secret",
+   "disconnect": {
+    "tooltip": "Disconnect vault"
+   },
+   "already_added_secret": {
+    "tooltip": "Secret already linked from an external vault"
+   },
+   "add_new": {
+    "tooltip": "Add new vault"
+   }
+  },
+  "integration_viewer": {
+   "heading": "Vault Secret",
+   "banner": {
+    "text": "Your <1>{provider}</1> is no longer connected. Re-authenticate to resolve this secret."
+   },
+   "reauthenticate": "Re-authenticate"
+  },
+  "limit_reached_banner": {
+   "contact_support": "Contact Support",
+   "limit_exceeded": {
+    "without_link": "You have reached the maximum number of vault secrets allowed on your plan. Reach out to support for further help.",
+    "with_link": "You have reached the maximum number of vault secrets allowed on your plan.<1> </1><2>Reach out to support</2> for further help."
+   }
+  },
+  "unsupported_agent_banner": {
+   "text": "Switch to the Desktop Agent or Desktop App to access your Vault secrets.",
+   "learn_more": "Learn more"
+  },
+  "provider_icon": {
+   "azure_vault": "Azure Key Vault",
+   "hashicorp_vault": "HashiCorp Vault",
+   "secrets_manager": "AWS Secrets Manager",
+   "1password_vault": "1Password Account"
+  },
+  "provider_menu": {
+   "not_admin": {
+    "tooltip": "No vault has been authorized by your team admin."
+   },
+   "is_admin": {
+    "tooltip": "Authorize your vault from Vault Settings"
+   },
+   "text": "Link a secret to fetch the value from an existing vault"
+  }
+ },
+ "settings": {
+  "title": "Vault Settings",
+  "tabs": {
+   "settings": "Settings",
+   "manageAccess": "Manage access"
+  },
+  "manageAccess": {
+   "scripts_enabled": {
+    "heading": "Start using Vault secrets in scripts",
+    "text": "Run a request that uses a script with your Vault secrets. The request prompts you to allow access.<br/>After you allow it, you can manage Vault permissions here."
+   },
+   "scripts_disabled": {
+    "heading": "Start by configuring your Vault",
+    "text": "Start by configuring your Vault in Settings to allow scripts to access your secrets."
+   },
+   "helperText": "Manage which workspaces and collections can use your Vault secrets in scripts. Reset access to revoke it for future runs.",
+   "reset_access": "Reset Access",
+   "grant_access": "Grant Access",
+   "no_preferences": "No preferences data available."
+  },
+  "hashicorp_integration_settings": {
+   "error": {
+    "title": "Something went wrong",
+    "message": "An unknown error occured. Please try again after sometime."
+   },
+   "validation_error": {
+    "title": "Validation failed",
+    "message": "We're unable to connect to specified OIDC Provider URL. Please make sure that the URL is correct and accessible from your network."
+   },
+   "form": {
+    "heading": "Set up HashiCorp Integration",
+    "text": "Setting up HashiCorp vault will allow all team members to authenticate and link secrets to their Postman vault.",
+    "learn_more": "Learn more",
+    "oidc_label": "OIDC Provider URL",
+    "validation_message": "Expected a valid URL",
+    "jwt_auth_label": "JWT Auth Path",
+    "client_id_label": "Client Id",
+    "role_label": "Role",
+    "scopes_label": "Scopes",
+    "scopes_placeholder": "Enter scopes separated by space",
+    "namespace_label": "Namespace",
+    "button": {
+     "set_up_hashicorp": "Set Up HashiCorp",
+     "cancel": "Cancel"
+    }
+   }
+  },
+  "sign_in_error": {
+   "title": "Postman couldn't finish signing in to {provider_name}",
+   "instruction": "Try again. If it keeps happening, share the message below with your {provider_name} administrator.",
+   "from_provider": "From {provider_name} · HTTP {status_code}",
+   "from_provider_no_status": "From {provider_name}",
+   "copy_details": "Copy details",
+   "copied": "Copied",
+   "retry": "Try again"
+  },
+  "main": {
+   "button": {
+    "connect": "Connect",
+    "set_up": "Set Up Integration",
+    "edit_details": "Edit details",
+    "disconnect": "Disconnect",
+    "reset_cache": "Reset Cache",
+    "configure_vault": "Configure Vault",
+    "open_settings": "Open Settings"
+   },
+   "tooltip": {
+    "not_authorised": "No vault has been authorized by your team admin."
+   },
+   "container": {
+    "title": "Postman Vault"
+   },
+   "key": {
+    "heading": "Vault key",
+    "text": "This unique key for your account will be needed when you sign out and sign in."
+   },
+   "encryption": {
+    "heading": "Encryption"
+   },
+   "mask_secrets": {
+    "heading": "Mask vault secrets",
+    "text": "Automatically mask secrets in the console by default."
+   },
+   "support_in_scripts": {
+    "heading": "Allow Vault secrets in scripts",
+    "text": "Allow scripts to securely access Vault secrets during request execution.",
+    "modal": {
+     "title": "Allow Vault secret access for scripts",
+     "content": "Allowing this gives scripts access to your Vault secrets so they can run requests that need them.<br/>Review any third-party scripts to confirm they’re safe to use."
+    }
+   },
+   "integrations": {
+    "heading": "Integrations",
+    "text": "This vault integration has been configured for all team members"
+   },
+   "secret_expiration": {
+    "heading": "Secret expiration duration",
+    "text": "Set how long cached secrets from integrated apps stay valid. After this duration, we'll auto-fetch the secret data again."
+   },
+   "cache_validation_message": "Should be between 5-60 min",
+   "no_user_key": {
+    "heading": "Start by configuring your Vault",
+    "text": "Start by configuring your Vault to securely store your sensitive data. Once configured, you can manage your Vault settings here."
+   }
+  }
+ },
+ "container_main": {
+  "error": {
+   "message": "Something went wrong.",
+   "key_mismatch": "The secrets stored on this device were encrypted with a different vault key, so Postman can't open them. Nothing has been deleted. Refresh to try again, or clear them to start fresh with your current key."
+  },
+  "button": {
+   "refresh": "Refresh",
+   "clear_vault": "Clear vault",
+   "settings": "Settings",
+   "set_up_hashicorp": "Set up HashiCorp integration"
+  },
+  "empty_vault": {
+   "heading": "Shhh... This was supposed to be a secret…",
+   "text": "We're working on a new feature called Vault that will soon enable you to securely store and manage your sensitive info locally."
+  },
+  "settings_tab": {
+   "title": "Vault Settings"
+  },
+  "hashicorp_help_message": "Looking to configure HashiCorp Vault for your team?",
+  "share_feedback": {
+   "text": "Share Feedback",
+   "tooltip": "Share your feedback on the new Vault experience to help us make it even better."
+  }
+ },
+ "aws": {
+  "auth_modal": {
+   "get_help": {
+    "title": "Reach out to Postman support",
+    "documentation": "View Documentation"
+   },
+   "autofill_fail": {
+    "title": "Autofill failed",
+    "content": "Unable to autofill AWS Credentials"
+   },
+   "auth_fail": {
+    "title": "Authentication failed",
+    "invalid_response": "Invalid response received while trying to fetch token",
+    "invalid_creds": "Please check your credentials and try again.",
+    "invalid_mfa_data": "MFA Data is not valid",
+    "failed_fetch_mfa": "Failed to fetch MFA Data"
+   },
+   "invalid_mfa_format": "MFA data in unexpected format",
+   "modal": {
+    "heading": "Authenticate {provider}",
+    "labels": {
+     "credentials_type": "Credentials Type",
+     "long_lived": "Long-lived",
+     "temporary": "Temporary",
+     "access_key": "Access Key",
+     "secret_key": "Secret Key",
+     "region": "Region",
+     "serial_no": "Serial No",
+     "mfa_token": "MFA Token",
+     "session_token": "Session Token"
+    },
+    "button": {
+     "authenticate": "Authenticate",
+     "cancel": "Cancel"
+    },
+    "mfa_required": "Your AWS Account requires multi factor authentication"
+   }
+  },
+  "secret_editor": {
+   "labels": {
+    "secret_arn": "Secret ARN",
+    "secret_arn_info": "Present on the secret details page in the vault",
+    "role_arn": "Role ARN (Optional)",
+    "role_arn_info": "ARN of the role to be assumed to fetch the secret",
+    "version": "Version (Optional)",
+    "version_info": "Secret Version",
+    "secret_key": "Secret key"
+   },
+   "validation_message": {
+    "invalid_arn": "Invalid ARN",
+    "invalid_role": "Invalid Role",
+    "key_empty": "Key cannot be empty"
+   },
+   "advanced_settings": {
+    "hide": "Hide Advanced settings",
+    "show": "Show Advanced settings"
+   },
+   "radio_button": {
+    "label": "Secret Type",
+    "plaintext": "Plaintext",
+    "key_value": "Key/Value"
+   },
+   "button": {
+    "use": "Use"
+   }
+  },
+  "text_input": {
+   "label": "Autofill from config file"
+  }
+ },
+ "hover_tooltip": {
+  "secret_disabled": {
+   "message": "This vault secret is disabled. Enable it to access its value.",
+   "button": "Enable secret"
+  },
+  "secret_not_resolved": {
+   "message": "Use the desktop app or desktop agent to resolve this secret.",
+   "button": "Use Desktop Agent"
+  },
+  "invalid_domain": {
+   "heading": "This secret is not supported on domain of this request",
+   "message": "This vault secret has been locked to specific domains. You can check and edit these from your vault.",
+   "button": "Update domains"
+  },
+  "placeholder": "Enter secret value",
+  "vault_disconnected": {
+   "heading": "Linked secret cannot be resolved",
+   "message": "The linked {providerName} is disconnected. Re-authenticate or make sure the connected account has access to this secret.",
+   "button": "Re-Authenticate"
+  },
+  "missing_value": {
+   "heading": "Missing value for vault secret",
+   "message": "Enter a value for the secret and and we'll update it in your vault.",
+   "button": "Update secret"
+  },
+  "user_key_missing": {
+   "heading": "Enter vault key to access this secret",
+   "message": "For security reasons, you need to enter your vault key after signing out and signing in again.",
+   "button": "Access Vault",
+   "placeholder": "Enter vault key"
+  },
+  "secret_missing": {
+   "heading": "Add vault secret",
+   "message": "It seems this vault secret is missing. No worries, just enter its value we'll add it to your vault.",
+   "button": "Add secret"
+  },
+  "vault_not_present": {
+   "heading": "Start using vault to securely save secrets on your local system",
+   "message": "Simply add a value. We'll create your local encrypted vault and add this secret there.",
+   "button": "Add secret"
+  },
+  "password": {
+   "hover_text": "Secret"
+  },
+  "button": {
+   "cancel": "Cancel"
+  },
+  "error_message": {
+   "empty_secret_value": "Enter a value for the secret.",
+   "empty_vault_key": "Enter a vault key.",
+   "invalid_vault_key": "Vault key invalid. Try again."
+  }
+ },
+ "variable_kv_pairs": {
+  "azure": {
+   "vault": "Vault",
+   "secret": "Secret",
+   "version": "Version",
+   "identifier": "Identifier"
+  },
+  "hashicorp": {
+   "engine": "Engine",
+   "path": "Path",
+   "key": "Key",
+   "engine_version": "Engine Version"
+  },
+  "secretsManager": {
+   "arn": "ARN",
+   "role": "Role",
+   "version": "Version",
+   "secret_type": "Secret type",
+   "secret_key": "Secret key",
+   "key_value": "Key/value",
+   "plaintext": "Plaintext"
+  },
+  "onePassword": {
+   "secret_reference": "Secret Reference"
+  }
+ },
+ "sidebar": {
+  "title": "Postman Vault",
+  "nav_label": "Vault",
+  "cloud_vault_title": "Personal Vaults",
+  "vault_actions": {
+   "rename": "Rename",
+   "delete": "Delete"
+  },
+  "local_vault_actions": {
+   "move_to_cloud": "Copy to Personal Vault",
+   "export": "Export"
+  },
+  "move_to_cloud": "Move to Personal Vault",
+  "create_vault": {
+   "heading": "Create Personal Vault",
+   "tooltip": "Create new Personal Vault",
+   "tooltip_limit_reached": "You have exhausted the maximum number of Personal Vaults allowed on your plan.",
+   "personal": "Personal Vault",
+   "tooltip_creating": "Creating...",
+   "tooltip_dropdown": "Create vault",
+   "aria_label": "Create vault"
+  },
+  "create_personal_vault": {
+   "tooltip": "Create Personal Vault"
+  },
+  "locked_state": {
+   "title": "Vault is locked",
+   "description": "Unlock your vault to access your personal secrets",
+   "unlock_button": "Unlock Vault"
+  },
+  "search_placeholder": "Search vaults",
+  "search_placeholder_personal": "Search personal vaults",
+  "tabs": {
+   "personal": "Personal Vaults"
+  },
+  "loading": "Loading...",
+  "disabled": {
+   "title": "Vault is not available",
+   "description": "The Vault feature is currently disabled for this workspace. Contact your workspace administrator for more information."
+  },
+  "error": {
+   "heading": "Couldn't load vaults",
+   "description": "Please try again",
+   "refresh": "Retry"
+  },
+  "empty_state": {
+   "personal_title": "It's a bit quiet in here...",
+   "personal_description": "Securely store sensitive data in the cloud."
+  },
+  "search_empty_state": {
+   "title": "Vault not found",
+   "description": "Please try again using a different keyword"
+  }
+ },
+ "menu": {
+  "clear": "Clear",
+  "export": "Export",
+  "import": "Import",
+  "export_footer": "Contact your team admin to enable Vault export for your team."
+ },
+ "clear_vault_confirmation_modal": {
+  "heading": "Clear Vault?",
+  "description": "Clearing the vault will permanently delete the data in your local vault. Make sure you’ve backed up any important information before continuing."
+ },
+ "export_modal": {
+  "heading": "Export Vault",
+  "description": "Download your vault as a JSON file",
+  "export_type": {
+   "encrypted": "Encrypted (recommended)",
+   "encrypted_description": "The file will be encrypted with a password. You'll need this password to import it back into Postman.",
+   "unencrypted": "Unencrypted",
+   "unencrypted_description": "The file will not be encrypted. Anyone with the file can view its contents."
+  },
+  "password": {
+   "label": "Password",
+   "input_label": "Set a password",
+   "placeholder": "Minimum 12 characters"
+  },
+  "validation": {
+   "password_required": "Password is required.",
+   "password_format": "Password must be at least 12 characters with combination of characters and numbers."
+  },
+  "warning": {
+   "title": "Secrets will be visible in plain text"
+  },
+  "success": {
+   "title": "Vault exported successfully",
+   "description": "Your vault has been downloaded to your machine."
+  },
+  "error": {
+   "title": "Export failed",
+   "description": "Something went wrong while exporting your vault. Please try again."
+  },
+  "not_allowed": {
+   "title": "Vault export is disabled",
+   "description": "Vault export is disabled for your team. Please contact your team admin."
+  },
+  "cancel": "Cancel",
+  "export": "Export",
+  "exporting": "Exporting...",
+  "export_link_content": "Export Vault"
+ },
+ "move_to_cloud_modal": {
+  "title": "Move Local Vault secrets to Personal Vault",
+  "description": "Securely sync your vault secrets across devices with end-to-end encryption. Access your synchronized secrets from any session using your vault key.",
+  "choose_vault_placeholder": "Select a Personal vault",
+  "choose_vault_empty_state_message": "No Personal vaults found. Provide a vault name to create a new Personal vault. e.g. \"backup\"",
+  "move_confirm_cta": "Move Secrets",
+  "cancel_cta": "Keep Secrets Local",
+  "user_signout": {
+   "message": "{count, plural, =1 {You have {count} vault variable that will not be retained.} other {You have {count} vault variables that will not be retained.}}",
+   "link_content": "Copy to Personal Vault"
+  }
+ },
+ "password_import_modal": {
+  "heading": "Enter password",
+  "description": "This Vault file \"{vaultName}\" is password protected. Please enter the password to import it.",
+  "password": {
+   "label": "Password",
+   "required": "Password is required",
+   "invalid": "Incorrect password. Please check your password."
+  },
+  "cancel": "Cancel",
+  "import": "Import",
+  "decrypting": "Decrypting..."
+ },
+ "conflict_modal": {
+  "heading": "Secret already exists",
+  "description": "Vault secret with the key \"{variableName}\" already exists.",
+  "choose_action": "What would you like to do?",
+  "replace": "Replace",
+  "keep": "Keep",
+  "apply_to_all": "Apply to all {count} conflicts"
+ },
+ "toast": {
+  "feature_not_available": "{feature} is not available",
+  "no_active_workspace": "Cannot create vault: No active workspace",
+  "personal": {
+   "create_vault": {
+    "success": "Personal Vault created successfully",
+    "error": "Something went wrong while creating the vault. Please try again."
+   },
+   "delete_vault": {
+    "success": "Personal Vault deleted successfully",
+    "error": "Something went wrong while deleting the vault. Please try again."
+   },
+   "rename_vault": {
+    "success": "Personal Vault renamed successfully",
+    "error": "Something went wrong while renaming the vault. Please try again."
+   },
+   "save_vault": {
+    "success": "Personal Vault saved successfully",
+    "error": "Something went wrong while saving the vault. Please try again."
+   }
+  },
+  "shared": {
+   "create_vault": {
+    "success": "Shared vault created successfully",
+    "error": "Something went wrong while creating the vault. Please try again.",
+    "forbidden": "You are not authorized to perform this action on this Shared Vault."
+   },
+   "delete_vault": {
+    "success": "Shared vault deleted successfully",
+    "error": "Something went wrong while deleting the vault. Please try again.",
+    "forbidden": "You are not authorized to perform this action on this Shared Vault."
+   },
+   "rename_vault": {
+    "success": "Shared vault renamed successfully",
+    "error": "Something went wrong while renaming the vault. Please try again.",
+    "forbidden": "You are not authorized to perform this action on this Shared Vault."
+   },
+   "save_vault": {
+    "success": "Shared vault saved successfully",
+    "error": "Something went wrong while saving the vault. Please try again.",
+    "forbidden": "You are not authorized to perform this action on this Shared Vault."
+   }
+  },
+  "local": {
+   "export_secrets": {
+    "success": "Secrets exported successfully",
+    "error": "Something went wrong while exporting secrets. Please try again."
+   },
+   "clear_vault": {
+    "success": "Vault cleared successfully",
+    "error": "Something went wrong while clearing the vault. Please try again."
+   }
+  }
+ },
+ "workspace_visibility": {
+  "clear_shared_vault_secrets": {
+   "description": "If this workspace is made public, all secrets stored in the Shared Vault will be automatically removed to prevent public exposure."
+  }
+ },
+ "team_shared_vault": {
+  "add_modal": {
+   "cancel": "Cancel",
+   "domains_label": "Allowed domains (optional)",
+   "domains_placeholder": "api.example.com, *.internal.example.com",
+   "edit_subtitle": "Update this secret. Changes apply everywhere it is used.",
+   "edit_title": "Edit Secret",
+   "key_label": "Key",
+   "key_placeholder": "e.g. stripe_secret_key",
+   "key_value_required": "Both a key and a secret value are required.",
+   "no_workspace": "Cannot create a secret without an active workspace.",
+   "pick_at_least_one_user": "Select at least one teammate to share with.",
+   "save": "Save",
+   "save_changes": "Save changes",
+   "save_failed": "Failed to create secret.",
+   "scope_label": "Who can access this secret",
+   "scope_team": "Entire team",
+   "scope_team_desc": "Every member of this team can use this secret.",
+   "scope_user": "Specific users",
+   "scope_user_desc": "Pick specific teammates who can use this secret.",
+   "scope_workspace": "Workspace",
+   "scope_workspace_desc": "Only members of this workspace can use it.",
+   "subtitle": "This secret will be created by you and kept private to this workspace by default.",
+   "title": "Add Secret",
+   "value_label": "Secret value",
+   "value_note": "The value is masked everywhere except the view modal, and only you can reveal or edit it.",
+   "value_placeholder": "e.g. sk_live_..."
+  },
+  "catalog": {
+   "access_requested": "Requested",
+   "delete": "Delete",
+   "edit_link": "Edit external secret link",
+   "edit_secret": "Edit secret",
+   "empty": "No shared vault secrets yet.",
+   "empty_filtered": "No secrets match your filters.",
+   "header_allowed_domains": "Allowed domains",
+   "header_created": "Created",
+   "header_creator": "Creator",
+   "header_key": "Key",
+   "header_shared_with": "Shared with",
+   "request_access": "Request access",
+   "request_already_granted": "You already have access to this secret.",
+   "request_already_pending": "You already have an open request for this secret.",
+   "request_failed": "Could not request access. Please try again.",
+   "request_not_grantable": "This secret is scoped to a workspace, so access cannot be requested.",
+   "request_sent": "Access requested for {key}",
+   "scope_people": "{count, plural, one {# person} other {# people}}",
+   "scope_restricted": "Restricted",
+   "scope_team_wide": "Team-wide",
+   "share_button": "Share",
+   "view_value": "View value"
+  },
+  "container": {
+   "add_secret": "+ Add Secret"
+  },
+  "delete_modal": {
+   "cancel": "Cancel",
+   "confirm": "Delete",
+   "delete_failed": "Failed to delete secret.",
+   "title": "Delete secret"
+  },
+  "external": {
+   "link_secret": "Link external secret"
+  },
+  "filters": {
+   "all_creators": "All creators",
+   "all_secrets": "All secrets",
+   "clear_creator": "All creators",
+   "creator": "Creator",
+   "creator_panel_label": "Filter by creator",
+   "creator_placeholder": "Search teammates",
+   "current_workspace": "Current workspace",
+   "no_teammates": "No teammates match your search",
+   "search_placeholder": "Search by key name",
+   "workspace_label": "Workspace",
+   "workspace_loading": "Loading workspaces...",
+   "workspace_no_match": "No workspaces match",
+   "workspace_placeholder": "Search workspaces"
+  },
+  "requests": {
+   "actions": "Actions",
+   "approve": "Approve",
+   "approve_selected": "Approve selected",
+   "approved_toast": "Access to {key} approved",
+   "bulk_summary": "{settled} updated, {skipped} already handled, {failed} failed",
+   "denied_toast": "Request for {key} denied",
+   "deny": "Deny",
+   "deny_selected": "Deny selected",
+   "error_already_resolved": "Someone else already handled that request.",
+   "error_generic": "Something went wrong. Please try again.",
+   "error_not_approver": "You can no longer approve requests for that secret.",
+   "error_self_approval": "You can't approve your own request.",
+   "incoming_empty_body": "Requests for secrets you manage will appear here.",
+   "incoming_empty_title": "No requests need your approval",
+   "my_requests": "My requests",
+   "needs_my_approval": "Needs my approval",
+   "outgoing_empty_body": "Request access from the Secrets tab to see it here.",
+   "outgoing_empty_title": "You haven't requested access to any secrets",
+   "requested": "Requested",
+   "requested_from": "Requested from {name} · {when}",
+   "requested_when": "Requested {when}",
+   "requester": "Requester",
+   "scope": "Scope",
+   "scope_specific_people": "Specific people",
+   "scope_workspace": "Workspace",
+   "secret": "Secret",
+   "select_all": "Select all requests",
+   "select_one": "Select request from {name}",
+   "selected_count": "{count, plural, one {# request selected} other {# requests selected}}",
+   "selection_capped": "Up to {limit} requests can be handled at once.",
+   "status": "Status",
+   "status_approved": "Approved",
+   "status_cancelled": "Cancelled",
+   "status_denied": "Denied",
+   "status_expired": "Expired",
+   "status_pending": "Pending"
+  },
+  "share_modal": {
+   "cancel": "Cancel",
+   "creator_already_has_access": "The creator already has access to this secret. Remove them to save your changes.",
+   "creator_already_has_access_named": "{name} created this secret and already has access. Remove them to save your changes.",
+   "info_team": "Every member of this team can view and use this secret's reference in requests.",
+   "info_user": "Only the selected teammates (in addition to you) can view and use this secret's reference.",
+   "info_workspace": "This secret is scoped to its workspace. Sharing it with teammates or the team cannot be undone.",
+   "loading_grants": "Loading current sharing…",
+   "pick_at_least_one_user": "Select at least one teammate to share with.",
+   "save": "Save changes",
+   "save_failed": "Failed to save sharing.",
+   "team_desc": "Everyone on this team can use this secret",
+   "team_title": "All team members",
+   "title": "Manage sharing",
+   "user_desc": "Choose specific teammates who can use this secret",
+   "user_title": "Share with user",
+   "who_heading": "Who can access this secret",
+   "workspace_desc": "This secret can only be used within this workspace and won't be shared beyond it",
+   "workspace_required": "Cannot save workspace sharing without an active workspace.",
+   "workspace_title": "Specific to this workspace only"
+  },
+  "shared_with": {
+   "team_heading": "Shared with everyone on this team",
+   "user_heading": "{count, plural, one {Shared with # person} other {Shared with # people}}",
+   "workspace_heading": "{count, plural, one {Shared across # workspace} other {Shared across # workspaces}}",
+   "workspace_only": "Workspace only"
+  },
+  "tabs": {
+   "external": "External vaults",
+   "managed": "Postman vault"
+  },
+  "user_picker": {
+   "label": "Teammates",
+   "no_matches": "No teammates match your search",
+   "placeholder": "Enter email address",
+   "remove_user": "Remove {name}"
+  },
+  "value_modal": {
+   "cancel": "Cancel",
+   "external_note": "This secret is resolved from its provider at run time and is not stored in Postman.",
+   "load_failed": "Could not load this secret's value.",
+   "loading": "Loading value…",
+   "read_only": "You do not have permission to edit this secret.",
+   "reference_label": "Reference",
+   "reference_title": "Secret reference",
+   "save": "Save",
+   "save_failed": "Failed to save the value.",
+   "title": "Secret value",
+   "value_label": "Value"
+  },
+  "view_tabs": {
+   "requests": "Requests",
+   "secrets": "Secrets"
+  }
+ }
+}

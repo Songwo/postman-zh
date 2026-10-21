@@ -1,0 +1,1046 @@
+{
+ "overview": {
+  "header": {
+   "title": "Overview",
+   "subtitle": "A comprehensive view of your organization analytics and metrics"
+  },
+  "actions": {
+   "refresh": "Refresh",
+   "last_updated": "Last updated: {timeElapsed}"
+  },
+  "user_distribution": {
+   "title": "User distribution over time",
+   "tooltip": {
+    "title": "User distribution over time",
+    "subtitle": "Tracks how team composition and license utilization evolve over time",
+    "description_1": "This view shows how your team's user makeup and license usage change over time. It helps you understand who has access to your workspaces, how actively Postman is being used, and whether your available licenses are fully utilized.",
+    "description_2": "Tracking these trends can highlight growth, unused capacity, or changes in collaboration patterns.",
+    "action_header": "To manage users and licenses effectively, consider:",
+    "action_1": "Reviewing inactive users to ensure access is still needed",
+    "action_2": "Monitoring guest and partner access to maintain the right level of visibility",
+    "action_3": "Reassigning unused licenses as your team grows",
+    "action_4": "Watching changes over time to plan for future license needs",
+    "legend": {
+     "team_member": {
+      "label": "Team members",
+      "description": "Users added as team members to the team"
+     },
+     "active_postman_user": {
+      "label": "Active users",
+      "description": "Users who used Postman at least once"
+     },
+     "partner": {
+      "label": "Partners",
+      "description": "Users that have partner viewer/editor/manager slot on any partner Workspace within the team"
+     },
+     "guests": {
+      "label": "Guests",
+      "description": "View workspace and it's elements access role user"
+     },
+     "unused_licenses": {
+      "label": "Unused licenses",
+      "description": "Empty, available slots"
+     }
+    }
+   }
+  },
+  "user_engagement": {
+   "title": "Team member engagement over time",
+   "tooltip": {
+    "title": "Team member engagement over time",
+    "subtitle": "Understanding how users engage with your workspace helps you see how successfully people discover, onboard, and use your APIs.",
+    "description_1": "These metrics show how users interact with your workspaces and whether they're able to make successful API calls.",
+    "description_2": "Tracking engagement over time can highlight onboarding gaps, usability issues, or opportunities to improve documentation and setup.",
+    "action_header": "To improve user engagement, consider:",
+    "action_1": "Reviewing onboarding content for users who make API calls but don't see successful responses",
+    "action_2": "Adding clear examples and documentation to help new users get started faster",
+    "action_3": "Monitoring trends over time to spot drops or improvements in API usage",
+    "action_4": "Comparing new users to successful users to identify where users get stuck",
+    "legend": {
+     "active_users": {
+      "label": "Active users",
+      "description": "Users who used Postman at least once."
+     },
+     "api_users": {
+      "label": "API users",
+      "description": "Users who make API calls from team workspaces, regardless of whether the response is successful."
+     },
+     "new_api_users": {
+      "label": "New API Users",
+      "description": "Users who make API calls for the first time in the last 6 months from team workspaces."
+     },
+     "successful_api_users": {
+      "label": "Successful API users",
+      "description": "Users who make API calls and receive at least one successful (2xx) response from team workspaces."
+     },
+     "error_only_api_users": {
+      "label": "Error-only API users",
+      "description": "Users who make API calls but receive only non-2xx responses from team workspaces."
+     }
+    }
+   }
+  },
+  "api_requests": {
+   "title": "API requests by response code",
+   "tooltip": {
+    "title": "API requests by response code",
+    "subtitle": "While API Calls are good, errors are not. 4XX errors are of particular interest in Postman because they can signal friction for developers trying to onboard and test with your API. Reducing 4XX error rates will mean more developers successfully onboarding, more API calls, and happier users.",
+    "description_1": "Other errors are also captured here. However, these typically indicate technical issues within your API rather than usability problems.",
+    "action_header": "To reduce your 4XX rates, consider:",
+    "action_1": "Creating an overview collection with step-by-step instructions for setting up auth",
+    "action_2": "Setting up Guided Authorization for your API domains",
+    "action_3": "Using environment variables to build the authorization into all of your requests from a single place",
+    "legend": {
+     "2xx": {
+      "label": "2xx – Success",
+      "description": "The request worked as expected."
+     },
+     "3xx": {
+      "label": "3xx – Redirect",
+      "description": "The request was sent to a different location to complete."
+     },
+     "4xx": {
+      "label": "4xx – Request error",
+      "description": "There's an issue with the request, such as missing or incorrect information."
+     },
+     "5xx": {
+      "label": "5xx – Server error",
+      "description": "The server couldn't process the request."
+     }
+    }
+   }
+  },
+  "active_workspaces": {
+   "title": "Active workspaces over time",
+   "tooltip": {
+    "title": "Active workspaces over time",
+    "subtitle": "This chart shows how the total number of active workspaces in your team changes over time. Active workspaces include all workspaces that still exist and have not been deleted.",
+    "description_1": "Tracking active workspaces helps you understand how your team organizes work, collaborates internally and externally, and how workspace usage grows or stabilizes over time.",
+    "description_2": "An increase in active workspaces often reflects new projects or collaboration needs, while a stable or declining trend can indicate consolidation or cleanup.",
+    "action_header": "To manage workspaces effectively, consider:",
+    "action_1": "Reviewing inactive or unused workspaces to reduce clutter",
+    "action_2": "Choosing the right workspace type based on collaboration needs",
+    "action_3": "Monitoring growth trends to plan governance and access",
+    "action_4": "Ensuring workspaces are clearly named and purpose-driven",
+    "legend": {
+     "internal": {
+      "label": "Internal workspaces",
+      "description": "Refer to internal workspace that is visible to you and your team. It lets you organize your work in Postman and collaborate privately with your team."
+     },
+     "partner": {
+      "label": "Partner workspaces",
+      "description": "An invite-only workspace for collaborating with external partners on shared API projects."
+     },
+     "private": {
+      "label": "Private workspaces",
+      "description": "A private workspace is a restricted workspace where APIs, collections, and other assets are visible only to the workspace owner and invited collaborators."
+     },
+     "public": {
+      "label": "Public workspaces",
+      "description": "Users who has made API calls and received at least one 2xx response from workspaces in team"
+     }
+    }
+   }
+  },
+  "elements_in_workspaces": {
+   "title": "Elements in workspaces over time",
+   "tooltip": {
+    "title": "Elements in workspaces over time",
+    "subtitle": "Cumulative number of non deleted elements that exists in team as of reporting date.",
+    "description_1": "Workspaces are made up of different elements, each supporting a part of your API workflow. Viewing metrics for these elements helps you understand how your workspace is being used, where teams spend time, and which areas may need attention.",
+    "description_2": "High activity usually means an element is actively supporting development or collaboration. Low or declining activity can signal outdated setup, unused resources, or opportunities to simplify your workspace.",
+    "description_3": "Keep in mind that different elements naturally behave differently. For example, monitors run on schedules, while collections depend on manual use. Interpreting metrics in context helps you make better decisions.",
+    "action_header": "To improve workspace effectiveness, consider:",
+    "action_1": "Reviewing elements with little or no activity and archiving anything no longer in use",
+    "action_2": "Checking highly used elements to ensure they're documented and easy to reuse",
+    "action_3": "Aligning environments and mocks with current development stages",
+    "action_4": "Making sure monitors and flows reflect your most important workflows",
+    "legend": {
+     "collections": {
+      "label": "Collections",
+      "description": "Groups of saved API requests you can run and reuse."
+     },
+     "environments": {
+      "label": "Environments",
+      "description": "Sets of variables that let you switch between setups, like test and production."
+     },
+     "mocks": {
+      "label": "Mocks",
+      "description": "Simulated APIs that return example responses without calling a real server."
+     },
+     "monitors": {
+      "label": "Monitors",
+      "description": "Automated checks that run requests on a schedule to track API health."
+     },
+     "flows": {
+      "label": "Flows",
+      "description": "Visual workflows that connect requests and logic without writing code."
+     }
+    }
+   }
+  }
+ },
+ "internal": {
+  "header": {
+   "title": "Internal Workspaces",
+   "subtitle": "View internal workspace metrics and team collaboration insights"
+  },
+  "workspaces_created": {
+   "title": "Workspaces created over time",
+   "tooltip": {
+    "title": "Workspaces created over time",
+    "subtitle": "This chart shows how the number of active shared and private workspaces in your team changes over time. Deleted workspaces are not included.",
+    "description_1": "An increase in workspaces can indicate growing adoption or new projects, while slower growth may suggest consolidation into existing spaces. Looking at private and shared workspaces separately provides insight into how collaboration happens across your team.",
+    "action_header": "To better understand workspace growth, consider:",
+    "action_1": "Reviewing whether new workspaces are created for clear purposes",
+    "action_2": "Encouraging shared workspaces when collaboration is needed",
+    "action_3": "Cleaning up unused or inactive workspaces to reduce clutter",
+    "action_4": "Watching trends over time to plan for team and project growth",
+    "legend": {
+     "private": {
+      "label": "Private workspaces",
+      "description": "Workspaces visible only to the creator. These are often used for personal exploration, drafts, or early experimentation."
+     },
+     "shared": {
+      "label": "Shared workspaces",
+      "description": "Workspaces accessible to multiple team members. These typically support collaboration, shared development, and team workflows."
+     }
+    }
+   }
+  },
+  "collection_error_rates": {
+   "title": "Collections with the highest error rates",
+   "chart": {
+    "legend": {
+     "error_4xx": "4XX Errors",
+     "error_5xx": "5XX Errors"
+    }
+   },
+   "table": {
+    "headers": {
+     "error_4xx": "4XX Errors",
+     "error_5xx": "5XX Errors"
+    }
+   },
+   "tooltip": {
+    "title": "Collections with the highest error rates",
+    "subtitle": "This view highlights collections where API requests fail most often.",
+    "description_1": "High error rates can signal issues with request setup, authentication, or API reliability, and they often point to friction for users trying to successfully use your APIs.",
+    "description_2": "Reviewing these collections helps you identify where users may be getting stuck and prioritize improvements that reduce errors and improve onboarding, testing, and overall API usability.",
+    "action_header": "To reduce error rates in collections, consider:",
+    "action_1": "Reviewing request configuration, parameters, and headers",
+    "action_2": "Improving authentication setup and examples",
+    "action_3": "Adding clearer documentation or usage guidance within the collection",
+    "action_4": "Testing requests across environments to catch setup issues early",
+    "legend": {
+     "4xx": {
+      "label": "4XX Errors Percentage",
+      "description": "The percentage of API calls in this collection that fail due to 4XX errors."
+     },
+     "5xx": {
+      "label": "5XX Errors Percentage",
+      "description": "The percentage of API calls in this collection that fail due to 5XX errors."
+     }
+    }
+   }
+  }
+ },
+ "partner": {
+  "header": {
+   "title": "Partner Workspaces",
+   "subtitle": "See how external partners onboard and collaborate with your APIs"
+  },
+  "filters": {
+   "selected_partners": "{count} partner selected",
+   "selected_partners_plural": "{count} partners selected",
+   "show_all": "Show all",
+   "no_partners": "No partners"
+  },
+  "funnel": {
+   "title": "Partner Onboarding Funnel",
+   "subtitle": "Partners overall conversion",
+   "aria_label": "Partner funnel information",
+   "legend": {
+    "all_partners": "All partners"
+   },
+   "drilldowns": {
+    "total_partners": "Partners who have accepted their invite",
+    "workspace_visited": "Partners who visited the partner workspace",
+    "viewed_collection": "Partners who viewed a collection or its documentation",
+    "request_sent": "Partners who sent an API request",
+    "success_200_ok": "Partners who got a successful API response"
+   },
+   "tooltip": {
+    "title": "Partner Onboarding Funnel",
+    "subtitle": "See how your Partners progress through the onboarding steps",
+    "description_1": "By viewing this funnel, you can identify friction points in the onboarding journey and focus improvements on the steps that matter most for helping partners get to their first successful API response.",
+    "action_header": "To improve partner onboarding, consider:",
+    "action_1": "Reviewing steps with the biggest drop-offs to identify missing guidance or setup issues",
+    "action_2": "Improving documentation and examples for authentication and requests",
+    "action_3": "Providing clearer next steps after partners visit a workspace or view a collection",
+    "action_4": "Tracking progress over time to measure the impact of onboarding improvements"
+   },
+   "steps": {
+    "label": {
+     "total_partners": "Total partners",
+     "workspace_visited": "Workspace visited",
+     "viewed_collection": "Viewed collection",
+     "request_sent": "Request sent",
+     "success_200_ok": "Success 200 OK"
+    }
+   }
+  },
+  "api_calls": {
+   "title": "Partner API Calls",
+   "aria_label": "Partner API calls information",
+   "csv_filename": "partner-api-calls.csv",
+   "empty": "No API calls",
+   "requests": {
+    "error": "Failed to load requests",
+    "empty": "No requests"
+   },
+   "requests_summary": "{success} of {total} requests",
+   "results": {
+    "more_tag": "+ MORE"
+   },
+   "tooltip": {
+    "description": "API requests sent by partners from partner workspaces"
+   }
+  },
+  "monthly_snapshot": {
+   "metrics": {
+    "needs_attention": {
+     "title": "Needs attention",
+     "description": "Partners who may need help getting successful responses"
+    },
+    "api_success_rate": {
+     "title": "API success rate",
+     "description": "Success rate of partner API requests"
+    },
+    "pending_invitations": {
+     "title": "Pending invitations",
+     "description": "Pending partner invitations"
+    }
+   },
+   "drilldowns": {
+    "needs_attention": "Needs attention",
+    "api_success_rate": "API success rate",
+    "pending_invitations": "Pending partner invites"
+   },
+   "pending_invitations_tooltip": {
+    "content": "Some partners may have accepted their invites since the last data refresh. See the Members page for the latest information.",
+    "aria_label": "Information about pending partner invitations"
+   }
+  },
+  "needs_attention": {
+   "types": {
+    "no_success_on_tried_request": "Sent request, no 200 OK",
+    "high_non_200_ok_rate": "API success rate < 50%"
+   }
+  }
+ },
+ "team_overview": {
+  "header": {
+   "title": "Overview",
+   "subtitle": "Team and plan related information"
+  },
+  "created_subtext": {
+   "with_name": "Time {teamName} joined Postman",
+   "default": "Time your team joined Postman"
+  },
+  "billing_cycle_subtext": "Your next billing is on {renewalDate}",
+  "cards": {
+   "team_name": "Team name",
+   "plan_name": "Plan name",
+   "total_members": "Total Team members",
+   "total_members_tooltip": "Denotes the total number of users in the team. This includes Admin-only, Billing-only, Partner and Guest roles who don't consume billed seats.",
+   "total_members_tooltip_aria": "Information about total team members",
+   "team_created_on": "Team created on",
+   "sso_provider": "SSO provider",
+   "sso_helper": "Single sign-on integration",
+   "current_billing_cycle": "Current billing cycle",
+   "upcoming_renewal_date": "Upcoming renewal date",
+   "renewal_helper": "Next billing date"
+  }
+ },
+ "team_members": {
+  "header": {
+   "title": "Team Members",
+   "subtitle": "Details about all members of your team including invites, member activity, and role distribution."
+  },
+  "summary": {
+   "title": "Team member",
+   "tooltip": "Total number of users in the team",
+   "tooltip_aria": "Information about team members",
+   "error": "Failed to load team members",
+   "drawer": {
+    "title": "Team Members",
+    "subtitle": "Complete list of all team members"
+   }
+  },
+  "overtime": {
+   "title": "Team members over time",
+   "dataset_label": "Team members"
+  },
+  "active_overtime": {
+   "title": "Active members over time",
+   "dataset_label": "Active members",
+   "tooltip": {
+    "footer": "Click to view details"
+   },
+   "columns": {
+    "active_month": "Active month"
+   },
+   "drawer": {
+    "title": "Active Members - {month}",
+    "subtitle": "Members who open the Postman app or Postman Web at least once in the month are considered active."
+   }
+  },
+  "invites": {
+   "title": "Member invites",
+   "dataset": {
+    "sent": "Invite sent",
+    "accepted": "Invite accepted"
+   },
+   "status": {
+    "sent": "Sent",
+    "accepted": "Accepted",
+    "sent_lower": "sent",
+    "accepted_lower": "accepted"
+   },
+   "tooltip": {
+    "footer": "Click to view details"
+   },
+   "drawer": {
+    "title": "Invites {status} - {month}",
+    "subtitle": "List of {status} invites for the selected period"
+   }
+  },
+  "roles": {
+   "title": "Member roles",
+   "dataset_label": "Members",
+   "tooltip": {
+    "footer": "Click to view details"
+   },
+   "drawer": {
+    "title": "Members with {role} role",
+    "subtitle": "List of members with the selected role"
+   }
+  },
+  "list": {
+   "title": "Member list",
+   "error": "Failed to load member list",
+   "empty": "No members",
+   "csv_filename": "Members_list.csv"
+  }
+ },
+ "billing": {
+  "header": {
+   "title": "Billing & Usages",
+   "subtitle": "Overview of billing information and resource consumption by your team."
+  },
+  "billed": {
+   "title": "Billed seats",
+   "error": "Failed to load billed seats",
+   "occupied_percent_label": "Seats occupied",
+   "occupied_label": "Occupied seats",
+   "unoccupied_label": "Unoccupied seats",
+   "seats_summary": "{occupied} / {total} seats"
+  },
+  "unbilled": {
+   "title": "Unbilled seats",
+   "error": "Failed to load unbilled seats",
+   "description": "These seats will be included in your next Auto-Flex renewal."
+  },
+  "overall_seat_usage": {
+   "title": "Overall seat usage",
+   "legend": {
+    "total": "Total seats",
+    "occupied": "Occupied seats"
+   }
+  },
+  "overage": {
+   "title": "Overage settings",
+   "tooltip": "Overage settings for each resource",
+   "tooltip_aria": "Information about overage settings",
+   "error": "Failed to load overage settings",
+   "empty": "No overage settings",
+   "columns": {
+    "resource": "Resource",
+    "allowed": "Overage allowed"
+   }
+  },
+  "additional_blocks": {
+   "title": "Additional blocks",
+   "error": "Failed to load additional blocks",
+   "empty": "No additional blocks",
+   "columns": {
+    "resource": "Resource",
+    "quantity": "Quantity",
+    "additional_calls_or_domains": "Additional calls or domains"
+   }
+  },
+  "auto_flex": {
+   "summary": {
+    "title": "Auto-Flex summary (last complete cycle)"
+   },
+   "tiles": {
+    "start_date": "Last Auto-Flex cycle: Start date",
+    "end_date": "Last Auto-Flex cycle: End date",
+    "users_added": "Last Auto-Flex cycle: User added"
+   },
+   "table": {
+    "title": "Last Auto-Flex cycle: Users added",
+    "error": "Failed to load users added",
+    "empty": "No users",
+    "csv_filename": "Last_Auto-Flex_cycle_Users_added.csv"
+   }
+  },
+  "meter_usage": {
+   "monitor_requests": "Monitor requests",
+   "mock_requests": "Mock Requests",
+   "non_deleted_integrations": "Non-deleted Integrations",
+   "postman_api": "Postman API",
+   "custom_domains": "Custom Domains",
+   "legend": {
+    "limit": "Limit",
+    "usage": "Usage"
+   },
+   "tooltip": {
+    "cycle": "Cycle: {range}"
+   }
+  }
+ },
+ "feature_usage": {
+  "hidden_label": {
+   "text": "Private",
+   "tooltip": "This entity isn't visible with your current access"
+  },
+  "header": {
+   "title": "API Lifecycle",
+   "subtitle": "Track how your organization uses Postman across each stage of the API lifecycle"
+  },
+  "time_ranges": {
+   "day_7": "7d",
+   "day_30": "30d",
+   "month_6": "6mo",
+   "year_1": "1y"
+  },
+  "metrics": {
+   "development": {
+    "title": "Development",
+    "unit": "workspaces",
+    "tooltip": "Number of workspaces in development during the selected period. A workspace is counted if it has Collections, Specs, Mocks, or Flows create/update/delete activity, or SDK generation."
+   },
+   "testing": {
+    "title": "Testing",
+    "unit": "runs",
+    "tooltip": "Total functional test runs (Manual, CLI, CI/CD, Scheduled) and performance test runs (Manual, Automated) during the selected period."
+   },
+   "production": {
+    "title": "Production",
+    "unit": "runs",
+    "tooltip": "Total monitor runs and production flow executions during the selected period."
+   },
+   "distribution": {
+    "title": "Distribution",
+    "unit": "workspaces",
+    "tooltip": "Number of workspaces shared through Private API Network, Partner workspaces, and Public workspaces during the selected period."
+   },
+   "api_management": {
+    "title": "API Management",
+    "unit": "workspaces",
+    "tooltip": "Number of workspaces published to the API Catalog during the selected period."
+   }
+  },
+  "chart": {
+   "title": "Development workspaces over time",
+   "testing_title": "Test volume over time",
+   "production_title": "Number of workspaces in API catalog",
+   "distribution_title": "Workspace published over time",
+   "dataset_label": "Workspaces",
+   "toggle": {
+    "by_source": "By source",
+    "by_type": "By type"
+   },
+   "testing_datasets": {
+    "collection_runner": "Functional tests",
+    "performance_testing": "Performance tests",
+    "manual": "Manual",
+    "automated": "Automated"
+   },
+   "production_datasets": {
+    "api": "Workspaces"
+   },
+   "production_hero_title": "Production runs over time",
+   "production_hero_tooltip_title": "Production runs",
+   "production_hero_datasets": {
+    "active_monitors": "Active monitors",
+    "production_flows": "Production flows"
+   },
+   "development_tooltip_title": "Development workspaces",
+   "testing_tooltip_title": "Test runs",
+   "distribution_tooltip_title": "Workspace distribution",
+   "production_tooltip_title": "Production workspaces",
+   "api_management_title": "Number of workspaces in API catalog",
+   "api_management_tooltip_title": "Production workspaces",
+   "api_management_datasets": {
+    "api": "Workspaces"
+   },
+   "distribution_datasets": {
+    "private_api_network": "Private API Network",
+    "partner_workspaces": "Partner workspaces",
+    "public_workspaces": "Public workspaces"
+   },
+   "tooltip_total_label": "Total:"
+  },
+  "insight_panels": {
+   "collections": {
+    "title": "Active collections",
+    "tooltip": "Any collection with create, update, or delete actions during the selected period.",
+    "over_time_title": "Active collections over time",
+    "list_title": "Most popular collections",
+    "value_column": "Collections updated"
+   },
+   "flows": {
+    "title": "Active flows",
+    "tooltip": "Flows with edits or execution activity during the selected period.",
+    "over_time_title": "Active flows over time",
+    "list_title": "Most popular flows",
+    "value_column": "Flows updated"
+   },
+   "sdks": {
+    "title": "SDKs generated",
+    "tooltip": "SDK generation runs completed during the selected period.",
+    "over_time_title": "SDKs generated over time",
+    "list_title": "Most popular SDKs",
+    "value_column": "SDK generations",
+    "entity_type_column": "Entity Type"
+   },
+   "specs": {
+    "title": "Active specs",
+    "tooltip": "API specifications with create, update, or delete activity during the selected period.",
+    "over_time_title": "Active specs over time",
+    "list_title": "Most popular specs",
+    "value_column": "Specs updated"
+   },
+   "mocks": {
+    "title": "Active mocks",
+    "tooltip": "Mock servers with configuration or request activity, including local and cloud mocks, during the selected period.",
+    "over_time_title": "Active mocks over time",
+    "list_title": "Most popular mocks",
+    "value_column": "Mock requests"
+   },
+   "test_runs": {
+    "title": "Test runs",
+    "list_title": "Most tested collections",
+    "name_column": "Collection",
+    "value_column": "Test runs"
+   },
+   "functional_tests": {
+    "title": "Functional tests",
+    "tooltip": "Functional test runs (Collection Runner) during the selected period, broken down by execution type.",
+    "over_time_title": "Functional tests over time",
+    "list_title": "Most tested collections",
+    "value_column": "Test runs",
+    "datasets": {
+     "manual": "Manual",
+     "scheduled": "Scheduled runs",
+     "cli": "Postman CLI",
+     "ci_cd": "CI/CD"
+    }
+   },
+   "performance_tests": {
+    "title": "Performance tests",
+    "tooltip": "Performance test runs during the selected period, broken down by execution type.",
+    "over_time_title": "Performance tests over time",
+    "list_title": "Most tested collections",
+    "value_column": "Test runs",
+    "datasets": {
+     "performance": "Performance tests"
+    }
+   },
+   "api_catalog": {
+    "title": "Number of workspaces in API catalog",
+    "list_title": "Popular workspaces in API Catalog",
+    "name_column": "Workspace",
+    "value_column": "Updates"
+   },
+   "active_monitors": {
+    "title": "Active monitors",
+    "over_time_title": "Monitor runs over time",
+    "list_title": "Most popular monitors",
+    "value_column": "Monitor runs",
+    "tooltip_unit": "actions"
+   },
+   "production_flows": {
+    "title": "Production flows",
+    "over_time_title": "Flow executions over time",
+    "list_title": "Most popular flows",
+    "value_column": "Flow executions",
+    "development_chart_label": "Development",
+    "production_chart_label": "Production"
+   },
+   "private_api_network": {
+    "title": "Private API Network",
+    "tooltip": "Workspaces distributed via Private API Network during the selected period.",
+    "list_title": "Top workspaces",
+    "value_column": "Views"
+   },
+   "partner_workspaces": {
+    "title": "Partner workspaces",
+    "tooltip": "Workspaces shared with partners during the selected period.",
+    "list_title": "Top workspaces",
+    "value_column": "Views"
+   },
+   "public_workspaces": {
+    "title": "Public workspaces",
+    "tooltip": "Workspaces published to the public API Network during the selected period.",
+    "list_title": "Top workspaces",
+    "value_column": "Views"
+   }
+  }
+ },
+ "common": {
+  "explore_public_api": {
+   "title": "Explore Postman API ",
+   "description": "Use Postman APIs to access this report’s data.",
+   "button": "Open Postman Analytics API",
+   "link_cta": "Open Postman Analytics API",
+   "button_refresh": "Open Postman Public Workspace",
+   "link_cta_refresh": "Open Postman Public API"
+  },
+  "chart": {
+   "error": "Failed to load chart",
+   "data_note": "Note: Latest data may be partial due to refresh frequency"
+  },
+  "footer": {
+   "last_updated": "Last updated: {timestamp} • {timeElapsed}"
+  },
+  "section": {
+   "current_usage": "Current Usage ({period})",
+   "current_month": "Current month",
+   "usage_trends_over_time": "Usage Trends Over Time",
+   "trend_overtime": "Trend overtime",
+   "last_days": "Last {days} days"
+  },
+  "no_permission": {
+   "title": "No access",
+   "description": "You don't have access to view this data."
+  },
+  "error_state": {
+   "title": "Report unavailable",
+   "description": "We couldn't load this report. Try again later."
+  },
+  "no_access_page": {
+   "title": "You don't have access to page",
+   "description": "This section requires additional permissions. Learn more about this report."
+  },
+  "relative_time": {
+   "seconds_ago": "{count} second ago",
+   "seconds_ago_plural": "{count} seconds ago",
+   "minutes_ago": "{count} minute ago",
+   "minutes_ago_plural": "{count} minutes ago",
+   "hours_ago": "{count} hour ago",
+   "hours_ago_plural": "{count} hours ago",
+   "days_ago": "{count} day ago",
+   "days_ago_plural": "{count} days ago"
+  },
+  "footer_elapsed": {
+   "just_now": "Just now",
+   "minutes_ago": "{count, plural, one {# min ago} other {# mins ago}}",
+   "hours_ago": "{count, plural, one {# hour ago} other {# hours ago}}"
+  },
+  "labels": {
+   "private_user": "Private user",
+   "yes": "Yes",
+   "no": "No"
+  },
+  "status": {
+   "ok": "OK"
+  },
+  "badges": {
+   "enterprise": "ENTERPRISE"
+  },
+  "actions": {
+   "view": "View",
+   "view_all": "View all",
+   "view_api_calls": "View API calls",
+   "download_csv": "Download CSV",
+   "clear_all_filters": "Clear all filters",
+   "load_more": "Load more",
+   "open_dashboard": "Open report"
+  },
+  "breadcrumb": {
+   "partner": "Partner",
+   "internal": "Internal",
+   "overview": "Overview",
+   "team_members": "Team members",
+   "team_overview": "Team overview",
+   "billing": "Billing"
+  },
+  "accessibility": {
+   "close_drilldown": "Close drilldown",
+   "more_information": "More information",
+   "monthly_snapshot": "Monthly snapshot"
+  },
+  "hidden_labels": {
+   "workspace_name": "Private",
+   "collection_name": "Private"
+  },
+  "hidden_tooltips": {
+   "workspace_name": "This workspace name isn't visible with your current access",
+   "collection_name": "This collection name isn't visible with your current access"
+  },
+  "view_modes": {
+   "total_number": "Total number",
+   "percentage": "Percentage"
+  },
+  "response_codes": {
+   "2xx": "2XX",
+   "3xx": "3XX",
+   "4xx": "4XX",
+   "5xx": "5XX"
+  },
+  "table": {
+   "items_per_page": "Items per page",
+   "no_data": "No data available",
+   "no_data_description": "There is no data for this time period",
+   "headers": {
+    "name": "Name",
+    "email": "Email",
+    "emails": "Emails",
+    "username": "Username",
+    "role": "Role",
+    "roles": "Roles",
+    "joined_on": "Joined on",
+    "created_on": "Created on",
+    "created_by": "Created by",
+    "invited_by": "Invited by",
+    "invite_type": "Invite type",
+    "invite_date": "Invite date",
+    "accepted_on": "Accepted on",
+    "accepted_by": "Accepted by",
+    "last_active": "Last active",
+    "last_active_on": "Last active on",
+    "last_active_date": "Last active date",
+    "last_visited": "Last visited",
+    "members": "Members",
+    "partner": "Partner",
+    "partner_id": "Partner ID",
+    "partner_name": "Partner name",
+    "workspace_name": "Workspace name",
+    "all_workspaces": "All workspaces",
+    "collection": "Collection",
+    "collection_name": "Collection name",
+    "contributors": "Contributors",
+    "request": "Request",
+    "request_id": "Request ID",
+    "reasons": "Reasons",
+    "requests": "Requests",
+    "api_calls": "API calls",
+    "api_requests": "API requests",
+    "primary_tasks": "Primary tasks",
+    "actions": "Actions",
+    "results": "Results",
+    "success_rate": "Success rate",
+    "error_code": "Error code",
+    "endpoint": "Endpoint",
+    "method": "Method",
+    "timestamp": "Timestamp",
+    "type": "Type",
+    "public_profile_enabled": "Public profile enabled"
+   }
+  },
+  "banner": {
+   "workspace_data_notice": {
+    "overview": "This dashboard shows data from all internal, partner, and public workspaces. Personal workspaces aren't included. Data refreshes after the end of each month.",
+    "internal": "Personal workspaces aren't included. Data refreshes after the end of each month.",
+    "partner": "Internal and personal workspaces aren't included. Data refreshes at the end of each day."
+   },
+   "byok_notice": "Some API request data isn't available because Bring Your Own Key (BYOK) is enabled for this team.",
+   "byok_notice_link": "Learn more about how BYOK affects analytics."
+  },
+  "byok": {
+   "masked_label": "Encrypted by BYOK",
+   "masked_tooltip": "API data is not collected while BYOK is enabled.",
+   "graph_title": "No data available",
+   "graph_description": "This data is not collected due to BYOK security settings.",
+   "enabled_tag_label": "BYOK enabled",
+   "learn_more": "Learn more"
+  },
+  "private_cloud": {
+   "unavailable": "Not available in Postman Private Cloud",
+   "not_available_value": "NA",
+   "sidebar_tooltip": "This report is not available in Postman Private Cloud"
+  },
+  "monthly_snapshot": {
+   "metrics": {
+    "active_users": {
+     "title": "Active users",
+     "description": "Users who used Postman at least once"
+    },
+    "active_workspaces": {
+     "title": "Active workspaces",
+     "description": "Workspaces with views, edits, or sent API requests."
+    },
+    "api_calls": {
+     "title": "API calls",
+     "description": "Total amount of API calls made in a month."
+    }
+   },
+   "top_5": {
+    "active_users_title": "Top users",
+    "workspaces_title": "Top workspaces",
+    "collections_title": "Top collections"
+   },
+   "drilldowns": {
+    "active_users": "Active users",
+    "active_workspaces": "Active workspaces",
+    "active_collections": "Active collections"
+   }
+  },
+  "monthly_snapshot_refresh": {
+   "metrics": {
+    "internal_active_users": {
+     "title": "Active users",
+     "description": "Users who viewed, created, edited, forked or sent request in internal workspaces"
+    },
+    "active_workspaces": {
+     "description": "Workspace with views, creates, edits, or made API requests"
+    },
+    "api_calls": {
+     "title": "API requests",
+     "description": "API requests sent by users"
+    }
+   },
+   "top_5": {
+    "active_users_title": "Top 5 active users by API requests sent",
+    "workspaces_title": "Top 5 workspaces by API requests sent",
+    "collections_title": "Top 5 collections by API requests sent"
+   }
+  }
+ },
+ "sidebar": {
+  "go_to_homepage": "Go to homepage — {pageTitle}",
+  "reports": "Reports",
+  "ai_report_and_usage": "AI report and usage",
+  "workspaces": "Workspaces",
+  "team_and_org": "Team and organization",
+  "feature_usage": "API Lifecycle",
+  "overview": "Overview",
+  "internal_metrics": "Internal Workspaces",
+  "partnership_metrics": "Partner Workspaces",
+  "public_network_metrics": "Public Workspaces",
+  "team_overview": "Overview",
+  "team_members": "Team members",
+  "billing": "Billing",
+  "ai_usage": "Agent mode",
+  "usage_reports": "Usage reports"
+ },
+ "ai_usage": {
+  "header": {
+   "title": "Agent mode",
+   "subtitle": "Track Agent Mode usage, user engagement and credit consumption"
+  },
+  "time_filter": {
+   "aria_label": "Date range for Agent mode metrics",
+   "segments": {
+    "7d": "7d",
+    "30d": "30d",
+    "6mo": "6mo",
+    "1y": "1y"
+   },
+   "options": {
+    "7d": "Last 7 days",
+    "30d": "Last 30 days",
+    "6mo": "Last 6 months",
+    "1y": "Last 12 months"
+   }
+  },
+  "tabs": {
+   "agent_mode_users": "Agent Mode users",
+   "agent_mode_users_tooltip": "The total number of unique users who used Agent Mode during the selected period.",
+   "agent_mode_sessions": "Agent Mode sessions",
+   "agent_mode_sessions_tooltip": "The total number of Agent Mode sessions started during the selected period. A session starts when a user opens Agent Mode and sends a first prompt.",
+   "messages_sent": "Messages sent",
+   "messages_sent_tooltip": "The total number of messages sent in Agent Mode during the selected period.",
+   "ai_credits_used": "AI credits used",
+   "ai_credits_used_tooltip": "The total number of AI credits used in the current billing cycle. This is not affected by date range filters."
+  },
+  "charts": {
+   "active_members_over_time": "Active users over time",
+   "chat_volume_over_time": "Chat volume over time",
+   "message_volume_over_time": "Message volume over time",
+   "credits_by_agent_model": "Credits by agent model",
+   "view_details": "View details",
+   "returning_users": "Returning Users",
+   "new_users": "New Users",
+   "credits_tile_unlimited": "Unlimited"
+  },
+  "drilldowns": {
+   "messages_by_agent_model": "Messages by agent model",
+   "active_members_over_time_title": "Active users over time",
+   "credits_by_agent_model_title": "Credits by agent model",
+   "team_view": "Team view",
+   "agent_model": "Agent model",
+   "message": "Messages sent",
+   "credits": "AI Credits used",
+   "rank_column": "#",
+   "user_segment": "User segment",
+   "active_members": "Active users",
+   "agent_mode_sessions_column": "Agent Mode sessions",
+   "messages_sent_column": "Messages sent",
+   "credits_used_column": "Credits used"
+  },
+  "member_leaderboard": {
+   "title": "Usage leaderboard",
+   "empty": "No user usage found for this period.",
+   "error": "Failed to load user leaderboard data.",
+   "you": "You",
+   "filters": {
+    "show_all_members": "Show all users",
+    "selected_members": "{count} user selected",
+    "selected_members_plural": "{count} users selected",
+    "no_members": "No users found",
+    "aria_label": "Filter users on leaderboard"
+   },
+   "columns": {
+    "rank": "#",
+    "member": "User"
+   }
+  },
+  "top_agent_models": {
+   "title": "Top agent models used",
+   "empty": "No agent model usage found for this period.",
+   "error": "Failed to load top agent model data."
+  },
+  "peak_activity_heatmap": {
+   "title": "Peak activity",
+   "error": "Failed to load peak activity data.",
+   "empty": "No activity distribution for this period.",
+   "peak_unknown": "—",
+   "most_active_day": "Most active day",
+   "most_active_week": "Most active week",
+   "most_active_month": "Most active month",
+   "most_active_quarter": "Most active quarter",
+   "tooltip_credits": "{count} credits consumed",
+   "tooltip_hour_credits": "{hour}: {count} credits consumed",
+   "bucket_empty": "No",
+   "bucket_high": "High",
+   "bucket_medium": "Medium",
+   "bucket_low": "Low",
+   "aria_cell": "{title}. {credits}. {bucket} usage."
+  },
+  "refresh_action": "Refresh",
+  "error": "Failed to load AI report data."
+ },
+ "layout": {
+  "toggle": {
+   "hide_left": "Hide left sidebar",
+   "show_left": "Show left sidebar",
+   "hide_right": "Hide right sidebar",
+   "show_right": "Show right sidebar"
+  }
+ }
+}

@@ -1,0 +1,19 @@
+{
+ "chat_preview": {
+  "collapse_button_label": "Collapse",
+  "expand_button_label": "Expand",
+  "iframe_title": "Inline generated HTML preview",
+  "open_in_tab_button_label": "Open in tab",
+  "open_in_tab_requires_workspace": "Open a workspace to view this in a tab",
+  "unavailable_message": "This HTML preview is unavailable."
+ },
+ "preview": {
+  "apply_source_button_label": "Apply changes",
+  "download_button_label": "Download HTML",
+  "hide_source_button_label": "Hide source",
+  "iframe_title": "Generated HTML preview",
+  "source_editor_aria_label": "HTML source",
+  "view_source_button_label": "View source",
+  "unavailable_message": "This HTML preview is no longer available."
+ }
+}

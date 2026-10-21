@@ -1,0 +1,156 @@
+{
+ "metadata": {
+  "title": "Postman API Platform",
+  "description": "Postman makes API development easy. Our platform offers the tools to simplify each step of the API building process and streamlines collaboration so you can create better APIs faster."
+ },
+ "sidebar": {
+  "heading": "Team members",
+  "invite_button_label": "Invite",
+  "view_all_members": "View {count, plural, =1 {# member} other {all # members}}",
+  "members_count_button": "{count, number} {count, plural, one {member} other {members}}",
+  "open_team_members_menu": "Open team members menu",
+  "show_more_members": "Show more members",
+  "upgrade_to_invite_people": "Upgrade to invite people to the team",
+  "primary_navigation_aria_label": "Homepage navigation",
+  "discoverable_teams": {
+   "collaborate": "Collaborate in real-time and establish a single source of truth for all API workflows.",
+   "create_team": "Create team",
+   "view_all_teams": "View all teams →",
+   "join_a_team_in_your_org": "Join teams from {orgName}",
+   "join_teams": "Join teams from your organization",
+   "best_with_teams": "Postman works best with teams",
+   "toast": {
+    "request_sent": "Request to join submitted",
+    "something_went_wrong": "Something went wrong",
+    "success_desc": "We’ll notify you when your request is approved.",
+    "failure_desc": "There was an unexpected error sending your request. Please try again."
+   }
+  },
+  "tabs": {
+   "home": "Home",
+   "workspaces": "Workspaces",
+   "teams": "Teams",
+   "private_api_network": "Private API Network",
+   "unified_api_network": "Passport Access",
+   "public_api_network": "Public API Network",
+   "api_governance": "API Governance",
+   "integrations": "Integrations",
+   "reports": "Reports",
+   "api_catalog": "API Catalog",
+   "api_catalog_disabled_tooltip": "API Catalog is available for users on the Enterprise plan.",
+   "team_workspaces_nav_disabled_tooltip": "You don't have permission to access team workspaces.",
+   "application_inventory": "Application Inventory",
+   "application_inventory_disabled_tooltip": "Application Inventory is available for users on the Solo plan and above.",
+   "agents": "Agent Tasks",
+   "agents_beta_label": "Beta",
+   "agent_automations": "Agent Automations",
+   "agent_context": "Agent Context"
+  },
+  "external_links": {
+   "what_is_postman": "What is Postman",
+   "learning_center": "Learning Center",
+   "support_center": "Support Center",
+   "postman_enterprise": "Postman Enterprise",
+   "how_to_publish": "How to Publish",
+   "download_desktop_app": "Download Desktop App"
+  },
+  "announcement_carousel": {
+   "heading": {
+    "label": "Product {announcementLength, plural, =1 {Announcement(#)} other {Announcements(#)}}"
+   },
+   "toggle_button_aria_label": {
+    "open_carousel": "Open announcement carousel",
+    "close_carousel": "Close announcement carousel"
+   }
+  }
+ },
+ "overview": {
+  "recent_workspaces": {
+   "aria_label": "Recent workspaces list",
+   "heading": {
+    "label": "Recently visited workspaces",
+    "recently_visited": "Recently visited workspaces",
+    "your_workspaces": "Your workspaces"
+   },
+   "reload_button_label": "Reload",
+   "zero_workspace_heading": "Your recently visited workspaces will appear here.",
+   "blank_state_title": "Couldn’t load the workspaces",
+   "blank_state_description": "Just a faulty wire. Try reloading.",
+   "more_contributors": "View {contributorsCount, plural, =1 {# more contributor} other {# more contributors}}",
+   "default_contributor_name": "Private User"
+  },
+  "free_plan_banner": {
+   "heading": "Collaborate infinitely with your team",
+   "description": "You can now share unlimited requests with your team. Restore all of your archived collections back to your workspace.",
+   "link_text": "Learn more about restoring archived collections",
+   "button_text": "Restore archived collections"
+  },
+  "auto_flex_banner": {
+   "description": "Skip purchasing slots when you invite team members. Start collaborating immediately and pay later.",
+   "title": "Get Auto-Flex for fast and flexible collaboration",
+   "button_text": "Get Auto-Flex",
+   "link_text": "Learn more"
+  },
+  "tidy_workspace_nudge": "<0>Tidy up?</0> <1><0>Start archiving</0></1> <2>inactive workspaces.</2>",
+  "request_widget_modal": {
+   "heading": "Request widgets",
+   "description": "We’re building a more personalized homepage experience and your opinion matters. Tell us what widget would you want on your homepage, and why?",
+   "checkbox_label": "I’m open to a short follow-up call to share more details",
+   "cancel_button": "Cancel",
+   "submit_button": "Submit",
+   "success_description": "Thanks! Your widget request has been submitted.",
+   "feedback_required": "Please enter your message",
+   "feedback_placeholder": "Enter your message..."
+  }
+ },
+ "explore": {
+  "heading": {
+   "label": "Explore popular APIs",
+   "action": {
+    "explore_all": "Explore all"
+   }
+  },
+  "entity_card": {
+   "header": {
+    "copy_link_tooltip": "Copy Link"
+   },
+   "metrics": {
+    "fork": "Fork",
+    "watch": "Watch",
+    "unwatch": "Unwatch"
+   },
+   "fork": {
+    "tooltip": "{count, plural, =1 {# Fork} other {# Forks}}",
+    "string_count_tooltip": "{count} Forks",
+    "no_workspace_error": "No workspace found",
+    "default_error": "Something went wrong while forking this collection, please try again",
+    "default_toast_desc": "Couldn't fork collection due to some error."
+   },
+   "watch": {
+    "watching_label": "Watching",
+    "watch_label": "Watch"
+   },
+   "by": "By",
+   "updated": "Updated",
+   "updated_on": "Updated on"
+  }
+ },
+ "run_in_postman": {
+  "heading": {
+   "label": "Create a Run in Postman button",
+   "description": "Adding a \"Run in Postman\" button to your website or social channels makes it easier for users to onboard to your API. Get started by selecting the collection and environment you'd like the button to point to."
+  },
+  "card": {
+   "remove": "Remove",
+   "forks": "{count, plural, =1 {# fork} other {# forks}}",
+   "watchers": "{count, plural, =1 {# watcher} other {# watchers}}",
+   "by": "By",
+   "team": "Team",
+   "user": "User"
+  },
+  "select_dropdown": {
+   "label": "Select collection",
+   "placeholder": "Search collections"
+  }
+ }
+}

@@ -1,0 +1,555 @@
+{
+ "child_error": "Collection workbench child error",
+ "editor": {
+  "content_pane": {
+   "permission_infobar": {
+    "collection": "collection",
+    "authorization": "authorization",
+    "pre_request_script": "pre-request scripts",
+    "tests": "tests",
+    "initial_values": "initial values",
+    "settings": "settings",
+    "content": "To change the {text}, request additional access to this collection.",
+    "request_access": "Request Access",
+    "endpoints": "endpoints",
+    "errors": "errors",
+    "scripts": "scripts"
+   },
+   "sidebar_live_collections": {
+    "heading": "Enable Live Insights",
+    "description": "Live Insights allows you to monitor API performance in real time and quickly troubleshoot issues. <Link><Text>Learn more</Text></Link>",
+    "enable_now_button": "Enable now",
+    "alpha": "alpha",
+    "system_compatibility": {
+     "heading": "Check system compatibility",
+     "requirements": {
+      "api": "Live Insights works only for REST APIs.",
+      "env": "You can install and run the Live Collections Agent (LCA) on <b>Kubernetes</b> and <b>Amazon Elastic Container Service (ECS) on EC2 and ECS Fargate</b> deployments."
+     }
+    }
+   },
+   "tabs": {
+    "overview": {
+     "save_error": "Something went wrong while updating the collection summary.",
+     "description": {
+      "placeholder": {
+       "collection": "Make things easier for your teammates with a complete collection description.",
+       "no_description": "This {entityName} doesn't have a description.",
+       "default": "Add {entityName} description"
+      },
+      "no_description_label": "This {entityType} doesn't have a description.",
+      "tooltip": "Edit description"
+     },
+     "template_banner": {
+      "error": {
+       "toast_message": "Could not update the collection with this template."
+      },
+      "heading": "Speed up your work with collection templates",
+      "tooltip": {
+       "offline": "You can import this template once you're back online."
+      },
+      "more_template": "More templates",
+      "confirmation": {
+       "heading": "Apply this template?",
+       "message": "Applying <1>{templateName}</1> will replace the contents of this collection. Do you want to continue?",
+       "cancel": "Cancel",
+       "confirm": "Apply template"
+      }
+     },
+     "add_request_section": {
+      "heading": "This collection is empty. Add a request to get started.",
+      "cta": "Add request"
+     },
+     "footer": {
+      "text": "View complete documentation"
+     },
+     "tags": {
+      "heading": "Tags"
+     },
+     "summary": {
+      "placeholder": "Briefly explain this collection with a summary."
+     }
+    },
+    "auth": {
+     "description": "This authorization method will be used for every request in this collection. You can override this by specifying one in the request."
+    },
+    "scripts": {
+     "label": "Scripts",
+     "tooltip-text": {
+      "pre-request": "Runs before each request is sent. Use it to create API workflows by configuring the requests dynamically.",
+      "post-response": "Runs after a response is received for each request. Use it to write tests."
+     },
+     "migration-popover-text": "Use post-response scripts to write tests, visualize response and do more."
+    },
+    "test-tab-deprecation": {
+     "heading": "Tests are now a part of post-response scripts",
+     "message": "You can use scripts to write tests, pre-request scripts, visualize responses and bring a ton of automation to your API workflows.",
+     "button": "Open post-response scripts"
+    },
+    "pre_req": {
+     "description": "This script will execute before every request in this collection. Learn more about <1>Postman’s execution order</1>.",
+     "placeholder": "Use JavaScript to configure requests dynamically."
+    },
+    "tests": {
+     "description": "These tests will execute after every request in this collection. Learn more about <1>Postman’s execution order</1>.",
+     "placeholder": "Use JavaScript to write tests, visualize responses, and more."
+    },
+    "runs": {
+     "tab_list": {
+      "functional": "Functional",
+      "scheduled": "Scheduled",
+      "performance": "Performance"
+     },
+     "functional": {
+      "count_filters": {
+       "last_100": "Last 100 runs",
+       "last_500": "Last 500 runs",
+       "last_1000": "Last 1000 runs"
+      },
+      "source_filters": {
+       "postman_cli": "Postman CLI",
+       "runner": "Runner",
+       "newman": "Newman",
+       "cloud": "Cloud",
+       "placeholder": "Source"
+      },
+      "status_filters": {
+       "completed": "Completed",
+       "failed": "Failed",
+       "error": "Error",
+       "aborted": "Aborted",
+       "placeholder": "Run status"
+      },
+      "transient_description": "<0>Runs triggered for this collection under</0> <1><0></0><1>{branchName}</1></1> <2>branch via Collection Runner{newman}{postmanCLI}.</2>",
+      "description": "Runs triggered for this collection via Collection Runner{newman}{postmanCLI}.",
+      "bulk_action": {
+       "label": "{itemCount, plural, =1 {# item} other {# items}} selected",
+       "button": {
+        "cancel": "Cancel",
+        "delete": "Delete"
+       }
+      },
+      "run_by_filters": {
+       "placeholder": "Run by"
+      },
+      "runs_table": {
+       "loading_state": {
+        "description": "Loading runs"
+       },
+       "error_state": {
+        "title": "Couldn’t load the runs",
+        "description": "Just a faulty wire. Try reloading.",
+        "reload": "Reload"
+       },
+       "forbidden_state": {
+        "title": "Access denied due to security policies",
+        "description": "You cannot view the runs for this collection until access is restored. Contact your team admin for assistance."
+       },
+       "empty_state": {
+        "title": "No runs for the applied filters",
+        "description": "You may try different filters or clear all filters"
+       },
+       "cli_empty_state": {
+        "title": "There are no Postman CLI runs for this collection",
+        "description": "Postman CLI is a command-line tool for Postman. You can integrate it with your continuous integration servers and build systems.",
+        "run": "Run on CLI"
+       },
+       "blank_state": {
+        "title": "Your collection has not been run yet",
+        "run": "Run Collection"
+       },
+       "sub_component": {
+        "pipeline_details": {
+         "pipeline_description": "Ran in {pipelineSource} build {id} using {source}",
+         "source": {
+          "runner": "Collection Runner",
+          "newman": "Newman",
+          "postman_cli": "Postman CLI"
+         },
+         "runner_description": "Ran locally using Collection Runner",
+         "cli_description": "Ran using Postman CLI",
+         "newman_description": "Ran in CLI using Newman"
+        },
+        "environment": {
+         "none": "No environment used",
+         "deleted": {
+          "tooltip": "The environment used was deleted or moved from this workspace",
+          "description": "Environment not found. Environment ID: {envID}",
+          "button": {
+           "text": "Copy ID",
+           "tooltip": {
+            "copied": "Copied",
+            "copy": "Copy environment ID"
+           }
+          }
+         }
+        },
+        "iteration": {
+         "error_description": "{iterationCount, plural, =1 {# iteration} other {# iterations}} completed (some requests couldn't run)",
+         "abort_description": "Run aborted at iteration no. {iterationCount}",
+         "description": "{iterationCount} completed"
+        }
+       },
+       "columns": {
+        "start_time": {
+         "header": "Start time",
+         "tooltip": {
+          "aborted": "Run aborted",
+          "error": "Error running some requests"
+         }
+        },
+        "source": {
+         "tooltip": "Where the run is executed from",
+         "header": "Source",
+         "pipeline_meta_cell": "Build {id}"
+        },
+        "duration": {
+         "tooltip": "Time taken to complete the run",
+         "header": "Duration"
+        },
+        "all_tests": {
+         "tooltip": "Sum of passed, skipped, and failed tests across iterations",
+         "header": "All tests"
+        },
+        "passed": {
+         "tooltip": "Passed tests across iterations",
+         "header": "Passed"
+        },
+        "failed": {
+         "tooltip": "Failed tests across iterations",
+         "header": "Failed",
+         "cell": {
+          "tooltip": {
+           "less_than_one": "Less than 1% of tests failed",
+           "more_than_one": "{percentage}% tests failed"
+          }
+         }
+        },
+        "skipped": {
+         "tooltip": "Skipped tests across iterations",
+         "header": "Skipped"
+        },
+        "avg_res_time": {
+         "tooltip": "Average response time",
+         "header": "Avg. Resp. Time"
+        },
+        "actions": {
+         "report": {
+          "tooltip": "View Report"
+         },
+         "share": {
+          "tooltip": "Share",
+          "popover": {
+           "private": {
+            "heading": "Share with team",
+            "content": "This collection run is in your personal workspace.",
+            "content2": "No one can access this unless you invite them.",
+            "button": "Invite people"
+           },
+           "shared": {
+            "private_team_content": "Only workspace members can access this link.",
+            "team_content": "Only team members can access this link.",
+            "heading": "Share link",
+            "button": {
+             "copy": "Copy link",
+             "invite": "Invite people"
+            }
+           },
+           "partner": {
+            "heading": "Share link",
+            "content": "Only people with access to this workspace can access this link.",
+            "button": {
+             "copy": "Copy link",
+             "invite": "Invite people"
+            }
+           }
+          },
+          "error": {
+           "toast": "Unable to invite right now. Try again later?"
+          }
+         }
+        }
+       },
+       "cell": {
+        "no_data": "Data not available. Please contact help@postman.com"
+       }
+      }
+     },
+     "scheduled": {
+      "error_state": {
+       "title": "Couldn’t load scheduled runs",
+       "description": "Try refreshing the page or check back later."
+      },
+      "scheduled_collection_list": {
+       "columnNames": {
+        "nextRun": "Upcoming run",
+        "partialMetadata": "Schedule",
+        "environment": "Environment",
+        "knownIssues": "Known issues",
+        "actions": " "
+       },
+       "placeholders": {
+        "environment": "No Environment",
+        "nextRun": {
+         "text": "PAUSED",
+         "tooltip": "There is no upcoming run as the schedule is paused."
+        },
+        "runs": "Runs"
+       },
+       "actions": {
+        "pause": "Pause",
+        "resume": "Resume",
+        "edit": "Edit",
+        "delete": "Delete",
+        "view": "View"
+       },
+       "progressLabels": {
+        "pausing": "Pausing",
+        "resuming": "Resuming"
+       },
+       "pausedHeading": "Paused",
+       "heading": "Periodic runs scheduled on the Postman Cloud.",
+       "customSchedule": {
+        "customOrder": {
+         "text": "Custom run order.",
+         "tooltip": "You can view and edit the order while editing the schedule.",
+         "tooltip2": "There {count} in the collection that may affect your custom run order.",
+         "diff": {
+          "all": "are {numberOfDeletedRequests} deleted, {numberOfNewRequests} new, {numberOfDeletedFolders} deleted folders",
+          "deleted_and_new_request": "are {numberOfDeletedRequests} deleted and {numberOfNewRequests} new requests",
+          "one_deleted_request": "is {numberOfDeletedRequests} deleted request",
+          "multiple_deleted_request": "are {numberOfDeletedRequests} deleted requests",
+          "one_new_request": "is {numberOfNewRequests} new request",
+          "multiple_new_request": "are {numberOfNewRequests} new requests",
+          "one_deleted_folder": "is {numberOfDeletedFolders} deleted folder",
+          "multiple_deleted_folder": "are {numberOfDeletedFolders} deleted folders"
+         }
+        },
+        "reviewChanges": "Review Changes"
+       },
+       "emptyStates": {
+        "errorLoading": {
+         "heading": "Couldn’t load scheduled runs",
+         "subText": "Try refreshing the page or check back later."
+        },
+        "noSchedules": {
+         "heading": "No scheduled runs for this collection",
+         "subText": "You can schedule runs for this collection to periodically run it at a certain time or frequency on the Postman Cloud.",
+         "button": "Schedule runs"
+        }
+       },
+       "tooltips": {
+        "actions": "View more actions"
+       }
+      }
+     },
+     "performance": {
+      "error_state": {
+       "title": "Couldn’t load performance runs",
+       "description": "Try refreshing the page or check back later.",
+       "button": "Reload"
+      }
+     }
+    }
+   },
+   "header": {
+    "actions": {
+     "share": {
+      "text": "Share",
+      "aria_label": "Share button",
+      "tooltip": "Share collection",
+      "popover": {
+       "title": "Share with ease",
+       "description": "Share with people you work with or put it on web for the world to consume.",
+       "got_it_button": "Got it"
+      }
+     },
+     "fork": {
+      "offline_tooltip": "Get online to create a fork or view existing forks.",
+      "no_permission_tooltip": "You do not have access to perform this action.",
+      "filesystem_mode_tooltip": "Fork is not available when using a local filesystem workspace."
+     },
+     "run": {
+      "text": "Run",
+      "tooltip": {
+       "primary_message": "Collections can't be run in public workspaces right now – though we're working on that for a future release!",
+       "secondary_message": "Fork this collection to your own workspace to run it.",
+       "primary_action": "Create a fork",
+       "run_collection": "Run collection"
+      }
+     },
+     "save": {
+      "text": {
+       "save": "Save",
+       "saving": "Saving"
+      },
+      "tooltip": {
+       "title": "Create a fork to save changes",
+       "primary_message": "You don't have permission to make changes to this collection. Fork the collection to your workspace to save changes.",
+       "primary_action": "Create fork & save",
+       "no_changes": "No new changes to save.",
+       "save_collection": "Save collection",
+       "save_collection_git": "Save changes to Postman & Github",
+       "disabled": {
+        "title": "Create a fork to make and save changes",
+        "primary_message": "Forking this collection to your workspace allows you to make changes and save them.",
+        "primary_action": "Create fork & save"
+       },
+       "readonly_user_message": "You do not have access to perform this action."
+      }
+     },
+     "move": "Move",
+     "generate_api_specification": {
+      "text": "Generate Specification",
+      "disabled_message": {
+       "already_generated": "Specification already generated for this collection",
+       "no_permission": "You don't have permission to generate specification for this collection"
+      },
+      "generate_modal": {
+       "heading_prefix": "Generate Specification from",
+       "description": "This collection is missing types, which are required to generate an accurate and complete specification.",
+       "try_adding_types": "Try adding types",
+       "cancel_button": "Cancel",
+       "generate_button": "Generate specification",
+       "name_this_spec": "Name this spec",
+       "generated_spec_type": "The generated specification will be of the type OpenAPI 3.0",
+       "spec_type": "Type",
+       "spec_type_description": "Select the specification type",
+       "file_format": "Format",
+       "file_format_description": "Select file format of the generated specification"
+      },
+      "syncing": {
+       "title": "Specification",
+       "status": {
+        "in_sync": "Specification up to date",
+        "out_of_sync": "Specification not up to date",
+        "syncing": "Updating specification..."
+       },
+       "actions": {
+        "update": "Update"
+       }
+      }
+     },
+     "types": {
+      "turn_on": "Turn on Types",
+      "turn_off": "Turn off Types",
+      "disabled": {
+       "in_progress": "Toggling Type definition, please wait..."
+      }
+     },
+     "create_fork": "Create a fork",
+     "create_pull_request": "Create pull request",
+     "merge_changes": "Merge changes",
+     "pull_changes": {
+      "text": "Pull changes",
+      "info_tooltip": "Pull changes to fetch the latest updates from the original collection."
+     },
+     "view_changelog": "View changelog",
+     "export": "Export",
+     "enable_live": "Enable Live",
+     "manage_roles": "Manage roles",
+     "delete": "Delete",
+     "view_documentation": "View documentation"
+    },
+    "breadcrumb": {
+     "placeholder": "Collection Name",
+     "metaIcon": {
+      "lock": {
+       "tooltip": "Read only"
+      }
+     }
+    }
+   },
+   "tab_list": {
+    "overview": {
+     "label": "Overview",
+     "short_label": "Overview"
+    },
+    "onboarding": {
+     "label": "Set up",
+     "short_label": "Set up"
+    },
+    "authorization": {
+     "label": "Authorization",
+     "short_label": "Auth"
+    },
+    "pre_request_script": {
+     "label": "Pre-request Script",
+     "short_label": "Pre-req."
+    },
+    "tests": {
+     "label": "Tests"
+    },
+    "variables": {
+     "label": "Variables"
+    },
+    "runs": {
+     "label": "Runs"
+    },
+    "settings": {
+     "label": "Settings"
+    },
+    "endpoints": {
+     "label": "Endpoints"
+    },
+    "errors": {
+     "label": "Errors"
+    }
+   }
+  },
+  "context_bar": {
+   "info": {
+    "title": "Collection details"
+   },
+   "live_collection": {
+    "title": "Live Collection",
+    "blank_state": {
+     "title": "Keep your collection up to date",
+     "description": {
+      "agent_enabled": "Postman can observe your application and update your collection with endpoints that it sees.",
+      "agent_disabled": "Postman SDK observes your application and updates the Live collection."
+     },
+     "primary_action": "Enable live",
+     "secondary_action": "Learn more"
+    },
+    "description": "Streamline collaboration with collections that are always up-to-date. <1><0>Learn More</0></1>",
+    "last_updated": {
+     "title": "Last updated",
+     "available": "Updates are available. <1><0>Review changes</0></1> to update the collection.",
+     "not_available": " No updates yet. Try <1><0>sending a request</0></1>."
+    },
+    "status": {
+     "title": "Status",
+     "description": "Switch on or off data collection at anytime.",
+     "on": "On",
+     "off": "Off",
+     "toast_message": "Cannot update status, please try again"
+    },
+    "settings": {
+     "title": "Settings",
+     "description": "Select how to stay updated",
+     "strategy": {
+      "automatic": "Automatically update",
+      "manual": "Review before updating"
+     },
+     "review_warning": {
+      "description": "Some updates are yet to be reviewed. If you don’t want them to automatically update, <1><0>review manually</0></1>."
+     },
+     "save_button": "Save changes",
+     "toast": {
+      "update_failed": "Live settings update failed, Please",
+      "try_again": "try again"
+     }
+    },
+    "view_diagnostics": "View Diagnostics"
+   }
+  }
+ },
+ "new_collection": "New Collection",
+ "tab_conflict_message": "This collection has been modified since you last opened the tab.",
+ "ui_controls": {
+  "add": "Add",
+  "expand": "Expand",
+  "collapse": "Collapse"
+ }
+}

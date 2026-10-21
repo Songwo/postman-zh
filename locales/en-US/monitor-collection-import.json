@@ -1,0 +1,30 @@
+{
+ "modal": {
+  "title": "Import",
+  "paste_label": "Paste a collection, an API spec, a cURL command or URLs",
+  "hint_intro": "The following formats are accepted:",
+  "hint_collection": "Postman Collection JSON or API Spec: Paste the raw content or drag and drop the file.",
+  "hint_curl": "cURL command: Paste a single cURL command here.",
+  "hint_urls": "URLs: Provide one or more URLs as comma separated values. Each is imported as a GET request."
+ },
+ "actions": {
+  "cancel": "Cancel",
+  "import": "Confirm",
+  "upload": "Upload Postman Collection or API Spec"
+ },
+ "shortcuts": {
+  "commit": "<0>Shift + Enter</0><1> to import</1>",
+  "escape": "<0>Esc</0><1> to close</1>"
+ },
+ "progress": {
+  "checking_title": "Checking pasted content…",
+  "checking_file_title": "Checking {fileName}…",
+  "checking_stage": "Working out the format"
+ },
+ "errors": {
+  "unrecognised": "Invalid format. Paste a collection, an API spec, a cURL command or URLs.",
+  "unsupported_grpcurl": "gRPC requests cannot be imported here yet. Create a collection from the sidebar, then select it above.",
+  "unsupported_file": "Selected file type cannot be imported. Supported: {extensions}.",
+  "unreadable_file": "Selected file could not be read. Try pasting its contents instead."
+ }
+}

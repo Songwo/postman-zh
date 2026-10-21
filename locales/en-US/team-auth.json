@@ -1,0 +1,222 @@
+{
+ "heading": "Authentication",
+ "domain_management_heading": "Domain Management",
+ "domains": {
+  "heading": "Manage accounts with your domains",
+  "subheading": "Domains help determine which accounts can be members of your team and be managed by your Admins. Once verified, you can enable account management for team <Strong>{teamName}</Strong>. Learn more about <Link><Text>management of unclaimed accounts</Text></Link>.",
+  "titles": {
+   "upgrade": "Upgrade to use domain capture",
+   "access_denied": "You don’t have access",
+   "manage_accounts": "Manage accounts with your domains",
+   "manage_accounts_verified_domain": "Manage accounts with your verified domain"
+  },
+  "descriptions": {
+   "upgrade": "Only teams with <Strong>Enterprise plan</Strong> can add and manage Postman accounts created with their organization’s domains in one team. Learn more about <Link><Text>domain capture</Text></Link>",
+   "access_denied": "Only team admins can manage accounts with domain.",
+   "manage_accounts": "You’ll need to configure a single sign-on (SSO) authentication method to add and manage Postman accounts created with your organization’s domains in one team. Learn more about <Link><Text>domain capture</Text></Link>",
+   "manage_accounts_verified_domain": "Verify your domain to add and manage Postman accounts created with your organization’s domains in one team. <Link><Text>Learn more</Text></Link> about benefits of adding a domain."
+  },
+  "cta_buttons": {
+   "contact_sales": "Contact Sales",
+   "view_plans": "View Plans",
+   "configure_sso": "Configure SSO",
+   "add_domain": "Add Domain"
+  },
+  "blank_state": {
+   "partner": {
+    "forbidden_message": "As a partner you don't have permission to view this page.",
+    "primary_action": "View Partner Workspaces",
+    "secondary_action": "Go to home"
+   },
+   "default": {
+    "forbidden_message": "You don't have permission to view this page."
+   },
+   "manage_capture_domain": {
+    "forbidden_message": "Only team admins can manage accounts with domain."
+   },
+   "feature_not_available": {
+    "title": "Domain verification and capture is not available on your Postman plan",
+    "description": "You need to upgrade to add and manage Postman accounts created with their organization's domains in one team. Learn more about <Link><Text>domain capture</Text></Link>",
+    "upgrade_button": "Upgrade"
+   }
+  },
+  "you_don_t_have_access": "You don't have access"
+ },
+ "domains_orgs": {
+  "subheading": "Domains help determine which accounts can be members of your organization and be managed by your Admins. Once verified, you can enable account management for organization <Strong>{teamName}</Strong>. Learn more about <Link><Text>management of unclaimed accounts</Text></Link>."
+ },
+ "auth_methods": {
+  "heading": "Set up authentication methods for your team",
+  "description_sso": "Choose between the different single sign-on authentication providers to set up a custom authentication method for your team.",
+  "add_auth_button": "Add Authentication Method",
+  "custom_auth_limit_reached": "You've set up the maximum number of custom authentication methods allowed.",
+  "description_scim": "Effortlessly onboard and manage Postman team members using your identity provider. ",
+  "sso_methods_heading": "SSO Authentication Methods",
+  "default_methods_heading": "Default Authentication Methods",
+  "default_methods_description": "Manage default authentication methods",
+  "blank_state": {
+   "error": {
+    "title": "Something went wrong",
+    "description": "We were unable to fetch authentication schemes."
+   },
+   "no_view_permission": {
+    "title": "Single Sign-On (SSO) is not available on your Postman plan",
+    "description": "You need to upgrade to access this feature"
+   },
+   "get_enterprise_plan": "Upgrade"
+  }
+ },
+ "auth_methods_orgs": {
+  "heading": "Set up authentication methods for your organization",
+  "description_sso": "Choose between the different single sign-on authentication providers to set up a custom authentication method for your organization.",
+  "description_scim": "Effortlessly onboard and manage Postman organization members using your identity provider. "
+ },
+ "auth_method_table": {
+  "error": {
+   "title": "Something went wrong",
+   "description": "An error occurred while {enabled, select, true {disabling} other {enabling}} authentication method. Try again after some time."
+  },
+  "bulk_toggle_error": {
+   "title": "Cannot {enabled, select, false {disable} other {enable}} all authentication methods",
+   "description": "An error occurred while {enabled, select, false {disabling} other {enabling}} default authentication methods. Try again after some time."
+  },
+  "edit_button": "Edit",
+  "headers": {
+   "auth_method": "Authentication method",
+   "status": "Status",
+   "sso_provider": "Authentication provider"
+  }
+ },
+ "scim_provisioning": {
+  "heading": "SCIM provisioning",
+  "description": "When enabled, you can effortlessly onboard and manage Postman team members using your identity provider. Learn more about <Link><Text>SCIM provisioning</Text></Link>.",
+  "generate_scim_api_key_button": "Generate SCIM API Key"
+ },
+ "scim_provisioning_orgs": {
+  "description": "When enabled, you can effortlessly onboard and manage Postman organization members using your identity provider. Learn more about <Link><Text>SCIM provisioning</Text></Link>."
+ },
+ "generate_scim_api_key_modal": {
+  "heading": {
+   "copy_scim_api_key": "Copy your SCIM API key",
+   "generate_a_scim_api_key": "Generate a SCIM API key"
+  },
+  "banner_msg": "Make sure you copy this API key now. This is the only time you'll see it unencrypted.",
+  "description": "Use this API key to authorize your identity provider to access your team on Postman.",
+  "generate_button": "Generate",
+  "key_name_label": "Key name",
+  "copy_to_clipboard": "Copy to clipboard",
+  "copy_to_clipboard_msg": "Copy to Clipboard",
+  "copied_msg": "Copied!",
+  "error": {
+   "title": "Something went wrong",
+   "description": "Unable to create API key"
+  }
+ },
+ "scim_provisioning_switch_modal": {
+  "heading": "Turn {enabled, select, true {off} other {on}} SCIM provisioning?",
+  "enabled_description": "When SCIM is off, you can’t use your identity provider to onboard or manage members of your {teamName} team. All your SCIM API keys will become inactive.",
+  "other_description": "When SCIM is on, team members can only be removed by Team Admins or deprovisioned using your identity provider.",
+  "cancel_button": "Cancel",
+  "primary_button": "Turn {enabled, select, true {Off} other {On}}",
+  "success": {
+   "description": "SCIM provisioning turned {enabled, select, true {off} other {on}}"
+  },
+  "error": {
+   "title": "Something went wrong",
+   "description": "An error occurred while updating SCIM settings."
+  }
+ },
+ "scim_api_keys_table": {
+  "headers": {
+   "key_name": "Key name",
+   "api_key": "API key",
+   "created_by": "Created by",
+   "expiry_date": "Expiry date",
+   "status": "Status"
+  },
+  "identifier_tooltip": "For security reasons, your API key has been masked.You can only view an unmasked API key immediately after generating it."
+ },
+ "api_key_dropdown": {
+  "options": {
+   "regenerate": "Regenerate",
+   "rename": "Rename",
+   "delete": "Delete"
+  }
+ },
+ "delete_scim_api_key_modal": {
+  "heading": "Delete API key?",
+  "description": "Your identity provider won’t be able to use the {selectedApiKeyName} API key to access your team.",
+  "cancel_button": "Cancel",
+  "delete_button": "Delete API key",
+  "success": {
+   "title": "SCIM API key is deleted",
+   "description": "You've successfully deleted your SCIM API key"
+  },
+  "error": {
+   "title": "SCIM API key is not deleted",
+   "description": "We were unable to delete the SCIM API key. Please try deleting again."
+  }
+ },
+ "scim_api_key_status": {
+  "error": {
+   "title": "Something went wrong",
+   "description": "An error occurred while updating the API key. Try again after some time."
+  },
+  "api_key_revoked_tooltip": "The SCIM API key has expired"
+ },
+ "regenerate_scim_api_key_modal": {
+  "heading": "Regenerate SCIM API key",
+  "banner": "Copy your unencrypted API key now. It will be masked after this to keep it secure.",
+  "description": "Make sure you update the API key in your identity provider to authorize its access to your team.",
+  "subheading": "Your API key",
+  "copy_button_tooltip": "Copy to clipboard",
+  "close_button": "Close",
+  "copy_to_clipboard_button": "Copy to clipboard",
+  "regenerate_scim_api_key_description": "This will regenerate your key name API key and provide you with a new one. Your existing key will be automatically deleted in 6 hours.",
+  "delete_check_box_label": "Delete the existing key now",
+  "cancel_button": "Cancel",
+  "regenerate_button": "Regenerate API key",
+  "success": {
+   "title": "SCIM API key regenerated",
+   "description": "Make sure you update the API key in your identity provider to authorize its access to your team."
+  },
+  "error": {
+   "title": "Something went wrong",
+   "description": "An error occurred while rotating the SCIM API key. Try again after some time."
+  }
+ },
+ "rename_scim_api_key_modal": {
+  "success": {
+   "description": "SCIM API key successfully renamed",
+   "title": "Success"
+  },
+  "error": {
+   "description": "Unable to rename SCIM API key",
+   "title": "Something went wrong"
+  }
+ },
+ "api_key_rename_modal": {
+  "heading": "Rename your {apiKeyType, select, SCIM_API_Key {SCIM API Key} other {API Key}}",
+  "input_api_key_helper_text": "This will help you identify and easily manage your {apiKeyType, select, SCIM_API_Key {SCIM API Keys} other {API Keys}}.",
+  "cancel_button": "Cancel",
+  "rename_button": "Rename"
+ },
+ "signup_instruction": {
+  "heading": "Sign-in instruction",
+  "description": "Show a custom message on the sign-in screen to help {teamName} members sign in.",
+  "visibility_warning": "This message will be visible to anyone who reaches your sign-in page.",
+  "message_label": "Message",
+  "link_label": "Link",
+  "optional": "(optional)",
+  "message_placeholder": "e.g. Contact #it-support for help signing in.",
+  "link_placeholder": "https://your-company.com/it-support",
+  "saving": "Saving...",
+  "saved": "Saved",
+  "error": {
+   "save_title": "Failed to save instruction",
+   "save_description": "Something went wrong. Please try again.",
+   "invalid_url": "URL must start with https:// and contain a valid domain.",
+   "message_too_long": "Message cannot exceed 100 characters."
+  }
+ }
+}

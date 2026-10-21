@@ -1,0 +1,32 @@
+{
+ "team_meta": {
+  "heading": "Create your new team",
+  "subheading": "You’re about to make API collaboration a lot easier! 🎉",
+  "team_name": "What is your team’s name?",
+  "team_name_placeholder": "e.g. Platform API team",
+  "questions": {
+   "team_goal": {
+    "label": "What will your team primarily work on?",
+    "options": {
+     "existing": "Share and test existing APIs together",
+     "design": "Design and build new APIs together",
+     "document": "Build a central space for API documentation",
+     "other": "Other"
+    }
+   }
+  }
+ },
+ "invite_users": {
+  "heading": "Invite people to join your team",
+  "add_email_heading": "Add email addresses",
+  "add_email_subheading": "Invites will be sent as soon as you create your team.",
+  "title": "Add email addresses",
+  "subtitle": "Invites will be sent as soon as you create your team."
+ },
+ "step_1": "Step 1 of 2",
+ "step_2": "Step 2 of 2",
+ "back": "Back",
+ "cancel": "Cancel",
+ "continue": "Continue",
+ "create_team": "Create Team"
+}

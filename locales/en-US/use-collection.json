@@ -1,0 +1,77 @@
+{
+ "modal_title": "Use \"{name}\"",
+ "workspace_label": "Workspace",
+ "confirm_button": "Use Collection",
+ "missing_workspace_tooltip": "Missing workspace selection",
+ "trigger": {
+  "label": "Use",
+  "tooltip": "Use this collection",
+  "offline_tooltip": "You need to be online to use this collection"
+ },
+ "onboarding": {
+  "title": "Fork is now part of Use",
+  "description": "Use collections as dependencies or fork them into your workspace."
+ },
+ "count": {
+  "tooltip": "{count, plural, =1 {# use} other {# uses}}",
+  "offline_tooltip": "You need to be online to view usage",
+  "dependency_heading": "Used as Dependency",
+  "fork_heading": "Used as Fork ({count})",
+  "show_more": "Show more",
+  "empty": "No forks or dependencies yet",
+  "error": "Couldn't load usage",
+  "dependency_error": "Couldn't load dependencies",
+  "fork_error": "Couldn't load forks",
+  "retry": "Retry"
+ },
+ "use_as": {
+  "label": "Use as",
+  "fork": {
+   "title": "Fork",
+   "description": "Work on a copy of this collection."
+  },
+  "resource": {
+   "title": "Dependency",
+   "description": "Use collection in your local file system."
+  },
+  "flow": {
+   "title": "Flows",
+   "description": "Build a flow from this collection's requests."
+  }
+ },
+ "fork": {
+  "local_mode_disabled": "Forking isn't available in local mode.",
+  "no_permission_disabled": "You don't have permission to fork this collection.",
+  "label_field": "Fork label",
+  "default_label": "Fork",
+  "default_label_with_name": "{name}'s Fork",
+  "auto_pull_label": "Pull changes from the source collection automatically",
+  "watch_source_label": "Watch the source collection",
+  "watch_info": "Get notified when the source collection changes.",
+  "watch_forked_label": "Watch the forked collection",
+  "watch_forked_info": "Get notified when the forked collection changes.",
+  "error_title": "Couldn't use collection",
+  "error_message": "Something went wrong while forking the collection. Please try again."
+ },
+ "resource": {
+  "not_git_connected": "Workspace not git connected.",
+  "connect_git_button": "Connect Git",
+  "same_workspace_disabled": "This collection already lives in this workspace.",
+  "desktop_only": "Dependencies are only available in the Postman desktop app",
+  "toast": {
+   "success_title": "Collection added",
+   "success_message": "\"{name}\" was added as a dependency.",
+   "error_title": "Couldn't add collection",
+   "error_message": "Something went wrong while adding the collection. Please try again."
+  }
+ },
+ "flow": {
+  "name_field": "Flow name",
+  "default_name": "Flow from \"{name}\" collection",
+  "active_workspace_note": "The flow is created in your active workspace.",
+  "local_mode_disabled": "Flows aren't available in local mode.",
+  "no_permission_disabled": "You don't have permission to create flows in this workspace.",
+  "error_title": "Couldn't create flow",
+  "error_message": "Something went wrong while creating the flow from this collection. Please try again."
+ }
+}

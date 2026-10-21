@@ -1,0 +1,104 @@
+{
+ "team_profile": {
+  "title": "Set up your team",
+  "subtitle": "Name your team and choose a URL.",
+  "url_title": "URL",
+  "url_subtitle": "You'll use this URL to access Postman.",
+  "image_modal_title": "Upload a team logo",
+  "image_modal_body": "Help your team feel at home by uploading a custom logo. Max size: 2 MB",
+  "name": "Team name",
+  "change_logo": "Change logo",
+  "invalid_domain_modal": {
+   "heading": "You don't have a valid work domain",
+   "description": "We can't enable this setting for domains such as gmail.com. Please change your email id to a valid work domain and try again.",
+   "got_it_button": "Got it"
+  },
+  "email_verification_modal": {
+   "toast": {
+    "message": "Please check your inbox.",
+    "title": "We've sent the verification email"
+   },
+   "title": "Verify your account",
+   "description": "To enable team discovery, please verify your account and try again.",
+   "cancel_button": "Cancel",
+   "send_verification_email_button": "Send verification email"
+  }
+ },
+ "error": {
+  "type": "Network call failure",
+  "move_collection": {
+   "title": "Something went wrong",
+   "description": "An error occurred while trying to move your collections"
+  },
+  "team_discovery": {
+   "title": "Please provide team details"
+  },
+  "send_verification_email": {
+   "message": "An error occurred while sending the verification email. Try again after some time.",
+   "title": "Something went wrong"
+  },
+  "team_profile_update_error": {
+   "title": "Something went wrong",
+   "description": "An error occurred while updating your team profile"
+  },
+  "file_read_error": "We couldn't read that. Please upload an image file, like a jpg or png.",
+  "image_size_error": "Image is too large. Please use an image under 2 MB.",
+  "image_uploading_error": "There was a problem uploading your image. Please try again."
+ },
+ "workspace": {
+  "name": "{workspaceName} Workspace",
+  "team_discovery": {
+   "message_enabled": "You enabled team discovery for your team",
+   "message_disabled": "You disabled team discovery for your team",
+   "title_on": "Team discovery is ON",
+   "title_off": "Team discovery is OFF",
+   "title": "Team discovery",
+   "title_UO_140": "Allow {domain} users to discover this team",
+   "description": "Team discovery lets people from your organization see your team and request to join.",
+   "description_UO_140": "They can request to join this team.",
+   "turn_on": "Turn on team discovery",
+   "turn_on_label": "ON",
+   "turn_off_label": "OFF",
+   "error_title": "Something went wrong with applying your team discovery settings",
+   "continue": "Continue",
+   "save_UO_140": "Save",
+   "save_subtitle_UO_140": "You can change the details later in team settings.",
+   "invite_members": {
+    "generate_invite_link_error": "We couldn't generate a link. Please try again.",
+    "invite_error": "One or more of those emails doesn't look right. Double check the format.",
+    "plan_alert_message": "Upgrade to a premium plan & enjoy unlimited collaboration.",
+    "copy_invite_button": "Copy link",
+    "maybe_later_button": "Maybe later",
+    "continue_button": "Continue",
+    "subtitle": "Get the most out of Postman by inviting people to collaborate with you.",
+    "title": "Invite people to your team",
+    "via_email": "Via email",
+    "share_link_text": "Or, share an invite link",
+    "generate_link": "Generate Link",
+    "copied_text": "Copied",
+    "enter_email_address": "Enter an email address",
+    "failed_to_generate_link": "Failed to generate the invite link. Please try again."
+   },
+   "share_link_with_your_colleagues": "Get a link which you can share with your colleagues to join the team"
+  },
+  "collection": {
+   "title": "{items, plural, one {Collection} other {Collections}}",
+   "moved": {
+    "description": "Your collections will be moved in a few moments."
+   },
+   "successfully_moved": {
+    "description": "{collections} {text} {verb} successfully moved to this workspace."
+   },
+   "verb": "{items, plural, one {was} other {were}}"
+  }
+ },
+ "input": {
+  "drag_and_drop": "Drag and drop an image",
+  "select_a_file": "Select a file"
+ },
+ "image_upload_modal": {
+  "upload_button": "Upload",
+  "back_button": "Back",
+  "cancel_button": "Cancel"
+ }
+}

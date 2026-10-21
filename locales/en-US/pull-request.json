@@ -1,0 +1,345 @@
+{
+ "title": "Create Pull Request",
+ "update_pull_request_error": {
+  "description": "You'll be able to edit pull request once you're online.",
+  "title": "You are offline"
+ },
+ "unable_to_save_changes": "Unable to save changes",
+ "unable_to_create_pull_request": "Unable to create pull request",
+ "overview": "Overview",
+ "changes": "Changes",
+ "offline_error": {
+  "title": "You are offline",
+  "description": "Unable to connect to the servers. Please check your network settings.",
+  "retry_button": "Retry"
+ },
+ "loading_error": {
+  "access_error": "You do not have access to perform this action",
+  "internal_error": "Something went wrong",
+  "connection_error": "There was an error fetching information required to create a pull request"
+ },
+ "is_destination_git_link": "Can't create pull request to a collection that's part of a Git-connected API.",
+ "existing_pull_request": {
+  "title": "There is already an open pull request for this fork",
+  "description": "At a given time, there can only be 1 open pull request for a fork.",
+  "view_open_pull_request_button": "View open pull request"
+ },
+ "create_pull_request": "Create Pull Request",
+ "edit_pull_request": "Edit Pull Request",
+ "source_destination": {
+  "tooltip": {
+   "source_deleted_from_workspace": "The source {modelDisplayName} has been deleted or removed from the workspace it belonged to.",
+   "destination_deleted_from_workspace": "The destination {modelDisplayName} has been deleted or removed from the workspace it belonged to.",
+   "unavailable": "This {modelDisplayName} is unavailable."
+  },
+  "source_label": "Source:",
+  "destination_label": "Destination:",
+  "to_label": "to"
+ },
+ "pull_changes_banner": {
+  "has_conflict_message": "The destination has been modified since the fork was last updated resulting in conflicts. Pull the changes and resolve the conflicts before merging the changes.",
+  "no_conflict_message": "The destination was recently updated. We recommend pulling the changes.",
+  "resolve_conflict_button": "Resolve conflicts",
+  "pull_changes_button": "Pull changes",
+  "no_pull_permission_tooltip": "You do not have permission to pull changes."
+ },
+ "pull_request_form": {
+  "can_not_merge_tooltip": "To merge your request, this user will have to request Editor access for the destination {entityName}.",
+  "group_can_not_merge_tooltip": "To merge your request, this group will need to have Editor access for the destination {entityName}.",
+  "can_not_merge": "can't merge",
+  "reviewer_can_not_access_source": "Reviewers can't access the source {entityType}",
+  "source_not_in_public_workspace": "The source {entityType} is not in a public workspace. Move it to a public workspace so that reviewers can access it to review your pull request.",
+  "source_not_in_team_workspace": "The source {entityType} is not in a team workspace. Move it to a team workspace so that reviewers can access it to review your pull request.",
+  "title": "Title",
+  "title_placeholder": "Please enter a title",
+  "title_error": "error",
+  "description": "Description",
+  "description_helper_text": "Give a brief summary of the major changes – your reviewers will thank you for it.",
+  "description_placeholder": "Descriptions support Markdown",
+  "reviewers": "Reviewers",
+  "select_up_to_50_reviewers": "Select up to 50.",
+  "editor_note": "Note: To merge this Pull Request, an editor of destination {entityType} must approve it. Be sure to select one as a reviewer.",
+  "find_a_reviewer": "Find reviewers",
+  "no_reviewers_yet": "No reviewers yet",
+  "can_add_up_to_50_reviewers": "You can add up to 50 reviewers.",
+  "offline_tooltip": "You can perform this action once you're back online",
+  "create_pull_request_button": "Create pull request",
+  "save_changes_button": "Save changes",
+  "cancel_button": "Cancel",
+  "move_button": "Move {entityType}"
+ },
+ "changes_tab": {
+  "heading": "Changes",
+  "description": "Description",
+  "unable_to_fetch_diff": "Unable to fetch comments on pull-request's diff",
+  "does_not_exists_error": {
+   "body": "We were unable to fetch the destination {entityType}. You may not have access on it or it may have been deleted.",
+   "title": "Unable to show changes"
+  },
+  "loading_diff_error": {
+   "body": "We were unable to fetch the source {entityType}. You may not have access on it or it may have been deleted.",
+   "title": "Unable to show changes"
+  },
+  "empty_state": {
+   "body": "Changes you make to the source will appear here. You can merge them afterwards.",
+   "title": "No changes to show"
+  }
+ },
+ "pull_request_diff_header": {
+  "heading": "Changes",
+  "updates": "Updates",
+  "conflicts": "Conflicts"
+ },
+ "attribute": {
+  "pull_changes": "Pull the changes",
+  "pull_changes_and_resolve_conflict": "<0></0> and resolve the conflicts before merging the changes.",
+  "conflict_partially_resolved": "Conflict partially resolved.",
+  "reset": "Reset",
+  "conflict_resolved_text": "Conflict resolved."
+ },
+ "panel_content": {
+  "content_label": "{entityType} merge content",
+  "conflict_resolved_text": "Conflict resolved.",
+  "reset": "Reset",
+  "reset_resolution": "Reset conflict resolution",
+  "conflict_resolved_reset": "Conflict resolved <1></1>",
+  "pull_changes": "Pull the changes",
+  "pull_changes_full": "Pull the changes to enable conflict resolution",
+  "pull_changes_and_resolve_conflict": "<0></0> and resolve the conflicts before merging the changes."
+ },
+ "conflict_choice_descriptor": {
+  "keep_source": "Keep source",
+  "keep_destination": "Keep destination",
+  "keep_individual": "Select the values that you want to keep individually by clicking on <1></1> and <3></3> blocks below. You can also click the options above to resolve all the conflict for this attribute.",
+  "source_icon_label": "Source",
+  "destination_icon_label": "Destination"
+ },
+ "panel_header": {
+  "conflicted_badge_text": "conflicted",
+  "toggle_panel": "Toggle {entityName} details",
+  "open_entity": "Open {entityType} {entityName}"
+ },
+ "text_diff": {
+  "added_label": "Added",
+  "removed_label": "Removed"
+ },
+ "diff_renderer": {
+  "keep_destination_changes": "Keep the rest changes to destination",
+  "keep_all_destination_changes": "Keep all changes to destination",
+  "keep_source_changes": "Keep the rest changes to source",
+  "keep_all_source_changes": "Keep all changes to source",
+  "loading_diff": "We're fetching the modified entities, which might take a minute."
+ },
+ "resolve_all_entity": {
+  "label": "Resolve all conflicts:",
+  "reset_all_conflicts": "Reset all conflicts",
+  "conflict_resolved_with_reset_button": "Conflicts resolved and ready to pull changes. <1></1>"
+ },
+ "diff_item_title": {
+  "tooltip": "This {itemType} has been moved to {model} {name}"
+ },
+ "diff_item_property": {
+  "conflict_label": "Conflict"
+ },
+ "diff_summary_entity": {
+  "conflicted_label": "conflicted"
+ },
+ "table_diff_cell": {
+  "enabled": "Enabled",
+  "disabled": "Disabled"
+ },
+ "selection_diff": {
+  "enabled": "Enabled",
+  "disabled": "Disabled"
+ },
+ "json_diff": {
+  "enabled": "Enabled",
+  "disabled": "Disabled"
+ },
+ "entity_conflict": {
+  "origin": {
+   "source": "source",
+   "destination": "destination"
+  },
+  "modified": "The {entityType} will be modified as in the {origin}.",
+  "removed": "The {entityType} will be deleted as in the {origin}.",
+  "moved": "The {entityType} will be moved to",
+  "destination": {
+   "modified": "{entityType} modified in the destination.",
+   "deleted": "{entityType} deleted in the destination.",
+   "moved": "{entityType} moved to "
+  },
+  "source": {
+   "modified": "{entityType} modified in the source.",
+   "deleted": "{entityType} deleted in the source.",
+   "moved": "{entityType} moved to "
+  }
+ },
+ "summarize_changes": {
+  "changes": {
+   "modified": "{count, plural, one{# entity} other {# entities}} modified ",
+   "added": "{count, plural, one{# entity} other {# entities}} added",
+   "removed": "{count, plural, one{# entity} other {# entities}} removed",
+   "moved": "{count, plural, one{# entity} other {# entities}} moved",
+   "conflicted": "{count, plural, one{# entity} other {# entities}} conflicted"
+  }
+ },
+ "diff_summary": {
+  "toggle_tree": "Toggle summary tree"
+ },
+ "pull_request_header": {
+  "source_info_unavailable_tooltip": "The source {entityType} was either deleted or removed from the workspace before the pull request was declined"
+ },
+ "merge_button": {
+  "text": "Merge"
+ },
+ "merge_tooltip": {
+  "message": "Something went wrong. Please refresh."
+ },
+ "pull_request_actions": {
+  "sign_in_required_to_manage_message": "Please sign-in to manage pull requests.",
+  "more_pull_request_actions": {
+   "edit_option_disabled": {
+    "is_merging_message": "We're currently merging the pull request.",
+    "sign_in_required_message": "Sign in to edit pull requests."
+   },
+   "decline_option_disabled": {
+    "is_merging_message": "We're currently merging the pull request.",
+    "sign_in_required_message": "Sign in to decline pull requests."
+   },
+   "dropdown_options": {
+    "refresh": "Refresh",
+    "edit": "Edit",
+    "decline": "Decline"
+   }
+  },
+  "offline_tooltip_text": "You can perform this action once you're back online",
+  "view_merge_conditions": "View Merge Conditions",
+  "approve_button_disabled_message": "We're currently merging this pull request.",
+  "merge_tooltip_messages": {
+   "merge_in_progress": "We're currently merging this pull request.",
+   "collection_all_condition_not_satisfied": "Make sure this Pull Request meets all the merge conditions before trying to merge it.",
+   "no_changes_made": "No changes made. Nothing to merge.",
+   "collection_merge_condition_not_met_title": "Merge conditions not met"
+  },
+  "decline_pull_request": {
+   "success": {
+    "title": "Pull Request declined",
+    "description": "Declined Pull Requests cannot be reopened"
+   },
+   "error": {
+    "title": "Unable to decline pull request"
+   }
+  },
+  "approve_pull_request": {
+   "success": {
+    "title": "Success!",
+    "description": "You approved this pull request"
+   },
+   "error": {
+    "title": "Unable to approve pull request"
+   }
+  },
+  "unapprove_pull_request": {
+   "success": {
+    "title": "Unapproved",
+    "description": "You unapproved this pull request"
+   },
+   "error": {
+    "title": "Unable to unapprove pull request"
+   }
+  },
+  "decline_confirmation_modal": {
+   "title": "Decline pull request?",
+   "primary_action": "Decline pull request",
+   "cancel_button": "Cancel",
+   "add_a_note_label": "Add a note",
+   "message": "This action cannot be undone. To request edits or leave feedback, add a comment instead.",
+   "modal_text": "Help others understand why the pull request is declined"
+  },
+  "approval_toggle": {
+   "menu_content_message": "People who approve this pull request will show up here.",
+   "approve_button": "Approve",
+   "unapprove_button": "Unapprove",
+   "approvers_count": "{ count, plural, one{# approver} other{# approvers} }"
+  }
+ },
+ "pull_request_overview": {
+  "heading": "Description",
+  "no_description_message": "No description provided."
+ },
+ "empty_state": {
+  "title": "You are offline",
+  "body": "Unable to connect to the servers. Please check your network settings.",
+  "retry_button": "Retry"
+ },
+ "error_state": {
+  "title": "Unable to fetch pull request"
+ },
+ "merge_status_banner": {
+  "success": {
+   "pull_request": "The pull request has been merged.",
+   "pull_changes": "The changes have been pulled.",
+   "other": "The changes have been merged."
+  },
+  "in_progress": {
+   "pull_request": "We’re merging the pull request, which might take a minute. We'll notify you when it's complete.",
+   "pull_changes": "We're pulling the changes, which might take a minute. We'll notify you when it's complete.",
+   "other": "We're merging the changes, which might take a minute. We'll notify you when it's complete."
+  },
+  "failed": {
+   "pull_request_with_refresh_tab": "An unexpected error happened while merging the pull request. Please refresh the tab and try again.",
+   "pull_request_without_refresh_tab": "An unexpected error happened while merging the pull request. Please try again.",
+   "pull_changes_with_refresh_tab": "An unexpected error happened while pulling the changes. Please refresh the tab and try again.",
+   "pull_changes_without_refresh_tab": "An unexpected error happened while pulling the changes. Please try again.",
+   "other_with_refresh_tab": "An unexpected error happened while merging the changes. Please refresh the tab and try again.",
+   "other_without_refresh_tab": "An unexpected error happened while merging the changes. Please try again."
+  }
+ },
+ "diff_navigation": {
+  "jump_to": "Jump to"
+ },
+ "pull_request_body": {
+  "navigation_nodes": {
+   "description": "Description",
+   "changes": "Changes"
+  }
+ },
+ "pull_request_end_state_banner": {
+  "declined": "<0> </0> declined this pull request on {updatedAt, date, long} with the following note:",
+  "merged": "<0> </0> merged this pull request on {updatedAt, date, long}"
+ },
+ "merge_collection_modal": {
+  "header": "Confirm merge",
+  "merge_label": "Choose how you want to proceed",
+  "merge_label_summary": "You're merging {changes} changes into {entityName}",
+  "cancel_button": "Cancel",
+  "merge_button": "Merge",
+  "merge_strategies": {
+   "merge_changes": {
+    "display_name": "Merge changes",
+    "description": "The destination will be updated with the changes"
+   },
+   "merge_changes_and_update_source": {
+    "display_name": "Merge changes and update source",
+    "description": "Both the source and destination will be updated"
+   },
+   "merge_changes_and_delete_source": {
+    "display_name": "Merge changes and delete source",
+    "description": "The destination will be updated and the source will be deleted"
+   }
+  },
+  "tooltip_text": {
+   "collection": {
+    "default": "Changes cannot be merged.",
+    "update_source_with_destination": "You need Editor role on the source collection.",
+    "delete_source": "You need Editor role on the source collection."
+   },
+   "environment": {
+    "default": "Changes cannot be merged.",
+    "update_source_with_destination": "You need Editor role on the source environment.",
+    "delete_source": "You need Editor role on the source environment."
+   }
+  }
+ }
+}

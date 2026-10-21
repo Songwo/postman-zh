@@ -1,0 +1,901 @@
+{
+ "no_new_changes_to_save": "No new changes to save.",
+ "sign_in_to_take_action": "Sign in to take this action",
+ "close_tab_aria_label": "Close tab",
+ "context_menu": {
+  "new_request": "New Request",
+  "duplicate_tab": "Duplicate Tab",
+  "split_tab": "Split Right",
+  "split_tab_left": "Split Left",
+  "close_tab": "Close Tab",
+  "force_close_current": "Force Close Tab",
+  "close_others": "Close Other Tabs",
+  "close_all": "Close All Tabs",
+  "force_close_all": "Force Close All Tabs",
+  "close_all_in_group": "Close All Tabs in Group",
+  "force_close_all_in_group": "Force Close All Tabs in Group",
+  "close_all_groups": "Close All Tabs in All Groups",
+  "recently_closed": "Recently Closed Tabs",
+  "recently_closed_none": "None",
+  "duplicate_selected": "Duplicate Selected Tab",
+  "close_selected": "Close Selected Tab",
+  "force_close_selected": "Force Close Selected Tab",
+  "close_all_except_selected": "Close All but Selected Tab",
+  "reveal_in_sidebar": "Reveal in Sidebar"
+ },
+ "delete_confirm": {
+  "force_close": "Force Close"
+ },
+ "empty_shell": {
+  "ask_ai": "Ask AI",
+  "open_overview": "Open workspace overview",
+  "create_new": "Create new",
+  "import": "Import",
+  "find_in_workspace": "Find in workspace",
+  "create_request": "Create a new request:",
+  "http_request": "HTTP Request"
+ },
+ "loading_shell": {
+  "loading": "Loading..."
+ },
+ "tooltip": {
+  "disabled_actions": "Open a new tab to perform this action",
+  "create_new_request": "Create new request",
+  "expand": "Expand",
+  "collapse": "Collapse"
+ },
+ "environment_quick_look": {
+  "button_tooltip": "Environment quick look",
+  "environment": "Environment",
+  "edit": "Edit",
+  "variable": "Variable",
+  "initial_value": "Initial value",
+  "current_value": "Current value",
+  "no_active_environment": "No active Environment",
+  "globals": "Globals",
+  "no_globals_available": "No Globals available",
+  "no_environment_variables": {
+   "heading": "No Environment variables",
+   "description": "An environment is a set of variables that allow you to switch the context of your requests."
+  },
+  "no_global_variables": {
+   "heading": "No global variables",
+   "description": "Global variables are a set of variables that are always available in a workspace."
+  },
+  "variables_use_banner": {
+   "heading": "Use variables to reuse values and protect sensitive data",
+   "learn_about_variable_type": "Store sensitive data in variable type secret to keep its values masked on the screen. Learn more about <1><0>variable type</0></1>",
+   "learn_about_variable_type_lc": "Store sensitive data in variable type secret to keep its values masked on the screen. Learn more about <1>variable type</1>.",
+   "learn_about_variable_values": "Work with the current value of a variable to prevent sharing sensitive values with your team. Learn more about <1><0>variable values</0></1>",
+   "learn_about_variable_values_lc": "Work with the current value of a variable to prevent sharing sensitive values with your team. Learn more about <1>variable values</1>."
+  },
+  "add": "Add",
+  "read_only": "Read only",
+  "something_went_wrong": "Something went wrong. Please check DevTools.",
+  "variable_not_present_in_active_session": "This variable does not exist in the active session. However, its presence in the environment will not be affected.",
+  "deleted": "[Deleted]"
+ },
+ "entity_tab_loading_error": {
+  "offline": {
+   "title": "Unable to load data as you're offline",
+   "body": "Your data may not be up to date until you’re back online."
+  },
+  "error": {
+   "title": "{entityName} not found",
+   "body": "We could not find the {entityName} you are looking for."
+  },
+  "deleted": {
+   "title": "Couldn’t find {entityName}",
+   "body": "It might have been moved or deleted."
+  },
+  "forbidden": {
+   "title": "Access to {entityName} revoked by Admin",
+   "body": "Access to {entityName} has been revoked by your admin, possibly due to security policies. Please contact your admin for further details or assistance."
+  },
+  "retry_button": "Retry"
+ },
+ "auto_save_conflict_banner": {
+  "button": "Resolve conflicts...",
+  "text": "This request was modified elsewhere and have conflicts. Resolve conflicts to resume auto save."
+ },
+ "environment_selector": {
+  "type_to_filter": "Type to filter",
+  "no_environment": "No Environment",
+  "select_environment": "Select Environment",
+  "others": "Others",
+  "no_permission_error": "You don’t have permission to take this action.",
+  "read_only": "Read only",
+  "group_label": {
+   "pinned": "Pinned to this collection",
+   "other": "Other Environments"
+  },
+  "menu_options": {
+   "set_as_default": "Set as Default",
+   "unpin": "Unpin"
+  },
+  "pin_icon_tooltip": {
+   "unpin": "Unpin from collection",
+   "pin": "Pin to collection"
+  },
+  "empty_state": {
+   "no_pins": "Pin an environment to automatically switch to it when working with this collection",
+   "no_environments": "No Environments found",
+   "no_environments_can_create": "No Environments found. <0>Create one</0>.",
+   "no_environments_in_workspace_header": "No Environments",
+   "no_environments_in_workspace_body": "Use environments to easily switch variable values and test your API in different setups. Learn more about <0>Environments</0>.",
+   "create_environment": "Create Environment",
+   "forbidden_environments_title": "Access to Environments revoked by Admin",
+   "forbidden_environments_message": "This could be possibly due to security policies. Please contact your admin for further details or assistance."
+  },
+  "footer": {
+   "create_environment": "Create new environment",
+   "create_environment_no_permission": "You do not have permission to create environments in this workspace",
+   "create_environment_offline": "You must be online to create environments"
+  },
+  "default_environment_tooltip": "Default environment is auto-selected while working with the collection.",
+  "dropdown": {
+   "search_placeholder": "Search",
+   "add_button_tooltip": "Create Environment",
+   "aria_label": "Environment selector. Press Enter or Space to open dropdown."
+  },
+  "error_state": {
+   "message": "Couldn’t load pinned environments",
+   "try_again": "Try Again"
+  },
+  "loading_state": {
+   "message": "Loading pinned environments"
+  },
+  "onboarding": {
+   "viewer": {
+    "header": "Right environments are pinned for this collection",
+    "body": "Environments that work best with the collection are pinned and stay at to the top of the list. Select a pinned environment and try again.",
+    "button": {
+     "primary": "Switch Environment",
+     "secondary": "Close"
+    }
+   },
+   "editor": {
+    "header": "📌 Pin this environment to the collection",
+    "body": "Suggest environments to use with the collection by pinning them. An environment can be pinned to multiple collections.",
+    "button": {
+     "primary": "Let Me Try",
+     "secondary": "Maybe Later"
+    }
+   }
+  }
+ },
+ "network_trouble": {
+  "title": "Unable to load data",
+  "description": "We are trying to establish a connection with our servers. Your data may not be up to date until you’re connected.",
+  "reload": "Reload"
+ },
+ "lazy_editor": {
+  "chunk_load_error": {
+   "message": "This editor couldn't be loaded.",
+   "reload": "Reload"
+  }
+ },
+ "offline_constants": {
+  "title": "Unable to load this tab",
+  "description": "You need to be online to access all resources in this workspace.",
+  "banner_text": "Some environments are unavailable while you’re offline."
+ },
+ "variables_empty": {
+  "base_text": {
+   "globals": "No global variables added",
+   "other_entity": "No variables in this {userFriendlyEntityName}"
+  },
+  "request_access_text": "Request additional access to this {userFriendlyEntityName} to add variables"
+ },
+ "secret_resolution": {
+  "error": {
+   "disabled": "Shared Vault is currently disabled. Please contact your team administrator to request access.",
+   "not_found": "Secret reference not found",
+   "vault_inaccessible": "Vault is inaccessible",
+   "vault_inaccessible_hint": "Unlock your vault to view and use this secret.",
+   "signin_required": "Sign in to resolve this secret",
+   "desktop_only": "This secret resolves only in the Postman desktop app"
+  },
+  "action": {
+   "sign_in_on_device": "Sign in on this device",
+   "open_shared_vault": "Open Shared Vault",
+   "unlock_vault": "Unlock Vault"
+  },
+  "warning": {
+   "domain_mismatch": "Domain mismatch",
+   "disabled": "Secret disabled",
+   "limit_reached": "Secret limit reached"
+  },
+  "mutation": {
+   "not_supported": "Operation not supported",
+   "not_found": "Secret not found",
+   "failed": "Operation failed"
+  }
+ },
+ "overview": {
+  "title": "Overview"
+ },
+ "globals": {
+  "title": "Globals"
+ },
+ "monitor": {
+  "title": "Monitor"
+ },
+ "import": {
+  "title": "Import API from {serviceName}",
+  "title_with_definition": "Import API Definition from {serviceName}"
+ },
+ "context_bar": {
+  "aria_label": "Context bar",
+  "navigation_aria_label": "Context bar navigation",
+  "close": "Close context bar",
+  "documentation": {
+   "title": "Documentation"
+  },
+  "comments": {
+   "title": "Comments"
+  },
+  "vault": {
+   "title": "Postman Vault"
+  },
+  "passport_secrets": {
+   "title": "Passport Secrets"
+  },
+  "code": {
+   "title": "Code"
+  },
+  "source_control": {
+   "title": "Source Control"
+  },
+  "activity_feed": {
+   "title": "Activity feed"
+  },
+  "live_collection": {
+   "title": "Live Collection"
+  },
+  "code_generation": {
+   "title": "Code Generation"
+  },
+  "jira_issues": {
+   "title": "Jira issues"
+  },
+  "info": {
+   "title": "Info"
+  },
+  "network": {
+   "title": "Network",
+   "failed": "Failed",
+   "column": {
+    "method": "Method",
+    "name": "Name",
+    "status": "Status",
+    "time": "Time"
+   },
+   "search_placeholder": "Filter by URL or method",
+   "clear": "Clear",
+   "clear_tooltip": "Clear network log",
+   "create_collection": "Create Collection",
+   "create_collection_count": "Create Collection ({count})",
+   "create_collection_tooltip": "Create a new collection from the selected requests",
+   "default_collection_name": "{host} requests",
+   "default_collection_name_fallback": "Captured requests",
+   "collection_created": "Created collection \"{name}\"",
+   "collection_failed": "Couldn’t create the collection. Please try again.",
+   "no_matches": "No requests match your filter.",
+   "row_tooltip": "Open in Postman",
+   "truncated": "Showing the first {count} requests. Reload the page to start over.",
+   "empty_state": {
+    "title": "No requests captured yet",
+    "description": "XHR and fetch requests made by this page appear here. Interact with the page or reload to capture traffic."
+   }
+  },
+  "interactions": {
+   "title": "Interactions",
+   "badge": {
+    "user": "User",
+    "current_user": "{name} (you)",
+    "agent": "Agent"
+   },
+   "search_placeholder": "Filter by action, locator, or source",
+   "clear": "Clear",
+   "clear_tooltip": "Clear the interaction log",
+   "no_matches": "No interactions match your filter.",
+   "dropped": "Showing the last {count} interactions. Older interactions were dropped.",
+   "detail": {
+    "tool": "{tool} · {ms}ms"
+   },
+   "timestamp_tooltip": "{absoluteTime}",
+   "timestamp_step": "{stepDelta} after previous",
+   "timestamp_since_start": "{offset} since start",
+   "empty_state": {
+    "title": "No interactions recorded yet",
+    "description": "Clicks, typing, and navigation by you or the agent appear here as replayable steps."
+   }
+  },
+  "details": {
+   "title": "Details"
+  },
+  "example_details": {
+   "title": "Example details"
+  },
+  "request_details": {
+   "title": "Request details"
+  },
+  "file_info": {
+   "title": "File info"
+  },
+  "mock_server_details": {
+   "title": "Mock server details"
+  },
+  "mock_details": {
+   "title": "Mock details"
+  },
+  "simulation_details": {
+   "title": "Simulation details"
+  },
+  "monitor_details": {
+   "title": "Monitor Details"
+  },
+  "merge_conditions": {
+   "title": "Merge conditions"
+  },
+  "devtool": {
+   "title": "Devtool"
+  },
+  "configuration": {
+   "title": "Configuration"
+  },
+  "fork": {
+   "title": "Forks",
+   "offline_state": {
+    "title": "Check your connection",
+    "message": "Get online to view your list of forks.",
+    "retry": "Retry"
+   },
+   "error_state": {
+    "forbidden": {
+     "title": "Cannot view forks",
+     "message": "You don't have permission to view the forks of this {modelName}"
+    },
+    "server_error": {
+     "title": "Unable to load list of forks",
+     "description": "Try refetching forks"
+    }
+   },
+   "empty_state": {
+    "no_fork": {
+     "title": "There are no forks",
+     "description": "All forks created from this {modelName} will appear here. Learn more about <1><0><0>forks</0></0></1>"
+    },
+    "hidden_fork": {
+     "title": "{count, plural, =1 {# fork} other { # forks}} of {name}.",
+     "description": "They aren't visible because they're in workspaces you don't have access to. Learn more about <1><0><0>forks</0></0></1>"
+    }
+   },
+   "ready_state": {
+    "description": {
+     "total_forks": "{count, plural, =1 {# fork} other { # forks}} of {name}.",
+     "hidden_forks": "{count} of those aren't in this list because they're in workspaces you don't have access to."
+    },
+    "body": {
+     "helper_text": "Recently created:",
+     "created_on": "Created on: {dateObj, date, medium}"
+    },
+    "footer": {
+     "view_all": "View all forks",
+     "view_details": "View details"
+    }
+   }
+  },
+  "offline_context_bar_view": {
+   "heading": "Unable to load",
+   "description": "You need to be online to access all features in this workspace."
+  },
+  "pull_request": {
+   "title": "Pull Requests",
+   "header": {
+    "title": "Pull requests",
+    "view_merge_settings": "View merge conditions",
+    "no_view_permissions_merge_settings": "You don't have permission to view merge conditions",
+    "filter_button": {
+     "tooltip": "Filter pull requests",
+     "tooltip_body": "Show"
+    },
+    "filters": {
+     "open_requests": "Open requests",
+     "approved_requests": "Approved requests",
+     "merged_requests": "Merged requests",
+     "declined_requests": "Declined requests"
+    }
+   },
+   "description": "Keep track of all pull requests for this {modelDisplayName}.",
+   "error_state": {
+    "title": "Unable to load pull requests",
+    "message": "Please try refetching pull requests."
+   },
+   "empty_state": {
+    "title": "No pull requests right now",
+    "message": "View and keep track of all the pull requests on this {modelDisplayName}.",
+    "title_v2": "There are no pull requests",
+    "message_v2": "Once a pull request is created for this {forkStatus} {entityName}, you will be able to manage it from here. Learn more about <6><0><0>pull requests</0></0></6>",
+    "button": "Create pull request",
+    "button_disabled_tooltip": "You don't have permission to create a pull request"
+   },
+   "filtered_empty_state": {
+    "title": "No pull requests found",
+    "message": "Change filters and try again."
+   },
+   "pr_list": {
+    "last_updated": "Last updated:"
+   },
+   "offline_state": {
+    "title": "Check your connection",
+    "message": "Get online to view your list of Pull Requests"
+   },
+   "description_v2": "Manage all pull requests related to this {forkStatus} {modelDisplayName}.",
+   "out_going_pr": {
+    "heading": "Sent for review",
+    "empty_state": {
+     "message": "Currently, there is no open pull request created from this forked {modelDisplayName}. ",
+     "view_closed_pr": "View closed pull requests"
+    }
+   },
+   "incoming_pr": {
+    "heading": "Received for review",
+    "empty_state": {
+     "title": {
+      "filtered": "No results from these filters",
+      "unfiltered": "No pull requests to review"
+     },
+     "message": {
+      "filtered": "There are no pull requests to display for the selected filters. Adjust or reset your filter settings.",
+      "reset_filters": "Reset Filters",
+      "unfiltered": "If a pull request is requested for review to this {forkStatus} {modelDisplayName}, you will be able to manage it from here."
+     }
+    }
+   },
+   "pr_list_v2": {
+    "parent_entity_info": {
+     "destination": "Destination:"
+    },
+    "pr_list_item": {
+     "reviewer": {
+      "no_reviewer": {
+       "tooltip": "No reviewers have been assigned to this pull request.",
+       "label": "No reviewers"
+      },
+      "label": "{count, plural, =1 {# reviewer} other {# reviewers}}",
+      "anonymous": {
+       "tooltip": "Reviewers with accounts set to private are kept anonymous.",
+       "label": "{count, plural, =1 {# anonymous reviewer} other {# anonymous reviewers}}"
+      },
+      "you": "You"
+     },
+     "group_reviewer": {
+      "no_reviewer": {
+       "tooltip": "No group reviewers have been assigned to this pull request.",
+       "label": "No group reviewers"
+      },
+      "label": "{count, plural, =1 {# group reviewer} other {# group reviewers}}"
+     },
+     "last_updated": "Last updated"
+    }
+   }
+  },
+  "empty_state": {
+   "retry_button": "Retry"
+  },
+  "code_snippet": {
+   "title": "Code snippet",
+   "code_block": {
+    "header": {
+     "options": {
+      "wrap_button": {
+       "tooltip": "Wrap code"
+      },
+      "tooltip": "Options",
+      "copy": {
+       "tooltip": {
+        "copied": "Copied",
+        "copy": "Copy snippet"
+       }
+      },
+      "delete": {
+       "tooltip": "Delete"
+      },
+      "settings": {
+       "tooltip": "Code settings"
+      }
+     }
+    }
+   }
+  },
+  "changelog": {
+   "title": "Changelog",
+   "close": "Close changelog",
+   "blank_state": {
+    "title": "Unable to load the changelog",
+    "description": "Unable to find the collection.",
+    "try_again": "Try again"
+   },
+   "error_state": {
+    "title": "Unable to load the {modelName} changelog",
+    "description": "Something went wrong when loading the changelog.",
+    "try_again": "Try again"
+   },
+   "offline_state": {
+    "title": "Check your connection",
+    "description": "Get online to view the changelog"
+   },
+   "empty_state": {
+    "title": "No logs found",
+    "description": "Make some changes to the {modelName} to see the change logs"
+   },
+   "reload_changes": "Reload Changelog",
+   "load_more": "Load more",
+   "user_info_button": "View user information ({userCount, number} {userCount, plural, one {user} other {users}})",
+   "date_group": {
+    "expand_aria_label": "Expand changelog for {date}",
+    "collapse_aria_label": "Collapse changelog for {date}",
+    "group_children": {
+     "tooltip": {
+      "offline": "You must be online to load more changes",
+      "load_more": "Load more changes"
+     }
+    },
+    "entry": {
+     "header": {
+      "time": "{dateObj, time, short}",
+      "tooltip": {
+       "auto_update": "Automatically updated by Live Collection",
+       "reviewed_update": "Live Collection update reviewed by user"
+      },
+      "menu_list": {
+       "restore": "Restore to this change",
+       "edit_tag": "Edit tag",
+       "delete_tag": "Delete tag",
+       "add_tag": "Add a tag",
+       "edit_note": "Edit Note",
+       "delete_note": "Delete Note",
+       "add_note": "Add Note",
+       "hide_diff": "Hide diff for this change",
+       "show_diff": "Show diff to all users"
+      }
+     },
+     "tag": {
+      "placeholder": "Add a tag",
+      "label": "Tag",
+      "helper_text": "A tag creates a named reference to this change"
+     },
+     "note": {
+      "placeholder": "Add a note to explain this change",
+      "label": "Note"
+     },
+     "diff": {
+      "close_diff": "Close diff",
+      "view_diff": "View diff",
+      "info_tooltip": "Only editors of this {model} can view diff. It is hidden for other users.",
+      "no_permission": {
+       "diff_hidden": "Diff Hidden",
+       "tooltip": "Only users with edit permission can view this diff"
+      },
+      "view_more": "View more",
+      "offline_tooltip": "You must be online to view detailed diff"
+     },
+     "model": {
+      "button": {
+       "cancel": "Cancel",
+       "submit": "Submit"
+      },
+      "offline_tooltip": "You must be online to perform this action",
+      "delete_tag": {
+       "content": "This will delete the tag added to the change permanently",
+       "header": "Delete tag?",
+       "confirm_button": "Delete",
+       "confirm_button_loading": "Deleting..."
+      },
+      "delete_note": {
+       "content": "This will delete the note added to the change permanently",
+       "header": "Delete note?",
+       "confirm_button": "Delete",
+       "confirm_button_loading": "Deleting..."
+      },
+      "restore_changes": {
+       "header": "Restore changes",
+       "confirm_button": "Restore",
+       "confirm_button_loading": "Restoring...",
+       "content": "This {model} will revert to changes from {dateTime}. Are you sure you want to restore?"
+      },
+      "hide_diff": {
+       "header": "Hide diff for this change?",
+       "content": "All users with access to this workspace will be able to see the change but the diff will be hidden. Only editors of this {model} will be able to view diff.",
+       "confirm_button": "Hide diff",
+       "confirm_button_loading": "Hiding..."
+      },
+      "show_diff": {
+       "header": "Show diff to all users?",
+       "content": "All users with access to this workspace will be able to view diff for this change.",
+       "confirm_button": "Show diff",
+       "confirm_button_loading": "Unhiding..."
+      }
+     },
+     "toast": {
+      "restore_success": {
+       "title": "Successfully restored {model}",
+       "description": "Your {model} was successfully restored to the change at {dateTime}."
+      },
+      "restore_failed": {
+       "title": "Failed to restore {model}",
+       "description": "Something went wrong. Please try again later."
+      },
+      "hide_diff_success": {
+       "title": "Diff hidden from viewers for this change"
+      },
+      "hide_diff_failed": {
+       "title": "Failed to hide diff for changelog",
+       "description": "Something went wrong. Please try again later."
+      },
+      "unhide_diff_success": {
+       "title": "All users with access to this workspace can now see this diff"
+      },
+      "unhide_diff_failed": {
+       "title": "Failed to unhide diff for changelog",
+       "description": "Something went wrong. Please try again later."
+      }
+     }
+    }
+   },
+   "nested_entries_label": "Nested changelog entries",
+   "load_more_region_label": "Load more changelog entries"
+  }
+ },
+ "snippets": {
+  "category": {
+   "variables": "Variables",
+   "workflows": "Workflows",
+   "tests": "Tests"
+  },
+  "get_env_var": {
+   "name": "Get an environment variable",
+   "description": "Gets an environment variable"
+  },
+  "get_global_var": {
+   "name": "Get a global variable",
+   "description": "Gets a global variable"
+  },
+  "get_var": {
+   "name": "Get a variable",
+   "description": "Gets a variable (environment or global)"
+  },
+  "get_collection_var": {
+   "name": "Get a collection variable",
+   "description": "Gets a collection variable"
+  },
+  "set_env_var": {
+   "name": "Set an environment variable",
+   "description": "Sets an environment variable"
+  },
+  "set_global_var": {
+   "name": "Set a global variable",
+   "description": "Sets a global variable"
+  },
+  "set_collection_var": {
+   "name": "Set a collection variable",
+   "description": "Sets a collection variable"
+  },
+  "clear_env_var": {
+   "name": "Clear an environment variable",
+   "description": "Clears an environment variable if set"
+  },
+  "clear_global_var": {
+   "name": "Clear a global variable",
+   "description": "Clears a global variable if set"
+  },
+  "clear_collection_var": {
+   "name": "Clear a collection variable",
+   "description": "Clears a collection variable if set"
+  },
+  "send_request": {
+   "name": "Send an HTTP request",
+   "description": "Sends a request"
+  },
+  "run_collection_request": {
+   "name": "Send an HTTP request from a Collection",
+   "description": "Sends a request and executes its pre-request and post-response scripts"
+  },
+  "test_response_status_code": {
+   "name": "Status code: Code is 200",
+   "description": "Write a basic status code check"
+  },
+  "test_response_body_sub_string": {
+   "name": "Response body: Contains string",
+   "description": "Write a basic string check in response body"
+  },
+  "test_response_body_json": {
+   "name": "Response body: JSON value check",
+   "description": "Write a basic json value check"
+  },
+  "test_response_body_string": {
+   "name": "Response body: Is equal to a string",
+   "description": "Write a response body string check"
+  },
+  "test_response_headers": {
+   "name": "Response headers: Content-Type header check",
+   "description": "Write a basic response header check"
+  },
+  "test_response_time": {
+   "name": "Response time is less than 200ms",
+   "description": "Write a basic response time check"
+  },
+  "test_response_status_code_post": {
+   "name": "Status code: Successful POST request",
+   "description": "Check for successful POST request"
+  },
+  "test_response_status_name": {
+   "name": "Status code: Code name has string",
+   "description": "Write a basic response code string check"
+  },
+  "convert_response_xml_json": {
+   "name": "Response body: Convert XML body to a JSON Object",
+   "description": "Convert response body from JSON to XML"
+  },
+  "tv4_validate_json": {
+   "name": "Use Tiny Validator for JSON data",
+   "description": "Validate response against a schema with Tiny Validator"
+  },
+  "send_http_request": {
+   "name": "Send an HTTP request"
+  },
+  "run_multi_protocol_collection_request": {
+   "name": "Send a request from a Collection"
+  },
+  "set_var": {
+   "name": "Set a variable"
+  },
+  "clear_local_var": {
+   "name": "Clear a local variable"
+  },
+  "test_query_success": {
+   "name": "Test query is successful"
+  },
+  "test_response_time_below_limit": {
+   "name": "Test response time is below 200ms"
+  },
+  "test_specific_response_headers": {
+   "name": "Test specific header exists"
+  },
+  "test_response_data": {
+   "name": "Test response has specific property"
+  },
+  "test_response_data_against_schema": {
+   "name": "Test response against a JSON schema"
+  }
+ },
+ "action_menu": {
+  "button_label": "Set as variable",
+  "overridden_label": "Overridden",
+  "variable_menu": {
+   "input_placeholder": "Find a variable",
+   "button_label": "Set as new variable",
+   "overridden_info": {
+    "text_label": "This variable has one or more duplicates that override it.",
+    "text_link": "Learn more about scope hierarchy"
+   },
+   "policy_secured_info": {
+    "description_local": "Admin policy has secured this value in your local vault.",
+    "description_shared": "Admin policy has secured this value in your shared vault.",
+    "request_exception_button": "Request exception",
+    "description_local_self": "This secret was secured in your local vault.",
+    "description_shared_self": "This secret was secured in your shared vault.",
+    "store_in_plain_text_button": "Store in plain text",
+    "store_in_plain_text_error": "Couldn't restore the value. Check that your vault is unlocked and try again.",
+    "store_in_plain_text_failed": "Couldn't store the value in plain text. Try again.",
+    "reason_prompt": "Why does this value need to stay in plain text?",
+    "reason_visibility": "Your admins can see this request and its reason.",
+    "cancel_button": "Cancel",
+    "close_button": "Close",
+    "reasons": {
+     "false_positive": "False positive",
+     "test_data": "Test data",
+     "public_information": "Public information",
+     "internal_use_only": "Internal use only",
+     "temporary_use_only": "Temporary use only"
+    }
+   },
+   "info_row": {
+    "initial": "INITIAL",
+    "current": "CURRENT",
+    "value": "VALUE",
+    "scope": "SCOPE"
+   }
+  },
+  "new_variable": {
+   "title": "Set as new variable",
+   "row": {
+    "name": "Name",
+    "value": "Value",
+    "scope": "Scope",
+    "button": {
+     "default": "Set Variable",
+     "saving": "Setting Variable",
+     "dismiss": "No, thanks"
+    }
+   },
+   "scope_dropdown": {
+    "button_label": "Select a scope",
+    "menu_item": {
+     "global": "Global",
+     "vault": "Vault",
+     "environment": "Environment",
+     "collection": "Collection"
+    }
+   },
+   "var_name_error_tooltip": "Variable name already in use"
+  },
+  "comment": {
+   "button_label": "Comment",
+   "unsaved_changes_tooltip": "Save this request to add comments.",
+   "discard_changes_tooltip": "You have unsaved {entityType} changes. Discard them to add a comment.",
+   "comment_disabled_tooltip": "You need to be an Editor to save and comment on this request."
+  },
+  "error_toast": "Something went wrong. Please check DevTools."
+ },
+ "agent": {
+  "browser": "Browser Agent",
+  "desktop": "Desktop Agent",
+  "cloud": "Cloud Agent",
+  "interceptor": "Interceptor Agent",
+  "updating": "Updating Agent"
+ },
+ "unsaved-changes-modal": {
+  "details": {
+   "modal_header": "Save changes?",
+   "do_not_close": "Don't close",
+   "fork_collection": "Fork collection to save changes",
+   "fork_collection_content": "This request has unsaved changes which will be lost if you close this tab. Fork it to your workspace to save your changes.",
+   "close_discard": "Close and Discard Changes",
+   "close_tab": "Close tab with unsaved changes?",
+   "auto_save_error": "The changes in {name} tab haven’t been saved yet as we are unable to connect with our servers.",
+   "default_error": "The changes in {name} haven't been saved yet and will be saved once you are back online.",
+   "always_discard": "Always discard unsaved changes when closing a tab",
+   "confirmation_help_text": "You'll no longer be prompted to save changes when closing a tab. You can change this anytime from your Settings.",
+   "offline_tooltip": "You can take this action when you're back online.",
+   "no_permission_tooltip": "You don't have permission to take this action.",
+   "something_went_wrong": "Something went wrong while saving your preference",
+   "modal_content_for_close": "<0>{collectionName}</0> has unsaved changes. {subText}",
+   "conflict_message": "This {modelType} was modified in another tab. Saving will overwrite those changes.",
+   "save_changes": "Save these changes to avoid losing your work.",
+   "modal_content_for_save": "<0>{collectionName}</0> {subText}",
+   "modified_from_another_tab": "was modified in another tab. Saving will overwrite the {modelType}."
+  },
+  "footer": {
+   "cancel": "Cancel",
+   "do_not_save": "Don't save",
+   "save_changes": "Save changes",
+   "save": "Save",
+   "discard_changes": "Discard changes",
+   "overwrite": "Save and overwrite",
+   "saves_as_new": "Save as new {modelType}",
+   "fork_collection": "Fork collection"
+  }
+ },
+ "tab_title_status": {
+  "conflict": "CONFLICT",
+  "deleted": "DELETED"
+ },
+ "tab_search": {
+  "recently_closed": "Recently closed",
+  "fallback_label": "Untitled",
+  "placeholder_text": "Search tabs",
+  "empty_state_text": "No tabs to display",
+  "empty_state_no_open_tabs": "No open tabs",
+  "tooltip": "Search tabs"
+ },
+ "collection_explorer": {
+  "create_row": {
+   "create": "Create",
+   "cancel": "Cancel"
+  },
+  "entity_is_empty": "This {entity, select, collection {collection} folder {folder} api {API} other {}} is empty"
+ }
+}

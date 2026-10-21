@@ -1,0 +1,292 @@
+{
+ "address_bar": {
+  "url_input": {
+   "placeholder": {
+    "enter_url": "Enter URL",
+    "tls_message": "Use mqtts:// to connect over TLS"
+   },
+   "error": "URL is required"
+  },
+  "client_id_input": {
+   "client_id": "Client ID",
+   "id": "ID:"
+  },
+  "version_switcher": {
+   "tooltip": "Can't change version while connected"
+  },
+  "connect_button": {
+   "tooltip": {
+    "no_permission": "You don't have permission to perform this action in this workspace."
+   }
+  }
+ },
+ "agent": {
+  "errors": {
+   "agent_not_connected": "Switch to Postman Desktop Agent to connect with an MQTT broker.",
+   "agent_not_supported": "You're using an older version of Postman Desktop Agent which does not support MQTT requests. Update the Desktop Agent and try again.",
+   "agent_not_ready": "Make sure the Desktop Agent is installed and running."
+  }
+ },
+ "compose_area": {
+  "headers": {
+   "editor": "Editor",
+   "saved_messages": "Saved messages"
+  },
+  "toolbar": {
+   "properties_button": {
+    "tooltip": "Pass metadata for each sent message.",
+    "text": "Properties"
+   },
+   "retain": "Retain",
+   "beautify": "Beautify",
+   "add_topic": "Add Topic",
+   "send": "Send",
+   "qos": "QoS:",
+   "add_topic_error": "Topic is required",
+   "messages": {
+    "settings": {
+     "response_topic": {
+      "label": "Response Topic",
+      "placeholder": "Add topic"
+     },
+     "correlation_data": {
+      "label": "Correlation Data",
+      "placeholder": "Add data"
+     },
+     "expiry_interval": {
+      "label": "Message Expiry Interval",
+      "placeholder": "Add interval",
+      "unit": "ms"
+     },
+     "content_type": {
+      "label": "Content Type",
+      "placeholder": "Add type"
+     },
+     "payload_format_indicator": {
+      "label": "Payload Format Indicator",
+      "placeholder": "Add indicator"
+     },
+     "topic_alias": {
+      "label": "Topic Alias",
+      "placeholder": "Add integer value"
+     },
+     "heading": "Settings"
+    }
+   }
+  },
+  "properties": {
+   "columns": {
+    "properties": {
+     "label": "Properties",
+     "placeholder": "Add property"
+    },
+    "value": {
+     "label": "Value",
+     "placeholder": "Add Value"
+    }
+   }
+  },
+  "saved_messages": {
+   "empty": "Add messages to reuse them during an active connection"
+  }
+ },
+ "editor": {
+  "tabs": {
+   "message": "Message",
+   "topics": "Topics",
+   "authorization": "Authorization",
+   "properties": "Properties",
+   "last_will": "Last Will",
+   "settings": "Settings"
+  },
+  "request_heading": "Request"
+ },
+ "request_properties": {
+  "columns": {
+   "properties": {
+    "label": "Properties",
+    "placeholder": "Add property"
+   },
+   "value": {
+    "label": "Value",
+    "placeholder": "Add Value"
+   },
+   "description": {
+    "label": "Description",
+    "placeholder": "Add Description"
+   }
+  }
+ },
+ "topics": {
+  "columns": {
+   "topics": {
+    "label": "Topics",
+    "placeholder": "Add topic"
+   },
+   "subscribe": {
+    "label": "Subscribe"
+   },
+   "description": {
+    "label": "Description",
+    "placeholder": "Add description"
+   },
+   "qos": {
+    "label": "QoS"
+   }
+  },
+  "validation_error": "Topic name cannot be blank",
+  "settings": {
+   "subscription_id": {
+    "label": "Subscription identifier",
+    "placeholder": "Add identifier"
+   },
+   "filter_local_msg": {
+    "label": "Filter local messages"
+   },
+   "retain_as_published": {
+    "label": "Retain as published"
+   },
+   "retain_handling": {
+    "label": "Retain handling",
+    "placeholder": "Select retain handling"
+   }
+  }
+ },
+ "last_will": {
+  "will_delay": "Will Delay"
+ },
+ "constants": {
+  "rename": "Rename",
+  "duplicate": "Duplicate",
+  "delete": "Delete",
+  "cancel": "Cancel",
+  "disconnect": "Disconnect",
+  "connect": "Connect"
+ },
+ "message_types": {
+  "text": "Text",
+  "json": "JSON",
+  "base64": "Base64",
+  "hex": "Hexadecimal"
+ },
+ "tooltips": {
+  "qos": {
+   "at_most_once": {
+    "label": "At most once",
+    "tooltip": "This service level doesn’t guarantee the delivery of the payload. The client fires and forgets."
+   },
+   "at_least_once": {
+    "label": "At least once",
+    "tooltip": "Guarantees that the payload gets delivered at least once by sending it multiple times until the client gets an acknowledgment (PUBACK) of delivery."
+   },
+   "exactly_once": {
+    "label": "Exactly once",
+    "tooltip": "Guarantees that the payload gets delivered exactly once with a four-part handshake."
+   }
+  },
+  "message_properties": "Pass metadata for each message sent.",
+  "retain_message_long": "Retaining messages allows a published message to be stored on the broker and delivered to new subscribers when they connect to the topic. This is useful for providing current state information or configuration updates to clients that were not subscribed when the message was originally published.",
+  "retain_mesage_short": "Retaining messages allows a published message to be stored on the broker and delivered to new subscribers when they connect to the topic.",
+  "retain_handling": {
+   "receive_on_connect": {
+    "label": "Receive on connect"
+   },
+   "receive_if_unique": {
+    "label": "Receive if unique subscription",
+    "tooltip": "Broker sends the retained messages only if the topic isn’t already subscribed to."
+   },
+   "dont_receive": {
+    "label": "Don't receive"
+   }
+  }
+ },
+ "settings": {
+  "enable_server_certificate_verification": "Enable server certificate verification",
+  "verify_server_certificate_description": "Verify server certificate when connecting to a broker over a secure connection.",
+  "verify_server_certificate_summary": "Verifies server certificate when connecting to a broker over a secure connection.",
+  "clean_session": "Clean Session",
+  "clean_start": "Clean Start",
+  "clean_session_description": "Configure if the broker should start with a fresh connection without retaining any previous session data.",
+  "clean_session_summary": "Broker starts with a fresh connection without retaining any previous session data.",
+  "session_expiry_interval": "Session Expiry Interval",
+  "session_expiry_interval_description": "Configure the session expiry interval in seconds. This impacts how long a broker will store the session data for your client. If clean start is on, this value is ignored.",
+  "session_expiry_interval_summary": "Session expiry interval in seconds. This impacts how long a broker will store the session data for your client. If clean start is on, this value is ignored.",
+  "keep_alive": "Keep Alive",
+  "keep_alive_description": "Configure the keep alive interval in seconds.",
+  "keep_alive_summary": "Keep alive interval in seconds.",
+  "auto_reconnect": "Auto Reconnect",
+  "auto_reconnect_description": "Configure if the client should automatically reconnect on abrupt disconnection.",
+  "auto_reconnect_summary": "Client automatically reconnects on abrupt disconnection.",
+  "connection_timeout": "Connection Timeout",
+  "connection_timeout_description": "Configure the connection timeout in seconds.",
+  "connection_timeout_summary": "Connection timeout in seconds.",
+  "receive_maximum": "Receive Maximum",
+  "receive_maximum_description": "Configure the maximum number of QoS 1 and 2 messages that can be processed concurrently.",
+  "receive_maximum_summary": "Maximum number of QoS 1 and 2 messages that can be processed concurrently.",
+  "maximum_packet_size": "Maximum Packet Size",
+  "maximum_packet_size_description": "Configure the maximum packet size in bytes that the client will accept.",
+  "maximum_packet_size_summary": "Maximum packet size in bytes that the client will accept."
+ },
+ "response_area": {
+  "heading": "Response",
+  "response_tabs": {
+   "messages": "Messages"
+  },
+  "response_label": {
+   "not_subscribed": "Not subscribed to any topics",
+   "subscribed_to_topics": "Subscribed to {listenerCount, plural, one {# topic} other {# topics}}",
+   "connection_status": {
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "connecting": "Connecting"
+   },
+   "connection_details": "Connection details"
+  },
+  "response_tab": {
+   "tabs_text": {
+    "messages": "Messages",
+    "visualization": "Visualization"
+   },
+   "show_hidden_visualization": "Show Hidden Visualizations ({hiddenCount})",
+   "empty_state_message": "Connect to send and receive messages"
+  },
+  "visualization_tab": {
+   "empty_state": {
+    "heading": "No messages received yet",
+    "description": "Visualizations are created with messages received by subscribing to topics"
+   }
+  },
+  "mqtt_timeline_event_categories": {
+   "sent_messages": "Sent Messages",
+   "received_messages": "Received Messages",
+   "other": "Other"
+  },
+  "mqtt_timeline_summaries": {
+   "couldnt_connect": "Couldn't connect to broker",
+   "connected": "Connected to broker",
+   "disconnect_error": "An error occurred while disconnecting from broker",
+   "disconnected": "Disconnected from broker",
+   "reconnecting": "Reconnecting to broker",
+   "error_occurred": "An error occurred",
+   "subscribed_to": "Subscribed to",
+   "unsubscribed_from": "Unsubscribed from",
+   "connection_aborted": "Connection aborted",
+   "response_pruned": "Response not stored.",
+   "empty_payload": "(empty)"
+  },
+  "packet_information": "Packet Information",
+  "connack_details": "CONNACK Details",
+  "disconnect_details": "DISCONNECT Details",
+  "visualization": {
+   "add_field": "Add Field"
+  },
+  "visualization_actions": {
+   "line_chart": "Line Chart",
+   "bar_chart": "Bar Chart",
+   "table": "Table",
+   "change_chart_type": "Change Visualization Type",
+   "hide": "Hide"
+  },
+  "missing_key_message": "<Text><StyledText>Switch to table view</StyledText> to access {missingFieldCount} more field{missingFieldCount, plural, one {} other {s}}.</Text>"
+ }
+}

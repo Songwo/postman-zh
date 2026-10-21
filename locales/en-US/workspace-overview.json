@@ -1,0 +1,1120 @@
+{
+ "header": {
+  "settings_button": "Workspace settings",
+  "back_button_aria_label": "Back to workspace overview",
+  "menu_button_aria_label": "More workspace actions",
+  "info_menu": {
+   "activity_feed_cta": "Activity log",
+   "info_cta": "Workspace info"
+  },
+  "options_menu": {
+   "ask_ai": "Ask AI",
+   "post_update": "Post update",
+   "invite_and_manage_members": "Invite and manage members",
+   "activity_log": "Activity log",
+   "move": "Move",
+   "archive": "Archive",
+   "delete": "Delete",
+   "copy_workspace_id": "Copy workspace ID",
+   "copied": "Copied!",
+   "find_in_workspace": "Find in workspace",
+   "customize_workspace_theme": "Customize workspace theme"
+  }
+ },
+ "name": {
+  "placeholder": "Workspace Name",
+  "renaming_warning": "Renaming the workspace will change its URL. Make sure you share the updated workspace URL.",
+  "toast": {
+   "label": "Unable to save changes",
+   "description": "Please try again."
+  }
+ },
+ "container": {
+  "tabs": {
+   "overview": "Docs",
+   "updates": "Updates",
+   "settings": "Settings",
+   "issues": "Issues",
+   "apps": "Apps",
+   "popover_text": {
+    "updates": "You have new updates!"
+   }
+  },
+  "actions": {
+   "contributors": "Contributors",
+   "tags": "Tags"
+  },
+  "explore_templates": "Explore workspace templates",
+  "view_activity": "View workspace activity",
+  "applying_template": "Applying workspace template..."
+ },
+ "context_bar": {
+  "activity": {
+   "title": "Activity"
+  }
+ },
+ "contributors": {
+  "heading": "Contributors",
+  "heading_recent": "Recent contributors",
+  "load_error": "Couldn’t load contributors. Try reloading.",
+  "reload": "Reload",
+  "empty_state": "People who contribute to this workspace will show up here.",
+  "more": "+ {count} more",
+  "view_all": "View all {count, plural, =1 {# contributor} other {# contributors}}"
+ },
+ "meta": {
+  "by": "by",
+  "unknown_user": "Unknown User",
+  "views": "{count} views",
+  "workspace_owned_by_tooltip": "This workspace is owned by {creatorName}"
+ },
+ "contributors_modal": {
+  "heading": "Contributors",
+  "team": "{count, plural, =1 {# team member} other {# team members}} have contributed to this workspace.",
+  "private": "{count, plural, =1 {# private user} other {# private users}}",
+  "self": "You",
+  "close_button": "Close"
+ },
+ "templates": {
+  "heading": "Use a template to quickly set up your workspace",
+  "more": "More templates",
+  "toast": {
+   "title": "Couldn’t apply template",
+   "description": "Just a faulty wire. Try again in some time."
+  }
+ },
+ "templates_modal": {
+  "heading": "Workspace templates",
+  "feedback_msg": "Give feedback or suggest a new template",
+  "empty_state": {
+   "title": "Uh-oh, we couldn’t load the templates",
+   "description": "Just a glitch in our system. Try again in some time."
+  },
+  "toast": {
+   "title": "Couldn’t apply template",
+   "description": "Just a faulty wire. Try again.",
+   "close_button": "Close"
+  },
+  "use_template_button": "Use template",
+  "collections_heading": "Collections generated:"
+ },
+ "requested_access_section": {
+  "heading": "Requested access ({count})",
+  "approve_cta": "Approve",
+  "deny_cta": "Deny",
+  "view_all": "Show all"
+ },
+ "user_group_popover": {
+  "count_label": "{count, plural, =1 {# member} other {# members}}",
+  "members_loading": "Loading members…",
+  "members_unavailable": "Couldn’t load members. Try again.",
+  "view_group": "View Group",
+  "no_members": "No members in this group.",
+  "trigger_label": "Group members"
+ },
+ "general_access_section": {
+  "labels": {
+   "org_section": "General access",
+   "team_section": "Manage access",
+   "partner_section": "Who has access",
+   "can_access_label": "Can access",
+   "viewer": "Viewer",
+   "cant_access": "Can't access"
+  },
+  "dropdown": {
+   "internal": {
+    "team_label": "Everyone in {name}",
+    "personal_label": "Only you and invited people"
+   },
+   "public": {
+    "label": "Anyone on the internet"
+   }
+  },
+  "banners": {
+   "team_ws_rfa_in_review_other": "{name} request to give your team access is in review.",
+   "org_ws_rfa_in_review_other": "{name} request to give your organization access is in review.",
+   "org_ws_rfa_in_review_self": "Your request to give your organization access is in review.",
+   "review_their_prefix": "Review their",
+   "review_request_link": "request."
+  },
+  "view_in_settings": "View In Settings"
+ },
+ "description_new": {
+  "heading": "Workspace description",
+  "empty_state": "Add documentation to help others get started…",
+  "empty_state_uneditable": "No documentation added yet.",
+  "personal_ws_empty_state": "Add documentation and notes to stay organized…",
+  "add": "Add Workspace Description",
+  "show_less": "Show less",
+  "show_more": "Show more",
+  "toast": {
+   "title": "Unable to save changes",
+   "description": "Please try again."
+  }
+ },
+ "pin_component": {
+  "heading": "Pinned collections",
+  "featured_heading": "Featured collections",
+  "featured_hint_message": "Make it easy to discover collections in this workspace by pinning them here. When no collections are pinned, the most popular collections will show.",
+  "edit_featured_collection": "Edit featured collections",
+  "hint_msg": "Make it easy to discover notable collections in this workspace by pinning them here.",
+  "no_collections_msg": "No collections have been pinned to this workspace yet.",
+  "tooltip": {
+   "all_pins_full": "You can only pin {limit} collections",
+   "no_collections": "Add collections to this workspace to pin them.",
+   "all_collections_pinned": "All collections in this workspace are already pinned."
+  },
+  "pinned_collection": {
+   "select_placeholder": "Select collection",
+   "empty_msg": "No collection found",
+   "pin_button": "Pin collections",
+   "add_msg": "Add collections to this workspace to pin them.",
+   "toast": {
+    "create_error": {
+     "title": "Couldn’t pin collection",
+     "description": "Just a faulty wire. Try again."
+    },
+    "remove_error": {
+     "title": "Couldn’t remove pinned collection",
+     "description": "Just a faulty wire. Try again."
+    },
+    "environment_error": {
+     "title": "Couldn’t select environment",
+     "description": "Just a faulty wire. Try again."
+    }
+   }
+  },
+  "pinned_document": {
+   "pin_button": "Pin document to overview",
+   "add_readme_button": "Add workspace README",
+   "write_with_ai_button": "Write with AI",
+   "select_placeholder": "Select a document to pin",
+   "empty_msg": "No documents in this workspace yet.",
+   "toast": {
+    "pin_error": {
+     "title": "Couldn’t pin document",
+     "description": "Just a faulty wire. Try again."
+    },
+    "create_error": {
+     "title": "Couldn’t add README",
+     "description": "Just a faulty wire. Try again."
+    }
+   }
+  },
+  "environment": {
+   "no_environment": "No environment",
+   "no_environment_msg": "Your workspace doesn’t have any environments yet.",
+   "selection_msg": "Select an environment that you recommend for this collection."
+  },
+  "remove_modal": {
+   "heading": "Remove pin?",
+   "content": "Once removed the <1>{name}</1> collection will no longer be pinned to the workspace overview.",
+   "cancel_button": "Cancel",
+   "remove_button": "Remove"
+  }
+ },
+ "info_modal": {
+  "heading": "Workspace info",
+  "creator_label": "Created by",
+  "private_user": "Private User",
+  "workspace_id_label": "Workspace ID",
+  "workspace_id_copied": "Copied",
+  "copy_workspace_id": "Copy workspace ID",
+  "update_time_label": "Updated"
+ },
+ "summary": {
+  "about": "About",
+  "no_summary_msg": "No summary added yet.",
+  "empty_suggestion": "Add a short summary…",
+  "error_msg": "Summary can’t exceed 140 characters. Use the description instead.",
+  "toast": {
+   "label": "Unable to save changes",
+   "description": "Please try again"
+  }
+ },
+ "categories": {
+  "heading": "Category"
+ },
+ "partner_actions": {
+  "heading": "As {role} you can",
+  "role_separator": ", ",
+  "role_separator_final": " and ",
+  "learn_more": "Learn More",
+  "actions": {
+   "view_resources": "View all resources",
+   "edit_resources": "Edit all resources",
+   "send_api_requests": "Send API requests",
+   "watch_entities": "Watch entities",
+   "comment_on_entities": "Collaborate and add comments",
+   "build_and_test_apis": "Build and test APIs",
+   "manage_partners": "Invite partners"
+  }
+ },
+ "partner_onboarding": {
+  "shared_partner_workspace_onboarding": {
+   "heading": "Partnering in Postman just got better!",
+   "description": {
+    "header": "We've improved how you collaborate with other organizations.",
+    "points": {
+     "partner_access": {
+      "header": "Seamless Partner Access for Teams",
+      "text": "People can now join partner workspaces from their own team."
+     },
+     "partnership_settings": {
+      "header": "A Central Hub for Managing Partnerships",
+      "text": "The new <Link><Text>Partnerships page</Text></Link> lets you manage all partnerships in one place."
+     }
+    }
+   },
+   "close": "Close",
+   "cta": "Find out more"
+  },
+  "shared_partner_workspace_banner": {
+   "heading": "Welcome to your Partner Workspace!",
+   "description": "You can now seamlessly collaborate with multiple organizations without switching teams. Head to <1><0>Partnerships page</0></1> to manage all of your partnerships.",
+   "cta_text": "Learn more"
+  },
+  "heading": "Welcome aboard, {name}. We’re thrilled to have you on our partner workspace",
+  "content": "As a Partner in this workspace you can,",
+  "item1": "View all workspace resources",
+  "item2": "Explore Postman collections and read API documentation",
+  "item3": "Use collections and environments to send API requests",
+  "learn_more": "Learn More",
+  "got_it": "Got It"
+ },
+ "partner_workspace_meta": {
+  "heading": "Partners",
+  "member_count": "({count} members)",
+  "tooltip": "Partners cannot see other partners or make changes to this workspace",
+  "view_all": "View all partners"
+ },
+ "team_creator_banner": {
+  "welcome_banner": {
+   "heading": "Top recommendations to get started",
+   "content": "We are excited to have you here. Here are some ways to get your team started."
+  },
+  "add_projects": "Add projects to your workspace",
+  "manage_team": "Grow and manage your team",
+  "explore_advanced_features": "Explore advanced features",
+  "automate_collections": "Automate and optimize your collections",
+  "learn_more": "Learn More",
+  "cards": {
+   "template": {
+    "title": "Start with a template",
+    "description": "Explore and choose from 50+ collection templates."
+   },
+   "import": {
+    "title": "Import your projects",
+    "description": "Bring in projects from your desktop, Github, and more.",
+    "modal_subtitle": "To import, you need to have an account with Postman."
+   },
+   "move": {
+    "title": "Move your collections",
+    "description": "Transfer your collections to this workspace."
+   },
+   "invite": {
+    "title": "Invite a teammate",
+    "description": "Build a strong team to help you develop powerful APIs.",
+    "modal_subtitle": "You need an account to continue exploring Postman."
+   },
+   "permissions": {
+    "title": "Discover permissions",
+    "description": "Discover and assign the right permissions to teammates."
+   },
+   "environments": {
+    "title": "Create environments",
+    "description": "Apply variables to collections by creating environments."
+   },
+   "authorization": {
+    "title": "Set up authorization",
+    "description": "Access data by setting up the required authorization."
+   },
+   "documentation": {
+    "title": "Add documentation",
+    "description": "Help others learn how to interact with your endpoints."
+   },
+   "tests": {
+    "title": "Add tests to collections",
+    "description": "Write your test scripts or use our snippets to validate data."
+   },
+   "monitors": {
+    "title": "Monitor collections",
+    "description": "Set up a monitor to get notified about errors."
+   },
+   "runner": {
+    "title": "Try Collection Runner",
+    "description": "Run multiple requests simultaneously."
+   },
+   "scripts": {
+    "title": "Scripts and tests",
+    "description": "Learn how to write scripts to automate your workflow."
+   },
+   "collection_monitor": {
+    "title": "Collection monitor",
+    "description": "Learn how to set up a monitor to get notified about errors."
+   },
+   "collection_runner": {
+    "title": "Collection runner",
+    "description": "Learn how to create & automate a testing sequence."
+   }
+  }
+ },
+ "team_joiner_banner": {
+  "welcome_banner": {
+   "heading": "👋 Welcome to your new team workspace, {name}",
+   "content": "We are excited to have you here. Here are some ways to get your team started."
+  },
+  "cards": {
+   "request": {
+    "title": "Send a request",
+    "description": "Try sending some requests to explore what your teammates have built."
+   },
+   "invite": {
+    "title": "Invite a teammate",
+    "description": "Build a strong team to help you develop powerful APIs and scale your impact.",
+    "modal_subtitle": "You need an account to continue exploring Postman."
+   },
+   "request_access": {
+    "title": {
+     "edit_is_pending": "Request to edit is pending review",
+     "request_edit_access": "Request edit access"
+    },
+    "text": {
+     "request_in_progress": "Your request is in progress. We will let you know via email when it’s approved.",
+     "only_have_view_access": "You only have view access. To make changes, ask the admin for edit access."
+    }
+   }
+  }
+ },
+ "configure_multi_partner_workspace_banner": {
+  "heading": "Welcome to your Partner Workspace!",
+  "content": {
+   "link_preceding_text": "You can invite and collaborate with external partners in this workspace. To prevent partners from seeing each other, you can enable ",
+   "link_text": "multi-partner mode."
+  }
+ },
+ "tags": {
+  "new": "NEW",
+  "beta": "BETA"
+ },
+ "workspace_sandbox": {
+  "page_title": "Provisioning sandbox workspace",
+  "loading_label": "Loading",
+  "error_title": "We couldn't load your sandbox workspace",
+  "error_description": "Something went wrong while setting up your sandbox workspace. Please try again in a moment."
+ },
+ "workspace_settings": {
+  "heading": "Workspace settings",
+  "readonly_tooltip": "You don't have permission to change the workspace type.",
+  "network_error": {
+   "heading": "Couldn’t load the settings",
+   "description": "Just a faulty wire. Try reloading.",
+   "primary_action_text": "Reload"
+  },
+  "banner": {
+   "description": "The Collaborator role can no longer be assigned to anyone as it's replaced with Editor and Viewer roles. Learn more about the new",
+   "primary_action_text": "workspace roles"
+  },
+  "pending_requests": {
+   "label": "Pending requests ({count})"
+  },
+  "asset_type": {
+   "heading": "Asset type",
+   "description": "Classify this workspace by assigning it an asset type. A workspace can have only one asset type at a time.",
+   "placeholder": "Select an asset type",
+   "readonly_hint": "You don’t have permission to change the asset type.",
+   "not_git_connected_hint": "Connect this workspace to Git to change its asset type.",
+   "toast_success": "Asset type updated",
+   "toast_error": "Couldn’t update the asset type. Try again.",
+   "next_steps": {
+    "heading": "Next steps",
+    "subtitle": "Run this command from your git-linked workspace directory to start capturing API calls and test results.",
+    "dismiss": "Dismiss",
+    "checking_registration": "Checking Application Inventory registration…"
+   }
+  },
+  "visibility": {
+   "workspace_type_container_heading": "Workspace type",
+   "change_workspace_type_cta": "Change",
+   "workspace_type_modal_header": "Change workspace type",
+   "professional_plan_name": "Professional",
+   "enterprise_plan_name": "Enterprise",
+   "team_plan_name": "Team",
+   "upgrade_plan_button": "Upgrade plan",
+   "upgrade_plan_button_for": "Upgrade plan for {label}",
+   "upgrade_plan_text": "Upgrade your plan to create partner workspaces.",
+   "plan_downgrade_banner_text": "All partners were removed from this workspace as your new plan no longer supports partner workspaces. To continue using this workspace, change the workspace visibility",
+   "contact_your_team_admin": "Contact your team admin for details on enabling partner workspaces.",
+   "heading": "Who can access this workspace?",
+   "team_visibility_disabled_text": "You need to be a part of a team to be able to create team workspaces.",
+   "developer_role_required_text": "You need the developer role on the team to select this option.",
+   "private_visibility_disabled_text": "Upgrade to {enterprisePlanName} plan to collaborate privately with members.",
+   "partner_visibility_disabled_text": "Upgrade your plan to collaborate with external partners.",
+   "visibility_unavailable_text": "This option is currently unavailable in your region.",
+   "do_not_have_access": "You do not have access to convert this workspace to private.",
+   "only_admin_access": "Only Admins of this workspace can change the visibility.",
+   "only_admin_change_type": "Only workspace Admins can change the type.",
+   "description": "Determines who can access your workspace.",
+   "git_connected_restriction": "Currently only Internal workspaces support git connections. Disconnect the workspace from Git to change to Public or Partner Workspace.",
+   "disconnect_to_change": "Disconnect to change",
+   "pending_visibility_request_tooltip": "You can't perform this action when there's a pending request to change the workspace visibility.",
+   "remove_partners_checkbox_label": "Remove all partners",
+   "select_workspace_access_level_aria_label": "Select workspace access level",
+   "workspace_access_options_aria_label": "Workspace access options",
+   "back_button_aria_label": "Go back",
+   "update_team_profile_modal": {
+    "description": "Before your team’s profile can be made public, update your team domain and make sure it's eligible for public visibility. Your team domain helps identify your team on Postman.",
+    "confirm_cta_text": "Continue"
+   },
+   "tag_content": {
+    "new": "NEW",
+    "upgrade_plan": "UPGRADE PLAN",
+    "activate_trial": "TRY FOR FREE",
+    "unlocked": "UNLOCKED"
+   },
+   "toasts": {
+    "request_sent": "Request sent",
+    "invalid_workspace_name": "Invalid workspace name",
+    "visibility_change_failed": "Couldn’t change visibility",
+    "workspace_type_change_failed": "Couldn’t change workspace type",
+    "update_visibility_error": "Just a faulty wire. Try again.",
+    "update_visibility_orgs_error": "Couldn’t give access to your organization",
+    "visibility_status_changed": {
+     "title": "This is now a {status} workspace",
+     "title_internal_workspace": "This is now an internal workspace",
+     "access_updated_title": "Workspace access updated",
+     "public": {
+      "description": "Everyone can view it now."
+     },
+     "private": {
+      "description": "Only members invited to this workspace can access it now.",
+      "access_updated_description": "Only you and members invited to this workspace can access it now."
+     },
+     "team": {
+      "description": "All team members can access it now.",
+      "access_updated_description": "All team members can access it now."
+     },
+     "partner": {
+      "description": "Partners can now be invited to this workspace."
+     },
+     "personal": {
+      "description": "Only you can view it now.",
+      "access_updated_description": "Only you and members invited to this workspace can access it now."
+     }
+    }
+   },
+   "public_visibility_warnings": {
+    "generic_warning": "All data in this workspace will be made public.",
+    "public_team_profile_warning": "All data in this workspace and your <1>team's profile</1> will be made public.",
+    "public_user_profile_warning": "All data in this workspace and your <1>user profile</1> will be made public.",
+    "banner": {
+     "heading": "Your request to make this a <1>{transitionVisibilityStatus}</1> workspace is being reviewed.",
+     "show_more_link": "Show more",
+     "primary_action_text": "Cancel request"
+    }
+   },
+   "dropdown_options": {
+    "personal": {
+     "label": "Only me",
+     "helperText": "Personal"
+    },
+    "team": {
+     "label": "Everyone from {teamName}",
+     "helperText": "Team {appendTeamSize}"
+    },
+    "private": {
+     "label": "Only invited team members",
+     "helperText": "Private"
+    },
+    "partner": {
+     "label": "Only invited partners and team members",
+     "helperText": "Partner"
+    },
+    "public": {
+     "label": "Anyone on the internet",
+     "helperText": "Public"
+    }
+   },
+   "simplified_visibility_dropdown_options": {
+    "internal": {
+     "label": "Internal",
+     "helperText": "Build and test APIs within your team.",
+     "radio_options": {
+      "team": {
+       "label": "Everyone in {teamName}",
+       "helperText": "{appendTeamSize, plural, =0 {} =1 {# member} other {# members}}"
+      },
+      "organization": {
+       "helperText": "Organization with {appendTeamSize, plural, =0 {0 members} =1 {# member} other {# members}}"
+      },
+      "squad": {
+       "helperText": "Team with {appendTeamSize, plural, =0 {0 members} =1 {# member} other {# members}}"
+      },
+      "personal": {
+       "label": "Only you and invited people"
+      }
+     },
+     "labelWithAccess": {
+      "personal": "Internal (Only you)",
+      "team": "Everyone in your team",
+      "private": "Internal (Only you and invited team members)"
+     }
+    },
+    "partner": {
+     "label": "Partner",
+     "helperText": "Share APIs securely with trusted partners."
+    },
+    "public": {
+     "label": "Public",
+     "helperText": "Make APIs accessible to the world."
+    }
+   },
+   "internal_access_dropdown_options": {
+    "team": {
+     "label_with_name": "Everyone in {teamName}",
+     "label_without_name": "Everyone in your team",
+     "helperText": "{teamSize, plural, =0 {} =1 {# member} other {# members}}"
+    },
+    "invited_only": {
+     "label": "Only you and invited people",
+     "partner_label": "Only you and invited partners"
+    }
+   },
+   "update_visibility": {
+    "primary_action_text": "Update",
+    "secondary_action_text": "Cancel",
+    "has_community_manager": {
+     "primary_action_text": "Request visibility change",
+     "textarea_label": "Add note (optional)"
+    }
+   },
+   "update_visibility_modal": {
+    "primary_action_text": "Change visibility",
+    "secondary_action_text": "Cancel",
+    "title": "Change visibility to {visibilityStatus} ?",
+    "team": {
+     "personal": {
+      "description": "Once changed, all team members will be removed and only you can access this workspace."
+     }
+    },
+    "private": {
+     "personal": {
+      "description": "Once changed, all invited team members will be removed and only you can access this workspace."
+     }
+    },
+    "public": {
+     "private": {
+      "description": "Once changed, this workspace won’t be available on the Public API Network. Only invited members will continue to have access."
+     }
+    }
+   },
+   "simplified_visibility_change_modal": {
+    "raise_rfa_request": {
+     "primary_action_text": "Submit request"
+    },
+    "primary_action_text": "Save changes",
+    "secondary_action_text": "Cancel"
+   }
+  },
+  "role_settings_container": {
+   "heading": "People in this workspace",
+   "search_input_placeholder": "Search by name or email",
+   "invite_button_text": "Invite",
+   "invite_people": "Manage People",
+   "manage_access_label": "Manage access",
+   "can_access_label": "Can access",
+   "select_role_aria_label": "Select role",
+   "role_dropdown_aria_label": "Change role for {memberName}, currently {currentRole}",
+   "user_list_label": "{firstUser}, {secondUser} and {count, plural, =1 {# other} other {# others}}",
+   "show_more": "Show more",
+   "permission_not_available": "You do not have permission to take this action",
+   "toasts": {
+    "success": {
+     "access_removed": "Workspace access removed",
+     "access_updated": "Workspace access updated",
+     "guest_role_updated": {
+      "title": "Role updated"
+     }
+    },
+    "error": {
+     "access_removal_failed": "Couldn't remove access",
+     "access_update_failed": "Couldn't update role",
+     "no_slot_available": "Couldn't assign Editor role",
+     "guest_role_update_failed": {
+      "title": "Couldn't update role",
+      "description": "Just a faulty wire. Please try again."
+     },
+     "auto_approval_disabled": {
+      "title": "You don't have permission to convert",
+      "description": "Please contact a Team Admin to convert this Guest to a Developer."
+     }
+    }
+   },
+   "back_button_aria_label": "Go back"
+  },
+  "discussions": {
+   "heading": "Discussions",
+   "toggle_discussions_label": "Anyone with workspace access can view and engage in discussions",
+   "toggle_discussion_visibility": {
+    "toasts": {
+     "success": {
+      "description": "Now, only workspace admins can view and engage in discussions."
+     },
+     "error": {
+      "title": "Couldn’t hide discussions",
+      "description": "Just a faulty wire. Try again."
+     }
+    },
+    "modal": {
+     "heading": {
+      "hide_discussions": "Hide discussions?",
+      "show_discussions": "Show discussions?"
+     },
+     "description": {
+      "hide_discussions": "From now onwards only workspace admins will be able to view and engage in discussions, until the setting is turned ON.",
+      "show_discussions": "From now onwards everybody who has access to this workspace will be able to view and engage in discussions."
+     },
+     "primary_action_text": "Confirm",
+     "secondary_action_text": "Cancel"
+    }
+   }
+  },
+  "move_workspace": {
+   "heading": "Move this workspace",
+   "description": "Move workspace from {teamName}'s team to a different team in your organization.",
+   "description_personal_workspace": "Move workspace to a team to collaborate. You can only invite and collaborate with people in teams",
+   "primary_action_text": "Move workspace",
+   "disabled_tooltip_single_squad": "You can't move this workspace because there's no other team in your organization to move it to.",
+   "disabled_tooltip": "You can't move this workspace because you don't have access to other teams in your organization."
+  },
+  "add_to_namespace": {
+   "label": {
+    "add": "Add to Namespace",
+    "added": "Added to Namespace"
+   },
+   "other_namespaces": "+ {count} other {count, plural, one {Namespace} other {Namespaces}}",
+   "path_label": "Path",
+   "network_breadcrumb": "API Network",
+   "description": "Request to add this workspace to a namespace in the Unified API Network.",
+   "cta": "Add to Namespace",
+   "pending_label": "Request pending for {namespaceName}",
+   "go_to_approval_requests": "Go to Approval requests",
+   "status_error": "Couldn't load namespace status. Just a faulty wire. Try again.",
+   "toast": {
+    "success": {
+     "title": "Request submitted",
+     "description": "Request to add this workspace to {namespaceName} was submitted."
+    },
+    "error": {
+     "title": "Couldn't submit request",
+     "description": "Just a faulty wire. Try again."
+    }
+   }
+  },
+  "configure_sidebar": {
+   "heading": "Sidebar panels",
+   "description": "Customize which panels appear in the sidebar for everyone in this workspace.",
+   "tooltip_content": "You must have at least one element in the sidebar",
+   "network_error": {
+    "heading": "Configuration settings unavailable",
+    "description": "We were unable to fetch your configuration data. Please try again in some time.",
+    "primary_action_text": "Try again"
+   },
+   "settings_update_error": {
+    "heading": "Couldn't update sidebar panels",
+    "description": "There was an error updating the sidebar configuration. Try again."
+   }
+  },
+  "configure_multi_partner_workspace": {
+   "banner": {
+    "heading": "Collaborating with multiple organizations?",
+    "description": "Restrict partners from seeing each other by enabling multi-partner mode",
+    "invoke_modal_cta": "Enable multi-partner mode",
+    "configured": {
+     "heading": "Multi-partner mode",
+     "description": "Partners cannot see other partners or make changes to this workspace.",
+     "tooltip": "Partners cannot see each other, and all partners are limited to Viewer roles",
+     "badge": "ON"
+    }
+   },
+   "modal": {
+    "heading": "Collaborate privately with multiple partners",
+    "description": "Enable multi-partner mode to collaborate privately with multiple partner organizations in the same workspace.",
+    "pointers": [
+     {
+      "headline": "Partners cannot see each other",
+      "info": "Only your team members will be visible to partners."
+     },
+     {
+      "headline": "Partners cannot edit this workspace ",
+      "info": "They can view all workspace resources and send requests"
+     }
+    ],
+    "note": "To prevent accidental data exposure, this action cannot be undone.",
+    "action_button": "Enable multi-partner mode",
+    "cancel": "Cancel"
+   },
+   "error_toast": {
+    "title": "Couldn’t enable multi-partner mode",
+    "description": "Just a faulty wire. Try again."
+   }
+  },
+  "partner_listing": {
+   "heading": "Partners",
+   "info": "Only your team members can see this",
+   "not_found": "No partners found",
+   "members": "members"
+  },
+  "partner_workspace_info_text": "After changing the workspace type, you'll become the <1><0>Partner Manager</0></1>.",
+  "cleanup_workspace": {
+   "heading": "Archive or delete",
+   "description": "Archiving removes this workspace from view and turns off monitors. Restore anytime, or delete permanently.",
+   "primary_action_text": "Delete workspace",
+   "secondary_action_text": "Archive workspace"
+  },
+  "restore_workspace": {
+   "heading": "This workspace is archived",
+   "description": "It's removed from view. Monitors are turned off.",
+   "primary_action_text": "Delete workspace",
+   "secondary_action_text": "Restore workspace"
+  },
+  "delete_workspace": {
+   "heading": "Delete workspace",
+   "description": "Once deleted, a workspace is gone forever along with its data.",
+   "primary_action_text": "Delete workspace",
+   "modal": {
+    "heading": "Delete workspace?",
+    "description": "Everything in <0>{workspaceName}</0> will be permanently deleted.",
+    "confirm_workspace_input_label": "Enter workspace name to confirm",
+    "primary_action_text": "Delete workspace",
+    "secondary_action_text": "Cancel"
+   },
+   "toast": {
+    "success": {
+     "detailed_description": "{workspaceName} {workspaceType} workspace was deleted.",
+     "generic_description": "Workspace was deleted."
+    },
+    "error": {
+     "title": "Couldn’t delete workspace",
+     "description": "Just a faulty wire. Try again."
+    }
+   }
+  },
+  "modal": {
+   "delete": {
+    "heading": "Delete workspace?",
+    "description": "Everything in <1>{workspaceName}</1> will be permanently deleted.",
+    "delete_associated_drafts_checkbox_label": "Also delete associated workspaces with pending changes",
+    "confirm_workspace_input_label": "Enter \"Delete\" to confirm",
+    "confirmation_text": "delete",
+    "primary_action_text": "Delete workspace",
+    "secondary_action_text": "Cancel",
+    "toast": {
+     "success": {
+      "detailed_description": "Workspace deleted",
+      "generic_description": "Workspace deleted"
+     },
+     "error": {
+      "title": "Unable to delete workspace",
+      "description": "Just a faulty wire. Please try again."
+     }
+    }
+   }
+  },
+  "access_requests": {
+   "approve_cta": "Approve",
+   "deny_cta": "Deny",
+   "info_text": "<boldText>{name}</boldText> is requesting to be {article} <boldText>{requested_role}</boldText> on this workspace.",
+   "info_text_partner": "<boldText>{name}</boldText> is requesting to join this workspace as a partner.",
+   "info_text_partner_with_email": "<boldText>{name}</boldText> <emailText>({email})</emailText> is requesting to join this workspace as a partner.",
+   "deny_modal": {
+    "title": "Deny request?",
+    "label_text": "Add note",
+    "info_text": {
+     "editor_request_text": "request to be an Editor on this workspace will be denied.",
+     "viewer_request_text": "request to access this workspace will be denied.",
+     "partner_editor_request_text": "request to be a Partner Editor on this workspace will be denied.",
+     "default": "request to access this workspace will be denied."
+    },
+    "placeholder_text": "A short note on why you’re denying the request",
+    "validation_message": "The note can only have up to 500 characters.",
+    "cancel_cta": "Cancel",
+    "submit_cta": "Deny Request"
+   }
+  },
+  "action_requests": {
+   "toast_content": {
+    "request_retracted": {
+     "description": "Request cancelled"
+    }
+   },
+   "info_text": " is requesting to make this a <1>{visibility}</1> workspace.",
+   "ex_team_member_info_text": "<0>An ex-team member wanted to change this workspace's visibility to <1>{visibility}</1></0>",
+   "ex_team_member_name": "An ex-team member",
+   "team_visibility_change_text": "Your team's profile will also be made public.",
+   "approve_cta": "Approve",
+   "deny_cta": "Deny",
+   "deny_modal": {
+    "default": {
+     "title": "Request Approval to Perform Action",
+     "message": "This modal can be used to request an action to be performed by another user who has the permission to do so.",
+     "placeholder": "Write a short note on why you'd like for them to perform this action.",
+     "submit_cta": "Send Request"
+    },
+    "title": "Deny request?",
+    "label_text": "Add a note (optional)",
+    "placeholder_text": "Briefly explain why you're denying their request.",
+    "validation_message": "The note can only have up to 500 characters.",
+    "cancel_cta": "Cancel",
+    "submit_cta": "Deny Request",
+    "info_text": "<0>{username}</0>'s request to make <2>{entity_name}</2> a <4>{visibility}</4> workspace will be denied.",
+    "description": {
+     "team": "<strong>{name}</strong>'s request to give your team access to this workspace will be denied.",
+     "org": "<strong>{name}</strong>'s request to give your organization access to this workspace will be denied.",
+     "partner": "<strong>{name}</strong>'s request to make this a partner workspace will be denied.",
+     "public": "<strong>{name}</strong>'s request to make this a public workspace will be denied."
+    }
+   },
+   "info_text_for_type": {
+    "team": "<userLink><strong>{name}</strong></userLink> is requesting to give your team access to this workspace.",
+    "org": "<userLink><strong>{name}</strong></userLink> is requesting to give your organization access to this workspace.",
+    "partner": "<userLink><strong>{name}</strong></userLink> is requesting to make this a partner workspace. This will allow invited team members and external partners to access it.",
+    "public": "<userLink><strong>{name}</strong></userLink> is requesting to make this a public workspace. This will allow anyone in the Postman API Network to access it."
+   }
+  },
+  "pinned_document": {
+   "heading": "Workspace overview",
+   "description": "Choose a document to pin on the overview.",
+   "select_placeholder": "Select a document",
+   "empty_state": "No documents in this workspace yet.",
+   "toast": {
+    "error": {
+     "title": "Couldn't update pinned document",
+     "description": "Something went wrong while updating the pinned document. Try again."
+    }
+   }
+  },
+  "workspace_theme": {
+   "heading": "Workspace theme",
+   "description": "Make the workspace unique by having its theme reflect its content and your team's identity. These changes will reflect for all your members.",
+   "settings_fetch_error": {
+    "heading": "Couldn't load workspace theme",
+    "description": "An error occurred while loading the theme. Try refreshing or try again in some time."
+   },
+   "settings_update_error": {
+    "heading": "Updating theme failed",
+    "description": "Couldn't update workspace theme. There was an error updating the theme."
+   },
+   "workspace_theme_onboarding_toast": {
+    "heading": "This workspace has a different theme",
+    "description": "The workspace admin has set a different theme for a customized look. Your theme preferences will still apply everywhere else."
+   },
+   "accent_color_picker": {
+    "heading": "Accent color",
+    "description": "Color for buttons and highlights.",
+    "placeholder": "No color chosen"
+   },
+   "theme_color_picker": {
+    "heading": "Theme color",
+    "description": "Overall interface color."
+   },
+   "primary_action_text": "Apply theme",
+   "secondary_action_text": "Reset to default",
+   "thumbnail_label": "Preview"
+  }
+ },
+ "workspace_rfa": {
+  "modal": {
+   "workspace_rfa_title": "Request to edit?",
+   "entity_rfa_title": "Request to edit?",
+   "info_text": "Workspace Admins will review your request to edit resources in this workspace. Once approved, you'll be an Editor.",
+   "partner_workspace_info_text": "Workspace Admins will review this request. Once approved you can create, edit, fork and export resources in this workspace",
+   "entity_info_text": "Your request to edit this {entityType} will be reviewed. Once approved, you'll be an Editor.",
+   "placeholder_text": "A short note that will help the reviewer approve your request",
+   "cancel_cta": "Cancel",
+   "submit_cta": "Send Request",
+   "validation_message": "The note can only have up to 140 characters.",
+   "blank_state": {
+    "title": "Unable to request access",
+    "description": "The {entityType} is present in a workspace you don’t have access to.",
+    "button_text": "Ok"
+   },
+   "optional": "optional",
+   "label_info_text": "Add note",
+   "dropdown": {
+    "role_dropdown_label": "Select role",
+    "approver_dropdown_label": "Send request to"
+   }
+  },
+  "creating_request": {
+   "title_text": "Request to Edit"
+  },
+  "pending_request": {
+   "title_text": "Request in review",
+   "info_text": "Workspace Admins are reviewing your request for edit access."
+  },
+  "toast_error_messages": {
+   "update_roles_permission_denied": {
+    "title": "You need access",
+    "message": "You need to be an Editor to manage roles on this element."
+   },
+   "creator_not_part_of_team": {
+    "title": "Couldn't find the requester",
+    "message": "They may have left your team or deleted their Postman account."
+   },
+   "failed_access_request": {
+    "title": "Request failed",
+    "message": "The request you are trying to approve has failed."
+   },
+   "expired_access_request": {
+    "title": "Request expired",
+    "message": "Access requests expire after 30 days. You can still grant access by sharing the element with them."
+   },
+   "model_does_not_exist": {
+    "title": "Unable to send request",
+    "message": "This request couldn't be completed because the element was deleted."
+   },
+   "model_not_found_in_workspace": {
+    "title": "Unable to send request",
+    "message": "This request couldn't be completed because the element was deleted or moved."
+   },
+   "approved_access_request": {
+    "message": "This request has been responded to already."
+   },
+   "rejected_access_request": {
+    "message": "This request has been responded to already."
+   },
+   "approver_not_part_of_team": {
+    "title": "Unable to approve request",
+    "message": "Whoops! It looks like you cannot approve this request."
+   },
+   "invalid_approver_for_request": {
+    "title": "Unable to approve request",
+    "message": "Whoops! It looks like you cannot approve this request."
+   },
+   "not_part_of_any_team": {
+    "title": "Unable to approve request",
+    "message": "Whoops! It looks like you cannot approve this request."
+   },
+   "team_member_slots_full": {
+    "title": "Couldn't approve request"
+   },
+   "partner_editor_slots_full": {
+    "title": "Couldn't approve request",
+    "message": "No paid slots available. We’ve notified Partner Managers to add more slots."
+   },
+   "auto_approval_disabled": {
+    "title": "You don't have permission to approve",
+    "message": "Please contact a Team Admin to convert this Guest to a Developer."
+   },
+   "user_already_has_requested_role": {
+    "title": "You already have this access",
+    "message": "Create a new request if you'd like a different level of access"
+   },
+   "instance_not_found_error": {
+    "title": "Unable to create request",
+    "message": "This request couldn't be completed because the entity was deleted."
+   },
+   "request_already_approved": {
+    "title": "Request acknowledged",
+    "message": "Looks like someone has already approved this request."
+   },
+   "request_already_rejected": {
+    "title": "Request acknowledged",
+    "message": "Looks like someone has already rejected this request."
+   },
+   "request_expired": {
+    "message": "This request has expired."
+   },
+   "model_deleted": {
+    "title": "Unable to respond to request",
+    "message": "This request couldn't be completed because the element was deleted."
+   },
+   "default": {
+    "title": "Couldn't respond to request",
+    "message": "Just a faulty wire. Try again."
+   },
+   "default_submit": {
+    "title": "Unable to create request",
+    "message": "Something went wrong"
+   },
+   "default_load": {
+    "title": "Unable to load data",
+    "message": "Something went wrong"
+   },
+   "default_approve": {
+    "title": "Couldn't approve request",
+    "message": "Just a faulty wire. Please try again."
+   },
+   "default_deny": {
+    "title": "Couldn't deny request",
+    "message": "Just a faulty wire. Please try again."
+   },
+   "request_exists": {
+    "title": "You already have a request in review",
+    "message": "You’ll be notified once a workspace Admin responds."
+   }
+  },
+  "toast_info_map": {
+   "pending_approval": {
+    "title": "Request pending approval",
+    "message": "You'll be notified once your request is approved."
+   }
+  },
+  "toast_success_map": {
+   "name": "Sent request for access",
+   "entity_title": "Sent request to edit",
+   "description": "You'll be notified once your request is approved."
+  },
+  "upgrade_admin_to_partner_manager": {
+   "success": {
+    "title": "You are now the Partner Manager",
+    "description": "This new role allows you to approve or deny Partner Workspace requests."
+   },
+   "error": {
+    "title": "Access denied",
+    "description": "You need the Partner Manager role to view the request."
+   }
+  },
+  "request_processed_message": "This request has already been processed.",
+  "share_request_approval": {
+   "approve_button": "Approve",
+   "deny_button": "Deny"
+  },
+  "access_request_approval": {
+   "completed_message": "This request has already been processed."
+  },
+  "workspace_access_request_approval": {
+   "respond_button": "Respond to Request"
+  }
+ },
+ "workspace_tools": {
+  "invite_to_workspace": {
+   "invite_prompt_with_name": "You are about to invite a user to workspace \"{workspaceName}\".",
+   "invite_prompt_without_name": "You are about to invite a user to workspace the active workspace.",
+   "email_label": "Email:",
+   "role_label": "Role:",
+   "not_specified": "(not specified)",
+   "confirm_prompt": "Do you want to approve this invitation?",
+   "error_email_required": "Email is required to invite a user to the workspace",
+   "error_role_required": "Role is required to invite a user to the workspace"
+  },
+  "manage_document_pin": {
+   "prompt_pin": "You are about to pin a document.",
+   "prompt_pin_with_workspace": "You are about to pin a document in workspace \"{workspaceName}\".",
+   "prompt_unpin": "You are about to unpin a document.",
+   "prompt_unpin_with_workspace": "You are about to unpin a document in workspace \"{workspaceName}\".",
+   "document_label": "Document:",
+   "document_id_fallback": "(ID: {documentId})",
+   "action_label": "Action:",
+   "action_pin": "Pin to workspace overview",
+   "action_unpin": "Unpin from workspace overview",
+   "description_pin": "This will feature the document on the workspace overview. Only one document can be pinned at a time, so any previously pinned document will be replaced.",
+   "description_unpin": "This will remove the document from the workspace overview.",
+   "confirm_prompt": "Do you want to approve this document pin change?",
+   "error_document_id_required": "documentId is required to manage a document pin",
+   "error_should_pin_required": "shouldPin must be an explicit boolean (true to pin, false to unpin)",
+   "error_args_unparseable": "Could not parse the document pin tool arguments"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "heading": "Section content couldn't load.",
+ "failure_with_status": "Couldn't fetch {resource} (HTTP {statusCode}).",
+ "failure_offline": "Couldn't fetch {resource}. You appear to be offline.",
+ "failure_generic": "Couldn't fetch {resource}.",
+ "retry_failure_with_status": "Retry {count}: Couldn't fetch {resource} (HTTP {statusCode}).",
+ "retry_failure_offline": "Retry {count}: Couldn't fetch {resource}. You appear to be offline.",
+ "retry_failure_generic": "Retry {count}: Couldn't fetch {resource}.",
+ "retry": "Retry",
+ "retry_again": "Retry again",
+ "retrying": "Retrying (attempt {count})…"
+}

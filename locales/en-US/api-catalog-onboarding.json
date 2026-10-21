@@ -1,0 +1,30 @@
+{
+ "common": {
+  "start_setup_button_label": "Start setup"
+ },
+ "onboarding_footer": {
+  "cancel_button_label": "Cancel"
+ },
+ "workspace_onboarding_container": {
+  "done_button_label": "Done"
+ },
+ "github_onboarding_step2": {
+  "back_button_label": "Back",
+  "done_button_label": "Done",
+  "primary_button_disabled_tooltip": "Please wait for setup to complete"
+ },
+ "github": {
+  "install_github_app_helper_text": "If you don't see your organization, you may need to <Link><Text>install the Postman App</Text></Link> on your personal account or organization."
+ },
+ "github_onboarding_step1": {
+  "primary_button_disabled_tooltip": "Please fill in all required fields",
+  "forbidden_workspace_toast": {
+   "title": "Not authorized",
+   "description": "You don't have permission to create workspaces here. Ask your team admin for access, then try again."
+  },
+  "create_workspace_failed_toast": {
+   "title": "Create workspace failed",
+   "description": "There was an issue creating the workspace. Please try again."
+  }
+ }
+}

@@ -1,0 +1,463 @@
+{
+ "governance": {
+  "title": "Governance",
+  "subtitle": "Review and revoke API access granted to members across your namespaces.",
+  "no_namespaces": "You don't administer any namespaces yet. Access grants will appear here once you do.",
+  "error": "We couldn't load access grants. Please try again.",
+  "empty": "No active access grants. Approved access requests will appear here.",
+  "no_results": "No grants match your search.",
+  "search_placeholder": "Search access grants",
+  "endpoint_unknown": "Unknown endpoint",
+  "filter": {
+   "method": "Method"
+  },
+  "table": {
+   "user": "Member",
+   "endpoint": "Endpoint",
+   "namespace": "Namespace",
+   "granted": "Granted",
+   "actions": "Actions"
+  },
+  "revoke": {
+   "action": "Revoke",
+   "heading": "Revoke access",
+   "confirm": "Revoke access",
+   "cancel": "Cancel",
+   "body": "This revokes {member}'s access to {endpoint} in {namespace}. Access is removed immediately, though a Passport session issued in the last few minutes may keep working until it expires."
+  },
+  "toast": {
+   "revoked": "Access revoked.",
+   "error": "We couldn't revoke access. Please try again."
+  }
+ },
+ "sidebar": {
+  "heading": "Passport Access",
+  "go_home_aria_label": "Go to homepage"
+ },
+ "breadcrumb": {
+  "aria_label": "Breadcrumb",
+  "api_network": "Passport Access"
+ },
+ "modal": {
+  "close_aria_label": "Close modal"
+ },
+ "error_boundary": {
+  "title": "Something went wrong",
+  "description": "We couldn't load this page. Please try again."
+ },
+ "error_state": {
+  "title": "Couldn't load Passport Access",
+  "description": "Something went wrong while loading Passport Access. Please try again.",
+  "reload": "Reload"
+ },
+ "add_workspaces": {
+  "trigger": "Add APIs",
+  "title": "Add APIs to {namespaceName}",
+  "subtitle": "Search to add the APIs you want to make available in this namespace. APIs are shared through workspaces, so you'll select a workspace.",
+  "search_placeholder": "Search workspaces...",
+  "show_accessible_only": "Only show workspaces I can add",
+  "empty_state": "No workspaces found",
+  "empty_state_no_query": "Search and add your workspaces",
+  "table": {
+   "name": "Workspace",
+   "team": "Team",
+   "tags": "Tags",
+   "dash": "—",
+   "no_edit_access": "You need editor access to add this workspace"
+  },
+  "review": {
+   "title_add": "Review and add workspaces",
+   "title_request": "Review and request APIs",
+   "subtitle_add": "These workspaces will be added to the namespace.",
+   "subtitle_request": "Adding the APIs these workspaces share. Your request will be sent for approval.",
+   "comment_label": "Comments",
+   "comment_placeholder": "Add a comment for the namespace manager"
+  },
+  "actions": {
+   "review": "Review",
+   "cancel": "Cancel",
+   "back": "Back",
+   "add": "Add workspaces",
+   "request": "Request to add",
+   "remove": "Remove {workspaceName}"
+  },
+  "toast": {
+   "added": "{count} workspace(s) added to the namespace",
+   "requested": "Request sent to add {count} workspace(s)",
+   "error": "Something went wrong. Please try again."
+  }
+ },
+ "approval_requests": {
+  "approve_modal": {
+   "title": "Approve APIs and map vault references",
+   "no_secrets": "No secrets to map. These APIs don't use any."
+  },
+  "toast": {
+   "approved": "Request approved.",
+   "denied": "Request denied.",
+   "error": "Something went wrong. Please try again."
+  },
+  "filter": {
+   "aria_label": "Filter requests by review scope",
+   "for_your_review": "For your review",
+   "your_requests": "Your requests"
+  },
+  "empty": {
+   "title": "No requests yet",
+   "for_your_review": "Requests for namespaces you manage appear here.",
+   "your_requests": "Requests you make will appear here.",
+   "error_title": "Couldn't load requests",
+   "error_description": "Something went wrong. Please try again.",
+   "refresh": "Refresh"
+  }
+ },
+ "workspace_overview": {
+  "collections": "Collections",
+  "environments": "Environments",
+  "specs": "Specifications",
+  "flows": "Flows",
+  "sdks": "SDKs",
+  "item_count": "{count} items",
+  "updated": "Updated {time}",
+  "show_all": "Show all {count}",
+  "empty_state": "This workspace has no collections, environments, specifications, flows, or SDKs yet.",
+  "contributors": "Contributors",
+  "copy_link": "Copy link",
+  "copied": "Copied",
+  "open_workspace": "Use",
+  "request_credentials": "Request credentials",
+  "options": "More actions for {workspaceName}"
+ },
+ "workspace_list_item": {
+  "by_prefix": "By ",
+  "collections_count": "{count} collections",
+  "updated": "Updated {time}"
+ },
+ "add_to_namespace_modal": {
+  "heading": "Add workspace to namespace",
+  "loading": "Loading namespaces...",
+  "load_error": "Unable to load namespaces right now.",
+  "empty": "No namespaces available.",
+  "select_placeholder": "Search and select a namespace",
+  "reason_label": "Reason",
+  "reason_placeholder": "Add a reason for this request",
+  "reason_count": "{current}/{max}",
+  "cancel": "Cancel",
+  "add": "Add"
+ },
+ "access_requests": {
+  "breadcrumb": {
+   "api_network": "Passport Access",
+   "access_management": "Access Management",
+   "requests": "Requests"
+  },
+  "page_title": "Requests",
+  "empty_state": "No access requests.",
+  "table": {
+   "header": {
+    "name": "Name",
+    "workspace": "Workspace",
+    "date": "Date",
+    "reason": "Reason",
+    "status": "Status",
+    "actions": "Actions"
+   }
+  },
+  "status": {
+   "pending": "Pending",
+   "accepted": "Accepted",
+   "declined": "Declined",
+   "expired": "Expired"
+  },
+  "actions": {
+   "accept": "Accept",
+   "deny": "Deny",
+   "review": "Review"
+  },
+  "request_button": {
+   "idle": "Request",
+   "pending": "Requesting"
+  },
+  "modal": {
+   "title": "Request access",
+   "close_aria_label": "Close modal",
+   "reason_label": "Reason",
+   "reason_placeholder": "Why do you need access?",
+   "send": "Send request",
+   "sending": "Sending…",
+   "toast": {
+    "success_title": "Request sent",
+    "success_body": "Your request for access to {workspaceName} has been sent.",
+    "error_body": "There was an error with the access request."
+   }
+  }
+ },
+ "workspace_card": {
+  "actions": {
+   "access_requested": "Access requested",
+   "access_requested_workspace": "Access requested for {workspaceName}",
+   "request_access": "Request access",
+   "request_access_workspace": "Request access to {workspaceName}",
+   "options": "Options for {workspaceName}",
+   "remove": "Remove from namespace",
+   "view": "Open",
+   "view_workspace": "Open {workspaceName}"
+  },
+  "no_description": "No description available.",
+  "publisher_verified": "Verified publisher",
+  "restricted_access": "Restricted access",
+  "workspace_type": {
+   "private": "Private Workspace",
+   "public": "Public Workspace"
+  }
+ },
+ "workspace_card_v2": {
+  "team_label": "Team",
+  "last_activity_label": "Last activity",
+  "contributors_label": "Contributors",
+  "collections_label": "Collections",
+  "watchers_label": "Watchers",
+  "use": "Use",
+  "request_credentials": "Request credentials",
+  "load_more": "Show more workspaces",
+  "by_team": "By {team}",
+  "collections_count": "{count, plural, one {# collection} other {# collections}}",
+  "last_updated_tooltip": "Last updated at {timestamp}",
+  "open_overview_aria": "Open overview for {name}"
+ },
+ "remove_workspace": {
+  "title": "Remove workspace",
+  "heading": "Remove workspace from namespace?",
+  "body": "Once removed, your team will no longer be able to discover {workspaceName} in the {namespaceName} namespace. The workspace won't be deleted from your account.",
+  "cancel": "Cancel",
+  "confirm": "Remove",
+  "removing": "Removing…",
+  "toast": {
+   "success_title": "Workspace removed",
+   "success_body": "{workspaceName} has been removed from {namespaceName}.",
+   "error_body": "There was an error removing the workspace from the namespace."
+  }
+ },
+ "delete_namespace": {
+  "title": "Delete namespace",
+  "heading": "Delete namespace?",
+  "body": "Once deleted, {namespaceName} and everything in it will be permanently removed. This can't be undone.",
+  "cancel": "Cancel",
+  "confirm": "Delete",
+  "deleting": "Deleting…",
+  "toast": {
+   "success_title": "Namespace deleted",
+   "success_body": "{namespaceName} has been deleted.",
+   "error_body": "There was an error deleting the namespace."
+  }
+ },
+ "namespaces": {
+  "breadcrumb": {
+   "access_management": "Access Management",
+   "namespaces": "Namespaces"
+  },
+  "page_title": "Namespaces",
+  "create_button": "Create namespace",
+  "empty_state": "No namespaces found.",
+  "card": {
+   "workspace_count_one": "{count} workspace",
+   "workspace_count_other": "{count} workspaces",
+   "created": "Created {date}",
+   "by_user": "By {user}",
+   "no_description": "No description",
+   "access_level": {
+    "open": "Team",
+    "access_by_request": "Access by request",
+    "invite_only": "Invite-only"
+   },
+   "empty_workspaces": "No workspaces",
+   "view_workspace": "View {workspaceName}",
+   "actions": {
+    "options": "Options for {namespaceName}",
+    "delete": "Delete namespace"
+   },
+   "members_popover": {
+    "trigger_label": "View {namespaceName} members",
+    "title_one": "{count} member",
+    "title_other": "{count} members",
+    "overflow_one": "{count} more member",
+    "overflow_other": "{count} more members",
+    "managers_section": "Managers",
+    "members_section": "Members"
+   }
+  },
+  "members": {
+   "manage": "Manage members"
+  }
+ },
+ "namespace_tabs": {
+  "overview": "Overview",
+  "vault_references": "Vault references"
+ },
+ "add_workspace": {
+  "cta": "Add APIs"
+ },
+ "namespace_detail": {
+  "empty_state": {
+   "title": "No APIs in this namespace yet",
+   "description": "A namespace is a list of approved APIs, shared through workspaces. Members can request credentials to use them, and managers approve, scope, and revoke access.",
+   "cta": "Add APIs",
+   "show_me_how": "Show me how"
+  },
+  "help_modal": {
+   "title": "Add APIs to this namespace",
+   "description": "Add the APIs you want to make available in this namespace. Once a manager approves, members can request credentials to use them.",
+   "steps_title": "How to add APIs",
+   "step_1": "Select <strong>Add APIs</strong>.",
+   "step_2": "Search for and select the <strong>APIs</strong> you want to make available. <muted>APIs are shared through workspaces, so you'll add a workspace.</muted>",
+   "step_3": "Add a note and <strong>send the request</strong> to the Namespace Manager.",
+   "step_4": "The manager <strong>approves</strong> and connects each <strong>secret</strong> the APIs use (passwords, tokens in their environments) to a <strong>vault reference</strong> (a pointer to the real secret).",
+   "step_5": "The APIs appear here, and members can <strong>request credentials</strong> to use them."
+  }
+ },
+ "vault_references": {
+  "add_cta": "Add vault reference",
+  "empty_state": {
+   "title": "No vault references yet",
+   "description": "Vault references let you use secrets from your vault (HashiCorp, AWS Secrets Manager, etc.) without storing them in Postman. The value stays in your vault and resolves at runtime."
+  },
+  "error_state": {
+   "title": "Couldn't load vault references",
+   "retry": "Retry"
+  },
+  "create_modal": {
+   "title": "Create vault reference",
+   "provider_label": "Provider",
+   "provider_placeholder": "Select provider",
+   "name_label": "Name",
+   "name_placeholder": "e.g. Stripe API key",
+   "path_label": "Path",
+   "path_placeholder": "e.g. secret/data/payments/stripe",
+   "create": "Create"
+  },
+  "toast": {
+   "create_error": "Couldn't create vault reference. Please try again."
+  }
+ },
+ "home": {
+  "title": "Passport Access",
+  "subtitle": "Browse and use what's open across your organisation's namespaces and workspaces. Request credentials when you need to call live APIs.",
+  "all_namespaces": "All namespaces",
+  "show_all": "Show all namespaces",
+  "list": {
+   "managed_by": "Managed by",
+   "workspace_count_one": "{count} workspace",
+   "workspace_count_other": "{count} workspaces",
+   "updated": "updated {time}",
+   "view_namespace": "View {namespaceName}"
+  },
+  "view_switcher": {
+   "list_label": "List view",
+   "card_label": "Card view"
+  }
+ },
+ "pagination": {
+  "loading": "Loading...",
+  "no_items_found": "No namespaces found",
+  "items_per_page": "Items per page",
+  "range_of_total": "{start}-{end} of {total}"
+ },
+ "new_namespace": {
+  "breadcrumb": {
+   "new_namespace": "New Namespace"
+  },
+  "page_title": "New Namespace",
+  "header": {
+   "title": "Create a new namespace",
+   "subtitle": "A namespace is a top-level container for your workspaces and collections."
+  },
+  "emoji_picker": {
+   "aria_label": "Choose an emoji for this namespace"
+  },
+  "form": {
+   "title_label": "Title",
+   "name_label": "Name",
+   "name_placeholder": "e.g. Acme Platform",
+   "summary_label": "Summary",
+   "summary_helper": "A short description of what this namespace is for.",
+   "summary_placeholder": "What lives in this namespace?",
+   "validation": {
+    "no_valid_characters": "Title must include at least one letter or number.",
+    "duplicate": "A namespace with this name already exists."
+   }
+  },
+  "workspaces": {
+   "heading": "Workspaces",
+   "helper": "Add existing workspaces to this namespace, or remove ones that no longer belong.",
+   "search_placeholder": "Search workspaces to add...",
+   "empty_state": "No workspaces found"
+  },
+  "people": {
+   "heading": "People & access",
+   "search_placeholder": "Search users and groups...",
+   "empty_state": "No users or groups found",
+   "type": {
+    "user_group": "Group",
+    "squad": "Squad"
+   },
+   "member_count": "{count} members"
+  },
+  "managers": {
+   "heading": "Namespace managers",
+   "helper": "Managers can edit the namespace, manage workspaces, and approve access requests."
+  },
+  "members": {
+   "heading": "Namespace members",
+   "helper": "Members can see workspaces and request access to specific resources."
+  },
+  "preapproved": {
+   "heading": "Pre-approved access (users / groups)",
+   "helper": "These users and groups are automatically granted access — no request needed."
+  },
+  "actions": {
+   "create": "Create namespace",
+   "cancel": "Cancel"
+  },
+  "toast": {
+   "success_title": "Namespace created",
+   "success_body": "{name} has been created.",
+   "error_body": "There was an error creating the namespace."
+  },
+  "request_to_create": {
+   "header": {
+    "title": "Request to create a namespace"
+   },
+   "actions": {
+    "request_to_create": "Request to create"
+   },
+   "reason": {
+    "label": "Reason for request",
+    "placeholder": "Why do you need a new namespace?",
+    "helper": "Describe why you need a new namespace (up to 500 characters)."
+   },
+   "toast": {
+    "success_title": "Request submitted",
+    "success_body": "Your request to create {name} has been submitted.",
+    "error_body": "There was an error submitting your request."
+   }
+  },
+  "access": {
+   "heading": "Who can access this namespace?",
+   "helper": "Choose how users at your organization can access the namespace and workspaces in it. This cannot be changed later.",
+   "options": {
+    "open": {
+     "title": "Anybody in my organization",
+     "description": "Any member of your organization will be able to see this namespace and its contents"
+    },
+    "request": {
+     "title": "Access by request",
+     "description": "Users in your organization will see the namespace name, but will need to send a request to access its contents"
+    },
+    "invite_only": {
+     "title": "Invite-only",
+     "description": "Users in your organization will not see this namespace. Namespace managers can provide access via an invite"
+    }
+   }
+  }
+ }
+}

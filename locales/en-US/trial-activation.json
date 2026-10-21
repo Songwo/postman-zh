@@ -1,0 +1,12 @@
+{
+ "heading": "Congratulations! Your {tier, select, solo {Solo} team {Team} business {Enterprise} enterprise {Enterprise} other {new}} trial is now active.",
+ "close_button_label": "Close",
+ "invite": {
+  "prompt": "Bring your teammates in. Shared workspaces, real-time collaboration and roles are unlocked for everyone you add.",
+  "field_label": "Teammate emails",
+  "add_another_placeholder": "Add another teammate",
+  "send_cta": "{count, plural, =0 {Send invites} one {Send # invite} other {Send # invites}}",
+  "sent_success": "{count, plural, one {Invite sent to {email}.} other {Invites sent to # teammates.}}",
+  "send_failed": "Could not send. Check your connection and try again."
+ }
+}

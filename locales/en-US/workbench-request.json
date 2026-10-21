@@ -1,0 +1,482 @@
+{
+ "request_type_footer": "Type a new method",
+ "use_label": "<0>Use ''</0><1>{customMethodName}</1><0>''</0>",
+ "invalid_characters_message": "Request Method contains invalid characters",
+ "no_name_request": "Untitled Request",
+ "new_request": "New Request",
+ "unsaved_changes": "Unsaved changes",
+ "save_button": {
+  "label": "Save",
+  "saving": "Saving...",
+  "save_as": {
+   "label": "Save as"
+  },
+  "save_as_duplicate": {
+   "label": "Save as duplicate"
+  },
+  "save_overrides": {
+   "label": "Save overrides only"
+  },
+  "tooltips": {
+   "no_unsaved_changes": "No new changes to save.",
+   "save_to_collection": "Save request to a collection",
+   "save_request": "Save request",
+   "save_request_git": "Save changes to Postman & Github",
+   "no_edit_perimission": "You don't have permission to save changes in this workspace.",
+   "upgrade_enterprise_for_overrides": "Upgrade to Enterprise plan to save overrides on linked requests."
+  },
+  "footer": {
+   "label": "Linked requests only support overrides on the request name, params, scripts, and body."
+  }
+ },
+ "share_button": {
+  "label": "Share",
+  "tooltips": {
+   "unsaved_request": "You need to save the request before it can be shared",
+   "no_edit_permission": "Only requests saved in a collection can be shared. You need edit access to save requests.",
+   "share_request": "Share request"
+  }
+ },
+ "meta": {
+  "tooltips": {
+   "comment_mode": {
+    "label": "Switch to comment mode",
+    "disabled": "You need to be online to view comments.",
+    "unsaved_request": "Comment mode is unavailable for unsaved requests."
+   },
+   "edit_mode": "Switch to build mode"
+  },
+  "header_placeholder": "Request Name"
+ },
+ "send_button": {
+  "label": "Send",
+  "is_sending": "Cancel",
+  "is_sses_stream": "Close",
+  "send_and_download": "Send and Download",
+  "send_and_download_response": "Download response",
+  "options_label": "Send options",
+  "ai_actions": {
+   "get_successful_response": "Get a successful response",
+   "visualize_response": "Visualize response",
+   "write_tests": "Write tests",
+   "debug_request": "Debug request",
+   "explore_api": "Explore API capabilities"
+  },
+  "tooltips": {
+   "no_send_permission": "You don't have permission to send requests in this workspace.",
+   "lna_permission_unavailable": {
+    "title": "Local network access unavailable",
+    "body": "Postman needs local network access enabled in your browser to connect with the Desktop Agent.",
+    "instructions": {
+     "1": "Open the site's permission settings.",
+     "2": "Find <1>Local network access</1> and enable it.",
+     "3": "Reload this page."
+    }
+   },
+   "agent_unavailable": {
+    "desktop": {
+     "title": "Desktop Agent unavailable",
+     "body": "Make sure the Desktop Agent is installed and check your toolbar to see if it's running."
+    },
+    "cloud": {
+     "title": "Cloud Agent unavailable",
+     "body": "Unable to reach the Cloud Agent. Try later or select a different agent."
+    },
+    "interceptor": {
+     "title": "Interceptor Agent unavailable",
+     "body": "Make sure the Postman Interceptor extension is installed and enabled."
+    },
+    "unsupported": {
+     "message": "<button>Switch to Desktop or Cloud agent</button> to send the request."
+    },
+    "version_not_supported": {
+     "title": "Desktop Agent version not supported",
+     "body": "You're using an older version of Postman Desktop Agent which does not support this request. Update the Desktop Agent and try again."
+    },
+    "change_agent": "Change agent",
+    "agent_name": {
+     "desktop": "Desktop Agent",
+     "cloud": "Cloud Agent"
+    }
+   },
+   "fork_recommendation": {
+    "primary_msg": "Requests can't be sent in public workspaces right now – though we're working on that for a future release!",
+    "secondary_msg": "Fork this collection to your own workspace to send a request.",
+    "primary_action": "Create a fork"
+   },
+   "live_session": {
+    "host_tab_closed": "Can't send request because host tab is closed. Request session host to re-open request tab"
+   }
+  }
+ },
+ "url_editor": {
+  "placeholder": {
+   "import_from_curl": "Enter URL or paste text",
+   "default": "Enter URL"
+  },
+  "validation": {
+   "empty": "URL cannot be empty"
+  }
+ },
+ "editor_tab": {
+  "tabs": {
+   "docs": "Docs",
+   "params": {
+    "label": "Params"
+   },
+   "auth": {
+    "label": "Authorization",
+    "short_label": "Auth"
+   },
+   "overview": "Overview",
+   "headers": "Headers",
+   "body": {
+    "label": "Body",
+    "editor": {
+     "none_placeholder": "This request does not have a body",
+     "beautify_code": "Beautify",
+     "type_selector": {
+      "none": "none",
+      "form_data": "form-data",
+      "url_encoded": "x-www-form-urlencoded",
+      "raw": "raw",
+      "binary": "binary",
+      "graphql": "GraphQL"
+     },
+     "empty_state": {
+      "title": "Cannot send request body",
+      "message": "Cannot send body with {requestMethod} request while using the browser agent. Switch to the desktop agent to customize your requests further."
+     },
+     "language_selector_warning_tooltip": "The language selected is different from the language inferred from Content-Type header.",
+     "form_data": {
+      "temp_param_message": "This temporary body parameter is generated by Postman and is not saved with your request.",
+      "kveditor": {
+       "key_placeholder": "Key",
+       "value_placeholder": "Value",
+       "content_type_placeholder": "Auto"
+      }
+     },
+     "url_encoded": {
+      "duplicate_param_warning": "This is a duplicate body parameter and will be overridden by {bodyParamKey} generated by Postman.",
+      "kveditor": {
+       "key_placeholder": "Key",
+       "value_placeholder": "Value"
+      }
+     },
+     "file_not_in_directory_warning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+     "graphql": {
+      "method_change_toast": {
+       "title": "Request method changed",
+       "message": "Request method has been changed to POST for the selected body type - GraphQL"
+      },
+      "variables": {
+       "header": "GRAPHQL VARIABLES",
+       "tooltip": "Define variables in JSON format to use in the query"
+      },
+      "query_editor_heading": "QUERY",
+      "schema_selector": {
+       "auto_fetch": "Auto Fetch",
+       "no_schema": "No schema",
+       "signed_out_dropdown": {
+        "button_label": "Auto-Fetch",
+        "menu": {
+         "title": "Sign in to use Spec Hub schemas",
+         "sub_title": "Your GraphQL requests can use your Spec Hub schemas for autocomplete suggestions.",
+         "button_label": "Sign in to use schemas"
+        }
+       },
+       "no_socket_connection_alert": "You need to be online to use Spec Hub schemas for autocomplete suggestions.",
+       "introspection_warning": {
+        "fetch_failure": "Could not auto fetch. Make sure Authorization, URL & selected environment are valid. Check console for more details.",
+        "incorrect_schema": "Incorrect Schema. Autocomplete options related to the schema will not work."
+       },
+       "tag_name": {
+        "refreshing": "Fetching...",
+        "fetched": "Schema Fetched"
+       },
+       "refresh_tooltip": "Refresh",
+       "api_schema_warning": "Service definition is using an API Builder object which is no longer supported. Migrate the API object to Spec Hub to continue using it."
+      }
+     }
+    }
+   },
+   "scripts": {
+    "label": "Scripts",
+    "tooltip-text": {
+     "pre-request": "Runs before the request is sent. Use it to create API workflows by configuring the request dynamically.",
+     "post-response": "Runs after a response is received. Use it to write tests and set up a response visualizer."
+    },
+    "migration-popover": {
+     "title": "Write and view tests here",
+     "body": "Use post-response scripts to write tests, visualize responses and do more.",
+     "button": "Got it"
+    }
+   },
+   "test-tab-deprecation": {
+    "heading": "Tests are now a part of post-response scripts",
+    "message": "You can use scripts to write tests, pre-request scripts, visualize responses and bring a ton of automation to your API workflows.",
+    "button": "Open post-response scripts"
+   },
+   "prscript": {
+    "label": "Pre-request Script",
+    "short_label": "Pre-req.",
+    "editor": {
+     "snippets_text": "<0>Pre-request scripts are written in JavaScript, and are run before the request is sent. Learn more about </0><1>pre-request scripts</1>"
+    },
+    "placeholder": "Use JavaScript to configure this request dynamically.",
+    "tooltip_text": "Runs before each HTTP request is sent. Generally used to configure requests dynamically."
+   },
+   "tests": {
+    "label": "Tests",
+    "editor": {
+     "snippets_text": "<0>Test scripts are written in JavaScript, and are run after the response is received. Learn more about</0> <1>tests scripts</1> "
+    },
+    "placeholder": "Use JavaScript to write tests, visualize response, and more.",
+    "tooltip_text": "Runs after each HTTP response. Generally used to write tests and visualize responses."
+   },
+   "configurations": {
+    "label": "Settings",
+    "default_inherited_parent": "Settings",
+    "list": {
+     "empty_state": {
+      "title": "Request settings unavailable",
+      "message": "Postman uses the browser's default settings for sending requests. Switch to the desktop agent to customize your requests further."
+     },
+     "protocolVersion": {
+      "title": "HTTP version",
+      "desc": "Select the HTTP version to use for sending the request."
+     },
+     "strictSSL": {
+      "title": "Enable SSL certificate verification",
+      "desc": "Verify SSL certificates when sending a request. Verification failures will result in the request being aborted."
+     },
+     "followRedirects": {
+      "title": "Automatically follow redirects",
+      "desc": "Follow HTTP 3xx responses as redirects."
+     },
+     "followOriginalHttpMethod": {
+      "title": "Follow original HTTP Method",
+      "desc": "Redirect with the original HTTP method instead of the default behavior of redirecting with GET."
+     },
+     "followAuthorizationHeader": {
+      "title": "Follow Authorization header",
+      "desc": "Retain authorization header when a redirect happens to a different hostname."
+     },
+     "removeRefererHeaderOnRedirect": {
+      "title": "Remove referer header on redirect",
+      "desc": "Remove the referer header when a redirect happens."
+     },
+     "insecureHTTPParser": {
+      "title": "Enable strict HTTP parser",
+      "desc": "Restrict responses with invalid HTTP headers."
+     },
+     "disableUrlEncoding": {
+      "title": "Encode URL automatically",
+      "desc": "Encode the URL's path, query parameters, and authentication fields."
+     },
+     "disableCookies": {
+      "title": "Disable cookie jar",
+      "desc": "Prevent cookies used in this request from being stored in the cookie jar. Existing cookies in the cookie jar will not be added as headers for this request."
+     },
+     "tlsPreferServerCiphers": {
+      "title": "Use server cipher suite during handshake",
+      "desc": "Use the server's cipher suite order instead of the client's during handshake."
+     },
+     "maxRedirects": {
+      "title": "Maximum number of redirects",
+      "desc": "Set a cap on the maximum number of redirects to follow."
+     },
+     "tlsDisabledProtocols": {
+      "title": "TLS/SSL protocols disabled during handshake",
+      "desc": "Specify the SSL and TLS protocol versions to be disabled during handshake. All other protocols will be enabled.",
+      "tls_menu_label": {
+       "v1": "TLS v1",
+       "v1_1": "TLS v1.1",
+       "v1_2": "TLS v1.2",
+       "v1_3": "TLS v1.3"
+      }
+     },
+     "tlsCipherSelection": {
+      "title": "Cipher suite selection",
+      "desc": "Order of cipher suites that the SSL server profile uses to establish a secure connection."
+     },
+     "action": {
+      "default": {
+       "label": "Default: ",
+       "tooltip": "This setting is using the value set in global settings. Changing this setting will override it for this request."
+      },
+      "restore_default": {
+       "button_label": "Restore Default",
+       "tooltip": "Restore this setting to the default value used in global settings."
+      },
+      "toggle_switch": {
+       "active_label": "ON",
+       "inactive_label": "OFF"
+      }
+     },
+     "interceptorDisableTooltip": "Certain settings aren't available with the Interceptor Agent. Switch to the Desktop agent to customize your requests further.",
+     "cloudAgentDisableTooltip": "Use Postman desktop agent to send the request over HTTP/2.",
+     "multiple_input_placeholder": "Enter cipher suites"
+    }
+   }
+  },
+  "actions": {
+   "cookies": "Cookies"
+  },
+  "comment_badge_tooltip": "{count, plural, =1 {comment} other {comments}}"
+ },
+ "script_ai": {
+  "global_postbot_button": "Write scripts with Postbot",
+  "heading": "Script with Postbot",
+  "badge": "BETA",
+  "desc": "Write scripts easily with AI",
+  "opt_in_modal": {
+   "terms": "By using this feature, you agree to the <1><0>terms of using AI in Postman</0></1>",
+   "primary_action": "Continue",
+   "desc": "<0>Postbot is your AI assistant for all things API. It helps you write tests for your APIs, and even build your flows. Just look</0> <1><0>for the</0> <1></1> <2>icon.</2></1>",
+   "tooltip_close": "Close"
+  },
+  "split_loading_message": "Working on it...",
+  "split_loading_message_timeout": "A few more seconds and I'll be done...",
+  "input_text_content": "Add tests to this request",
+  "share_feedback_button": "Share feedback",
+  "script_generation_error": "Something went wrong while generating tests.",
+  "script_generation_error_not_send": "Couldn't send the request.",
+  "textarea_placeholder": "Prompt Postbot to write scripts",
+  "invalid_response_type_warning": "Postbot can only generate scripts for JSON and XML responses at the moment. We're working on expanding its capabilities..",
+  "missing_response_warning": "Test generation needs a response from the server. Send the request to get a response and try again.",
+  "bad_response_warning": "It's a bad response! Write tests for this request anyway?",
+  "bad_response_button": "Continue writing tests",
+  "generation_warning_missing_response": "<0> <1></1> <2>Test generation needs a response to work with.</2></0> <1><0>Hit</0> <1></1> <2>to send the request and generate tests.</2></1>"
+ },
+ "info_context_bar": {
+  "title": "Request details"
+ },
+ "example": {
+  "details": {
+   "title": "Example details"
+  }
+ },
+ "onboarding_popover": {
+  "request_switching": {
+   "header": "Switch request type",
+   "text": "Work across multiple API technologies using Postman’s API client."
+  },
+  "last_creation": {
+   "header": "Continue working with the last created request type",
+   "text": "Creating a new tab automatically selects the last created request type to make it easier for you to work with multiple API technologies."
+  }
+ },
+ "version_control": {
+  "fork_recommendation_popup": {
+   "title": "Create a fork to save changes",
+   "message": "You don't have permission to make changes to this collection. Fork the collection to your workspace to save changes.",
+   "button_label": "Create Fork & Save"
+  }
+ },
+ "related_histories": {
+  "response_pane_title": "History",
+  "error_meta": {
+   "title": "Access to History revoked by Admin",
+   "message": "This could be possibly due to security policies. Please contact your admin for further details or assistance."
+  },
+  "empty_state": {
+   "title": "No request history",
+   "message": "Send the request and browse through its history."
+  }
+ },
+ "proactive_suggestions": {
+  "aria_label": "Proactive request suggestions",
+  "default_lint_fix_headline": "I found a fix for these lint issues.",
+  "scanning_label": "Scanning",
+  "diagnosing_label": "Diagnosing",
+  "apply_fix_error_title": "Couldn't apply the fix",
+  "thinking_label": "Thinking",
+  "applying_label": "Applying…",
+  "next_steps": "Next Steps?",
+  "caught_up": "You're all caught up",
+  "ready_headlines": {
+   "ready_to_go": "Ready to go",
+   "all_systems_go": "All systems are go",
+   "standing_by_for_launch": "Standing by for launch",
+   "coast_is_clear": "The coast is clear",
+   "no_anomalies_detected": "No anomalies detected"
+  },
+  "next_steps_description": "Need help with the next steps?",
+  "view_next_steps": "View Next Steps",
+  "send_request": "Send",
+  "ready_to_send_headline": "Send the request",
+  "ready_to_send_description": "Once you send this request, Postman AI can help you with recommended next steps",
+  "trigger_label": "Proactive suggestions",
+  "settings_label": "Suggestion settings",
+  "error_diagnosis_settings_tooltip": "Configure error diagnosis",
+  "dismiss_label": "Dismiss suggestion",
+  "cancel_cta": "Cancel",
+  "think_harder": "Think Harder",
+  "accept_cta": "Accept",
+  "apply_fix_cta": "Apply Fix",
+  "apply_fix_short_cta": "Fix",
+  "decline_cta": "Decline",
+  "more_actions_label": "More actions",
+  "open_conversation_cta": "Open conversation",
+  "open_conversation_short_cta": "Open",
+  "open_source_code_cta": "Open Source Code",
+  "describe_alternative": "Describe alternative",
+  "describe_placeholder": "Describe what you need.",
+  "describe_alternative_submit": "Start in Agent Mode",
+  "debug_with_ai_cta": "Debug with AI",
+  "proposed_fix_label": "Proposed fix",
+  "show_less_diff": "Show less",
+  "previous_suggestion_label": "Previous suggestion",
+  "next_suggestion_label": "Next suggestion",
+  "pager_label": "Suggestion navigation, {current} of {total}",
+  "apply_cta": "Apply",
+  "continue_cta": "Continue",
+  "run_cta": "Run",
+  "looking_for_suggestion": "Looking for a suggestion…",
+  "default_fix_headline": "I found a fix for this request.",
+  "default_handoff_headline": "This needs a closer look in Agent Mode.",
+  "actions": {
+   "try_with_agent_mode": "Try with Agent Mode"
+  },
+  "settings": {
+   "heading": "Suggestions",
+   "description": "Control where Agent Mode surfaces contextual suggestions.",
+   "request_tab_toggle_label": "Show AI suggestions",
+   "request_tab_toggle_description": "Display fix and improvement suggestions in the status bar.",
+   "error_screen_toggle_label": "Show error diagnosis",
+   "error_screen_toggle_description": "View what caused the error and suggested fixes along with the error messages."
+  }
+ },
+ "save_popover": {
+  "title": "Save your requests to avoid losing work",
+  "subtitle": "Access and reuse requests easily by saving them to a collection. Tip: Use ⌘S for quick saving.",
+  "short_subtitle": "Tip: Use ⌘S for quick saving.",
+  "button_primary": "Save Request",
+  "button_secondary": "I'll do it later"
+ },
+ "schema_editor": {
+  "error_boundary": {
+   "title": "Schema editor failed to load",
+   "description": "An unexpected error occurred while loading the schema editor."
+  }
+ },
+ "linked_request": {
+  "linked_to": "Linked to:",
+  "overrides_tag": "OVERRIDES ({count})",
+  "overrides_heading": "Overrides ({count})",
+  "no_overrides": "No overrides",
+  "reset": "Reset",
+  "reset_tooltip": "Reset all overrides",
+  "reset_success": "Overrides reset",
+  "reset_error": "Could not reset overrides. Please try again.",
+  "fields": {
+   "name": "Request Name",
+   "queryParams": "Params",
+   "scripts": "Scripts",
+   "body": "Body"
+  },
+  "linked_tag": "LINKED ({count})",
+  "linked_requests_heading": "{count, plural, one {This request has <0># linked request:</0>} other {This request has <0># linked requests:</0>}}"
+ }
+}

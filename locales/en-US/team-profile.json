@@ -1,0 +1,78 @@
+{
+ "growth": {
+  "title": "Set up your team",
+  "url_subtitle": "You'll use this URL to access Postman",
+  "files_selected": "{numFiles} files selected",
+  "collections_selected": "{count} collections selected",
+  "select_collection_button": {
+   "text": "Select collections"
+  },
+  "edit_domain_button": {
+   "text": "Edit"
+  },
+  "import_file_button": {
+   "text": "Import JSON files"
+  },
+  "upload_team_image_modal": {
+   "title": "Upload a team logo",
+   "body": "Help your team feel at home by uploading a custom logo. Max size: 2 MB"
+  },
+  "tooltip_text": "Select items to import or move before you can continue. You can also select \"Not yet\" instead.",
+  "error": {
+   "file_read": {
+    "title": "Could not read the file"
+   },
+   "update_team_discovery": {
+    "title": "Please provide team details"
+   },
+   "move_collection": {
+    "title": "Something went wrong",
+    "description": "An error occurred while trying to move your collections"
+   }
+  },
+  "workspace": {
+   "name": "{workspace} Workspace",
+   "selected_collection": {
+    "text": "{collection, plural, one {Collection} other {Collections}}"
+   },
+   "team_discovery": {
+    "message": "You {domain} team discovery for your team",
+    "title": "Team discovery is {domain}",
+    "profile_title": "Team discovery",
+    "description": "Team discovery lets people from your organization see your team and request to join.",
+    "turn_on": "Turn on team discovery"
+   },
+   "import_collections": {
+    "description": "{count, plural, one {# collection was} other {# collections were}} successfully imported to this workspace."
+   },
+   "move_collections": {
+    "description": "Your collections will be moved in a few moments.",
+    "message": "{count, plural, one {# collection was} other {# collections were}} successfully moved to this workspace."
+   },
+   "continue": "Continue"
+  },
+  "input": {
+   "name": "Team Name",
+   "url": "Team URL",
+   "workspace_name": "New team workspace name",
+   "add_existing_api": {
+    "label": "Do you want to add an existing API project?",
+    "options": {
+     "yes": "Yes",
+     "not_yet": "Not Yet"
+    }
+   },
+   "existing_api_selection": {
+    "label": "How do you want to add your project?",
+    "options": {
+     "import_from_local": "Import from local",
+     "move_from_workspace": "Move from workspace"
+    }
+   }
+  },
+  "select_collections": {
+   "get_started": "Get started with existing collections",
+   "description": "Help your team get started by moving or importing your API projects <br /> to your new team workspace."
+  }
+ }
+}

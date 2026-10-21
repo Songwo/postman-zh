@@ -1,0 +1,105 @@
+{
+ "create_team_error": {
+  "message": "There was an error while we were creating your team",
+  "title": "Something went wrong"
+ },
+ "form_heading": "Before we create a team for you",
+ "heading": "Do you want to move your workspaces to the team?",
+ "radio_buttons": {
+  "no_label": "No, keep my workspaces separate from the team",
+  "yes_label": "Yes, move my workspaces to the team",
+  "no_helper_text": "You will have complete ownership and access to the workspaces.",
+  "yes_helper_text": "You can collaborate with your teammates in these workspaces. Once moved, the team will have ownership and Admins will be able to manage the workspaces."
+ },
+ "create_team_button": "Create team",
+ "cancel_button": "Cancel",
+ "create_team_modal": {
+  "heading": {
+   "creating": "Woohoo! Your team is being created...",
+   "created": "Bravo! You’ve created a team"
+  },
+  "creating_message": "Please don’t close or refresh this tab.",
+  "keep_data_separate_message": "Your existing personal workspaces will be kept separate from this team. You can still work on them as an individual.",
+  "merge_data_message": "Your existing personal workspaces will be moved to this team. You can invite team members once you are ready to collaborate.",
+  "set_up_team_button": "Set up team"
+ },
+ "create_team_onboarding_modal": {
+  "heading": "Woohoo! Your team is being created...",
+  "creating_message": "Please don’t close or refresh this tab."
+ },
+ "quick_create_team_modal": {
+  "heading": "Set up your team",
+  "name_input_field_label": "What is your team's name?",
+  "workspace_name": "{teamName} Workspace",
+  "edit_team_name_button": "Edit",
+  "domain_input_field_label": "Team URL",
+  "what_will_your_team_work_on": {
+   "label": "What will your team work on?",
+   "placeholder": "Select an option to help us tailor your experience",
+   "options": {
+    "testing_existing_api": "Share and test existing APIs together",
+    "design_and_build_new_api": "Design and build new APIs together",
+    "documenting_and_publishing_apis": "Build a central space for API documentation",
+    "i_am_not_sure": "I’m not sure",
+    "other": "Other"
+   }
+  },
+  "upload_team_logo_modal_title": "Upload a team logo",
+  "upload_team_logo_modal": {
+   "upload_button": "Upload",
+   "back_button": "Back",
+   "cancel_button": "Cancel",
+   "image_upload_error": "There was a problem uploading your image. Please try again.",
+   "file_input": {
+    "drag_and_drop_image": "Drag and drop an image",
+    "or": "or",
+    "select_a_file": "Select a file",
+    "image_size_error": "Image is too large. Please use an image under 2 MB.",
+    "file_read_error": "We couldn't read that. Please upload an image file, like a jpg or png."
+   }
+  },
+  "upload_team_logo_modal_body": "Help your team feel at home by uploading a custom logo. Max size: 2 MB",
+  "other_goal_placeholder": "Enter your team goal",
+  "validate_user_choice_error": "You must select an option.",
+  "provide_team_detail_error": "Please provide team details",
+  "update_team_error": {
+   "enabled_message": "You enabled team discovery for your team",
+   "disabled_message": "You disabled team discovery for your team",
+   "on_message": "Team discovery is ON",
+   "off_message": "Team discovery is OFF",
+   "message": "You {enableStatus} team discovery for your team",
+   "enabled": "enabled",
+   "disabled": "disabled",
+   "on": "ON",
+   "off": "OFF",
+   "title": "Team discovery is {enableStatus}"
+  },
+  "team_discovery": {
+   "title": "Team discovery",
+   "description": "Allow people from your organization see your team and request to join.",
+   "turn_on_team_discovery": "Turn on team discovery",
+   "turn_on_label": "ON",
+   "turn_off_label": "OFF"
+  },
+  "confirm_button": "Confirm"
+ },
+ "invalid_domain_name_modal": {
+  "heading": "You don't have a valid work domain",
+  "body": "We can't enable this setting for domains such as gmail.com. Please change your email id to a valid work domain and try again.",
+  "got_it_button": "Got it"
+ },
+ "email_verification_modal": {
+  "send_verification_success": {
+   "message": "Please check your inbox.",
+   "title": "We've sent the verification email"
+  },
+  "send_verification_error": {
+   "message": "An error occurred while sending the verification email. Try again after some time.",
+   "title": "Something went wrong"
+  },
+  "heading": "Verify your account",
+  "body": "To enable team discovery, please verify your account and try again.",
+  "cancel_button": "Cancel",
+  "send_verification_button": "Send verification email"
+ }
+}

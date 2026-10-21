@@ -1,0 +1,99 @@
+{
+ "go_back": "Go back",
+ "heading": "Inactive workspaces",
+ "description": "Tidy up? Archive workspaces that are unused for 6+ months. Restore any time.",
+ "filters": {
+  "search_workspaces_placeholder": "Search workspaces...",
+  "filter_by_visibility_dropdown": {
+   "placeholder": "Access type",
+   "label": "Filter by visibility",
+   "options": {
+    "all": {
+     "value": "All workspaces"
+    },
+    "personal": {
+     "value": "Personal",
+     "description": "Only the creator",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "team": {
+     "value": "Team",
+     "description_team_user": "Everyone in {teamName} team",
+     "description_non_team_user": "Everyone from your team",
+     "workspace_type": "Internal",
+     "workspace_access": "Everyone in your team"
+    },
+    "private": {
+     "value": "Private",
+     "description": "Only invited team members",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "partner": {
+     "value": "Partner",
+     "description": "Only invited members & partners",
+     "workspace_type": "Partner",
+     "workspace_access": "Only invited partners"
+    },
+    "public": {
+     "value": "Public",
+     "description": "Anyone on the internet",
+     "workspace_type": "Public",
+     "workspace_access": "Anyone on the internet"
+    }
+   }
+  }
+ },
+ "archive_all_workspaces_button_text": "Archive all",
+ "table": {
+  "column_headers": {
+   "workspace_name": "Name",
+   "created_by": "Created by",
+   "type": "Type",
+   "access": "Access",
+   "last_activity": "Last activity",
+   "actions": "Actions"
+  },
+  "bulk_selection": {
+   "text": "{count} workspaces selected",
+   "primary_button_text": "Delete",
+   "primary_button_tooltip": "Delete workspace",
+   "secondary_button_text": "Archive",
+   "secondary_button_tooltip": "Archive workspace"
+  },
+  "actions_column": {
+   "primary_button_text": "Archive",
+   "primary_button_tooltip": "Archive workspace",
+   "primary_button_aria_label": "Archive {workspaceName}",
+   "secondary_button_tooltip": "Delete workspace",
+   "secondary_button_aria_label": "Delete {workspaceName}"
+  }
+ },
+ "blank_state": {
+  "heading": "No inactive workspaces found",
+  "description": "Archive inactive workspaces to reduce clutter. Restore them anytime."
+ },
+ "toasts": {
+  "bulk_archive": {
+   "failure_description": "Just a faulty wire. Please try again.",
+   "failure_title": "Unable to archive {count} workspaces",
+   "success_description": "{count} workspaces archived"
+  },
+  "bulk_delete": {
+   "failure_description": "Just a faulty wire. Please try again.",
+   "failure_title": "Unable to delete {count} workspaces",
+   "success_description": "{count} workspaces deleted"
+  },
+  "archive": {
+   "failure_description": "Just a faulty wire. Please try again.",
+   "failure_title": "Unable to archive workspace",
+   "success_description": "Workspace archived"
+  },
+  "delete": {
+   "failure_description": "Just a faulty wire. Please try again.",
+   "failure_title": "Unable to delete workspace",
+   "success_description": "Workspace deleted"
+  }
+ }
+}

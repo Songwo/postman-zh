@@ -1,0 +1,25 @@
+{
+ "entity_type_icon": {
+  "label": "SDK"
+ },
+ "row": {
+  "context_menu_trigger": {
+   "tooltip": "View more actions"
+  }
+ },
+ "context_menu": {
+  "open_sdk_panel": {
+   "label": "Open SDK Panel"
+  },
+  "regenerate_sdks": {
+   "label": "Regenerate SDKs"
+  },
+  "delete_sdks": {
+   "label": "Delete SDKs"
+  }
+ },
+ "delete": {
+  "success": "SDKs for \"{entityName}\" deleted.",
+  "error": "Failed to delete SDKs. Please try again."
+ }
+}

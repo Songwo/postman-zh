@@ -1,0 +1,40 @@
+{
+ "downloading": {
+  "heading": "Update required",
+  "description": "This link opens something your version of Postman doesn't have yet.",
+  "progress": "Downloading the latest version…",
+  "checking": "Checking for updates…"
+ },
+ "ready": {
+  "heading": "Update ready",
+  "description": "Restart Postman to finish updating. You'll pick up right where this link was taking you.",
+  "reload_description": "Reload Postman to finish updating. You'll pick up right where this link was taking you."
+ },
+ "applying": {
+  "heading": "Updating Postman",
+  "description": "Finishing the update…"
+ },
+ "failed": {
+  "heading": "Couldn't download the update",
+  "description": "Something went wrong while updating. You can try again, or open this now on your current version. Parts of it may not work.",
+  "description_blocked": "Something went wrong while updating. Try again, or come back to this link once Postman has updated."
+ },
+ "unavailable": {
+  "heading": "No update available",
+  "description": "This link needs a newer version of Postman than is currently available. You can open it now, but parts of it may not work.",
+  "description_blocked": "This link needs a newer version of Postman than is currently available. Come back to it once an update is out."
+ },
+ "managed": {
+  "heading": "Update required",
+  "description": "This link needs a newer version of Postman, and updates on this installation are managed by your administrator. Ask them to update Postman to open it.",
+  "description_with_version": "This link needs Postman {minCompatVersion} or later, and updates on this installation are managed by your administrator. Ask them to update Postman to open it."
+ },
+ "actions": {
+  "restart": "Restart app",
+  "reload": "Reload app",
+  "later": "Later",
+  "try_again": "Try again",
+  "open_anyway": "Open anyway",
+  "dismiss": "Close"
+ }
+}

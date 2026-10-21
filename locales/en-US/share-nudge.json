@@ -1,0 +1,8 @@
+{
+ "codegen_curl": {
+  "title": "{subject, select, scripts {This cURL leaves out your scripts} variables {This cURL leaves out your variables} auth {This cURL leaves out your auth settings} other {Sending this cURL to a teammate?}}",
+  "description": "{subject, select, scripts {Share the request instead so it runs the same for your teammate, scripts included.} variables {Share the request instead so it runs the same for your teammate, variables included.} auth {Share the request instead so it runs the same for your teammate, auth settings included.} other {Share the request instead so it runs the same for your teammate.}}",
+  "share_button_label": "Share",
+  "upgrade_modal_heading": "Upgrade to share requests with your team"
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "metadata": {
+  "title": "Trash"
+ },
+ "header": {
+  "heading": "Trash",
+  "back_to_workspace": "Back",
+  "description": "Deleted {model}s from workspaces you have access to will appear here. You can restore or permanently delete items if you have edit permissions."
+ },
+ "table": {
+  "header": {
+   "name": "Name",
+   "deleted": "Deleted",
+   "workspace": "Workspace",
+   "deleted_by": "Deleted by",
+   "deleted_on": "Deleted on",
+   "removal": "Day of removal"
+  },
+  "body": {
+   "tooltips": {
+    "is_offline": "You can perform this action once you're back online",
+    "is_online_restore": "Restore",
+    "is_online_delete": "Delete permanently"
+   }
+  },
+  "empty": {
+   "heading": "Your trash is empty",
+   "description": "Collections you delete will show up here."
+  },
+  "blankState": {
+   "title": "No {model}s Found",
+   "description": "Try a different search term, adjust your filters or check for typos."
+  }
+ },
+ "actions": {
+  "delete": {
+   "toasts": {
+    "success_body": "The collection {name} was successfully deleted.",
+    "success_title": "Collection deleted permanently",
+    "error_body": "Unable to delete collection.",
+    "permission_error": "You don't have permission to delete this {model}"
+   }
+  },
+  "restore": {
+   "toasts": {
+    "error_body": "Just a faulty wire. Try again.",
+    "error_title": "Couldn't recover collection",
+    "success_body": "{collection} is now in {workspace}.",
+    "success_title": "Collection restored successfully",
+    "success_link": "View collection",
+    "permission_error": "You don't have permission to restore this {model}"
+   }
+  },
+  "commons": {
+   "is_offline_body": "You'll be able to manage the trash once you're online.",
+   "is_offline_title": "You are offline"
+  }
+ },
+ "offline": {
+  "title": "You are offline",
+  "body": "Unable to connect to the servers. Please check your network settings.",
+  "action": "Retry",
+  "offline_banner_text": "Looks like you are offline. You can't perform any action until you're back online."
+ },
+ "error": {
+  "title_primary": "Unable to load trash",
+  "title_secondary": "Go Back to Workspace",
+  "message": "Just a faulty wire. Refresh or try later.",
+  "action": "Refresh"
+ },
+ "delete_permanent": {
+  "title": "Permanently delete collection",
+  "action": "Delete",
+  "message": "You cannot undo this action."
+ },
+ "collection_recovery_modal": {
+  "title": "Can't restore here",
+  "already_exists": {
+   "description": "The {entityTypeText} already exists in this workspace."
+  },
+  "permission": {
+   "description": "You don’t have access to move {entityTypeText}s to this workspace."
+  },
+  "workspace_error": {
+   "title": "Couldn’t load more workspaces",
+   "sub_title": "Just a faulty wire. Try reloading.",
+   "action": "Reload"
+  },
+  "header": {
+   "title": "Restore {collectionName}"
+  },
+  "body": {
+   "info_text": "Select a workspace for the collection",
+   "initial_error": {
+    "title": "Couldn’t load the workspaces",
+    "description": "Just a faulty wire. Try reloading.",
+    "action": "Reload"
+   },
+   "workspace_list": {
+    "error_title": "Couldn’t load the workspaces",
+    "error_subtitle": "Just a faulty wire. Try reloading.",
+    "action": "Reload",
+    "search_placeholder": "Search workspaces",
+    "no_workspace_title": "No workspaces found",
+    "no_workspace_description": "Check your spelling, try a different search term."
+   }
+  },
+  "footer": {
+   "cancel_action": "Cancel",
+   "restore_action": "Restore Collection",
+   "restore_action_tooltip": "You can take this action once you're back online"
+  }
+ },
+ "banner": {
+  "auto_removal": "{model}s will be removed from the trash automatically.",
+  "auto_removal_fix_days": "{model}s will be removed from the trash automatically after a fixed number of days based on your plan.",
+  "auto_removal_retention_days": "{model}s will be removed from the trash automatically after {count, plural, one {# day} other {# days}}."
+ },
+ "filters": {
+  "search": {
+   "clear_button_tooltip": "Clear {model} name",
+   "placeholder": "Search {model}s"
+  },
+  "workspaces": {
+   "placeholder": "Workspaces",
+   "empty_state_message": "No workspaces found"
+  },
+  "deleted_by": {
+   "empty_state_message": "No users found",
+   "placeholder": "Deleted by"
+  }
+ },
+ "detailed_view": {
+  "label": {
+   "created_by": "Created by",
+   "created_on": "Created on",
+   "workspace": "Workspace",
+   "forks": "Forks",
+   "monitors": "Monitors",
+   "mocks": "Mocks",
+   "watchers": "Watchers",
+   "forklabel": "Fork label"
+  },
+  "button": {
+   "delete": "Delete",
+   "cancel": "Cancel",
+   "restore": "Restore"
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "ppc": {
+  "app_section": {
+   "title": "Postman Enterprise App",
+   "description": "Download and distribute Postman Enterprise Application in your organization."
+  },
+  "agent_section": {
+   "title": "Postman Desktop Agent",
+   "description": "Download and distribute Postman Desktop Agent in your organization."
+  },
+  "manifest_section": {
+   "title": "Postman Enterprise App Manifest",
+   "description": "Download the manifest for Postman App"
+  },
+  "version_latest": "{version} (latest)",
+  "platform_labels": {
+   "windows_64": "Windows",
+   "osx_64": "Mac Intel Chip",
+   "osx_arm64": "Mac Apple Chip",
+   "linux_64": "Linux (x64)"
+  },
+  "manifest_os_labels": {
+   "windows": "Windows",
+   "osx": "macOS"
+  }
+ }
+}

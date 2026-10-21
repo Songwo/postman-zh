@@ -1,0 +1,12 @@
+{
+ "source_label": {
+  "cloud": "Cloud agent",
+  "local": "Local"
+ },
+ "cloud_task": {
+  "untitled_fallback": "Untitled task"
+ },
+ "delete": {
+  "error_toast": "Failed to delete conversation."
+ }
+}

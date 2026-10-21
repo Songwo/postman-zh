@@ -1,0 +1,146 @@
+{
+ "toolbar": {
+  "font_size_options": {
+   "normal": "Normal text",
+   "heading1": "Heading 1",
+   "heading2": "Heading 2",
+   "heading3": "Heading 3",
+   "heading4": "Heading 4",
+   "heading5": "Heading 5",
+   "heading6": "Heading 6"
+  },
+  "aria_label": "Formatting",
+  "floating_aria_label": "Selection formatting",
+  "more_label": "More formatting",
+  "tooltips": {
+   "bold": "Bold",
+   "italic": "Italic",
+   "strikethrough": "Strikethrough",
+   "unordered_list": "Unordered List",
+   "ordered_list": "Ordered List",
+   "task_list": "Task List",
+   "undo": "Undo",
+   "redo": "Redo",
+   "table": "Table",
+   "image": "Image",
+   "link": "Link",
+   "blockquote": "Blockquote",
+   "horizontal_rule": "Horizontal rule",
+   "codespan": "Codespan",
+   "codeblock": "Codeblock",
+   "wrap_lines": "Wrap Lines",
+   "copied": "Copied",
+   "copy": "Copy",
+   "copy_failed": "Could not copy code"
+  },
+  "code_block": {
+   "dialog_label": "Edit code block",
+   "frontmatter": "Frontmatter",
+   "language_label": "Code block language",
+   "plain_text": "Plain Text"
+  },
+  "popover": {
+   "dialog_label": "Editor options"
+  },
+  "image_popup": {
+   "dialog_label": "Image options",
+   "url_label": "Image URL",
+   "alt_text_label": "Alternative text",
+   "caption_label": "Image caption",
+   "edit_image_label": "Edit image",
+   "preview_button_label": "Preview image",
+   "preview_dialog_label": "Image preview",
+   "preview_loading_label": "Loading image preview",
+   "preview_error_label": "Image preview could not be loaded. Select the image to retry.",
+   "decorative_label": "Decorative image",
+   "required_label": "(required)",
+   "url_validation_error": "Enter a valid HTTP(S) or relative image URL",
+   "alt_text_validation_error": "Add alternative text or mark the image as decorative",
+   "insert_button": "Insert image",
+   "save_button": "Save image",
+   "image_url_input_placeholder": "Image URL",
+   "delete_button_tooltip": "Delete image",
+   "size_legend": "Size",
+   "width_label": "Width (pixels)",
+   "height_label": "Height (pixels)",
+   "size_hint": "Changing one keeps the image's proportions. Leave both empty for the original size.",
+   "size_hint_not_pixels": "Leave the fields as they are to keep the current size, enter pixels to replace it, or clear them for the original size.",
+   "size_validation_error": "Enter a whole number from 1 to {max}"
+  },
+  "link_popup": {
+   "validation_error_message": "Please enter a valid URL",
+   "text_placeholder": "Text (optional)",
+   "url_placeholder": "URL",
+   "edit_button": "Save",
+   "open": "Open",
+   "edit_link": "Edit link",
+   "remove_link": "Remove link",
+   "copy_link": "Copy link",
+   "delete_link": "Delete link"
+  },
+  "table_options": {
+   "add_row": "Add row",
+   "add_column": "Add column",
+   "delete_column": "Delete column",
+   "delete_table": "Delete table",
+   "delete_row": "Delete row",
+   "dialog_label": "Table options",
+   "size_picker_label": "Table size",
+   "size_cell_label": "{rows} × {columns}",
+   "size_preview_label": "{rows} × {columns}"
+  },
+  "add_a_caption": "Add a caption..."
+ },
+ "image_upload": {
+  "toolbar_label": "Upload image",
+  "drop_zone": "Drop image to upload",
+  "uploading": "Uploading...",
+  "unavailable": "Image unavailable",
+  "failed": "Upload failed",
+  "retry": "Retry",
+  "remove": "Remove",
+  "unsupported_type": "Unsupported file. Try uploading a PNG, JPG, or GIF file.",
+  "unsupported_type_list": "Unsupported file. Supported types: {types}.",
+  "check_failed": "Couldn't upload. Try again.",
+  "storage_full": "Couldn't upload. Your {limit} MB storage is full. To increase storage, contact support.",
+  "storage_full_no_limit": "Couldn't upload. Your storage is full. To increase storage, contact support."
+ },
+ "link-unfurling": {
+  "accessible_label": "{entityType}: {label}",
+  "entity": {
+   "workspace": "Workspace",
+   "collection": "Collection",
+   "folder": "Folder",
+   "request": "Request",
+   "example": "Example",
+   "environment": "Environment",
+   "learning_center": "Learning Center"
+  },
+  "learning_center_page": "{page} | Postman Learning Center",
+  "loading": "Loading...",
+  "options": "Link options"
+ },
+ "mentions": {
+  "menu_label": "Mention suggestions",
+  "searching": "Searching…",
+  "search_error": "Couldn’t load mention suggestions.",
+  "no_results": "No matching people",
+  "retry": "Retry",
+  "card_label": "Profile",
+  "view_profile": "View Profile",
+  "name_you": "{name} (you)",
+  "user_inactive_popover": "Deactivated",
+  "user_inactive_pill": "{name} (Deactivated)",
+  "private_user_tooltip": "This user profile is private.",
+  "private_user_label": "Private User"
+ },
+ "plugin_failure": {
+  "message": "Editing unavailable for {plugin}. Your content is preserved.",
+  "retry": "Retry",
+  "retry_label": "Retry {plugin}"
+ },
+ "editor_failure": {
+  "message": "The editor stopped working. Your content is preserved.",
+  "retry": "Retry"
+ }
+}

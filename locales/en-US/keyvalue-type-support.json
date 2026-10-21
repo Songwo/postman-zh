@@ -1,0 +1,55 @@
+{
+ "type_popover": {
+  "learn_more": "Learn more",
+  "share_feedback": "Share feedback"
+ },
+ "base_form": {
+  "select_type": "Select type",
+  "required": "Required",
+  "deprecated": "Deprecated"
+ },
+ "string_form": {
+  "format": "Format",
+  "format_placeholder": "Select",
+  "pattern": "Pattern",
+  "pattern_placeholder": "[a-zA-Z0-9._%+-]",
+  "pattern_info": "Cannot be used when format is set",
+  "min_length": "Min length",
+  "min_length_placeholder": "<=x",
+  "max_length": "Max length",
+  "max_length_placeholder": ">=x",
+  "min_length_error": "Min length must be greater than 0",
+  "max_length_error": "Max length must be greater than 0",
+  "min_max_length_error": "Min length must be less than Max length"
+ },
+ "number_form": {
+  "min_value": "Min value",
+  "min_value_placeholder": "<=x",
+  "max_value": "Max value",
+  "max_value_placeholder": ">=x",
+  "min_max_value_error": "Min value must be less than Max value"
+ },
+ "integer_form": {
+  "min_value": "Min value",
+  "min_value_placeholder": "<=x",
+  "max_value": "Max value",
+  "max_value_placeholder": ">=x",
+  "min_max_value_error": "Min value must be less than Max value"
+ },
+ "json_base_form": {
+  "required": "Required",
+  "deprecated": "Deprecated",
+  "default_value": "Default value",
+  "select": "Select"
+ },
+ "default_value_field": {
+  "label": "Default value",
+  "placeholder": "Default"
+ },
+ "enum_values_field": {
+  "label": "Possible enum values",
+  "placeholder": "Enter",
+  "helper_text": "Paste comma-separated for multiple",
+  "duplicate_error": "This value already exists"
+ }
+}

@@ -1,0 +1,878 @@
+{
+ "canonical_url": {
+  "open_entity_error": "Could not resolve any workspace. Error occurred while opening this {entity}",
+  "no_workspace_found_error": "Could not resolve any workspace. No workspace found for this {entity}"
+ },
+ "create_specification": {
+  "no_editable_workspace_error": "You don't have edit access to any workspace to create a new specification in",
+  "create_error": "Something went wrong while creating your specification. Please try again",
+  "open_error": "Your specification was created but couldn't be opened. You can find it in your workspace"
+ },
+ "context_menu": {
+  "show_labels": "Show labels",
+  "hide_labels": "Hide labels",
+  "expand_sidebar": "Expand sidebar",
+  "collapse_sidebar": "Collapse sidebar",
+  "configure_sidebar": "Configure sidebar"
+ },
+ "header_tabs": {
+  "configure_sidebar_tooltip": "Configure workspace sidebar"
+ },
+ "disabled_tooltip_published_api": "You can’t make changes to a published version of an API.",
+ "disabled_tooltip_offline_action": "You can take this action when you're back online.",
+ "disabled_tooltip_not_in_workspace": "You need to be in a workspace to perform this action",
+ "disabled_tooltip_collection_loading": "Loading collection...",
+ "add_request_cta": "Add request",
+ "no_permission_error": "You don’t have permission to take this action.",
+ "no_permissions_error": "You do not have permissions to perform this action.",
+ "collection_not_a_fork": "This collection is not a fork.",
+ "perform_action_when_online": "You can perform this action once you're back online.",
+ "perform_action_when_signed_in": "You can perform this action once you're signed in.",
+ "no_changes_to_pull": "No changes to pull",
+ "fork_from_latest_version_of_api": "You can only fork from the latest version of an API.",
+ "disabled_tooltip_signed_out": "You need to be signed-in to perform this action.",
+ "create_new_button": "Create new button",
+ "view_more_actions": "View more actions",
+ "imported_on": {
+  "label": "Imported on {date} by {importedBy}",
+  "description": " Imported on <1>{date}</1> by <3>{importedBy}</3>",
+  "view_original": "View original"
+ },
+ "rfa_popover": {
+  "pending_request": {
+   "title": "You need access to create resources",
+   "info_text": "Workspace Admins are reviewing your request for edit access. You’ll be notified once they respond.",
+   "cancel_cta": "Got It"
+  },
+  "creating_request": {
+   "placeholder_text": "A short note that will help the reviewer approve your request",
+   "title": "Request access to create resources",
+   "info_text": "Workspace Admins will review your request. Once approved, you’ll be an Editor in this workspace.",
+   "partner_info_text": "Workspace Admins will review this request. Once approved, you can create, edit, fork and export resources in this workspace.",
+   "cancel_cta": "Maybe Later"
+  },
+  "label": {
+   "text": "Add note",
+   "field_type": "optional"
+  },
+  "validation_message": "The note can only have up to 140 characters.",
+  "submit_cta": "Request Access",
+  "toast_content": {
+   "REQUEST_ALREADY_APPROVED": {
+    "title": "Request acknowledged",
+    "description": "Looks like someone has already approved this request."
+   },
+   "REQUEST_ALREADY_REJECTED": {
+    "title": "Request acknowledged",
+    "description": "Looks like someone has already rejected this request."
+   },
+   "REQUEST_EXPIRED": {
+    "title": "",
+    "description": "This request has expired."
+   },
+   "MODEL_DELETED": {
+    "title": "Unable to respond to request",
+    "description": "This request couldn't be completed because the element was deleted."
+   },
+   "REQUEST_EXISTS": {
+    "title": "You already have a request in review",
+    "description": "You’ll be notified once a workspace Admin responds."
+   },
+   "request_responded": {
+    "description": "You have responded to the request."
+   },
+   "request_not_found": {
+    "description": "Request doesn't exist."
+   },
+   "default": {
+    "title": "Couldn't respond to request",
+    "description": "Just a faulty wire. Try again."
+   }
+  }
+ },
+ "sidebar_item_input_placeholder": {
+  "collection": "Collection name",
+  "folder": "Folder Name",
+  "request": "Request Name",
+  "example": "Example Name"
+ },
+ "sidebar_item": {
+  "favorite": {
+   "add_tooltip": "Add to favorites",
+   "remove_tooltip": "Remove from favorites"
+  },
+  "toggle": {
+   "expand": "Expand",
+   "collapse": "Collapse"
+  }
+ },
+ "sidebar_blank_state": {
+  "start_a_request": "Start a request",
+  "add_entity": "Add entity",
+  "organize": "Organize",
+  "create_section": "Create section"
+ },
+ "create_new_x": {
+  "button_label": "New",
+  "pin_card": "Pin",
+  "unpin_card": "Unpin",
+  "elements": {
+   "http": {
+    "card_label": "HTTP",
+    "info_text": "Hypertext Transfer Protocol (HTTP) is an application-layer protocol often used to build REST APIs. Test your HTTP API with an HTTP request.",
+    "no_permission_text": "You don’t have permission to create an HTTP request in this workspace.",
+    "offline_text": "You need to be online to create an HTTP request."
+   },
+   "graphql": {
+    "card_label": "GraphQL",
+    "info_text": "GraphQL is a query language for APIs that’s designed to provide the client with exactly the information it asks for. Test your GraphQL APIs with a GraphQL request.",
+    "no_permission_text": "You don’t have permission to create a GraphQL request in this workspace.",
+    "offline_text": "You need to be online to create a GraphQL request."
+   },
+   "grpc": {
+    "card_label": "gRPC",
+    "info_text": "gRPC is a highly performant RPC framework often used to build microservices. Test your gRPC APIs with a gRPC request.",
+    "no_permission_text": "You don’t have permission to create a gRPC request in this workspace.",
+    "offline_text": "You need to be online to create a gRPC request."
+   },
+   "websocket": {
+    "card_label": "WebSocket",
+    "info_text": "WebSocket enables real-time communication between the client and the server using a persistent communication channel. Test WebSocket based APIs with a WebSocket request.",
+    "no_permission_text": "You don’t have permission to create a WebSocket request in this workspace.",
+    "offline_text": "You need to be online to create a WebSocket request."
+   },
+   "ai": {
+    "card_label": "AI",
+    "info_text": "Test and customize Large Language Model (LLM) behaviors with custom instructions.",
+    "disabled_text": "Test and customize Large Language Model (LLM) behaviors with custom instructions.",
+    "no_permission_text": "You don’t have permission to create an AI request in this workspace.",
+    "offline_text": "You need to be online to create an AI request."
+   },
+   "mcp": {
+    "card_label": "MCP",
+    "info_text": "The Model Context Protocol (MCP) is an open standard that enables developers to build secure, two-way connections between their data sources and AI-powered tools.",
+    "disabled_text": "The Model Context Protocol (MCP) is an open standard that enables developers to build secure, two-way connections between their data sources and AI-powered tools.",
+    "no_permission_text": "You don’t have permission to create an MCP request in this workspace.",
+    "offline_text": "You need to be online to create an MCP request."
+   },
+   "toolsets": {
+    "card_label": "Toolset",
+    "ai_card_label": "AI Toolset",
+    "info_text": "Create a toolset to group related AI tools"
+   },
+   "socketio": {
+    "card_label": "Socket.IO",
+    "info_text": "Socket.IO is a framework built on top of WebSocket to enable event driven client-server communication. Test Socket.IO based APIs with a Socket.IO request.",
+    "no_permission_text": "You don’t have permission to create a Socket.IO request in this workspace.",
+    "offline_text": "You need to be online to create a Socket.IO request."
+   },
+   "mqtt": {
+    "card_label": "MQTT",
+    "info_text": "MQTT is a lightweight messaging protocol widely used for the internet of things (IoT). Test MQTT based APIs with an MQTT request.",
+    "no_permission_text": "You don’t have permission to create an MQTT request in this workspace.",
+    "offline_text": "You need to be online to create an MQTT request."
+   },
+   "data": {
+    "card_label": "Data",
+    "info_text": "Test and query your data sources with a data request."
+   },
+   "collection": {
+    "card_label": "Collection",
+    "info_text": "Create a collection to organize, document and share your API requests with others.",
+    "disabled_text": "Collections help you organize, document and share your API requests with others.",
+    "offline_text": "You cannot create a collection when you’re offline.",
+    "no_permission_text": "You don’t have permission to create a collection in this workspace."
+   },
+   "environment": {
+    "card_label": "Environment",
+    "info_text": "Define and use sets of variables across multiple API requests using environments.",
+    "disabled_text": "Environments help you define and use sets of variables across multiple API requests.",
+    "offline_text": "You cannot create an environment when you’re offline.",
+    "no_permission_text": "You don’t have permission to create an environment in this workspace."
+   },
+   "monitor": {
+    "card_label": "Monitor",
+    "info_text": "Schedule your Postman Collections to run periodically using monitors.",
+    "disabled_text": "Monitors help you run your Postman Collections on a schedule.",
+    "offline_text": "You cannot create a monitor when you're offline.",
+    "no_permission_text": "You don't have permission to create a monitor in this workspace."
+   },
+   "flows": {
+    "card_label": "Flow",
+    "info_text": "Flows let you visualize, test, and automate API workflows",
+    "disabled_text": "Postman Flows is a visual tool to build API-driven applications. You can use flows to chain requests, handle data, and create real-world workflows in your workspace.",
+    "offline_text": "You cannot create a flow when you’re offline.",
+    "no_permission_text": "You don’t have permission to create a flow in this workspace."
+   },
+   "workspace": {
+    "card_label": "Workspace",
+    "info_text": "Stay organized and collaborate with your teammates using workspaces.",
+    "disabled_text": "Workspaces help you stay organized and collaborate with your teammates.",
+    "offline_text": "You cannot create a workspace when you’re offline.",
+    "no_permission_text": "You don’t have permission to create a workspace."
+   },
+   "insights": {
+    "card_label": "Insights",
+    "info_text": "Get near real-time insights into your API performance.",
+    "offline_text": "You cannot create an insights project when you're offline.",
+    "no_permission_text": "You don't have permission to create an insights project."
+   },
+   "ask_ai": {
+    "card_label": "Ask AI"
+   },
+   "spec": {
+    "card_label": "Spec",
+    "offline_text": "You need to be online to create a spec.",
+    "no_permission_text": "You don't have permission to create a spec in this workspace."
+   },
+   "mock": {
+    "card_label": "Mocks",
+    "create_with_template_label": "Create with template",
+    "create_with_ai_mock_dependencies_label": "Mock external APIs",
+    "create_with_ai_mock_service_label": "Mock your own service",
+    "offline_text": "You cannot create a mock server when you're offline.",
+    "no_permission_text": "You don't have permission to create a mock server in this workspace."
+   },
+   "mock_server": {
+    "card_label": "Mock Server",
+    "info_text": "Deploy a mock as a live service."
+   },
+   "classic_mock_server": {
+    "card_label": "Mock Server",
+    "info_text": "Create a mock server from saved examples in a collection."
+   },
+   "mock_with_collection": {
+    "card_label": "From collection",
+    "info_text": "Create a mock server from saved examples in a collection."
+   },
+   "mock_with_code": {
+    "card_label": "Virtual Service",
+    "info_text": "Create a code-powered virtual service."
+   },
+   "code_based_mock": {
+    "card_label": "Mock",
+    "info_text": "Create a mock",
+    "offline_text": "You cannot create a mock when you're offline.",
+    "no_permission_text": "You don't have permission to create a mock in this workspace."
+   },
+   "local_mock": {
+    "info_text": "Author a mock's behavior. Run it locally or deploy it as a Mock Server."
+   },
+   "documentation": {
+    "card_label": "Documentation"
+   },
+   "document": {
+    "card_label": "Document",
+    "info_text": "Create a document to write guides, notes, or API documentation.",
+    "create_error": "Failed to create document. Please try again.",
+    "no_permission_text": "You don't have permission to create a document in this workspace."
+   },
+   "sdk_gen": {
+    "card_label": "SDK",
+    "offline_text": "You cannot generate an SDK when you're offline.",
+    "no_permission_text": "You don't have permission to generate an SDK in this workspace.",
+    "no_edit_permission_collection": "You need edit access to this collection to generate SDKs.",
+    "no_edit_permission_spec": "You need edit access to this API definition to generate SDKs."
+   },
+   "webhook": {
+    "card_label": "Webhook",
+    "info_text": "Create a webhook to receive and inspect requests.",
+    "no_permission_text": "You don’t have permission to create a webhook in this workspace.",
+    "offline_text": "You need to be online to create a webhook."
+   },
+   "dataset": {
+    "card_label": "Dataset",
+    "info_text": "Define reusable datasets from databases or files to power your API tests and workflows.",
+    "offline_text": "You cannot create a dataset when you're offline.",
+    "no_permission_text": "You don't have permission to create a dataset in this workspace."
+   }
+  },
+  "tags": {
+   "new": "NEW",
+   "beta": "BETA"
+  },
+  "menu": {
+   "search_placeholder": "Search...",
+   "no_results": "No results",
+   "no_permission_error": "You do not have permissions required to perform the action.",
+   "collection_create_error": "Something went wrong while creating the collection.",
+   "button_aria_label": "Create new"
+  }
+ },
+ "list_actions": {
+  "dropdown_button_tool_tip": "View more actions"
+ },
+ "list_item": {
+  "dropdown_button_tool_tip": "View more actions"
+ },
+ "delete_confirm": {
+  "heading": {
+   "delete": "Delete {entity}?",
+   "force_close": "Confirm force close"
+  },
+  "message": {
+   "tab": "{count, plural, one {# tab has} other {# tabs have}} unsaved changes. Your changes will be lost if you force close {count, plural, one {this tab} other {these tabs}}. Are you sure you want to force close?"
+  },
+  "button": {
+   "cancel": "Cancel",
+   "delete": "Delete",
+   "force_close": "Force Close"
+  },
+  "dependency": {
+   "monitor": {
+    "singular": "monitor",
+    "plural": "monitors"
+   },
+   "fork": {
+    "singular": "fork",
+    "plural": "forks"
+   },
+   "mock_server": {
+    "singular": "mock server",
+    "plural": "mock servers"
+   },
+   "branch": {
+    "singular": "branch",
+    "plural": "branches"
+   },
+   "docs_site": {
+    "singular": "docs site",
+    "plural": "docs sites"
+   }
+  }
+ },
+ "share_popover": {
+  "invite_button_label": "Invite",
+  "manage_access": "Manage access",
+  "environment_selector": {
+   "label": "Sharing with:"
+  },
+  "personal_workspace": {
+   "banner": {
+    "text": "Since you don't have a team, we will create one for you.",
+    "button_label": "Learn more"
+   }
+  },
+  "general_access": {
+   "heading": "Manage access",
+   "workspace_access": {
+    "private": {
+     "description": "Only you and invited people",
+     "access": "can access"
+    },
+    "partner": {
+     "description": "Only invited team members and partners",
+     "access": "can access"
+    },
+    "public": {
+     "description": "Anyone on the internet",
+     "access": "Viewer"
+    }
+   }
+  },
+  "manage_roles": {
+   "team_title": "Everyone in {teamName}",
+   "org_title": "Everyone in {teamName}",
+   "self_tag": "You",
+   "partner_tag": "Partner",
+   "guest_tag": "Guest",
+   "you_label": "(You)",
+   "remove_label": "Remove",
+   "roles_dropdown": {
+    "footer": "Updating this role also changes it on the {entityType}."
+   },
+   "inherited_roles": {
+    "heading": "Roles inherited from:"
+   },
+   "view_all_button": {
+    "suffix": {
+     "singular": "and 1 other",
+     "plural": "and {count} others"
+    }
+   },
+   "conflicting_roles": {
+    "info_text": {
+     "api_linked": {
+      "self": "You have edit access on this resource which you are inheriting from the associated API.",
+      "others": "They have edit access on this resource which they are inheriting from the associated API."
+     },
+     "workspace_or_group": {
+      "self": "You have edit access on this resource which you are inheriting from the workspace or group.",
+      "others": "They have edit access on this resource which they are inheriting from the workspace or group."
+     }
+    },
+    "squad": {
+     "rejected": "Team managers are reviewing the request to update this role.",
+     "pendingEditorApproval": "Team managers are reviewing the request to upgrade this role.",
+     "doesNotExist": "This {entityType} has lost access to this team."
+    }
+   },
+   "update_roles": {
+    "error_toast": {
+     "title": "Couldn’t update roles",
+     "description": "Just a faulty wire. Try again."
+    }
+   },
+   "remove_user_from_workspace_msg": "They won’t be able to access this {visibility} workspace and the elements inside it unless they’re invited again."
+  }
+ },
+ "requested_access_section": {
+  "heading": "Requested access ({count})",
+  "approve_cta": "Approve",
+  "deny_cta": "Deny",
+  "view_all": "Show all",
+  "more_actions_aria": "More actions for {name}",
+  "you": "You"
+ },
+ "share_entity": {
+  "heading": "Share {entity}",
+  "close_aria_label": "Close",
+  "entities": {
+   "element": {
+    "singular": "element",
+    "plural": "elements"
+   },
+   "workspace": {
+    "singular": "workspace",
+    "plural": "workspaces"
+   },
+   "collection": {
+    "singular": "collection",
+    "plural": "collections"
+   },
+   "folder": {
+    "singular": "folder",
+    "plural": "folders"
+   },
+   "request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "environment": {
+    "singular": "environment",
+    "plural": "environments"
+   },
+   "globals": {
+    "singular": "globals",
+    "plural": "globals"
+   },
+   "api": {
+    "singular": "API",
+    "plural": "APIs"
+   },
+   "mock": {
+    "singular": "mock server",
+    "plural": "mock servers"
+   },
+   "extensible_collection": {
+    "singular": "collection",
+    "plural": "collections"
+   },
+   "api_definition_file": {
+    "singular": "definition file",
+    "plural": "definition files"
+   },
+   "graphql_request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "graphql_example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "grpc_request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "grpc_example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "ws_raw_request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "ws_socketio_request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "ws_raw_example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "ws_socketio_example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "ws_raw_message": {
+    "singular": "message",
+    "plural": "messages"
+   },
+   "ws_socketio_message": {
+    "singular": "message",
+    "plural": "messages"
+   },
+   "mqtt_request": {
+    "singular": "request",
+    "plural": "requests"
+   },
+   "mqtt_example": {
+    "singular": "example",
+    "plural": "examples"
+   },
+   "mqtt_message": {
+    "singular": "message",
+    "plural": "messages"
+   },
+   "run": {
+    "singular": "collection run",
+    "plural": "collection runs"
+   },
+   "performance_test": {
+    "singular": "performance test",
+    "plural": "performance tests"
+   },
+   "monitor": {
+    "singular": "monitor",
+    "plural": "monitors"
+   }
+  },
+  "share_button": "Share",
+  "copy_link": "Copy Link",
+  "copy_link_upgrade_heading": "Link copied. Upgrade to add teammates so they can open it",
+  "dirty_share": "Your unsaved changes will not be shared.",
+  "something_went_wrong": "Something went wrong",
+  "with_people": "With people",
+  "via_run_in_postman": "Via Run in Postman",
+  "via_api": "Via API",
+  "run_in_postman_label": "Run in Postman",
+  "more_actions_aria_label": "More Actions",
+  "share_via_api_label": "Share via API",
+  "offline_error": "Make sure you’re online if you want to share",
+  "no_permission_error": "You don’t have permission to take this action.",
+  "share_element_with_people": {
+   "team_creation_error": "Something went wrong while creating the team",
+   "visibility_changed": {
+    "team_title": "Visibility changed to team",
+    "private_title": "Visibility changed to private",
+    "team_description": "All team members can access it now.",
+    "invite_description": "All invited members can access it now."
+   },
+   "entity_moved_to_workspace": "{entity} has been moved to New {workspaceType} Workspace.",
+   "could_not_share_entity": {
+    "title": "Couldn’t share {entity}",
+    "description": "Just a faulty wire. Try again."
+   },
+   "entity_shared_successfully": "{entity} shared",
+   "copy_link_and_share": "Or copy link and share",
+   "collaborate_choice_radio_group": {
+    "label": "Choose how you want to collaborate",
+    "no_item_label": "Choose how you want to collaborate after team creation",
+    "options": {
+     "team": {
+      "create_workspace_and_move": {
+       "label": "Move this {entity} to a new team workspace",
+       "helpertext": "Only this {entity} will be shared."
+      },
+      "convert_to_workspace": {
+       "label": "Convert this into a team workspace",
+       "helpertext": "Everything in this workspace will be shared."
+      }
+     },
+     "private": {
+      "create_workspace_and_move": {
+       "label": "Move this {entity} to a new private workspace",
+       "helpertext": "Only this {entity} will be shared."
+      },
+      "convert_to_workspace": {
+       "label": "Convert this into a private workspace",
+       "helpertext": "Everything in this workspace will be shared."
+      }
+     }
+    }
+   }
+  },
+  "info_text": {
+   "will_create_team": "After inviting, we’ll help you set up a team and open the workspace to everyone in your team.",
+   "will_give_access_to_everyone_in_team": "Inviting people opens the workspace to everyone in your team. <1><0>Upgrade</0></1> to work with selected teammates."
+  },
+  "email_invalid_message": "{noOfEmails, plural, one {# email is invalid. Enter a valid email to send invite.} other {# emails are invalid. Enter valid emails to send invite.}}",
+  "partner_workspace_access_error": "You can only share with people who have access to this partner workspace.",
+  "new_members_invite_info": "New members will join your team once they accept your invite.",
+  "send_suggestion_to_admin": "Your suggestion will be sent to Team Admin for approval.",
+  "postman_collaboration_within_team_message": "Collaboration in Postman happens within a team through Team Workspaces. As you don’t have a team, we will create one for you. <0>Learn more</0>",
+  "private_workspace_permission_error": "People who don't have access to this private workspace will be invited as workspace viewers when this {entity} is shared with them.",
+  "share_with_people_who_have_access": "You can only share this {entity} with people who have access to this private workspace.",
+  "share_partner_workspace_with_people_who_have_access": "You can only share this {entity} with people who have access to this partner workspace.",
+  "share_role_selection": {
+   "input_label": "Enter name, group name or email",
+   "enter_name_email_or_group": "Enter name, email, or group name",
+   "enter_email": "Enter email",
+   "error_uploading_file": "There was an error uploading your file. Please try again",
+   "file_upload_format_error": "Only CSV and TXT files can be uploaded",
+   "file_size_exceeded_error": "File size is larger than {maxFileSize}MB,only files less than {maxFileSize}MB are supported.",
+   "select_csv_or_txt_file": "Select a TXT or CSV file to add people",
+   "add_from_file": "Add from file",
+   "environment_input_label": "Select an Environment",
+   "environment_selection_disabled": "Add an environment to the workspace to enable this option.",
+   "include_environment": "Include environment",
+   "share_via_link": "Share via link",
+   "toggle_sharable_link_error": {
+    "title": "Couldn’t enable this setting",
+    "description": "Just a faulty wire. Please try again."
+   },
+   "updating": "Updating...",
+   "copy_link": "Copy Link",
+   "link_copied": "Link Copied",
+   "updating_link": "Updating Link...",
+   "share_link_permission_tooltip": "Only {entity} Editors can manage this setting",
+   "allow_guests_to_join_team": "Allow <1><0>Guests</0></1> to join your team and view this collection with the link",
+   "permission_not_available": "You do not have permission to take this action",
+   "new_tag": "NEW"
+  },
+  "loading_modal_error": {
+   "heading": "Couldn’t load",
+   "description": "Just a faulty wire. Try reloading.",
+   "reload": "Reload"
+  },
+  "run_in_postman": {
+   "default_label": "Learn more.",
+   "public_workspace_label": "Run in Postman",
+   "embed_learn_more_button": "Embed a <1><0>{buttonText}</0></1> button on your website or docs to make it easier for people to discover and interact with your collection.",
+   "everyone_can_view_and_fork_public_collection": "Everyone on Postman can view and fork this public collection.",
+   "generating_code_snippet": "Generating code snippet...",
+   "render_static_button_message": "This button will point to a static snapshot of the collection. It doesn't update with changes to the collection.",
+   "fetching_link": "Fetching Link",
+   "generate_code": "Generate Code",
+   "updated": "Updated",
+   "update_button": {
+    "label": "Update Button",
+    "tooltip": "Update collection link"
+   },
+   "delete_button": {
+    "label": "Delete",
+    "tooltip": "Delete collection link"
+   },
+   "best_used_in_websites": "Best used in websites. Has more customization options.",
+   "best_used_in_markdown": "Best used in markdown documents like a README or blog.",
+   "move_collection_to_public_workspace_info": "Move your collection to a public workspace to let everyone access and fork your collection.",
+   "only_workspace_members_can_view_collection": "Only workspace members will be able to view the collection. Other teammates will need to request for access to view it.",
+   "move_to_a_workspace_to_share_collection": "Your collection is in a personal workspace. To share your collection, you need to move it to a workspace that is accessible to other people.",
+   "move_collection": "Move Collection",
+   "embed_code": "Embed code",
+   "html_friendly": "HTML friendly",
+   "markdown_friendly": "Markdown friendly",
+   "copied": "Copied",
+   "copy_code": "Copy Code",
+   "embed_version": {
+    "label": "Embed a {buttonType} version",
+    "tag": "NEW"
+   },
+   "fork_to_stay_up_to_date": "This button allows consumers to fork the collection so they can stay up to date by pulling and merging changes.",
+   "additional_settings": "Additional settings <1>(optional)</1>",
+   "add_an_environment": "Add an environment",
+   "simplify_getting_started_with_your_collection": "To simplify getting started with your collection, publish an environment’s variable and values in the button.",
+   "move_to_public_workspace": "Move to Public Workspace"
+  },
+  "share_via_api": {
+   "fetching_permissions_error": "An error occurred while fetching the permissions",
+   "get_collection_json_using_api_key": {
+    "heading": "Get collection JSON using Postman API Key",
+    "access_to_collection_info": "Members who have access to the collection can get its JSON with this request URL in the <1><0>Postman API</0></1>. For a successful response, make sure you <3><0>generate a Postman API key</0></3> and authorize the request.",
+    "copy_request_url": "Copy Request URL",
+    "copied": "Copied!"
+   },
+   "get_collection_json_using_access_key": {
+    "heading": "Get collection JSON using Collection Access Key",
+    "could_not_create_access_key": "Couldn't create access key for {collectionName} collection.",
+    "could_not_get_access_key": "Couldn't get access key for {collectionName} collection.`",
+    "grant_early_access": "Grant read-only access to this collection via the Postman API. The collection JSON served via this endpoint always reflects the current state of the collection. <1><0>Manage keys</0></1>",
+    "generate_key_banner": {
+     "heading": "Generate key?",
+     "description": "This will create a publicly-accessible link. Make certain that your collection does not contain any sensitive information before you share this link."
+    },
+    "generating": "Generating...",
+    "generate_new_key": "Generate New Key",
+    "copy_postman_url": "Copy Postman API URL"
+   },
+   "link_to_collection_in_public_workspace": {
+    "heading": "Link to collection in public workspace"
+   },
+   "anyone_can_share_and_fork_collection": "Anyone with this link can view and fork your collection.",
+   "copy_link": "Copy link",
+   "make_collection_available_in_public_workspace": "Make your collection available in a public workspace, so everyone can view and contribute by forking your collection.",
+   "move_collection": "Move Collection",
+   "who_can_view_this_collection": {
+    "label": "Who can view this collection?",
+    "options": {
+     "team": {
+      "label": "Team",
+      "helpertext": "Anyone in {teamName} team can view."
+     },
+     "public": {
+      "label": "Public",
+      "helpertext": "Everyone can view."
+     }
+    }
+   },
+   "move_to_public_workspace": {
+    "description": "For anyone to view this collection, you will need to move it to a public workspace.",
+    "move_button": "Move to public workspace"
+   },
+   "cancel": "Cancel",
+   "next": "Next",
+   "additional_settings_label": "Additional settings <1>(optional)</1>",
+   "add_an_environment": {
+    "label": "Add an environment",
+    "tooltip": "To simplify getting started with your collection, publish an environment’s variable and values in the button."
+   },
+   "allow_guests_to_view_collections": "Allow <1><0>Guests</0></1> to view collection via Run in Postman",
+   "allow_guests_to_view_collections_new": "Allow <1><0>Guests</0></1> to view collection via link",
+   "can_manage_entity_roles": "Only {entityType} Editors can manage this setting.",
+   "can_access_collection_outside_team": "People outside your team can access this collection for faster collaboration."
+  },
+  "no_environment": "No Environment",
+  "success_popover": {
+   "no_docs": {
+    "title": "Request shared",
+    "description": "Documentation makes it easy for your team to understand requests.",
+    "button_text": "Create documentation with AI"
+   }
+  }
+ },
+ "access_blocked": {
+  "heading": "Access blocked ({blockedCount})",
+  "invite_cta": "Invite",
+  "invited_cta": "Invited",
+  "invited_tooltip": "Already invited. Access will be granted once a team manager approves their request.",
+  "remove_cta": "Remove",
+  "more_actions_aria": "More actions for {memberName}",
+  "group_members_meta": "{count, plural, =1 {# group member} other {# group members}}",
+  "team_members_meta": "{count, plural, =1 {# team member} other {# team members}}",
+  "group_popover_count_label": "{count, plural, =1 {# member} other {# members}}",
+  "group_popover_loading": "Loading members…",
+  "group_popover_empty": "No members in this group.",
+  "group_popover_unavailable": "Couldn’t load members. Try again.",
+  "group_popover_view_group": "View Group",
+  "view_all": "Show all",
+  "invite_toast": {
+   "title": "Sent request to upgrade role",
+   "description": "Team managers will review the request to grant {role} access."
+  },
+  "upgraded_toast": {
+   "title": "Access granted",
+   "description": "{name} now has {role} access to this {entity}."
+  }
+ },
+ "delete_entity": {
+  "collection_deleted": "Collection deleted",
+  "heading": {
+   "forked_collection": "Delete this forked collection?",
+   "delete_collection": "Delete \"{collectionName}\"?"
+  },
+  "description_single": "Deleting this will remove all {removedEntities}, deactivate any associated mock servers. All documentation sites get deleted.",
+  "description_single_reusable": "Deleting this will remove {removedEntities}. Mock servers get deactivated, and linked requests will no longer follow updates from the original. All documentation sites get deleted.",
+  "description_multiple": "This will deactivate the {removedEntities}, and mock servers associated with this collections.",
+  "description_multiple_docs_sites": "All documentation sites get deleted.",
+  "description_single_git_link": "Deleting this will remove all {removedEntities}, disconnect the remote repository, and deactivate any associated mock servers. All documentation sites get deleted.",
+  "description_single_git_link_reusable": "Deleting this will remove all {removedEntities}, disconnect the remote repository. Mock servers get deactivated, and linked requests will no longer follow updates from the original. All documentation sites get deleted.",
+  "failed_load": "Failed to load details",
+  "delete_permanently": "Delete Permanently",
+  "delete": "Delete",
+  "deleting": "Deleting...",
+  "retry": "Retry",
+  "confirmation_message": "To confirm, type \"{confirmation_word}\" in the box below",
+  "placeholder_text": "Type delete",
+  "confirmation_word": "delete",
+  "delete_extinsible_collection": "Are you sure you want to delete this collection?",
+  "could_not_restore_message": "This collection cannot be restored from the trash.",
+  "delete_confirmation_text": "Are you sure you want to delete <1>{name}</1>?",
+  "delete_pinned_doc_confirmation": "This document is pinned to the workspace overview. Are you sure you want to delete it?",
+  "this_cant_be_undone": "This can’t be undone.",
+  "delete_entity_question": "Delete {entity}?",
+  "delete_elements_question": "Delete Elements?",
+  "delete_multi_selected_elements_question": "Delete \"{entity}\"?",
+  "cancel_button": "Cancel",
+  "delete_button": "Delete",
+  "delete_confirm": "Delete Collection",
+  "delete_folder": {
+   "heading": "Delete \"{folderName}\"?",
+   "folder_deleted_successfully": "{name} Folder was deleted successfully.",
+   "reusable_reference_warning": "Deleting this folder will remove all its contents. Linked requests will no longer follow updates if an original is deleted."
+  },
+  "delete_request": {
+   "heading": "Delete \"{requestName}\"?",
+   "request_deleted_successfully": "{name} was deleted successfully.",
+   "reusable_reference_warning": "Deleting this request will stop linked requests from following updates."
+  },
+  "could_not_calculate_collection_size": {
+   "single_collection_selected": "Couldn’t calculate the collection’s size. It can’t be restored if happens to be greater than 30 MB.",
+   "multiple_collection_selected": "Couldn’t calculate the collection sizes. Any collection greater than 30 MB can’t be restored from trash."
+  },
+  "calculating_collection_size": {
+   "single_collection_selected": "Checking if this collection is recoverable...",
+   "multiple_collection_selected": "Checking if selected collections are recoverable..."
+  },
+  "cannot_restore_collections": {
+   "single_collection_selected": "Export this before deleting, as it cannot be restored from the trash.",
+   "multiple_collection_selected": "Some collections may not be restorable from Trash. Export them if needed.",
+   "multiple_non_restorable_non_exportable_collections": "Deleted collections cannot be restored from trash."
+  },
+  "can_restore_collections": {
+   "single_collection_selected": "This collection can be restored from the trash.",
+   "multiple_collection_selected": "Deleted collections can be restored from trash."
+  },
+  "bulk_delete_kind": {
+   "collection": "{count, plural, one {# Collection} other {# Collections}}",
+   "folder": "{count, plural, one {# Folder} other {# Folders}}",
+   "request": "{count, plural, one {# Request} other {# Requests}}",
+   "example": "{count, plural, one {# Example} other {# Examples}}"
+  }
+ },
+ "dependency": {
+  "label": "dependency"
+ },
+ "import": {
+  "button_label": "Import",
+  "tooltip": "Drop files anywhere to import",
+  "sidebar_header_tooltip": "Import resources"
+ },
+ "partner_workspace_banner": {
+  "default": "Partners can access this workspace",
+  "multi_partner_workspace": "Shared with partners from multiple organizations"
+ },
+ "tidy_workspace_banner": {
+  "archive": {
+   "heading": "Tidy up?",
+   "description": "<0><0>Archive</0></0> <1>this workspace, it's inactive for over 6 months.</1>",
+   "toast": {
+    "success_description": "Workspace archived",
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to archive workspace"
+   }
+  },
+  "restore": {
+   "heading": "This workspace is archived",
+   "description": "<0>It's removed from view. Monitors are turned off.</0> <1><0>Restore</0></1>",
+   "toast": {
+    "success_description": "Workspace restored",
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to restore workspace"
+   }
+  }
+ },
+ "share_response": {
+  "copy_response_link_aria_label": "Copy response link"
+ },
+ "pending_invites": {
+  "invite_as": "(Invited as {role})",
+  "resend_cta": "Resend invite",
+  "remove_cta": "Revoke",
+  "more_actions_aria": "More actions for the invite sent to {email}",
+  "load_more": "Loading more invites…"
+ }
+}

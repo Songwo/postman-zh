@@ -1,0 +1,30 @@
+{
+ "template_actions": {
+  "all": "All templates",
+  "search": "Search",
+  "recommended": "Recommended"
+ },
+ "suggest_templates_button": "Suggest templates",
+ "view_all_templates": "View all",
+ "search_results_heading": "{results, plural, =1 {# result for } other {# results for }} {filter}",
+ "suggestion_modal": {
+  "heading": "What templates would you like to see?",
+  "text": "Your inputs will help us create more relevant templates for you.",
+  "placeholder": "e.g. load testing and issue tracking API",
+  "validation_message": "You've crossed the character limit. Try removing some text.",
+  "back_button": "Back",
+  "submit_button": "Submit",
+  "toast": {
+   "success": {
+    "desc": "Thank you for your suggestions."
+   },
+   "rate_limited": {
+    "title": "We love your enthusiasm but...",
+    "desc": "We are still processing your previous suggestions. You can try again in a few minutes."
+   },
+   "error": {
+    "desc": "Something went wrong. Please try again later."
+   }
+  }
+ }
+}

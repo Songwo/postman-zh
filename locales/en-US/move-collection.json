@@ -1,0 +1,10 @@
+{
+ "cancel_button": "Cancel",
+ "select_all": "Select All",
+ "select_collection_to_move_text": "Select collections you want to move",
+ "title": "Move Collections",
+ "move_collection_button": "Move collections",
+ "select_collection_to_move": "Select collections to move",
+ "move_to_new_team": "Move to new team workspace",
+ "confirm_button": "Confirm"
+}

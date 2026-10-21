@@ -1,0 +1,221 @@
+{
+ "agent_mode": {
+  "loading": "Loading Agent Mode…",
+  "placeholder": "Ask about your API architecture — dependencies, blast radius, ownership, who calls what…",
+  "hide_right_sidebar": "Hide right sidebar",
+  "show_right_sidebar": "Show right sidebar",
+  "load_error_title": "Agent Mode failed to load",
+  "load_error_description": "Something went wrong loading Agent Mode. You can try again without leaving this page.",
+  "load_error_retry": "Try again"
+ },
+ "query_tools": {
+  "links_line": "Query from your tools",
+  "cli_label": "CLI",
+  "mcp_label": "MCP"
+ },
+ "connectors": {
+  "status": {
+   "active_jobs": "{count, plural, one {# indexing job running} other {# indexing jobs running}}",
+   "configured_with_sources": "{count, plural, one {# source configured} other {# sources configured}}",
+   "connected": "Connected",
+   "connected_with_sources": "Connected · {count, plural, one {# source configured} other {# sources configured}}",
+   "not_connected": "Not connected",
+   "not_connected_with_team_sources": "Not connected · Sources configured by teammates"
+  },
+  "postman": {
+   "connect_aria_label": "Connect Postman to your agent context graph",
+   "description": "Postman Workspaces, Collections, and Environments",
+   "title": "Postman"
+  },
+  "github": {
+   "auth_method_label": "GitHub authentication method",
+   "authentication_checking": "Checking your GitHub connection...",
+   "authorization_failed": "Authorization failed. Please try again.",
+   "authorization_timeout": "Authorization timed out. Please check your popup blocker settings and try again.",
+   "authenticate_continue": "Authenticate & continue",
+   "authenticate_description": "Authorize Postman to read your repositories. We only request read access to code and metadata.",
+   "authenticate_title": "Authenticate GitHub",
+   "connect_aria_label": "Connect GitHub to your agent context graph",
+   "description": "Services, endpoints & dependency graph",
+   "modal_subtitle": "Bring your code & dependencies into the Context Graph",
+   "modal_title": "Connect GitHub",
+   "oauth_description": "Sign in to GitHub and grant access - recommended",
+   "oauth_title": "Authorize with OAuth",
+   "ingest_continue": "Index selected repositories",
+   "ingestion_failed": "Failed to start indexing. Please try again.",
+   "configure_postman_app": "Configure Postman app on GitHub",
+   "install_postman_app": "Install Postman App on GitHub",
+   "no_organizations_description": "Install Postman app on your GitHub account to proceed.",
+   "no_organizations_title": "No GitHub organizations found",
+   "no_repositories": "No repositories were found for this organization.",
+   "repositories_error": "Failed to load repositories. Please try again.",
+   "repositories_loading": "Loading repositories...",
+   "repositories_count": "{count, plural, one {# repository found} other {# repositories found}}",
+   "repo_listing": {
+    "description": "Choose repositories from GitHub to index into the Context Graph.",
+    "no_search_results": "No repositories match your search.",
+    "organization": "Organization",
+    "organization_placeholder": "Select organization...",
+    "repositories": "Repositories",
+    "repositories_availability_hint": "Only shows repositories that are not archived.",
+    "repository_meta": "Repository",
+    "search_placeholder": "Search repositories...",
+    "select_all_shown": "Select all shown",
+    "shown_selected": "{shownCount} shown · {selectedCount} selected",
+    "title": "Choose GitHub Repository"
+   },
+   "repository_label": "GitHub repository",
+   "repository_meta": "Repository metadata and dependencies",
+   "select_repositories_description": "Choose repositories from {orgName} to index into the Context Graph.",
+   "select_repositories_title": "Select repositories",
+   "steps": {
+    "authenticate": "Authenticate",
+    "ingest": "Index",
+    "select_repositories": "Select repositories"
+   },
+   "steps_label": "GitHub connection steps",
+   "token_description": "Paste a token with repo read scope",
+   "token_title": "Add a personal access token",
+   "title": "GitHub"
+  },
+  "new_relic": {
+   "add_aria_label": "Add New Relic to your agent context graph",
+   "description": "Telemetry nodes",
+   "title": "New Relic"
+  }
+ },
+ "connections": {
+  "description": "Connect sources to enrich your graph. Re-indexing has a cost, so set how often each source refreshes its data.",
+  "heading": "Connections"
+ },
+ "data_sources": {
+  "base_source_count": "{count, plural, one {# workspace indexed by default} other {# workspaces indexed by default}}",
+  "base_source_default_status": "Base source enabled by default",
+  "base_source_description": "Postman is indexed by default. Your workspaces seed the Context Graph before you connect external sources.",
+  "base_source_title": "Base source - the foundation of your graph",
+  "description": "These sources feed your Context Graph. Postman is indexed by default; connect more to enrich it, and set how often each source re-indexes. Connecting and disconnecting is managed in Integrations -> Connections.",
+  "heading": "Data sources",
+  "section_title": "Connected sources - enrich your graph"
+ },
+ "landing": {
+  "cta": "Start - index Postman data",
+  "description": "Index your Postman data to map your workspaces into services, endpoints and dependencies.",
+  "ingestion_error_description": "We couldn't start Postman indexing. Please try again.",
+  "ingestion_error_title": "Postman indexing failed",
+  "ingestion_success_description": "Your Postman workspace indexing has started.",
+  "ingestion_success_title": "Postman indexing started",
+  "secondary_description": "Next, connect GitHub and New Relic to enrich your graph.",
+  "title": "Start your Context Graph"
+ },
+ "sources": {
+  "jira": {
+   "connect_aria_label": "Connect Jira to your agent context graph",
+   "description": "Teams, owners & maturity phases",
+   "title": "Jira"
+  },
+  "kubernetes": {
+   "connect_aria_label": "Connect Kubernetes to your agent context graph",
+   "description": "Clusters, deployments & namespaces",
+   "title": "Kubernetes"
+  },
+  "section_title": "Start building your graph",
+  "workspace_count": "847 Postman workspaces",
+  "workspace_description": "Your graph shows workspaces today. Connect your tools and watch the knowledge graph come alive."
+ },
+ "actions": {
+  "add": "Add",
+  "cancel": "Cancel",
+  "connect": "Connect",
+  "connect_with_prefix": "+ Connect",
+  "graph": "Graph",
+  "ingest": "Index",
+  "manage_data_sources": "Manage Data Sources",
+  "manage_data_sources_with_count": "Manage Data Sources ({count})"
+ },
+ "enrichment": {
+  "section_title": "Enrich further"
+ },
+ "graph": {
+  "active_jobs_banner": "Graph is being updated, there are {count} indexing jobs running",
+  "aria_label": "Agent context graph preview",
+  "breadcrumb_service_fallback": "Service",
+  "breadcrumb_context_graph": "Context Graph",
+  "empty_hint": "Graph empty - ingest Postman to start",
+  "error_description": "Please try again after reconnecting your data source.",
+  "error_title": "We couldn't load the dependency graph.",
+  "graph_ready_hint": "Graph ready - explore your context graph",
+  "info_collapse_button_label": "Collapse graph info",
+  "info_collapsed_label": "Graph info",
+  "info_expand_button_label": "Expand graph info",
+  "legend_collapse_button_label": "Collapse graph legend",
+  "legend_expand_button_label": "Expand graph legend",
+  "legend_nodes": "Nodes",
+  "legend_relationships": "Relationships",
+  "legend_title": "Graph legend",
+  "legend_toggle_hint": "Click a type to show or hide it",
+  "loading": "Loading your dependency graph...",
+  "query_connect_more": "Connect more",
+  "query_helper": "Connect GitHub, New Relic and more to add services, deployments and live telemetry for deeper answers from the agent.",
+  "query_subtitle": "This graph is for visualisation purposes only, query the context graph for accurate feedback.",
+  "tooltip_stats": {
+   "apis": "APIs",
+   "database_schemas": "Database Schemas",
+   "deployments": "Deployments",
+   "endpoints": "Endpoints",
+   "external_services": "External Services",
+   "message_schemas": "Message Schemas",
+   "resources": "Resources",
+   "teams": "Teams",
+   "telemetry_configs": "Telemetry Configs",
+   "topics": "Topics"
+  }
+ },
+ "highlights": {
+  "heading": "Highlights",
+  "description": "Surfaced from your graph. Index more sources to unlock deeper ones.",
+  "show_on_graph": "Show on graph",
+  "collapse_button_label": "Collapse highlights",
+  "expand_button_label": "Expand highlights",
+  "cards": {
+   "unused_endpoints": {
+    "title": "Unused endpoints",
+    "description": "38 endpoints have no request history in the last 90 days - candidates for cleanup or missing coverage."
+   },
+   "ownership_gaps": {
+    "title": "Ownership gaps",
+    "description": "12 APIs have no assigned owner or contributor across your workspaces."
+   },
+   "single_points_of_failure": {
+    "title": "Single points of failure",
+    "description": "4 services are relied on by many others with no documented alternative."
+   },
+   "blast_radius": {
+    "title": "Blast radius",
+    "description": "Index GitHub to trace service-to-service dependencies and understand what breaks when one service changes."
+   }
+  }
+ },
+ "navigation": {
+  "aria_label": "Agent context navigation"
+ },
+ "page": {
+  "heading": "Agent context",
+  "title": "Agent Context"
+ },
+ "panel": {
+  "aria_label": "Agent context sources"
+ },
+ "tabs": {
+  "aria_label": "Agent context views",
+  "data_sources": "Data sources",
+  "graph": "Graph"
+ },
+ "summary": {
+  "apis": "APIs",
+  "connected_sources": "{count, plural, one {# source connected} other {# sources connected}}",
+  "endpoints": "endpoints",
+  "external_deps": "external deps",
+  "no_sources_connected": "No sources connected",
+  "workspaces": "workspaces"
+ }
+}

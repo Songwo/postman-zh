@@ -1,0 +1,134 @@
+{
+ "approved_access_request": {
+  "title": "Request acknowledged",
+  "message": "Looks like someone has already approved this request."
+ },
+ "rejected_access_request": {
+  "title": "Request acknowledged",
+  "message": "Looks like someone has already rejected this request."
+ },
+ "expired_access_request": {
+  "title": "Request expired",
+  "message": "Access requests expire after 30 days. You can still grant access by sharing the element with them."
+ },
+ "model_does_not_exist": {
+  "title": "Unable to respond to request",
+  "message": "This request couldn't be completed because the element was deleted."
+ },
+ "model_not_found_in_workspace": {
+  "title": "Unable to send request",
+  "message": "This request couldn't be completed because the element was deleted or moved."
+ },
+ "partner_editor_slots_full": {
+  "title": "Couldn't approve request",
+  "message": "No paid slots available. We've notified Partner Managers to add more slots."
+ },
+ "creator_not_part_of_team": {
+  "title": "Couldn't find the requester",
+  "message": "They may have left your team or deleted their Postman account."
+ },
+ "approver_not_part_of_team": {
+  "title": "Unable to approve request",
+  "message": "Whoops! It looks like you cannot approve this request."
+ },
+ "invalid_approver_for_request": {
+  "title": "Unable to approve request",
+  "message": "Whoops! It looks like you cannot approve this request."
+ },
+ "not_part_of_any_team": {
+  "title": "Unable to approve request",
+  "message": "Whoops! It looks like you cannot approve this request."
+ },
+ "team_member_slots_full": {
+  "title": "Couldn't approve request",
+  "message": "",
+  "create": {
+   "title": "Couldn't send request",
+   "message": "No member slots available. Ask a team admin to add more, then try again."
+  }
+ },
+ "update_roles_permission_denied": {
+  "title": "You need access",
+  "message": "You need to be an Editor to manage roles on this element."
+ },
+ "auto_approval_disabled": {
+  "title": "You don't have permission to approve",
+  "message": "Please contact a Team Admin to convert this Guest to a Developer."
+ },
+ "failed_access_request": {
+  "title": "Request failed",
+  "message": "The request you are trying to approve has failed."
+ },
+ "user_already_has_requested_role": {
+  "title": "You already have this access",
+  "message": "Create a new request if you'd like a different level of access",
+  "approve": {
+   "title": "Request already fulfilled",
+   "message": "This user already has the requested role."
+  }
+ },
+ "user_already_has_access": {
+  "title": "You already have access",
+  "message": "You already have access to this resource.",
+  "approve": {
+   "title": "Request already fulfilled",
+   "message": "This user already has access to this resource."
+  }
+ },
+ "instance_not_found_error": {
+  "title": "Unable to create request",
+  "message": "This request couldn't be completed because the entity was deleted."
+ },
+ "user_already_invited_as_team_member": {
+  "title": "Couldn't approve request",
+  "message": "This user has already been invited as a team member. Remove the team member invite and try again."
+ },
+ "user_already_part_of_team": {
+  "title": "Couldn't approve request",
+  "message": "You cannot invite this user as a partner because they are already part of your team."
+ },
+ "user_already_invited_as_partner": {
+  "title": "Couldn't approve request",
+  "message": "This user has already been invited as a partner. Remove the partner invite and try again."
+ },
+ "user_already_partner": {
+  "title": "Couldn't approve request",
+  "message": "You cannot invite this user as a team member because they are already a partner."
+ },
+ "improper_email_ids": {
+  "title": "Couldn't approve request",
+  "message": "Improper Email IDs provided while sending invites."
+ },
+ "max_pending_invites_exceeded": {
+  "title": "Couldn't approve request",
+  "message": "You cannot have more than 100 pending invites"
+ },
+ "default_approve": {
+  "title": "Couldn't approve request",
+  "message": "Just a faulty wire. Please try again."
+ },
+ "default_deny": {
+  "title": "Couldn't deny request",
+  "message": "Just a faulty wire. Please try again."
+ },
+ "default_create": {
+  "title": "Unable to create request",
+  "message": "Something went wrong"
+ },
+ "default_revoke": {
+  "title": "Couldn't remove access",
+  "message": "Just a faulty wire. Please try again."
+ },
+ "invalidated_request": {
+  "title": "Couldn't respond to request",
+  "message": "This request is no longer valid."
+ },
+ "request_already_exists": {
+  "title": "Request already exists",
+  "message": "You have already submitted this request."
+ },
+ "unprocessable_entity": {
+  "title": "Couldn't send request",
+  "message": "Users not belonging to the team cannot request access"
+ }
+}

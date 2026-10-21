@@ -1,0 +1,21 @@
+{
+ "thinking_block": {
+  "thinking": {
+   "label": "Thinking",
+   "with_seconds_label": "Thinking... {seconds}s",
+   "with_minutes_label": "Thinking... {minutes}m",
+   "with_minutes_seconds_label": "Thinking... {minutes}m {seconds}s",
+   "with_hours_label": "Thinking... {hours}h",
+   "with_hours_minutes_label": "Thinking... {hours}h {minutes}m"
+  },
+  "thought": {
+   "label": "Thought",
+   "for_a_moment_label": "Thought for a moment",
+   "for_seconds_label": "Thought for {count, plural, one {# second} other {# seconds}}",
+   "for_minutes_label": "Thought for {count, plural, one {# minute} other {# minutes}}",
+   "for_minutes_seconds_label": "Thought for {minutes, plural, one {# minute} other {# minutes}} {seconds, plural, one {# second} other {# seconds}}",
+   "for_hours_label": "Thought for {count, plural, one {# hour} other {# hours}}",
+   "for_hours_minutes_label": "Thought for {hours, plural, one {# hour} other {# hours}} {minutes, plural, one {# minute} other {# minutes}}"
+  }
+ }
+}

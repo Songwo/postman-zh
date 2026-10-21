@@ -1,0 +1,94 @@
+{
+ "modal": {
+  "archive": {
+   "title": "Archive workspace?",
+   "description": "Archiving removes the workspace from view and turns off monitors, but you can restore it anytime.",
+   "primary_action_text": "Archive",
+   "secondary_action_text": "Cancel",
+   "checkbox_label": "Don’t show this again"
+  },
+  "bulk_archive": {
+   "title": "Archive workspaces?",
+   "description": "Archiving removes the workspaces from view and turns off monitors, but you can restore them anytime.",
+   "primary_action_text": "Archive",
+   "secondary_action_text": "Cancel",
+   "checkbox_label": "Don’t show this again"
+  },
+  "bulk_restore": {
+   "title": "Restore workspaces?",
+   "description": "Restoring returns workspaces to view. Monitors must be manually started.",
+   "primary_action_text": "Restore",
+   "secondary_action_text": "Cancel",
+   "checkbox_label": "Don’t show this again"
+  },
+  "delete": {
+   "title": "Delete workspace?",
+   "description": "<0>Everything in</0> <1><0>{workspaceName}</0></1> <2>will be permanently deleted.</2>",
+   "confirmation_input_label": "Enter \"Delete\" to confirm",
+   "confirmation_key": "delete",
+   "primary_action_text": "Delete workspace",
+   "secondary_action_text": "Cancel",
+   "checkbox_label": "Don’t show this again"
+  },
+  "bulk_delete": {
+   "title": "Delete workspaces?",
+   "description": "Everything in the selected workspaces will be permanently deleted.",
+   "confirmation_input_label": "Enter \"Delete\" to confirm",
+   "confirmation_key": "delete",
+   "primary_action_text": "Delete workspaces",
+   "secondary_action_text": "Cancel"
+  }
+ },
+ "table": {
+  "column_headers": {
+   "workspace_name": "Name",
+   "created_by": "Created by",
+   "type": "Type",
+   "access": "Access",
+   "last_updated": "Last updated",
+   "actions": "Actions"
+  }
+ },
+ "filters": {
+  "filter_by_visibility_dropdown": {
+   "placeholder": "Access type",
+   "label": "Filter by visibility",
+   "options": {
+    "all": {
+     "value": "All workspaces"
+    },
+    "personal": {
+     "value": "Personal",
+     "description": "Only the creator",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "team": {
+     "value": "Team",
+     "description_team_user": "Everyone in {teamName} team",
+     "description_non_team_user": "Everyone from your team",
+     "workspace_type": "Internal",
+     "workspace_access": "Everyone in your team"
+    },
+    "private": {
+     "value": "Private",
+     "description": "Only invited team members",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "partner": {
+     "value": "Partner",
+     "description": "Only invited members & partners",
+     "workspace_type": "Partner",
+     "workspace_access": "Only invited partners"
+    },
+    "public": {
+     "value": "Public",
+     "description": "Anyone on the internet",
+     "workspace_type": "Public",
+     "workspace_access": "Anyone on the internet"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,117 @@
+{
+  "modal_title": "使用资源",
+  "search": {
+    "search_placeholder": "搜索资源",
+    "scope_labels": {
+      "privateAPINetwork": "私有网络",
+      "team": "团队",
+      "public": "公共网络"
+    },
+    "entity_labels": {
+      "collections": "集合",
+      "environments": "环境",
+      "specs": "规范",
+      "sdks": "SDK",
+      "flows": "流程",
+      "mocks": "模拟"
+    },
+    "dependencies": {
+      "label": "依赖项",
+      "search_filter_aria_label": "筛选依赖项"
+    },
+    "filters": {
+      "scope_group_aria_label": "按范围筛选",
+      "scope_button_aria_label": "按{scope}筛选",
+      "type": {
+        "label": "类型",
+        "inline_label_single": "类型：{name}",
+        "inline_label_count": "类型：已选 {count} 个",
+        "placeholder": "按类型筛选",
+        "search_aria_label": "按类型筛选"
+      },
+      "in": {
+        "label": "工作区",
+        "inline_label_count": "工作区（{count}）",
+        "placeholder": "按工作区筛选",
+        "search_aria_label": "按工作区筛选",
+        "search_input_placeholder": "搜索工作区",
+        "empty_state": "未找到工作区",
+        "loading": "正在搜索…"
+      }
+    }
+  },
+  "resources": {
+    "shared": {
+      "resizer_label": "调整分区大小"
+    },
+    "tab_labels": {
+      "resources": "资源",
+      "import": "导入"
+    },
+    "add": {
+      "error_message": "搜索时出错。",
+      "load_more_error_message": "无法加载更多结果。",
+      "load_more_retry": "重试",
+      "no_results": "未找到结果。",
+      "verified_publisher": "已认证发布者",
+      "fork_label_with_username": "{userName} 的复刻",
+      "fork_label_without_username": "我的复刻",
+      "modal_fork_button": "复刻",
+      "modal_add_dependency_button_with_count": "{count, plural, =0 {添加依赖项} other {添加依赖项（#）}}",
+      "dependency_added_toast_title": "{count, plural, =1 {已添加依赖项} other {已添加依赖项}}",
+      "dependency_added_toast_description": "{count, plural, =1 {{name} 已添加到此工作区} other {# 个依赖项已添加到此工作区}}",
+      "error_banner": {
+        "dependency": {
+          "all_failed_title": "无法添加依赖项。",
+          "partial_failed_title": "无法添加以下依赖项。"
+        },
+        "fork": {
+          "all_failed_title": "无法创建复刻。",
+          "partial_failed_title": "无法创建以下复刻。"
+        },
+        "try_again": "重试",
+        "more_count": "还有 {count} 个"
+      }
+    },
+    "manage": {
+      "title_label": "在此工作区中",
+      "delete_button_aria_label": "删除",
+      "dependency": {
+        "update": {
+          "button_label": "更新",
+          "bulk_button_label": "全部更新",
+          "disabled_bulk_update_tooltip": "没有可更新的依赖项。",
+          "badge": {
+            "actionable_label": "有可用更新",
+            "inprogress_label": "正在更新...",
+            "completed_label": "已更新"
+          }
+        },
+        "install": {
+          "button_label": "安装",
+          "disabled_bulk_install_tooltip": "没有可安装的依赖项。",
+          "badge": {
+            "actionable_label": "未安装",
+            "inprogress_label": "正在安装...",
+            "completed_label": "已安装"
+          }
+        }
+      },
+      "fork": {
+        "update": {
+          "button_label": "拉取更改",
+          "bulk_button_label": "拉取所有更改",
+          "badge": {
+            "actionable_label": "有可用更改",
+            "inprogress_label": "正在拉取...",
+            "completed_label": "已拉取"
+          }
+        }
+      }
+    }
+  },
+  "permissions": {
+    "no_permission_tooltip": "你没有管理此工作区中资源的权限。",
+    "local_only_tooltip": "你只能在本地模式下管理资源。"
+  }
+}

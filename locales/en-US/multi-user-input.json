@@ -1,0 +1,45 @@
+{
+ "field": {
+  "placeholder": {
+   "empty": "Type or paste emails",
+   "with_recipients": "Add another email"
+  },
+  "completion": {
+   "key_label": "Tab",
+   "button_label": "Add {email}",
+   "screen_reader_hint": "Press Tab to add {email}."
+  }
+ },
+ "pill": {
+  "remove_button_label": "Remove {email}",
+  "edit_button_label": "Edit {email}",
+  "sent_label": "{email}, sent"
+ },
+ "issue": {
+  "too_long": "This address is too long",
+  "incomplete": "Add the full email, like {example}",
+  "invalid_local_part": "Check the part before the @",
+  "invalid_domain": "Check the domain"
+ },
+ "message": {
+  "over_cap": "You can send up to {max} at a time.",
+  "self": "That's your own address.",
+  "duplicate": "{email} is already added.",
+  "add_at_least_one": "Add at least one email.",
+  "fix_to_send": "{count, plural, one {Fix or remove # address to send.} other {Fix or remove # addresses to send.}}",
+  "needs_fixing": "{count, plural, one {# needs fixing.} other {# need fixing.}}",
+  "paste": {
+   "none_found": "No email addresses found in what you pasted.",
+   "added": "Added {count}.",
+   "added_of": "Added {added} of {total}.",
+   "skipped_duplicates": "{count, plural, one {Skipped # duplicate.} other {Skipped # duplicates.}}",
+   "skipped_self": "Skipped your own address.",
+   "need_fixing": "{count, plural, one {# needs fixing.} other {# need fixing.}}"
+  }
+ },
+ "announcement": {
+  "added": "{email} added. {count, plural, one {# recipient.} other {# recipients.}}",
+  "removed": "Removed {email}.",
+  "selected": "{email} selected. Press Backspace again to remove it."
+ }
+}

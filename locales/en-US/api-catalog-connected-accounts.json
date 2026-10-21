@@ -1,0 +1,121 @@
+{
+ "breadcrumb": {
+  "service_discovery": "Service Discovery",
+  "connectors": "Connectors"
+ },
+ "page": {
+  "description": "Connect accounts once and discover services continuously"
+ },
+ "actions": {
+  "connect_account_button": "Connect Account",
+  "discover_services_button": "Discover Services",
+  "disconnect_account_button": "Disconnect Account",
+  "retry_button": "Retry"
+ },
+ "toasts": {
+  "disconnect_success_title": "Account disconnected",
+  "disconnect_error_title": "Unable to disconnect account",
+  "disconnect_error_description": "Please try again."
+ },
+ "table": {
+  "account_header": "Account",
+  "authentication_header": "Authentication",
+  "discovered_services_header": "Discovered services",
+  "integrated_services_header": "Integrated Services",
+  "last_used_header": "Last used",
+  "last_used_empty": "-"
+ },
+ "summary": "{accountCount, plural, one {# account} other {# accounts}} · {serviceCount, plural, one {# discovered service} other {# discovered services}}",
+ "errors": {
+  "load_accounts_title": "Unable to load accounts",
+  "load_accounts_description": "There was an issue fetching connected accounts. Please try again.",
+  "no_connection_description": "No connection is available for this connector yet."
+ },
+ "empty_state": {
+  "title": "No {connectorName} accounts connected",
+  "description": "Connect a {connectorName} account to start discovering services across your infrastructure."
+ },
+ "multi_account": {
+  "accounts_heading": "Accounts",
+  "select_all_button": "Select All",
+  "deselect_all_button": "Deselect All",
+  "selection_count": "{selected, plural, one {# of {total} selected} other {# of {total} selected}}",
+  "accounts_empty": "No accounts available for this connection.",
+  "accounts_load_error": "Could not load accounts for this connection.",
+  "select_account_for_regions": "Select an account to see available regions.",
+  "select_account_for_services": "Select an account to see available services.",
+  "select_account_for_options": "Select an account to see available options.",
+  "regions_load_error": "Could not load regions. Try again.",
+  "services_load_error": "Could not load services. Try again.",
+  "scopes_load_error": "Could not load discovery scopes. Try again.",
+  "continue_tooltip_account_region_service": "Pick at least one account, region, and service to continue",
+  "continue_tooltip_account_service": "Pick at least one account and one service to continue",
+  "continue_tooltip_account_scope": "Pick at least one account and one option in each scope to continue",
+  "aws": {
+   "step_2_title": "Accounts, regions & services",
+   "step_2_subtitle": "What to scan"
+  },
+  "azure": {
+   "step_2_title": "Accounts & services",
+   "step_2_subtitle": "What to scan"
+  },
+  "gcp": {
+   "step_2_title": "Accounts & services",
+   "step_2_subtitle": "What to scan"
+  },
+  "ibm": {
+   "step_2_title": "Accounts & discovery scope",
+   "step_2_subtitle": "Select resources"
+  }
+ },
+ "providers": {
+  "aws": {
+   "page_title": "Connected AWS Accounts",
+   "breadcrumb_label": "AWS"
+  },
+  "gcp": {
+   "page_title": "Connected Google Cloud Accounts",
+   "breadcrumb_label": "Google Cloud"
+  },
+  "azure": {
+   "page_title": "Connected Azure Accounts",
+   "breadcrumb_label": "Azure"
+  },
+  "ibm": {
+   "page_title": "Connected IBM API Connect Accounts",
+   "breadcrumb_label": "IBM API Connect"
+  },
+  "github": {
+   "page_title": "Connected GitHub Accounts",
+   "breadcrumb_label": "GitHub"
+  },
+  "gitlab": {
+   "page_title": "Connected GitLab Accounts",
+   "breadcrumb_label": "GitLab"
+  },
+  "bitbucket": {
+   "page_title": "Connected Bitbucket Accounts",
+   "breadcrumb_label": "Bitbucket"
+  },
+  "insights": {
+   "page_title": "Connected Postman Insights Accounts",
+   "breadcrumb_label": "Postman Insights"
+  },
+  "cluster-watcher": {
+   "page_title": "Connected Cluster Watcher Accounts",
+   "breadcrumb_label": "Cluster Watcher"
+  },
+  "workspace": {
+   "page_title": "Connected Postman Workspace Accounts",
+   "breadcrumb_label": "Postman Workspace"
+  },
+  "public-api": {
+   "page_title": "Connected Public API Accounts",
+   "breadcrumb_label": "Public API"
+  },
+  "api-gateway": {
+   "page_title": "Connected API Gateway Accounts",
+   "breadcrumb_label": "API Gateway"
+  }
+ }
+}

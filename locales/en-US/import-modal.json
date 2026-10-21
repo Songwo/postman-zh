@@ -1,0 +1,117 @@
+{
+ "modal_title": "Use Resources",
+ "search": {
+  "search_placeholder": "Search resources",
+  "scope_labels": {
+   "privateAPINetwork": "Private Network",
+   "team": "Team",
+   "public": "Public Network"
+  },
+  "entity_labels": {
+   "collections": "Collections",
+   "environments": "Environments",
+   "specs": "Specs",
+   "sdks": "SDKs",
+   "flows": "Flows",
+   "mocks": "Mocks"
+  },
+  "dependencies": {
+   "label": "Dependencies",
+   "search_filter_aria_label": "Filter dependencies"
+  },
+  "filters": {
+   "scope_group_aria_label": "Filter by scope",
+   "scope_button_aria_label": "Filter by {scope}",
+   "type": {
+    "label": "Type",
+    "inline_label_single": "Type: {name}",
+    "inline_label_count": "Type: {count} selected",
+    "placeholder": "Filter by type",
+    "search_aria_label": "Filter by type"
+   },
+   "in": {
+    "label": "Workspace",
+    "inline_label_count": "Workspace ({count})",
+    "placeholder": "Filter by workspace",
+    "search_aria_label": "Filter by workspace",
+    "search_input_placeholder": "Search workspaces",
+    "empty_state": "No workspaces found",
+    "loading": "Searching…"
+   }
+  }
+ },
+ "resources": {
+  "shared": {
+   "resizer_label": "Resize section"
+  },
+  "tab_labels": {
+   "resources": "Resources",
+   "import": "Import"
+  },
+  "add": {
+   "error_message": "An error occurred while searching.",
+   "load_more_error_message": "Couldn't load more results.",
+   "load_more_retry": "Retry",
+   "no_results": "No results found.",
+   "verified_publisher": "Verified Publisher",
+   "fork_label_with_username": "{userName}'s fork",
+   "fork_label_without_username": "My Fork",
+   "modal_fork_button": "Fork",
+   "modal_add_dependency_button_with_count": "{count, plural, =0 {Add Dependency} other {Add Dependency (#)}}",
+   "dependency_added_toast_title": "{count, plural, =1 {Dependency added} other {Dependencies added}}",
+   "dependency_added_toast_description": "{count, plural, =1 {{name} was added to this workspace} other {# dependencies were added to this workspace}}",
+   "error_banner": {
+    "dependency": {
+     "all_failed_title": "Couldn't add dependencies.",
+     "partial_failed_title": "Couldn't add the following dependencies."
+    },
+    "fork": {
+     "all_failed_title": "Couldn't create forks.",
+     "partial_failed_title": "Couldn't create the following forks."
+    },
+    "try_again": "Try again",
+    "more_count": "+{count} more"
+   }
+  },
+  "manage": {
+   "title_label": "In this Workspace",
+   "delete_button_aria_label": "Delete",
+   "dependency": {
+    "update": {
+     "button_label": "Update",
+     "bulk_button_label": "Update All",
+     "disabled_bulk_update_tooltip": "No dependencies available to update.",
+     "badge": {
+      "actionable_label": "Update Available",
+      "inprogress_label": "Updating...",
+      "completed_label": "Updated"
+     }
+    },
+    "install": {
+     "button_label": "Install",
+     "disabled_bulk_install_tooltip": "No dependencies available to install.",
+     "badge": {
+      "actionable_label": "Not installed",
+      "inprogress_label": "Installing...",
+      "completed_label": "Installed"
+     }
+    }
+   },
+   "fork": {
+    "update": {
+     "button_label": "Pull changes",
+     "bulk_button_label": "Pull all changes",
+     "badge": {
+      "actionable_label": "Changes available",
+      "inprogress_label": "Pulling...",
+      "completed_label": "Pulled"
+     }
+    }
+   }
+  }
+ },
+ "permissions": {
+  "no_permission_tooltip": "You don't have permission to manage resources in this workspace.",
+  "local_only_tooltip": "You can only manage resources in Local Mode."
+ }
+}

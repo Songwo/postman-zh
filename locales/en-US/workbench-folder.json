@@ -1,0 +1,118 @@
+{
+ "load_error": {
+  "title": "Editor failed to load",
+  "message": "Our team has been notified. If the problem persists, please contact <1><0><0>Postman Support</0></0></1>."
+ },
+ "editor": {
+  "content_pane": {
+   "header": {
+    "breadcrumb": {
+     "placeholder": "Folder Name",
+     "meta_icon": {
+      "lock": {
+       "title": "Read only"
+      }
+     }
+    },
+    "actions": {
+     "run": {
+      "text": "Run",
+      "tooltip": {
+       "primary_message": "Folders can't be run in public workspaces right now – though we're working on that for a future release!",
+       "secondary_message": "Fork this collection to your own workspace to run it.",
+       "primary_action": "Create a fork",
+       "readonly_user_message": "You do not have access to perform this action."
+      }
+     },
+     "save": {
+      "text": {
+       "save": "Save",
+       "saving": "Saving..."
+      },
+      "tooltip": {
+       "title": "Create a fork to save changes",
+       "primary_message": "You don't have permission to make changes to this collection. Fork the collection to your workspace to save changes.",
+       "primary_action": "Create fork & save",
+       "no_changes": "No new changes to save.",
+       "save_folder": "Save folder",
+       "save_folder_git": "Save changes to Postman & Github",
+       "readonly_user_message": "You do not have access to perform this action."
+      }
+     },
+     "share": {
+      "text": "Share",
+      "tooltip": "Share folder"
+     },
+     "delete": "Delete"
+    }
+   },
+   "permission_infobar": {
+    "folder": "folder",
+    "description": "description",
+    "auth": "authorization",
+    "overview": "overview",
+    "tests": "tests",
+    "pre_request": "pre-request scripts",
+    "configurations": "settings",
+    "text": "To change the {text} for this folder, request additional access to its parent collection.",
+    "scripts": "scripts"
+   },
+   "tab_list": {
+    "overview": {
+     "label": "Overview",
+     "short_label": "Overview"
+    },
+    "authorization": {
+     "label": "Authorization",
+     "short_label": "Auth"
+    },
+    "pre_request_script": {
+     "label": "Pre-request Script",
+     "short_label": "Pre-req."
+    },
+    "tests": {
+     "label": "Tests"
+    },
+    "settings": {
+     "label": "Settings"
+    }
+   },
+   "tabs": {
+    "auth": {
+     "description": "This authorization method will be used for every request in this folder. You can override this by specifying one in the request."
+    },
+    "scripts": {
+     "label": "Scripts",
+     "tooltip-text": {
+      "pre-request": "Runs before each request is sent. Use it to create API workflows by configuring the requests dynamically.",
+      "post-response": "Runs after a response is received for each request. Use it to write tests."
+     },
+     "migration-popover-text": "Use post-response scripts to write tests, visualize response and do more."
+    },
+    "test-tab-deprecation": {
+     "heading": "Tests are now a part of post-response scripts",
+     "message": "You can use scripts to write tests, pre-request scripts, visualize responses and bring a ton of automation to your API workflows.",
+     "button": "Open post-response scripts"
+    },
+    "pre_req": {
+     "description": "This script will execute before every request in this folder. Learn more about <1><0>Postman’s execution order</0></1>.",
+     "placeholder": "Use JavaScript to configure requests dynamically."
+    },
+    "tests": {
+     "description": "These tests will execute after every request in this folder. Learn more about <1><0>Postman’s execution order</0></1>.",
+     "placeholder": "Use JavaScript to write tests, visualize responses, and more."
+    },
+    "settings": {
+     "empty_state": {
+      "title": "Folder settings unavailable",
+      "message": "Postman uses the browser's default settings for sending requests. Switch to the desktop agent to customize your folder further."
+     }
+    }
+   }
+  },
+  "context_bar": {
+   "info_title": "Folder details"
+  }
+ },
+ "new_folder": "New Folder"
+}

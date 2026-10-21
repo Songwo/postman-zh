@@ -1,0 +1,620 @@
+{
+ "divider_or_text": "OR",
+ "invoke_button": {
+  "tooltip": "Ctrl + Enter",
+  "text": "Invoke"
+ },
+ "compose_tab": {
+  "placeholder": "Compose message",
+  "footer": {
+   "beautify": "Beautify",
+   "example_message": {
+    "text": "Use Example Message",
+    "tooltip": "Select a method to generate example message"
+   },
+   "end_streaming": "End Streaming",
+   "send_button": {
+    "tooltip": "Invoke the method to send messages",
+    "text": "Send"
+   }
+  }
+ },
+ "error_details": {
+  "title": "Error details"
+ },
+ "example_message_button": {
+  "text": "Use example message",
+  "examples_popover": {
+   "error": {
+    "text": "Couldn’t load the messages from examples.",
+    "button": "Try again"
+   },
+   "empty": {
+    "text": "<0>Create an Example</0> <1>to use its messages.</1>",
+    "tooltip": "You don't have permission to take this action"
+   },
+   "search_bar": {
+    "placeholder": "Search for messages in examples"
+   },
+   "no_examples": {
+    "text_1": "No message found.",
+    "text_2": "No messages added in examples."
+   }
+  }
+ },
+ "grpc_editor": {
+  "tabs": {
+   "message": "Message",
+   "authorization": "Authorization",
+   "metadata": "Metadata",
+   "service_definition": "Service definition",
+   "scripts": "Scripts",
+   "settings": "Settings",
+   "heading": "Request"
+  },
+  "file_drop_overlay": {
+   "text": "Drop the file here to use it as a service definition"
+  },
+  "events": {
+   "sent_request": "Request sent",
+   "received_response": "Response received",
+   "unrecognised_status_code": "Unrecognized status code",
+   "response_pruned": "Response not stored."
+  }
+ },
+ "url_input": {
+  "placeholder": "Enter URL",
+  "invalid_url": {
+   "tooltip": "URL cannot be empty",
+   "heading": "Invalid URL",
+   "subtitle": "{resolvedInvalidURL} is not a valid URL. Make sure you're using the correct one."
+  }
+ },
+ "refresh_button": {
+  "tooltip": "Refresh"
+ },
+ "key_value_table": {
+  "default_empty_message": "There's no data here",
+  "key": "Key",
+  "value": "Value"
+ },
+ "unary_results": {
+  "response_pane_tab": {
+   "truncated_response": {
+    "title": "Response size is too large to display",
+    "message": "We could not save the response in the history because it was too large. Invoke the request again to get a response."
+   }
+  },
+  "heading": "Response",
+  "running_scripts": "Running scripts",
+  "save_as_example": "Save Response",
+  "tabs": {
+   "trailers": {
+    "label": "Trailers",
+    "empty_message": "No trailers to show"
+   },
+   "metadata": {
+    "label": "Metadata",
+    "empty_message": "No metadata to show"
+   },
+   "test_results": "Test results"
+  }
+ },
+ "response_loader": {
+  "invoking": "Invoking method..."
+ },
+ "method_item": {
+  "icon_titles": {
+   "bidirectional_streaming": "Bidirectional streaming",
+   "client_streaming": "Client streaming",
+   "server_streaming": "Server streaming",
+   "unary": "Unary"
+  }
+ },
+ "location_editor": {
+  "tls_indicator": {
+   "heading": {
+    "secure": "Disable TLS",
+    "insecure": "Enable TLS"
+   },
+   "heading_explicit_set_via_url": {
+    "secure": "TLS Enabled",
+    "insecure": "TLS Disabled"
+   },
+   "subtitle_explicit_set_via_url": {
+    "secure": "Using https:// in the URL.",
+    "insecure": "Using http:// in the URL."
+   },
+   "subtitle_1": {
+    "secure": "Currently using a secured connection.",
+    "insecure": "Currently using an unsecured connection"
+   },
+   "subtitle_2": {
+    "secure": "Disable TLS to invoke the method over an unsecured connection.",
+    "insecure": "Enable TLS to invoke the method over a secured connection."
+   },
+   "button": "Configure additional CA and client certificates"
+  },
+  "tls_toggle": {
+   "switch_to_secure": "Switch to secure connection",
+   "switch_to_insecure": "Switch to insecure connection"
+  }
+ },
+ "cancel_button": "Cancel",
+ "try_again_button": "Try again",
+ "mock_suggestion": {
+  "mocks_error_cta": {
+   "unsupported_api": "<0>Select a Protobuf API</0> <1>to use its Mock URL</1>",
+   "unsupported_spec": "<0>Select a Protobuf Spec</0> <1>to use its Mock URL</1>",
+   "api_with_no_release": "<0>Publish the Protobuf API</0> <1>to use its Mock URL</1>",
+   "unsupported_api_version": "<0>Switch to a published version of the API</0> <1>to use its Mock URL</1>"
+  },
+  "mock_url_error": "<0>Failed to load Mock URL.</0> <1>Try again</1>",
+  "mock_button": "Use mock URL",
+  "mock_button_with_api": "Use Mock URL for <1>{apiName}</1>",
+  "mock_button_with_spec": "Use Mock URL for <1>{specName}</1>"
+ },
+ "errors": {
+  "unable_to_invoke": "Unable to invoke gRPC",
+  "send_msg_failure": "Failed to send message",
+  "multiple_files_import": {
+   "title": "Cannot import multiple files at once",
+   "description": "Importing multiple .proto files at once is not supported. For files linked with ‘import’ directives, import just the root file."
+  },
+  "invalid_file_type": {
+   "title": "Invalid file type",
+   "description": "Only .proto files are supported. Please try again with a .proto file."
+  },
+  "no_permission": "You don't have permission to take this action",
+  "could_not_invoke_method": "Could not invoke method"
+ },
+ "status_code": {
+  "label": "Status code ",
+  "label_with_colon": "Status code: "
+ },
+ "results": {
+  "save_example": {
+   "tooltip": "Save this request to a collection first"
+  },
+  "empty": {
+   "message": "Invoke a method to get a response"
+  },
+  "streaming_results": {
+   "badge": {
+    "streaming": "Streaming"
+   },
+   "response": {
+    "messages": "Messages",
+    "responses": "Responses"
+   }
+  },
+  "inspector": {
+   "no_metadata_received": "No metadata received.",
+   "no_trailers_received": "No trailer received.",
+   "no_metadata_sent": "No metadata sent.",
+   "received": "Received"
+  }
+ },
+ "settings": {
+  "strict_ssl": {
+   "title": "Enable server certificate verification",
+   "description": "Verify server certificate when invoking a method over a secure connection."
+  },
+  "server_name_override": {
+   "title": "Overwrite server name for certificate verification",
+   "description": "Configure the value used to validate the common name in the server certificate."
+  },
+  "include_default_fields": {
+   "title": "Include fields with default values in the response",
+   "description": "View response fields with default values. Turning this OFF will omit such fields from the response."
+  },
+  "max_response_msg_size": {
+   "title": "Maximum response message size",
+   "description": "Maximum allowed message size in MB. To receive messages of any size, set to 0."
+  },
+  "connectionTimeout": {
+   "title": "Connection Timeout",
+   "description": "Configure the deadline to invoke and receive the response in milliseconds. To keep the connection open indefinitely, set to 0."
+  }
+ },
+ "example_documentation": {
+  "error": {
+   "text": "Couldn’t load documentation from examples.",
+   "button_text": "Try again"
+  },
+  "empty": "<0>Add example</0> <1>to illustrate how this request works.</1>",
+  "examples": {
+   "empty": {
+    "text": "This example is empty."
+   },
+   "empty_request": "Empty request",
+   "empty_response": "Empty response"
+  },
+  "edit_example": "Edit example"
+ },
+ "header_tooltips": {
+  "seed": "Use this key value pair in the request metadata to receive the same mock response."
+ },
+ "agent_error_banner": {
+  "desktop_agent_not_connected": "<0>Switch to Postman desktop agent</0> to load the methods.",
+  "desktop_agent_not_ready": "Make sure the <2>Desktop Agent</2> is installed and running.",
+  "unknown_error": "An unknown error occurred"
+ },
+ "timeline": {
+  "cleared_events": {
+   "message": "{count, plural, one {# message} other {# messages}} hidden",
+   "button": "Restore"
+  },
+  "toolbar": {
+   "type_filter_options": {
+    "sent_messages": "Sent Messages",
+    "received_messages": "Received Messages",
+    "all_messages": "All Messages"
+   },
+   "add_message": "Add a Message",
+   "sent_message": "Sent message",
+   "received_message": "Received message",
+   "message_stream": "Message stream",
+   "search": {
+    "placeholder": "Search"
+   },
+   "clear_messages": "Clear Messages"
+  },
+  "notification": {
+   "new_messages": "New messages"
+  },
+  "rich_inspector": {
+   "wrap_lines": "Wrap lines",
+   "beautify": "Beautify",
+   "generate_example_msg": "Generate example message",
+   "show_message": "Show Message",
+   "show_hexdump": "Show Hexdump",
+   "search": "Search"
+  },
+  "editable_event": {
+   "incoming_tooltip": "Switch message type to sent",
+   "outgoing_tooltip": "Switch message type to received"
+  },
+  "event": {
+   "copy_message": "Copy message",
+   "copied": "Copied to clipboard"
+  },
+  "editable_timeline": {
+   "empty_state": {
+    "title": "Create a message stream",
+    "description": "Define the client-server communication using messages.",
+    "primary_action": "Generate an example stream"
+   },
+   "connected": "Connected",
+   "disconnected": "Disconnected"
+  }
+ },
+ "method_combobox": {
+  "footer": {
+   "fetching": {
+    "text": "Loading server reflection."
+   },
+   "loading": "Loading",
+   "reflection": "server reflection. ",
+   "cache": "Using cache",
+   "dropdown": {
+    "placeholder": "Select a method",
+    "empty": "No methods found"
+   },
+   "button": "Change service definition",
+   "using": "Using"
+  },
+  "method_option": {
+   "error_tooltip": "Couldn’t load this method from the service definition."
+  }
+ },
+ "error_banner": {
+  "reflection_error": {
+   "title": "Could not load server reflection.",
+   "description": "An unknown error occurred",
+   "button": "Try again"
+  },
+  "view_details": "View error details",
+  "details": "Details: ",
+  "api_deprecated": {
+   "message": "Service definition is using an API Builder object which is no longer supported. Migrate the API object to Spec Hub to continue using it.",
+   "migrate_action": "Migrate to Spec Hub"
+  },
+  "api_error": {
+   "not_found": "The selected API no longer exists in Postman. Use a different way to load services and methods.",
+   "release_not_found": "The selected API version no longer exists in Postman.",
+   "unresolved_import": {
+    "primary_action": "Try again",
+    "message": "Some of the import directives couldn’t be resolved."
+   },
+   "internal_error": {
+    "message": "Something went wrong. Might be a faulty wire on our end.",
+    "primary_action": "Try again"
+   },
+   "access_not_found": "You don’t have access to the API.",
+   "fetch_failed_link": {
+    "message": "Couldn’t load the linked API.",
+    "primary_action": "Try again"
+   },
+   "access_denied_link": "You don’t have access to the linked API.",
+   "invalid_schema_link": "The link doesn’t have a Protobuf API.",
+   "default": {
+    "edit_api": "Edit API",
+    "message": "There might be some issues with the selected Protobuf API.",
+    "syntax_error_unknown": "Syntax error in Unknown API. Modify the Protobuf API or choose a different one.",
+    "syntax_error": "Syntax error in {apiName}. Modify the Protobuf API or choose a different one."
+   }
+  },
+  "file_error": {
+   "file_not_found": {
+    "message": "Couldn't find the .proto file. Pick it from your file system to use in the request.",
+    "primary_action": "Choose .proto file"
+   },
+   "file_not_found_in_dir": "<0>Couldn't find the .proto file. It might be uploaded from another file system. If that's the case, make sure you have added the file to your Postman working directory.</0> <1><0>How to use working directory?</0></1>",
+   "unresolved_import": {
+    "message": "We could not find some of the files imported by the .proto file. Specify import paths to those unresolved files using the options below.",
+    "primary_action": "Add import paths"
+   },
+   "syntax_error": "Syntax error in .proto file. Modify the file or choose a different one.",
+   "default": {
+    "message": "There might be some issues with the selected .proto file."
+   }
+  },
+  "specification_error": {
+   "not_found": "The selected specification no longer exists in Postman. Use a different way to load services and methods.",
+   "unresolved_import": {
+    "primary_action": "Try again",
+    "message": "Some of the import directives couldn't be resolved."
+   },
+   "internal_error": {
+    "message": "Something went wrong. Might be a faulty wire on our end.",
+    "primary_action": "Try again"
+   },
+   "access_not_found": "You don't have access to the specification.",
+   "default": {
+    "edit_specification": "Edit Specification",
+    "message": "There might be some issues with the selected Protobuf specification.",
+    "syntax_error_unknown": "Syntax error in Unknown Specification. Modify the Protobuf specification or choose a different one.",
+    "syntax_error": "Syntax error in {specificationName}. Modify the Protobuf specification or choose a different one."
+   }
+  }
+ },
+ "cache_message_banner": {
+  "method_not_exist": "Selected method doesn’t exist in the service definition."
+ },
+ "api_dropdown": {
+  "error": "Could not load the APIs.",
+  "no_protobuf_schema": "No Protobuf schema found",
+  "no_schema_in_dir": "No Protobuf schema found in this workspace",
+  "create_new": "Create a new API: ",
+  "new_api_name": "Type in a name to create a new API"
+ },
+ "custom_dropdown": {
+  "placeholder": "Select option",
+  "empty": "No options found",
+  "footer_label": "Type in a name to create a new {label}",
+  "footer_new": "Create a new {label}: <1>{searchTerm}</1>",
+  "failed": {
+   "button_text": "Retry",
+   "text": "Failed to load options. "
+  }
+ },
+ "remove": "Remove",
+ "proto_api_selector": {
+  "placeholder": "Select a Protobuf schema or paste a link to one",
+  "error": "Failed to create API."
+ },
+ "loading": "Loading",
+ "proto_api_selected": {
+  "current_definition": "Current definition",
+  "buttons": {
+   "use_different_schema": "Use a different schema",
+   "import": "Import a .proto file"
+  },
+  "access_restricted": "(Access restricted)",
+  "version_selector": {
+   "placeholder": "Select a version",
+   "active_branch": "Active branch",
+   "custom_option": {
+    "tooltip": "Current definition contains all the changes made to the API that are not yet published."
+   }
+  }
+ },
+ "proto_file": {
+  "errors": {
+   "api_not_created": "Something went wrong while creating the API.",
+   "schema_not_updated": "Something went wrong while updating the API."
+  },
+  "file_selected": {
+   "heading": {
+    "loading": "Loading {filename}",
+    "using": "Using {filename}"
+   },
+   "buttons": {
+    "import_as_api": "Import as API",
+    "use_different_schema": "Use a different schema",
+    "import_proto_file": "Import a .proto file"
+   },
+   "working_dir_banner": "<0>Collaborate with others by moving this file to your working directory.</0> <2><0>How to use working directory?</0></2>"
+  },
+  "select_file": {
+   "error": {
+    "title": "Couldn't import .proto file",
+    "subtitle": "There was an error while importing the Protobuf definition."
+   },
+   "title": "Import a .proto file",
+   "subtitle": {
+    "desktop": "Drag and drop or choose a .proto file from your local system. You can also load it from the URL where it’s hosted.",
+    "web": "Import a .proto file from your local system or load it from the URL where it’s hosted."
+   },
+   "choose_file": "Choose a File",
+   "protobuf_url": {
+    "placeholder": "Enter a URL",
+    "label": "Protobuf URL",
+    "error": "Invalid URL"
+   },
+   "import_paths": {
+    "heading": "Import paths",
+    "subtext": "Specify import paths to look for .proto files while resolving 'import' directives.",
+    "unresolved_import": {
+     "title": "Unresolved \"import\" directives"
+    },
+    "add": "Add an import path"
+   }
+  },
+  "input": {
+   "disabled_tooltip": "Desktop Agent is required to load Protobuf files"
+  }
+ },
+ "import_api": {
+  "heading": "Import as API",
+  "sub_text": "Import <1>{filename}</1> as an API to reuse and manage it within Postman.",
+  "api_dropdown": {
+   "disabled_tooltip": "Cannot import into a Git linked API",
+   "placeholder": "Select an API"
+  },
+  "use_without_import": "Use without importing"
+ },
+ "proto_selector": {
+  "proto_base": {
+   "import_button": "Import .proto file",
+   "title": "Have a .proto file in your local system or hosted on a URL?"
+  },
+  "schema_label": {
+   "api_version_text": "Keep using <1></1>",
+   "api": "Keep using API",
+   "reflection": "Keep using server reflection",
+   "file": "Keep using <1></1>"
+  },
+  "keep_using": "Keep using {name}",
+  "go_back": "Go Back"
+ },
+ "proto_reflection": {
+  "server_reflection": {
+   "loading_reflection": "Loading server reflection.",
+   "using_reflection": "Using server reflection.",
+   "use_server_reflection": {
+    "text": "Use Server Reflection",
+    "tooltip": "Enter server URL to load methods using server reflection."
+   }
+  }
+ },
+ "next_button": "Next",
+ "schema_options": {
+  "this_workspace": "This workspace"
+ },
+ "proto_combobox": {
+  "input_placeholder": {
+   "is_open": "Search for a Protobuf schema or paste a link to one",
+   "not_open": "Select a method"
+  },
+  "heading": "Use a Protobuf schema to load the services and methods.",
+  "toggle": {
+   "expand": "Expand proto method selector",
+   "collapse": "Collapse proto method selector"
+  }
+ },
+ "snippets": {
+  "response": {
+   "test_status_code": "Test status code is 0",
+   "response_time": "Test response time is below 200ms",
+   "specific_metadata": "Test specific metadata exists",
+   "response_trailers": "Test specific trailer exists",
+   "response_message_exists": "Test message exists",
+   "response_message_partial": "Test message exists with specific properties",
+   "property_exists": "Test a property exists for all messages",
+   "msg_against_schema": "Test message(s) against a JSON schema"
+  },
+  "message": {
+   "message_content": "Test message equals exact content",
+   "message_partial": "Test message has specific properties",
+   "msg_schema": "Test message against a JSON schema"
+  }
+ },
+ "scripts": {
+  "before_invoke": {
+   "label": "Before invoke",
+   "description": "\"Before invoke\" scripts are written in JavaScript and run before the method is invoked.",
+   "tooltip_text": "Runs before each gRPC request is sent. Generally used to configure requests dynamically."
+  },
+  "on_message": {
+   "label": "On message",
+   "description": "\"On message\" scripts are written in JavaScript and run each time a message is received.",
+   "tooltip_text": "Runs after each message in a gRPC response stream. Generally used to write tests."
+  },
+  "after_response": {
+   "label": "After response",
+   "description": "\"After response\" scripts are written in JavaScript and run after the response is received from the server and the connection with the server is terminated.",
+   "tooltip_text": "Runs after each gRPC response. Generally used to write tests."
+  },
+  "learn_more": "Learn more",
+  "error": {
+   "title": "Couldn’t evaluate the {scriptLabel} script",
+   "helper_text": {
+    "inline": {
+     "base": "Couldn’t evaluate the script. ",
+     "script_label_func": "Couldn’t evaluate the <1><0>{scriptLabel} script</0></1>. ",
+     "script_label": "Couldn’t evaluate the {scriptLabel} script. "
+    },
+    "other": {
+     "base": "There was an error while running the script.",
+     "script_label_func": "There was an error while running the <1><0>{scriptLabel} script</0></1>. ",
+     "script_label": "There was an error while running the {scriptLabel} script."
+    },
+    "docs_link": "Make sure the script is valid as per <1><0>Postman JavaScript reference for {itemLabel}</0></1>. "
+   }
+  }
+ },
+ "proto_menu": {
+  "view_more_schema": "View more schemas",
+  "no_protobuf_schema": "No Protobuf schemas available.",
+  "import_file": {
+   "subtitle": {
+    "desktop": "Drag and drop or select a .proto file from your local system.",
+    "web": "Select a .proto file from your local system."
+   }
+  },
+  "load_methods": "Load methods using server reflection.",
+  "enter_server_url": "Enter server URL to load methods using server reflection."
+ },
+ "unknown_file": "Unknown file",
+ "documentation": {
+  "title": "Documentation",
+  "required": "Required",
+  "repeated": "Repeated",
+  "table": {
+   "columns": {
+    "key": "Key",
+    "value": "Value",
+    "values": "Values",
+    "field": "Field",
+    "type": "Type",
+    "description": "Description"
+   },
+   "empty": {
+    "title": "No fields defined",
+    "description": "Fields for this message type haven’t been defined in the service definition."
+   }
+  },
+  "errors": {
+   "save_desc_err": "Something went wrong while saving the request description."
+  }
+ },
+ "generate_collection": {
+  "button_text": "Generate collection"
+ },
+ "tabbed_pane": {
+  "toggle": {
+   "expand": "Expand section",
+   "collapse": "Collapse section"
+  }
+ },
+ "context_bar": {
+  "code_snippet_exports": {
+   "title": "Code snippet",
+   "tooltip": "Code",
+   "snippet_block_title": "gRPCurl",
+   "your_message_title": "Message"
+  }
+ }
+}

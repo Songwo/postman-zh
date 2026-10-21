@@ -1,0 +1,21 @@
+{
+ "file_conflicts_detected": "File Conflicts Detected",
+ "files_exists": "The following files already exist in the destination folder:",
+ "what_to_do": "What would you like to do?",
+ "replace": "Replace Existing Files",
+ "cancel": "Cancel",
+ "remove_folder": "Are you sure you want to permanently delete {name} and all its contents from your computer?",
+ "remove_file": "Are you sure you want to permanently delete {name} from your computer?",
+ "remove_folder_description": "This folder will be removed from your file system and cannot be recovered.",
+ "remove_file_description": "This file will be removed from your file system and cannot be recovered.",
+ "delete": "Delete",
+ "show_file_sizes": "Show file sizes",
+ "select_folder": "Select Folder",
+ "select_folder_description": "Enter the folder path you want to browse:",
+ "enter_folder_path": "Enter folder path...",
+ "home_directory": "Home directory",
+ "documents": "/Documents",
+ "desktop": "/Desktop",
+ "moc_or_windows": "/Users (macOS) or C:\\ (Windows)",
+ "untitled": "Untitled"
+}

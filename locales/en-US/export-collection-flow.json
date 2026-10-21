@@ -1,0 +1,88 @@
+{
+ "export": {
+  "heading": "Export Collection",
+  "button": {
+   "export": "Export Collection",
+   "fix": "Move to Vault",
+   "export_disabled_tooltip": "Preparing your collection for export",
+   "export_anyway": "Export anyway"
+  },
+  "heading_named": "Export “{name}”"
+ },
+ "promo": {
+  "teammates": {
+   "heading": "Share it instead of sending a file",
+   "benefit_1": "Securely share by invite or link, no file to pass around",
+   "benefit_2": "Consumers always see the current version",
+   "benefit_3": "Comment and @mention on the collection",
+   "button": {
+    "share": "Share Collection"
+   }
+  },
+  "git": {
+   "heading": "Stop re-exporting on every change",
+   "description": "With Native Git your collections live in your repo:",
+   "benefit_1": "Work on collections in your local repo, on a feature branch",
+   "benefit_2": "Collection changes ship in the same PR as the code they test",
+   "benefit_3": "See pipeline run results in Postman",
+   "button": {
+    "connect": "Try Native Git"
+   }
+  },
+  "other": {
+   "heading": "Keep this collection current wherever it's used",
+   "benefit_1": "Everyone works from the latest version, automatically",
+   "benefit_2": "Every change is attributable",
+   "benefit_3": "Access stays controlled with roles and permissions",
+   "button": {
+    "share": "Share Collection",
+    "connect": "Try Native Git"
+   }
+  }
+ },
+ "progress": {
+  "aria_label": "Getting your collection ready",
+  "steps": {
+   "permissions": {
+    "active": "Checking your export permissions",
+    "done": "Checked your export permissions"
+   },
+   "fetch": {
+    "active": "Fetching the latest version from your workspace",
+    "done": "Fetched the latest version from your workspace"
+   },
+   "format": {
+    "active": "Formatting as Collection Format v2.1",
+    "done": "Formatted as Collection Format v2.1"
+   },
+   "scan": {
+    "active": "Scanning for credentials",
+    "done": "Scanned for credentials"
+   }
+  },
+  "contents": "{requests, plural, one {# request} other {# requests}} · {variables, plural, one {# variable} other {# variables}} · {folders, plural, one {# folder} other {# folders}}",
+  "clean": "No known secret formats found",
+  "detected": "{count, plural, one {# secret detected in the collection} other {# secrets detected in the collection}}",
+  "detected_description": "Exporting without fix would keep them in JSON in plain text.",
+  "secured_local": "Secrets secured in your local vault",
+  "secured_shared": "Secrets secured in your shared vault",
+  "secured_description": "We replaced them with variables, so nothing sensitive slips in the file.",
+  "patterns_note": "We check tokens from common providers.",
+  "learn_more": "Learn more",
+  "ready": "Your collection is ready to export"
+ },
+ "toast": {
+  "export_success": "Your collection was exported successfully.",
+  "export_failed": "Unable to export this collection. Please check the DevTools.",
+  "secure_failed": "Could not secure the detected secrets."
+ },
+ "survey": {
+  "heading": "Tell us about this export",
+  "subheading": "This helps us build better tools for you.",
+  "placeholder": "Tell us your use case",
+  "chips_aria_label": "Suggested reasons",
+  "error": "Add a reason to continue",
+  "submit": "Start Export",
+  "cancel": "Cancel"
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "constant": {
+  "name": "Fixed",
+  "shorthand": "Fixed",
+  "description": "{virtualUserCount} virtual {virtualUserCount, plural, =1{user} other{users}} run for {totalDurationMins, plural, =1 {# minute} other{# minutes}}, each executing all requests sequentially."
+ },
+ "ramp": {
+  "name": "Ramp up",
+  "shorthand": "Ramp up ({humanizedRampDuration})",
+  "description": "{initialDurationMs, plural, =0 {Steadily} other {{initialLoad, plural, =1 {# virtual user} other {# virtual users}} run for {humanizedInitialDuration},}} ramp up to {maxLoad} for {humanizedRampDuration}, then maintain {maxLoad} for {humanizedMaxLoadDuration}, each executing all requests sequentially.",
+  "initial": {
+   "load": {
+    "name": "Initial load",
+    "description": "A number of VUs to simulate before starting to ramp up to the maximum number of VUs."
+   }
+  },
+  "lead_start": {
+   "time": {
+    "name": "Initial load timestamp"
+   }
+  },
+  "lead_end": {
+   "time": {
+    "name": "Ramp up timestamp",
+    "description": "The time over which load is linearly increased from initial to maximum load."
+   }
+  }
+ },
+ "peak": {
+  "name": "Peak",
+  "shorthand": "Peak",
+  "description": "{initialDurationMs, plural, =0 {Steadily} other {{initialLoad, plural, =1 {# virtual user} other {# virtual users}} run for {humanizedInitialDuration},}} ramp up to {maxLoad} over {humanizedRampUpDuration}, maintains {maxLoad} for {humanizedPlateauDuration}, decrease to {initialLoad} over {humanizedRampDownDuration}, maintains {initialLoad} for {humanizedTrailingLoadDuration}, each executing all requests sequentially.",
+  "initial": {
+   "load": {
+    "name": "Base load",
+    "description": "The number of VUs to maintain before beginning the ramp to the maximum VU count, and after scaling back down."
+   }
+  },
+  "lead_start": {
+   "time": {
+    "name": "Initial base load end timestamp"
+   }
+  },
+  "lead_end": {
+   "time": {
+    "name": "Ramp up timestamp",
+    "description": "The time over which load is linearly increased from base to maximum load."
+   }
+  },
+  "down_start": {
+   "time": {
+    "name": "Ramp End timestamp",
+    "description": "The time over which maximum load is maintained."
+   }
+  },
+  "down_end": {
+   "time": {
+    "name": "Ramp down timestamp",
+    "description": "The time over which load is linearly decreased from maximum to base load."
+   }
+  }
+ },
+ "spike": {
+  "name": "Spike",
+  "shorthand": "Spike",
+  "description": "{initialDurationMs, plural, =0 {Spike} other {{baseLoad, plural, =1 {# virtual user} other {# virtual users}} run for {humanizedInitialDuration}, spikes}} to {maxLoad} over {humanizedSpikeUpDuration}, drops to {baseLoad} over {humanizedSpikeDownDuration}, maintains {baseLoad} for {humanizedFinalDuration}, each executing all requests sequentially.",
+  "initial": {
+   "time": {
+    "name": "Base load timestamp"
+   },
+   "load": {
+    "name": "Base load",
+    "description": "The number of VUs to maintain before beginning the ramp to the maximum VU count, and after scaling back down."
+   }
+  },
+  "start": {
+   "time": {
+    "name": "Spike start timestamp"
+   }
+  },
+  "end": {
+   "time": {
+    "name": "Spike end timestamp",
+    "description": "Spike end timestamp"
+   }
+  },
+  "peak": {
+   "time": {
+    "name": "Spike peak timestamp",
+    "description": "The time at which the spike has peaked at the maximum load."
+   }
+  }
+ },
+ "humanize_duration": {
+  "expanded": "{minutes, plural, =0 {} =1 {# minute } other{# minutes }}{seconds, plural, =0 {} =1 {# second} other{# seconds}}",
+  "only_minutes": "{minutes, plural, =1 {# minute} other{# minutes}}",
+  "only_seconds": "{seconds, plural, =1 {# second} other{# seconds}}",
+  "minutes_and_seconds": "{minutes}:{seconds} minutes"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "bulk_action_bar": {
+  "selected_count": "{count} selected",
+  "clear_selection": "Clear selection"
+ },
+ "filter_bar": {
+  "search_placeholder": "Search...",
+  "clear_all": "Clear all"
+ },
+ "filters_menu": {
+  "button_label": "Filter",
+  "clear_filters": "Clear filters"
+ },
+ "view_toggle": {
+  "label": "View toggle",
+  "grid": "Grid view",
+  "list": "List view"
+ },
+ "actions_cell": {
+  "more_actions": "More actions"
+ },
+ "select_cell": {
+  "select_all": "Select all",
+  "select_row": "Select row"
+ }
+}

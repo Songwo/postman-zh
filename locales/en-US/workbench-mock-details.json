@@ -1,0 +1,187 @@
+{
+ "mock_details": {
+  "extensible_collection_http_only_banner": "Mocks for this collection currently support only HTTP requests",
+  "mock_server": "Mock server",
+  "delay_duration_error": "Please enter a delay value between 0 and 180000 ms.",
+  "changes_saved": "Changes saved",
+  "update_msg": "You updated the {name} Mock Server.",
+  "unable_to_edit": "Unable to edit mock"
+ },
+ "call_logs_list_item_body": {
+  "unable_to_load_resource": "Couldn’t load {resourceType} body.",
+  "try_again": "Try again",
+  "request_body": "This {resourceType} does not have a body.",
+  "size_limit_msg": "The call log only shows {resourceType} bodies smaller than 1 MB. To view the entire body, you can <3> download</3> the call log.",
+  "copy_tooltip": "Copy {resourceType} body",
+  "expand_collapse_aria_label": "{action} {section} section",
+  "expand": "Expand",
+  "collapse": "Collapse"
+ },
+ "collapsible_call_logs_list_item_header": {
+  "request_headers": "This {resourceType} does not have headers.",
+  "try_again": "Try again",
+  "unable_to_load": "Couldn’t load {resourceType} headers. "
+ },
+ "empty_call_logs": {
+  "header": "No mock server calls yet",
+  "logs_description": {
+   "copied": "Copied!",
+   "copy_url": "Copy Mock URL",
+   "header": "To call the mock server, follow these steps:",
+   "step1": "<0>1. Send a request to the following mock server URL, followed by the request path <1></1> </0>",
+   "step2": "<0>2. Add examples responses to each request that the mock server will return. <1></1> <2>Learn what examples are and how to use them</2> </0>"
+  }
+ },
+ "mock_no_result_found": {
+  "nothing_here": "Nothing here, Houston!",
+  "subtext": "We couldn't find anything matching that. Check the spelling or try using a different query."
+ },
+ "call_logs_list_item_header": {
+  "expand_collapse_aria_label": "{action} {section} section",
+  "expand": "Expand",
+  "collapse": "Collapse"
+ },
+ "call_logs_list_item": {
+  "call_logs_list_item_title": {
+   "tooltip": "Only team members can view mock call log details.",
+   "not_signed_in_error": "You need an account to continue exploring Postman.",
+   "something_went_wrong": "Something went wrong",
+   "delete_call_log_button_aria_label": "Delete call log",
+   "permission_error_tooltip": "You don't have permission to view call log details.",
+   "expand": "Expand",
+   "collapse": "Collapse",
+   "expand_collapse_aria_label": "{action} call log details for {method} {url} at {time}"
+  },
+  "collapsible_call_logs_list_item": {
+   "request_headers": "Request headers",
+   "request_body": "Request body",
+   "response_headers": "Response headers",
+   "response_body": "Response body"
+  }
+ },
+ "call_logs_list_old": {
+  "collection_deleted_banner": "This mock server has been deactivated. The underlying collection was deleted.",
+  "environment_deleted_banner": "This mock server has been deactivated. The underlying environment was deleted.",
+  "search_placeholder": "Search your calls...",
+  "offline_error": "You can take this action once you’re back online.",
+  "refresh_logs": "Refresh Logs",
+  "header_time": "Time",
+  "header_request": "Request",
+  "header_response": "Response",
+  "load_more": "Load More",
+  "footer_msg": "Mock servers allow you to simulate API endpoints by returning example responses linked to each request.",
+  "mock_docs": "Learn how to set up and use a mock with example responses"
+ },
+ "usage_limit_banner": {
+  "text": "Increase Limit",
+  "reached_limit": "You've reached your monthly call limit for mock servers.",
+  "contact_team_member": "Contact a team member with billing role to increase your limit."
+ },
+ "mock_call_logs_old": {
+  "error_fetching_call_logs": {
+   "try_again": "Try Again",
+   "something_went_wrong": "Something went wrong",
+   "unexpected_error": "There was an unexpected error loading your mock server call log.",
+   "try_refreshing": "Try refreshing the page."
+  }
+ },
+ "mock_offline": {
+  "header": " Unable to load data as you're offline",
+  "sub_header": "Your data may not be up to date until you’re back online."
+ },
+ "mock_details_header_old": {
+  "mock_server_name": "Mock server name",
+  "copy_url": "Copy URL",
+  "copy_url_tooltip": "Copy Mock Server URL",
+  "view_collection_docs": "View Collection Docs",
+  "inactive_mock_collection_deleted": "This documentation can't be accessed because the associated collection has been deleted.",
+  "inactive_mock_collection_not_accessible": "This documentation can't be accessed because the associated collection is not accessible.",
+  "offline_error": "You can take this action once you’re back online.",
+  "edit_configuration": "Edit Configuration",
+  "manage_roles": "Manage Roles",
+  "view_more_actions": "View More Actions",
+  "move": "Move",
+  "mock_server_details": "Mock Server Details",
+  "delete": "Delete",
+  "not_signed_in_error": "You need an account to continue exploring Postman.",
+  "permission_error": "You don't have permission to take this action.",
+  "inactive_mock": "This action cannot be taken on a deactivated mock server.",
+  "no_team": "You need to be signed-in to a team to perform this action",
+  "mock_url_copied": "Mock URL copied"
+ },
+ "mock_tab_loading_error": {
+  "refresh": "Refresh",
+  "deleted": {
+   "title": "Couldn’t find {userFriendlyEntityName}",
+   "body": "This mock server has been deleted."
+  },
+  "moved": {
+   "title": "Couldn’t find {userFriendlyEntityName}",
+   "body": "This mock server has been moved to a different workspace."
+  },
+  "error": {
+   "title": "Couldn’t load your {userFriendlyEntityName}",
+   "body": "Just a faulty wire. Refresh or try later."
+  },
+  "not_found": {
+   "title": "Couldn’t find the {userFriendlyEntityName}",
+   "body": "It might have been deleted or moved to a different workspace."
+  },
+  "edit_mock_access_denied": {
+   "title": "Unable to edit {userFriendlyEntityName}",
+   "body": "You don't have access to take this action since you're a workspace viewer"
+  },
+  "create_mock_access_denied": {
+   "title": "Unable to create {userFriendlyEntityName}",
+   "body": "You don't have access to take this action since you're a workspace viewer"
+  },
+  "unable_to_edit_inactive_mock": {
+   "title": "Unable to edit {userFriendlyEntityName}",
+   "body": "You cannot edit this mock server because it is inactive."
+  }
+ },
+ "mock_info_context_view": {
+  "id": "ID",
+  "created_by": "Created by",
+  "created_on": "Created on",
+  "mock_server_url": "Mock server URL",
+  "collection": "Collection",
+  "collection_deleted": "The associated collection has been deleted",
+  "label_text": "The associated collection is inaccessible",
+  "info_text": "The collection is present in a workspace you don’t have access to.",
+  "environment": "Environment",
+  "no_environment": "No environment",
+  "mock_usage": "Mock Usage",
+  "copied": "Copied",
+  "copy_mock_id": "Copy Mock ID",
+  "copy_mock_url": "Copy Mock URL",
+  "environment_deleted": "The associated environment has been deleted",
+  "environment_inaccessible": "The associated environment is inaccessible",
+  "environment_info_text": "The environment is present in a workspace you don’t have access to.",
+  "something_went_wrong": "Something went wrong",
+  "please_try_again": "There was an unexpected error. Please try again.",
+  "try_again": "Try Again",
+  "private_profile": "This user profile is private.",
+  "last_updated_at": "Last updated at",
+  "code_mock": "Mock",
+  "linked_simulation": "Simulation",
+  "no_linked_simulation": "No Simulation uses this mock",
+  "new": "New",
+  "new_simulation_tooltip": "Create a Simulation",
+  "simulation_url": "Simulation URL",
+  "copy_simulation_id": "Copy Simulation ID",
+  "copy_simulation_url": "Copy Simulation URL"
+ },
+ "mock_embedded_report": {
+  "mock_usage": "Mock Usage",
+  "monitor_usage": "Monitor Usage",
+  "hits": "hits"
+ },
+ "mock_details_meta_info": {
+  "mock_server_type": "Mock server type",
+  "private": "Private",
+  "public": "Public",
+  "collection": "Collection",
+  "environment": "Environment"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "design_api_spec": {
+  "modal": {
+   "heading": "Create a spec",
+   "description": "Design a new API spec to get started.",
+   "format": {
+    "heading": "Choose a format",
+    "description": "We'll create a starter file you can edit.",
+    "select_label": "Spec format",
+    "select_placeholder": "Select a format"
+   },
+   "create_button_label": "Create spec",
+   "close_button_label": "Close",
+   "creating_status": "Creating your spec..."
+  },
+  "toast": {
+   "create_error_check_before_retry": "Couldn't create your spec. Reload to check whether it was created before trying again.",
+   "open_error": "Your spec was created, but couldn't be opened. Find it in the sidebar."
+  }
+ }
+}

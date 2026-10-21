@@ -1,0 +1,121 @@
+{
+ "header": {
+  "text": "Package Library",
+  "button": {
+   "new_package": "New Package",
+   "learn_more": "Learn more about Packages."
+  },
+  "icon": {
+   "team": "All team members have access to packages in the library."
+  }
+ },
+ "content": {
+  "package_item": {
+   "new_package": "New package"
+  },
+  "package_content": {
+   "button": {
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "create": "Create"
+   },
+   "add_desciption_prompt": "Click here to add description"
+  },
+  "usage_view": {
+   "error_state": {
+    "title": "Couldn’t load packages usage details",
+    "description": "Try refreshing the page or check back later."
+   },
+   "view_access": {
+    "title": "You need a different role",
+    "description": "You need an Admin role to view packages usage. Contact your Team Admins to change your role or switch to a different account."
+   },
+   "title": "Packages",
+   "description": "Packages are containers used to store common scripts for reuse. This view monitors packages created in your team. "
+  },
+  "usage_view_table": {
+   "input_search": {
+    "placeholder_text": "Search packages"
+   },
+   "single_select_users": {
+    "placeholder_text": "Uploaded by",
+    "empty_state_message": "No users have added packages at the moment."
+   },
+   "column_headers": {
+    "package": "Package",
+    "created_by": "Created by",
+    "created_on": "Created on",
+    "last_used": "Last used"
+   },
+   "button": {
+    "delete": "Delete",
+    "deleting": "Deleting"
+   }
+  },
+  "usage_view_empty_state": {
+   "title": "No packages yet",
+   "description": "You can view all packages and their last retrieval here, if any."
+  }
+ },
+ "constants": {
+  "learn_more": "Learn more",
+  "breadcrumb_names": {
+   "resource_usage": "Resource Usage",
+   "packages": "Packages"
+  }
+ },
+ "form": {
+  "search_package": {
+   "placeholder_text": "Find packages..."
+  },
+  "create_package": {
+   "input": {
+    "name": {
+     "placeholder_text": "package-name",
+     "note": "Name cannot be changed after package creation"
+    },
+    "description": {
+     "placeholder_text": "Add a summary"
+    }
+   }
+  }
+ },
+ "modal": {
+  "package_select": {
+   "header_text": "Add script to an existing package",
+   "button": {
+    "select": "Select",
+    "cancel": "Cancel"
+   }
+  },
+  "new_unsaved_package": {
+   "header_text": "Discard this package?",
+   "content_text": "You are in the process of creating a package. Your progress will be lost if you proceed.",
+   "button": {
+    "discard": "Discard and continue",
+    "back_to_package": "Back to Package"
+   }
+  },
+  "unsaved_package": {
+   "header_text": "Save changes to \"{packageName}\"?",
+   "content_text": "There are some unsaved changes in the current package \"{packageName}\" which will be lost if you proceed. Save these changes to avoid losing your work.",
+   "button": {
+    "save": "Save Changes",
+    "discard": "Discard Changes",
+    "cancel": "Cancel"
+   }
+  },
+  "delete_confirmation_modal": {
+   "header_text": "Delete \"{packageName}\"?",
+   "content_text": {
+    "confirmation_prompt": "Are you sure you want to permanently delete this package?",
+    "type_to_confirm_prompt": "To confirm, type \"{packageName}\" below."
+   },
+   "button": {
+    "delete": "Delete package",
+    "cancel": "Cancel"
+   }
+  }
+ }
+}

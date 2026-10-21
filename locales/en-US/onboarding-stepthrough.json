@@ -1,0 +1,43 @@
+{
+ "steps": {
+  "intro": {
+   "header": "Welcome! Let's get started 🚀",
+   "description": "New here? Not a problem! We've crafted a quick step-by-step guide to getting started with the basics.",
+   "minimized_content": "Get started here 🚀",
+   "time_estimate": "3 steps · 3-5 minutes",
+   "cta_text": "Get started"
+  },
+  "send_request": {
+   "header": "Start by sending a request",
+   "description": "Test your API’s behavior by creating and sending a request.",
+   "minimized_content": "Get started here 🚀"
+  },
+  "save_collection": {
+   "header": "Save your request to easily access it again",
+   "description": "Keep your requests organized and within reach by saving them to a collection.\n\nTip: Use ⌘S for quick saving.",
+   "minimized_content": "You're doing great 💪"
+  },
+  "use_postbot": {
+   "header": "Power up your request with Postbot",
+   "description": "Ask Postbot to validate your response, debug issues, add documentation, and more.",
+   "minimized_content": "Almost done 🙌"
+  },
+  "finished": {
+   "header": "You crushed it 🎉",
+   "description": "Great job on creating your first collection! Now explore more ways to improve your API workflow.",
+   "minimized_content": "✅ What's next?",
+   "add_variables": "Add variables",
+   "document": "Document your APIs",
+   "automate": "Automate API testing",
+   "templates": "Explore templates"
+  },
+  "dont_show_button_text": "Don't show again",
+  "skip_button_text": "Skip step",
+  "show_button_text": "Show me how"
+ },
+ "guide_title": "YOUR GETTING STARTED GUIDE",
+ "save_popover": {
+  "description": "Save requests from here or use {shortcut} on your keyboard.",
+  "cta_text": "Got it"
+ }
+}

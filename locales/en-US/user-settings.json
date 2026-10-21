@@ -1,0 +1,13 @@
+{
+ "team_discovery": {
+  "blank_state": {
+   "heading": "Create your team",
+   "subheading": "Collaborate with your team members on Postman. It’s faster and fun to build APIs together."
+  },
+  "title": "Teams",
+  "heading": "Teams you can join from your organization",
+  "heading_with_org": "Teams you can join from @{orgName}",
+  "subheading": "Join a team to get access to API resources and start collaborating with your teammates right away.",
+  "no_teams": "You aren't part of any teams yet."
+ }
+}

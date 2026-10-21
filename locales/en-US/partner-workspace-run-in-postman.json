@@ -1,0 +1,32 @@
+{
+ "modal": {
+  "heading": "Share {workspaceName}",
+  "description": "Embed a <1><0>Run in Postman</0></1> button on your website or docs to make it easier for people to discover and interact with your collection.",
+  "live_version": {
+   "heading": "Embed a live version",
+   "tag": "NEW",
+   "description": "This button allows consumers to fork the collection so they can stay up to date by pulling and merging changes."
+  },
+  "additional_settings": "Additional settings (optional)",
+  "destination_label": "When a partner clicks Run in Postman",
+  "destination_info": "Choose what partners should access after opening the Run in Postman link.",
+  "add_partner_option": {
+   "label": "Add partner to this workspace",
+   "description": "Invite the partner into {workspaceName}."
+  },
+  "create_sandbox_option": {
+   "label": "Create a custom sandbox workspace for each partner",
+   "description": "Provision a tailored workspace from resources in this master workspace."
+  },
+  "generate_embed_code": "Generate embed code",
+  "embed_code": "Embed code",
+  "html_friendly": "HTML friendly",
+  "markdown_friendly": "Markdown friendly",
+  "html_description": "Best used in websites. Has more customization options.",
+  "markdown_description": "Best used in markdown documents like a README or blog.",
+  "copy_code": "Copy Code",
+  "copied": "Copied",
+  "error_title": "Couldn't create link",
+  "error_description": "Something went wrong while creating the Run in Postman link. Try again."
+ }
+}

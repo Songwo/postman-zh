@@ -1,0 +1,131 @@
+{
+ "invite_to_team_modal": {
+  "send_button_text": "Invite",
+  "invite_to_team_title": "Invite people to \"{teamName}\" team",
+  "invite_to_org_title": "Invite people to \"{teamName}\" organization",
+  "invite_to_team_title_no_team_name": "Invite people to team",
+  "invite_to_org_title_no_org_name": "Invite people to organization",
+  "emails_are_invalid": "{invalidEmailsCount, plural, =1 {# email is invalid.} other {# emails are invalid.}}",
+  "enter_emails_tooltip": "Enter emails to send invites",
+  "enter_emails_error": "Please enter emails to invite",
+  "invited_to_team": "Invited to team",
+  "ensure_valid_emails": "Make sure the emails you've entered are valid.",
+  "invite_by_email": "Invite by email",
+  "not_listed_above_invite_by_email": "Not listed above? Invite user by email",
+  "enter_email": "Enter email",
+  "error_messages": {
+   "no_permission": "You do not have permission to send invites",
+   "generic": "Something went wrong while generating the link.",
+   "flow_editor": "Flow Editor role can only be assigned with Developer role."
+  },
+  "success_messages": {
+   "approved_and_unapproved": "{approved_invite_count, plural, =1 {1 person is} other {# people are}} invited and {unapproved_invite_count, plural, =1 {1 invite is} other {# invites are}} sent to admin for approval",
+   "only_approved": "New members will join your team once they accept your invite.",
+   "only_unapproved": "We'll notify you once the reviewer approves your request.",
+   "default": "New members will join your team once they accept your invite."
+  },
+  "dropdown_label": "Roles",
+  "dropdown_placeholder": "Select Roles",
+  "add_from_file": "Add from file",
+  "copy_invite_link": "Copy invite link",
+  "could_not_get_invite_link": "Something went wrong while generating the link.",
+  "invite_link_copied": "Copied"
+ },
+ "upgrade_plan_modal": {
+  "team_title_text": "Your team can’t fit everyone",
+  "modal_content": {
+   "free_team": {
+    "sub_title": "{additional_invites} {additional_invites, plural, =1 {person} other {people}} in total {additional_invites, plural, =1 {is} other {are}} invited beyond your team’s capacity. Upgrade your plan to let them join and collaborate on your team.",
+    "primary_action_text": "Upgrade plan"
+   },
+   "paid_team": {
+    "sub_title": "{additional_invites} {additional_invites, plural, =1 {person} other {people}} in total {additional_invites, plural, =1 {is} other {are}} invited beyond your team’s capacity. Get Auto-Flex to collaborate with unlimited people without purchasing slots.",
+    "primary_action_text": {
+     "auto_flex": "Get Auto-flex",
+     "paid_slots": "Add paid slots"
+    }
+   }
+  },
+  "button_text": {
+   "free_team": "Maybe Later",
+   "not_free_team": "Purchase Slots"
+  }
+ },
+ "request_to_join_modal": {
+  "word_limit_error": "Please limit your response to {word_limit} characters",
+  "buttons_text": {
+   "continue": "Submit",
+   "cancel": "Cancel"
+  },
+  "request_info": {
+   "email_verified": {
+    "primary": "Once the team admin approves your request, you’ll be added to the team automatically.",
+    "guidelines": "Before we can send your request, please answer this question from the team admin",
+    "no_guidelines": "Add a note to help the team's Admin review your request (optional)"
+   },
+   "email_not_verified": {
+    "primary": "Almost there, just two quick things to do before we can send your request",
+    "step_1": "1. Verify your account. There should be a verification email waiting for you in your inbox.",
+    "step_2_guidelines": "2. Answer this question from the team Admin.",
+    "step_2_no_guidelines": "2. Add a note to help the team's Admin review your request (optional)"
+   }
+  },
+  "placeholder": {
+   "guidelines": "Type your answer here",
+   "no_guidelines": "Add a note"
+  },
+  "modal_header": "Submit your request to join team {team_name}"
+ },
+ "verify_email_modal": {
+  "modal_header": "Verify your email to join {team_name}",
+  "modal_body": "For security reasons, we need to verify your email address before we can submit your join request.",
+  "resend_button": "Resend",
+  "resend_email": "We've sent a verification email to:",
+  "close": "I've Verified My Email"
+ },
+ "auto_join_email": {
+  "title": "Check your email for an invite",
+  "description": "Once you accept the invite, you'll be added to the {teamName} team.",
+  "invite": "Your invite was sent to:",
+  "toast_description": "Please check your inbox for the email to join the team."
+ },
+ "team_creation_modal": {
+  "team_update_text": "Customize your team’s profile to make it easy for your future team members to find.",
+  "multi_team_collab_text": "Your existing personal workspaces will be moved to this team. You can invite team members once you are ready to collaborate.",
+  "multi_team_collab_button_text": "Set up team",
+  "subtext": "Please don’t close or refresh this tab.",
+  "team_content": {
+   "team_creation": {
+    "title": "Bravo! You’ve created a team",
+    "primary_action_text": "Edit team profile"
+   },
+   "add_new_team": {
+    "title": "Bravo! You’ve created your team"
+   }
+  },
+  "loader_content": {
+   "team_creation_title": "Creating your team",
+   "add_new_team_title": "Creating your team"
+  }
+ },
+ "enable_auto_flex_modal": {
+  "true_up_toast": {
+   "title": "You’ve got early access to Auto-Flex",
+   "desc": "You can keep track of additional team members in <1><0>Manage Team</0></1>",
+   "error": "Something went wrong"
+  },
+  "modal": {
+   "header": "Get early access to Auto-Flex",
+   "content_text": "Your Team Admins will be able to invite additional team members. You’ll only be charged for additional members on your team at the end of every cycle.",
+   "t_and_c_label": "Agree to Auto-Flex's <1><0>terms and conditions</0></1>"
+  },
+  "button": {
+   "cancel": "Cancel",
+   "confirm": "Confirm",
+   "tooltip": "Please agree to terms and conditions for Auto-Flex"
+  }
+ },
+ "email_domain_autocomplete": {
+  "placeholder": "Enter name or email..."
+ }
+}

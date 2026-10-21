@@ -1,0 +1,55 @@
+{
+ "init_failed": "Terminal failed to initialize. Please reload the application.",
+ "create_failed": "Failed to create terminal.",
+ "create_failed_retry": "Try again",
+ "agent_required_title": "Desktop Agent unavailable",
+ "agent_required_description": "The terminal runs on your machine through the Postman Desktop Agent. Make sure the Desktop Agent is installed and running, then connect to use the terminal in Postman Web.",
+ "agent_required_cta": "Use Postman Desktop Agent",
+ "agent_required_download": "Download Desktop Agent",
+ "agent_disconnected_title": "Desktop Agent disconnected",
+ "agent_disconnected_description": "The terminal is paused because the Postman Desktop Agent disconnected. Make sure the Desktop Agent is running, then reconnect.",
+ "agent_disconnected_cta": "Reconnect Desktop Agent",
+ "reconnected_session_message": "Desktop Agent reconnected. The previous session ended, so a new terminal session starts here.",
+ "reconnect_failed_message": "Desktop Agent reconnected, but this terminal session could not be restored.",
+ "search": {
+  "placeholder": "Find",
+  "aria_label": "Find in terminal",
+  "match_case": "Match Case",
+  "match_whole_word": "Match Whole Word",
+  "use_regex": "Use Regular Expression",
+  "previous_match": "Previous Match",
+  "next_match": "Next Match",
+  "close": "Close search",
+  "match_count": "{current} of {total}",
+  "no_results": "No results"
+ },
+ "context_menu": {
+  "copy": "Copy",
+  "paste": "Paste",
+  "select_all": "Select All",
+  "find": "Find",
+  "clear": "Clear Terminal",
+  "new_terminal": "New Terminal",
+  "rename_terminal": "Rename Terminal"
+ },
+ "actions": {
+  "clear": "Clear",
+  "clear_terminal": "Clear Terminal"
+ },
+ "paste_guard": {
+  "title": "Terminal Paste",
+  "message": "Are you sure you want to paste {lineCount} lines into the terminal?",
+  "paste": "Paste",
+  "cancel": "Cancel"
+ },
+ "tabs": {
+  "close_terminal": "Close Terminal",
+  "close_terminal_aria": "Close terminal {name}",
+  "terminal_aria": "Terminal: {name}",
+  "rename_input_aria": "Rename terminal {name}"
+ },
+ "run_in_terminal": {
+  "start_desktop_agent_tooltip": "Start the Postman Desktop Agent to run commands in the terminal",
+  "update_desktop_agent_tooltip": "Update the Postman Desktop Agent to run commands in the terminal"
+ }
+}

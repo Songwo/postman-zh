@@ -1,0 +1,12 @@
+{
+ "approval": {
+  "send_request_message": "Allow agent to send this request?",
+  "send_named_request_message": "Allow agent to send <0><0>{requestName}</0></0>?",
+  "request_name_fallback": "request",
+  "allowlist_menu_aria_label": "Approve and always allow options",
+  "allowlist_option_tooltip": "Skip approval for matching requests in this conversation"
+ },
+ "rules": {
+  "always_allow_domain": "Always allow {value}"
+ }
+}

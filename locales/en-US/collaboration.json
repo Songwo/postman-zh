@@ -1,0 +1,281 @@
+{
+ "comments": {
+  "blank_state": {
+   "title": "You don't have permissions to comment",
+   "description": "You only have Viewer permissions on this workspace."
+  },
+  "comment_notification_recipient": {
+   "summary_one": "{name} will be notified.",
+   "summary_other": "View all people who will be notified including {names} and {lastName}.",
+   "private_user": "Private User",
+   "recipients_list": {
+    "title": "We'll notify:"
+   }
+  },
+  "context_bar_icon": {
+   "tooltip": {
+    "default": "Comments",
+    "unread": "{count, plural, =1 {# unread comment} other {# unread comments}}"
+   },
+   "unread_count_tooltip": {
+    "unread_comments": "{count, plural, =1 {# unread comment} other {# unread comments}}"
+   }
+  },
+  "context_bar_view": {
+   "title": "Comments",
+   "local_mode_blank_state": {
+    "title": "Comments are not available",
+    "description": "Comments are not available for Local Mode. Switch to cloud view."
+   },
+   "comment_thread_filter": {
+    "button_label": "Filter comments",
+    "menu_label": "Comment filter options",
+    "open_comments": "Open comments",
+    "resolved_comments": "Resolved comments",
+    "show_resolved_comments": "Show resolved comments",
+    "reset_filters": "Reset filters",
+    "nested_comments": "Nested comments",
+    "hide_nested_comments": "Hide comments on nested elements",
+    "no_resolved_comments": "No resolved comments to show",
+    "loading_label": "Loading filters..."
+   },
+   "commit_and_push_changes_banner": {
+    "text": "Commit and push changes in this branch to add new comments"
+   },
+   "empty_state": {
+    "heading": {
+     "no_comments": "Be the first to comment",
+     "no_comments_on_filter": "No results from these filters",
+     "no_open_comments": "No open comments",
+     "no_inline_comments": "Try leaving an inline comment"
+    },
+    "description": {
+     "no_comments": "Share your thoughts, notes and feedback on this {model} with your teammates.",
+     "no_comments_on_filter": "There are no comments to display for the selected filters. Adjust or reset your filter settings.",
+     "no_open_comments": "All comments have been resolved. Adjust your filters to show resolved comments.",
+     "no_inline_comments": "Leave a comment on a specific part of file by highlighting it in comment mode."
+    },
+    "cta_text": {
+     "no_comments": "Add Comment",
+     "no_comments_on_filter": "Reset Filters",
+     "no_open_comments": "Show Resolved Comments"
+    }
+   },
+   "comment_input": {
+    "user_avatar": "User avatar",
+    "placeholder": {
+     "default": "Use @mention to notify people",
+     "new_comment": {
+      "focused": "Ask questions or provide feedback. Use @mention to notify people.",
+      "default": "Add a new comment"
+     },
+     "reply_comment": {
+      "focused": "Use @mention to notify people",
+      "default": "Add a reply"
+     }
+    },
+    "comment_actions": {
+     "comment": "Comment",
+     "reply": "Reply",
+     "save": "Save",
+     "cancel": "Cancel"
+    }
+   },
+   "comment_thread": {
+    "expand_button": {
+     "show_more": "Show {count} more",
+     "show_less": "Show less"
+    },
+    "comment": {
+     "heading": {
+      "private_user": "Private User",
+      "actions": {
+       "view_actions": {
+        "tooltip": "View actions"
+       },
+       "copy_link": "Copy link",
+       "copy_link_copied": "Copied!",
+       "edit": "Edit",
+       "edit_no_permission": "You don't have permission to edit this comment",
+       "delete": "Delete",
+       "delete_no_permission": "You don't have permission to delete this comment",
+       "resolve": {
+        "tooltip": {
+         "no_permission": "You don't have permission to resolve this comment",
+         "resolve": "Resolve comment"
+        }
+       },
+       "unresolve": {
+        "tooltip": {
+         "unresolve": "Reopen",
+         "no_permission": "You don't have permission to reopen this comment"
+        }
+       }
+      }
+     },
+     "footer": {
+      "no_reply": "Reply",
+      "reply": "{count, plural, =1 {# reply} other {# replies}}",
+      "unread_reply": "{count, plural, =1 {# new reply} other {# new replies}}"
+     },
+     "delete_modal": {
+      "heading": "Delete comment?",
+      "button": "Delete",
+      "content": {
+       "comment": "Your comment and its replies will be deleted. You can't undo this action.",
+       "reply": "Your comment will be deleted. You can't undo this action."
+      }
+     },
+     "toast_error": {
+      "edit": {
+       "description": "An error occurred while updating the comment.",
+       "title": "Unable to update comment"
+      },
+      "delete": {
+       "description": "An error occurred while deleting the comment.",
+       "title": "Unable to delete comment"
+      }
+     }
+    }
+   },
+   "unsaved-changes-banner": {
+    "text": "Your unsaved changes will be saved with this comment."
+   },
+   "error_toast": {
+    "add_comment": "You need to be online to comment",
+    "update_comment": "You need to be online to update a comment.",
+    "delete_comment": "You need to be online to delete a comment.",
+    "handle_resolve": {
+     "offline": "You need to be online to resolve",
+     "failed": {
+      "description": "An error occurred while resolving the thread.",
+      "title": "Unable to resolve comment"
+     }
+    },
+    "handle_unresolve": {
+     "offline": "You need to be online to reopen",
+     "failed": {
+      "description": "An error occurred while reopening the thread.",
+      "title": "Unable to reopen comment"
+     }
+    }
+   }
+  },
+  "delete_modal": {
+   "cancel": "Cancel"
+  },
+  "mention": {
+   "self": "You"
+  }
+ },
+ "share": {
+  "invite": {
+   "label": "Invite",
+   "group_members_count_one": "1 member",
+   "group_members_count_other": "{count} members",
+   "invite_collaborator_warning": "People outside your team will be invited as a Collaborator.",
+   "dropdown_info": "This role will be set on the collection.",
+   "placeholder": "Enter name, group name or email..."
+  },
+  "invite_partner_banner": {
+   "title": "Invite Partners to your team",
+   "description": "You're inviting people from another company. Use a <1><0>Partner workspace</0></1> and invite them as partners to share collections."
+  },
+  "invite_partner_to_new_workspace_modal": {
+   "title": "Set up a Partner workspace and invite partners to share collection.",
+   "partner_workspace_name_info_text": "Workspace name",
+   "partner_email_info_text": "Email",
+   "fork_info_text": "A fork of <1>{name}</1> collection will be created in this Partner workspace."
+  },
+  "org_personal_ws": {
+   "join_team": {
+    "title": "Join team in {orgName} to collaborate",
+    "description": "You can only invite and collaborate with people in teams",
+    "primary_action": "View teams",
+    "secondary_action": "Cancel"
+   },
+   "confirm_move_entity": {
+    "title": "Move {entityType} to a team to collaborate",
+    "description": "You can only invite and collaborate with people in teams",
+    "primary_action": "Move",
+    "secondary_action": "Cancel"
+   },
+   "move_entity": {
+    "heading": "Move {entityType}"
+   }
+  }
+ },
+ "workspace_updates": {
+  "create_update_modal": {
+   "heading": "Post Update",
+   "description": "You are about to post a new update on your workspace. This will notify recipients by email and in-app.",
+   "recipients_heading": "Recipients",
+   "workspace_watchers_label": "Workspace watchers:",
+   "slack_channels_label": "Slack channels:",
+   "reach_more_heading": "Heads up! Reach more recipients",
+   "linked_resources_tip": "Add linked resources, if your update is about a particular collection to notify more watchers.",
+   "slack_tip": "Connect Slack, to alert your community/team when you post updates on Postman.",
+   "continue_editing": "Continue editing",
+   "post_update": "Post update"
+  },
+  "pin_toggle": {
+   "error": {
+    "unpin_title": "Failed to unpin the update",
+    "pin_title": "Failed to pin the update",
+    "default_description": "Please try again.",
+    "max_pinned_description": "Maximum number of pinned updates reached for this workspace"
+   }
+  },
+  "permissions": {
+   "no_permission_to_pin": "You don't have permission to pin this update.",
+   "no_permission_to_edit": "You don't have permission to edit this update.",
+   "no_permission_to_delete": "You don't have permission to delete this update.",
+   "no_permission_to_comment": "You don't have permission to add a comment.",
+   "no_permission_to_react": "You don't have permission to add a reaction.",
+   "no_permission_to_unreact": "You don't have permission to remove this reaction."
+  }
+ },
+ "reactions": {
+  "add_reaction": "Add Reaction",
+  "no_permission": "You don't have permission to add a reaction.",
+  "users_list": {
+   "you": "You",
+   "others": " and others",
+   "reacted_with": "  reacted with :{emoji}:"
+  },
+  "aria_labels": {
+   "emoji": "emoji"
+  }
+ },
+ "partner_collection_rfa_modal": {
+  "default_collection_name": "Collection",
+  "header": {
+   "title_with_name": "Request a forked copy of {collectionName}",
+   "title_generic": "Request a forked copy of this collection"
+  },
+  "permission_text": "You'll need <1>editor</1> permission to fork the collection.",
+  "collection_stats": {},
+  "note_section": {
+   "placeholder": "A short note on why you want access"
+  },
+  "admin_popover": {
+   "workspace_admin_role": "Workspace Admin",
+   "no_admins_found": "No admins found"
+  },
+  "approval_text": "Once approved, the collection will be forked and you'll get edit access.",
+  "buttons": {
+   "cancel": "Cancel",
+   "request_access": "Request Access"
+  },
+  "toast_messages": {
+   "success": {
+    "title": "Sent request to fork",
+    "description": "You'll be notified once your request is approved by Workspace Admin."
+   },
+   "error": {
+    "default_title": "Unable to create request",
+    "default_description": "Something went wrong"
+   }
+  }
+ }
+}

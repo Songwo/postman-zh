@@ -1,0 +1,30 @@
+{
+ "page": {
+  "heading": "Verify your account",
+  "loading": "Sending your verification code...",
+  "register_error": "We couldn't send a verification code right now. Please try again."
+ },
+ "registration_failure": {
+  "continue_cta": "Continue to Postman"
+ },
+ "footer": {
+  "copyright": "©2025 Postman, Inc. All rights reserved.",
+  "terms": "Terms of use",
+  "privacy": "Privacy policy"
+ },
+ "form": {
+  "code_label": "Verification code",
+  "code_placeholder": "123456",
+  "description": "We have sent a verification code to <bold>{email}</bold>",
+  "submit_button": "Verify Account",
+  "resend_prompt": "Didn't receive the email?",
+  "resend_button": "Resend code",
+  "resend_button_with_cooldown": "Resend code in {seconds}s",
+  "resend_limit_reached": "You've reached the resend limit for this verification request.",
+  "restart_button": "Send a new code",
+  "session_expired": "Your verification session expired. Send a new code to continue.",
+  "successful_banner": "Successful!",
+  "error_code_length": "Verification code must contain six digits.",
+  "error_generic": "Something went wrong. Please try again."
+ }
+}

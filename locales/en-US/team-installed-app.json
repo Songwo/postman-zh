@@ -1,0 +1,101 @@
+{
+ "error_description": "Error in fetching configured integrations per slack",
+ "get_auth_token_error": "Something went wrong during the authorizations flow! Please try again.",
+ "create_connected_account_error": "We were unable to create the connected account",
+ "create_connected_account_default_error": "Unable to create connected account",
+ "heading": "Installed apps",
+ "subheading": "Set up installed apps for your team",
+ "slack": {
+  "disabled_tooltip": "Only one instance of this app can be added.",
+  "slack_label": "Slack",
+  "description": "Get real-time updates of what is happening in your Postman team on Slack."
+ },
+ "git_app": {
+  "disabled_tooltip": "Only team admins can add apps.",
+  "description": "Sync your API between Postman and {userFriendlyServiceName}."
+ },
+ "blank_slate": {
+  "add_more_apps": "Add more apps for your team",
+  "description": "Configure your team in Postman with a third-party app. Apps configured can be used by the Postman team members to set up integrations. Learn more about <CustomLink><Text>installed apps</Text></CustomLink>"
+ },
+ "installed_app_list": {
+  "headers": {
+   "name": "Name",
+   "type": "Type",
+   "connected_to": "Connected to",
+   "set_up_by": "Set up by"
+  },
+  "slack_label": "Slack",
+  "edit_button": "Edit",
+  "delete_button": "Delete",
+  "banner_text": "This will impact at least {integrationCount} integrations you have access to. There may be other integrations that you cannot access."
+ },
+ "installed_app_details": {
+  "headers": {
+   "type": "Type",
+   "connected_to": "Connected to",
+   "set_up_by": "Set up by"
+  },
+  "no_integrations_message": "There are no integrations using this app",
+  "other_message": "There may be other integrations that you don't have access to."
+ },
+ "connected_account_details": {
+  "fetch_account_details_error": {
+   "title": "Something went wrong",
+   "description": "Could not fetch installed app details."
+  },
+  "blank_slate_error": {
+   "title": "Unable to load installed app details",
+   "description": "Please try again after some time."
+  }
+ },
+ "back_to_installed_apps": "Installed Apps",
+ "connected_account_detail_view": {
+  "no_integrations_message": "No integrations are using this app",
+  "unknown_user": "an admin",
+  "heading": "Connected to {slackTeamName} workspace on {service} by {createdByUser}",
+  "banner_text": "{instanceCount, plural, one {# integration was} other {# integrations were}} set up by {creatorCount, plural, one {# team member} other {# team members}} with this account."
+ },
+ "delete_installed_app_modal": {
+  "heading": "Delete installed app?",
+  "description": "Deleting this app from Postman will cease any actions it performs immediately. No new integrations can be set up with this domain.",
+  "cancel_button": "Cancel",
+  "delete_button": "Delete"
+ },
+ "integration_table": {
+  "headers": {
+   "integration": "Integration",
+   "created_by": "Created by"
+  }
+ },
+ "connected_account_delete": {
+  "success": "Authorised account for {service} has been deleted.",
+  "error": "An error occurred while deleting Connected Account. Try again after some time.",
+  "fetch_integration_instance_error": "Something went wrong. Please try again later.",
+  "cancel_button": "Cancel",
+  "delete_button": "Delete",
+  "heading": "Delete connected account?",
+  "description": "Deleting this app from Postman will cease any actions it performs immediately. No new integrations can be set up with this domain.",
+  "banner_text": "{instanceCount, plural, one {# integration} other {# integrations}} set up by {creatorCount, plural, one {# team member} other {# team members}} will stop working."
+ },
+ "integration_instance_table": {
+  "headers": {
+   "name": "Name",
+   "last_run": "Last run",
+   "created_by": "Created by"
+  },
+  "nil_string": "--",
+  "altered_name": "{name} on {entityInputType, select, postman_collection {a collection} postman_api {a api} other {a monitor}}",
+  "fallback_entity_name": {
+   "monitor": "a monitor",
+   "collection": "a collection",
+   "api": "an api"
+  }
+ },
+ "orgs": {
+  "blank_slate": {
+   "add_more_apps": "Add more apps for your organization",
+   "description": "Configure your organization in Postman with a third-party app. Apps configured can be used by the Postman organization members to set up integrations. Learn more about <CustomLink><Text>installed apps</Text></CustomLink>"
+  }
+ }
+}

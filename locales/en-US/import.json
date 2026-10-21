@@ -1,0 +1,252 @@
+{
+ "file": {
+  "heading": "Drop anywhere to import",
+  "select_from": "Or select <1></1><2>files</2> or <4></4><5>folders</5>"
+ },
+ "github": {
+  "organization_label": "Organization",
+  "repository_label": "Repository",
+  "branch_label": "Branch",
+  "repository_placeholder": "Search for repository",
+  "branch_placeholder": "Search for branch",
+  "unable_to_load_organization": "Unable to load organizations",
+  "unable_to_load_repository": "Unable to load repositories",
+  "unable_to_load_branch": "Unable to load branch list",
+  "tooltip_repository": "Please select an Organization",
+  "tooltip_branch": "Please select a repository",
+  "warning_message": "Unable to find any files to import. Double check your repository and branch."
+ },
+ "githubapp": {
+  "organization_label": "Organization",
+  "repository_label": "Repository",
+  "branch_label": "Branch",
+  "repository_placeholder": "Search for repository",
+  "branch_placeholder": "Search for branch",
+  "unable_to_load_organization": "Unable to load organizations",
+  "unable_to_load_repository": "Unable to load repositories",
+  "unable_to_load_branch": "Unable to load branch list",
+  "tooltip_repository": "Please select an Organization",
+  "tooltip_branch": "Please select a repository",
+  "warning_message": "Unable to find any files to import. Double check your repository and branch."
+ },
+ "bitbucket": {
+  "workspace_label": "Workspace",
+  "repository_label": "Repository",
+  "branch_label": "Branch",
+  "repository_placeholder": "Search for repository",
+  "branch_placeholder": "Search for branch",
+  "unable_to_load_workspace": "Unable to load workspaces",
+  "unable_to_load_repository": "Unable to load repositories",
+  "unable_to_load_branch": "Unable to load branch list",
+  "tooltip_repository": "Please select a workspace",
+  "tooltip_branch": "Please select a repository",
+  "warning_message": "Unable to find any files to import. Double check your repository and branch."
+ },
+ "gitlab": {
+  "group_label": "Group",
+  "project_label": "Project",
+  "branch_label": "Branch",
+  "project_placeholder": "Search for project",
+  "branch_placeholder": "Search for branch",
+  "unable_to_load_group": "Unable to load groups.",
+  "unable_to_load_project": "Unable to load projects",
+  "unable_to_load_branch": "Unable to load branches",
+  "tooltip_project": "Please select a group",
+  "tooltip_branch": "Please select a repository",
+  "tooltip_branch_load_error": "Unable to load branch list",
+  "warning_message": "Unable to find any files to import. Double check your repository and branch."
+ },
+ "azure": {
+  "organization_label": "Organization",
+  "repository_label": "Repository",
+  "branch_label": "Branch",
+  "repository_placeholder": "Search for repository",
+  "branch_placeholder": "Search for branch",
+  "unable_to_load_organization": "Unable to load organizations",
+  "unable_to_load_repository": "Unable to load repositories",
+  "unable_to_load_branch": "Unable to load branch list",
+  "tooltip_repository": "Please select an Organization",
+  "tooltip_branch": "Please select a repository"
+ },
+ "new_relic": {
+  "step_header": {
+   "credentials_label": "Credentials",
+   "service_selection_label": "Service Selection"
+  },
+  "api_key_input": {
+   "heading": "Enter your New Relic API Key",
+   "text": "API Key",
+   "info_text": "Please enter your New Relic API Key",
+   "placeholder": "Fetching last used key...",
+   "invalid_error_message": "The entered API key is invalid",
+   "button_label": "Next"
+  },
+  "service_selection": {
+   "heading": "Select Services or Applications to Import as Collections",
+   "invalid_error_message": "The entered API key is invalid",
+   "fetching_service_error_message": "Encountered an error while fetching services",
+   "import_button_label": "Import",
+   "back_button_label": "Back"
+  },
+  "generate_collection": {
+   "toast_error_title": "Unable to generate collection"
+  }
+ },
+ "generate_collection_options": {
+  "import_settings": {
+   "show": "Show Import Settings",
+   "hide": "Hide Import Settings"
+  },
+  "import_options_content": {
+   "files": "Settings for collections generated from {formatName} files",
+   "data": "Settings for collections generated from the data"
+  }
+ },
+ "api_repo_integration": {
+  "connecting_to_service": {
+   "heading": "Connecting to {service}...",
+   "text": "This may take up to 60 seconds.",
+   "button_label": "Cancel"
+  },
+  "input_dropdown_placeholder": "Type to filter",
+  "search_no_result_found": "No results found. Check your spelling or try a different search term.",
+  "reauth_menu": {
+   "want_to_connect": "Want to connect to a different {entity}?",
+   "reauth_with_service": "Reauthenticate with {service}",
+   "manage_accounts": "Manage all connected accounts in <1>settings</1>."
+  }
+ },
+ "container": {
+  "text_area_placeholder": "Paste cURL, gRPCurl, Raw text or URL",
+  "view_import_settings": "View Import Settings",
+  "import_button_label": "Import",
+  "import_button_tooltip": "Select files to import",
+  "migrate_button_label": "Start Migration",
+  "migrate_button_tooltip": {
+   "no_files": "Select files to start migration.",
+   "invalid_files": "Selected files are not valid {sourceName} files. Try again with valid files."
+  },
+  "back_button_label": "Back",
+  "continue_button_label": "Continue",
+  "cancel_button_label": "Cancel",
+  "continue_background_button_label": "Continue in Background",
+  "cancel_import_button_label": "Cancel Import",
+  "heading": {
+   "import_settings": "Import Settings",
+   "import_from": "Import from {service}",
+   "import_from_newrelic": "Import from New Relic",
+   "import_in_progress": "Import in progress",
+   "importing": "Importing...",
+   "choose_how_to_import": "Choose how to import your API",
+   "choose_how_to_import_specification": "Choose how to import your Specification",
+   "repository_label": "Repository",
+   "multi_file_import_one_definition": "Import one definition from the list",
+   "multi_file_import_elements": "Import Elements ({element_num})",
+   "upload_files_to_postman": "Migrate to Postman"
+  },
+  "tooltip": {
+   "desc": "Tip : You can also paste cURL in the request bar to import",
+   "dismiss_button_label": "Dismiss"
+  },
+  "more_import_options": {
+   "label": "Other Sources",
+   "grouped_option": {
+    "code_repositories": "Code Repositories",
+    "api_gateways": "API Gateways",
+    "apms": "APMs"
+   }
+  },
+  "migrate_to_postman_options": {
+   "label": "Migrate to Postman",
+   "header": "From",
+   "grouped_option": {
+    "soapui": "SoapUI",
+    "other": "Other"
+   }
+  },
+  "shortcut_text": "<0>{shortcutKey}</0> to import",
+  "helper_link_text": "Learn more about <1>importing data</1>",
+  "migrate_to_postman_helper_link_text_learn": "Learn about ",
+  "migrate_to_postman_helper_link_text_migrating": "migrating data to Postman",
+  "migrate_to_postman_helper_link_text_from": "Learn more about migrating data to Postman",
+  "loading_screen": {
+   "single_file_message": "We're reading 1 file...",
+   "multiple_file_message": "We're reading {inputFiles} files...",
+   "raw_message": "Processing ...",
+   "description": {
+    "reading_files": "We're currently reading these files.",
+    "close_modal": "You can close this modal and get back to other tasks."
+   }
+  },
+  "handle_processed_files": {
+   "raw": {
+    "validation_error": "Incorrect format, please input the right format to import"
+   },
+   "other": {
+    "error_title": "Incorrect format",
+    "error_desc": "We don’t recognize/support this format.",
+    "learn_more_text": "Learn about the formats we support."
+   }
+  },
+  "generate_collection_option": {
+   "collection_name": "{format} Collection",
+   "only_collection": {
+    "label": "Postman Collection"
+   },
+   "collection_with_api": {
+    "label_with_format": "{format} with a Postman Collection",
+    "label": "API with a Postman Collection",
+    "helper_text": "Work with the definition file along with an exclusive collection"
+   },
+   "specification": {
+    "label_with_format": "{format} Specification",
+    "label_with_format_and_collection": "{format} Specification with a Postman Collection",
+    "label": "API Specification",
+    "helper_text": "Work with the specification file"
+   }
+  }
+ },
+ "file_container": {
+  "search_placeholder": "Search for a file",
+  "header_name": "Name",
+  "header_import_as": "Import As",
+  "header_import_as_tooltip": "Collections are created by default for API Imports. You can import definition files by selecting it.",
+  "file_count": "{count, plural, one {# file} other {# files}}",
+  "format": {
+   "api": "API",
+   "specification": "Specification",
+   "collection": "Collection",
+   "collection_run": "Collection Run",
+   "data_dump": "Data Dump",
+   "environment": "Environment",
+   "globals": "Globals",
+   "request": "Request",
+   "with_api": ", API",
+   "with_specification": ", Specification"
+  },
+  "type_separator": ", ",
+  "type_separator_final": " and ",
+  "import_api_label": "Import {types} files",
+  "api_builder_banner": {
+   "team": "Your team can create up to {limit, plural, one {# API} other {# APIs}} on your current plan. Based on the usage, first {apiNumber, plural, one {selected API} other {# selected APIs}} can be imported. Learn more about our <6>plans</6>",
+   "individual": "You can create up to {limit, plural, one {# API} other {# APIs}} on your current plan. Based on the usage, first {apiNumber, plural, one {selected API} other {# selected APIs}} can be imported. Learn more about our <6>plans</6>"
+  }
+ },
+ "base": {
+  "gateway_controller_title": "Import API{sourceType} from {serviceName}",
+  "import_button_label": "Import",
+  "cancel_button_label": "Cancel"
+ },
+ "migrate_to_postman": {
+  "upload_from_default_dir": "Detect and import data from default directory",
+  "upload_from_default_dir_info": "Coming Soon",
+  "upload_from_default_dir_info_success": "This will select the default directory where {sourceName} stores it's data on your machine.",
+  "upload_from_default_dir_info_fail": "We could not find default directory for {sourceName} on your machine.",
+  "upload_data": "Select data to migrate",
+  "upload_from_default_dir_disabled": "This option is only available for desktop app.",
+  "upload_from_default_dir_disabled_soapui": "This option is not available for SoapUI client",
+  "upload_from_default_dir_files_found": "Files found in: ",
+  "upload_from_default_dir_files_not_found": "No data found in default directories",
+  "upload_from_chosen_data": "Choose <1></1><2>files</2> or <4></4><5>folder</5>"
+ }
+}

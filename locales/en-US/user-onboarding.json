@@ -1,0 +1,313 @@
+{
+ "name_errors": {
+  "empty": "Please tell us your name",
+  "max_length": "Name must be less than 38 characters"
+ },
+ "name_warnings": {
+  "approaching_max_length": "{count} characters remaining"
+ },
+ "complete_onboarding": {
+  "button": {
+   "text": "Take me to my Workspace"
+  }
+ },
+ "git_repo_connected": {
+  "title": "Connect a local project folder?",
+  "description": "Link collections, specs, and environments to a folder on your machine with offline support through <bold>Local View</bold>. Git is optional — you can add it later.",
+  "yes": "Yes",
+  "no": "No"
+ },
+ "select_git_repo_folder": {
+  "title": "Connect your local folder",
+  "checking": {
+   "message": "Checking workspace connection…"
+  },
+  "connected": {
+   "title": "Local folder connected",
+   "choose_new_folder": "Choose a different folder"
+  },
+  "empty": {
+   "title": "Connect your local folder",
+   "description": "Choose a folder on your machine. Git is not required.",
+   "button": "Choose a folder"
+  },
+  "existing": {
+   "title": "Folder already linked to a workspace",
+   "description": "This folder is already connected to another workspace. Choose a different folder or continue sign up without linking it here.",
+   "selected_folder": "Selected folder:",
+   "choose_different_folder": "Choose a different folder",
+   "continue_sign_up": "Continue sign up"
+  },
+  "git_not_installed": {
+   "title": "Git not installed",
+   "description": "Git isn't installed or isn't available in your shell. Install Git to connect this project to a workspace.",
+   "button": "Choose a folder"
+  },
+  "no_remote_origin": {
+   "title": "Remote origin required",
+   "description": "This git repo does not have a remote origin URL configured. Please add a remote origin before connecting to a workspace.",
+   "button": "Choose a folder"
+  },
+  "non_git_folder": {
+   "title": "No Git repository found",
+   "description": "The selected folder doesn't contain a Git repository. You can still use it as a local folder, or choose a different one.",
+   "button": "Choose a folder"
+  }
+ },
+ "welcome_intro": {
+  "duration": "1 min",
+  "steps": "{count} steps",
+  "title": "Welcome to Postman 🚀",
+  "title_team_joiner": "Welcome to your team's workspace!",
+  "description": "Let's set things up so you can start working right away.",
+  "description_team_joiner": "Share a few details about yourself and let Postman AI help you navigate the workspace."
+ },
+ "name_and_role": {
+  "title": "Let's personalize your workspace.",
+  "inline_prefix": "I'd like to",
+  "inline_middle": "as a",
+  "input": {
+   "name": {
+    "label": "What is your name?",
+    "placeholder": "eg: John Doe"
+   },
+   "role": {
+    "label": "What is your role?",
+    "placeholder": "Select role"
+   },
+   "role_use_case": {
+    "label": "What best describes what you’d like to do in Postman and your role?",
+    "placeholder": "Select option"
+   },
+   "team_size": {
+    "title": "How big is your team?"
+   }
+  },
+  "roles": {
+   "developer_engineer": "Developer / Engineer",
+   "qa_test_engineer": "QA / Test Engineer",
+   "devops_engineer": "DevOps / Platform Engineer",
+   "architect_designer": "Architect / API Designer",
+   "engineering_lead_manager": "Engineering Manager / Lead",
+   "engineering_executive": "Engineering Executive (Director / VP / CTO)",
+   "api_program_product_manager": "Product / API Program Manager",
+   "student_educator": "Student / Educator",
+   "other": "Other"
+  },
+  "role_use_cases": {
+   "design_a_new_api": "Design a new API",
+   "test_or_debug_an_api": "Test or debug an API",
+   "build_with_third_party_api": "Build with a third-party or public API",
+   "set_up_my_team": "Set up my team on Postman",
+   "evaluate_postman": "Evaluate Postman",
+   "document_and_share_apis": "Document and share APIs",
+   "manage_enterprise_api_program": "Manage our enterprise API program"
+  },
+  "role_use_case_descriptions": {
+   "design_a_new_api": "start from a spec in Spec Hub",
+   "test_or_debug_an_api": "send requests, inspect responses, write tests",
+   "build_with_third_party_api": "find and integrate an API into my app",
+   "set_up_my_team": "with collaboration, workspaces, and roles",
+   "evaluate_postman": "explore and see if it's right for my team",
+   "document_and_share_apis": "with my team or external consumers",
+   "manage_enterprise_api_program": "standardize, secure, and govern APIs across our organization"
+  },
+  "team_sizes": {
+   "1_member": "1 member",
+   "2_10_members": "2-10 members",
+   "11_50_members": "11-50 members",
+   "50_plus_members": "50+ members"
+  },
+  "get_started_button": "Get started"
+ },
+ "verify_email": {
+  "title": "Verify your email to keep your account secure",
+  "description": "We've sent a verification email to",
+  "resend_text": "Haven’t received the email?",
+  "resend": "Resend",
+  "verifyCTA": "I've Verified My Email",
+  "toast_content": {
+   "email_not_verified": {
+    "title": "Your email is not verified",
+    "description": "Please check your inbox to complete the verification."
+   },
+   "default_error": {
+    "title": "Couldn't send request",
+    "description": "Just a faulty wire. Try again."
+   },
+   "verification_email_sent": {
+    "title": "Email sent",
+    "description": "Please check your inbox for the latest verification email. "
+   }
+  }
+ },
+ "join_team": {
+  "title_experimental": "Join your first team from",
+  "description_new": "Get access to API resources and start collaborating with your teammates right away.",
+  "members_count": "{count, plural, one {member} other {members}}",
+  "growth": {
+   "join_button": {
+    "join_text": "Join"
+   },
+   "show_more_button": {
+    "text_experimental": "View More Teams"
+   }
+  }
+ },
+ "prompt": {
+  "title": "Last step, take it further with Postman AI.",
+  "description": "Postman AI already understands your connected repo and workspace. Tell it what you want to build, explore, or generate.",
+  "input": {
+   "placeholder": "Generate requests, tests, or collections from this repo..."
+  },
+  "examples": {
+   "label": "Or try an example:",
+   "repo_connected": {
+    "test-apis": {
+     "label": "Test APIs",
+     "prompt": "Help me test the APIs in this repo and suggest key test cases."
+    },
+    "send-requests": {
+     "label": "Send Requests",
+     "prompt": "Generate example requests for the APIs in this repository."
+    },
+    "api-docs": {
+     "label": "API Docs",
+     "prompt": "Create API documentation from this codebase."
+    },
+    "learn-postman": {
+     "label": "Learn Postman",
+     "prompt": "Show me how to use Postman with this repository."
+    },
+    "create-api": {
+     "label": "Create API",
+     "prompt": "Help me extend or add a new API to this project."
+    },
+    "monitor-apis": {
+     "label": "Monitor APIs",
+     "prompt": "Set up monitoring and health checks for these APIs."
+    },
+    "integrate-apis": {
+     "label": "Integrate APIs",
+     "prompt": "Help me integrate these APIs with another service."
+    }
+   },
+   "generic": {
+    "test-apis": {
+     "label": "Test APIs",
+     "prompt": "Help me test an API I'm working with."
+    },
+    "send-requests": {
+     "label": "Send Requests",
+     "prompt": "Help me send API requests in Postman."
+    },
+    "api-docs": {
+     "label": "API Docs",
+     "prompt": "Help me create API documentation."
+    },
+    "learn-postman": {
+     "label": "Learn Postman",
+     "prompt": "Teach me the basics of using Postman."
+    },
+    "create-api": {
+     "label": "Create API",
+     "prompt": "Help me design a new API."
+    },
+    "monitor-apis": {
+     "label": "Monitor APIs",
+     "prompt": "How do I monitor API health and performance?"
+    },
+    "integrate-apis": {
+     "label": "Integrate APIs",
+     "prompt": "How can I integrate an API into my app?"
+    }
+   }
+  },
+  "submit_button": {
+   "text": "Get started with AI"
+  }
+ },
+ "redirect_to_workspace_loading_page": {
+  "title": "Setting up your workspace"
+ },
+ "toasts": {
+  "success": {
+   "send_invites": {
+    "title": "Invites sent",
+    "description": "New members will join once they accept your invite."
+   },
+   "save_profile": {
+    "title": "Profile saved",
+    "description": "Your profile has been updated successfully."
+   },
+   "create_team": {
+    "title": "Team created",
+    "description": "We'll notify you when your request is approved."
+   },
+   "verified_team_full": {
+    "title": "Your request to join the team is in review",
+    "description": "This team is full. You can request to join it later."
+   },
+   "unverified_team_full": {
+    "title": "Verify your email",
+    "description": "A verification email has been sent to you. Join request will be sent to the admin after verification. We'll notify you when your request is approved."
+   }
+  },
+  "info": {
+   "unverified_join_team_request": {
+    "title": "Verify your email",
+    "description": "A verification email has been sent to you. Join request will be sent to the admin after verification. We'll notify you when your request is approved."
+   }
+  },
+  "error": {
+   "send_invites": {
+    "title": "Invites couldn't be sent",
+    "description": "We couldn't send invitations at this time. You can invite teammates later from your team settings."
+   },
+   "save_profile": {
+    "title": "Profile couldn't be saved",
+    "description": "We couldn't save your profile information. Don't worry, you can update it later in your account settings."
+   },
+   "setup_team": {
+    "title": "Team setup incomplete",
+    "description": "We couldn't complete some team settings, but you can continue. Update these settings later in your team dashboard."
+   },
+   "create_team": {
+    "title": "Team couldn't be created",
+    "description": "We encountered an issue creating your team. For now, you can continue with your personal workspace."
+   },
+   "save_name_and_role": {
+    "title": "Profile couldn't be saved",
+    "description": "We couldn't save your name and role. You can update your profile later in account settings."
+   },
+   "check_team_access": {
+    "title": "Couldn't verify team access",
+    "description": "We couldn't check your access to this team. Please try again or contact your team admin."
+   },
+   "request_team_access": {
+    "title": "Request couldn't be sent",
+    "description": "We couldn't send your request to join this team. Please try again or contact the team admin directly."
+   },
+   "auto_join_team": {
+    "title": "Something went wrong",
+    "description": "Couldn't send your request to admin"
+   },
+   "join_team_request": {
+    "title": "Something went wrong",
+    "description": "Couldn't send your request to admin"
+   },
+   "resend_verification": {
+    "title": "Email couldn't be sent",
+    "description": "We couldn't send the verification email. Please try again or contact support."
+   },
+   "connect_folder_to_workspace": {
+    "title": "Something went wrong",
+    "description": "We couldn't connect your folder to your workspace. Please try again."
+   },
+   "checking_repo_connection_status": {
+    "title": "Git check failed",
+    "description": "We couldn't detect whether this folder is a Git repository. Select another folder or try again."
+   }
+  }
+ }
+}

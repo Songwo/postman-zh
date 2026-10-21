@@ -1,0 +1,187 @@
+{
+  "mock_details": {
+    "extensible_collection_http_only_banner": "此集合的模拟目前只支持 HTTP 请求",
+    "mock_server": "模拟服务器",
+    "delay_duration_error": "请输入 0 到 180000 毫秒之间的延迟值。",
+    "changes_saved": "更改已保存",
+    "update_msg": "你已更新模拟服务器 {name}。",
+    "unable_to_edit": "无法编辑模拟"
+  },
+  "call_logs_list_item_body": {
+    "unable_to_load_resource": "无法加载{resourceType}内容。",
+    "try_again": "重试",
+    "request_body": "此{resourceType}没有内容。",
+    "size_limit_msg": "调用日志只显示小于 1 MB 的{resourceType}内容。要查看完整内容，你可以<3>下载</3>调用日志。",
+    "copy_tooltip": "复制{resourceType}内容",
+    "expand_collapse_aria_label": "{action}{section}部分",
+    "expand": "展开",
+    "collapse": "折叠"
+  },
+  "collapsible_call_logs_list_item_header": {
+    "request_headers": "此{resourceType}没有头。",
+    "try_again": "重试",
+    "unable_to_load": "无法加载{resourceType}头。 "
+  },
+  "empty_call_logs": {
+    "header": "还没有模拟服务器调用",
+    "logs_description": {
+      "copied": "已复制！",
+      "copy_url": "复制模拟 URL",
+      "header": "调用模拟服务器的步骤如下：",
+      "step1": "<0>1. 向以下模拟服务器 URL 发送请求，后面加上请求路径 <1></1> </0>",
+      "step2": "<0>2. 为每个请求添加模拟服务器要返回的示例响应。<1></1> <2>了解什么是示例以及如何使用</2> </0>"
+    }
+  },
+  "mock_no_result_found": {
+    "nothing_here": "这里什么都没有！",
+    "subtext": "没有找到匹配的内容，请检查拼写或换个查询试试。"
+  },
+  "call_logs_list_item_header": {
+    "expand_collapse_aria_label": "{action}{section}部分",
+    "expand": "展开",
+    "collapse": "折叠"
+  },
+  "call_logs_list_item": {
+    "call_logs_list_item_title": {
+      "tooltip": "只有团队成员可以查看模拟调用日志详情。",
+      "not_signed_in_error": "你需要一个账号才能继续探索 Postman。",
+      "something_went_wrong": "出了点问题",
+      "delete_call_log_button_aria_label": "删除调用日志",
+      "permission_error_tooltip": "你没有查看调用日志详情的权限。",
+      "expand": "展开",
+      "collapse": "折叠",
+      "expand_collapse_aria_label": "{action} {time} {method} {url} 的调用日志详情"
+    },
+    "collapsible_call_logs_list_item": {
+      "request_headers": "请求头",
+      "request_body": "请求体",
+      "response_headers": "响应头",
+      "response_body": "响应体"
+    }
+  },
+  "call_logs_list_old": {
+    "collection_deleted_banner": "此模拟服务器已停用，因为其底层集合已被删除。",
+    "environment_deleted_banner": "此模拟服务器已停用，因为其底层环境已被删除。",
+    "search_placeholder": "搜索你的调用...",
+    "offline_error": "恢复联网后即可执行此操作。",
+    "refresh_logs": "刷新日志",
+    "header_time": "时间",
+    "header_request": "请求",
+    "header_response": "响应",
+    "load_more": "加载更多",
+    "footer_msg": "模拟服务器通过返回与每个请求关联的示例响应来模拟 API 端点。",
+    "mock_docs": "了解如何设置和使用带示例响应的模拟"
+  },
+  "usage_limit_banner": {
+    "text": "提高上限",
+    "reached_limit": "你已达到模拟服务器的每月调用上限。",
+    "contact_team_member": "请联系拥有账单角色的团队成员提高上限。"
+  },
+  "mock_call_logs_old": {
+    "error_fetching_call_logs": {
+      "try_again": "重试",
+      "something_went_wrong": "出了点问题",
+      "unexpected_error": "加载模拟服务器调用日志时发生意外错误。",
+      "try_refreshing": "请尝试刷新页面。"
+    }
+  },
+  "mock_offline": {
+    "header": " 离线状态下无法加载数据",
+    "sub_header": "在恢复联网之前，你的数据可能不是最新的。"
+  },
+  "mock_details_header_old": {
+    "mock_server_name": "模拟服务器名称",
+    "copy_url": "复制 URL",
+    "copy_url_tooltip": "复制模拟服务器 URL",
+    "view_collection_docs": "查看集合文档",
+    "inactive_mock_collection_deleted": "由于关联的集合已被删除，无法访问此文档。",
+    "inactive_mock_collection_not_accessible": "由于关联的集合无法访问，无法访问此文档。",
+    "offline_error": "恢复联网后即可执行此操作。",
+    "edit_configuration": "编辑配置",
+    "manage_roles": "管理角色",
+    "view_more_actions": "查看更多操作",
+    "move": "移动",
+    "mock_server_details": "模拟服务器详情",
+    "delete": "删除",
+    "not_signed_in_error": "你需要一个账号才能继续探索 Postman。",
+    "permission_error": "你没有执行此操作的权限。",
+    "inactive_mock": "无法对已停用的模拟服务器执行此操作。",
+    "no_team": "你需要登录团队才能执行此操作",
+    "mock_url_copied": "模拟 URL 已复制"
+  },
+  "mock_tab_loading_error": {
+    "refresh": "刷新",
+    "deleted": {
+      "title": "找不到{userFriendlyEntityName}",
+      "body": "此模拟服务器已被删除。"
+    },
+    "moved": {
+      "title": "找不到{userFriendlyEntityName}",
+      "body": "此模拟服务器已被移动到其他工作区。"
+    },
+    "error": {
+      "title": "无法加载你的{userFriendlyEntityName}",
+      "body": "只是线路出了点小故障，请刷新或稍后再试。"
+    },
+    "not_found": {
+      "title": "找不到该{userFriendlyEntityName}",
+      "body": "它可能已被删除或移动到其他工作区。"
+    },
+    "edit_mock_access_denied": {
+      "title": "无法编辑{userFriendlyEntityName}",
+      "body": "你是工作区查看者，无权执行此操作"
+    },
+    "create_mock_access_denied": {
+      "title": "无法创建{userFriendlyEntityName}",
+      "body": "你是工作区查看者，无权执行此操作"
+    },
+    "unable_to_edit_inactive_mock": {
+      "title": "无法编辑{userFriendlyEntityName}",
+      "body": "此模拟服务器处于非活动状态，无法编辑。"
+    }
+  },
+  "mock_info_context_view": {
+    "id": "ID",
+    "created_by": "创建者",
+    "created_on": "创建时间",
+    "mock_server_url": "模拟服务器 URL",
+    "collection": "集合",
+    "collection_deleted": "关联的集合已被删除",
+    "label_text": "关联的集合无法访问",
+    "info_text": "该集合位于你无权访问的工作区中。",
+    "environment": "环境",
+    "no_environment": "无环境",
+    "mock_usage": "模拟用量",
+    "copied": "已复制",
+    "copy_mock_id": "复制模拟 ID",
+    "copy_mock_url": "复制模拟 URL",
+    "environment_deleted": "关联的环境已被删除",
+    "environment_inaccessible": "关联的环境无法访问",
+    "environment_info_text": "该环境位于你无权访问的工作区中。",
+    "something_went_wrong": "出了点问题",
+    "please_try_again": "发生意外错误，请重试。",
+    "try_again": "重试",
+    "private_profile": "此用户的资料是私密的。",
+    "last_updated_at": "最近更新于",
+    "code_mock": "模拟",
+    "linked_simulation": "仿真",
+    "no_linked_simulation": "没有仿真使用此模拟",
+    "new": "新建",
+    "new_simulation_tooltip": "创建仿真",
+    "simulation_url": "仿真 URL",
+    "copy_simulation_id": "复制仿真 ID",
+    "copy_simulation_url": "复制仿真 URL"
+  },
+  "mock_embedded_report": {
+    "mock_usage": "模拟用量",
+    "monitor_usage": "监视器用量",
+    "hits": "次调用"
+  },
+  "mock_details_meta_info": {
+    "mock_server_type": "模拟服务器类型",
+    "private": "私有",
+    "public": "公开",
+    "collection": "集合",
+    "environment": "环境"
+  }
+}

@@ -1,0 +1,75 @@
+{
+ "fork": {
+  "fork_label_with_username": "{username}'s fork",
+  "fork_label": "My fork",
+  "page_title": "Fork Collection | Postman",
+  "fork_collection_error": {
+   "title": "You are offline",
+   "description": "You'll be able to fork the collection once you're online."
+  },
+  "update_profile_modal": {
+   "description": "To create fork from a collection in a public workspace, you must make your profile public. The following changes will be made to your profile.",
+   "error": "To fork a collection from a public workspace, you need to have your public profile setup."
+  },
+  "create_fork_error": "Some error occurred while trying to fork the collection!",
+  "request_access": {
+   "sent_to_team_admin": "Your join request has been sent to the team admin.",
+   "sent_to_workspace_admin": "Your request for access has been sent to the workspace admin.",
+   "access_not_enabled": "Request Access is not enabled for this resource.",
+   "failed_to_send": "Failed to send the request."
+  },
+  "error_state": {
+   "can_not_reach": {
+    "title": "Can't reach the API Network",
+    "description": "There may be a connection issue. Make sure you're online and try again."
+   },
+   "not_found": {
+    "title": "Collection doesn't exist",
+    "description": "This collection seems to have been deleted or is no longer public"
+   },
+   "unauthorized": {
+    "title": "You don't have access",
+    "description": "Ask for access, or switch to an account with permission. You are signed in as {email}",
+    "primary_actions": {
+     "request_access": "Request Access",
+     "requested": "Requested"
+    },
+    "secondary_actions": {
+     "switch_account": "Switch accounts"
+    }
+   },
+   "workspace": {
+    "title": "Unable to fetch user workspaces",
+    "description": "We could not fetch information about the user workspaces. Please try again."
+   },
+   "not_allowed_to_fork": {
+    "description": "You don’t have permission to fork into this team’s workspaces.",
+    "no_workspaces_description": "You don’t have any workspaces you can fork into. Create a workspace to get started.",
+    "no_workspaces_no_permission_description": "You don’t have any workspaces you can fork into. Contact your team admin for workspace access.",
+    "create_workspace_button": "Create Workspace",
+    "button_text": "Go back to explore"
+   }
+  },
+  "heading": "Fork {modelDisplayName}",
+  "source_module_label": "Source {modelDisplayName}",
+  "fork_creation_form": {
+   "description": "Forking creates a copy of the {modelType} and enables you to perform changes without affecting the original. Learn more about <3>forks</3>.",
+   "link_label": "forks",
+   "helper_text": "Identifies the fork from the original collection.",
+   "fork_label": "Fork label",
+   "workspace_label": "Workspace",
+   "workspace_helper_text": "The fork will be created in the selected workspace.",
+   "workspace_selector_restrict_fork_message": "Can't fork here",
+   "auto_sync_changes_label": "Auto-pull changes",
+   "auto_sync_changes_checkbox_label": "Auto-pull changes from source {modelDisplayName}",
+   "notifications_label": "Notifications",
+   "notifications_checkbox_label": "Watch source collection to get notified of updates",
+   "notifications_checkbox_label_forked": "Watch forked collection to get notified of updates",
+   "notifications_checkbox_info_text": "You'll be notified about changes made to the original collection.",
+   "fork_confirm_button_label": "Fork {modelDisplayName}",
+   "fork_confirm_button_disabled_tooltip": "You can perform this action once you're back online",
+   "select_workspace": "Select a workspace",
+   "enter_fork_label": "Enter a fork label"
+  }
+ }
+}

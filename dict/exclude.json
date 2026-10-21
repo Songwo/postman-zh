@@ -1,0 +1,8 @@
+[
+  "Date", "Server", "Connection", "Content-Type", "Content-Length", "Content-Encoding", "Host", "Accept",
+  "Accept-Encoding", "Accept-Language", "Cookie", "Set-Cookie", "Vary", "Expires", "Location", "Age", "Via",
+  "Link", "Allow", "Origin", "Range", "ETag", "Pragma", "Referer", "User-Agent", "Authorization-Info",
+  "Cache-Control", "Keep-Alive", "Upgrade-Insecure-Requests", "Transfer-Encoding", "X-Powered-By",
+  "GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS", "JSON", "XML", "HTML", "true", "false", "null",
+  "id", "name", "value", "key", "type", "data", "status", "message", "error", "code", "result", "items", "list"
+]

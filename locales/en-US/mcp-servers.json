@@ -1,0 +1,15 @@
+{
+ "spec_list": {
+  "no_operations": "No operations found in this specification.",
+  "no_matching_requests": "No matching requests found."
+ },
+ "collection_tree": {
+  "no_requests": "This collection has no requests.",
+  "no_matching_requests": "No matching requests found."
+ },
+ "errors": {
+  "spec_syntax": "The selected specification has syntax errors. Please fix the errors in the spec editor and try again.",
+  "spec_load_failed": "Failed to load operations. Please try again.",
+  "collection_load_failed": "Failed to load collection. Please try again."
+ }
+}

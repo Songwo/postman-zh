@@ -1,0 +1,374 @@
+{
+ "socket_io": {
+  "user_friendly_language": {
+   "text": "Text",
+   "binary": "Binary",
+   "json": "JSON",
+   "xml": "XML",
+   "html": "HTML",
+   "base64": "Base64",
+   "hex": "Hexadecimal"
+  },
+  "response": {
+   "websocket_status": {
+    "connected": "Connected",
+    "disconnected": "Disconnected",
+    "reconnecting": "Reconnecting",
+    "connecting": "Connecting",
+    "disconnecting": "Disconnecting"
+   },
+   "disabled_tooltip": {
+    "is_offline": "You can take this action when you're back online.",
+    "no_permission": "You don't have permission to take this action."
+   },
+   "notification": {
+    "new_messages": "New messages",
+    "jump_to_latest": "Jump to latest"
+   },
+   "empty_state": {
+    "message": "Establish a connection to send and receive messages."
+   },
+   "truncated_state": {
+    "title": "Response size is too large to display",
+    "message": "Could not save the response in the history because it was too large."
+   },
+   "generic_empty_state": {
+    "title": "No messages found",
+    "message": "Try again using a different keyword or filter."
+   },
+   "filter_placeholder": "Search",
+   "search_filter_label": "Search",
+   "clear_messages": "Clear Messages",
+   "sent_messages": "Sent Messages",
+   "received_messages": "Received Messages",
+   "all_messages": "All Messages",
+   "deselect": "Deselect",
+   "time_difference": "Time difference: {timeDifference}",
+   "hidden_message": {
+    "label": "{index} messages hidden",
+    "restore_button_label": "Restore"
+   },
+   "preview": "Preview",
+   "reload_text": "preview",
+   "message_preview": {
+    "connected": "Connected to {url}",
+    "disconnected": "Disconnected from {url}",
+    "reconnecting": "Reconnecting to {url}",
+    "abort": "Connection aborted",
+    "error": "Could not connect to {url}",
+    "no_listener": "Add event listeners to receive messages",
+    "subscribed": "Listening to",
+    "unsubscribed": "Stopped listening to",
+    "empty_text": "(empty)",
+    "binary_text": "Binary"
+   },
+   "message_stream_item": {
+    "error": "<Strong>Error:</Strong><Span> </Span><BodyMedium>{error}</BodyMedium>",
+    "handshake_details": "Handshake Details",
+    "copied_to_clipboard": "Copied to clipboard",
+    "message_saved": "Message saved",
+    "can_not_copy_this_message": "Can't copy this message",
+    "copy_message": "Copy {size, plural, =1 {message} other {first argument}}",
+    "save_request": "Save this request to perform this action.",
+    "save_message": "Save message",
+    "remaining_args": "+{remaining_args, plural, =1 {# Arg} other {# Args}}"
+   },
+   "toolbar": {
+    "wrap_line": "Wrap Line",
+    "beautify": "Beautify",
+    "show_message": "Show Message",
+    "show_hexdump": "Show Hexdump",
+    "search": "Search"
+   }
+  },
+  "connection_close_codes": {
+   "io_server_disconnect": {
+    "name": "IO server disconnect",
+    "description": "The server has forcefully disconnected the socket."
+   },
+   "io_client_disconnect": {
+    "name": "IO client disconnect",
+    "description": "The socket was manually disconnected."
+   },
+   "ping_timeout": {
+    "name": "Ping timeout",
+    "description": "The server did not respond in the pingTimeout range."
+   },
+   "transport_close": {
+    "name": "Transport close",
+    "description": "The connection was closed."
+   },
+   "transport_error": {
+    "name": "Transport error",
+    "description": "The connection has encountered an error."
+   },
+   "unknown": {
+    "name": "Error",
+    "description": "Connection was closed due to an unknown error: {reason}"
+   }
+  },
+  "settings": {
+   "strict_ssl": {
+    "title": "Enable server certificate verification",
+    "description": "Verify server certificate when connecting over a secure connection.",
+    "summary": "Verify server certificate when connecting over a secure connection."
+   },
+   "version": {
+    "title": "Client version",
+    "description": "Choose client version that should be used for connecting with the server.",
+    "summary": "Client version that will be used for connecting with the server."
+   },
+   "path": {
+    "title": "Handshake path",
+    "description": "Set the server path that should be used during the handshake request.",
+    "summary": "Server path that will be used during the handshake request."
+   },
+   "handshake_timeout": {
+    "title": "Handshake request timeout",
+    "description": "Set how long the handshake request should wait before timing out in milliseconds. To never time out, set to 0.",
+    "summary": "How long the handshake request will wait before timing out in milliseconds."
+   },
+   "retry_count": {
+    "title": "Reconnection attempts",
+    "description": "Maximum reconnection attempts when the connection closes abruptly.",
+    "summary": "Maximum reconnection attempts when the connection closes abruptly."
+   },
+   "retry_delay": {
+    "title": "Reconnection intervals",
+    "description": "Interval between each reconnection attempt in milliseconds.",
+    "summary": "Interval between each reconnection attempt in milliseconds."
+   }
+  },
+  "request": {
+   "message": {
+    "send_tooltip_non_darwin": "Ctrl + Enter",
+    "add_argument": "Arg",
+    "beautify_tooltip": "Beautify",
+    "acknowledge": "Ack",
+    "publish_event_placeholder": "Event name, defaults to \"message\"",
+    "send": "Send",
+    "message_placeholder": "Compose message",
+    "arg_name": "Arg {index}",
+    "user_friendly_language_name": {
+     "text": "Text",
+     "json": "JSON",
+     "xml": "XML",
+     "html": "HTML",
+     "binary": "Binary",
+     "base64": "Base64",
+     "hexadecimal": "Hexadecimal"
+    }
+   },
+   "events": {
+    "name": {
+     "label": "Events",
+     "placeholder": "Add event"
+    },
+    "subscribe_on_connect": {
+     "label": "Listen"
+    },
+    "description": {
+     "label": "Description",
+     "placeholder": "Add description"
+    }
+   }
+  }
+ },
+ "websocket_config": {
+  "strict_ssl": {
+   "title": "Enable server certificate verification",
+   "description": "Verify server certificate when connecting over a secure connection.",
+   "summary": "Verify server certificate when connecting over a secure connection."
+  },
+  "handshake_timeout": {
+   "title": "Handshake request timeout",
+   "description": "Set how long the handshake request should wait before timing out in milliseconds. To never time out, set to 0.",
+   "summary": "How long the handshake request will wait before timing out in milliseconds."
+  },
+  "retry_count": {
+   "title": "Reconnection attempts",
+   "description": "Maximum reconnection attempts when the connection closes abruptly.",
+   "summary": "Maximum reconnection attempts when the connection closes abruptly."
+  },
+  "retry_delay": {
+   "title": "Reconnection intervals",
+   "description": "Interval between each reconnection attempt in milliseconds.",
+   "summary": "Interval between each reconnection attempt in milliseconds."
+  },
+  "max_payload": {
+   "title": "Maximum message size",
+   "description": "Maximum allowed message size in MB. To receive messages of any size, set to 0.",
+   "summary": "Maximum allowed message size in MB."
+  }
+ },
+ "websocket_message_pane_label": {
+  "not_listening": "Not listening to events",
+  "listening": "Listening to  {count, plural, =0 {# event} other {# events}}",
+  "connection_details": "Connection details",
+  "connected": "Connected",
+  "protocol": "Protocol",
+  "extensions": "Extensions",
+  "idle": "Disconnected",
+  "connecting": "Connecting",
+  "disconnecting": "Disconnecting",
+  "reconnecting": "Reconnecting"
+ },
+ "websocket_editor": {
+  "response": "Response",
+  "request": "Request"
+ },
+ "websocket_url_editor": {
+  "enter_url": "Enter URL",
+  "connect_tooltip": "Enter",
+  "connect": "Connect",
+  "disconnect": "Disconnect",
+  "cancel": "Cancel",
+  "connect_button": {
+   "no_permission": "You don't have permission to perform this action in this workspace."
+  }
+ },
+ "websocket_editor_header": {
+  "is_offline": "You can take this action when you're back online.",
+  "no_permission": "You don't have permission to perform this action.",
+  "no_new_changes": "No new changes to save.",
+  "save_request": "Save request",
+  "save_request_to_a_collection": "Save request to a collection",
+  "save": "Save",
+  "save_as": "Save As..",
+  "saving": "Saving...",
+  "share_button": {
+   "label": "Share",
+   "tooltips": {
+    "no_edit_permission": "Only requests saved in a collection can be shared. You need edit access to save requests.",
+    "share_request": "Share request"
+   }
+  }
+ },
+ "websocket_connection_tabs": {
+  "message": "Message",
+  "events": "Events",
+  "params": "Params",
+  "headers": "Headers",
+  "settings": "Settings"
+ },
+ "connection_tabs": {
+  "toggle": {
+   "expand": "Expand connection configuration",
+   "collapse": "Collapse connection configuration"
+  }
+ },
+ "message_language_selector": {
+  "aria_label": "Message language selector"
+ },
+ "message_pane": {
+  "toggle": {
+   "expand": "Expand messages pane",
+   "collapse": "Collapse messages pane"
+  }
+ },
+ "raw_websocket_compose": {
+  "compose_message": "Compose message",
+  "beautify": "Beautify",
+  "send": "Send",
+  "send_tooltip": "Ctrl + Enter",
+  "user_friendly_language": {
+   "text": "Text",
+   "json": "JSON",
+   "xml": "XML",
+   "html": "HTML",
+   "binary": "Binary",
+   "base64": "Base64",
+   "hex": "Hexadecimal"
+  }
+ },
+ "disabled_tooltip": {
+  "noPermission": "You don't have permission to connect with a WebSocket server in this workspace.",
+  "notMember": "Only workspace members can connect with a WebSocket server. Join this workspace to complete this action.",
+  "emptyURL": "URL cannot be empty",
+  "nonWsAgent": "Switch to Postman Desktop Agent to connect with a WebSocket server.",
+  "agentNotConnected": "Make sure the Desktop Agent is installed and running.",
+  "oldAgent": "You’re using an older version of Postman Desktop Agent which does not support {type} WebSocket requests. Update the Desktop Agent and try again."
+ },
+ "websocket_compose_area": {
+  "editor": "Editor",
+  "saved_messages": "Saved messages",
+  "add_message": "Add message"
+ },
+ "websocket_message_stream": {
+  "new_messages": "New messages",
+  "jump_to_latest": "Jump to latest",
+  "establish_connection": "Connect to send and receive messages",
+  "too_large_to_display": "Response size is too large to display",
+  "could_not_save": "Could not save the response in the history because it was too large.",
+  "no_msg_found": "No messages found",
+  "try_again": "Try again using a different keyword or filter."
+ },
+ "websocket_hidden_message_item": {
+  "restore": "Restore",
+  "message_hidden": "{message_hidden} messages hidden"
+ },
+ "websocket_message_stream_area": {
+  "deselect": "Deselect",
+  "time_difference": "Time difference: {time_difference}"
+ },
+ "web_socket_message_stream": {
+  "search": "Search",
+  "clear_messages": "Clear Messages",
+  "outgoing": "Sent Messages",
+  "incoming": "Received Messages",
+  "all_messages": "All Messages"
+ },
+ "raw_web_socket_message_stream": {
+  "copied_to_clipboard": "Copied to clipboard",
+  "message_saved": "Message saved",
+  "handshake_details": "Handshake Details",
+  "cant_copy": "Can't copy this message",
+  "copy_message": "Copy message",
+  "save_message": "Save message",
+  "disabled_tooltip": "You can take this action when you're back online.",
+  "disabled_tooltip_no_permission": "You don't have permission to take this action.",
+  "save_request": "Save this request to perform this action.",
+  "size": "Size: {size}",
+  "time": "Time: {time}",
+  "mime_type": "MIME Type: {mime_type}"
+ },
+ "web_socket_message_body_viewer": {
+  "show_message": "Show Message",
+  "show_hexdump": "Show Hexdump",
+  "search": "Search",
+  "wrap_line": "Wrap Line",
+  "beautify": "Beautify"
+ },
+ "websocket_saved_messages": {
+  "loading_messages": "Loading messages",
+  "empty_state": "Couldn’t load your messages.",
+  "retry": "Retry",
+  "faulty_wire": "Just a faulty wire. Please try again.",
+  "unforeseen_circumstances": "We are unable to load your messages due to unforeseen circumstances. Please try again later.",
+  "add_messages": "Add messages to reuse them during an active connection",
+  "rename": "Rename",
+  "duplicate": "Duplicate",
+  "delete": "Delete",
+  "message_title": "Message Title",
+  "tooltip_is_offline": "You can take this action when you're back online.",
+  "tooltip_no_permission": "You don't have permission to take this action."
+ },
+ "websocket_documentation_view": {
+  "title": "Documentation",
+  "headers": "Headers",
+  "settings": "Settings",
+  "query_params": "Query Params",
+  "messages": "Messages"
+ },
+ "websocket_request_info": {
+  "title": "Details",
+  "user_friendly_entity_name": "Request"
+ },
+ "websocket_workbench_view": {
+  "user_friendly_entity_name": "WebSocket request",
+  "permission_error_title": "You don't have view permission",
+  "permission_error_message": "Only team members can view WebSocket requests from history of this workspace.",
+  "unsupported_protocol_title": "Unsupported WebSocket request type",
+  "unsupported_protocol_message": "Please update your app to view this WebSocket request history."
+ }
+}

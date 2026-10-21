@@ -1,0 +1,93 @@
+{
+ "heading": "Partnerships",
+ "heading_tag": "NEW",
+ "create_partner_workspace_banner": {
+  "title": "Growing your partnerships?",
+  "description": "Bring your external partners together in a shared workspace to collaborate on API projects. Come back here to manage all your partnerships.",
+  "button": "Create Partner Workspace"
+ },
+ "cta": {
+  "create_partner_workspace": "Create Partner Workspace"
+ },
+ "tabs": {
+  "external_partners": {
+   "title": "As a Publisher",
+   "description": "Manage who can access your published partner workspaces. Visit <Link><Text>Invites and requests</Text></Link> to view pending partnership invites.",
+   "remove_partner": {
+    "header": "Remove {userName} as a partner?",
+    "description": "Once you remove a partner, they won't have access to your team's partner workspaces.",
+    "cancel": "Cancel",
+    "remove_partner": "Remove Partner",
+    "tooltip": "Remove partner",
+    "toasts": {
+     "success": "The partner has been removed and no longer has access to partner workspaces.",
+     "error": "Something went wrong while removing the partner. Please try again."
+    }
+   },
+   "filter": {
+    "by_email_or_name": "Search by name or email"
+   },
+   "individual_partners_tag": "Individual partners",
+   "editor_role_description": "Partners with editor access will be charged in the next billing cycle.",
+   "sso_description": "This organization requires users to sign in via SSO.",
+   "blank_state": {
+    "partner_workspace_feature_disabled": {
+     "title": "No external partners? No problem!",
+     "description": "Bring your external partners together in a shared workspace to collaborate on API projects. Upgrade your plan to create your first Partner Workspace.",
+     "button_description": "Upgrade Plan"
+    },
+    "partner_workspace_feature_enabled": {
+     "title": "No external partners? No problem!",
+     "description": "Bring your external partners together in a shared workspace to collaborate on API projects. Come back here to manage all your partnerships.",
+     "button_description": "Create a Partner Workspace"
+    }
+   },
+   "no_search_result": {
+    "title": "No partners found",
+    "description": "No partners found for the selected filters."
+   }
+  },
+  "team_members": {
+   "title": "As a Partner",
+   "permission_settings": {
+    "title": "Permission settings",
+    "description": "Allow team members to accept partner invites and collaborate with other organizations.",
+    "dropdown_options": {
+     "always_allow_label": "Always allow",
+     "dont_allow_label": "Don't allow"
+    },
+    "toasts": {
+     "success": "Success! Your permission have been updated.",
+     "error": "Oops! There was an error updating your permissions. Please try again."
+    },
+    "info_for_partnership_disabled_team": "Upgrade your plan to update these settings"
+   },
+   "partnership_table_title": "Organizations that invited your team members to be partners",
+   "partnership_table_description": "View which team members have been invited as partners by other organizations.",
+   "by_organization_header": "Organization",
+   "team_members_header": "Team members",
+   "modal": {
+    "header": "Team members partnering with {teamName}",
+    "description": "Partner since {partnershipDate}"
+   },
+   "blank_state": {
+    "title": "Nothing to see here… yet",
+    "description": "When your team members are invited as partners by other organizations, you’ll see them here!"
+   },
+   "people_tag": "people",
+   "person_tag": "person"
+  },
+  "orgs_members": {
+   "permission_settings": {
+    "description": "Allow organization members to accept partner invites and collaborate with other organizations and teams."
+   },
+   "partnership_table_description": "View which organization members have been invited as partners by other organizations and teams."
+  }
+ },
+ "no_view_permission_page": {
+  "title": "You don't have access",
+  "description": "Only Team admins and Developers can view partnerships."
+ },
+ "partner_count_tooltip_text": "All partners are shown in the Partnerships page.",
+ "role_filter_description": "Partnership"
+}

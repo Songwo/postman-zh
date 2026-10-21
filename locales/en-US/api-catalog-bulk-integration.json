@@ -1,0 +1,75 @@
+{
+ "progress_step": {
+  "heading": "Integration Progress",
+  "workflow_line": "Workflow: {workflowId}",
+  "workflow_started": "Workflow started",
+  "status_line": "Status: {status}",
+  "started_with_elapsed": "Started {startedAt} · {elapsedLabel}",
+  "polling_label": "Polling every 3s",
+  "loading_job_status": "Loading job status...",
+  "loading_job_progress": "Loading job progress...",
+  "back_to_services_button": "Back to Services",
+  "back_to_discovery_button": "Back to Service Discovery",
+  "retry_button": "Retry",
+  "failure_time": "failed {timeAgo}",
+  "error_pill": "Error",
+  "progress_summary": {
+   "groups": "{completedCount} of {totalCount} groups completed ({percentage}%)",
+   "steps": "{totalStepsCompleted}/{totalStepsCount} steps processed"
+  },
+  "status_badges": {
+   "completed": "Completed",
+   "in_progress": "In Progress",
+   "pending": "Pending",
+   "failed": "Failed"
+  },
+  "job_status": {
+   "completed": "Completed",
+   "in_progress": "In Progress",
+   "partially_completed": "Partially Completed",
+   "failed": "Failed",
+   "unknown": "Unknown"
+  },
+  "service_status": {
+   "heading": "Service Status",
+   "loading": "Loading service groups...",
+   "default_detail": "Service group",
+   "repository_label": "GitHub repository",
+   "workspace_label": "Target workspace"
+  },
+  "errors": {
+   "heading": "Errors",
+   "step_badge": "Step",
+   "step_badge_with_count": "Step {stepIndex}/{totalSteps}",
+   "error_message_badge": "Error message"
+  }
+ },
+ "jobs_step": {
+  "heading": "Bulk integration jobs",
+  "description": "Active and recent integration jobs for your organization. Only one active job is allowed per organization.",
+  "refresh_button": "Refresh",
+  "refreshing_button": "Refreshing...",
+  "retry_button": "Retry",
+  "previous_page_tooltip": "Previous page",
+  "next_page_tooltip": "Next page",
+  "view_progress_tooltip": "View progress",
+  "loading": "Loading integration jobs...",
+  "blank_state": {
+   "title": "No integration jobs found",
+   "description": "Bulk integration jobs will appear here once a workflow has been started for this team."
+  },
+  "table": {
+   "workflow_header": "Workflow",
+   "total_services_header": "Total services",
+   "status_header": "Status",
+   "started_header": "Started",
+   "completed_header": "Completed"
+  },
+  "statuses": {
+   "completed": "Completed",
+   "in-progress": "In Progress",
+   "partially-completed": "Partially Completed",
+   "failed": "Failed"
+  }
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "not_found_blank_state": {
+  "title": "404. Page not found",
+  "description": "The page you are looking for is not available."
+ },
+ "settings_page": {
+  "heading": "Shared Vault",
+  "description": "Securely share sensitive data with your team. Shared Vault is available by default in every workspace except public workspaces. Override per workspace to enforce least privilege.",
+  "update_error": "Failed to update Shared Vault setting. Please try again later.",
+  "toast_enabled": "Shared Vault turned on for your team",
+  "toast_disabled": "Shared Vault turned off for your team",
+  "button_switch_on": "Turn on",
+  "button_switch_off": "Turn off",
+  "global_switch_off_tooltip": "Move to Shared Vault Policy is active for some workspaces. Please change Policy to turn off Shared Vault."
+ },
+ "vault_settings_panel": {
+  "open_settings": "Settings",
+  "close_settings": "Close vault settings",
+  "heading": "Vault settings",
+  "intro_banner": {
+   "title": "Team-wide vault controls",
+   "description": "Configure console masking for your team. Click Save settings, then refresh Postman before testing."
+  },
+  "mask_secrets": {
+   "label": "Mask vault secrets",
+   "description": "Automatically mask secrets in the console so they cannot be read in plain text. Recommended; keep this on."
+  },
+  "support_in_scripts": {
+   "label": "Allow vault secrets in scripts",
+   "description": "Allow scripts to access vault secrets during request execution."
+  },
+  "share_across_workspaces": {
+   "label": "Share secrets across all workspaces",
+   "description": "Make Shared Vault accessible to all workspaces the team has access to, not just the current workspace."
+  },
+  "save": "Save settings",
+  "cancel": "Cancel",
+  "save_success": "Vault settings saved",
+  "save_error": "Failed to save vault settings. Please try again.",
+  "load_error": "Could not load vault settings. Save is disabled until this is resolved.",
+  "admin_required_error": "Only team admins can update vault settings.",
+  "mask_confirm": {
+   "title": "Turn off secret masking?",
+   "description": "Disabling this setting means vault secrets will be visible in plain text in the console. Any teammate with access to the console will be able to read secret values directly. Are you sure you want to continue?",
+   "confirm": "Yes, turn off masking",
+   "cancel": "Keep masking on"
+  }
+ },
+ "workspace_selector": {
+  "column_enabled": "Shared Vault",
+  "bulk_enable": "Turn on",
+  "bulk_disable": "Turn off",
+  "toast_update_success": "Successfully updated Shared Vault setting",
+  "toast_update_error": "Failed to update workspace setting. Please try again.",
+  "empty_title": "No workspaces found",
+  "empty_description": "Try adjusting your filters or search to find workspaces.",
+  "error_title": "Couldn't load workspaces",
+  "error_description": "We couldn't load Shared Vault settings for your workspaces. Please try again.",
+  "error_retry": "Retry",
+  "public_workspace_disabled_tooltip": "For security reasons, Shared Vault is not supported in public workspaces.",
+  "workspace_switch_off_tooltip": "Move to Shared Vault Policy is active for this workspace. Please change Policy to turn off Shared Vault."
+ }
+}

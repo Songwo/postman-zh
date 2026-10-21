@@ -1,0 +1,12 @@
+{
+ "sharedAgentModeWidget": {
+  "error-message": "Oops, I didn't quite catch that. Here are a few things I can help you with:\n🔍 Exploring existing APIs\n✅ Running and automating tests\n🛠️ Building and debugging your own APIs",
+  "chat-input": {
+   "placeholder": "Type your message...",
+   "submit-button-text": "Let's go"
+  },
+  "suggestions": {
+   "title": "Suggestions to get started with:"
+  }
+ }
+}

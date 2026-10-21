@@ -1,0 +1,106 @@
+{
+ "fork_container": {
+  "button_disabled_tool_tip": "Get online to create a fork or view existing forks.",
+  "fork_button": {
+   "fork_count_api_error_message": "Something went wrong.",
+   "fork_button_tooltip": "Fork",
+   "counter_button_default_label": "Fork",
+   "fork_count_button_offline_tooltip": "Get online to view existing forks."
+  },
+  "fork_creation_modal": {
+   "heading": "Fork {modelDisplayName}",
+   "error": {
+    "title": "Unable to fetch source {modelDisplayName}",
+    "description": "We could not fetch information about the source {modelDisplayName}. Please try again."
+   },
+   "is_offline": {
+    "title": "You are offline",
+    "description": "Unable to connect to the servers. Please check your network settings."
+   },
+   "source_module_label": "Original {modelDisplayName}",
+   "fork_creation_form": {
+    "fork_label_with_username": "{userName}'s fork",
+    "fork_label_without_username": "My Fork",
+    "update_user_profile_modal": {
+     "description": "To create fork from a {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} in a public workspace, you must make your profile public.The following changes will be made to your profile.",
+     "error_toast_message": "To fork a {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} from a public workspace, you need to have your public profile setup."
+    },
+    "description": "Forking creates a copy of the {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} and enables you to perform changes without affecting the original. Learn more about <3>forks</3>.",
+    "helper_text": "Specify a label to distinguish this fork from the original {modelType, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}.",
+    "fork_label": "Fork label",
+    "workspace_label": "Workspace",
+    "team_label": "Team",
+    "team_helper_text": "The fork will be created in a workspace from the selected team.",
+    "workspace_helper_text": "The fork will be created in the selected workspace.",
+    "workspace_selector_restrict_fork_message": "Can't fork here",
+    "auto_sync_changes_label": "Auto-pull changes",
+    "auto_sync_changes_checkbox_label": "Auto-pull changes from source {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}",
+    "notifications_label": "Notifications",
+    "notifications_checkbox_label": "Watch source {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} to get notified of updates",
+    "notifications_checkbox_label_forked": "Watch forked {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}} to get notified of updates",
+    "notifications_checkbox_info_text": "You'll be notified about changes made to the original {modelDisplayName, select, collection {collection} environment {environment} flow {flow} specification {specification} other {}}.",
+    "fork_confirm_button_label": "Fork {modelDisplayName, select, collection {Collection} environment {Environment} flow {Flow} specification {Specification} other {}}",
+    "fork_confirm_button_disabled_tooltip": "You can perform this action once you're back online",
+    "fork_cancel_button_label": "Cancel",
+    "fork_environments_text": "Environments to fork",
+    "fork_environments_helper_text": "Selected environments will be forked and pinned for this collection.",
+    "fork_environments_input_placeholder_text": "Select environments",
+    "continue_button_label": "Continue"
+   }
+  }
+ },
+ "workspace_selector": {
+  "error": {
+   "title": "Couldn’t load more workspaces",
+   "subtitle": "Just a faulty wire. Try reloading.",
+   "reload_button_label": "Reload"
+  },
+  "workspace_list_container": {
+   "not_git_connected": "Not Git connected",
+   "get_workspace_list_error": {
+    "title": "Couldn’t load the workspaces",
+    "subtitle": "Just a faulty wire. Try reloading.",
+    "reload_button_label": "Reload"
+   },
+   "no_workspaces_found": {
+    "title": "No workspaces found",
+    "description": "Check your spelling, try a different search term."
+   },
+   "workspace_list_action_label": "Forking",
+   "search_workspace_input_placeholder": "Search workspace",
+   "public_workspace_forking": "Forking into this public workspace will make your {model} public.",
+   "reusable_reference_warning": "Forking to this workspace stops linked requests from following updates."
+  }
+ },
+ "fork_recommendation": {
+  "export_modal": {
+   "snippet": "Need to copy this {model}? Fork this {model} to your workspace instead.",
+   "fork_cta": "Create a Fork",
+   "learn_more": "Learn more"
+  },
+  "popover": {
+   "fork_cta": "Fork {model}",
+   "cancel": "Cancel",
+   "no_permission": "You don't have permission to export",
+   "no_permission_partner_description": "Partners with Viewer role cannot export collections. You can fork this collection instead."
+  },
+  "view_plans": {
+   "title": "Fork to your own team",
+   "description": "Upgrade this team to a paid Postman plan to fork and create a copy of this collection.",
+   "cta": "View plans",
+   "add_paid_team": "Create a team on a paid Postman plan to fork and create a copy of this collection."
+  }
+ },
+ "session_info": {
+  "not_signed_in": {
+   "description": "Sign in to the team, to fork and create a copy of this collection.",
+   "title": "Sign in to fork",
+   "cta": "Sign in"
+  },
+  "signed_out": "Signed out",
+  "free_team": "Free",
+  "no_teams": "There are no other teams",
+  "current_team": "Current team",
+  "other_teams": "Your other teams"
+ }
+}

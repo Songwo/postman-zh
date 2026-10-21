@@ -1,0 +1,19 @@
+{
+ "blank_state": {
+  "heading": "No monitor runs in the last {days, plural, one {# day} other {# days}}",
+  "description": "This view shows monitor runs from the last {days, plural, one {# day} other {# days}}, whether they were started on a Postman schedule, from CI, or manually. A monitor running less often than that may have no runs inside the window.",
+  "value_prop": "Monitors help you track API health, performance, and reliability over time.",
+  "setup_cta": "Set up monitor"
+ },
+ "headings": {
+  "run_history": "Run History (Last {days, plural, one {# day} other {# days}})",
+  "monitors": "Monitors · Last {days, plural, one {# day} other {# days}}"
+ },
+ "executor_type": {
+  "schedule_runner": "Scheduled Run",
+  "api_runner": "Manual",
+  "postman_cli_runner": "Postman CLI monitor run",
+  "cli": "Postman CLI",
+  "other": "Other"
+ }
+}

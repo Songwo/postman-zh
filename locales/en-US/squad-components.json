@@ -1,0 +1,159 @@
+{
+ "table": {
+  "columns": {
+   "name": "Name",
+   "workspaces": "Workspaces",
+   "members": "Users and Groups",
+   "membership": "Membership",
+   "your_role": "Your role"
+  },
+  "membership": {
+   "member": "Member",
+   "collaborator": "Collaborator",
+   "guest": "Guest",
+   "partner": "Partner"
+  },
+  "aria": {
+   "restricted_access": "Restricted access",
+   "restricted_access_tooltip": "Team manager approval is required to join or collaborate with this team",
+   "restricted_role": "You only have access to the specific resources you've been invited to.",
+   "select_all": "Select all",
+   "select_row": "Select row"
+  },
+  "roles": {
+   "manager": "Manager",
+   "developer": "Developer",
+   "viewer": "Viewer",
+   "partner": "Partner"
+  },
+  "tooltip": {
+   "member_details": "Users ({userCount}) and Groups ({groupCount})",
+   "members_error": "Could not load member details",
+   "no_view_permission": "You don't have permission to view this squad's details"
+  }
+ },
+ "actions": {
+  "cancel": "Cancel",
+  "join": "Join",
+  "join_as_member": "Join as team member",
+  "request_to_join": "Request to join",
+  "request_to_join_team": "Request to join team",
+  "leave": {
+   "label": "Leave",
+   "disabled_tooltip": "You cannot leave this team because you were added through a group.",
+   "success": "Left the team",
+   "error": "Failed to leave the team. Please try again.",
+   "confirm": {
+    "title": "Leave team",
+    "description": "Are you sure you want to leave this team?"
+   }
+  },
+  "delete": "Delete",
+  "manage": "Manage",
+  "manage_team": "Manage team",
+  "add_members": "Add members",
+  "invite_members": "Invite teammates",
+  "rename": "Rename",
+  "create_workspace": "Create Workspace",
+  "remove": {
+   "label": "Remove",
+   "success": "{count, plural, one {1 member removed} other {{count} members removed}}",
+   "error": "Failed to remove. Please try again.",
+   "partial": "{succeeded} removed, {failed} failed",
+   "confirm": {
+    "title": "Remove member",
+    "description": "Remove {name} from this team?"
+   },
+   "confirm_bulk": {
+    "title": "Remove members",
+    "description": "Remove {count, plural, one {1 member} other {{count} members}} from this team?"
+   }
+  },
+  "convert": {
+   "label": "Convert to Member"
+  }
+ },
+ "filters": {
+  "role": "Role",
+  "membership": "Membership",
+  "search_placeholder": "Search teams",
+  "role_options": {
+   "manager": "Manager",
+   "developer": "Developer",
+   "viewer": "Viewer"
+  },
+  "membership_options": {
+   "member": "Member",
+   "collaborator": "Collaborator",
+   "guest": "Guest",
+   "partner": "Partner"
+  },
+  "on_team": "Teams",
+  "on_team_options": {
+   "yes": "My teams",
+   "no": "Other teams"
+  },
+  "members_search_placeholder": "Search members",
+  "access": "Access",
+  "access_options": {
+   "open": "Open to everyone",
+   "open_for_collaborator": "Open to collaborators",
+   "closed": "Approval required"
+  }
+ },
+ "empty_state": {
+  "title": "No teams",
+  "description": "There are no teams in your organization yet."
+ },
+ "filtered_empty_state": {
+  "title": "No teams found",
+  "description": "Try adjusting your search or filters."
+ },
+ "users_table": {
+  "columns": {
+   "name": "Name",
+   "role": "Role",
+   "membership": "Membership"
+  },
+  "empty": {
+   "no_members": {
+    "title": "No members",
+    "description": "There are no members in this team yet."
+   },
+   "no_results": {
+    "title": "No members found",
+    "description": "Try adjusting your search or filters."
+   }
+  },
+  "error": {
+   "title": "Could not load members",
+   "retry": "Try again"
+  },
+  "aria": {
+   "loading": "Loading members"
+  },
+  "pending_upgrade": "Pending Upgrade",
+  "self": "{name} (You)",
+  "group_members_count": "Group ({count, plural, one {1 member} other {{count} members}})",
+  "squad_members_count": "Team ({count, plural, one {1 member} other {{count} members}})",
+  "organization_members_count": "Organization ({count, plural, one {1 member} other {{count} members}})",
+  "inline": {
+   "role": {
+    "success": "Role updated",
+    "request_sent": "Request sent for approval",
+    "error": "Failed to update role. Please try again."
+   }
+  }
+ },
+ "toasts": {
+  "delete_result_success": "Deleted {deleted} teams successfully",
+  "delete_result_error": "Deleted {deleted} teams, failed to delete {failed}",
+  "join_one_success": "Joined team successfully",
+  "join_one_requested": "Request to join sent",
+  "join_one_already_requested": "You already have a pending request to join this team",
+  "join_one_error": "Failed to join team"
+ },
+ "errors": {
+  "generic": "Something went wrong. Please try again."
+ }
+}

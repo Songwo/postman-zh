@@ -1,0 +1,8 @@
+{
+ "duplicate_workspace_confirm": {
+  "modal_heading": "Create another workspace?",
+  "body": "You already created \"{workspaceName}\" for this integration. Are you sure you want to create another workspace?",
+  "cancel_button_label": "Cancel",
+  "confirm_button_label": "Create anyway"
+ }
+}

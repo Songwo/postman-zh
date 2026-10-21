@@ -1,0 +1,267 @@
+{
+ "mode": {
+  "aria_label": "Request mode",
+  "produce": "Produce",
+  "consume": "Consume"
+ },
+ "mode_switch_modal": {
+  "title": {
+   "produce": "Stop sending and switch mode?",
+   "consume": "Stop streaming and switch mode?"
+  },
+  "description": {
+   "produce": "Switching to Consume will stop the current send. Any events still in progress won't be sent.",
+   "consume": "Switching to Produce will stop the current stream. You'll stop receiving events from this run."
+  },
+  "cancel": "Cancel",
+  "confirm": "Stop and switch"
+ },
+ "action": {
+  "send": "Send",
+  "stream": "Stream",
+  "stop": "Stop",
+  "test_connection": "Test connection",
+  "disabled_pick_topic": "Pick a topic first."
+ },
+ "tabs": {
+  "event": "Event",
+  "topics": "Topics",
+  "authorization": "Authorization",
+  "scripts": "Scripts"
+ },
+ "placeholder": {
+  "coming_soon": "Coming soon."
+ },
+ "scripts": {
+  "events": {
+   "before_produce": {
+    "label": "Before produce",
+    "description": "\"Before produce\" scripts run before the event is sent to the broker.",
+    "placeholder": "// Write your pre-produce script here…",
+    "tooltip_text": "Runs before the event is sent to the broker."
+   },
+   "after_produce": {
+    "label": "After produce",
+    "description": "\"After produce\" scripts run after the broker acknowledges the produced event.",
+    "placeholder": "// Write your post-produce script here…",
+    "tooltip_text": "Runs after the broker acknowledges the produced event."
+   },
+   "before_consume": {
+    "label": "Before consume",
+    "description": "\"Before consume\" scripts run before the subscription starts streaming.",
+    "placeholder": "// Write your pre-consume script here…",
+    "tooltip_text": "Runs before the subscription starts streaming."
+   },
+   "on_message": {
+    "label": "On message",
+    "description": "\"On message\" scripts run once for every record received while streaming.",
+    "placeholder": "// Write your per-message script here…",
+    "tooltip_text": "Runs once for every record received while streaming."
+   },
+   "after_consume": {
+    "label": "After consume",
+    "description": "\"After consume\" scripts run after the stream ends.",
+    "placeholder": "// Write your post-consume script here…",
+    "tooltip_text": "Runs after the stream ends."
+   }
+  }
+ },
+ "offsets": {
+  "start_from": "Start From",
+  "earliest": "Earliest",
+  "latest": "Latest",
+  "offset": "Offset",
+  "timestamp": "Timestamp",
+  "offset_placeholder": "Enter offset",
+  "timestamp_placeholder": "Enter timestamp"
+ },
+ "stop_after": {
+  "label": "Stop After",
+  "max_records": "Records",
+  "duration": "Duration",
+  "idle": "Idle",
+  "end_position": "Timestamp",
+  "max_records_placeholder": "1000",
+  "duration_placeholder": "Enter duration",
+  "idle_placeholder": "Enter idle time",
+  "end_position_placeholder": "Enter timestamp",
+  "milliseconds_suffix": "ms"
+ },
+ "topics": {
+  "pane": {
+   "topics": "Topics",
+   "configuration": "Configuration"
+  }
+ },
+ "topics_list": {
+  "add_topic_placeholder": "Add topic",
+  "list_all_topics": "List all topics",
+  "loading": "Loading topics…",
+  "load_error": "Could not load topics",
+  "retry": "Retry",
+  "duplicate_topic": "Another topic already resolves to this name",
+  "remove_aria_label": "Remove topic {name}",
+  "filter_placeholder": "Filter topics",
+  "filter_aria_label": "Filter topics",
+  "no_matches": "No topics match “{query}”",
+  "empty_title": "No topics yet",
+  "empty_description": "List all topics to pick from the broker, or add one to stream",
+  "broker_empty_title": "No topics found",
+  "broker_empty_description": "This broker is not reporting any topics"
+ },
+ "status": {
+  "idle": "idle",
+  "connecting": "connecting",
+  "connected": "connected",
+  "disconnected": "disconnected",
+  "error": "error"
+ },
+ "schema": {
+  "label": "Schema",
+  "field_label": "Link Schema",
+  "optional": "(optional)",
+  "topic_required": "Add a topic first to link a schema to it",
+  "aria_label": "Toggle schema",
+  "placeholder": "Select a schema",
+  "select_aria_label": "Schema for topic {topic}",
+  "column_tooltip": "Validate event payloads against a schema",
+  "empty": "No AsyncAPI specifications with a Kafka server in this workspace",
+  "load_error": "Could not load specifications",
+  "open_specification": "Open specification",
+  "unresolved": {
+   "topic-empty": "No topic selected for this spec",
+   "topic-absent": "This specification does not describe this topic",
+   "schema-absent": "This topic has no message schema in the specification"
+  },
+  "validation": {
+   "passed": "Schema validation passed",
+   "failed": "Schema validation failed",
+   "warned": "Payload deviates from the schema",
+   "passed_badge": "Validation Passed",
+   "failed_badge": "Validation Failed",
+   "warned_badge": "Validation Warnings",
+   "aria_label": "Schema validation: {status}",
+   "skipped": {
+    "no-schema": "No schema is linked to this topic",
+    "empty-payload": "This event has no payload to validate",
+    "not-json": "This payload is not JSON, so it was not validated",
+    "schema-invalid": "The linked schema could not be read",
+    "pending": "Not validated yet"
+   }
+  },
+  "derived_tooltip": "Defined by {name}. Edit the spec to change it.",
+  "derived_aria_label": "{value}. Defined by the source spec, not editable here.",
+  "create_specification": "Create New AsyncAPI {version} Spec",
+  "creating_specification": "Creating spec…"
+ },
+ "fields": {
+  "partition_placeholder": "Auto"
+ },
+ "connection": {
+  "inline": "Inline",
+  "inherit": "Inherit",
+  "settings_aria_label": "Connection settings",
+  "brokers": "Bootstrap servers",
+  "brokers_placeholder": "Enter server URL",
+  "brokers_more": "{count} more",
+  "tls": "Use TLS",
+  "inherit_hint": "Inherited from the parent."
+ },
+ "event": {
+  "topic": "Topic",
+  "topic_placeholder": "Add topic",
+  "partition": "Partition",
+  "key": "Key",
+  "key_placeholder": "Message key",
+  "key_serde": "Key serde",
+  "value": "Value",
+  "value_too_large": "{size} over the {limit} limit",
+  "value_serde": "Value serde",
+  "serde": {
+   "text": "String",
+   "json": "JSON",
+   "base64": "Base64",
+   "hex": "Hex"
+  },
+  "headers": "Headers",
+  "ack": "Ack",
+  "generate": "Generate from schema",
+  "beautify": "Beautify",
+  "generate_tooltip": "Replace the value with a sample built from the linked schema",
+  "generate_denied": {
+   "no_schema": "Link a schema to this topic to generate a sample value",
+   "not_json": "Sample values can only be generated for the JSON serde"
+  },
+  "pane": {
+   "details": "Details",
+   "value": "Value"
+  }
+ },
+ "consume": {
+  "stream": {
+   "field": {
+    "topic": "Topic",
+    "partition": "Partition",
+    "offset": "Offset",
+    "key": "Key",
+    "value": "Value",
+    "headers": "Headers"
+   }
+  }
+ },
+ "stream": {
+  "title": "Stream",
+  "empty": "Stream or send events",
+  "connecting": "Connecting…",
+  "more_aria_label": "Stream options",
+  "no_messages": "No events",
+  "error": "Error streaming events",
+  "new_events": "New events",
+  "row": {
+   "empty_value": "(empty)"
+  },
+  "pane": {
+   "events": "Events",
+   "details": "Details"
+  },
+  "filter": {
+   "all_topics": "All topics",
+   "clear": "Clear Messages"
+  },
+  "inspector": {
+   "preview": "Preview",
+   "language": {
+    "json": "JSON",
+    "text": "Text",
+    "xml": "XML",
+    "base64": "Base64",
+    "hex": "Hex"
+   },
+   "tab": {
+    "value": "Value",
+    "meta": "Metadata"
+   }
+  }
+ },
+ "produce": {
+  "title": "Produce"
+ },
+ "runner": {
+  "empty": {
+   "no_events": "This request produced no stream events."
+  },
+  "ended_reason": {
+   "unknown": "unknown"
+  },
+  "event": {
+   "subscribed": "Subscribed to {topics}",
+   "consume_ended": "Stream ended ({reason})",
+   "error": "Stream error"
+  }
+ },
+ "topics_to_stream": {
+  "heading": "Topics to stream",
+  "empty": "Select topics on the left to stream them",
+  "unnamed": "Unnamed topic"
+ }
+}

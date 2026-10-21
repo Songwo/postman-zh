@@ -1,0 +1,118 @@
+{
+  "load_error": {
+    "title": "编辑器加载失败",
+    "message": "我们的团队已收到通知。如果问题仍然存在，请联系 <1><0><0>Postman 支持团队</0></0></1>。"
+  },
+  "editor": {
+    "content_pane": {
+      "header": {
+        "breadcrumb": {
+          "placeholder": "文件夹名称",
+          "meta_icon": {
+            "lock": {
+              "title": "只读"
+            }
+          }
+        },
+        "actions": {
+          "run": {
+            "text": "运行",
+            "tooltip": {
+              "primary_message": "目前还不能在公共工作区中运行文件夹——我们正在为后续版本开发此功能！",
+              "secondary_message": "将此集合复刻到你自己的工作区即可运行。",
+              "primary_action": "创建复刻",
+              "readonly_user_message": "你没有执行此操作的权限。"
+            }
+          },
+          "save": {
+            "text": {
+              "save": "保存",
+              "saving": "正在保存..."
+            },
+            "tooltip": {
+              "title": "创建复刻以保存更改",
+              "primary_message": "你没有修改此集合的权限。将集合复刻到你的工作区即可保存更改。",
+              "primary_action": "创建复刻并保存",
+              "no_changes": "没有需要保存的新更改。",
+              "save_folder": "保存文件夹",
+              "save_folder_git": "将更改保存到 Postman 和 GitHub",
+              "readonly_user_message": "你没有执行此操作的权限。"
+            }
+          },
+          "share": {
+            "text": "分享",
+            "tooltip": "分享文件夹"
+          },
+          "delete": "删除"
+        }
+      },
+      "permission_infobar": {
+        "folder": "文件夹",
+        "description": "描述",
+        "auth": "授权",
+        "overview": "概览",
+        "tests": "测试",
+        "pre_request": "前置脚本",
+        "configurations": "设置",
+        "text": "要更改此文件夹的{text}，请申请其父集合的额外访问权限。",
+        "scripts": "脚本"
+      },
+      "tab_list": {
+        "overview": {
+          "label": "概览",
+          "short_label": "概览"
+        },
+        "authorization": {
+          "label": "授权",
+          "short_label": "认证"
+        },
+        "pre_request_script": {
+          "label": "前置脚本",
+          "short_label": "前置"
+        },
+        "tests": {
+          "label": "测试"
+        },
+        "settings": {
+          "label": "设置"
+        }
+      },
+      "tabs": {
+        "auth": {
+          "description": "此授权方式将用于此文件夹中的所有请求。你可以在请求中指定其他授权方式来覆盖它。"
+        },
+        "scripts": {
+          "label": "脚本",
+          "tooltip-text": {
+            "pre-request": "在发送每个请求前运行。可以通过动态配置请求来构建 API 工作流。",
+            "post-response": "在每个请求收到响应后运行，可用于编写测试。"
+          },
+          "migration-popover-text": "使用后置脚本来编写测试、可视化响应等等。"
+        },
+        "test-tab-deprecation": {
+          "heading": "测试现在是后置脚本的一部分",
+          "message": "你可以用脚本编写测试和前置脚本、可视化响应，为 API 工作流带来大量自动化。",
+          "button": "打开后置脚本"
+        },
+        "pre_req": {
+          "description": "此脚本会在此文件夹中的每个请求之前执行。了解更多关于<1><0>Postman 执行顺序</0></1>的信息。",
+          "placeholder": "使用 JavaScript 动态配置请求。"
+        },
+        "tests": {
+          "description": "这些测试会在此文件夹中的每个请求之后执行。了解更多关于<1><0>Postman 执行顺序</0></1>的信息。",
+          "placeholder": "使用 JavaScript 编写测试、可视化响应等等。"
+        },
+        "settings": {
+          "empty_state": {
+            "title": "文件夹设置不可用",
+            "message": "Postman 使用浏览器的默认设置发送请求。切换到桌面代理可以进一步自定义文件夹。"
+          }
+        }
+      }
+    },
+    "context_bar": {
+      "info_title": "文件夹详情"
+    }
+  },
+  "new_folder": "新建文件夹"
+}

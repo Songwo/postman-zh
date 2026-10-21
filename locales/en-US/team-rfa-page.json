@@ -1,0 +1,50 @@
+{
+ "switch_accounts_cta": "Switch accounts",
+ "creating_request_heading": "Only team members can access this resource",
+ "creating_request_subheading": "Request to be a member of the team to get access.",
+ "squad_request_heading": "This resource belongs to \"{squadName}\"",
+ "closed_squad_request_subheading": "Request to join this team as a collaborator to get access.",
+ "open_squad_request_subheading": "Join the team as a collaborator to request access to this resource.",
+ "submit_cta": "Request to Join Team",
+ "closed_squad_submit_cta": "Request to Join Team",
+ "open_squad_submit_cta": "Join Team",
+ "current_sign_in_account_text": "You're signed in as",
+ "email_verify_heading": "Verify your email to submit the request",
+ "email_verify_subheading": "We've sent a verification email to ",
+ "resend_verification_email_cta": "Resend Email",
+ "email_verified_cta": "I've Verified My Email",
+ "pending_request_heading": "Your request to join this team is in review",
+ "pending_request_subheading": "We'll notify you once Team Admins respond.",
+ "squad_pending_request_heading": "Almost there!",
+ "squad_pending_request_subheading": "We’ve requested the owner to grant you access to the resource. We’ll notify you once they respond.",
+ "approved_personal_rfa_heading": "Almost there!",
+ "approved_personal_rfa_subheading": "Use the email we’ve sent to <Strong>{email}</Strong> to join the team and view this resource.",
+ "continue_postman_cta": "Continue to Postman",
+ "join_team_page_heading": "Check your email to access this resource",
+ "join_team_page_subheading": "The resource you are trying to access is only visible to members of <0>{teamName}</0>. To gain access please accept the invite we sent to your email address.",
+ "email_sent_confirmation": "Email was sent to {currentUserEmail}.",
+ "resend_invite_email_cta": "Resend email",
+ "resend_invite_confirmation": "Email Resent!",
+ "toast_content": {
+  "email_not_verified": {
+   "title": "Your email is not verified",
+   "description": "Please check your inbox to complete the verification."
+  },
+  "default_error": {
+   "title": "Couldn't send request",
+   "description": "Just a faulty wire. Try again."
+  },
+  "verification_email_sent": {
+   "title": "Email sent",
+   "description": "Please check your inbox for the latest verification email. "
+  },
+  "invite_resent": {
+   "title": "Email sent",
+   "description": "Check your inbox for the latest invite."
+  },
+  "invite_error": {
+   "title": "Couldn't send email",
+   "description": "Just a faulty wire. Please try again."
+  }
+ }
+}

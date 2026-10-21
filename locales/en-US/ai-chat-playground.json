@@ -1,0 +1,69 @@
+{
+ "composer": {
+  "model_picker_aria_label": "Model: {model}",
+  "model_picker_heading": "Select a model",
+  "model_select_label": "Model",
+  "other_models_button_label": "Other models, {count, plural, one {# available} other {# available}}",
+  "other_models_count": "{count, plural, one {# model} other {# models}}",
+  "other_models_label": "Other models",
+  "placeholder": "Enter prompt",
+  "send_button_label": "Send message",
+  "stop_button_label": "Stop generating"
+ },
+ "conversation": {
+  "assistant_label": "Assistant",
+  "authentication_error_message": "The provider rejected this API key. Check the key and try again.",
+  "authentication_failed_message": "Authentication failed. Check your credentials and try again.",
+  "cors_error_message": "The provider or organization does not allow requests from this browser.",
+  "duplicate_tool_name_error_message": "Selected tools must have unique names. Rename or deselect duplicate tools and try again.",
+  "error_message": "The response could not be generated.",
+  "messages_label": "Conversation messages",
+  "postman_consent_error_message": "Postman AI access is unavailable. Add your own API key or wait for access to be restored.",
+  "provider_tool_configuration_details_message": "The provider rejected one or more selected tools: {details}",
+  "retry_button_label": "Try again",
+  "thinking_status": "Thinking…",
+  "tool_completed_status": "Completed",
+  "tool_failed_result": "The tool call failed.",
+  "tool_failed_status": "Failed",
+  "tool_input_label": "Input",
+  "tool_input_pending": "Waiting for input…",
+  "tool_limit_error_message": "The provider rejected the number of selected tools. Deselect some tools and try again.",
+  "tool_result_label": "Result",
+  "tool_result_pending": "Waiting for a result…",
+  "tool_running_status": "Running…",
+  "tool_value_unavailable": "This value cannot be displayed.",
+  "user_label": "You"
+ },
+ "credentials": {
+  "access_unavailable_notice": "Postman AI access is temporarily unavailable. Use your own API key to continue.",
+  "api_key_label": "API key",
+  "api_key_placeholder": "Enter API key",
+  "api_key_required_notice": "Add an API key to send messages.",
+  "checking_access_status": "Checking Postman AI access…",
+  "checking_status": "Checking…",
+  "clear_button_label": "Clear key",
+  "consent_required_notice": "Postman AI requires consent. Use your own API key to continue.",
+  "key_added_status": "Key added",
+  "postman_included_notice": "Included with your Postman plan. No API key needed.",
+  "postman_unavailable_status": "Not available",
+  "provider_label": "Provider",
+  "session_notice": "Your API key stays in memory for this browser session and is sent directly to the provider.",
+  "your_providers_group_label": "Your providers"
+ },
+ "header": {
+  "clear_chat_button_label": "Clear chat",
+  "conversation_tab": "Conversation",
+  "system_prompt_tab": "System prompt",
+  "title": "Playground"
+ },
+ "suggestions": {
+  "chain_tools": "Chain two tools together",
+  "error": "Trigger an error",
+  "optional_parameter": "Test an optional parameter",
+  "test_all_tools": "Test all tools"
+ },
+ "system_prompt": {
+  "default_value": "You are a helpful assistant. Give concise, accurate answers and explain tool use clearly.",
+  "label": "Instructions for the assistant"
+ }
+}

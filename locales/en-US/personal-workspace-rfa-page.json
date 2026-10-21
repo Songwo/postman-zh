@@ -1,0 +1,10 @@
+{
+ "switch_accounts_cta": "Switch accounts",
+ "creating_request_heading": "You don't have access to this resource",
+ "creating_request_subheading": "Request the owner to share it with you.",
+ "pending_request_heading": "Your request to access this resource is in review",
+ "pending_request_subheading": "We'll notify you once the owner responds.",
+ "submit_cta": "Request Access",
+ "current_sign_in_account_text": "You're signed in as",
+ "continue_postman_cta": "Continue to Postman"
+}

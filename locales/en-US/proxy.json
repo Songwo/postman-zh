@@ -1,0 +1,394 @@
+{
+ "landing_tab": {
+  "heading": "New proxy session",
+  "body": {
+   "heading": "Capture HTTPS traffic",
+   "description": "Use Postman's proxy to inspect HTTPS communication from your Android, iOS, Linux, macOS, and Windows devices and build client-side applications faster!",
+   "system_traffic": {
+    "heading": "System traffic",
+    "description": "Capture and inspect app traffic on your devices.",
+    "info": "We'll request to install certificate the first time you start a proxy session.",
+    "proxy_button": "Start proxy session",
+    "proxy_button_tooltip": "A session is already active. Please close the active session in order to start a new session."
+   },
+   "browser_traffic": {
+    "heading": "Browser traffic",
+    "description": "To capture and inspect traffic on your browser, download Postman's interceptor extension.",
+    "extensions": {
+     "chrome": {
+      "alt": "Download Postman Interceptor for Google Chrome",
+      "label": "Chrome store"
+     },
+     "safari": {
+      "alt": "Download Postman Interceptor for Safari",
+      "label": "App store"
+     },
+     "mozilla": {
+      "alt": "Download Postman Interceptor for Mozilla Firefox",
+      "label": "Mozilla Add-ons"
+     },
+     "edge": {
+      "alt": "Download Postman Interceptor for Microsoft Edge",
+      "label": "Edge Add-ons"
+     }
+    }
+   }
+  }
+ },
+ "new_session_tab": {
+  "name": "Postman debug session",
+  "no_cookies_captures": "No cookies captured yet.",
+  "start_time": "Session start time:",
+  "session_size": "Session size:",
+  "view_past_sessions": "View Past Sessions",
+  "save_requests": "Save Requests",
+  "duration": "Duration:",
+  "source": "Source:",
+  "configuration": "Configuration",
+  "tabs": {
+   "overview": {
+    "label": "Overview",
+    "classify_by": "Classify requests by",
+    "empty_state": "No analytics data available for this session",
+    "search_placeholder": "Search captured requests",
+    "table": {
+     "methods": "Methods",
+     "no_of_requests": "Number of requests",
+     "global_filter_placeholder": "Search captured requests",
+     "pre_selection": {
+      "initial": "All requests on this page are selected.",
+      "all_selected_session": "All {totalRequestsCount} requests in this session are selected.",
+      "all_selected_page": "All {changeInSize} requests in this session are selected."
+     },
+     "post_selection": {
+      "initial": "Select all {totalRequestsCount} requests in the session",
+      "clear": "Clear selection",
+      "select_all": "Select all {totalRequestsCount} requests in the session"
+     },
+     "columns": {
+      "methods": "Methods",
+      "url": "URL",
+      "domain": "Domain",
+      "type": "Type",
+      "status": "Status",
+      "responseSize": "Response Size",
+      "responseTime": "Response Time"
+     }
+    },
+    "actions": {
+     "add_collection": "Add to collection",
+     "add_collection_tooltip": "No requests selected to add.",
+     "delete": "Delete",
+     "delete_tooltip": "No requests selected to delete."
+    },
+    "chart": {
+     "methods": "Methods",
+     "no_of_requests": "Number of requests"
+    },
+    "dropdown_options": {
+     "method": "Method",
+     "domain": "Domain",
+     "content_type": "Content Type",
+     "status_code": "Status Code"
+    }
+   },
+   "requests": {
+    "label": "Requests",
+    "empty_state": "No requests were captured in the session",
+    "no_request_captured": "No requests captured yet.",
+    "tabs": {
+     "requests": "Requests",
+     "cookies": "Cookies"
+    },
+    "body": {
+     "search_placeholder": "Search captured requests",
+     "delete": "Delete",
+     "delete_tooltip": "No requests selected to delete.",
+     "columns": {
+      "methods": "Methods",
+      "url": "URL",
+      "domain": "Domain",
+      "type": "Type",
+      "status": "Status",
+      "response_size": "Response Size",
+      "response_time": "Response Time",
+      "time_stamp": "Time Stamp"
+     }
+    }
+   },
+   "cookies": {
+    "label": "Cookies",
+    "empty_state": "No cookies were captured in the session",
+    "view_cookies_for_captured_requests": "View cookies for captured requests",
+    "view_cookies_for_captured_requests_description": "Enable capture cookies to view cookies for captured requests. Once captured you can use cookies in Postman Workflow by adding them to Postman Cookie Jar.",
+    "capture_success": "Cookies will be stored for all the newly captured requests.",
+    "secondary_action": "Learn more",
+    "body": {
+     "search_placeholder": "Search captured cookies",
+     "add": "Add to Cookie Jar",
+     "delete": "Delete",
+     "empty_state": "No results found",
+     "columns": {
+      "name": "Name",
+      "value": "Value",
+      "path": "Path",
+      "expires": "Expires",
+      "http_only": "HttpOnly",
+      "secure": "Secure",
+      "timestamp": "Timestamp"
+     },
+     "page_items_label": "Items per page",
+     "request": "Request: <1>{requestMethod}</1> <2><0>{url}</0></2>",
+     "delete_modal": {
+      "heading": "Delete Cookies?",
+      "content": "This will delete the cookies from the session. Once deleted, you will no longer be able to add them to the cookie jar.",
+      "delete_button": "Delete cookies",
+      "cancel_button": "Cancel"
+     },
+     "toasters": {
+      "add_title": "Cookie added to cookie jar",
+      "add_title_plural": "Cookies are added to cookie jar",
+      "add_description": "{count, plural, one {# cookie has} other {# cookies have}} added to Postman Cookie Jar. ",
+      "remove_description": "{count, plural, one {# cookie has} other {# cookies have}} been deleted from the session. "
+     },
+     "view_more": "View More",
+     "no_of_cookies": "{count, plural, one {# cookie} other {# cookies}}"
+    }
+   }
+  }
+ },
+ "capture_proxy_response_settings": {
+  "label": "Save responses for requests",
+  "tooltip": "The standardised response size followed in Postman is currently limited to 5MB. Saving media type responses are currently not supported."
+ },
+ "capture_cookies": "Capture Cookies",
+ "session_name_editor": {
+  "rename_success": "Session renamed successfully",
+  "title": "Proxy Session"
+ },
+ "footer": {
+  "options": {
+   "api_key": "API Key",
+   "access_token": "Access Token",
+   "webhook_url": "Webhook URL",
+   "toasters": {
+    "title": "Session is paused",
+    "is_interceptor_session": "Requests already intercepted via interceptor will continue to show up in the session.",
+    "is_not_interceptor_session": "Requests already tunnelled via proxy will continue to show up in the session."
+   },
+   "actions": {
+    "resume": "Resume",
+    "resume_tooltip": "Resume session",
+    "pause": "Pause",
+    "pause_tooltip": "Pause session",
+    "stop": "Stop",
+    "stop_tooltip": "Stop capturing"
+   }
+  }
+ },
+ "table": {
+  "columns": {
+   "status": "Status",
+   "methods": "Method",
+   "url": "URL",
+   "domain": "Domain",
+   "type": "Type",
+   "response_size": "Response Size",
+   "response_time": "Response Time",
+   "timestamp": "Timestamp"
+  }
+ },
+ "session_table": {
+  "search_placeholder": "Search captured requests",
+  "delete": "Delete",
+  "delete_tooltip": "No requests selected to delete.",
+  "global_filter_placeholder": "Search captured requests",
+  "toaster": "Failed to delete {count, plural, one {# request} other {# requests}}"
+ },
+ "add_session_request_to_table": {
+  "create_row_placeholder": "Name your collection",
+  "no_of_requests": "{count, plural, one {# request} other {# requests}}",
+  "modal": {
+   "header": "Save {count, plural, one {# request} other {# requests}}",
+   "body": {
+    "title": "Select a collection to save to",
+    "search_placeholder": "Search for collection",
+    "save_text": "Save {count, plural, one {# request} other {# requests}} to {targetName}",
+    "organize_text": "Organize requests by",
+    "domainName": "Domain name",
+    "endPoints": "Endpoints"
+   },
+   "footer": {
+    "new_collection": "New collection",
+    "cancel": "Cancel",
+    "back": "Back",
+    "save": "Save"
+   }
+  },
+  "toasters": {
+   "error_title": "Error",
+   "error_description": "Couldn't add requests to the collection. Please try again.",
+   "view_now": "View now",
+   "success_title": "{count, plural, one {# Request} other {# Requests}} are added to collection",
+   "success_description": "{noOfRequests} {count, plural, one {# Request} other {# Requests}} got added to {collectionName} collection",
+   "info_description": "{noOfRequests} {count, plural, one {# Request} other {# Requests}} are being added to the collection {collectionName}. You will be notified when all the requests are added"
+  }
+ },
+ "table_row_expanded": {
+  "heading": "Request Headers",
+  "request_body": "Request Body",
+  "response_headers": "Response Headers",
+  "response_body": "Response Body",
+  "url": "URL : {url}",
+  "method": "Method : {method}",
+  "status_code": "Status Code : {statusCode}",
+  "tabs": {
+   "response": {
+    "label": "Response",
+    "no_body": "This Response doesn't have a body",
+    "heading": "Response Headers",
+    "not_available": "Response Headers not available",
+    "size": "{size} B"
+   },
+   "body": "Body",
+   "headers": {
+    "label": "Headers",
+    "heading": "General",
+    "view": {
+     "url": "URL",
+     "method": "Method",
+     "status": "Status",
+     "request_headers_size": "Request Headers Size",
+     "request_body_size": "Request Body Size",
+     "response_headers_size": "Response Headers Size",
+     "response_body_size": "Response Body Size",
+     "timestamp": "Timestamp"
+    }
+   },
+   "request": {
+    "label": "Request",
+    "heading": "Request Params",
+    "not_available": "Request Headers not available",
+    "no_body": "This request doesn't have a body"
+   }
+  }
+ },
+ "history": {
+  "delete_tooltip": "Delete history",
+  "rename_session": "Rename Session",
+  "delete_session": "Delete Session",
+  "delete_session_disabled": "Session is in progress",
+  "success_toaster": "Session renamed successfully"
+ },
+ "domain_endpoint_settings": {
+  "heading": "Organize requests by",
+  "domain": "Domain name",
+  "endpoint": "Endpoints"
+ },
+ "memory_units": {
+  "bytes": "{size} B",
+  "kilobytes": "{size} KB",
+  "megabytes": "{size} MB",
+  "gigabytes": "{size} GB"
+ },
+ "filters": {
+  "url": {
+   "include_label": "URLs must contain",
+   "exclude_label": "URLs can't contain",
+   "label_info": "Regular expressions are supported",
+   "valid_regex": "Please enter a valid regex.",
+   "placeholder": "Press \"Enter\" to apply filters"
+  },
+  "status_codes": {
+   "100": "100",
+   "101": "101",
+   "102": "102",
+   "103": "103",
+   "200": "200",
+   "201": "201",
+   "202": "202",
+   "203": "203",
+   "204": "204",
+   "205": "205",
+   "206": "206",
+   "208": "208",
+   "226": "226",
+   "300": "300",
+   "301": "301",
+   "302": "302",
+   "303": "303",
+   "304": "304",
+   "305": "305",
+   "306": "306",
+   "307": "307",
+   "308": "308",
+   "400": "400",
+   "401": "401",
+   "402": "402",
+   "403": "403",
+   "404": "404",
+   "405": "405",
+   "406": "406",
+   "407": "407",
+   "408": "408",
+   "409": "409",
+   "410": "410",
+   "411": "411",
+   "412": "412",
+   "413": "413",
+   "414": "414",
+   "415": "415",
+   "416": "416",
+   "417": "417",
+   "418": "418",
+   "421": "421",
+   "422": "422",
+   "423": "423",
+   "424": "424",
+   "425": "425",
+   "426": "426",
+   "428": "428",
+   "429": "429",
+   "431": "431",
+   "451": "451",
+   "500": "500",
+   "501": "501",
+   "502": "502",
+   "503": "503",
+   "504": "504",
+   "505": "505",
+   "506": "506",
+   "507": "507",
+   "508": "508",
+   "510": "510",
+   "511": "511"
+  },
+  "methods": {
+   "get": "GET",
+   "post": "POST",
+   "put": "PUT",
+   "patch": "PATCH",
+   "delete": "DELETE",
+   "copy": "COPY",
+   "head": "HEAD",
+   "options": "OPTIONS",
+   "link": "LINK",
+   "unlink": "UNLINK",
+   "purge": "PURGE",
+   "lock": "LOCK",
+   "unlock": "UNLOCK",
+   "propfind": "PROPFIND",
+   "view": "VIEW"
+  },
+  "resource_types": {
+   "script": "JS",
+   "stylesheet": "CSS",
+   "image": "Img",
+   "html": "HTML",
+   "json": "JSON",
+   "xml": "XML",
+   "text": "Text",
+   "other": "Other"
+  }
+ }
+}

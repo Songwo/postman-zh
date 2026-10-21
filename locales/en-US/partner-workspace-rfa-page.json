@@ -1,0 +1,38 @@
+{
+ "creating_request_heading": "Request to access this partner workspace",
+ "team_select": {
+  "label": "Choose a team",
+  "placeholder": "Pick a team to access this workspace with",
+  "members_count": "{count, plural, one {# member} other {# members}}"
+ },
+ "options": {
+  "partner": {
+   "title": "Join as a partner",
+   "text": "I'm an external partner collaborating with this organization."
+  },
+  "team_mate": {
+   "title": "Join as a teammate",
+   "text": "I am part of the organization that owns this workspace"
+  }
+ },
+ "partnership_not_allowed": {
+  "banner_title": "Partner access isn't allowed",
+  "banner_description": "Your team admin has blocked partnerships for your team."
+ },
+ "add_note_text": "Add note",
+ "text_area_info_text": "Add a note to workspace admin",
+ "approved_partner_heading": "Almost There!",
+ "approved_partner_subheading_1": "Your request was approved. To get access, accept the partnership invite sent to your email.",
+ "approved_partner_subheading_2": "If you can't find the invite, you can submit a new access request.",
+ "approved_partner_raise_new_request_cta": "Request access again",
+ "toast_content": {
+  "switch_account_error": {
+   "title": "Request sent",
+   "description": "Switch teams from the account menu to continue."
+  },
+  "switching_account": {
+   "title": "Request sent",
+   "description": "Switching to your selected team..."
+  }
+ }
+}

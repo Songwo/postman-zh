@@ -1,0 +1,195 @@
+{
+ "private_network": {
+  "add_to_network_cta": {
+   "requesterPossessive": {
+    "your": "Your",
+    "other": "{name}'s"
+   },
+   "unpublished_state": {
+    "api_overview_accordion": {
+     "helperText": {
+      "publisher": "Make it easy for your team members to discover and use the right version of your API.",
+      "requester": "Make it easy for your team members to discover and use the right version of your API."
+     },
+     "publishButton": {
+      "addText": "Add to API Network",
+      "requestText": "Request to Add"
+     }
+    },
+    "collection_overview": {
+     "heading": {
+      "text": "Publish to API Network"
+     },
+     "helperText": {
+      "publisher": "Make this collection discoverable by publishing it to your team’s Internal API network.",
+      "requester": "Make this collection discoverable by publishing it to your team’s Internal API network. "
+     },
+     "publishButton": {
+      "addText": "Publish Collection",
+      "requestText": "Request to Publish"
+     }
+    },
+    "workspace_settings": {
+     "label": {
+      "text": "Add to the Private API Network"
+     },
+     "helperText": {
+      "publisher": "Make this workspace more discoverable for consumers within your organization",
+      "requester": "Make this workspace more discoverable for consumers within your organization"
+     },
+     "publishButton": {
+      "text": "Add to Network",
+      "addText": "Add to Network",
+      "requestText": "Request to Add"
+     }
+    },
+    "api_overview": {
+     "helperText": {
+      "publisher": "Make your {entityType} discoverable by adding it to your API Network.",
+      "requester": "Make your  {entityType} discoverable by requesting to add it to your API network."
+     },
+     "publishButton": {
+      "addText": "Add to API Network",
+      "requestText": "Request to Add"
+     }
+    }
+   },
+   "published_state": {
+    "api_overview_accordion": {
+     "text": "View on Network",
+     "helperText": "All published versions of this API are added"
+    },
+    "collection_overview": {
+     "heading": {
+      "text": "Published to API Network"
+     },
+     "helperText": "This collection is available on the internal API Network.",
+     "linkToNetwork": {
+      "text": "View on network"
+     }
+    },
+    "workspace_settings": {
+     "label": {
+      "text": "Added to the Private API Network"
+     },
+     "text": "View on Network"
+    },
+    "api_overview": {
+     "text": "Private API Network"
+    },
+    "remove_button": "Remove"
+   },
+   "parent_published_state": {
+    "text": "This {entityType} is added as a part of the workspace"
+   },
+   "pending_state": {
+    "api_overview_accordion": {
+     "text": "Add to Private API Network request is pending"
+    },
+    "collection_overview": {
+     "heading": {
+      "text": "Add to the Private API Network"
+     },
+     "label": {
+      "text": "Request in review"
+     }
+    },
+    "workspace_settings": {
+     "label": {
+      "text": "Add to the Private API Network"
+     },
+     "text": "Add to network request pending"
+    },
+    "api_overview": {
+     "text": "Private API Network"
+    },
+    "body": {
+     "text": "{requesterName} request to add this to the network has been sent for review {requestedAt}.",
+     "button": "Cancel request",
+     "requestedAtAbsolute": "on {date}"
+    }
+   },
+   "rejected_state": {
+    "collection_overview": {
+     "heading": {
+      "text": "Add to the Private API Network"
+     }
+    },
+    "workspace_settings": {
+     "label": {
+      "text": "Add to the Private API Network"
+     }
+    },
+    "api_overview": {
+     "text": "Private API Network"
+    },
+    "body": {
+     "text_with_response": "{responderName} denied the request to add this {entityType} to the Private API Network. Here's a note from them:",
+     "text_without_response": "{responderName} denied the request to add this {entityType} to the Private API Network."
+    },
+    "footer": {
+     "button": "Resubmit request",
+     "text": "To resubmit your API to the Private API Network, you first need to publish your API."
+    }
+   },
+   "disabled_state": {
+    "collection_overview": {
+     "heading": {
+      "text": "Add to the Private API Network"
+     },
+     "helperText": "Make this collection discoverable by publishing it to your team’s Internal API network."
+    },
+    "workspace_settings": {
+     "label": {
+      "text": "Add to the Private API Network"
+     }
+    },
+    "body": {
+     "text": "Adding your {entityType} to the Private API Network makes it discoverable to your team members.",
+     "button": {
+      "text": "Add to API Network",
+      "tooltip": "Only Editors of this {entityType} can add it to the Private API Network.",
+      "write_disabled_tooltip": "A team admin can add you to the API builder add-on to perform actions in the Private API Network.",
+      "org_visibility_tooltip": "Workspace should be accessible by the whole organization to add to the Private API Network."
+     }
+    }
+   },
+   "remove_modal": {
+    "heading": "Remove {entityType} from network?",
+    "content": "Your consumers will no longer be able to discover this {entityType} on the Private API Network. Are you sure you want to do this?",
+    "footer": {
+     "cancel": "Cancel",
+     "remove": "Remove"
+    }
+   },
+   "remove_workspace_modal": {
+    "heading": "Remove Workspace from network?",
+    "content_before": "Once removed, your team will no longer be able to discover",
+    "content_after": "workspace on the Private API Network. The workspace will not be deleted from your account.",
+    "footer": {
+     "cancel": "Cancel",
+     "remove": "Remove"
+    }
+   },
+   "parent_requested_state": {
+    "body": {
+     "text": "{requesterName} request to add this workspace to the network is pending review since {requestedAt}."
+    }
+   },
+   "error": {
+    "toast": {
+     "cancelled_request": "Cancelled request to add to network.",
+     "cancel_failed": "Something went wrong while canceling the request. Try again.",
+     "entity_removed": "Removed {entityType} from the network",
+     "entity_remove_failed": "Something went wrong while removing the {entityType}. Try again."
+    }
+   }
+  },
+  "requests": {
+   "no_permission": {
+    "title": "No Permission",
+    "description": "You do not have permission to view pending requests."
+   }
+  }
+ }
+}

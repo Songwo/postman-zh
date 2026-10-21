@@ -1,0 +1,177 @@
+{
+ "issues_length": {
+  "singular": "{ count } issue",
+  "plural": "{ count } issues"
+ },
+ "collection": {
+  "issues": "Issues",
+  "heading": "Known issues"
+ },
+ "modal": {
+  "heading": "Add to Jira Cloud",
+  "jira_action": {
+   "title": "Select option",
+   "create": "Create new issue",
+   "connect": "Connect existing issue"
+  },
+  "form": {
+   "field": {
+    "site": {
+     "label": "Site",
+     "placeholder": "Select site",
+     "footer": {
+      "text": "Not seeing your site listed?",
+      "button_text": "Switch accounts"
+     }
+    },
+    "project": {
+     "label": "Project",
+     "placeholder": "Type to search for a project",
+     "empty_state_message": "No projects found"
+    },
+    "issue_type": {
+     "label": "Work type",
+     "placeholder": "Select work type",
+     "empty_state_message": "No work types found"
+    },
+    "summary": {
+     "label": "Summary",
+     "placeholder": "Response is returning 404"
+    },
+    "description": {
+     "label": "Description",
+     "placeholder": "Add any additional details that relate to the issue that you found."
+    },
+    "assignee": {
+     "label": "Assignee",
+     "placeholder": "Select assignee",
+     "empty_state_message": "No assignees found"
+    },
+    "issue": {
+     "label": "Issue",
+     "placeholder": "Type to search for an issue",
+     "empty_state_message": "No issues found"
+    },
+    "comment": {
+     "label": "Additional comments",
+     "placeholder": "Add any additional details that relate to the issue."
+    },
+    "response": {
+     "label": "Include response in issue",
+     "info_text": "Adds the current response data and meta to the issue description"
+    }
+   },
+   "errors": {
+    "required": "This is a required field",
+    "invalid_date": "Your input is not in the right date format, please use { format }",
+    "invalid_estimate": "Your input is not in the right estimate format, please use [#w #d #h #m]"
+   },
+   "action": {
+    "cancel": "Cancel",
+    "create": "Create Issue",
+    "connect": "Connect Issue",
+    "show": "Show optional fields",
+    "hide": "Hide optional fields"
+   }
+  },
+  "toast": {
+   "success": {
+    "title": {
+     "create": "Jira issue created",
+     "connect": "Jira issue connected"
+    },
+    "description": {
+     "text": {
+      "create": "{ key } has been created for this { entityName }. ",
+      "connect": "{ key } is now connected to this { entityName }. "
+     },
+     "button_text": "View"
+    }
+   },
+   "error": {
+    "auth": {
+     "title": "Something went wrong",
+     "description": "There was a problem with connecting Jira. Please try again."
+    },
+    "required_fields": {
+     "title": "Complete required fields in Jira. Add request link to issue to view it in Postman."
+    },
+    "permission_denied": {
+     "create": {
+      "title": "You need permission to create issues in this Jira project. Select another project."
+     },
+     "connect": {
+      "title": "You need permission to edit issues in this Jira project. Select another project."
+     }
+    },
+    "not_allowed_value_fields": {
+     "title": "Unable to create Jira issue: the label can't contain spaces."
+    }
+   }
+  },
+  "warning": {
+   "fields": {
+    "title": "Some required fields are not supported",
+    "description": "To create this issue from Postman, please select another work type or make the above fields optional in your Jira settings."
+   },
+   "scopes": {
+    "title": "We need you to sign in to Jira again.",
+    "text": "This lets us load all the fields needed to create your issue.",
+    "sign_in_button": "Sign in"
+   },
+   "expired_token": {
+    "title": "Please sign in again. Your token has been expired.",
+    "sign_in_button": "Sign in"
+   }
+  }
+ },
+ "context_bar": {
+  "blank_state": {
+   "auth": {
+    "title": "Sign in to Jira Cloud to see issues",
+    "sign_in_button": "Sign in"
+   },
+   "issues": {
+    "title": "No open issues for this { type }",
+    "see_resolved_issues": "See resolved issues"
+   }
+  },
+  "request": {
+   "add_button": "New",
+   "assignee": {
+    "assigned": "Assigned to { assignee }",
+    "unassigned": "Unassigned"
+   }
+  },
+  "collection": {
+   "heading": {
+    "singular": "{ count } issue in this collection",
+    "plural": "{ count } issues in this collection"
+   }
+  }
+ },
+ "popover": {
+  "nudges": {
+   "heading": "Track and fix failures in Jira",
+   "actions": {
+    "log_issue": "Log issue",
+    "dismiss": "Dismiss"
+   },
+   "collection_run": {
+    "description": "Create a Jira issue to share run results with your team, assign tasks, and resolve failures faster."
+   },
+   "monitor": {
+    "description": "Create a Jira issue to share monitor results with your team, assign tasks, and resolve failures faster."
+   }
+  },
+  "meta_actions": {
+   "heading": "Hitting an unexpected error?",
+   "description": "Help teams quickly reproduce the problem by attaching this request and response to a new issue on Jira Cloud."
+  },
+  "context_bar": {
+   "heading": "This may be a known issue",
+   "description": "Your team has linked one or more Jira issues to this request. Review active issues for possible workarounds or report a new one if you’re encountering something different."
+  },
+  "cta_button": "Got it"
+ }
+}

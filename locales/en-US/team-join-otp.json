@@ -1,0 +1,31 @@
+{
+ "team_join_otp": {
+  "page": {
+   "setup_loading": "Loading...",
+   "continue_to_postman": "Continue to Postman"
+  },
+  "otp": {
+   "heading": "Confirm your request to join",
+   "description": "We sent a code to <bold>{email}</bold> to confirm your request",
+   "submit_button": "Confirm & Join"
+  },
+  "loading": {
+   "heading": "Joining the team",
+   "subheading": "Hang tight while we get you set up."
+  },
+  "rfa": {
+   "heading": "Your request to join this team is in review",
+   "subheading": "We'll notify you once the team admin responds.",
+   "signed_in_message": "You're signed in as {email}. <switch>Switch accounts</switch>"
+  },
+  "request_access": {
+   "heading": "You don't have access to this resource",
+   "subheading": "Request the owner to share it with you.",
+   "button": "Request Access"
+  },
+  "error": {
+   "heading": "Something went wrong",
+   "subheading": "We couldn't complete your request right now. Please try again later."
+  }
+ }
+}

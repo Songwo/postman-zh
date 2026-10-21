@@ -1,0 +1,280 @@
+{
+  "comments": {
+    "blank_state": {
+      "title": "你没有评论的权限",
+      "description": "你在此工作区中只有查看权限。"
+    },
+    "comment_notification_recipient": {
+      "summary_one": "将通知 {name}。",
+      "summary_other": "查看所有将收到通知的人，包括 {names} 和 {lastName}。",
+      "private_user": "私密用户",
+      "recipients_list": {
+        "title": "将通知："
+      }
+    },
+    "context_bar_icon": {
+      "tooltip": {
+        "default": "评论",
+        "unread": "{count, plural, =1 {# 条未读评论} other {# 条未读评论}}"
+      },
+      "unread_count_tooltip": {
+        "unread_comments": "{count, plural, =1 {# 条未读评论} other {# 条未读评论}}"
+      }
+    },
+    "context_bar_view": {
+      "title": "评论",
+      "local_mode_blank_state": {
+        "title": "评论不可用",
+        "description": "本地模式下无法使用评论，请切换到云端视图。"
+      },
+      "comment_thread_filter": {
+        "button_label": "筛选评论",
+        "menu_label": "评论筛选选项",
+        "open_comments": "未解决的评论",
+        "resolved_comments": "已解决的评论",
+        "show_resolved_comments": "显示已解决的评论",
+        "reset_filters": "重置筛选",
+        "nested_comments": "嵌套评论",
+        "hide_nested_comments": "隐藏嵌套元素上的评论",
+        "no_resolved_comments": "没有已解决的评论",
+        "loading_label": "正在加载筛选条件..."
+      },
+      "commit_and_push_changes_banner": {
+        "text": "提交并推送此分支中的更改后才能添加新评论"
+      },
+      "empty_state": {
+        "heading": {
+          "no_comments": "来发表第一条评论吧",
+          "no_comments_on_filter": "这些筛选条件下没有结果",
+          "no_open_comments": "没有未解决的评论",
+          "no_inline_comments": "试试留下行内评论"
+        },
+        "description": {
+          "no_comments": "与队友分享你对此{model}的想法、笔记和反馈。",
+          "no_comments_on_filter": "所选筛选条件下没有可显示的评论。请调整或重置筛选设置。",
+          "no_open_comments": "所有评论都已解决。调整筛选条件即可显示已解决的评论。",
+          "no_inline_comments": "在评论模式下选中文件的某一部分，即可针对该部分发表评论。"
+        },
+        "cta_text": {
+          "no_comments": "添加评论",
+          "no_comments_on_filter": "重置筛选",
+          "no_open_comments": "显示已解决的评论"
+        }
+      },
+      "comment_input": {
+        "user_avatar": "用户头像",
+        "placeholder": {
+          "default": "使用 @ 提及来通知他人",
+          "new_comment": {
+            "focused": "提出问题或给出反馈。使用 @ 提及来通知他人。",
+            "default": "添加新评论"
+          },
+          "reply_comment": {
+            "focused": "使用 @ 提及来通知他人",
+            "default": "添加回复"
+          }
+        },
+        "comment_actions": {
+          "comment": "评论",
+          "reply": "回复",
+          "save": "保存",
+          "cancel": "取消"
+        }
+      },
+      "comment_thread": {
+        "expand_button": {
+          "show_more": "再显示 {count} 条",
+          "show_less": "收起"
+        },
+        "comment": {
+          "heading": {
+            "private_user": "私密用户",
+            "actions": {
+              "view_actions": {
+                "tooltip": "查看操作"
+              },
+              "copy_link": "复制链接",
+              "copy_link_copied": "已复制！",
+              "edit": "编辑",
+              "edit_no_permission": "你没有编辑此评论的权限",
+              "delete": "删除",
+              "delete_no_permission": "你没有删除此评论的权限",
+              "resolve": {
+                "tooltip": {
+                  "no_permission": "你没有解决此评论的权限",
+                  "resolve": "解决评论"
+                }
+              },
+              "unresolve": {
+                "tooltip": {
+                  "unresolve": "重新打开",
+                  "no_permission": "你没有重新打开此评论的权限"
+                }
+              }
+            }
+          },
+          "footer": {
+            "no_reply": "回复",
+            "reply": "{count, plural, =1 {# 条回复} other {# 条回复}}",
+            "unread_reply": "{count, plural, =1 {# 条新回复} other {# 条新回复}}"
+          },
+          "delete_modal": {
+            "heading": "删除评论？",
+            "button": "删除",
+            "content": {
+              "comment": "你的评论及其回复都将被删除，此操作无法撤销。",
+              "reply": "你的评论将被删除，此操作无法撤销。"
+            }
+          },
+          "toast_error": {
+            "edit": {
+              "description": "更新评论时出错。",
+              "title": "无法更新评论"
+            },
+            "delete": {
+              "description": "删除评论时出错。",
+              "title": "无法删除评论"
+            }
+          }
+        }
+      },
+      "unsaved-changes-banner": {
+        "text": "你未保存的更改将随此评论一起保存。"
+      },
+      "error_toast": {
+        "add_comment": "需要联网才能评论",
+        "update_comment": "需要联网才能更新评论。",
+        "delete_comment": "需要联网才能删除评论。",
+        "handle_resolve": {
+          "offline": "需要联网才能解决",
+          "failed": {
+            "description": "解决讨论时出错。",
+            "title": "无法解决评论"
+          }
+        },
+        "handle_unresolve": {
+          "offline": "需要联网才能重新打开",
+          "failed": {
+            "description": "重新打开讨论时出错。",
+            "title": "无法重新打开评论"
+          }
+        }
+      }
+    },
+    "delete_modal": {
+      "cancel": "取消"
+    },
+    "mention": {
+      "self": "你"
+    }
+  },
+  "share": {
+    "invite": {
+      "label": "邀请",
+      "group_members_count_one": "1 名成员",
+      "group_members_count_other": "{count} 名成员",
+      "invite_collaborator_warning": "团队外的人员将以协作者身份受邀。",
+      "dropdown_info": "此角色将应用于该集合。",
+      "placeholder": "输入姓名、群组名称或邮箱..."
+    },
+    "invite_partner_banner": {
+      "title": "邀请合作伙伴加入你的团队",
+      "description": "你正在邀请其他公司的人员。请使用<1><0>合作伙伴工作区</0></1>，以合作伙伴身份邀请他们来共享集合。"
+    },
+    "invite_partner_to_new_workspace_modal": {
+      "title": "设置合作伙伴工作区并邀请合作伙伴共享集合。",
+      "partner_workspace_name_info_text": "工作区名称",
+      "partner_email_info_text": "邮箱",
+      "fork_info_text": "将在此合作伙伴工作区中创建 <1>{name}</1> 集合的复刻。"
+    },
+    "org_personal_ws": {
+      "join_team": {
+        "title": "加入 {orgName} 中的团队以进行协作",
+        "description": "你只能在团队中邀请他人并与之协作",
+        "primary_action": "查看团队",
+        "secondary_action": "取消"
+      },
+      "confirm_move_entity": {
+        "title": "将{entityType}移到团队中以进行协作",
+        "description": "你只能在团队中邀请他人并与之协作",
+        "primary_action": "移动",
+        "secondary_action": "取消"
+      },
+      "move_entity": {
+        "heading": "移动{entityType}"
+      }
+    }
+  },
+  "workspace_updates": {
+    "create_update_modal": {
+      "heading": "发布动态",
+      "description": "你即将在工作区中发布一条新动态，系统会通过邮件和应用内消息通知接收者。",
+      "recipients_heading": "接收者",
+      "workspace_watchers_label": "工作区关注者：",
+      "slack_channels_label": "Slack 频道：",
+      "reach_more_heading": "注意！可以通知更多人",
+      "linked_resources_tip": "如果动态与某个集合有关，可以添加关联资源，以通知更多关注者。",
+      "slack_tip": "连接 Slack，在 Postman 上发布动态时提醒你的社区或团队。",
+      "continue_editing": "继续编辑",
+      "post_update": "发布动态"
+    },
+    "pin_toggle": {
+      "error": {
+        "unpin_title": "取消置顶动态失败",
+        "pin_title": "置顶动态失败",
+        "default_description": "请重试。",
+        "max_pinned_description": "此工作区置顶的动态已达上限"
+      }
+    },
+    "permissions": {
+      "no_permission_to_pin": "你没有置顶此动态的权限。",
+      "no_permission_to_edit": "你没有编辑此动态的权限。",
+      "no_permission_to_delete": "你没有删除此动态的权限。",
+      "no_permission_to_comment": "你没有添加评论的权限。",
+      "no_permission_to_react": "你没有添加回应的权限。",
+      "no_permission_to_unreact": "你没有移除此回应的权限。"
+    }
+  },
+  "reactions": {
+    "add_reaction": "添加回应",
+    "no_permission": "你没有添加回应的权限。",
+    "users_list": {
+      "you": "你",
+      "others": " 等人",
+      "reacted_with": " 回应了 :{emoji}:"
+    },
+    "aria_labels": {
+      "emoji": "表情"
+    }
+  },
+  "partner_collection_rfa_modal": {
+    "default_collection_name": "集合",
+    "header": {
+      "title_with_name": "申请 {collectionName} 的复刻副本",
+      "title_generic": "申请此集合的复刻副本"
+    },
+    "permission_text": "你需要<1>编辑者</1>权限才能复刻此集合。",
+    "note_section": {
+      "placeholder": "简要说明你需要访问权限的原因"
+    },
+    "admin_popover": {
+      "workspace_admin_role": "工作区管理员",
+      "no_admins_found": "未找到管理员"
+    },
+    "approval_text": "获批后，该集合将被复刻，你将获得编辑权限。",
+    "buttons": {
+      "cancel": "取消",
+      "request_access": "申请访问权限"
+    },
+    "toast_messages": {
+      "success": {
+        "title": "已发送复刻申请",
+        "description": "工作区管理员批准你的申请后，你会收到通知。"
+      },
+      "error": {
+        "default_title": "无法创建申请",
+        "default_description": "出了点问题"
+      }
+    }
+  }
+}

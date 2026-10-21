@@ -1,0 +1,267 @@
+{
+  "mode": {
+    "aria_label": "请求模式",
+    "produce": "生产",
+    "consume": "消费"
+  },
+  "mode_switch_modal": {
+    "title": {
+      "produce": "停止发送并切换模式？",
+      "consume": "停止流式传输并切换模式？"
+    },
+    "description": {
+      "produce": "切换到“消费”会停止当前的发送，仍在处理中的事件将不会被发送。",
+      "consume": "切换到“生产”会停止当前的流，你将不再接收此次运行的事件。"
+    },
+    "cancel": "取消",
+    "confirm": "停止并切换"
+  },
+  "action": {
+    "send": "发送",
+    "stream": "流式接收",
+    "stop": "停止",
+    "test_connection": "测试连接",
+    "disabled_pick_topic": "请先选择一个主题。"
+  },
+  "tabs": {
+    "event": "事件",
+    "topics": "主题",
+    "authorization": "授权",
+    "scripts": "脚本"
+  },
+  "placeholder": {
+    "coming_soon": "即将推出。"
+  },
+  "scripts": {
+    "events": {
+      "before_produce": {
+        "label": "生产前",
+        "description": "“生产前”脚本在事件发送到代理服务器之前运行。",
+        "placeholder": "// 在这里编写生产前脚本…",
+        "tooltip_text": "在事件发送到代理服务器之前运行。"
+      },
+      "after_produce": {
+        "label": "生产后",
+        "description": "“生产后”脚本在代理服务器确认收到生产的事件后运行。",
+        "placeholder": "// 在这里编写生产后脚本…",
+        "tooltip_text": "在代理服务器确认收到生产的事件后运行。"
+      },
+      "before_consume": {
+        "label": "消费前",
+        "description": "“消费前”脚本在订阅开始流式接收之前运行。",
+        "placeholder": "// 在这里编写消费前脚本…",
+        "tooltip_text": "在订阅开始流式接收之前运行。"
+      },
+      "on_message": {
+        "label": "收到消息时",
+        "description": "“收到消息时”脚本在流式接收期间每收到一条记录运行一次。",
+        "placeholder": "// 在这里编写逐条消息脚本…",
+        "tooltip_text": "在流式接收期间每收到一条记录运行一次。"
+      },
+      "after_consume": {
+        "label": "消费后",
+        "description": "“消费后”脚本在流结束后运行。",
+        "placeholder": "// 在这里编写消费后脚本…",
+        "tooltip_text": "在流结束后运行。"
+      }
+    }
+  },
+  "offsets": {
+    "start_from": "起始位置",
+    "earliest": "最早",
+    "latest": "最新",
+    "offset": "偏移量",
+    "timestamp": "时间戳",
+    "offset_placeholder": "输入偏移量",
+    "timestamp_placeholder": "输入时间戳"
+  },
+  "stop_after": {
+    "label": "停止条件",
+    "max_records": "记录数",
+    "duration": "时长",
+    "idle": "空闲",
+    "end_position": "时间戳",
+    "max_records_placeholder": "1000",
+    "duration_placeholder": "输入时长",
+    "idle_placeholder": "输入空闲时间",
+    "end_position_placeholder": "输入时间戳",
+    "milliseconds_suffix": "毫秒"
+  },
+  "topics": {
+    "pane": {
+      "topics": "主题",
+      "configuration": "配置"
+    }
+  },
+  "topics_list": {
+    "add_topic_placeholder": "添加主题",
+    "list_all_topics": "列出所有主题",
+    "loading": "正在加载主题…",
+    "load_error": "无法加载主题",
+    "retry": "重试",
+    "duplicate_topic": "另一个主题已解析为此名称",
+    "remove_aria_label": "移除主题 {name}",
+    "filter_placeholder": "筛选主题",
+    "filter_aria_label": "筛选主题",
+    "no_matches": "没有匹配“{query}”的主题",
+    "empty_title": "还没有主题",
+    "empty_description": "列出代理服务器的所有主题以供选择，或添加一个主题进行流式接收",
+    "broker_empty_title": "未找到主题",
+    "broker_empty_description": "此代理服务器没有报告任何主题"
+  },
+  "status": {
+    "idle": "空闲",
+    "connecting": "正在连接",
+    "connected": "已连接",
+    "disconnected": "已断开",
+    "error": "错误"
+  },
+  "schema": {
+    "label": "Schema",
+    "field_label": "关联 Schema",
+    "optional": "（可选）",
+    "topic_required": "请先添加主题，再为其关联 Schema",
+    "aria_label": "切换 Schema",
+    "placeholder": "选择 Schema",
+    "select_aria_label": "主题 {topic} 的 Schema",
+    "column_tooltip": "按 Schema 校验事件负载",
+    "empty": "此工作区中没有包含 Kafka 服务器的 AsyncAPI 规范",
+    "load_error": "无法加载规范",
+    "open_specification": "打开规范",
+    "unresolved": {
+      "topic-empty": "此规范没有选择主题",
+      "topic-absent": "此规范没有描述该主题",
+      "schema-absent": "规范中没有此主题的消息 Schema"
+    },
+    "validation": {
+      "passed": "Schema 校验通过",
+      "failed": "Schema 校验失败",
+      "warned": "负载与 Schema 不符",
+      "passed_badge": "校验通过",
+      "failed_badge": "校验失败",
+      "warned_badge": "校验警告",
+      "aria_label": "Schema 校验：{status}",
+      "skipped": {
+        "no-schema": "此主题没有关联 Schema",
+        "empty-payload": "此事件没有可校验的负载",
+        "not-json": "此负载不是 JSON，因此未校验",
+        "schema-invalid": "无法读取关联的 Schema",
+        "pending": "尚未校验"
+      }
+    },
+    "derived_tooltip": "由 {name} 定义。如需更改，请编辑规范。",
+    "derived_aria_label": "{value}。由源规范定义，不能在这里编辑。",
+    "create_specification": "新建 AsyncAPI {version} 规范",
+    "creating_specification": "正在创建规范…"
+  },
+  "fields": {
+    "partition_placeholder": "自动"
+  },
+  "connection": {
+    "inline": "内联",
+    "inherit": "继承",
+    "settings_aria_label": "连接设置",
+    "brokers": "引导服务器",
+    "brokers_placeholder": "输入服务器 URL",
+    "brokers_more": "另外 {count} 个",
+    "tls": "使用 TLS",
+    "inherit_hint": "继承自父级。"
+  },
+  "event": {
+    "topic": "主题",
+    "topic_placeholder": "添加主题",
+    "partition": "分区",
+    "key": "键",
+    "key_placeholder": "消息键",
+    "key_serde": "键序列化格式",
+    "value": "值",
+    "value_too_large": "超出 {limit} 上限 {size}",
+    "value_serde": "值序列化格式",
+    "serde": {
+      "text": "字符串",
+      "json": "JSON",
+      "base64": "Base64",
+      "hex": "十六进制"
+    },
+    "headers": "请求头",
+    "ack": "Ack",
+    "generate": "根据 Schema 生成",
+    "beautify": "美化",
+    "generate_tooltip": "用根据关联 Schema 生成的示例替换该值",
+    "generate_denied": {
+      "no_schema": "为此主题关联 Schema 后即可生成示例值",
+      "not_json": "只有 JSON 序列化格式才能生成示例值"
+    },
+    "pane": {
+      "details": "详情",
+      "value": "值"
+    }
+  },
+  "consume": {
+    "stream": {
+      "field": {
+        "topic": "主题",
+        "partition": "分区",
+        "offset": "偏移量",
+        "key": "键",
+        "value": "值",
+        "headers": "请求头"
+      }
+    }
+  },
+  "stream": {
+    "title": "流",
+    "empty": "流式接收或发送事件",
+    "connecting": "正在连接…",
+    "more_aria_label": "流选项",
+    "no_messages": "没有事件",
+    "error": "流式接收事件时出错",
+    "new_events": "新事件",
+    "row": {
+      "empty_value": "（空）"
+    },
+    "pane": {
+      "events": "事件",
+      "details": "详情"
+    },
+    "filter": {
+      "all_topics": "所有主题",
+      "clear": "清除消息"
+    },
+    "inspector": {
+      "preview": "预览",
+      "language": {
+        "json": "JSON",
+        "text": "文本",
+        "xml": "XML",
+        "base64": "Base64",
+        "hex": "十六进制"
+      },
+      "tab": {
+        "value": "值",
+        "meta": "元数据"
+      }
+    }
+  },
+  "produce": {
+    "title": "生产"
+  },
+  "runner": {
+    "empty": {
+      "no_events": "此请求没有产生任何流事件。"
+    },
+    "ended_reason": {
+      "unknown": "未知"
+    },
+    "event": {
+      "subscribed": "已订阅 {topics}",
+      "consume_ended": "流已结束（{reason}）",
+      "error": "流错误"
+    }
+  },
+  "topics_to_stream": {
+    "heading": "要流式接收的主题",
+    "empty": "在左侧选择主题即可流式接收",
+    "unnamed": "未命名主题"
+  }
+}

@@ -1,0 +1,193 @@
+{
+ "cta": {
+  "upgrade": "Upgrade",
+  "start_trial": "Start {plan} Trial",
+  "purchase_add_on": "Purchase Add-on",
+  "contact_sales": "Contact Sales",
+  "learn_more": "Learn more"
+ },
+ "billing_overview": {
+  "title": "Billing",
+  "description_intro": "Manage your plan, payment methods and resource usage.",
+  "description_lead": "What you'll unlock:",
+  "description_item_billing_activity": "View your plan, past invoices, and billing activity",
+  "description_item_team_size": "Adjust team size, purchase add-ons, and upgrade plans",
+  "description_item_resource_usage": "Track resource usage and remaining monthly limits"
+ },
+ "application_inventory": {
+  "title": "Application Inventory",
+  "description_intro": "Track your applications, their API dependencies, and test coverage.",
+  "description_lead": "What you'll unlock:",
+  "description_item_api_dependencies": "View which external APIs your applications depend on",
+  "description_item_playwright_tests": "Validate API behavior using your existing Playwright tests",
+  "description_item_contract_drift": "Catch contract drift and silent backend errors automatically"
+ },
+ "api_catalog": {
+  "title": "API Catalog",
+  "description_intro": "See all your organization's APIs and services in a single dashboard.",
+  "description_lead": "What you'll unlock:",
+  "description_item_api_health": "Monitor API health, governance, and conformance across environments",
+  "description_item_unmanaged_apis": "Discover unmanaged APIs from gateways, Git repos, and runtime traffic",
+  "description_item_cicd_pipeline": "Track CI/CD pipeline runs, spec linting, and endpoint coverage"
+ },
+ "private_api_network": {
+  "title": "Private API Network",
+  "description_intro": "Discover and reuse your organization's internal APIs.",
+  "description_lead": "What you'll unlock:",
+  "description_item_browse_apis": "Browse your organization's trusted internal APIs",
+  "description_item_add_workspaces": "Add workspaces for team discovery",
+  "description_item_find_apis": "Help developers find the right APIs faster"
+ },
+ "reports": {
+  "title": "Reports",
+  "description_intro": "Get visibility into API usage, team activity, and plan utilization.",
+  "description_lead": "What you'll unlock:",
+  "description_item_active_users": "Monitor active users, workspaces, and API trends",
+  "description_item_agent_mode": "Track Agent Mode usage and performance metrics",
+  "description_item_billing_insights": "Access billing and resource utilization insights"
+ },
+ "postman_keys": {
+  "title": "Postman Keys",
+  "description_intro": "Oversee all Postman API keys generated across your organization.",
+  "description_lead": "What you'll unlock:",
+  "description_item_manage_keys": "View, filter, and manage team API keys from one dashboard",
+  "description_item_expiration_policies": "Set expiration policies and control who can generate keys",
+  "description_item_auto_revoke": "Auto-revoke exposed keys detected by Secret Scanner"
+ },
+ "audit_logs": {
+  "title": "Audit logs",
+  "description_intro": "Track your team's activity for security and compliance.",
+  "description_lead": "What you'll unlock:",
+  "description_item_monitor_activity": "Monitor sign-ins, key creation, and membership changes",
+  "description_item_filter_export": "Filter and export logs by date, event, or user",
+  "description_item_integrate_with_siem": "Integrate Postman’s audit logs with SIEM tools"
+ },
+ "user_groups": {
+  "title": "User groups",
+  "description_intro": "Organize members into groups to manage roles and access at scale.",
+  "description_lead": "What you'll unlock:",
+  "description_item_organize_users_into_groups": "Organize users into groups to manage access at scale",
+  "description_item_assign_roles_to_groups": "Assign permissions to entire groups instead of individual users",
+  "description_item_manage_groups": "Simplify onboarding, offboarding, and ongoing administration"
+ },
+ "team_resources": {
+  "title": "Team resources",
+  "description_intro": "Control workspace creation, collection sharing, and external package access.",
+  "description_lead": "What you'll unlock:",
+  "description_item_workspace_creation": "Configure team-wide rules to control workspace creation",
+  "description_item_collection_sharing": "Manage how resources such as collection and mocks are shared",
+  "description_item_external_packages": "Govern external package usage and vault data export"
+ },
+ "organization_resources": {
+  "title": "Organization resources",
+  "description_intro": "Control workspace creation, collection sharing, and external package access.",
+  "description_lead": "What you'll unlock:",
+  "description_item_workspace_creation": "Configure organization-wide rules to control workspace creation",
+  "description_item_collection_sharing": "Manage how resources such as collection and mocks are shared",
+  "description_item_external_packages": "Govern external package usage and vault data export"
+ },
+ "sso_authentication_method": {
+  "title": "Authentication methods",
+  "description_intro": "Configure SAML-based single sign-on for your organization.",
+  "description_lead": "What you'll unlock:",
+  "description_item_configure_saml": "Configure SAML-based SSO with your identity provider",
+  "description_item_single_sign_in": "Let members sign in once without managing separate passwords",
+  "description_item_auth_policies": "Enforce consistent authentication policies for your team"
+ },
+ "sso_authentication_method_addon": {
+  "title": "Authentication methods",
+  "description_intro": "Configure SAML-based single sign-on for your organization.",
+  "description_lead": "What you'll unlock:",
+  "description_item_configure_saml": "Configure SAML-based SSO with your identity provider",
+  "description_item_single_sign_in": "Let members sign in once without managing separate passwords",
+  "description_item_manage_authentication_methods": "Manage authentication methods for your organization"
+ },
+ "domain_verification_and_capture": {
+  "title": "Domain verification and capture",
+  "description_intro": "Consolidate all accounts on your domain into one managed team.",
+  "description_lead": "What you'll unlock:",
+  "description_item_auto_direct_signups": "Auto-direct new sign-ups to your official team",
+  "description_item_centralized_management": "Bring existing accounts under centralized management",
+  "description_item_prevent_ungoverned_usage": "Prevent ungoverned Postman usage on your domain"
+ },
+ "service_accounts": {
+  "title": "Service accounts",
+  "description_intro": "Create dedicated identities for automation and CI/CD pipelines.",
+  "description_lead": "What you'll unlock:",
+  "description_item_scoped_access": "Set up non-human accounts with scoped access controls",
+  "description_item_separate_workflows": "Separate automated workflows from personal credentials",
+  "description_item_audit_attribution": "Track automated actions with clear attribution in audit logs"
+ },
+ "postman_ai_access": {
+  "title": "Postman AI controls",
+  "description_intro": "Manage how your team uses Postman's AI-powered features.",
+  "description_lead": "What you'll unlock:",
+  "description_item_control_postman_ai_usage": "Control usage of Postman AI in your team",
+  "description_item_configure_access_per_user_or_group": "Configure access per user or user group",
+  "description_item_set_safer_ai_guardrails": "Set guardrails for safer AI usage"
+ },
+ "postman_ai_guardrails": {
+  "title": "Postman AI guardrails",
+  "description_intro": "Set policies for how AI features behave within your team.",
+  "description_lead": "What you'll unlock:",
+  "description_item_enable_pii_redaction": "Enable PII redaction",
+  "description_item_control_external_mcp_server_access": "Control what external MCP servers Postman AI can access"
+ },
+ "runners": {
+  "title": "Runners",
+  "upgrade_modal_heading": "Upgrade to the Enterprise plan to access Runners for private API",
+  "description_intro": "Run collections at scale and manage runner infrastructure for your team.",
+  "description_lead": "What you'll unlock:",
+  "description_item_run_collections": "Run collections manually, on a schedule, or via the Postman CLI",
+  "description_item_private_apis": "Execute runs against private APIs within your own network",
+  "description_item_runner_health": "Monitor runner health and manage access from one dashboard"
+ },
+ "custom_domains": {
+  "title": "Custom domains",
+  "description_intro": "Host API documentation on your own branded domain.",
+  "description_lead": "What you'll unlock:",
+  "description_item_branded_subdomain": "Publish docs under your subdomain (e.g., docs.yourco.com)",
+  "description_item_automatic_ssl": "Get automatic SSL via Let's Encrypt",
+  "description_item_consistent_branding": "Maintain consistent branding for API consumers"
+ },
+ "byok_encryption": {
+  "title": "BYOK Encryption",
+  "description_intro": "Encrypt your team's data with your own customer-managed key.",
+  "description_lead": "What you'll unlock:",
+  "description_item_encrypt_data": "Encrypt environments, globals, history, and run data",
+  "description_item_compliance": "Meet data security and compliance requirements",
+  "description_item_key_control": "Maintain full control of your encryption keys"
+ },
+ "secret_scanner": {
+  "title": "Secret Scanner",
+  "description_intro": "Scan for exposed secrets, auto-remediate leaks, and track resolution.",
+  "description_lead": "What you'll unlock:",
+  "description_item_detect_api_keys": "Detected leaked API keys, tokens, and credentials in real time",
+  "description_item_move_secrets": "Auto-move secrets to Postman Vault with Local Protection",
+  "description_item_monitor_exposure": "Monitor exposure trends and resolution across your organization"
+ },
+ "secret_scanner_cloud_detection": {
+  "title": "Secret Scanner Cloud Detection",
+  "description_intro": "Detect and resolve exposed secrets across your workspaces.",
+  "description_lead": "What you'll unlock:",
+  "description_item_resolve_secrets": "Review and resolve detected secrets in bulk",
+  "description_item_filter_findings": "Filter findings by workspace, visibility type, and secret type",
+  "description_item_mark_secrets": "Mark secrets as revoked, false positive, or won't fix"
+ },
+ "secret_scanner_reports": {
+  "title": "Secret Scanner Reports",
+  "description_intro": "Monitor secret detection trends and remediation metrics.",
+  "description_lead": "What you'll unlock:",
+  "description_item_track_detected": "Track detected, resolved, and vaulted secrets over time",
+  "description_item_view_unresolved_secrets": "View unresolved secrets by workspace visibility and type",
+  "description_item_monitor_local": "Monitor Local Protection vault moves and overrides"
+ },
+ "secret_scanner_patterns": {
+  "title": "Secret Scanner Patterns",
+  "description_intro": "Manage which secret types are scanned and add custom patterns.",
+  "description_lead": "What you'll unlock:",
+  "description_item_view_patterns": "View hundreds of built-in patterns for common credentials",
+  "description_item_add_custom_regex": "Add custom regex patterns for your proprietary tokens",
+  "description_item_dry_run_patterns": "Dry run patterns on specific workspaces before enabling"
+ }
+}

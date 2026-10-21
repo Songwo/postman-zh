@@ -1,0 +1,41 @@
+{
+ "error_state": {
+  "panel_load_error_message": "Failed to load this section."
+ },
+ "load_error_resource_label": "this section",
+ "load_error_failure_with_status": "We faced an issue retrieving the items in this section (HTTP {statusCode}).",
+ "load_error_failure_offline": "We faced an issue retrieving the items in this section. You appear to be offline.",
+ "load_error_failure_generic": "We faced an issue retrieving the items in this section.",
+ "load_error_retry_failure_with_status": "Retry {count}: We faced an issue retrieving the items in this section (HTTP {statusCode}).",
+ "load_error_retry_failure_offline": "Retry {count}: We faced an issue retrieving the items in this section. You appear to be offline.",
+ "load_error_retry_failure_generic": "Retry {count}: We faced an issue retrieving the items in this section.",
+ "panel_empty_state": {
+  "title": "This section is empty",
+  "create_button": "Add"
+ },
+ "search": {
+  "loading": "Searching all items…",
+  "no_results_in_section": "No items found in this section"
+ },
+ "bulk_delete": {
+  "heading": "Delete elements?",
+  "confirmation": "Are you sure you want to delete {count, plural, one {# item} other {# items}}?",
+  "confirmation_prompt": "To confirm, type \"{confirmationWord}\" in the box below",
+  "input_placeholder": "Type {confirmationWord}",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "success": "{count, plural, one {# item deleted} other {# items deleted}}",
+  "partial_failure": "{deletedCount} of {totalCount} items deleted. {failedCount} could not be deleted.",
+  "error": "Unable to delete the selected items"
+ },
+ "status_bar_context_menu": {
+  "multi_entity_sidebar_label": "Multi-entity sidebar"
+ },
+ "unresolved_entity": {
+  "popover_title": "Update your app to view this",
+  "popover_description": "This {entityType} requires a newer version of Postman.",
+  "popover_update_button": "Update app",
+  "popover_title_web": "Unable to display this",
+  "popover_description_web": "We're working on adding support for this {entityType}. Check back soon."
+ }
+}

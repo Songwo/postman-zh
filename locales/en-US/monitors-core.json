@@ -1,0 +1,881 @@
+{
+ "context_bar_list": {
+  "label": "Monitors",
+  "new_button": "New"
+ },
+ "entity_type_icon": {
+  "label": "Monitor"
+ },
+ "status": {
+  "healthy": "Healthy",
+  "unhealthy": "Unhealthy",
+  "paused": "Paused",
+  "unknown": "Unknown",
+  "accessible_name": "Status: {status}"
+ },
+ "share": {
+  "tooltip": "Share Monitor",
+  "popover": {
+   "private": {
+    "heading": "Share with team",
+    "content": "This monitor is in your personal workspace.",
+    "content2": "No one can access this unless you invite them.",
+    "button": "Invite people"
+   },
+   "shared": {
+    "private_team_content": "Only workspace members can access this link.",
+    "team_content": "Only team members can access this link.",
+    "heading": "Share link",
+    "button": {
+     "copy": "Copy link",
+     "invite": "Invite people"
+    }
+   },
+   "partner": {
+    "heading": "Share link",
+    "content": "Only people with access to this workspace can access this link.",
+    "button": {
+     "copy": "Copy link",
+     "invite": "Invite people"
+    }
+   }
+  },
+  "error": {
+   "toast": "Unable to invite right now. Try again later?"
+  }
+ },
+ "header": {
+  "run_button": "Run",
+  "refresh": "Refresh",
+  "runs": "runs",
+  "menu_label": {
+   "pausing": "Pausing",
+   "pause": "Pause",
+   "resuming": "Resuming",
+   "resume": "Resume",
+   "edit": "Edit",
+   "delete": "Delete"
+  },
+  "view_more_actions": "View more actions"
+ },
+ "constants": {
+  "tooltip_text": {
+   "is_online": "Reload Activity Logs",
+   "is_offline": "You can take this action once you are back online",
+   "request_access": "Request Access"
+  },
+  "offline_text": {
+   "text": "Unable to load data as you’re offline.",
+   "sub_text": "Your data may not be up to date until you’re back online.",
+   "menu_msg": "Can't perform disabled actions as you are offline"
+  },
+  "permission_text": {
+   "default_disabled_msg": "You don't have permission to perform disabled actions",
+   "console_disabled_msg": "You don't have permission to view this information.",
+   "activity_info_msg": "This user's profile is private.",
+   "request_access_msg": "To perform this action, request additional access to this monitor.",
+   "collection_moved_msg": "Can't perform disabled actions as the associated collection is moved to a different workspace",
+   "publish_editor_required_msg": "You need editor access to publish or unpublish the monitor report",
+   "publish_restricted_workspace_msg": "You can't publish monitor reports from this workspace. To publish, create the monitor in an internal team workspace.",
+   "unpublish_requires_manage_publish": "Only a team admin can unpublish this report."
+  },
+  "forbidden_error": {
+   "encryption_failed": {
+    "title": "Access denied due to security policies",
+    "body": "You cannot run monitors until access is restored. Contact your team admin for assistance."
+   },
+   "decryption_failed": {
+    "title": "Access denied due to security policies",
+    "body": "You cannot access monitor details until access is restored. Contact your team admin for assistance."
+   }
+  },
+  "user_visible_action": {
+   "update": "edited this monitor",
+   "update_roles": "edited roles on this monitor",
+   "pause": "paused this monitor",
+   "resume": "resumed this monitor",
+   "delete": "deleted this monitor",
+   "create": "created this monitor"
+  },
+  "user_visible_system_action": {
+   "create_team_change": "Replacement monitor created (change in team membership)",
+   "create": "Monitor created",
+   "delete_team_change": "Monitor deleted (change in team membership)",
+   "delete": "Monitor deleted",
+   "pause_inactivity": "Monitor paused (user inactivity)",
+   "pause_unhealthy": "Monitor paused (frequent run failures)",
+   "pause_collection_environment_deleted": "Monitor paused (collection or environment was unshared or deleted)",
+   "pause_collection_moved": "Monitor paused (associated collection removed from the workspace)",
+   "pause_environment_moved": "Monitor paused (associated environment removed from the workspace)",
+   "pause_no_workspace": "Monitor paused (not present in any workspace)",
+   "pause_support": "Monitor paused by Postman support representative",
+   "pause": "Monitor paused",
+   "resume_system_action": "Monitor resumed as part of system action.",
+   "resume": "Monitor resumed",
+   "update": "Monitor edited"
+  },
+  "user_visible_state_sentence": {
+   "waiting": "Preparing run.",
+   "starting": "Preparing run.",
+   "running": "Run is in progress. This may take a few minutes.",
+   "refresh": "Please refresh to see the latest results.",
+   "finishing": "Run is in progress. This may take a few minutes.",
+   "finished_failure": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run complete - check failed tests.",
+   "finished_error": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run failed.",
+   "finished_abort": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run timed out.",
+   "finished_abort_invalid_resource": "The associated collection or environment is not accessible or has been deleted.",
+   "finished_abort_deleted_collection": "The associated collection has been deleted.",
+   "finished_abort_deleted_environment": "The associated environment has been deleted.",
+   "finished_success": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run complete.",
+   "retrying": "Retrying run. This may take a few minutes.",
+   "discontinued_error": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run failed. Retrying.",
+   "discontinued_failure": "Failed tests detected. Retrying.",
+   "discontinued_abort": "{entityType, select, monitor {Monitor} schedule {Schedule} other {{entityType}}} run timed out. Retrying."
+  },
+  "loading_state": {
+   "generic": "(loading...)"
+  },
+  "activity_logs": {
+   "you": "You"
+  },
+  "activity_logs_list_end": "The end! You've seen all the activity for this monitor.",
+  "activity_logs_search_placeholder": "Search for user",
+  "activity_logs_no_users": "No users found",
+  "activity_logs_load_more": "Load More",
+  "monitor_details": {
+   "id_label": "ID",
+   "copy_id_tooltip": "Copy Monitor ID",
+   "copied_tooltip": "Copied",
+   "creator_label": "Created by",
+   "created_at_label": "Created at",
+   "collection_label": "Collection",
+   "environment_label": "Environment",
+   "no_collection": "No collection"
+  },
+  "activity_logs_empty_state": {
+   "text": "Looks like this monitor doesn't have any activity",
+   "sub_text": "The activity feed keeps you updated with the happenings around this monitor",
+   "with_filters_text": "No activity found",
+   "with_filters_sub_text": "Adjust your filters and try again."
+  },
+  "user_profile": {
+   "private_user": "This user’s profile is private.",
+   "error": "Unable to load user details at the moment",
+   "you": "You",
+   "user": "User"
+  },
+  "activity_logs_filter": "Filter activity logs",
+  "monitor_graph": {
+   "init": "Click on a run on the graph above to see its details"
+  },
+  "monitor_action": {
+   "no_run": "This monitor hasn't run yet",
+   "deleted": "Monitor deleted.",
+   "create": "Create a Monitor",
+   "show_less": "Show less"
+  },
+  "monitor_runs": {
+   "run_placeholder": "When it does, the results will appear here. You can either wait for it to run as per its schedule or trigger a run manually.",
+   "will_run": "This monitor will run on its regular schedule.",
+   "will_not_run": "This monitor will no longer make its scheduled runs.",
+   "run_button": "Run"
+  },
+  "monitor_test_results": {
+   "no_tests": "No tests found",
+   "no_pass_run": "None of the tests passed in this run. <1>Add tests</1> to your requests and <3>debug them</3> when they fail.",
+   "no_failure_ack": "Good job! None of the tests failed in this run. <1>Add tests</1> to your requests if you haven't already.",
+   "no_skipped_ack": "No tests were skipped in this run. <1>Add tests</1> to your requests if you haven't already.",
+   "no_skipped": "No tests skipped",
+   "no_pass": "No tests passed",
+   "no_fail": "No tests failed :D",
+   "no_errors": "No errors",
+   "no_test_runs": "No tests for this run",
+   "check_console": "Add requests by selecting the collection > three dots icon (…) > Add request",
+   "no_results": "No requests found in the associated collection",
+   "abort": "This run has aborted",
+   "all_tests": "All",
+   "passed_tests": "Passed",
+   "failed_tests": "Failed",
+   "skipped_tests": "Skipped",
+   "request_errors": "Errors"
+  },
+  "empty_collection": {
+   "no_requests_title": "No requests to run",
+   "no_requests_description": "<0>{collectionName}</0> doesn't have any requests for the monitor to run on. Add at least one request to start seeing results.",
+   "add_request": "Add request",
+   "import_request": "Import request",
+   "updated_title": "Collection updated",
+   "updated_description": "<0>{collectionName}</0> has been updated. Run the monitor to see results for it.",
+   "run_now": "Run now",
+   "import_failed": "Couldn't open the import dialog. Check your connection and try again.",
+   "request_added_title": "Request added to {collectionName}",
+   "request_added_description": "Please update the request and save before attempting a monitor run.",
+   "run_monitor": "Run Monitor",
+   "go_back": "Go back"
+  },
+  "job_information": {
+   "runner": "Runner",
+   "region": "Region",
+   "test_results": "Test Results",
+   "console_log": "Console Log",
+   "job_summary_error_in_run": "Couldn't run due to an error",
+   "job_summary_across_regions": "<0>{failedTests}</0><1> failed {failedTests, plural, one {test} other {tests}}, </1><2>{errors}</2><3> {errors, plural, one {error} other {errors}}, across {regionCount, plural, one {# region} other {# regions}}, </3><4>{requestCount}</4><5> total {requestCount, plural, one {request} other {requests}}</5>",
+   "job_summary_across_runners": "<0>{failedTests}</0><1> failed {failedTests, plural, one {test} other {tests}}, </1><2>{errors}</2><3> {errors, plural, one {error} other {errors}}, across {regionCount, plural, one {# runner} other {# runners}}, </3><4>{requestCount}</4><5> total {requestCount, plural, one {request} other {requests}}</5>",
+   "job_summary": "<0>{failedTests}</0><1> failed {failedTests, plural, one {test} other {tests}}, </1><2>{errors}</2><3> {errors, plural, one {error} other {errors}}, </3><4>{requestCount}</4><5> total {requestCount, plural, one {request} other {requests}}</5>",
+   "line_number": "Line Number",
+   "time_stamp": "Timestamp",
+   "console_output": "Console Output",
+   "file_helper_text": "Run on data from <0> {name} </0>",
+   "live_progress_chip": {
+    "preparing": "Preparing",
+    "running": "Running",
+    "retrying": "Retrying",
+    "completed": "Completed",
+    "failed": "Failed",
+    "aborted": "Aborted"
+   },
+   "live_progress_requests_executed": "{count, plural, one {request executed} other {requests executed}}",
+   "live_progress_preparing_subtext": {
+    "waiting": "Waiting to start.",
+    "starting": "Fetching your Collection."
+   },
+   "live_progress_running_subtext": "Executing requests.",
+   "live_progress_checking_status": "Checking run status."
+  },
+  "performance_graph": {
+   "failed_percent": "Failed Percent: <1>{failedPercent}%</1>",
+   "response_time": "Response Time: <1>{latency} seconds</1>",
+   "response_time_invalid": "Response Time: <1>--</1>",
+   "previous_run": "Go to previous run",
+   "next_run": "Go to next run",
+   "job_history": "Job history for {name}",
+   "run_summary": "Run summary",
+   "individual_requests": "Individual requests",
+   "view": "View:",
+   "filter_by": "Filter By:",
+   "clear_filters": "Clear Filters",
+   "clear_filters_description": "Clear filters to view your monitor run",
+   "all_requests": "Requests",
+   "all_regions": "Regions",
+   "all_runners": "Runners"
+  },
+  "monitor_action_error": {
+   "create": "Unable to create monitor",
+   "load": "Unable to load monitors",
+   "fetch": "Unable to fetch monitors",
+   "update": "Unable to update monitor",
+   "creation_error": "Error in creating monitor",
+   "pipeline_error": "Error in pipeline for creating monitor",
+   "ceiling_error": "Monitor creation limit reached.",
+   "check_internet": "Please check your internet connection and try again.",
+   "something_went_wrong": "Something went wrong while creating this monitor. You can try again later.",
+   "unsupported_collection_for_runner": "This collection uses multiple protocols. Update your self-hosted runner to version 1.47.0 or later, or run this monitor on a Postman cloud region instead.",
+   "load_retry": "The monitor could not be loaded. Please try after some time.",
+   "invalid_aggregate": "Invalid aggregate function in monitor performance view",
+   "request_aggregate": "getChartData: Invalid requestAggregate value.",
+   "activity_load_failure": "Unable to load activity feed",
+   "retry": "Please try again later"
+  },
+  "try_again": "Try again",
+  "filters": {
+   "no_results": "Change your filters and try again."
+  },
+  "empty_state": {
+   "create_error": "Unable to create monitor",
+   "edit_error": "Unable to edit monitor",
+   "no_environment": "No monitor uses this environment",
+   "no_collection": "There are no monitors created for this collection",
+   "no_results": "No results found",
+   "no_monitors_setup": "You have no monitors set up",
+   "monitor_collection_run": "A monitor lets you run a collection periodically to check for its performance and response.",
+   "no_run_results": "No results yet",
+   "no_tests_run": "No tests were run",
+   "deleted_items_in_selection": "Deleted requests or folders were found in the custom run order causing an error before running any request.",
+   "selection_has_deleted_items_cta": "Review Run Order",
+   "beyond_retention_period": {
+    "title": "No logs available for this run",
+    "description": "This is an older run. Test results and run logs are not available. You can request this information by reaching out to <1><0><0>Postman Support</0></0></1>"
+   }
+  },
+  "create_new": "Create new monitor",
+  "schedule_selector": {
+   "at": "at"
+  },
+  "loading_error": {
+   "collections_and_environments": "Error occurred while fetching collections and environments"
+  },
+  "sign_in_message": {
+   "title": "Create an account",
+   "sub_title": "You need an account to continue exploring Postman.",
+   "default": "You need to be signed-in to a team to perform this action",
+   "generic": "You need an account to continue exploring Postman."
+  },
+  "version_tags_error": {
+   "error": "Error occurred while fetching tags"
+  },
+  "plan_fetch_error": {
+   "error": "Error occurred while fetching user plan"
+  },
+  "region_fetch_error": {
+   "error": "Error occurred while fetching regions"
+  },
+  "collection_fetch_error": {
+   "error": "Error occurred while fetching collection"
+  },
+  "monitor_action_success": {
+   "create": "Monitor created",
+   "updated": "Monitor updated",
+   "resumed": "Monitor resumed",
+   "paused": "Monitor paused"
+  },
+  "email_validation_error": {
+   "invalid": "Invalid email address",
+   "duplicate": "This email is already present"
+  },
+  "no_environment": "No environment",
+  "uptime_app_message": "Uptime monitors are currently available only on the Postman Web app.",
+  "uptime_documentation": "Learn more about uptime monitors",
+  "uptime_browser_transition": "Open Web App",
+  "feedback_type": {
+   "feature_missing": "There's a key feature missing",
+   "not_expected": "The Monitor feature is not what I expected",
+   "poor_experience": "Poor or complex experience when using monitors",
+   "just_exploring": "I'm just exploring",
+   "something_else": "It's something else"
+  }
+ },
+ "body": {
+  "show_more": "Show {monitorLength} more"
+ },
+ "form": {
+  "header": "Create monitor",
+  "default_monitor_name": "New Monitor",
+  "what_to_monitor": "What to monitor?",
+  "what_to_monitor_info": "Select a Collection that contains the requests you want to monitor. An API spec or import generates a Collection first.",
+  "what_to_monitor_info_local_mode": "Select a Collection in cloud that contains the requests you want to monitor.",
+  "how_to_run_monitor": "How to run the monitor?",
+  "runner_section": "Runner",
+  "runner_section_info": "Where this monitor runs from. Use Postman Cloud regions, or a private runner to reach APIs inside your network.",
+  "notifications_section": "Notifications",
+  "notifications_summary_leading": "to",
+  "notifications_summary_trailing": "on run failures and errors",
+  "notification_recipients_collapsed_hint": "Add email recipients for run failures and errors",
+  "schedule_tab": "On Schedule",
+  "cli_tab": "Via Postman CLI",
+  "name": "Monitor name",
+  "collection": "Collection",
+  "no_collections_or_specs": "No collections or API specs available",
+  "collection_select": "Select a collection",
+  "collection_or_spec_select": "Select a collection or API spec",
+  "collection_select_local_mode": "Select a Collection",
+  "no_collections_local_mode": "No Collections in cloud available",
+  "open_collection_in_new_tab": "Open collection in new tab",
+  "open_spec_in_new_tab": "Open API spec in new tab",
+  "source_filter_all": "All",
+  "source_filter_collections": "Collections",
+  "source_filter_specs": "API specs",
+  "no_collections": "No collections available",
+  "no_specs": "No API specs available",
+  "create_collection": "Create new collection",
+  "create_collection_no_permission": "You do not have permission to create collections in this workspace",
+  "create_collection_disabled_local_mode": "Monitors can only use Collections stored in Cloud. Switch to Cloud mode to create a new Collection.",
+  "import_collection": "Import collection",
+  "import_collection_no_permission": "You do not have permission to import collections in this workspace",
+  "import_collection_disabled_local_mode": "Monitors can only use Collections stored in Cloud. Switch to Cloud mode to import a new Collection.",
+  "import_collection_in_progress": "Collection import in progress",
+  "spec_collection_generating": "Generating a collection from {specName}",
+  "spec_collection_unsupported": "A collection cannot be generated from this specification",
+  "spec_collection_no_permission": "You do not have permission to generate a collection from this specification",
+  "spec_collection_failed": "The collection could not be generated from the specification",
+  "collection_monitor_select": "Please select a collection to monitor.",
+  "multi_protocol_beta_banner": {
+   "beta_badge": "Beta",
+   "description": "<0></0> Support for Collections with <1>GraphQL</1> and <2>gRPC</2> requests is in beta."
+  },
+  "collection_version_tag": "Collection tag",
+  "version_tag_select": "Choose a collection tag for this monitor.",
+  "version_tag_current_version": "Choose a collection tag for this monitor. If the collection is not linked to an API, a monitor can only be created on the current tag.",
+  "environment": "Environment",
+  "environment_info_local_mode": "Select a Cloud Environment to be used by the monitor.",
+  "create_environment": "Create new environment",
+  "create_environment_no_permission": "You do not have permission to create environments in this workspace",
+  "create_environment_disabled_local_mode": "Monitors can only use Environments stored in Cloud. Switch to Cloud mode to create a new Environment.",
+  "environment_clear": "Clear",
+  "no_environment": "None",
+  "learn_more": "Learn more",
+  "environment_placeholder": "The variable values in this environment will be used in all your monitoring calls. ",
+  "run": "Run",
+  "regions": "Regions",
+  "runners": "Runners",
+  "runners_auto_select": "Auto-select",
+  "runners_auto_select_info": "Postman picks a Cloud region for you.",
+  "runners_select_placeholder": "Select runners",
+  "runners_section_cloud": "Cloud",
+  "runners_section_private": "Private",
+  "runners_empty": "No runners available",
+  "run_monitor": "Run method",
+  "run_monitor_info": "Choose how this monitor will be triggered. Schedule for automatic recurring runs, or Postman CLI for on-demand execution.",
+  "monitor_run_info": "<0>You can also trigger a monitor run by clicking the Run button after creating the monitor. Check your </0><1><0>usage limits</0></1>",
+  "frequent_runs_info": "Frequent runs give you a finer view of performance but also cost more monitoring calls which might be limited by your Postman account",
+  "region_auto_select": "Automatically select region",
+  "region_manual_select": "Manually select region",
+  "allow_list_ip": "If selected, make sure this IP address is added to the allowlist. All monitoring calls from this region will come from this address.",
+  "upgrade_static_ip": "Upgrade your plan to select a region with static IP.",
+  "region_select": "You can select one or more regions to monitor your requests from. ",
+  "execution_source_select": "You can select one or more deployment environments to monitor your requests from. ",
+  "upgrade": "You are on the free plan. Upgrade to manually select specific monitoring regions.",
+  "upgrade_generic": "You are on the Free plan. Upgrade your plan to use this feature.",
+  "region_selection_feature": "Monitor region selection",
+  "minute_frequency_feature": "Monitor minute frequency",
+  "upgrade_cta": "Upgrade",
+  "runners_upgrade_heading": "Upgrade to the Solo plan for advanced runner options",
+  "minute_frequency_upgrade_heading": "Upgrade to the Solo plan to use advanced frequency options for Monitors",
+  "runners_upgrade_overlay": "Upgrade to select region(s) or a private runner to reach APIs inside your network",
+  "publish_report_feature": "Monitor publish report",
+  "email": "Receive email notifications for run failures and errors",
+  "email_add": "Add another recipient email",
+  "notification": "You can add up to 5 notification recipients",
+  "notification_recipients_placeholder": "Select team members or enter email addresses",
+  "notification_recipients_empty": "No recipients found",
+  "notification_recipients_limit": "You can only select 5 recipients",
+  "notification_recipients_current_user_suffix": " (You)",
+  "notification_limit_error": "Please enter a value from 1 to {limit}",
+  "notification_limit": "<0>Stop notifications after</0><1><0></0></1><2>consecutive failures</2>",
+  "retry": "<0>Retry</0><1></1><2>{attempts, plural, one {time} other {times}}</2>",
+  "retry_fail": "Retry if run fails",
+  "retry_usage_note": "(Retries use additional monitoring calls.)",
+  "retry_monitor_run": "Failed monitor runs will only be retried if the previous run was successful.",
+  "run_now": "Run now",
+  "run_now_info_create": "(Triggers a run on create, regardless of schedule)",
+  "run_now_info_update": "(Triggers a run on update, regardless of schedule)",
+  "value_greater_zero": "Please enter a value greater than 0",
+  "request_timeout_value_range": {
+   "free": "Please enter a value from 1ms to 600000 ms",
+   "paid": "Please enter a value from 1ms to 900000 ms"
+  },
+  "request_delay_value_range": {
+   "free": "Please enter a value from 1ms to 600000 ms",
+   "paid": "Please enter a value from 1ms to 900000 ms"
+  },
+  "request_timeout_info": {
+   "free": "A monitor run cannot exceed 10 minutes; i.e., 600000 ms.",
+   "paid": "A monitor run cannot exceed 15 minutes; i.e., 900000 ms."
+  },
+  "set_req_timeout": "Set request timeout",
+  "set_delay": "Set delay before requests",
+  "redirects": "Follow redirects",
+  "ssl_validation": "Enable SSL validation",
+  "no_results": "No results found",
+  "request_timeout": "Request timeout value should be greater than 0 ms.",
+  "request_delay": "Request delay value should be greater than 0 ms.",
+  "edit_monitor": "Edit monitor",
+  "editing_badge": "Editing",
+  "no_empty_name": "Please enter monitor name",
+  "select_version_tag": "Select a tag for this collection",
+  "at_this_time": "At this time",
+  "labels": {
+   "button": {
+    "create": "Create Monitor",
+    "edit": "Update Monitor",
+    "cancel": "Cancel"
+   }
+  },
+  "warnings": {
+   "no_environment_found": "No environments present in this workspace.",
+   "environment_list_load_error": "Couldn't load environments. Try again."
+  },
+  "data_file": {
+   "select_label": "Data file",
+   "helper_text": "Only JSON and CSV files are accepted. Max 1 MB. ",
+   "info_text": "Data file can be used to test multiple variations of the behaviour of your API.",
+   "action_label": "Select file",
+   "update_label": "Update File",
+   "incorrect_size": "File size cannot exceed 1 MB",
+   "incorrect_format": "Invalid file format. Only JSON and CSV files are accepted.",
+   "preview_error_title": "Preview unavailable",
+   "preview_error_detail": "The contents of this file could not be read.",
+   "parse_error": "This file couldn't be read. Make sure it's a valid CSV or JSON file.",
+   "save_as_dataset": "Save as dataset",
+   "save_as_dataset_hint": "Save this file as a dataset to filter, sort, and clean rows with SQL.",
+   "save_as_dataset_success": "Dataset created",
+   "save_as_dataset_error": "Couldn't create the dataset",
+   "save_as_dataset_no_permission": "You don't have permission to create a dataset in this workspace."
+  },
+  "dataset_compat": {
+   "partial": "This <view>view</view> uses <sources>locally-stored data sources</sources> that are incompatible with Monitors. Upload them to Postman Cloud, or run this monitor on a private runner that can reach them.",
+   "private_runner_only": "This <view>view</view> uses <sources>JDBC data sources</sources>, which only a private runner can execute — Postman’s cloud monitors can’t load a JDBC driver. Run this monitor on a private runner, or clear this selection.",
+   "confirm": "Upload to Postman Cloud",
+   "clear": "Clear",
+   "converting": "Uploading…",
+   "convert_success": "Data sources uploaded to Postman Cloud.",
+   "convert_error": "Couldn’t upload the data sources. Please try again.",
+   "incompatible": "This <view>view</view> uses <sources>database sources</sources>. The monitor can only use them if the database is reachable over the internet."
+  },
+  "scroll_to_bottom": "Scroll to bottom",
+  "settings": "Settings",
+  "iteration_data": {
+   "label": "Iteration data",
+   "info": "Use data from a file or database. The monitor runs one iteration per row.",
+   "search_placeholder": "Search",
+   "none_placeholder": "None",
+   "selected_view_fallback": "Selected view",
+   "clear": "Clear",
+   "upload_datafile": "Upload a datafile...",
+   "accepted_formats": "CSV, JSON",
+   "selected_pill": "Selected datafile",
+   "add_file": "Add file",
+   "new_dataset_no_permission": "You don't have permission to create a dataset in this workspace.",
+   "new_dataset_disabled_local_mode": "Monitors can only use Datasets stored in Cloud. Switch to Cloud mode to add a new Dataset.",
+   "no_datasets": "No datasets in this workspace yet.",
+   "no_views": "No views yet.",
+   "create_view": "Create one",
+   "open_in_tab": "Open in new tab",
+   "dataset_create_failed": "Failed to create dataset. Please try again.",
+   "strategy_label": "Iteration strategy",
+   "strategy_tooltip": "How many times the collection runs, and how the extra iterations get their data when the view’s rows run out.",
+   "run_label": "Run",
+   "iterations_suffix": "iterations",
+   "iterations_disabled_tooltip": "With the Default strategy, the number of iterations will always match the number of rows in the view. Please select another strategy to modify this behavior.",
+   "repetition_run_all": "Default",
+   "repetition_round_robin": "Round robin",
+   "repetition_repeat_last": "Repeat last",
+   "repetition_stop_at_end": "Stop at end",
+   "repetition_run_all_desc": "Run one iteration for each row in the view.",
+   "repetition_round_robin_desc": "Run a set number of iterations. If the rows run out, continue from the first row for the remaining iterations.",
+   "repetition_repeat_last_desc": "Run a set number of iterations. If the rows run out, continue using the last row for the remaining iterations.",
+   "repetition_stop_at_end_desc": "Run a set number of iterations. If the rows run out, stop the run.",
+   "upgrade": {
+    "heading": "Upgrade to use datasets and data files",
+    "description": "Datasets and data files let you drive your monitors with test data. Both are available on paid plans. Upgrade your plan to get started."
+   }
+  },
+  "preview_panel": {
+   "tabs": {
+    "collection_preview": "Run order",
+    "iteration_data": "Data"
+   },
+   "use_latest_collection": "Use latest Collection",
+   "use_latest_collection_info": "Collection changes are applied automatically on the next run.",
+   "collection_preview_error": "Couldn't load this collection's structure.",
+   "request_added_toast": {
+    "description": "Please update the request and save before attempting a monitor run.",
+    "run": "Run monitor",
+    "go_back": "Go back"
+   }
+  },
+  "collection_deleted": "The selected collection no longer exists. Choose another collection.",
+  "request_selection": {
+   "fixed_list_note": "This monitor runs only the selected requests, in the specified order. Requests added to the collection later won't run until explicitly added here. Edits to existing requests still apply.",
+   "undo": "Undo",
+   "dismiss": "Dismiss",
+   "empty": "Select at least one request for the monitor to run.",
+   "items_missing": "Some selected requests are no longer in the collection. Review the run order and save again.",
+   "invalid": "The run order couldn't be saved. Reset it and try again."
+  },
+  "warning_message": {
+   "unuploaded_files": "{files, plural, one {A request in this collection is} other {# requests in this collection are}} missing the associated files"
+  },
+  "file_uplaod_status": {
+   "single_request": "Request with missing files",
+   "single_request_info": "This request is using local files. Upload them to prevent errors during the monitor run.",
+   "multiple_requests": "Requests with missing files",
+   "multiple_requests_info": "These requests are using local files. Upload them to prevent errors during the monitor run."
+  }
+ },
+ "delete_confirmation": {
+  "monitor": "Delete monitor",
+  "schedule": "Delete schedule",
+  "deleting_button": "Deleting",
+  "delete_button": "Delete",
+  "feedback_options_label": "Help us understand how we can improve monitors"
+ },
+ "tab_loading_error": {
+  "title": "Couldn’t find {entityType, select, monitor {monitor} other {{entityType}}}",
+  "body": "It might have been moved or deleted.",
+  "uptime_unavailable_title": "Uptime monitors are no longer available",
+  "uptime_unavailable_body": "This monitor type has been discontinued. Use regular monitors instead."
+ },
+ "status_tooltip": {
+  "health": "This {entityType, select, monitor {monitor} schedule {schedule} other {{entityType}}} is <3>{status, select, paused {paused} healthy {healthy} unhealthy {unhealthy} other {{status}}}</3>.",
+  "up_down": "Service is <1>{status, select, up {up} down {down} other {{status}}}</1>.",
+  "unknown": "Service status is <1>{status, select, unknown {unknown} other {{status}}}</1>."
+ },
+ "actions": {
+  "open_in_new_tab": "Open In New Tab",
+  "pause": "Pause",
+  "resume": "Resume",
+  "rename": "Rename",
+  "edit": "Edit",
+  "review": "Review",
+  "manage_roles": "Manage roles",
+  "request_access": "Request Access",
+  "add_to_jira": "Add to Jira Cloud",
+  "publish_monitor_report": "Publish",
+  "monitor_report": "Monitor report",
+  "published": "Published",
+  "published_monitor": "Published monitor",
+  "published_monitor_pending_tooltip": "Published — a change request is in review",
+  "copy_link": "Copy link",
+  "unpublish": "Unpublish",
+  "unpublish_success": "Monitor report unpublished",
+  "unpublish_error": "Failed to unpublish monitor report",
+  "pending_approval": "Publish approval pending",
+  "withdraw_request": "Withdraw request",
+  "update_request": "Update request",
+  "review_request": "Review request",
+  "approve": "Approve",
+  "deny": "Deny",
+  "edit_request": "Edit request",
+  "request_submitted": "Request submitted",
+  "request_submitted_description": "A team admin will review the request.",
+  "request_withdrawn": "Publish request withdrawn",
+  "request_updated": "Request updated",
+  "request_updated_description": "A team admin will review the updated request.",
+  "request_approved": "Publish request approved",
+  "request_denied": "Publish request denied",
+  "delete": "Delete",
+  "view_only_access": "You have view-only access"
+ },
+ "publish_modal": {
+  "title": "Publish monitor report",
+  "description": "This report shows monitor run status, request details, and response time trends. It will be shared as a public page.",
+  "report_name_label": "Report name",
+  "report_name_helper": "Appears at the top of the report, in browser tabs, and in shared links.",
+  "report_name_placeholder": "e.g. Orders API health report",
+  "description_label": "Description",
+  "description_helper": "Add a short summary to provide context in shared links and previews.",
+  "description_placeholder": "e.g. Daily monitor results for production endpoints",
+  "show_requests_label": "Show request endpoints",
+  "show_requests_helper": "Includes request URLs in the public report.",
+  "cancel": "Cancel",
+  "publish": "Publish",
+  "publishing": "Publishing...",
+  "success_title": "And your report is live!",
+  "success_description": "People with link can see run status, request details and response time trends.",
+  "copy_link": "Copy link",
+  "view_report": "View report",
+  "link_copied": "Link copied to clipboard",
+  "publish_success": "Monitor report published successfully",
+  "publish_error": "Failed to publish monitor report",
+  "request_update_title": "Request update to published report",
+  "edit_title": "Edit published report",
+  "publish_updates": "Publish updates",
+  "updating": "Updating...",
+  "update_success": "Published report updated successfully",
+  "last_published": "Last published:",
+  "governance_note": "Note: Your team requires admin approval to publish monitor reports.",
+  "approval_message_label": "Message for approval",
+  "approval_message_placeholder": "Explain why this report should be published.",
+  "request_to_publish": "Request to publish",
+  "requesting": "Requesting...",
+  "request_sent_title": "Request sent for approval",
+  "request_sent_description": "A team admin will review your request. You'll be notified when the report is published.",
+  "got_it": "Got it",
+  "review_title": "Review publish request",
+  "pending_title": "Publish request in review",
+  "deny_reason_label": "Reason for denial",
+  "deny_reason_placeholder": "Provide a reason for denying this request.",
+  "approving": "Approving...",
+  "denying": "Denying...",
+  "withdrawing": "Withdrawing...",
+  "requested_by": "Requested by",
+  "request_note_label": "Requester's note",
+  "duplicate_publish_request_title": "A publish request is already in review",
+  "duplicate_publish_request_description": "Update or withdraw your existing request before submitting another one."
+ },
+ "time_type": {
+  "minute_timer": {
+   "label": "Minute timer",
+   "every_1_min": "Every 1 minute",
+   "every_5_mins": "Every 5 minutes",
+   "every_10_mins": "Every 10 minutes",
+   "every_15_mins": "Every 15 minutes",
+   "every_20_mins": "Every 20 minutes",
+   "every_30_mins": "Every 30 minutes"
+  },
+  "hour_timer": {
+   "label": "Hour timer",
+   "every_hr": "Every hour",
+   "every_2_hrs": "Every 2 hours",
+   "every_3_hrs": "Every 3 hours",
+   "every_4_hrs": "Every 4 hours",
+   "every_6_hrs": "Every 6 hours",
+   "every_12_hrs": "Every 12 hours"
+  },
+  "week_timer": {
+   "label": "Week timer",
+   "every_day": "Every day",
+   "every_weekday": "Every weekday (Monday-Friday)",
+   "every_monday": "Every Monday",
+   "every_tuesday": "Every Tuesday",
+   "every_wednesday": "Every Wednesday",
+   "every_thursday": "Every Thursday",
+   "every_friday": "Every Friday",
+   "every_saturday": "Every Saturday",
+   "every_sunday": "Every Sunday"
+  },
+  "month_timer": {
+   "label": "Month timer",
+   "short_month_warning_29": "In February, this will run on the 28th (or 29th in leap years).",
+   "short_month_warning_30": "In February, this will run on the 28th (or 29th in leap years).",
+   "short_month_warning_31": "In months with fewer than 31 days, this will run on the last day of the month.",
+   "every_1st": "Every 1st",
+   "every_2nd": "Every 2nd",
+   "every_3rd": "Every 3rd",
+   "every_4th": "Every 4th",
+   "every_5th": "Every 5th",
+   "every_6th": "Every 6th",
+   "every_7th": "Every 7th",
+   "every_8th": "Every 8th",
+   "every_9th": "Every 9th",
+   "every_10th": "Every 10th",
+   "every_11th": "Every 11th",
+   "every_12th": "Every 12th",
+   "every_13th": "Every 13th",
+   "every_14th": "Every 14th",
+   "every_15th": "Every 15th",
+   "every_16th": "Every 16th",
+   "every_17th": "Every 17th",
+   "every_18th": "Every 18th",
+   "every_19th": "Every 19th",
+   "every_20th": "Every 20th",
+   "every_21st": "Every 21st",
+   "every_22nd": "Every 22nd",
+   "every_23rd": "Every 23rd",
+   "every_24th": "Every 24th",
+   "every_25th": "Every 25th",
+   "every_26th": "Every 26th",
+   "every_27th": "Every 27th",
+   "every_28th": "Every 28th",
+   "every_29th": "Every 29th",
+   "every_30th": "Every 30th",
+   "every_31st": "Every 31st"
+  },
+  "time_list": {
+   "12am": "12:00 AM",
+   "1am": "1:00 AM",
+   "2am": "2:00 AM",
+   "3am": "3:00 AM",
+   "4am": "4:00 AM",
+   "5am": "5:00 AM",
+   "6am": "6:00 AM",
+   "7am": "7:00 AM",
+   "8am": "8:00 AM",
+   "9am": "9:00 AM",
+   "10am": "10:00 AM",
+   "11am": "11:00 AM",
+   "12pm": "12:00 PM",
+   "1pm": "1:00 PM",
+   "2pm": "2:00 PM",
+   "3pm": "3:00 PM",
+   "4pm": "4:00 PM",
+   "5pm": "5:00 PM",
+   "6pm": "6:00 PM",
+   "7pm": "7:00 PM",
+   "8pm": "8:00 PM",
+   "9pm": "9:00 PM",
+   "10pm": "10:00 PM",
+   "11pm": "11:00 PM"
+  }
+ },
+ "uptime-monitor": {
+  "banner": {
+   "text": "Know when your service is down",
+   "sub_text": "Monitor uptime for a URL across regions and setup timely alerts without having to create a collection.",
+   "badge_text": "Beta",
+   "button_text": "Create an uptime monitor",
+   "link_text": "Learn more about uptime monitors"
+  }
+ },
+ "collapsible_state_line": {
+  "hide": "Hide run logs",
+  "show": "Show run logs"
+ },
+ "job_filter": {
+  "monitor": {
+   "trigger": {
+    "name": "Type",
+    "values": {
+     "api": "Manual",
+     "schedule": "Scheduled run",
+     "webhook": "Webhook",
+     "postman-cli": "Postman CLI"
+    }
+   },
+   "result": {
+    "name": "Results",
+    "values": {
+     "success": "Successful",
+     "failure": "Failure",
+     "error": "Error",
+     "abort": "Abort"
+    }
+   }
+  },
+  "scheduled_collection": {
+   "trigger": {
+    "name": "Type",
+    "values": {
+     "api": "Manual",
+     "schedule": "Scheduled run"
+    }
+   },
+   "result": {
+    "name": "Results",
+    "values": {
+     "success": "Successful",
+     "failure": "Failure",
+     "error": "Error",
+     "abort": "Abort"
+    }
+   }
+  },
+  "all": "All"
+ },
+ "run_results": {
+  "no_response": "No response",
+  "iteration": "Iteration {iteration}",
+  "no_tests_in_iteration": "No {filterText} tests in iteration {start}{length, plural, one {} other { to {end}}}",
+  "streaming_assertions_coming_soon": {
+   "badge": "Assertions coming soon",
+   "tooltip": "Assertion support is coming soon for this protocol",
+   "banner": "Assertions are not yet supported for this protocol — support is coming soon."
+  },
+  "request_details_error": {
+   "title": "Could not render this request",
+   "message": "The request details pane failed to render this row. Try selecting another row, or click X to dismiss.",
+   "dismiss": "Dismiss"
+  }
+ },
+ "context_bar": {
+  "activity": {
+   "title": "Activity feed"
+  },
+  "info": {
+   "title": "Monitor details"
+  }
+ },
+ "cli": {
+  "run_in_ci_cd": "Run in CI/CD",
+  "install": "Install Postman CLI",
+  "copy": {
+   "tooltip": "Copy CLI command"
+  },
+  "toast": {
+   "copied": {
+    "title": "Copied to clipboard",
+    "command": "CLI command copied successfully"
+   }
+  },
+  "note": {
+   "creation": "Monitor ID will be generated after creating the monitor"
+  },
+  "trigger_monitor_run_using_cli": "Trigger monitor run using Postman CLI",
+  "run_using_cli": "Run using Postman CLI",
+  "run_monitor_using_cli": "Trigger monitor run using Postman CLI",
+  "install_postman_cli_step_1": "1. Install Postman CLI",
+  "trigger_monitor_run_step_2": "2. Trigger Monitor Run",
+  "automate_using_cli": "Automate runs using Postman CLI.",
+  "command_instruction": "Copy and run this command in your terminal"
+ }
+}

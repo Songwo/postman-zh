@@ -1,0 +1,1469 @@
+{
+ "request_access": {
+  "title": "Looks like you don’t have access",
+  "request_access_button": "Request access"
+ },
+ "response_errors": {
+  "certifcate_verification": {
+   "fallback_warning": "Certificate verification failed",
+   "action_label": "Disable SSL verification",
+   "success_toast": {
+    "title": "SSL verification disabled"
+   },
+   "unspecified": "Unspecified certificate verification error",
+   "unable_to_get_issuer": "Unable to get issuer certificate",
+   "unable_to_get_crl": "Unable to get certificate CRL",
+   "unable_to_decrypt_cert_signature": "Unable to decrypt certificate's signature",
+   "unable_to_decrypt_crl_signature": "Unable to decrypt CRL's signature",
+   "unable_to_decode_issuer_public_key": "Unable to decode issuer public key",
+   "signature_failure": "Certificate signature failure",
+   "crl_signature_failure": "CRL signature failure",
+   "not_yet_valid": "Certificate is not yet valid",
+   "crl_not_yet_valid": "CRL is not yet valid",
+   "has_expired": "Certificate has expired",
+   "crl_has_expired": "CRL has expired",
+   "error_in_cert_not_before_field": "Format error in certificate's notBefore field",
+   "error_tls_cert_altname_invalid": "Hostname/IP does not match certificate's altnames",
+   "error_in_cert_not_after_field": "Format error in certificate's notAfter field",
+   "error_in_crl_last_update_field": "Format error in CRL's lastUpdate field",
+   "error_in_crl_next_update_field": "Format error in CRL's nextUpdate field",
+   "out_of_mem": "Out of memory",
+   "depth_zero_self_signed_cert": "Self signed certificate",
+   "self_signed_cert_in_chain": "Self signed certificate in certificate chain",
+   "unable_to_get_issuer_cert_locally": "Unable to get local issuer certificate",
+   "unable_to_verify_leaf_signature": "Unable to verify the first certificate",
+   "chain_too_long": "Certificate chain too long",
+   "revoked": "Certificate revoked",
+   "invalid_ca": "Invalid CA certificate",
+   "path_length_exceeded": "Path length constraint exceeded",
+   "invalid_purpose": "Unsupported certificate purpose",
+   "untrusted": "Certificate not trusted",
+   "rejected": "Certificate rejected",
+   "subject_issuer_mismatch": "Subject issuer mismatch",
+   "akid_skid_mismatch": "Authority and subject key identifier mismatch",
+   "akid_issuer_serial_mismatch": "Authority and issuer serial number mismatch",
+   "keyusage_no_certsign": "Key usage does not include certificate signing",
+   "unable_to_get_crl_issuer": "Unable to get CRL issuer certificate",
+   "unhandled_critical_extension": "Unhandled critical extension",
+   "keyusage_no_crl_sign": "Key usage does not include CRL signing",
+   "unhandled_critical_crl_extension": "Unhandled critical CRL extension",
+   "invalid_non_ca": "Invalid non-CA certificate (has CA markings)",
+   "proxy_path_length_exceeded": "Proxy path length constraint exceeded",
+   "keyusage_no_digital_signature": "Key usage does not include digital signature",
+   "proxy_certificates_not_allowed": "Proxy certificates not allowed, please set the appropriate flag",
+   "invalid_extension": "Invalid extension",
+   "invalid_policy_extension": "Invalid or inconsistent certificate policy extension",
+   "no_explicit_policy": "No explicit policy",
+   "different_crl_scope": "Different CRL scope",
+   "unsupported_extension_feature": "Unsupported extension feature",
+   "unnested_resource": "RFC 3779 resource not subset of parent's resources",
+   "permitted_violation": "Permitted subtree violation",
+   "excluded_violation": "Excluded subtree violation",
+   "subtree_minmax": "Name constraints minimum and maximum not supported",
+   "application_verification": "Application verification failure",
+   "unsupported_constraint_type": "Unsupported name constraint type",
+   "unsupported_constraint_syntax": "Unsupported or invalid name constraint syntax",
+   "unsupported_name_syntax": "Unsupported or invalid name syntax",
+   "crl_path_validation_error": "CRL path validation error",
+   "path_loop": "Path loop",
+   "suite_b_invalid_version": "Suite B: certificate version invalid",
+   "suite_b_invalid_algorithm": "Suite B: invalid public key algorithm",
+   "suite_b_invalid_curve": "Suite B: invalid ECC curve",
+   "suite_b_invalid_signature_algorithm": "Suite B: invalid signature algorithm",
+   "suite_b_los_not_allowed": "Suite B: curve not allowed for this LOS",
+   "suite_b_cannot_sign_p_384_with_p_256": "Suite B: cannot sign P-384 with P-256",
+   "host_mismatch": "Hostname mismatch",
+   "email_mismatch": "Email address mismatch",
+   "ip_address_mismatch": "IP address mismatch",
+   "dane_no_match": "No matching DANE TLSA records",
+   "ee_key_too_small": "EE certificate key too weak",
+   "ca_key_too_small": "CA certificate key too weak",
+   "ca_md_too_weak": "CA certificate digest algorithm too weak",
+   "invalid_call": "Invalid certificate purpose",
+   "store_lookup": "Certificate not trusted",
+   "no_valid_scts": "Certificate Transparency required, but no valid SCTs found",
+   "proxy_subject_name_violation": "Proxy subject name violation",
+   "ocsp_verify_needed": "OCSP verification needed",
+   "ocsp_verify_failed": "OCSP verification failed",
+   "ocsp_cert_unknown": "OCSP responder does not know about certificate"
+  },
+  "http2_error": {
+   "action_label": "Switch HTTP version",
+   "success_toast": {
+    "message": "You can change this configuration from ",
+    "settings_cta": "Settings.",
+    "title": "Switched to HTTP/1.x"
+   },
+   "ssl_invalid_alpn_protocol": "Invalid ALPN protocol",
+   "altsvc_invalid_origin": "HTTP/2 ALTSVC frames require a valid origin",
+   "altsvc_length": "HTTP/2 ALTSVC frames are limited to 16382 bytes",
+   "connect_authority": ":authority header is required for CONNECT requests",
+   "connect_path": "The :path header is forbidden for CONNECT requests",
+   "connect_scheme": "The :scheme header is forbidden for CONNECT requests",
+   "goaway_session": "New streams cannot be created after receiving a GOAWAY",
+   "headers_after_respond": "Cannot specify additional headers after response initiated",
+   "headers_sent": "Response has already been initiated.",
+   "header_single_value": "Header field must only have a single value",
+   "info_status_not_allowed": "Informational status codes cannot be used",
+   "invalid_connection_headers": "HTTP/1 Connection specific headers are forbidden",
+   "invalid_header_value": "Invalid value for header",
+   "invalid_info_status": "Invalid informational status code",
+   "invalid_origin": "HTTP/2 ORIGIN frames require a valid origin",
+   "pack_settings_length": "Packed settings length must be a multiple of six",
+   "pseudoheader": "Pseudoheader is invalid or incorrectly used",
+   "invalid_session": "The session has been destroyed",
+   "invalid_setting_value": "Invalid value for setting",
+   "invalid_stream": "The stream has been destroyed",
+   "max_pending_settings_ack": "Maximum number of pending settings acknowledgements reached",
+   "nested_push": "A push stream cannot initiate another push stream.",
+   "no_mem": "Out of memory",
+   "no_socket_manipulation": "HTTP/2 sockets should not be directly manipulated (e.g. read and written)",
+   "origin_length": "HTTP/2 ORIGIN frames are limited to 16382 bytes",
+   "out_of_streams": "No stream ID is available because maximum stream ID has been reached",
+   "payload_forbidden": "Responses with payload are forbidden for status",
+   "ping_cancel": "HTTP/2 ping cancelled",
+   "ping_length": "HTTP/2 ping payload must be 8 bytes",
+   "psuedoheader_not_allowed": "Cannot set HTTP/2 pseudo-headers",
+   "push_disabled": "HTTP/2 client has disabled push streams",
+   "send_file": "Directories cannot be sent",
+   "send_file_noseek": "Offset or length can only be specified for regular files",
+   "session_error": "Session closed with an error.",
+   "settings_cancel": "HTTP/2 session settings canceled",
+   "socket_bound": "The socket is already bound to an HTTP/2 Session",
+   "socket_unbound": "The socket has been disconnected from the HTTP/2 Session",
+   "status_101": "HTTP status code 101 (Switching Protocols) is forbidden in HTTP/2",
+   "status_invalid": "Invalid status code received",
+   "stream_cancel": "The pending stream has been canceled",
+   "stream_error": "Stream closed with and error.",
+   "stream_self_dependency": "A stream cannot depend on itself",
+   "too_many_invalid_frames": "Too many invalid HTTP/2 frames",
+   "trailers_already_sent": "Trailing headers have already been sent",
+   "trailers_not_ready": "Trailing headers cannot be sent until after the wantTrailers event is emitted",
+   "unsupported_protocol": "Unsupported protocol received",
+   "http2_error": "A non-specific HTTP/2 error has occurred",
+   "http2_error_code": "A non-specific HTTP/2 error has occurred with error code: {errorCode}",
+   "http2_unsupported": "The HTTP version used in the request is not supported by the server"
+  }
+ },
+ "workspace_list_empty_states": {
+  "no_workspaces_found": {
+   "heading": "No workspaces found",
+   "description": "Try a different search term, adjust your filters or check for typos."
+  },
+  "no_personal_workspaces": {
+   "heading": "No personal workspaces",
+   "description": "A personal workspace lets you work on APIs independently. No one else can access it.",
+   "learn_more_button": "Learn more"
+  },
+  "no_private_workspaces": {
+   "heading": "No private workspaces",
+   "description": "A private workspace is only visible to invited team members.",
+   "learn_more_button": "Learn more"
+  },
+  "private_workspace_plan_missing": {
+   "heading": "Upgrade to create private workspaces",
+   "description": "A private workspace is only visible to invited team members. Available on {enterprisePlanName} plan.",
+   "upgrade_button": "Upgrade plan",
+   "learn_more_button": "Learn more"
+  },
+  "private_workspaces_search_empty": {
+   "title": "No private workspaces found",
+   "subtitle": "Try a different search term, adjust your filters or check for typos."
+  },
+  "partner_workspaces_plan_missing": {
+   "title": "Upgrade to create partner workspaces",
+   "subtitle": "A partner workspace is only visible to invited team members and partners. Available on {enterprisePlanName} plan.",
+   "learn_more": {
+    "text": "Learn More"
+   },
+   "action_text": "Upgrade plan"
+  },
+  "partner_workspaces_empty": {
+   "title": "No partner workspaces",
+   "subtitle": "A partner workspace is only visible to invited team members and partners.",
+   "learn_more_text": "Learn More"
+  },
+  "partner_workspaces_search_empty": {
+   "title": "No partner workspaces found",
+   "subtitle": "Try a different search term, adjust your filters or check for typos."
+  },
+  "public_workspaces_empty": {
+   "title": "No public workspaces",
+   "subtitle": "A public workspace is visible to everyone on the Public API Network to explore and start collaborating.",
+   "learn_more_text": "Learn More"
+  },
+  "public_workspaces_search_empty": {
+   "title": "No public workspaces found",
+   "subtitle": "Try a different search term, adjust your filters or check for typos."
+  },
+  "personal_workspaces_search_empty": {
+   "title": "No personal workspaces found",
+   "subtitle": "Try a different search term, adjust your filters or check for typos.",
+   "learn_more_text": "Learn More"
+  },
+  "personal_workspaces_empty_for_you": {
+   "title": "You don’t have any personal workspaces",
+   "subtitle": "A personal workspace lets you work on APIs independently.",
+   "learn_more_text": "Learn More"
+  },
+  "personal_workspaces_empty_for_others": {
+   "title": "No personal workspaces",
+   "subtitle": "The selected users don’t have any personal workspaces. Adjust your filter settings."
+  },
+  "personal_workspaces_empty_no_access": {
+   "title": "You don’t have access",
+   "subtitle": "You can only access your own personal workspaces."
+  },
+  "team_workspaces_empty": {
+   "title": "No team workspaces",
+   "subtitle": "A team workspace lets you collaborate on APIs with your team in real-time.",
+   "learn_more_text": "Learn More"
+  },
+  "team_workspaces_search_empty": {
+   "title": "No team workspaces found",
+   "subtitle": "Try a different search term, adjust your filters or check for typos."
+  },
+  "all_workspaces_empty": {
+   "title": "No workspaces",
+   "subtitle": "A workspace lets you organize and collaborate on APIs. Learn more about workspaces",
+   "action_text": "Create workspace",
+   "learn_more_text": "Learn More"
+  },
+  "initial_fetch_error": {
+   "title": "Couldn't load the workspaces",
+   "subtitle": "Just a faulty wire. Try reloading.",
+   "action_text": "Reload",
+   "learn_more_text": "Learn More"
+  },
+  "next_fetch_error": {
+   "title": "Couldn't load more workspaces",
+   "subtitle": "Just a faulty wire. Try reloading.",
+   "action_text": "Reload",
+   "learn_more_text": "Learn More"
+  },
+  "personal_workspaces_empty_no_access_with_reset_filters": {
+   "title": "You don’t have access",
+   "subtitle": "You can only view personal workspaces you created.",
+   "action_text": "Reset filters"
+  },
+  "shared_partner_workspace_empty": {
+   "title": "Waiting for the crew... No connections yet!",
+   "subtitle": "When you are invited to join external workspaces by your partners, they will appear here, ready for you to explore and collaborate."
+  }
+ },
+ "workspace_list_item": {
+  "aria_label": "{workspaceName} workspace",
+  "aria_label_disabled": "{workspaceName} workspace (disabled: {disabledReason})"
+ },
+ "pending_requests_empty": {
+  "title": "No pending requests for review",
+  "subtitle": "When a teammate wants to share their workspace with wider audiences, their requests can be reviewed here."
+ },
+ "try_again_message": "Just a faulty wire. Please try again.",
+ "no_team_found_message": {
+  "title": "API is not shared yet",
+  "description": "Share this API to a team workspace to manage the roles"
+ },
+ "request_access_message": {
+  "title": "Looks like you don’t have access",
+  "button_label": "Request Access"
+ },
+ "create_new_workspace": {
+  "unable_to_create": "Unable to create the workspace",
+  "workspace_already_exists": "<0>The workspace <1>{workspaceName}</1> already exists.</0>"
+ },
+ "move_entity": {
+  "heading": "Move {entity}",
+  "move_entity_button": "Move {entity}",
+  "entity_moved_successfully": "{entityName} is now in {selectedWorkspace}. <0></0>",
+  "cancel_button": "Cancel",
+  "could_not_load_more_workspaces": {
+   "heading": "Couldn’t load more workspaces",
+   "description": "Just a faulty wire. Try reloading.",
+   "reload_button": "Reload"
+  },
+  "could_not_move_entity": {
+   "heading": "Just a faulty wire. Try again.",
+   "description": "Couldn’t move the {entity}"
+  },
+  "could_not_load_workspaces": {
+   "heading": "Couldn’t load the workspaces",
+   "description": "Just a faulty wire. Try reloading.",
+   "reload_button": "Reload"
+  },
+  "editor_access_required": "Get editor access to move this {entity}",
+  "info_text": {
+   "collection": "Monitors of this collection will pause and stay in the current workspace. Scheduled runs will move as a part of the collection and continue to run.",
+   "collection_reusable": "Monitors of this collection will pause and stay in the current workspace. Scheduled runs will move as a part of the collection and continue to run. Linked requests will no longer follow updates from the original.",
+   "collection_with_pinning": "Associated monitors will pause and stay in the current workspace. Scheduled runs will move with the collection and run as usual. Any pinned environments won't be moved.",
+   "collection_with_pinning_reusable": "Associated monitors will pause and stay in the current workspace. Scheduled runs will move with the collection and run as usual. Any pinned environments won't be moved. Linked requests will no longer follow updates from the original.",
+   "api": "Collections and environments of this API will move with this API to the destination workspace.",
+   "environment": "Monitors, scheduled collection runs, mock servers and integrations using this environment may no longer work.",
+   "environment_with_pinning": "Monitors, scheduled collection runs, mock servers and integrations using this environment may no longer work. Additionally, this environment will be removed from all collections where it is currently pinned.",
+   "extensible_collection": "Select the workspace where you want to move this collection."
+  },
+  "search_workspaces": "Search workspaces",
+  "workspace_list_label": "Select a workspace",
+  "loading_workspaces": "Loading workspaces",
+  "workspace_visibility_filter": {
+   "options": {
+    "all": "All",
+    "personal": "Personal",
+    "team": "Team",
+    "private": "Private",
+    "partner": "Partner",
+    "public": "Public"
+   },
+   "filter_by_visibility": "Filter by visibility"
+  },
+  "cannot_move_to_workspace": "You don’t have permission to move the {entity} to this workspace."
+ },
+ "workspace_list": {
+  "loading_more_workspaces": "Loading more workspaces..."
+ },
+ "export_collection": {
+  "heading": "Export collection",
+  "export_button": "Export",
+  "cancel_button": "Cancel",
+  "error_loading": "Error Loading",
+  "learn_more_about_collection_formats": "<0>{name}</0> will be exported as a JSON file. Learn more about <2><0>collection formats</0></2>",
+  "export_as": {
+   "label": "Export as:",
+   "collection_v2": "Collection v2",
+   "collection_v21": "Collection v2.1"
+  },
+  "share_collection_recommendation": {
+   "learn_more": "Learn more",
+   "share_collection": "Share Collection",
+   "save_time_by_sharing": "Sending your collection to a <1>teammate</1>? <3 /> Save time by <5>sharing</5> it instead."
+  }
+ },
+ "manage_roles": {
+  "heading": "Manage roles on {name}",
+  "offline_message": "Make sure you’re online if you want to manage roles",
+  "role_permission_denied": {
+   "collection": "Get editor access to manage roles on this collection.",
+   "environment": "Get editor access to manage roles on this environment.",
+   "monitor": "Get editor access to manage roles on this monitor.",
+   "api": "Get editor access to manage roles on this API.",
+   "mock": "You don’t have access to edit and manage roles on this mock server.",
+   "flow": "You don’t have access to edit and manage roles on this flow."
+  },
+  "fetch_roles_fail": {
+   "collection": "Something went wrong while fetching roles for this collection",
+   "environment": "Something went wrong while fetching roles for this environment",
+   "monitor": "Something went wrong while fetching roles for this monitor",
+   "api": "Something went wrong while fetching roles for this API",
+   "mock": "Something went wrong while fetching roles for this mock server",
+   "flow": "Something went wrong while fetching roles for this flow"
+  },
+  "update_roles_failed": {
+   "collection": "Something went wrong while updating roles for this collection",
+   "environment": "Something went wrong while updating roles for this environment",
+   "monitor": "Something went wrong while updating roles for this monitor",
+   "api": "Something went wrong while updating roles for this API",
+   "mock": "Something went wrong while updating roles for this mock server",
+   "flow": "Something went wrong while updating roles for this flow",
+   "title": "Couldn’t update role"
+  },
+  "not_shared": {
+   "collection": "To let others access it, move the collection to a team, private, or a public workspace.",
+   "environment": "To let others access it, move the environment to a team, private, or a public workspace.",
+   "monitor": "This monitor is in your personal workspace, which only you can access.",
+   "api": "To let others access it, move the API to a team, private, or a public workspace.",
+   "mock": "This mock server is in your personal workspace, which only you can access.",
+   "flow": "This flow is in your personal workspace, which only you can access."
+  },
+  "not_shared_title": {
+   "collection": "Only you have access to this collection",
+   "environment": "Only you have access to this environment",
+   "monitor": "Only you have access to this monitor",
+   "api": "Only you have access to this API",
+   "mock": "Only you have access to this mock server",
+   "flow": "Only you have access to this flow"
+  },
+  "share_label": {
+   "collection": "Collection",
+   "environment": "Environment",
+   "monitor": "Monitor",
+   "api": "API",
+   "flow": "Flow"
+  },
+  "something_went_wrong_while_managing_roles": "Something went wrong while managing roles.",
+  "something_went_wrong": "Something went wrong",
+  "signed_out_error": "You need to be signed-in to a team to perform this action.",
+  "could_not_change_role": {
+   "title": "Couldn’t change role",
+   "description": "Your team is full. <2 /> to add more team members."
+  },
+  "role_updated": "Role Updated",
+  "role_will_be_updated": "Role will be updated soon",
+  "role_update_acknowledged": "Role update acknowledged",
+  "guest_role_upgrade_description": "Team Admins are reviewing the role change from Guest to Developer.",
+  "team_admins_will_review_request": "For Guest role change, Team Admins will review your request.",
+  "move_entity": "Move {entity}",
+  "view_roles_caption": "People will inherit roles on this {entity} from the associated API and workspace. <4><0>View roles</0></4>",
+  "view_workspace_roles_caption": "People will inherit roles on this {entity} from the workspace. <4><0>View workspace roles</0></4>",
+  "disable_role_tooltip": "You can only assign users an {enabledRolesString} role on this {entity}. Your plan doesn’t include access management.",
+  "cancel_button": "Cancel",
+  "update_roles_button": "Update roles",
+  "upgrade_plan_info": {
+   "collection": "To change people’s roles and set conditions for merging pull requests on this {entityType}, <4><0>upgrade your plan</0></4> to {teamPlanName} or {enterprisePlanName}.",
+   "default": "To change people’s roles on this {entityType}, <4><0>upgrade your plan</0></4> to {teamPlanName} or {enterprisePlanName}."
+  },
+  "select_role": "Select Role",
+  "everyone_in_team": "Everyone in Team",
+  "manage_roles_title": "Manage roles",
+  "name_email_or_group": "Name, email, or group name",
+  "no_results_found": "No results found",
+  "only_developers_can_edit_collections": "Only <1><0>Developers</0></1> can edit collections. Once converted, they will get access to all team workspaces. Team Admins will review this change.",
+  "currently_exists_in": "Currently exists in",
+  "view_plans_info": "Everyone on your team can view and make changes to this resource. To manage access to resources, upgrade to the {teamPlanName} or {enterprisePlanName} plan. <0>View plans.</0>",
+  "guests_will_be_converted_to_developer": "Guest will be converted to Developer in your team",
+  "pull_request_settings": {
+   "failed_to_load": "Failed to load Pull Request settings. Please try again.",
+   "select_who_can_merge": "Select who can merge a pull request on this collection",
+   "only_collection_editors": "Only collection editors",
+   "select_teammates": "Select Teammates",
+   "select_users_hint": "By default all the destination collection editors will be able to merge.",
+   "set_merge_checks": "Set merge conditions",
+   "pull_request_merge_options": "A pull request on this collection can be merged when it's:",
+   "upgrade_plan_message": "This feature is not included in your current plan. Consider upgrading to a paid plan to access it."
+  },
+  "roles_list": {
+   "info_text": {
+    "api": "This {memberType} has edit permission on this {entity} which they are inheriting from the associated API",
+    "workspace": "This {memberType} has edit permission on this {entity} which they are inheriting from the workspace.",
+    "workspace_or_group": "This {memberType} has edit permission on this {entity} which they are inheriting from the workspace or a group."
+   },
+   "role_item_subtitle_member": "{members, plural, one {# member} other {# members}}",
+   "role_item_subtitle_team": "{members, plural, one {# team member} other {# team members}}",
+   "role_item_subtitle_users": "{users, plural, one {# group member} other {# group members}}",
+   "no_members_present": "No members in this group.",
+   "view_group": "View Group",
+   "user_group_popover_count": "{count, plural, one {# member} other {# members}}",
+   "members_loading": "Loading members…",
+   "members_unavailable": "Couldn’t load members. Try again.",
+   "remove": "Remove",
+   "permission_required": "You don’t have permission to perform this action",
+   "guest_can_view_shared_collections": "Guests can only view collections shared with them.",
+   "guest": "Guest"
+  }
+ },
+ "auth_editor": {
+  "target_description_default": "<0>The authorization {authTargetType, select, data {data} header {header} other {}} will be automatically generated when you send the request. Learn more about </0><1><0><0>authorization</0></0></1>",
+  "target_description_default_learning_center": "<0>The authorization {authTargetType, select, data {data} header {header} other {}} will be automatically generated when you send the request. Learn more about </0><1><0>authorization</0><1>.</1></1>",
+  "target_description_learning_center": "<0>The authorization {authTargetType, select, data {data} header {header} other {}} will be automatically generated when you send the request. Learn more about </0><1><0>{authType}</0><1> authorization.</1></1>",
+  "target_description_reusable": "<0>This request is linked. It uses </0><1>authorization</1><2> settings and variables from the current collection or environment, and the header is generated automatically when you send the request.</2>",
+  "add_authorization_to_label_full": "Add authorization data to",
+  "add_authorization_to_label_short": "Add auth data to",
+  "learn_more": "Learn more about",
+  "auth_link_text": "authorization",
+  "auth_input_desc": "Postman will automatically choose between body and URL based on the request method.",
+  "auth_retry_input_desc": "By default, Postman will extract values from the received response, add it to the request, and retry it. Do you want to disable this?",
+  "auth_retry_input_toggle_label": "Yes, disable retrying the request",
+  "auth_recommend_var": "<0>Heads up! These parameters hold sensitive data. To keep this data secure while working in a collaborative environment,we recommend using variables. Learn more about </0> <1>variables</1>.",
+  "auth_recommend_var_link_text": "variables",
+  "toggle_advanced_fields_aria_label": "Toggle advanced configuration",
+  "inherited_auth": {
+   "inherited_desc": "<0>This {entityType, select, collection {collection} folder {folder} request {request} other {}} is using {authType} from {entity, select, collection {collection} folder {folder} other {}} </0><1><0>{entityName}</0></1><2>.</2>",
+   "inherited_desc_long_entity_name": "<0>This {entityType, select, collection {collection} folder {folder} request {request} other {}} is using {authType} from {entity, select, collection {collection} folder {folder} other {}} </0><1><0>{entityName}</0></1>",
+   "not_inherited_desc": "This {entityType, select, collection {collection} folder {folder} request {request} other {}} is not inheriting any authorization helper at the moment. Save it in a collection to use the parent's authorization helper.",
+   "edit_button": "Edit Auth in {entityType, select, collection {collection} folder {folder} other {{entityType}}}"
+  },
+  "no_auth": {
+   "description": "This {entityType, select, collection {collection} folder {folder} request {request} other {request}} does not use any authorization.",
+   "tooltip": "Learn more about authorization"
+  },
+  "auth_jwt": {
+   "input_algorithm": "Algorithm",
+   "input_algorithm_tooltip": "Algorithm used to generate the JWT signature",
+   "input_secret_key": "Secret",
+   "input_secret_key_tooltip": "Secret used to generate the JWT signature",
+   "input_base64_checkbox": "Secret Base64 encoded",
+   "input_private_key": "Private key",
+   "input_private_key_tooltip": "Private key used to generate the JWT signature, in PKCS#8 PEM format",
+   "textarea_private_key_placeholder": "private key in PKCS#8 PEM format",
+   "input_payload_box": "Payload",
+   "input_payload_box_tooltip": "A JSON object that contains the claims conveyed by the JWT",
+   "auth_advanced_settings": {
+    "input_token_prefix": "Request header prefix",
+    "input_token_prefix_tooltip": "The prefix added to the authorization header in the request",
+    "input_query_key": "Query param name",
+    "input_header_box": "JWT headers",
+    "input_header_box_tooltip": "These values will be appended to the JWT headers",
+    "header_info": "Headers specific to the algorithm are added automatically."
+   },
+   "input_selector_label": "Add JWT token to",
+   "token_location_aria_label": "Token location",
+   "algorithm_aria_label": "Algorithm",
+   "token_add_to_opt_header": "Request Header",
+   "token_add_to_opt_auth_header": "Header",
+   "token_add_to_opt_auth_query_param": "queryParam",
+   "token_add_to_opt_query_param": "Query Param"
+  },
+  "auth_digest": {
+   "input_username": "Username",
+   "input_username_placeholder": "Username",
+   "input_password": "Password",
+   "input_password_placeholder": "Password",
+   "input_realm": "Realm",
+   "input_realm_tooltip": "This is a string specified by the server in the WWW-Authenticate response header. It should contain at least the name of the host performing the authentication and might additionally indicate the collection of users who might have access.",
+   "input_realm_placeholder": "testrealm@example.com",
+   "input_nonce": "Nonce",
+   "input_nonce_tooltip": "This is a unique string specified by the server in the WWW-Authenticate response header.",
+   "input_nonce_placeholder": "Nonce",
+   "input_algorithm": "Algorithm",
+   "input_algorithm_tooltip": "A string indicating a pair of algorithms used to produce the digest and a checksum.",
+   "input_qop": "qop",
+   "input_qop_tooltip": "Indicates the \"quality of protection\" applied to the message. This value must be one of the alternatives specified by the server in the WWW-Authenticate response header.",
+   "input_qop_placeholder": "e.g. auth-int",
+   "input_nonce_count": "Nonce Count",
+   "input_nonce_count_tooltip": "The hexadecimal count of the number of requests (including the current request) that the client has sent with the nonce value in this request. This must be specified if a qop directive is sent, and must not be specified if the server did not send a qop directive in the WWW-Authenticate response header.",
+   "input_nonce_count_placeholder": "e.g. 00000001",
+   "input_client_nonce": "Client Nonce",
+   "input_client_nonce_tooltip": "An opaque quoted string value provided by the client and used by both client and server to avoid chosen plaintext attacks, to provide mutual authentication, and to provide some message integrity protection. This must be specified if a qop directive is sent, and must not be specified if the server did not send a qop directive in the WWW-Authenticate response header.",
+   "input_client_nonce_placeholder": "e.g. 0a4f113b",
+   "input_opaque": "Opaque",
+   "input_opaque_tooltip": "This is a string of data specified by the server in the WWW-Authenticate response header and should be used here unchanged with URIs in the same protection space. It is recommended that this string be base64 or hexadecimal data.",
+   "input_opaque_placeholder": "Opaque"
+  },
+  "auth_apikey": {
+   "input_username": "Key",
+   "input_username_placeholder": "Key",
+   "input_password": "Value",
+   "input_password_placeholder": "Value",
+   "input_addto": "Add to",
+   "menu_header": "Header",
+   "menu_query": "Query Params"
+  },
+  "auth_bearer": {
+   "input_token": "Token",
+   "input_token_placeholder": "Token"
+  },
+  "auth_basic": {
+   "input_username": "Username",
+   "input_username_placeholder": "Username",
+   "input_password": "Password",
+   "input_password_placeholder": "Password",
+   "var_validation_msg": "Use variables instead to keep sensitive data secure."
+  },
+  "auth_sasl": {
+   "input_mechanism": "Mechanism",
+   "mechanism_plain": "PLAIN",
+   "mechanism_scram_sha_256": "SCRAM-SHA-256",
+   "mechanism_scram_sha_512": "SCRAM-SHA-512",
+   "input_username": "Username",
+   "input_username_placeholder": "Username",
+   "input_password": "Password",
+   "input_password_placeholder": "Password"
+  },
+  "akamai-edgegrid": {
+   "input_access_token": "Access Token",
+   "input_access_token_placeholder": "Access Token",
+   "input_client_token": "Client Token",
+   "input_client_token_placeholder": "Client Token",
+   "input_client_secret": "Client Secret",
+   "input_client_secret_placeholder": "Client Secret",
+   "input_nonce": "Nonce",
+   "input_nonce_placeholder": "Nonce",
+   "input_nonce_tooltip": "A random string generated by the client.",
+   "input_timestamp": "Timestamp",
+   "input_timestamp_placeholder": "Timestamp",
+   "input_timestamp_tooltip": "<0>UTC time in </0><1>yyyyMMddTHH:mm:ss+0000</1><2> format, as specified in the API Client Authentication section of the Akamai Developer Portal.</2>",
+   "input_base_url": "Base URL",
+   "input_base_url_placeholder": "Base URL",
+   "input_base_url_tooltip": "The base URL, without the protocol.",
+   "input_headerstosign": "Headers to Sign",
+   "input_headerstosign_placeholder": "Headers to Sign",
+   "input_headerstosign_tooltip": "Comma-separated list of headers to be signed.",
+   "input_max_body": "Max Body Size",
+   "input_max_body_placeholder": "Max Body Size",
+   "input_max_body_tooltip": "Maximum body size considered for hash calculation. Default value: 131,072 bytes."
+  },
+  "ntlmauth": {
+   "input_username": "Username",
+   "input_username_placeholder": "Username",
+   "input_password": "Password",
+   "input_password_placeholder": "Password",
+   "input_domain": "Domain",
+   "input_domain_placeholder": "e.g. example.com",
+   "input_domain_tooltip": "The domain/host to authenticate against.",
+   "input_workstation": "Workstation",
+   "input_workstation_placeholder": "e.g. John-PC",
+   "input_workstation_tooltip": "The hostname of your pc.",
+   "artemis_empty_state_title": "Authorization helper unavailable",
+   "artemis_empty_state_message": "To customize your auth scheme, use the Postman Desktop Agent.",
+   "warning_invalid_char_username": "Username contains invalid characters",
+   "warning_restricted_username": "Username is a restricted word",
+   "warning_too_long_username": "Username is too long"
+  },
+  "awssignature": {
+   "input_access_key": "AccessKey",
+   "input_access_key_placeholder": "Access Key",
+   "input_secret_key": "SecretKey",
+   "input_secret_key_placeholder": "Secret Key",
+   "input_region": "AWS Region",
+   "input_region_placeholder": "e.g. us-east-1",
+   "input_region_tooltip": "The region that is receiving the request (default value: us-east-1)",
+   "input_service": "Service Name",
+   "input_service_placeholder": "e.g. s3",
+   "input_service_tooltip": "The service that is receiving the request.",
+   "input_session": "Session Token",
+   "input_session_placeholder": "Session Token",
+   "input_session_tooltip": "Only required when using temporary security credentials.",
+   "input_source": "Source",
+   "source_static": "Static",
+   "source_environment": "Environment",
+   "input_source_tooltip": "Static uses the access key and secret entered here. Environment loads credentials from your machine's AWS configuration (via the AWS CLI) when the request is sent.",
+   "input_profile": "AWS Profile",
+   "input_profile_placeholder": "default",
+   "input_profile_tooltip": "Named profile from your AWS configuration to load credentials from. Leave blank to use the default credential chain."
+  },
+  "azure": {
+   "input_api_key": "API Key",
+   "input_api_key_placeholder": "API Key",
+   "input_resource_name": "Resource Name",
+   "input_resource_name_placeholder": "e.g. my-beta-east2-openai",
+   "input_resource_name_tooltip": "The Azure resource name. The evaluated URL becomes https://{resourceName}.openai.azure.com/openai/{apiVersion}{model}",
+   "input_base_url": "Base URL",
+   "input_base_url_placeholder": "e.g. https://my-proxy.example.com",
+   "input_base_url_tooltip": "Use a different URL prefix for API calls, e.g. to use proxy servers. When provided, resourceName is ignored. The evaluated URL becomes {baseURL}/{apiVersion}{model}",
+   "input_api_version": "API Version",
+   "input_api_version_placeholder": "v1",
+   "input_api_version_tooltip": "The Azure OpenAI API version. If not specified, defaults to v1. Used in URL path construction",
+   "input_use_deployment_based_urls": "Use deployment-based URLs",
+   "input_use_deployment_based_urls_tooltip": "When enabled with baseURL, uses deployment-specific URL format: {baseURL}/deployments/{model}?api-version={apiVersion}"
+  },
+  "auth_hawk": {
+   "input_auth_id": "Hawk Auth ID",
+   "input_auth_id_placeholder": "Hawk Auth ID",
+   "input_auth_key": "Hawk Auth Key",
+   "input_auth_key_placeholder": "Hawk Auth Key",
+   "input_algorithm": "Algorithm",
+   "input_algorithm_sha_256": "SHA-256",
+   "input_algorithm_sha_1": "SHA-1",
+   "input_user": "User",
+   "input_user_placeholder": "Username",
+   "input_nonce": "Nonce",
+   "input_nonce_placeholder": "Nonce",
+   "input_nonce_tooltip": "A random string generated by the client.",
+   "input_extra_data": "ext",
+   "input_extra_data_placeholder": "e.g. some-app-extra-data",
+   "input_extra_data_tooltip": "Any application-specific information to be sent with the request.",
+   "input_app_id": "app",
+   "input_app_id_placeholder": "Application ID",
+   "input_app_id_tooltip": "This provides binding between the credentials and the application in a way that prevents an attacker from tricking an application to use credentials issued to someone else.",
+   "input_delegation": "dlg",
+   "input_delegation_placeholder": "e.g. delegated-by",
+   "input_delegation_tooltip": "The application id of the application the credentials were directly issued to.",
+   "input_timestamp": "Timestamp",
+   "input_timestamp_placeholder": "Timestamp",
+   "input_payload_hash": "Include payload hash",
+   "input_payload_hash_tooltip": "Hawk authentication provides optional support for payload validation. If this option is selected, the payload hash will be calculated and included in MAC calculation and in Authorization header."
+  },
+  "oauth1": {
+   "input_signature_method": "Signature Method",
+   "input_signature_method_tooltip": "The signature method the Consumer used to sign the request.",
+   "input_consumer_key": "Consumer Key",
+   "input_consumer_key_placeholder": "Consumer Key",
+   "input_consumer_key_tooltip": "A value used by the Consumer to identify itself to the Service Provider.",
+   "input_consumer_secret": "Consumer Secret",
+   "input_consumer_secret_placeholder": "Consumer Secret",
+   "input_consumer_secret_tooltip": "A secret used by the Consumer to establish ownership of the Consumer Key.",
+   "input_access_token": "Access Token",
+   "input_access_token_placeholder": "Access Token",
+   "input_token_secret": "Token Secret",
+   "input_token_secret_placeholder": "Token Secret",
+   "input_token_secret_tooltip": "A secret used by the Consumer to establish ownership of a given Token.",
+   "input_private_key": "Private key",
+   "input_private_key_tooltip": "RSA private key in PEM format for signing the request.",
+   "textarea_private_key_placeholder": "private key in PEM format",
+   "input_callback": "Callback URL",
+   "input_callback_placeholder": "Callback URL",
+   "input_callback_tooltip": "An absolute URL where the service provider will redirect to after obtaining user authorization.",
+   "input_verifier": "Verifier",
+   "input_verifier_placeholder": "Verifier",
+   "input_verifier_tooltip": "The verification code given by the service provider after obtaining user authorization.",
+   "input_timestamp": "Timestamp",
+   "input_timestamp_placeholder": "Timestamp",
+   "input_nonce": "Nonce",
+   "input_nonce_placeholder": "Nonce",
+   "input_nonce_tooltip": "A random string generated by the client.",
+   "input_version": "Version",
+   "input_version_placeholder": "Version",
+   "input_realm": "Realm",
+   "input_realm_placeholder": "testrealm@example.com",
+   "input_realm_tooltip": "This is a string specified by the server in the WWW-Authenticate response header. It should contain at least the name of the host performing the authentication and might additionally indicate the collection of users who might have access.",
+   "input_include_body_hash": "Include body hash",
+   "input_include_body_hash_tooltip": "OAuth Request Body Hash extension provides support for request body integrity check for content types other than application/x-www-form-urlencoded. If this option is selected, the oauth_body_hash parameter will be calculated and added to the request.",
+   "input_empty_params_signature": "Add empty parameters to signature",
+   "input_empty_params_signature_tooltip": "Some implementations of OAuth1.0 require empty parameters to be added to the signature. If this option is selected, any of the above fields which have been left empty will be included in the authorization data.",
+   "input_encode_auth_param": "Encode the parameters in the Authorization header"
+  },
+  "oauth2": {
+   "share_token": "Share Token",
+   "share_token_non_editable_tooltip": "You do not have permission to edit this token.",
+   "share_token_no_token_tooltip": "You must have a token to share it.",
+   "token_added_toast": "Token added.",
+   "bearer_token": "Bearer",
+   "expiry_time_info": "Expires at {expiryTime} today.",
+   "refreshing_token": "Refreshing token",
+   "refresh_token": "Refresh",
+   "token_expired": "Token expired.",
+   "not_token_config_tooltip": "Select a token from available tokens to refresh it automatically on expire.",
+   "not_token_config_refresh_tooltip": "Refresh token is not present. Generate a new token to refresh it automatically on expire.",
+   "not_token_config_access_token_url_tooltip": "Access token URL is not present. Generate a new token to refresh it automatically on expire.",
+   "access_token_not_available_tooltip": "Access token is not available",
+   "id_token_not_available_tooltip": "ID token is not available",
+   "migration_banner_info": "Get more control and customizations over your Auth2 requests by moving audience and resource parameters to Configurations > Advanced.",
+   "handle_migration_button_text": "Move audience and resource",
+   "current_token": "Current Token",
+   "session_token_non_sync": "This token is only available to you. Sync the token to let collaborators on this request use it.",
+   "token": "Token",
+   "shared_token": "Shared Token",
+   "no_tokens": "No Tokens Available",
+   "manage_tokens": "Manage Tokens",
+   "use_token_type": "Use Token Type",
+   "refresh_token_missing_toast": "Cannot refresh OAuth2.0 Token. Refresh Token Missing",
+   "header_prefix": "Header Prefix",
+   "header_prefix_tooltip": "Added to the Authorization header before the token.",
+   "header_prefix_placeholder": "e.g. Bearer",
+   "auto_refresh_token": "Auto-refresh Token",
+   "expired_auto_refresh": "Your expired token will be auto-refreshed before sending a request.",
+   "access_to_view_and_use": "This will allow anyone with access to this request to view and use it.",
+   "configure_new_heading": "Configure New Token",
+   "config_tab_fields": {
+    "access_token": "accessTokenUrl",
+    "client_auth": "client_authentication",
+    "add_token_to": "addTokenTo",
+    "auth_url": "authUrl",
+    "client_id": "clientId",
+    "client_secret": "clientSecret",
+    "grant_type": "grantType",
+    "password": "password",
+    "redirect_url": "redirectUrl",
+    "scope": "scope",
+    "state": "state",
+    "use_browser": "useBrowser",
+    "username": "username",
+    "challenge_algo": "challengeAlgorithm",
+    "code_verifier": "code_verifier",
+    "token_name": "tokenName",
+    "auth_request_param": "authRequestParam",
+    "token_request_param": "tokenRequestParam",
+    "refresh_request_param": "refreshRequestParam"
+   },
+   "access_token_fields": {
+    "auth_code": "Authorization Code",
+    "auth_code_pkce": "Authorization Code (With PKCE)",
+    "implicit": "Implicit",
+    "password_cred": "Password Credentials",
+    "client_cred": "Client Credentials",
+    "client_auth_type_header": "Send as Basic Auth header",
+    "client_auth_type_body": "Send client credentials in body",
+    "pkce_algo_type_s256": "SHA-256",
+    "pkce_algo_type_plain": "Plain",
+    "cred_highlight_msg": "This field contains characters that might need to be percent-encoded depending on the authentication server. You can encode by right-clicking on this field.",
+    "code_verifier_highlight_msg": "This field contains characters which are not valid. Use the following valid characters: [A-Z] / [a-z] / [0-9] / “-” / “.” / “_” / “~”.",
+    "code_verifier_validation_msg": "The length must be within 43 to 128 characters long.",
+    "clear_cookie_success": "Cookies have been cleared successfully",
+    "clear_cookie_error": "Cookies couldn't be cleared. Try again.",
+    "lc_banner_desc": "You can add more specific customizations to your OAuth2 requests here. Learn more about <1>configuration</1>",
+    "input_refresh_url": "Refresh Token URL",
+    "input_refresh_placeholder": "https://example.com/login/oauth/refresh_token",
+    "input_refresh_tooltip": "Postman uses this endpoint to exchange the refresh token for an access token. If empty, it will use the access token URL instead.",
+    "input_auth_request": "Auth Request",
+    "auth_request_info_tooltip": "Added as query parameters in the request URL of the authorization request.",
+    "kveditor_key_placeholder": "Create parameter",
+    "kvedior_options_heading": "Send In",
+    "kveditor_options_tooltip": "This decides how the param is added to the request",
+    "input_token_request": "Token Request",
+    "token_request_info_tooltip": "Added as query parameters in the request URL of the token request.",
+    "input_refresh_request": "Refresh Request",
+    "refresh_request_param_tooltip": "When adding or updating parameters, you need to generate and use a new access token to apply the changes.",
+    "input_token_name": "Token Name",
+    "input_token_placeholder": "Enter a token name...",
+    "input_grant_type": "Grant type",
+    "input_callback_url": "Callback URL",
+    "input_callback_url_tooltip": "This is the callback URL that you will be redirected to, after your application is authorized. Postman uses this to extract the authorization code or access token. The callback URL should match the one you use during the application registration process.",
+    "input_callback_url_placeholder": "http://your-application.com/registered/callback",
+    "input_callback_url_browser_tooltip": "The callback URL cannot be modified when authenticating via the browser.",
+    "input_use_browser_checkbox": "Authorize using browser",
+    "input_auth_url": "Auth URL",
+    "input_auth_url_tooltip": "The endpoint for authorization server. This is used to get the authorization code.",
+    "input_auth_url_placeholder": "https://example.com/login/oauth/authorize",
+    "input_access_token_url": "Access Token URL",
+    "input_access_token_url_tooltip": "The endpoint for authorization server. This is used to get the access token.",
+    "input_access_token_url_placeholder": "https://example.com/login/oauth/access_token",
+    "input_client_id": "Client ID",
+    "input_client_id_tooltip": "The client identifier issued to the client during the Application registration process.",
+    "input_client_id_placeholder": "Client ID",
+    "input_client_secret": "Client Secret",
+    "input_client_secret_tooltip": "The client secret issued to the client during the Application registration process.",
+    "input_client_secret_placeholder": "Client Secret",
+    "input_username": "Username",
+    "input_username_placeholder": "Username",
+    "input_password": "Password",
+    "input_password_placeholder": "Password",
+    "input_algorithm": "Code Challenge Method",
+    "input_algorithm_tooltip": "Algorithm used for generating the Code Challenge.",
+    "input_code_verifier": "Code Verifier",
+    "input_code_verifier_tooltip": "A random, 43-128 character string used to connect the authorization request to the token request. Uses the following characters: [A-Z] / [a-z] / [0-9] / “-” / “.” / “_” / “~”.",
+    "input_code_verifier_placeholder": "Automatically generated if left blank",
+    "input_scope": "Scope",
+    "input_scope_tooltip": "The scope of the access request. It may have multiple space-delimited values.",
+    "input_scope_placeholder": "e.g. read:org",
+    "input_state": "State",
+    "input_state_tooltip": "An opaque value that is used for preventing cross-site request forgery.",
+    "input_state_placeholder": "State",
+    "input_client_authentication": "Client Authentication",
+    "input_client_authentication_tooltip": "This client authentication method will be ignored if you've added client_id or client_secret in the advanced options below.",
+    "advanced_auth_title": "Advanced",
+    "clear_cookies_button": "Clear cookies",
+    "clear_cookies_tooltip": "Clear all cookies from previous OAuth 2.0 sessions.",
+    "request_token_button": "Get new access token",
+    "send_options": {
+     "request_body": "Request Body",
+     "request_url": "Request URL",
+     "request_header": "Request Headers"
+    }
+   },
+   "advanced_tab_fields": {
+    "resource": "resource",
+    "audience": "audience"
+   },
+   "token_dropdown_placeholder": "Available Tokens",
+   "token_dropdown_access_token": "Access token",
+   "token_dropdown_id_token": "ID token",
+   "sync_token_modal": {
+    "remove_token": {
+     "title": "Remove synced token?",
+     "desc": "People with access to this request will no longer be able to see or use this token. They will be able to generate their own access token instead.",
+     "action_label": "Remove synced token"
+    },
+    "replace_token": {
+     "title": "Sync token?",
+     "desc": "This new token will replace the one that's currently synced. Anyone with access to the request will be able to view and use the new token.",
+     "action_label": "Sync token"
+    },
+    "sync_and_save_token": {
+     "title": "Save and sync token?",
+     "desc": "Request should be saved to sync the token. Syncing this token will allow anyone with access to this request to view and potentially use it.",
+     "action_label": "Save and sync token"
+    },
+    "sync_token": {
+     "title": "Sync token?",
+     "desc": "Syncing this token will allow anyone with access to this request to view and potentially use it.",
+     "action_label": "Sync token"
+    },
+    "cancel_button": "Cancel"
+   },
+   "token_location_aria_label": "Token location"
+  },
+  "asap": {
+   "input_algorithm": "Algorithm",
+   "input_algorithm_tooltip": "Algorithm used to generate the JWT signature",
+   "placeholder_issuer": "Issuer",
+   "input_issuer": "Issuer",
+   "info_issuer": "The issuer of the token, mandatory.",
+   "placeholder_audience": "Audience",
+   "input_audience": "Audience",
+   "info_audience": "The audience for the token, mandatory.",
+   "placeholder_kid": "Key ID",
+   "input_kid": "Key ID",
+   "info_kid": "The ID of the key used to sign the token, mandatory.",
+   "optional_section_label": "Optional",
+   "input_private_key": "Private key",
+   "info_private_key": "Private key used to generate the JWT signature, in PKCS#8 PEM or base64 DER format, mandatory",
+   "input_optional_section": "Optional",
+   "input_subject": "Subject",
+   "placeholder_subject": "Subject",
+   "input_claims": "Additional claims",
+   "placeholder_expiry": "e.g. 3600, default: 1h",
+   "input_expiry": "Expiry",
+   "info_expiry": "Expiration time in seconds"
+  },
+  "auth_config": {
+   "noauth_desc_default": "<0>This {entityType, select, collection {collection} folder {folder} request {request} other {}} does not use any authorization. Learn more about </0><1><0><0>authorization</0></0></1>",
+   "noauth_desc_learning_center": "<0>This {entityType, select, collection {collection} folder {folder} request {request} other {}} does not use any authorization. Learn more about </0><1>authorization</1>.",
+   "noauth_link_text": "authorization"
+  },
+  "cta_button": "Preview request",
+  "auth_advanced_toggle": "Advanced configuration",
+  "auth_advanced_desc": "Postman auto-generates default values for some of these fields unless a value is specified.",
+  "auth_type_selector_label": "Type",
+  "auth_type_selector_label_full": "Auth Type",
+  "auth_types": {
+   "inherit": "Inherit auth from parent",
+   "no_auth": "No Auth",
+   "basic_auth": "Basic Auth",
+   "bearer_auth": "Bearer Token",
+   "jwt_auth": "JWT Bearer",
+   "digest_auth": "Digest Auth",
+   "oauth1": "OAuth 1.0",
+   "oauth2": "OAuth 2.0",
+   "hawk": "Hawk Authentication",
+   "aws": "AWS Signature",
+   "ntlm_auth": "NTLM Authentication",
+   "apikey": "API Key",
+   "akamai_edgegrid": "Akamai EdgeGrid",
+   "asap": "ASAP (Atlassian)",
+   "azure": "Azure Signature",
+   "sasl": "SASL"
+  },
+  "add_auth_params_to": {
+   "url": "Request URL",
+   "body_or_url": "Request Body / Request URL",
+   "headers": "Request Headers"
+  },
+  "var_validation_msg": "Use variables instead to keep sensitive data secure."
+ },
+ "headers_editor": {
+  "preview_header_warning": "This is a duplicate header and will be overridden by the {headerKey} header added by you.",
+  "user_added_header_warning": "This is a duplicate header and will be overridden by the {headerKey} header generated by Postman.",
+  "bulk_edit_header_label": "Auto-generated headers are not visible in bulk edit",
+  "tooltip_header_preview_hidden": "These headers will be automatically added and sent with the request. Click to view and modify these headers.",
+  "tooltip_header_preview_not_hidden": "Click to hide these headers. They will still be automatically added and sent with the request.",
+  "title": "Headers",
+  "preview_toggle_text_hidden": "{previewHeadersCount} hidden",
+  "preview_toggle_text_non_hidden": "Hide auto-generated headers",
+  "kveditor_validation_key_msg": "This header can't be sent in browser. To send custom values for this header, switch to the Postman Desktop Agent.",
+  "preview_info": {
+   "auth": {
+    "tooltip": {
+     "header": "This header was automatically added",
+     "body": "This header is added because of the authorization method used for this request.\n\nThe value of this header is tentative. You can find the exact value in the console once the request is sent.\n\nUse the authorization tab to remove authorization or to change the value of this header."
+    },
+    "entity_with_helper_meta": "Go to authorization"
+   },
+   "cookie": {
+    "tooltip": {
+     "header": "This header was automatically added",
+     "body": "The Cookie header is added to send the cookies that are associated with this endpoint.\n\nUse the cookie manager to remove the header or to change the value."
+    },
+    "entity_with_helper_meta": "Go to cookies"
+   },
+   "cache_control": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "Postman added \"Cache-Control: no-cache\" as a precautionary measure to prevent the server from returning stale response when one makes repeated requests.\n\nYou can remove this header in the app settings or enter a new one with a different value."
+    },
+    "entity_with_helper_meta": "Go to settings"
+   },
+   "postman_token": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "The Postman-Token header appends a random UUID to every outgoing request. Postman adds this header for API developers to better debug requests sent and to ensure separate requests appear distinct to the receiving server.\n\nYou can remove this header in the app settings."
+    },
+    "entity_with_helper_meta": "Go to settings"
+   },
+   "content_length": {
+    "tooltip": {
+     "header": "This header was automatically added",
+     "body": "The Content-Length header was added to indicate to the server the size of the request body that is added to this request. Server uses this value to parse the request body accurately.\n\nYou can remove the header or enter a new one with a different value."
+    },
+    "entity_with_helper_meta": "Go to body"
+   },
+   "content_type": {
+    "tooltip": {
+     "header": "This header was automatically added",
+     "body": "The Content-Type header is added to help the server identify the media type of the request body that is present in this request.\n\nUse the request body tab to control the value or to remove this header."
+    },
+    "entity_with_helper_meta": "Go to body"
+   },
+   "user_agent": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "The User-Agent header is added to help the server identify Postman as the HTTP requesting application or client.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value."
+    }
+   },
+   "accept": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "The \"Accept: */*\" header is added to tell the server that Postman can understand and process all forms of response content types.\n\nIt is recommended that this header be sent, but you can remove the header or enter a new one with a different value."
+    }
+   },
+   "accept_encoding": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "The Accept-Encoding header is added to indicate to the server that Postman HTTP client supports a defined list of content-encoding or compression algorithms as response.\n\nYou can remove the header or enter a new one with a different value. Doing that may not accurately render the response within the app."
+    }
+   },
+   "host": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "The Host header is added to identify the domain name for which a request is being sent to the server. This header is implicitly sent by every HTTP client.\n\nYou can remove the header or enter a new one with a different value. It is most likely that without this header, your request will return an HTTP 400 error."
+    }
+   },
+   "connection": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "Postman added the Connection header to indicate the server to keep the underlying network connection open once the current response is received. This allows Postman to reuse the same connection for faster response times in subsequent requests to the same server.\n\nYou can remove this header or enter a new one with a different value, such as `Connection: Close` to control this behaviour."
+    }
+   },
+   "fallback": {
+    "tooltip": {
+     "header": "We recommend using this header",
+     "body": "This header has been automatically added. You can choose to remove it, or override its value."
+    }
+   }
+  },
+  "manage_presets": {
+   "modal_heading": "Manage Header Presets",
+   "disabled_tooltip": "You don't have permissions to perform this action.",
+   "delete_tooltip": "Delete",
+   "controls": {
+    "text": "Header Preset is a group of headers stored as key-value pairs. It enables you to store commonly used headers in a single preset, making it easy to reuse them in multiple requests.",
+    "button_label": "Add Header Preset"
+   },
+   "list_item_edit_tooltip": "Edit",
+   "add_preset": {
+    "title": "Add Header Preset",
+    "section_name_placeholder": "Header Preset Name",
+    "section_controls_button": {
+     "submit": "Add",
+     "cancel": "Cancel"
+    }
+   },
+   "edit_preset": {
+    "title": "Edit Header Preset",
+    "section_name_placeholder": "Header Preset Name",
+    "section_controls_button": {
+     "submit": "Update",
+     "cancel": "Cancel"
+    }
+   },
+   "delete_presets_modal": {
+    "title": "Delete",
+    "primary_action": {
+     "deleting": "Deleting",
+     "delete": "Delete"
+    },
+    "confirmation": "Are you sure you want to delete this header preset from the workspace?",
+    "error": "Unable to delete this header preset"
+   }
+  },
+  "headers_highlight_error": {
+   "key_whitespace": "Key contains invalid whitespace characters.",
+   "key_invalid": "Key contains invalid characters.",
+   "value_invalid": "Value contains invalid newline characters.",
+   "invalid_iso_8859_1": "Value contains non-ISO-8859-1 characters."
+  }
+ },
+ "url_params_editor": {
+  "query_params": "Query Params",
+  "path_var": "Path Variables",
+  "warning_duplicate_param": "This is a duplicate URL param and will be overridden by {query_param} generated by Postman."
+ },
+ "kveditor": {
+  "description": "Description",
+  "description_tooltip": "Description only appears in Postman documentation and is <1>not sent</1> with your request.",
+  "domains": "e.g. https://api.getpostman.com, https://*.postman.com",
+  "domains_tooltip": "Secrets only work in the mentioned domains. Use '*.example.com to allow for all sub-domains.",
+  "value": "Value",
+  "value_tooltip": "Initial value is shared with your team when you share the variable in a collection, environment, or globals.",
+  "value_tooltip_with_lc": "Click to learn more",
+  "initial_value": "Initial value",
+  "value_hidden": "value hidden",
+  "disabled_sync_tooltip": "Your team admin has deleted and blocked the use of initial values to prevent data syncing.",
+  "key": "Key",
+  "type": "Type",
+  "type_tooltip": "Use secret type to store keys, tokens, secrets and passwords. Secret type enables masking of values on the screen. Values of default type are visible as plaintext.",
+  "type_tooltip_with_lc": "Click to learn more",
+  "content_type": "Content-Type",
+  "content_type_tooltip": "The Content-Type entity is used to indicate the media type of the resource. Postman will automatically assign a content-type if this field is left empty.",
+  "current_value": "Current value",
+  "current_value_tooltip": "Current value is used while sending a request. These values are never synced to Postman's servers. If left empty, the current value automatically uses the initial value.",
+  "current_value_tooltip_with_lc": "Click to learn more",
+  "persist": "Persist",
+  "persist_all": "Persist All",
+  "reset": "Reset",
+  "reset_all": "Reset All",
+  "reset_action_tooltip": "Resetting all values will replace all current values with the initial values of the variables.",
+  "bulk_edit": "Bulk Edit",
+  "key_value_edit": "Key-Value Edit",
+  "show_columns": "Show columns",
+  "options_heading": "OPTIONS",
+  "domains_heading": "Allowed domains",
+  "rows_separated_by_lines": "Rows are separated by new lines",
+  "keys_values_separated": "Keys and values are separated by :",
+  "prepend_row_keep_disabled": "Prepend // to any row you want to add but keep disabled",
+  "presets": "Presets",
+  "option": "option",
+  "options": "Options",
+  "filter_variables": "Filter variables",
+  "filter_vault_variables": "Filter secrets",
+  "duplicate_key": "Duplicate key",
+  "remove_sort_reorder": "Remove sort to reorder",
+  "delete": "Delete",
+  "deleted_status": "[Deleted]",
+  "show": "Show",
+  "hide": "Hide",
+  "no_results_found": "No results found",
+  "no_permissions": "You do not have permissions to perform this action.",
+  "persist_will_replace": "Persisting all values will replace all initial values with the current values of the variables.",
+  "sorted_a_to_z": "Sorted by A to Z",
+  "sorted_z_to_a": "Sorted by Z to A",
+  "view_more_actions": "View more actions",
+  "manage_presets": "Manage Presets",
+  "change_type": "Change Type",
+  "cancel": "Cancel",
+  "select_row": "Select parameter row",
+  "deselect_row": "Deselect parameter row",
+  "enable_all_rows": "Enable all parameters",
+  "disable_all_rows": "Disable all parameters",
+  "toggle_sensitive_var_state": "Toggle the sensitive variable state",
+  "disable_sync_initial_val": "This will disable syncing initial value of the variable.",
+  "not_ask_again": "Don't ask again",
+  "reveal_hidden_values": "<0>This will reveal the hidden values in plain text everywhere in the app for all team members. If you wish to locally unmask the value for yourself, use the</0><1></1><2>icon at the end of a row.</2>",
+  "change_type_secret_to_default": "Change type from secret to default?",
+  "change_type_default_to_secret": "Change type from default to secret?",
+  "change_var_to_default": "Change {var} from secret to default?",
+  "change_var_to_secret": "Change {var} from default to secret?",
+  "duplicate_key_warning": "This variable has been overwritten by a duplicate key.",
+  "disable_filter_tooltip": "Remove the filter query to perform this action",
+  "disable_sort_tooltip": "Remove sort to perform this action",
+  "text": "Text",
+  "file": "File",
+  "default": "default",
+  "secret": "secret",
+  "feedback_modal": {
+   "modal_heading": "Give feedback on types in collection",
+   "fill_feedback": "Please fill in the feedback.",
+   "followup_consent": "I'd like Postman to reach-out to me for followup",
+   "followup_label": "Request a followup",
+   "feedback_label": "Tell us how we can improve?",
+   "feedback_placeholder": "Ex. I had an idea...",
+   "confirm_button_label": "Submit"
+  }
+ },
+ "fork_button": {
+  "tooltip": "Fork",
+  "label": "Fork",
+  "count_button": {
+   "offline_tooltip": "Get online to view existing forks.",
+   "count_error_tooltip": "Something went wrong.",
+   "fork_count": "{count, plural, =1 {# fork} other {# forks}}"
+  }
+ },
+ "watch": {
+  "error": {
+   "message": "Just a faulty wire. Try performing the action again.",
+   "title": "Something went wrong. Try again."
+  },
+  "count_button": {
+   "offline_tooltip": "You can take this action once you're back online."
+  },
+  "toggle_button": {
+   "offline_tooltip": "You can take this action once you're back online.",
+   "processing_tooltip": "Please wait while your request is being processed.",
+   "disable_tooltip": "You do not have access to perform this action.",
+   "label": {
+    "watching": "Watching",
+    "watch": "Watch",
+    "unwatch": "Unwatch"
+   }
+  }
+ },
+ "ec_collection_run": {
+  "tooltip": {
+   "no_permission": "You don't have permission to run this collection.",
+   "is_offline": "You can run this collection when you're back online."
+  }
+ },
+ "rfa_guest_button": {
+  "tooltip": {
+   "comment": "Collection Editors are reviewing your request for additional access.",
+   "edit_request": "Collection Editors are reviewing your request to edit.",
+   "in_review": "Your request is being reviewed",
+   "text": "Request in review",
+   "readonly_user_message": "You do not have access to perform this action."
+  },
+  "text": {
+   "comment_access": "Request access to comment",
+   "edit_access": "Request to edit"
+  },
+  "error": {
+   "request_failed": "Could not create Request to edit"
+  }
+ },
+ "rfa_popover": {
+  "heading": {
+   "text": "Request additional access to {trigger}"
+  },
+  "body": {
+   "primary_action": "Request access",
+   "secondary_action": "Maybe later",
+   "acknowledge_action": "Got It",
+   "text": {
+    "request_pending": "Your request is being reviewed by the {model} Editors. You'll be notified once they respond.",
+    "request_role": "You need to request for a role change to perform more actions on this collection."
+   }
+  },
+  "error": {
+   "request_failed": "Could not create Request to edit"
+  }
+ },
+ "entity_tab_header": {
+  "breadcrumb": {
+   "update_icon_tooltip": "Update collection",
+   "error_message": "Couldn't rename the {entity}. Try again."
+  }
+ },
+ "update_collection_icon": {
+  "retry": "Retry",
+  "updates_enabled": "Updates enabled",
+  "updates_disabled": "Updates disabled"
+ },
+ "copy_link_button": {
+  "copy_link": "Copy link",
+  "copied": "Copied",
+  "error_message": "Some error occurred",
+  "tooltip": {
+   "success": "Link copied!",
+   "success_environment": "Link copied with active environment!",
+   "copy_link": "Copy link to {entityName}",
+   "invite_to_WS_warning": "No one can access your personal workspace using this link unless you invite them.",
+   "invite_warning": "No one can access this {entityName} in your personal workspace using this link unless you invite them."
+  },
+  "popover": {
+   "primary_button_text": "Invite people"
+  },
+  "error": {
+   "toast_message": "Some error occurred while trying to copy the link!"
+  },
+  "entity_name_map": {
+   "workspace": "workspace",
+   "collection": "collection",
+   "folder": "folder",
+   "request": "request",
+   "api": "API",
+   "apiVersion": "version",
+   "environment": "environment",
+   "mock": "mock server",
+   "monitor": "monitor",
+   "documentation": "documentation",
+   "apiDefinition": "API Definition",
+   "example": "example",
+   "history": "history request",
+   "globals": "globals",
+   "pullRequest": "pull request",
+   "run": "run summary",
+   "flow": "flow",
+   "file": "file",
+   "schedule": "schedule",
+   "performanceRun": "report",
+   "insights": "insights"
+  },
+  "private_network_entity_name_map": {
+   "privateNetworkWorkspace": "workspace",
+   "privateNetworkAPI": "API",
+   "privateNetworkAPIDefinition": "definition",
+   "privateNetworkAPIFile": "file",
+   "privateNetworkCollection": "collection",
+   "privateNetworkFolder": "folder"
+  }
+ },
+ "fork_label": {
+  "forked_from": "Forked from:",
+  "missing_info_message": "You do not have access to this {sourceModel} or it has been deleted.",
+  "pull_changes": "Pull Changes",
+  "offline_tooltip": "You can take this action once you're back online.",
+  "pull_changes_message": "The original {model} has been updated. We recommend pulling the changes. Learn more about <1><0>pulling changes</0></1>"
+ },
+ "entity_meta_info": {
+  "id": {
+   "heading": "ID"
+  },
+  "copy_button": {
+   "tooltip": {
+    "success": "Copied"
+   },
+   "copy": "Copy {entityName} ID"
+  },
+  "created_by": {
+   "heading": "Created by",
+   "tooltip": {
+    "private": "This user profile is private"
+   },
+   "you": "You"
+  },
+  "created_at": {
+   "heading": "Created on"
+  },
+  "updated_at": {
+   "heading": "Last updated",
+   "current_user_value": " by <3><0><0>You</0></0></3>",
+   "other_user_value": " by <3><0><0>{name}</0></0></3>"
+  }
+ },
+ "entity_actions_dropdown": {
+  "button_tooltip": "View more actions"
+ },
+ "scripts_editor": {
+  "snippet_header": "Snippets",
+  "test_snippets_text": "<0>Test scripts are written in JavaScript, and are run after the response is received. Learn more about </0><1>test scripts</1>.",
+  "prerequest_snippets_text": "<0>Pre-request scripts are written in JavaScript, and are run before the request is sent. Learn more about </0><1>pre-request scripts</1>."
+ },
+ "empty_state": {
+  "primary_action": "Use Postman Desktop Agent",
+  "secondary_action": "Learn more about Postman Agents"
+ },
+ "unsaved_response_state": {
+  "title": "Response not stored",
+  "action_button": "Change setting"
+ },
+ "more_actions_menu": {
+  "tooltip": "View more actions",
+  "clear_response": {
+   "title": "Clear Response"
+  }
+ },
+ "rfa_guest_comments": {
+  "title": {
+   "req_pending": "Request for access is in review",
+   "default": "Use comments to collaborate with teammates"
+  },
+  "description": {
+   "req_pending": "Once approved, you can add comments and collaborate with teammates.",
+   "default": "Request additional access on this collection to add and reply to comments."
+  },
+  "button": "Request access",
+  "toast_error": "Could not create Request to comment"
+ },
+ "timeline_rich_inspector": {
+  "wrap_lines_tooltip": "Wrap lines",
+  "with_hex_dump": "Show Message",
+  "without_hex_dump": "Show Hexdump",
+  "search_button_tooltip": "Search"
+ },
+ "url_suggestions_popover_desc": "Explore {echoProtocol} with <1><0>Postman's echo service</0></1>",
+ "search_url_suggestions": {
+  "title": "From the Postman API Network",
+  "warning_modal": {
+   "title": "This request will overwrite the current tab",
+   "description": "Opening this request will overwrite the changes you've made in the current tab.",
+   "do_not_show_again": "Don't show this again",
+   "overwrite_option": "Overwrite Current Tab",
+   "open_new_tab_option": "Open in New Tab"
+  },
+  "success_modal": {
+   "description": "Request completed.",
+   "undo_cta": "Undo"
+  }
+ },
+ "item_view_header": {
+  "save_button": {
+   "save": "Save",
+   "save_as": "Save As...",
+   "save_tooltip": "Save {itemTitle}",
+   "save_as_tooltip": "Save {itemTitle} to a collection",
+   "saving": "Saving..."
+  },
+  "share_button": {
+   "label": "Share",
+   "tooltips": {
+    "no_edit_permission": "Only requests saved in a collection can be shared. You need edit access to save requests.",
+    "share_request": "Share request"
+   }
+  }
+ },
+ "default_tab_title": {
+  "prefix": {
+   "untitled": "Untitled",
+   "new": "New"
+  },
+  "fallback_type": "Request",
+  "untitled_request": "Untitled Request",
+  "new_request": "New Request"
+ },
+ "watchers_list": {
+  "error": {
+   "title": "Couldn't load watchers",
+   "subtitle": "Just a faulty wire. Try reloading the watchers.",
+   "reload": "Reload Watchers"
+  },
+  "title": {
+   "no_watchers": "No watchers",
+   "watchers": "{count, plural, =1 {# watcher} other {# watchers}}"
+  },
+  "subtitle": "People who watch this {model} will show up here.",
+  "private": {
+   "tooltip": "Watchers with accounts set to private are kept anonymous.",
+   "watchers": "{count, plural, =1 {# anonymous watcher} other {# anonymous watchers}}"
+  },
+  "current_user": "{name} (You)",
+  "pull_request": {
+   "preferences": {
+    "title": {
+     "pull_requests": "Watching pull request",
+     "not_watching": "Not watching",
+     "comments": "Watching out for comments",
+     "updates": "Watching out for updates"
+    }
+   },
+   "display_name": "pull request"
+  },
+  "collection": "collection",
+  "extensibleCollection": "Extensible Collection",
+  "api": "API",
+  "workspace": "Workspace"
+ },
+ "multi_select_entity": {
+  "all": "All {type}"
+ },
+ "live": {
+  "default-title": "Live",
+  "share-modal": {
+   "title": "Live Session",
+   "subtitle": "Collaborate with your teammates in real time.",
+   "start": "Start",
+   "end": "End",
+   "leave": "Leave",
+   "copy-link": "Copy Link",
+   "start-toast": {
+    "success": {
+     "title": "Live session started",
+     "description": "Session link copied to clipboard."
+    },
+    "error": {
+     "title": "Couldn't start live session",
+     "description": "Failed to start live collaboration session."
+    },
+    "disabled_error": {
+     "title": "Live Sessions is disabled",
+     "description": "Please contact the Team Admin to enable this feature"
+    }
+   }
+  },
+  "join-modal": {
+   "title": "Start building together in Live Sessions!",
+   "info-list": {
+    "info-item1": "Work side-by-side to debug requests instantly.",
+    "info-item2": "See the same response across collaborators.",
+    "info-item3": "See teammates’ changes as it happens live.",
+    "info-item4": "Move faster and build better APIs together."
+   }
+  },
+  "close-modal": {
+   "title": "Live session ended",
+   "description": "The host has ended the live session. All live tabs have been closed.",
+   "confirmation": "Close"
+  },
+  "status-popover": {
+   "title": "Live Session",
+   "you": "You",
+   "end": "End Session",
+   "leave": "Leave Session",
+   "copy-link": "Copy Live Link",
+   "copy-link-success": "Link copied"
+  },
+  "join-toast": "joined the live session.",
+  "send_button": {
+   "tooltips": {
+    "no_send_permission": "You are not allowed to perform this action."
+   }
+  }
+ }
+}

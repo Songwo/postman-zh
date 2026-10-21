@@ -1,0 +1,197 @@
+{
+ "metadata": {
+  "title": "Workspaces"
+ },
+ "squad_workspaces_page": {
+  "back_to_all_teams": "All teams",
+  "back_to_all_teams_accessible_name": "Back to all teams",
+  "breadcrumb_teams_label": "Teams",
+  "breadcrumb_aria": "Teams navigation",
+  "breadcrumb_unknown_team": "Team"
+ },
+ "heading": {
+  "team": "Workspaces",
+  "personal": "Your workspaces"
+ },
+ "description": {
+  "team": "A directory of all workspaces in {teamName}.",
+  "personal": "A directory of your workspaces.",
+  "team_with_access": "A directory of all workspaces in {teamName} you can access."
+ },
+ "go_back": "Go back",
+ "pending_requests_breadcrumb": {
+  "first_breadcrumb_item_label": "All",
+  "project_workspaces_tab_label": "Project workspaces",
+  "second_breadcrumb_item_label": "External",
+  "third_breadcrumb_item_label": "Pending requests",
+  "archived_workspaces_tab_label": "Archived",
+  "inactive_workspaces_tab_label": "Inactive workspaces"
+ },
+ "create_workspace_button_text": "Create workspace",
+ "manage_teams_button_text": "Manage teams",
+ "filters": {
+  "search_workspaces_placeholder": "Search workspaces...",
+  "filter_by_visibility_dropdown": {
+   "placeholder": "Access type",
+   "label": "Filter by visibility",
+   "options": {
+    "all": {
+     "value": "All workspaces"
+    },
+    "personal": {
+     "value": "Personal",
+     "description": "Only the creator",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "team": {
+     "value": "Team",
+     "description_team_user": "Everyone in {teamName} team",
+     "description_non_team_user": "Everyone from your team",
+     "workspace_type": "Internal",
+     "workspace_access": "Everyone in your team"
+    },
+    "private": {
+     "value": "Private",
+     "description": "Only invited team members",
+     "workspace_type": "Internal",
+     "workspace_access": "Only you and invited people"
+    },
+    "partner": {
+     "value": "Partner",
+     "description": "Only invited members & partners",
+     "workspace_type": "Partner",
+     "workspace_access": "Only invited partners"
+    },
+    "public": {
+     "value": "Public",
+     "description": "Anyone on the internet",
+     "workspace_type": "Public",
+     "workspace_access": "Anyone on the internet"
+    }
+   }
+  },
+  "filter_by_owner_dropdown": {
+   "placeholder": "Created by",
+   "empty_state_message": "No users found",
+   "selected_user_label": "{userCount, plural, one {# user} other {# users}}"
+  },
+  "filter_by_workspace_access": {
+   "placeholder": "Access",
+   "options": {
+    "invited_people": "Only you and invited people",
+    "team": "Everyone in your team",
+    "partner": "Only invited partners",
+    "public": "Anyone on the internet"
+   }
+  }
+ },
+ "table": {
+  "caption": "Workspaces table",
+  "row_aria_label": "Open workspace",
+  "favorite_button_aria_label": "{action} {workspaceName}",
+  "column_headers": {
+   "first_column_header": "Workspace name",
+   "second_column_header": "Created by",
+   "third_column_header": "Who can access?",
+   "fourth_column_header": "Last updated",
+   "workspace_type": "Type",
+   "workspace_access": "Access",
+   "workspace_name": "Name",
+   "actions": "Actions"
+  },
+  "sharedpw_column_headers": {
+   "first_column_header": "Workspace name",
+   "second_column_header": "Created by",
+   "third_column_header": "Owned By",
+   "fourth_column_header": "Last updated",
+   "workspace_type": "Type",
+   "workspace_access": "Access",
+   "workspace_name": "Name"
+  }
+ },
+ "banner": {
+  "personal_workspaces_banner": "You can only view personal workspaces you created.",
+  "super_admin_banner": "As a super admin, you can see all personal workspaces created in your team.",
+  "simplified_super_admin_banner": "As a Super Admin, you can view all workspaces created in your team."
+ },
+ "pending_request_item": {
+  "request_message_former_users": "A former team member has requested to make this a {transitionVisibility} workspace",
+  "request_message_current_users": "is requesting to make this a {transitionVisibility} workspace",
+  "request_message_org_former_users": "A former team member has requested to share this workspace with everyone in your organization",
+  "request_message_org_current_users": "is requesting to share this workspace with everyone in your organization",
+  "no_resources_added": "No resources added yet",
+  "last_updated": "Last updated:",
+  "approve": "Approve",
+  "deny": "Deny",
+  "collection": "{count, plural, one {# collection} other {# collections}}",
+  "environment": "{count, plural, one {# environment} other {# environments}}",
+  "api": "{count, plural, one {# API} other {# APIs}}",
+  "requester_self": "You",
+  "team_public_profile_modal_description": "Before your team's profile can be made public, update your team domain and make sure it's eligible for public visibility. Your team domain helps identify your team on Postman.",
+  "team_public_profile_modal_cta": "Continue"
+ },
+ "toast_approve_success": "Request approved",
+ "toast_deny_success": "Request denied",
+ "archived_tab": {
+  "bulk_selection": {
+   "text": "{count} workspaces selected",
+   "restore_button_text": "Restore",
+   "delete_button_text": "Delete"
+  },
+  "empty_state": {
+   "title": "You have no archived workspaces",
+   "description": "Archive workspaces to reduce clutter. You can restore them anytime."
+  },
+  "table": {
+   "column_headers": {
+    "workspace_name": "Workspace name",
+    "archived_on": "Archived On",
+    "archived_by": "Archived by",
+    "actions": "Actions"
+   },
+   "menu_button": {
+    "restore": {
+     "text": "Restore",
+     "tooltip": "Restore workspace"
+    },
+    "delete": {
+     "text": "Delete",
+     "tooltip": "Delete workspace"
+    }
+   }
+  },
+  "toasts": {
+   "bulk_restore": {
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to restore {count} workspaces",
+    "success_description": "{count} workspaces restored"
+   },
+   "bulk_delete": {
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to delete {count} workspaces",
+    "success_description": "{count} workspaces deleted"
+   },
+   "restore": {
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to restore workspace",
+    "success_description": "Workspace restored"
+   },
+   "delete": {
+    "failure_description": "Just a faulty wire. Please try again.",
+    "failure_title": "Unable to delete workspace",
+    "success_description": "Workspace deleted"
+   }
+  }
+ },
+ "tidy_inactive_workspaces_nudge": "<0>Tidy up?</0> <1>Archive</1> <2>inactive workspaces.</2>",
+ "pending_requests_empty": {
+  "title": "No pending requests for review",
+  "description": "When a teammate wants to share their workspace with wider audiences, their requests can be reviewed here."
+ },
+ "pending_requests_error": {
+  "title": "Failed to load pending requests",
+  "description": "Something went wrong while loading the pending requests. Please try again.",
+  "retry": "Try again"
+ }
+}

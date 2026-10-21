@@ -1,0 +1,4 @@
+{
+ "avg_across_projects": "Avg across {count, plural, one {# project} other {# projects}}",
+ "traffic_weighted_avg": "Traffic-weighted avg across {trafficCount} of {count, plural, one {# project} other {# projects}}"
+}

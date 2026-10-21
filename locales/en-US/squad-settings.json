@@ -1,0 +1,389 @@
+{
+ "orgs_disabled": {
+  "title": "Feature not enabled",
+  "description": "This feature not enabled for your organization. Please contact support for more information."
+ },
+ "list": {
+  "title": "Teams",
+  "create_squad": "Create team",
+  "error": "Something went wrong.",
+  "error_description": "We couldn't load the teams. Please try again later.",
+  "error_action": "Retry",
+  "no_squads": {
+   "title": "Create your first team",
+   "description": "Teams help organize people and workspaces for focused collaboration."
+  },
+  "no_permission": {
+   "title": "You don't have permission to view this page."
+  },
+  "create_squad_not_allowed": "You don't have permission to create teams",
+  "tabs": {
+   "your_squads": "Your teams",
+   "other_squads": "Other teams"
+  },
+  "your_squads": {
+   "empty": {
+    "title": "You're not a member of any teams yet",
+    "description": "Join a team or create one to start collaborating."
+   }
+  },
+  "other_squads": {
+   "empty": {
+    "title": "No teams found",
+    "description": "There are no teams available to join at this time."
+   }
+  },
+  "filter": {
+   "by_name": "Search teams",
+   "by_access": {
+    "title": "Access",
+    "open": "No approval required",
+    "restricted": "Members require approval",
+    "closed": "Everyone requires approval",
+    "selected_option_label": "{count} access types"
+   },
+   "by_role": {
+    "title": "Role",
+    "member": "Member",
+    "collaborator": "Collaborator",
+    "manager": "Manager",
+    "none": "No role",
+    "selected_option_label": "{count} roles"
+   },
+   "no_results": {
+    "title": "No teams found",
+    "description": "You may want to try using different name or adjusting the filters."
+   }
+  },
+  "table": {
+   "heading": {
+    "squad_name": "Name",
+    "users_and_groups": "Users and Groups"
+   },
+   "tooltip": {
+    "member_details": "Users ({userCount}) and Groups ({groupCount})",
+    "error": "Failed to load details"
+   },
+   "joined_as": {
+    "manager": "Manager  ·  @{handle}",
+    "member": "Member  ·  @{handle}",
+    "guest": "Collaborator ·  @{handle}"
+   },
+   "access": {
+    "open_for_collaborators": "Team Manager approval is required to join this team as a member.",
+    "close": "Team Manager approval is required to join or collaborate with this team.",
+    "closed": "Everyone requires approval",
+    "open": "No approval required",
+    "restricted": "Members require approval"
+   }
+  },
+  "menu": {
+   "add_members": "Add members",
+   "manage": "Manage team",
+   "join": "Join",
+   "request_to_join": "Request to join",
+   "leave": "Leave",
+   "rename": "Rename",
+   "toast": {
+    "join": {
+     "error_title": "Something went wrong.",
+     "error_description": "Please try again later.",
+     "success_title": "You've joined the team!",
+     "success_description": "You're now a member of {squad_name}. Start collaborating!",
+     "request_sent_title": "Request sent",
+     "request_sent_description": "We'll notify you once a team manager approves your request.",
+     "rfa_exists_title": "Request is pending",
+     "rfa_exists_description": "We'll notify you once a team manager approves your request."
+    }
+   }
+  }
+ },
+ "modals": {
+  "rename_squad": {
+   "title": "Rename a team",
+   "action": "Save",
+   "toast": {
+    "error": "Something went wrong."
+   }
+  },
+  "delete_squad": {
+   "title": "Delete team?",
+   "description": "The team \"{name}\" will be permanently deleted. This action can't be undone.",
+   "action": "Delete Team",
+   "cancel": "Cancel",
+   "toast": {
+    "error": "Error deleting team. Please try again.",
+    "no_permission": "You do not have permission to delete this team.",
+    "has_workspaces": "Team cannot be deleted as there are workspaces associated with it."
+   }
+  },
+  "create_squad": {
+   "title": "Create a new team",
+   "name": "Name",
+   "create": "Create team",
+   "name_placeholder": "e.g. API builders",
+   "handle_info": "Team handle will be auto-generated.",
+   "handle_generated": "Tag your team on conversations using @{handle}",
+   "name_validation_error": "Only letters, numbers and spaces are allowed",
+   "duplicate_name_error": "This team already exists. Try a different name.",
+   "toast": {
+    "success": "Team created",
+    "error": "Failed to create team"
+   }
+  },
+  "add_members": {
+   "title": "Add members to \"{squadName}\"",
+   "search_placeholder": "Search people or groups in your organization…",
+   "already_added": "Already a member",
+   "already_a_guest": "Already a guest",
+   "group_members": "{membersCount, plural, one {1 member} other {# members}}",
+   "add": "Add",
+   "request_to_add": "Request to Add",
+   "success": "{count} member added",
+   "success_plural": "{count} members added",
+   "request_to_add_success": "Request sent",
+   "request_to_add_success_description": "We'll notify you once a team manager approves your request.",
+   "error": "Something went wrong",
+   "search_empty": "Only people from \"{teamName}\" organization can be added as members to a team.",
+   "request_to_add_banner": "Team manager approval is required to add members to this team.",
+   "all_members_access_banner": "This Team is configured so that all Organization users are members of this Team.",
+   "all_members_access_banner_collaborator": "This Team is configured so that all Organization users are collaborators of this Team.",
+   "group_access_banner": "{userName} already has {role} access due to {groupCount, plural, one {Group} other {Groups}}: {groupNames}",
+   "radio_group": {
+    "title": "Role",
+    "developer": "Developer",
+    "developer_description": "Can edit all resources in the team.",
+    "manager": "Manager",
+    "manager_description": "Can edit all resources in the team and manage members."
+   },
+   "role_label": {
+    "developer": "Developer",
+    "manager": "Manager"
+   }
+  },
+  "convert_to_member": {
+   "title": "Convert Collaborator to Member?",
+   "description_user": "<text>As a Member, <bold>{name} ({email})</bold> will have edit access to all team resources. They will be able to:</text>",
+   "description_group": "<text>As Members, everyone in <bold>{name}</bold> group will have edit access to all team resources. They will be able to:</text>",
+   "description_team": "<text>As Members, everyone in <bold>{name}</bold> organization will have edit access to all team resources. They will be able to:</text>",
+   "bullet_points": {
+    "one": "Create workspaces and collaborate with team members",
+    "two": "Discover all APIs",
+    "three": "Fork, comment and watch collections"
+   },
+   "error_title": "Could't change membership",
+   "error_description": "Please try again or contact support if the issue persists.",
+   "confirm": "Convert to Member",
+   "cancel": "Cancel"
+  },
+  "remove_member": {
+   "title": "Remove \"{memberName}\" from this team",
+   "title_self": "Leave \"{squadName}\" team?",
+   "description": "They will lose access to all team resources immediately.",
+   "description_self": "You will lose access to all team resources immediately.",
+   "remove": "Remove",
+   "leave": "Leave Team",
+   "cancel": "Cancel",
+   "error": "Something went wrong",
+   "all_members_access_banner": "This Team is configured so that all Organization users are members of this Team.",
+   "all_members_access_banner_collaborator": "This Team is configured so that all Organization users are collaborators of this Team.",
+   "group_access_banner": "This user still has {role} access due to {groupCount, plural, one {Group} other {Groups}}: {groupNames}"
+  }
+ },
+ "manage": {
+  "back_to_squads": "All teams",
+  "breadcrumb_aria_label": "Team details breadcrumb",
+  "add_members": "Add members",
+  "created_by": "Created by:",
+  "join": "Join Team",
+  "request_access": "Request to Join Team",
+  "add_member_not_allowed": "Only team members can add new members.",
+  "filter": {
+   "search": "Search by name or email",
+   "membership": {
+    "placeholder": "Membership",
+    "member": "Member",
+    "guest": "Collaborator",
+    "external_guest": "Guest",
+    "external_partner": "Partner",
+    "selected_option_label": "{count} memberships"
+   },
+   "membership_type": {
+    "placeholder": "Role",
+    "developer": "Developer",
+    "manager": "Manager",
+    "viewer": "Viewer",
+    "selected_option_label": "{count} roles"
+   }
+  },
+  "tabs": {
+   "members": "Users ({userCount}) and Groups ({groupCount})",
+   "members_and_guests": "Members ({memberCount}) & Guests ({guestCount})",
+   "guests": "Guests",
+   "workspaces": "Workspaces",
+   "settings": "Settings",
+   "pending_requests": "Pending requests"
+  },
+  "workspaces_tab": {
+   "search_limit": "Showing the first 500 results. Refine your search to find more."
+  },
+  "blank_state": {
+   "title": "Team not found",
+   "description": "We couldn't find the team you were looking for.",
+   "action": "Go back to teams"
+  },
+  "unauthorized_state": {
+   "title": "You don't have access",
+   "description": "Only team members can view this page.",
+   "request_raised": "You have already requested to join this team. You'll automatically join once approved."
+  },
+  "toast": {
+   "join": {
+    "error_title": "Something went wrong.",
+    "error_description": "Please try again later.",
+    "request_sent_title": "Request sent",
+    "request_sent_description": "We'll notify you once a team manager approves your request.",
+    "rfa_exists_title": "Request is pending",
+    "rfa_exists_description": "We'll notify you once a team manager approves your request."
+   }
+  },
+  "menu": {
+   "rename": "Rename",
+   "rename_disabled_tooltip": "You don't have permission to rename this team.",
+   "delete": "Delete",
+   "delete_disabled_tooltip": "You don't have permission to delete this team.",
+   "delete_has_workspaces_tooltip": "You need to remove all workspaces from this team before deleting it."
+  },
+  "members": {
+   "table": {
+    "heading": {
+     "name": "Name",
+     "membership": "Membership",
+     "role": "Role"
+    },
+    "empty_state": {
+     "title": "Looks a bit lonely in here",
+     "description": "Start adding members to your team"
+    },
+    "no_result": {
+     "title": "No Results Found",
+     "description": "No results found for the selected filters."
+    },
+    "member": "Member",
+    "guest": "Collaborator",
+    "self": "{name} (You)",
+    "remove_tooltip": "Remove from this team",
+    "leave_tooltip": "Leave this team",
+    "membership": {
+     "convert": "Convert to Member",
+     "member": "Member",
+     "guest": "Collaborator",
+     "external_guest": "Guest",
+     "external_partner": "Partner"
+    },
+    "roles": {
+     "label": "Select a role",
+     "success": "Role updated successfully",
+     "request_sent": "Request sent to update role",
+     "error": "Something went wrong",
+     "developer": "Developer",
+     "manager": "Manager",
+     "viewer": "Viewer",
+     "partner": "Partner"
+    }
+   },
+   "org_members": "Organization ({membersCount, plural, one {1 member} other {# members}})",
+   "group_members": "Group ({membersCount, plural, one {1 member} other {# members}})",
+   "squad_members": "Team ({membersCount, plural, one {1 member} other {# members}})",
+   "pending_upgrade": "Review request to update role"
+  },
+  "guests": {
+   "table": {
+    "empty_state": {
+     "title": "Looks a bit lonely in here",
+     "description": "Start adding guests to your team"
+    }
+   }
+  },
+  "pending_requests": {
+   "header": {
+    "add_member": "Request to add member",
+    "add_collaborator": "Request to add collaborator",
+    "update_role": "Update {membership} role from {from} to {to}",
+    "join_squad": "Request to join team",
+    "suggested_by": "Suggested by {name}"
+   },
+   "action": {
+    "approve": "Approve",
+    "deny": "Deny"
+   },
+   "status": {
+    "approved": "Approved",
+    "denied": "Denied"
+   },
+   "membership": {
+    "title": "Membership",
+    "member": "Member",
+    "guest": "Collaborator"
+   },
+   "role": {
+    "title": "Role",
+    "developer": "Developer",
+    "viewer": "Viewer",
+    "manager": "Manager"
+   },
+   "role_lower": {
+    "developer": "developer",
+    "viewer": "viewer",
+    "manager": "manager"
+   },
+   "error": {
+    "approve": {
+     "description": "Failed to approve the request. Please try again later."
+    },
+    "deny": {
+     "description": "Failed to deny the request. Please try again later."
+    }
+   },
+   "empty_state": {
+    "title": "No pending requests",
+    "description": "We'll notify you once someone requests to join, adds a member or updates roles in this team."
+   },
+   "unauthorized_state": {
+    "title": "You don't have access",
+    "description": "Only team managers can view pending requests."
+   },
+   "error_state": {
+    "title": "Something went wrong",
+    "description": "We couldn't load the pending requests. Please try again later."
+   }
+  },
+  "error_state": {
+   "title": "Something went wrong",
+   "description": "We couldn't load the team. Please try again later.",
+   "action": "Go back to teams"
+  },
+  "settings": {
+   "title": "Set restrictions to add people",
+   "all_members_access": "All members of the Organization are automatically members of this team",
+   "all_members_access_description": "Anyone joining this organization as a developer will be a member of this team.",
+   "add_member_rfa": "New team members must be approved",
+   "add_member_rfa_description": "When enabled, managers must approve team members before they're added.",
+   "add_guest_rfa": "New collaborators must be approved",
+   "add_guest_rfa_description": "When enabled, managers must approve collaborators before they're added.",
+   "no_permission_tooltip": "You don't have permission to perform this action.",
+   "all_members_access_blocked_org_is_guest": "Organization is already a guest on this team. Remove first to add as a member.",
+   "unauthorized_state": {
+    "title": "You don't have access",
+    "description": "Only team managers can view and edit team settings."
+   },
+   "error_state": {
+    "title": "Something went wrong",
+    "description": "We couldn't load the team settings. Please try again later."
+   },
+   "toast": {
+    "error": "Something went wrong."
+   }
+  }
+ }
+}

@@ -1,0 +1,83 @@
+{
+ "token_manager": {
+  "loading_state": "Loading connected accounts...",
+  "error_state": {
+   "title": "Something went wrong",
+   "desc": "Unable to fetch connected accounts, please try again later."
+  },
+  "empty_state": {
+   "title": "No accounts connected yet",
+   "desc": "Once you connect your accounts to an API, they will appear here."
+  },
+  "settings_modal": {
+   "page_heading": "Connected accounts",
+   "third_party_accounts_heading": "Manage third-party accounts"
+  },
+  "default_error": "Something went wrong. Please try again.",
+  "delete_auth_instance_error": "Couldn't delete the account, try again.",
+  "auth_instance_not_valid_error": "No connected accounts support for the service you are looking for."
+ },
+ "token_table": {
+  "service": {
+   "github": "GitHub",
+   "githubapp": "Postman GitHub App",
+   "bitbucket": "Bitbucket",
+   "gitlab": "GitLab",
+   "azure": "Azure",
+   "apm_new_relic": {
+    "label": "New Relic",
+    "error_msg": "Please provide a valid API key."
+   }
+  },
+  "table_header": {
+   "service": "Service",
+   "authorized_as": "Authorized as"
+  },
+  "row_actions": {
+   "disabled_action_tooltip": "Only team admin can perform this action",
+   "delete_authentication_tooltip": "Delete authentication",
+   "edit_authentication_tooltip": "Edit authentication"
+  },
+  "error_message": {
+   "invalid_token": "Please provide a valid token.",
+   "server_unreachable": "We could not reach your servers to validate the token.",
+   "updating_auth": "Something went wrong while updating the auth."
+  },
+  "edit_mode": {
+   "save_button_label": "Save",
+   "cancel_button_label": "Cancel"
+  },
+  "delete_confirmation": {
+   "heading": "Delete authentication?",
+   "desc": "All APIs using this account will need to be re-authenticated to continue contributing.",
+   "delete_button_label": "Delete Authentication",
+   "cancel_button_label": "Cancel"
+  }
+ },
+ "context_bar": {
+  "integration_context_bar_list": {
+   "title": "Integrations",
+   "offline_state": "You seem to be offline",
+   "error_state": "Unable to fetch integrations",
+   "content": {
+    "browse_integrations": "Browse integrations"
+   }
+  },
+  "view_config": {
+   "collection_backup": {
+    "header": "Back up your collection",
+    "footer": "View all options"
+   }
+  }
+ },
+ "service_details": {
+  "install_github_app_helper_text": "If you don't see your organization, you may need to <Link><Text>install the Postman app</Text></Link> on your personal account or organization."
+ },
+ "wiz_disconnect_modal": {
+  "heading": "Disconnect Wiz?",
+  "body_primary": "Disconnecting will permanently delete the team's stored security posture and related findings.",
+  "body_secondary": "This cannot be undone. Reconnecting will start a fresh security scan.",
+  "cancel": "Cancel",
+  "confirm": "Disconnect Wiz"
+ }
+}

@@ -1,0 +1,315 @@
+{
+ "errors": {
+  "generic": ":(",
+  "label": "Errors",
+  "desktop_agent_not_ready": "Desktop agent is not ready",
+  "desktop_agent_not_supported": "Desktop agent is not supported",
+  "desktop_agent_not_connected": "Desktop agent is not connected",
+  "connection_failed": "Couldn't run the request: ",
+  "unable_to_connect": "Unable to connect",
+  "stateless_protocol_not_supported": {
+   "switch_to_compatible_version": "This server doesn't support MCP 2026-07-28. Reset the protocol version to automatic or pin legacy, then connect again."
+  }
+ },
+ "address_bar": {
+  "url_input": {
+   "placeholder": "Enter URL or paste JSON config"
+  },
+  "command_input": {
+   "placeholder": "Enter command or paste JSON config"
+  },
+  "args_input": {
+   "placeholder": "Enter arguments"
+  },
+  "transport_switcher": {
+   "tooltip": "Transport Layer",
+   "aria_label": "Select transport protocol"
+  }
+ },
+ "constants": {
+  "run": "Run",
+  "cancel": "Cancel",
+  "disconnect": "Disconnect",
+  "connect": "Connect",
+  "clear_errors": "Clear Errors"
+ },
+ "settings": {
+  "editing_disabled_tooltip": "Setting cannot be edited while client is connected.",
+  "restore_default_button": "Restore default",
+  "restore_default_tooltip": "Restore setting to its default value ({defaultValue})",
+  "toggle": {
+   "active_label": "On",
+   "inactive_label": "Off"
+  },
+  "protocol": {
+   "title": "MCP protocol version",
+   "description": "Select the MCP protocol version to use when sending the request. Auto negotiates a compatible version with the server.",
+   "aria_label": "Select MCP protocol version",
+   "editing_disabled_tooltip": "The protocol version is read-only while connected",
+   "options": {
+    "auto": "Auto",
+    "legacy": "Legacy",
+    "current": "2026-07-28"
+   }
+  },
+  "strict_ssl": {
+   "title": "Strict SSL",
+   "description": "Enable strict SSL certificate validation."
+  },
+  "request_timeout": {
+   "title": "Request Timeout",
+   "description": "Timeout for requests in milliseconds. Setting this to 0 will disable the timeout."
+  },
+  "session_timeout": {
+   "title": "Session Timeout",
+   "description": "Timeout for sessions in milliseconds."
+  }
+ },
+ "elicitation": {
+  "actions": {
+   "accept": "Accept",
+   "deny": "Deny",
+   "cancel": "Cancel"
+  },
+  "url": {
+   "instructions": "Open the URL to complete the requested action, then return to Postman and select Accept."
+  },
+  "errors": {
+   "data_missing": "Invalid elicitation request: data is missing.",
+   "schema_or_url_missing": "Invalid elicitation request: the schema or URL is missing."
+  }
+ },
+ "cartographer": {
+  "empty_state": {
+   "description": "Enter a URL or command to load supported tools, prompts, and resources from the service.",
+   "cta": "Load capabilities"
+  }
+ },
+ "connect_button": {
+  "tooltip": {
+   "no_permission": "You don't have permission to perform this action in this workspace."
+  }
+ },
+ "oauth_debugger": {
+  "actions": {
+   "debug": "Debug"
+  },
+  "auth_banner": {
+   "status": {
+    "fetching_config": "Fetching OAuth 2.0 configuration...",
+    "authorize_with_received_config": "Authorize this connection with OAuth 2.0.",
+    "authorizing": "Authorizing...",
+    "authorized": "Authorized with OAuth 2.0."
+   },
+   "actions": {
+    "authorize": "Authorize",
+    "cancel": "Cancel",
+    "expand_config": "Show received OAuth config",
+    "collapse_config": "Hide received OAuth config"
+   }
+  },
+  "sections": {
+   "headers": "Headers",
+   "body": "Body",
+   "details": "Details",
+   "no_content": "No content"
+  },
+  "sensitive_value": {
+   "reveal": "Reveal",
+   "hide": "Hide",
+   "copy": "Copy value"
+  },
+  "test": {
+   "empty_state": "Click 'Continue' to run through the steps one at a time",
+   "step_list_aria_label": "Auth test steps",
+   "actions": {
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "flow_complete": "Flow Complete"
+   },
+   "exchange": {
+    "request": "Request:",
+    "received_response": "Received response"
+   },
+   "logs": {
+    "get_url": "GET {url}",
+    "request_without_token": {
+     "title": "Send request without token",
+     "message": "POST initialize without an OAuth access token.",
+     "response_title": "Received response"
+    },
+    "request_resource_metadata": {
+     "title": "Request resource metadata",
+     "response_title": "Received resource metadata"
+    },
+    "parsed_resource_metadata": {
+     "title": "Parsed resource metadata",
+     "message": "Parsed protected resource metadata."
+    },
+    "request_authorization_server_metadata": {
+     "title": "Request authorization server metadata",
+     "response_title": "Received server metadata"
+    },
+    "parsed_authorization_server_metadata": {
+     "title": "Parsed server metadata",
+     "message": "Parsed authorization server metadata."
+    },
+    "client_registration_resolved": {
+     "title": "Client registration resolved",
+     "client_id_metadata_document_message": "Using configured Client ID Metadata Document URL.",
+     "pre_registered_message": "Using configured pre-registered client ID."
+    },
+    "request_client_registration": {
+     "title": "Request client registration",
+     "message": "Registering a dynamic OAuth client.",
+     "success_message": "Registered a dynamic OAuth client."
+    },
+    "generate_pkce_parameters": {
+     "title": "Generate PKCE parameters",
+     "message": "PKCE S256 is supported. The authorization request will include code_verifier and code_challenge parameters."
+    },
+    "authorize_request": {
+     "title": "Authorize request",
+     "message": "Opening the authorization URL and waiting for the callback.",
+     "success_message": "Authorization callback completed."
+    },
+    "get_access_token": {
+     "title": "Get access token",
+     "message": "The authorization code was exchanged at the token endpoint. The OAuth manager does not expose the raw token exchange headers, so sensitive fields are summarized."
+    },
+    "persist_access_token": {
+     "title": "Persist access token",
+     "message": "Persisting the returned token to this MCP request auth session.",
+     "success_message": "The MCP request auth session now references the OAuth token."
+    },
+    "authenticated_request": {
+     "title": "Authenticated Request",
+     "message": "Reconnecting the MCP server with the OAuth access token from this flow.",
+     "success_message": "The server connected successfully with the OAuth token."
+    },
+    "step_failed": {
+     "title": "Step failed"
+    },
+    "step_cancelled": {
+     "title": "Step canceled",
+     "message": "The current auth test step was canceled."
+    }
+   },
+   "errors": {
+    "expected_401": "Expected unauthenticated MCP request to return 401, received {status}",
+    "resource_metadata_http_failed": "Protected resource metadata request failed with HTTP {status}",
+    "resource_metadata_unavailable": "Unable to fetch protected resource metadata",
+    "resource_metadata_not_json": "Protected Resource Metadata response is not a JSON object",
+    "authorization_server_missing": "Protected resource metadata did not advertise an authorization server",
+    "authorization_server_metadata_http_failed": "Authorization server metadata request failed with HTTP {status}",
+    "authorization_server_metadata_unavailable": "Unable to fetch authorization server metadata",
+    "authorization_server_metadata_not_json": "Authorization Server Metadata response is not a JSON object",
+    "metadata_required": "Complete OAuth metadata discovery before resolving client credentials",
+    "dynamic_client_registration_invalid": "Complete the dynamic client registration form before registering the client",
+    "dynamic_client_registration_http_failed": "Dynamic client registration failed with HTTP {status}",
+    "dynamic_client_registration_not_json": "Dynamic client registration response is not a JSON object",
+    "dynamic_client_registration_unsupported": "Authorization server does not support dynamic registration; configure a client ID manually",
+    "client_id_missing": "OAuth client credentials are missing client_id",
+    "pkce_metadata_required": "Authorization server metadata is required before PKCE validation",
+    "pkce_s256_required": "Authorization server metadata must advertise S256 PKCE support",
+    "client_credentials_required": "Resolve OAuth client credentials before authorization",
+    "authorization_token_missing": "OAuth authorization did not return a token",
+    "authorization_required": "Complete authorization before getting an access token",
+    "oauth_token_required": "Save an OAuth token before connecting the MCP server",
+    "step_cancelled": "Auth test step canceled"
+   },
+   "registration_form": {
+    "title": "Client registration request",
+    "comma_or_line_separated": "Comma or line-separated values",
+    "advanced_options": "Advanced options",
+    "client_name": {
+     "label": "Client name",
+     "required": "Enter a client name"
+    },
+    "grant_types": {
+     "label": "Grant types",
+     "required": "Enter at least one grant type"
+    },
+    "response_types": {
+     "label": "Response types",
+     "required": "Enter at least one response type"
+    },
+    "token_endpoint_auth_method": {
+     "label": "Token endpoint auth method"
+    },
+    "scope": {
+     "label": "Scope",
+     "helper": "Space-separated list of scopes your client may request",
+     "options_label": "Supported scopes"
+    }
+   },
+   "steps": {
+    "request_without_token": {
+     "label": "Send request without token",
+     "description": "Send an unauthenticated MCP initialize request to observe the OAuth challenge."
+    },
+    "request_resource_metadata": {
+     "label": "Request resource metadata",
+     "description": "Request RFC 9728 OAuth protected resource metadata."
+    },
+    "request_authorization_server_metadata": {
+     "label": "Request authorization server metadata",
+     "description": "Request OAuth authorization server metadata."
+    },
+    "request_client_registration": {
+     "label": "Request client registration",
+     "description": "Resolve configured credentials or request dynamic client registration."
+    },
+    "generate_pkce_parameters": {
+     "label": "Generate PKCE parameters",
+     "description": "Confirm PKCE S256 support before opening the authorization request."
+    },
+    "authorize_request": {
+     "label": "Authorize request",
+     "description": "Open the browser authorization URL and wait for the callback."
+    },
+    "get_access_token": {
+     "label": "Get access token",
+     "description": "Exchange the authorization code and persist the token."
+    },
+    "authenticated_request": {
+     "label": "Authenticated Request",
+     "description": "Reconnect the MCP request with the OAuth access token."
+    }
+   }
+  },
+  "config": {
+   "actions": {
+    "copy": "Copy value"
+   },
+   "sections": {
+    "endpoints": "Endpoints",
+    "capabilities": "Capabilities"
+   },
+   "endpoints": {
+    "issuer": "Issuer",
+    "authorization_endpoint": "Authorization Endpoint",
+    "token_endpoint": "Token Endpoint",
+    "registration_endpoint": "Registration Endpoint",
+    "resource_server": "Resource Server"
+   },
+   "capabilities": {
+    "pkce": "PKCE",
+    "dynamic_registration": "Dynamic Registration",
+    "client_id_metadata_doc": "Client ID Metadata Doc"
+   },
+   "metadata": {
+    "grant_types_supported": "Grant Types Supported",
+    "response_types_supported": "Response Types Supported",
+    "code_challenge_methods": "Code Challenge Methods",
+    "token_endpoint_auth_methods": "Token Endpoint Auth Methods"
+   },
+   "status": {
+    "supported": "Supported",
+    "not_supported": "Not Supported",
+    "unavailable": "Unavailable"
+   }
+  }
+ }
+}

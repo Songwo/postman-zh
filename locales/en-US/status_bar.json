@@ -1,0 +1,359 @@
+{
+ "library": {
+  "label": "Library"
+ },
+ "help": {
+  "aria_label": "Help menu",
+  "getting_started": "Getting Started",
+  "quick_start": "Quickstart guide",
+  "community": "Community",
+  "documentation": "Documentation",
+  "keyboard_shortcuts": "Keyboard Shortcuts",
+  "release_notes": "Release Notes",
+  "security": "Security",
+  "support": "Support"
+ },
+ "pane_view": {
+  "label": "Two-pane response view",
+  "single_pane_view": "Single pane view",
+  "two_pane_view": "Two pane view"
+ },
+ "trash": {
+  "error_tooltip": "You need to be online to view the contents of the trash.",
+  "label": "Trash",
+  "normal_tooltip": "Trash"
+ },
+ "copyright": {
+  "terms": "Terms",
+  "privacy": "Privacy"
+ },
+ "runner": {
+  "error_tooltip": "You need to be online to view runner",
+  "label": "Runner",
+  "normal_tooltip": "Runner"
+ },
+ "simulator": {
+  "label": "Simulator"
+ },
+ "simulator_indicator": {
+  "label": "Simulator ({count})",
+  "tooltip": "{count, plural, =1 {# mock server running} other {# mock servers running}}"
+ },
+ "cookies": {
+  "label": "Cookies",
+  "feature_title": "'A new way to auto-sync cookies'",
+  "feature_desc": "Auto sync cookies from your browser or app to Postman cookie jar via Postman Proxy or Interceptor. <1><0>Learn More.</0></1>",
+  "button_label": "Got it"
+ },
+ "vault": {
+  "label": "Vault",
+  "adoption_popup": {
+   "title": "Keeping your secrets safe got easier",
+   "description": "Try vault to store secrets locally, encrypted, and use them in requests, test scripts, authorizations, environments, etc."
+  },
+  "local": {
+   "label": "Local Vault"
+  },
+  "shared": {
+   "label": "Shared Vault"
+  },
+  "passport_secrets": {
+   "label": "Passport secrets"
+  }
+ },
+ "agent_selection": {
+  "auto_agent_label": "Auto-select agent",
+  "popover": {
+   "heading": "Select Postman Agent",
+   "auto_select_heading": "Auto-select",
+   "auto_select_desc": "Postman will automatically select the best agent for your request.",
+   "cloud_agent": {
+    "label": "Cloud Agent",
+    "desc": "Send HTTP requests via Postman’s secure cloud servers."
+   },
+   "desktop_agent": {
+    "label": "Desktop Agent",
+    "desc": "Send requests via the locally running Postman Desktop Agent. <1>Learn more</1>.",
+    "unsupported_label": "Desktop Agent (Unsupported)",
+    "unsupported_desc": "Safari doesn't support the desktop agent. Try switching browsers or using the browser agent instead.",
+    "download_label": "Download Desktop Agent",
+    "lna_banner": {
+     "content": "Postman needs local network access enabled in your browser to connect with the Desktop Agent.",
+     "instructions_1": "Open the site's permission settings.",
+     "instructions_2": "Find <1>Local network access</1> and enable it.",
+     "instructions_3": "Reload this page."
+    }
+   },
+   "browser_agent": {
+    "label": "Browser Agent",
+    "desc": "Sending your requests through your browser comes with <1>limitations</1>."
+   },
+   "interceptor_agent": {
+    "label": "Interceptor Agent",
+    "desc": "Send HTTP requests via Postman Interceptor Extension. <1>Learn more</1>."
+   },
+   "other_agents": "Other Agents"
+  }
+ },
+ "toggle_sidebar": {
+  "tooltip_label": {
+   "expand": "Expand Sidebar",
+   "collapse": "Collapse Sidebar"
+  }
+ },
+ "flexible_sidebar": {
+  "left": {
+   "label": "Left sidebar",
+   "tooltip": "Toggle left sidebar {shortcut}",
+   "locked": "Left sidebar: open (locked)",
+   "collapse": "Collapse left sidebar",
+   "hide": "Hide left sidebar",
+   "open": "Open left sidebar"
+  },
+  "right": {
+   "label": "Right sidebar",
+   "tooltip": "Toggle right sidebar {shortcut}",
+   "locked": "Right sidebar: open (locked)",
+   "collapse": "Collapse right sidebar",
+   "hide": "Hide right sidebar",
+   "open": "Open right sidebar"
+  },
+  "middle": {
+   "label": "Middle workbench"
+  },
+  "swap_sidebars": {
+   "label": "Swap left and right sidebar"
+  }
+ },
+ "bottom_bar": {
+  "label": "Bottom bar",
+  "tooltip": "Toggle bottom bar {shortcut}",
+  "close_tooltip": "Close panel"
+ },
+ "sync": {
+  "error_desc": "Something went wrong while syncing. Please contact support at help@postman.com",
+  "states": {
+   "offline": "Offline",
+   "error": "Error",
+   "off": "Error",
+   "connecting": "Connecting...",
+   "insync": "Online",
+   "syncing": "Online"
+  },
+  "offline": {
+   "header_label": {
+    "logged_in": "Looks like you are offline",
+    "logged_out": "Sign in to sync your Postman data",
+    "for_scratchpad": "Working locally in Scratch Pad",
+    "not_for_scratchpad": "Looks like you are offline"
+   },
+   "message": {
+    "logged_in": "Until you're back online, data in your workspace may not be up to date.",
+    "logged_out": "Syncing makes any changes to your Postman data available across devices linked to your account. Enable sync to never worry about losing your data.",
+    "for_scratchpad": "To collaborate in real-time and sync your work, switch to a workspace.",
+    "not_for_scratchpad": "Until you're back online, data in your workspace may not be up to date."
+   },
+   "button_label": "Reload"
+  },
+  "off": {
+   "header_content": {
+    "logged_in": "Connection error",
+    "logged_out": "Sign in to sync"
+   },
+   "text_content": {
+    "is_delinquent": "Sync has been disabled for your team. Learn more about <1><0>syncing</0></1>",
+    "is_not_delinquent": "We were unable to establish a websocket connection with our servers. Please retry.",
+    "is_not_delinquent_extra_content": "If the issue persists, check your network settings to ensure that websocket connections are allowed."
+   },
+   "button_content": {
+    "is_delinquent": {
+     "logged_in": "Enable syncing",
+     "logged_out": "Sign in to sync your Postman data"
+    },
+    "is_not_delinquent": "Retry connection"
+   }
+  },
+  "connecting": {
+   "heading_label": "You're offline",
+   "text_content": "We’re trying to reconnect to our servers.",
+   "reconnect_timer_text": "Reconnecting in {reconnect_time, plural, =1 {[#] second} other {[#] seconds}}…",
+   "button_label": "Retry Now"
+  },
+  "error": {
+   "heading_label": "Unable to sync",
+   "list_desc": "We were unable to sync the following elements.",
+   "collection_list_label": "Collections",
+   "environments_list_label": "Environments",
+   "retry_text_content": "Please retry. If the issue persists, reach out to us at help@postman.com",
+   "button_label": "Retry"
+  },
+  "default": {
+   "heading_label": {
+    "logged_out": "Online",
+    "logged_in": {
+     "syncing": "Syncing",
+     "not_syncing": "In sync"
+    }
+   },
+   "text_content": {
+    "syncing": {
+     "logged_in": "We are synchronizing data with our servers.",
+     "logged_out": "We are fetching data from our servers."
+    },
+    "not_syncing": {
+     "logged_in": "All data in this workspace is backed up on our servers.",
+     "logged_out": "You're connected to our servers."
+    }
+   }
+  }
+ },
+ "console": {
+  "label": "Console",
+  "tooltip": "Console",
+  "actions": {
+   "error_count_text": "{error_count, plural, =1 {# Error} other {# Errors}}",
+   "warn_count_text": "{warn_count, plural, =1 {# Warning} other {# Warnings}}",
+   "clear_button_text": "Clear",
+   "copy_button_tooltip": "Copy all logs to clipboard",
+   "dropdown": {
+    "timestamps_label": "Show timestamps",
+    "network_label": "Hide network"
+   }
+  },
+  "header": {
+   "input_placeholder": "Search messages",
+   "clear_button_text": "Clear",
+   "copy_button_tooltip": "Copy all logs to clipboard",
+   "dropdown": {
+    "filter_button_all": "All Logs",
+    "filter_button_custom": "Custom",
+    "log_item": "Log",
+    "info_item": "Info",
+    "error_item": "Error",
+    "warning_item": "Warning"
+   },
+   "success_toast": "Copied to clipboard"
+  },
+  "footer": {
+   "show_timestamps_label": "Show timestamps",
+   "hide_network_label": "Hide network",
+   "tooltip": "Console settings",
+   "error_count_text": "{error_count, plural, =1 {# error} other {# errors}}",
+   "warn_count_text": "{warn_count, plural, =1 {# warning} other {# warnings}}"
+  },
+  "list": {
+   "empty_state": {
+    "heading": "No logs yet",
+    "default_text": "Send a request to view its details in the console.",
+    "search_text": "No results found for \"{search_query}\""
+   },
+   "item": {
+    "left_icon_title": {
+     "error": "Error",
+     "warning": "Warning",
+     "info": "Info",
+     "log": "Log"
+    },
+    "details": {
+     "clear": {
+      "text_content": "Console was cleared",
+      "tooltip_label": "Console was cleared from pre-request or test script"
+     },
+     "network": {
+      "right_icon_title": {
+       "redirect": "This request was triggered on redirect",
+       "info": "This request was triggered on GraphQL Introspection"
+      },
+      "button_text": {
+       "show_raw": "Show raw log",
+       "show_pretty": "Show pretty log"
+      },
+      "pretty_view": {
+       "client_certificate": "Client Certificate",
+       "proxy": "Proxy",
+       "network": "Network",
+       "request_headers": "Request Headers",
+       "request_body": "Request Body",
+       "response_headers": "Response Headers",
+       "response_body": "Response Body",
+       "open_in_editor_tooltip": "Open in Editor",
+       "warning": {
+        "request_header": "This request did not get sent completely and might not have all the required system headers.",
+        "request_header_xhr_agent": "Some headers may be missing. Send this request with the Postman Desktop Agent to view accurate request headers.",
+        "response_header_xhr_agent": "Some headers may be missing. Send this request with the Postman Desktop Agent to view accurate response headers.",
+        "network": "This request did not get sent completely and might not have all the required network information."
+       },
+       "ignored_body_text": "Body is more than 10 KB and can only be viewed in editor. <0>View in editor</0>",
+       "unsupported_media_files": "The console does not support viewing bodies with media files.",
+       "view_in_editor_tooltip": "View in editor"
+      },
+      "raw_view": {
+       "unsupported_media_files": "The console does not support viewing response bodies with media files.",
+       "ignored_body_text": "The console only {body_type} bodies smaller than 10 KB inline. To view the complete body, inspect it by clicking <0>View in editor</0>"
+      }
+     }
+    },
+    "right_icon_title": {
+     "indirect_request": "This request was triggered by a function in your script",
+     "indirect_auth": "This request was triggered by an authorization helper",
+     "source_cloud": "This log was generated in the cloud"
+    }
+   }
+  },
+  "blob_viewer": {
+   "response_languages": {
+    "json": "JSON",
+    "xml": "XML",
+    "html": "HTML",
+    "javascript": "JavaScript",
+    "raw": "Raw",
+    "base64": "Base64",
+    "hexdump": "Hex",
+    "text": "Text",
+    "auto": "Auto"
+   },
+   "heading_label": "{body_type} Body",
+   "truncated_label": "truncated",
+   "truncated_tooltip_copy": "The console truncates bodies larger than 5 MB",
+   "back_button_tooltip": "Back to Console logs"
+  }
+ },
+ "terminal": {
+  "label": "Terminal",
+  "switch_agent_tooltip": "Switch to Postman Desktop Agent to use terminal in Postman Web.",
+  "agent_not_ready_tooltip": "Make sure Postman Desktop Agent is installed and running.",
+  "unsupported_agent_tooltip": "Update Postman Desktop Agent to use terminal in Postman Web."
+ },
+ "find_and_replace": {
+  "label": "Find and replace",
+  "tooltip": "Find and replace",
+  "disabled_in_filesystem_mode": "Find and replace is not available in local mode"
+ },
+ "desktop_only_tooltip": "Local file access is only available on the desktop app",
+ "capture_request": {
+  "label": "Proxy",
+  "popover_heading": "Capture and debug HTTPS traffic",
+  "popover_text": "To capture and inspect traffic on your browser, download Postman's Interceptor Extension.",
+  "chrome_download_alt": "Download Postman Interceptor for Google Chrome",
+  "safari_download_alt": "Download Postman Interceptor for Safari",
+  "firefox_download_alt": "Download Postman Interceptor for Mozilla Firefox",
+  "edge_download_alt": "Download Postman Interceptor for Microsoft Edge",
+  "start_proxy_session_button_text": "Start proxy session",
+  "start_proxy_button_text": "Start proxy",
+  "start_proxy_button_text_active": "Proxy active",
+  "first_time_popover_header": "Request and cookie capturing is over here",
+  "first_time_popover_content": "Select capture requests and cookies from the status bar below to start capturing.",
+  "first_time_popover_button_text": "Got it",
+  "button_text": "Capture requests",
+  "port_label": "Port :"
+ },
+ "reset_layout": {
+  "label": "Reset layout"
+ },
+ "tools_menu": {
+  "label": "Tools"
+ },
+ "browser_tab": {
+  "label": "Browser"
+ }
+}

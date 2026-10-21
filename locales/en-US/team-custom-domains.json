@@ -1,0 +1,91 @@
+{
+ "permission_error": "Could not fetch all permissions for custom domains.",
+ "upgrade_action_error": "Something went wrong.",
+ "heading": "Custom domains",
+ "subheading": "Host your existing and new API documentation on custom domains. {isPaidOrTrial, select, true {{isUnlimited, select, true {Your team can add unlimited custom domains.} other {Your team can add a total of {customDomainsLimit} custom domains.}}} other {}} <CustomLink><Text>Learn more</Text></CustomLink>",
+ "insufficient_permissions": {
+  "message": "Insufficient permissions",
+  "description": "Only Team Admins can add custom domains"
+ },
+ "limit_reached": {
+  "message": "Limit reached",
+  "description": "Upgrade plan to add more custom domains"
+ },
+ "add_custom_domain": "Add custom domain",
+ "upgrade_your_plan": {
+  "title": "Upgrade your plan",
+  "description": "You are currently on a free plan. Switch to a paid plan to host your documentation on a custom domain. <CustomLink><br></br><Text>View plans</Text></CustomLink>"
+ },
+ "add_your_team_first_domain": {
+  "title": "Add your team's first domain"
+ },
+ "you_don_t_have_access": {
+  "title": "You don't have access",
+  "description": "Only Team Admins can add custom domains."
+ },
+ "wrapper": {
+  "unable_to_load_custom_domain": {
+   "title": "Unable to load custom domain",
+   "description": "Please try again after some time."
+  },
+  "error": {
+   "title": "Something went wrong",
+   "description": "Could not fetch custom domains."
+  }
+ },
+ "custom_domain_table": {
+  "headers": {
+   "domains": "Domain",
+   "status": "Status"
+  },
+  "view_details": "View Details",
+  "verified": "VERIFIED",
+  "unverified": "UNVERIFIED"
+ },
+ "custom_domain_details": {
+  "fetch_custom_domain_error": {
+   "title": "Something went wrong",
+   "description": "Could not fetch custom domain details."
+  },
+  "verify_custom_domain_success": {
+   "title": "Custom domain verified",
+   "description": "Your custom domain is now verified. You can now use this domain to access documentation for published collections."
+  },
+  "verify_custom_domain_error": {
+   "title": "Something went wrong",
+   "description": "Unable to verify domain. {reason}"
+  },
+  "all_custom_domains": "All custom domains",
+  "breadcrumb_aria_label": "Custom domain details breadcrumb",
+  "error": {
+   "title": "Unable to load custom domain details",
+   "description": "Please try again after some time."
+  }
+ },
+ "custom_domain_detail_form": {
+  "custom_domain_detail_heading": "Custom Domain Details",
+  "verify_custom_domain_heading": "Verify Custom Domain",
+  "domain_url": {
+   "label": "Domain URL",
+   "helper_text": "Enter the URL of the domain you want to add."
+  },
+  "verification_records_heading": "Verification records",
+  "text_record": {
+   "label": "TXT record on {domain}",
+   "helper_text": "Add the following token as a TXT record associated with {domain}"
+  },
+  "copy_to_clipboard": "Copy to clipboard",
+  "copied_to_clipboard": "Copied to clipboard",
+  "cname": {
+   "label": "CNAME to {phsUrl}",
+   "helper_text": "Add a CNAME record for {fqdn} to {phsUrl}"
+  }
+ },
+ "custom_domain_actions": {
+  "heading": "Record addition",
+  "checkbox_label": "The TXT and CNAME records have been added.",
+  "verify_domain": "Verify Domain",
+  "verify_later": "Verify Later",
+  "back": "Back"
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "shared_access_banner": {
+  "heading": "Give access to APIs without handing out secrets",
+  "body": "<0>Passport by Postman</0> lets you grant granular, time-bound API access to any developer or AI agent. Secrets never leave your cloud, every call is audited, and access can be revoked in one click."
+ },
+ "local_reference_banner": {
+  "heading": "Securely call APIs without storing secrets",
+  "body": "<0>Passport by Postman</0> lets you call APIs using a reference instead, the real value is never held on this machine."
+ },
+ "try_passport_button_label": "Try Passport",
+ "contact_sales_button_label": "Contact sales"
+}

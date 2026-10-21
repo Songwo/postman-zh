@@ -1,0 +1,19 @@
+{
+ "working": {
+  "resolving": "Getting things ready…",
+  "creating": "Creating your workspace…",
+  "redirecting": "Opening your workspace…",
+  "do_not_close": "This only takes a moment. Please don’t close this tab."
+ },
+ "error": {
+  "title": "We couldn’t create the workspace",
+  "generic": "Something went wrong. Please try again.",
+  "retry": "Try again",
+  "go_to_workspaces": "Go to your workspaces"
+ },
+ "signed_out": {
+  "title": "Sign in to continue",
+  "description": "You need to be signed in to Postman before we can create a workspace for you.",
+  "sign_in": "Sign in"
+ }
+}

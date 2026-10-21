@@ -1,0 +1,25 @@
+{
+  "name": "postman-zh",
+  "version": "1.0.0",
+  "description": "Postman 桌面版简体中文汉化插件：一键安装，可随时还原，支持自动跟随 Postman 升级",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "install-zh": "node installer/cli.js install",
+    "uninstall-zh": "node installer/cli.js uninstall",
+    "status": "node installer/cli.js status",
+    "fetch": "node tools/i18n.js fetch",
+    "export": "node tools/i18n.js export",
+    "import": "node tools/i18n.js import",
+    "check": "node tools/i18n.js check",
+    "stats": "node tools/i18n.js stats",
+    "test": "node tests/run.js",
+    "translate-ai": "node tools/translate-ai.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@anthropic-ai/sdk": "^0.137.0"
+  }
+}

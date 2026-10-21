@@ -1,0 +1,340 @@
+{
+ "select_template_step": {
+  "title": "Create your workspace",
+  "subheading": "Get the most out of your workspace with a template.",
+  "step_info_text": "Step 1 of 2",
+  "template_info_text": "Explore our templates",
+  "templates_load_error": {
+   "error_message": "Couldn't load templates.",
+   "refresh_btn_text": "Refresh"
+  },
+  "submit_cta": "Next",
+  "cancel_cta": "Cancel"
+ },
+ "create_workspace_form": {
+  "a11y": {
+   "org_wide_team_workspace_icon_aria_label": "Team workspace"
+  },
+  "name": "Name",
+  "name_label": "Workspace name",
+  "name_placeholder": "A team name, project or service...",
+  "summary": "Summary",
+  "validation_message": "Summary can’t exceed 140 characters.",
+  "step_info_text": "Step 2 of 2",
+  "disabled_info_text": {
+   "private_workspace": "Upgrade to {teamPlanName} or {enterprisePlanName} to collaborate privately with members.",
+   "public_workspace": "This option is currently unavailable in your region.",
+   "public_workspace_no_team_profile": "This workspace cannot be made public because your team does not have a public profile, contact your team Admin or Community Manager for assistance.",
+   "public_workspace_no_permission": "You do not have permission to create a public workspace.",
+   "partner_workspace": {
+    "upgrade_plan": "Upgrade your plan to create partner workspaces.",
+    "no_permission_text": "You do not have permission to do this action",
+    "not_available": "This option is currently unavailable in your region.",
+    "upgrade_plan_updated": "Upgrade your plan to collaborate with external partners."
+   },
+   "team_workspace": {
+    "no_permission_text": "You do not have permission to create a team workspace."
+   },
+   "git_repository_restriction": "Linking a Git repository is not supported in {workspaceType} workspaces."
+  },
+  "organizations": {
+   "disabled_info_text": {
+    "team_workspaces_organization_level": "You need to join a team to create this type of workspace."
+   },
+   "personal_workspace_outside_any_squad_text": "Create workspace outside of teams",
+   "personal_workspace_outside_any_squad_tooltip": "Create a workspace that isn't part of any team. You can use it for your own work, but you'll need to move it to a team before you can share or collaborate.",
+   "squad_dropdown_label": "Team",
+   "squad_select_label": "Create workspace for this team",
+   "squad_dropdown_placeholder": "Select a team",
+   "squad_dropdown_info_text": "Choose a team where you want to create the workspace"
+  },
+  "visibility_radio_title": "Who can access your workspace?",
+  "create_workspace_type_title": "Select workspace type",
+  "update_workspace_type_title": "Workspace types",
+  "workspace_access_title": "Manage access",
+  "info_banner": {
+   "new_team_info_text": "Since you don’t have a team, we will create one for you along with this workspace.",
+   "public_workspace_info_text": "All data in this workspace will be made public.",
+   "partner_workspace_info_text": "After creating the workspace, you’ll become the <1><0>Partner Manager</0></1>.",
+   "team_profile_public_text": "All data in this workspace and your <1>team's profile</1> will be made public.",
+   "user_profile_public_text": "All data in this workspace and your <1>user profile</1> will be made public.",
+   "join_squad_info_text": "Only you can access this workspace. <1><0>Join a team</0></1> to start collaborating with your teammates.",
+   "personal_workspace_outside_any_squad_info_text": "This workspace can’t be shared with anyone until you move it to a team."
+  },
+  "public_workspace_popover_content": {
+   "text": "A public API is accessible to all developers who use Postman.",
+   "link_label": "Learn more about publishing to Postman.",
+   "heading": "Make this API public on Postman"
+  },
+  "tag_content": {
+   "upgrade_plan": "UPGRADE PLAN",
+   "activate_trial": "TRY FOR FREE",
+   "unlocked": "UNLOCKED"
+  },
+  "partner_forbidden_text": "As a partner you don't have permission to view this page.",
+  "forbidden_page_text": "You don't have permission to view this page.",
+  "workspace_creation_disabled": "You don't have the permission to create workspaces",
+  "workspace_creation_restricted_title": "Workspace creation is restricted.",
+  "workspace_creation_restricted_subtitle": "Here's a note from your admins:",
+  "go_back_cta": "Go Back",
+  "git_folder_required_tooltip": "Select a folder with your Git repository to continue.",
+  "workspace_name_required_tooltip": "Enter a workspace name to continue.",
+  "view_partner_workspaces_text": "View partner workspaces",
+  "view_workspaces": "View Workspaces",
+  "go_to_home_cta": "Go To Home",
+  "create_import_cta": "Create and Import",
+  "create_cta": "Create",
+  "create_workspace_cta": "Create Workspace",
+  "text_area_info_text": "Add a note (optional)",
+  "switch_workspace_cta": "Switch Workspace",
+  "confirm_cta": "Confirm",
+  "make_team_public_description": "Before your team’s profile can be made public, update your team domain and make sure it's eligible for public visibility. Your team domain helps identify your team on Postman.",
+  "learn_why_text": "Learn why",
+  "toasts": {
+   "trial_error": {
+    "status": "error",
+    "description": "Something went wrong while activating the trial"
+   },
+   "creation_failed": {
+    "title": "Creation Failed",
+    "description": "Please select a template before creating a workspace."
+   },
+   "project_already_connected": {
+    "title": "Project Already Connected",
+    "description": "A project has already been connected to this workspace. Only one project can be connected per workspace."
+   },
+   "connection_failed": {
+    "title": "Connection Failed",
+    "description": "Failed to connect workspace to directory. You can manually connect it later."
+   },
+   "not_git_repository": {
+    "title": "Not a Git Repository",
+    "description": "This directory is not Git-enabled. Please select a directory that has been initialized as a Git repository."
+   },
+   "directory_access_error": {
+    "title": "Directory Access Error",
+    "description": "Failed to access the selected directory. Please try again."
+   },
+   "directory_already_linked": {
+    "title": "Directory Already Linked",
+    "description": "This directory is already linked to a different workspace."
+   },
+   "workspace_switch_failed": {
+    "title": "Workspace Switch Failed",
+    "description": "Unable to switch to the workspace. Please try manually."
+   },
+   "folder_release_failed": {
+    "title": "Couldn't disconnect folder",
+    "description": "Try again or choose another folder."
+   },
+   "status_error": {
+    "status": "error",
+    "description": "Something went wrong while creating the workspace"
+   },
+   "action_request_error": {
+    "title": "Couldn't send request",
+    "description": "Try changing the workspace type from settings"
+   },
+   "upgrade_partner_manager_error": {
+    "status": "error",
+    "title": "Unable to update roles for this user",
+    "description": "An error occurred while updating roles"
+   },
+   "create_workspace_orgs_visibility_error": {
+    "status": "error",
+    "title": "Couldn’t give access to your organization",
+    "description": "You can manually change the access from the workspace settings page."
+   },
+   "request_sent": {
+    "title": "Request sent"
+   },
+   "remote_origin_required": {
+    "title": "Remote Origin Required",
+    "description": "This Git repository does not have a remote origin URL configured. Please add a remote origin before connecting to a workspace."
+   },
+   "git_not_installed": {
+    "title": "Git Not Installed",
+    "description": "Git is not installed on your system. Please install Git to use this feature."
+   },
+   "git_permission_error": {
+    "title": "Git Permission Error",
+    "description": "Unable to access Git. Please check your permissions."
+   },
+   "remote_origin_check_failed": {
+    "title": "Remote Origin Check Failed",
+    "description": "Failed to check Git remote origin. Please ensure the repository has a remote origin configured."
+   }
+  },
+  "create_public_workspace_request": {
+   "notes_validation_message": "The note can only have up to 500 characters.",
+   "notes_placeholder_text": "Add a note...",
+   "request_created_toast": "You'll be notified of the Community Manager's response.",
+   "notes_label": "Request for approval",
+   "notes_helper_text": "Community Managers will review your request.",
+   "notes_footer_text": "Meanwhile, a {interim_workspace_type} workspace will be created."
+  },
+  "create_partner_workspace_request": {
+   "notes_validation_message": "The note can only have up to 500 characters.",
+   "notes_placeholder_text": "Add a note...",
+   "request_created_toast": "You'll be notified of the Partner Manager's response.",
+   "notes_label": "Request for approval",
+   "notes_helper_text": "Partner Managers will review your request.",
+   "notes_footer_text": "Meanwhile, a private workspace will be created."
+  },
+  "create_team_workspace_request": {
+   "notes_validation_message": "The note can only have up to 500 characters.",
+   "notes_placeholder_text": "Add a note...",
+   "notes_label": "Request for approval",
+   "notes_helper_text": "Reviewers will review your request.",
+   "notes_footer_text": "Meanwhile, a private workspace will be created."
+  },
+  "simplified_visibility_enabled": {
+   "create_public_workspace_request": {
+    "notes_validation_message": "The note can only have up to {maxTextSize} characters.",
+    "notes_placeholder_text": {
+     "create": "Briefly explain why you're creating this workspace...",
+     "update": "Briefly explain why you’re changing the workspace type."
+    },
+    "request_created_toast": "You'll be notified of the Community Manager's response.",
+    "notes_label": "Approval required",
+    "notes_helper_text": "Your workspace will be created and becomes public once Community Managers approve your request.",
+    "notes_footer_text": {
+     "team": "Meanwhile, only your team will get access.",
+     "private": "Meanwhile, only invited people will get access."
+    }
+   },
+   "create_partner_workspace_request": {
+    "notes_validation_message": "The note can only have up to {maxTextSize} characters.",
+    "notes_placeholder_text": {
+     "create": "Briefly explain why you're creating this workspace...",
+     "update": "Add a note..."
+    },
+    "request_created_toast": "You'll be notified of the Partner Manager's response.",
+    "notes_label": "Approval required",
+    "notes_helper_text": "Your workspace will be created. You can share it with partners once Partner Managers approve your request.",
+    "notes_footer_text": "Meanwhile, only invited people will get access."
+   },
+   "create_team_workspace_request": {
+    "notes_validation_message": "The note can only have up to {maxTextSize} characters.",
+    "notes_placeholder_text": {
+     "create": "Briefly explain why you're creating this workspace...",
+     "update": "Briefly explain why you’re changing the workspace type."
+    },
+    "notes_label": "Approval required",
+    "notes_helper_text": "Your workspace will be created. It becomes visible to your organization once reviewers approve your request.",
+    "notes_footer_text": {
+     "private": "Meanwhile, only invited people will get access.",
+     "team": "Meanwhile, only your team will get access."
+    }
+   }
+  },
+  "back_cta": "Back",
+  "cancel_cta": "Cancel",
+  "template_section": {
+   "title": "Choose how you'd like to set up this workspace",
+   "blank_workspace": {
+    "label": "Blank workspace",
+    "helper_text": "I want to start from scratch."
+   },
+   "git_repository": {
+    "label": "From a local folder",
+    "helper_text": "I want to connect my existing project folder.",
+    "disabled_tooltip": "Linking a Git repository is not supported in {workspaceType} workspaces."
+   },
+   "choose_folder_cta": "Choose a folder"
+  },
+  "ai_section": {
+   "title": "Create with Postman AI",
+   "description": "Ask AI to set up collections, specs, and environments for your API.",
+   "placeholder": "Describe what you want to build (e.g., \"Payments API\")."
+  },
+  "access_selector": {
+   "who_can_access_label": "Who can access",
+   "team_access_label": "Everyone in {teamName}",
+   "team_access_label_no_team": "Everyone in your team",
+   "public_partner_settings_hint": "Public or Partner visibility can be changed later from workspace settings."
+  },
+  "workspace_type_helper_text": {
+   "internal": "Share APIs with your team.",
+   "partner": "Share APIs with your partners.",
+   "public": "Everyone can access your APIs."
+  },
+  "notes_to_manager": {
+   "approval_required_label": "Approval required",
+   "notes_placeholder": "Briefly explain why you're creating this workspace...",
+   "notes_helper_text": "Your workspace will be created and becomes public once Community Managers approve your request.",
+   "notes_validation_message": "The note can only have up to 500 characters."
+  }
+ },
+ "blank_state": {
+  "title": "Couldn’t load this page",
+  "description": "Just a faulty wire. Try reloading.",
+  "reload_text": "Reload"
+ },
+ "templates_list": {
+  "blank_workspace": "Blank workspace",
+  "git_repository": "From local folder",
+  "explore_templates": "Explore our templates",
+  "group_label": "Workspace templates"
+ },
+ "template_preview": {
+  "name": "Blank workspace",
+  "summary": "Customize this space to organize and share your API resources with your team.",
+  "api_capability": {
+   "name": "Showcase your API’s capabilities",
+   "description": "Use Postman collections to document your APIs with ease. You can create your own or choose from 70+ collection templates tailored to your needs."
+  },
+  "build_faster": {
+   "name": "Build together, work faster",
+   "description": "Help your team maintain a shared source of truth, to build APIs and solve problems together."
+  }
+ },
+ "git_repository_preview": {
+  "name": "Connect your local codebase",
+  "summary": "Postman links your collections, specs, and environments to your Git branches for a local-first workflow.",
+  "git_integration": {
+   "name": "Stay in sync with your code",
+   "description": "Collections, specs and environments update alongside your Git branches."
+  },
+  "file_sync": {
+   "name": "Work offline, push when ready",
+   "description": "Your local workspace runs independently of the cloud."
+  }
+ },
+ "partner_workspace_trial": {
+  "modal_content": {
+   "heading": "Try Partner Workspaces free for 30 days",
+   "subheading": "You can also try all {enterprisePlanName} Plan features during this time.",
+   "info": [
+    {
+     "heading": "Ditch the export. Invite partners instead.",
+     "description": "Share collections with partners instead of exporting."
+    },
+    {
+     "heading": "Scattered chats to centralized communication.",
+     "description": "Share feedback using in-line comments."
+    },
+    {
+     "heading": "Onboard, test, iterate. 4x faster.",
+     "description": "Partners can test APIs as soon as they're updated."
+    }
+   ],
+   "start_trial": "Try Partner Workspaces For Free",
+   "remind_later_cta": "Remind me later",
+   "footer_first_part": "No credit card required",
+   "footer_second_part": ". After 30 days, you’ll move back to your current plan."
+  },
+  "loading_page": {
+   "title": "Setting up your trial...",
+   "description": "Creating partner workspace..."
+  },
+  "workspace_visibility_radio_tooltip": "Collaborate with external partners and customers for free."
+ },
+ "partner_domain_validation_error": {
+  "title": "Unable to send invite",
+  "message_with_domains": "Looks like {domainList} users are part of your organization. They can only be invited as Team members. ",
+  "message_with_domains_partner": "Looks like {domainList} users are part of publisher's organization. They can only be invited as Team members. ",
+  "message_fallback": "Partner invites are not allowed for the specified domains. ",
+  "learn_more": "Learn more"
+ }
+}

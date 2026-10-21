@@ -1,0 +1,26 @@
+{
+ "entity_type_icon": {
+  "label": "Mock server"
+ },
+ "dependency_actions": {
+  "update": {
+   "label": "Update"
+  },
+  "delete": {
+   "label": "Delete"
+  }
+ },
+ "status_indicator": {
+  "running": "Status: Running",
+  "idle": "Status: Idle"
+ },
+ "code_mock": {
+  "running_status": "Status: Running"
+ },
+ "simulation_context_menu": {
+  "open": "Open",
+  "copy_link": "Copy Link",
+  "redeploy": "Redeploy",
+  "delete": "Delete"
+ }
+}

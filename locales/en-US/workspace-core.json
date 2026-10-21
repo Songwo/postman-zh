@@ -1,0 +1,52 @@
+{
+ "copy_link_button_popover": {
+  "heading": "Invite people before sharing this link",
+  "dismiss_button_text": "Dismiss"
+ },
+ "update_user_profile_modal": {
+  "description_text": "You need a public profile to perform actions in public workspaces. Update and review the following details before making your profile visible to everyone.",
+  "confirm_cta_text": "Make Profile Public",
+  "name_error_message": "Please fill out this field.",
+  "update_user_profile_api_error_message": "Couldn't enable public profile due to some error.",
+  "update_user_success": {
+   "message": "You can now perform actions in public workspaces.",
+   "title": "Public profile enabled"
+  },
+  "heading": "Make your profile public",
+  "name_label": "Name",
+  "username_label": "Username",
+  "username_helper_text": "Your username can be used to sign in and helps identify you.",
+  "cancel_button_text": "Cancel",
+  "public_url_description": "Your public URL will be: <1> {url}</1>"
+ },
+ "language_setting_modal": {
+  "heading": "Settings for {modalHeading}"
+ },
+ "collection_description_editor": {
+  "does_not_have_description": "This {entityType} doesn't have a description.",
+  "mimir_editor_placeholder": "Add {entityType} description",
+  "markdown_editor": {
+   "mode": {
+    "edit": "Edit",
+    "preview": "Preview"
+   },
+   "switch_to_postman_editor_button_tooltip": "Switch to Postman editor"
+  },
+  "error": {
+   "title": "Couldn't load documentation",
+   "message": "Just a faulty wire. Try reloading."
+  },
+  "placeholder": "Add {type}description…"
+ },
+ "open_request_button": {
+  "try_request_button_label": "Try Request",
+  "open_request_button_label": "Open request"
+ },
+ "documentation_entity_title": "Documentation",
+ "unsaved_changes_modal": {
+  "title": "Unsaved changes",
+  "description": "Save the request before turning on comment mode to avoid losing your work.",
+  "cancel_button": "Cancel",
+  "save_button": "Save"
+ }
+}

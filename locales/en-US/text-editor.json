@@ -1,0 +1,9 @@
+{
+ "text_copied_success": "Copied to clipboard",
+ "menu_items": {
+  "pretty": "Pretty",
+  "raw": "Raw"
+ },
+ "item_beta": "BETA",
+ "refresh_visualization_tooltip": "Refresh visualization"
+}

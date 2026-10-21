@@ -1,0 +1,17 @@
+{
+  "name": {
+    "placeholder": "未命名{entityName}"
+  },
+  "summary": {
+    "placeholder": {
+      "editable": "添加一段摘要，概述此{entityName}的用途。",
+      "readOnly": "还没有添加摘要。"
+    }
+  },
+  "description": {
+    "placeholder": {
+      "no_description": "还没有添加描述。",
+      "default": "添加{entityName}描述"
+    }
+  }
+}

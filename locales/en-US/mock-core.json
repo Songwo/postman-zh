@@ -1,0 +1,13 @@
+{
+ "mock_delay_selector": {
+  "simulate_network_delay_label": "Simulate a fixed network delay",
+  "no_delay_selected": "No delay",
+  "custom": "Custom",
+  "duration_display_name": "({duration} ms)",
+  "placeholder": "0 - {max}"
+ },
+ "custom_delay_input": {
+  "validation_message": "Please enter a value between 0 and {max} ms",
+  "duration_metric": "ms"
+ }
+}

@@ -1,0 +1,359 @@
+{
+  "library": {
+    "label": "资源库"
+  },
+  "help": {
+    "aria_label": "帮助菜单",
+    "getting_started": "入门",
+    "quick_start": "快速入门指南",
+    "community": "社区",
+    "documentation": "文档",
+    "keyboard_shortcuts": "键盘快捷键",
+    "release_notes": "版本说明",
+    "security": "安全",
+    "support": "支持"
+  },
+  "pane_view": {
+    "label": "双栏响应视图",
+    "single_pane_view": "单栏视图",
+    "two_pane_view": "双栏视图"
+  },
+  "trash": {
+    "error_tooltip": "需要联网才能查看回收站内容。",
+    "label": "回收站",
+    "normal_tooltip": "回收站"
+  },
+  "copyright": {
+    "terms": "条款",
+    "privacy": "隐私"
+  },
+  "runner": {
+    "error_tooltip": "需要联网才能查看运行器",
+    "label": "运行器",
+    "normal_tooltip": "运行器"
+  },
+  "simulator": {
+    "label": "模拟器"
+  },
+  "simulator_indicator": {
+    "label": "模拟器（{count}）",
+    "tooltip": "{count, plural, =1 {# 个模拟服务器正在运行} other {# 个模拟服务器正在运行}}"
+  },
+  "cookies": {
+    "label": "Cookie",
+    "feature_title": "'自动同步 Cookie 的新方式'",
+    "feature_desc": "通过 Postman 代理或 Interceptor，将浏览器或应用中的 Cookie 自动同步到 Postman Cookie 罐。<1><0>了解更多。</0></1>",
+    "button_label": "知道了"
+  },
+  "vault": {
+    "label": "保险库",
+    "adoption_popup": {
+      "title": "保护密钥变得更简单了",
+      "description": "试试保险库：将密钥加密存储在本地，并在请求、测试脚本、授权、环境等中使用。"
+    },
+    "local": {
+      "label": "本地保险库"
+    },
+    "shared": {
+      "label": "共享保险库"
+    },
+    "passport_secrets": {
+      "label": "Passport 密钥"
+    }
+  },
+  "agent_selection": {
+    "auto_agent_label": "自动选择代理",
+    "popover": {
+      "heading": "选择 Postman 代理",
+      "auto_select_heading": "自动选择",
+      "auto_select_desc": "Postman 会自动为你的请求选择最合适的代理。",
+      "cloud_agent": {
+        "label": "云端代理",
+        "desc": "通过 Postman 的安全云服务器发送 HTTP 请求。"
+      },
+      "desktop_agent": {
+        "label": "桌面代理",
+        "desc": "通过本地运行的 Postman 桌面代理发送请求。<1>了解更多</1>。",
+        "unsupported_label": "桌面代理（不支持）",
+        "unsupported_desc": "Safari 不支持桌面代理。请尝试切换浏览器或改用浏览器代理。",
+        "download_label": "下载桌面代理",
+        "lna_banner": {
+          "content": "Postman 需要在浏览器中启用本地网络访问权限才能连接桌面代理。",
+          "instructions_1": "打开网站的权限设置。",
+          "instructions_2": "找到<1>本地网络访问</1>并启用。",
+          "instructions_3": "重新加载此页面。"
+        }
+      },
+      "browser_agent": {
+        "label": "浏览器代理",
+        "desc": "通过浏览器发送请求存在一些<1>限制</1>。"
+      },
+      "interceptor_agent": {
+        "label": "Interceptor 代理",
+        "desc": "通过 Postman Interceptor 扩展发送 HTTP 请求。<1>了解更多</1>。"
+      },
+      "other_agents": "其他代理"
+    }
+  },
+  "toggle_sidebar": {
+    "tooltip_label": {
+      "expand": "展开侧边栏",
+      "collapse": "折叠侧边栏"
+    }
+  },
+  "flexible_sidebar": {
+    "left": {
+      "label": "左侧边栏",
+      "tooltip": "切换左侧边栏 {shortcut}",
+      "locked": "左侧边栏：已打开（已锁定）",
+      "collapse": "折叠左侧边栏",
+      "hide": "隐藏左侧边栏",
+      "open": "打开左侧边栏"
+    },
+    "right": {
+      "label": "右侧边栏",
+      "tooltip": "切换右侧边栏 {shortcut}",
+      "locked": "右侧边栏：已打开（已锁定）",
+      "collapse": "折叠右侧边栏",
+      "hide": "隐藏右侧边栏",
+      "open": "打开右侧边栏"
+    },
+    "middle": {
+      "label": "中间工作台"
+    },
+    "swap_sidebars": {
+      "label": "交换左右侧边栏"
+    }
+  },
+  "bottom_bar": {
+    "label": "底部栏",
+    "tooltip": "切换底部栏 {shortcut}",
+    "close_tooltip": "关闭面板"
+  },
+  "sync": {
+    "error_desc": "同步时出错。请联系支持团队：help@postman.com",
+    "states": {
+      "offline": "离线",
+      "error": "错误",
+      "off": "错误",
+      "connecting": "正在连接...",
+      "insync": "在线",
+      "syncing": "在线"
+    },
+    "offline": {
+      "header_label": {
+        "logged_in": "你似乎处于离线状态",
+        "logged_out": "登录以同步你的 Postman 数据",
+        "for_scratchpad": "正在 Scratch Pad 中本地工作",
+        "not_for_scratchpad": "你似乎处于离线状态"
+      },
+      "message": {
+        "logged_in": "在恢复联网之前，工作区中的数据可能不是最新的。",
+        "logged_out": "同步会让你对 Postman 数据的修改在关联到你账号的所有设备上可用。启用同步，再也不用担心数据丢失。",
+        "for_scratchpad": "要实时协作并同步工作，请切换到一个工作区。",
+        "not_for_scratchpad": "在恢复联网之前，工作区中的数据可能不是最新的。"
+      },
+      "button_label": "重新加载"
+    },
+    "off": {
+      "header_content": {
+        "logged_in": "连接错误",
+        "logged_out": "登录以同步"
+      },
+      "text_content": {
+        "is_delinquent": "你的团队已禁用同步。了解更多关于<1><0>同步</0></1>的信息",
+        "is_not_delinquent": "无法与服务器建立 WebSocket 连接，请重试。",
+        "is_not_delinquent_extra_content": "如果问题仍然存在，请检查网络设置，确认允许 WebSocket 连接。"
+      },
+      "button_content": {
+        "is_delinquent": {
+          "logged_in": "启用同步",
+          "logged_out": "登录以同步你的 Postman 数据"
+        },
+        "is_not_delinquent": "重试连接"
+      }
+    },
+    "connecting": {
+      "heading_label": "你已离线",
+      "text_content": "正在尝试重新连接服务器。",
+      "reconnect_timer_text": "{reconnect_time, plural, =1 {[#] 秒} other {[#] 秒}}后重新连接…",
+      "button_label": "立即重试"
+    },
+    "error": {
+      "heading_label": "无法同步",
+      "list_desc": "以下元素无法同步。",
+      "collection_list_label": "集合",
+      "environments_list_label": "环境",
+      "retry_text_content": "请重试。如果问题仍然存在，请联系我们：help@postman.com",
+      "button_label": "重试"
+    },
+    "default": {
+      "heading_label": {
+        "logged_out": "在线",
+        "logged_in": {
+          "syncing": "正在同步",
+          "not_syncing": "已同步"
+        }
+      },
+      "text_content": {
+        "syncing": {
+          "logged_in": "正在与服务器同步数据。",
+          "logged_out": "正在从服务器获取数据。"
+        },
+        "not_syncing": {
+          "logged_in": "此工作区中的所有数据都已备份到服务器。",
+          "logged_out": "你已连接到服务器。"
+        }
+      }
+    }
+  },
+  "console": {
+    "label": "控制台",
+    "tooltip": "控制台",
+    "actions": {
+      "error_count_text": "{error_count, plural, =1 {# 个错误} other {# 个错误}}",
+      "warn_count_text": "{warn_count, plural, =1 {# 个警告} other {# 个警告}}",
+      "clear_button_text": "清除",
+      "copy_button_tooltip": "复制所有日志到剪贴板",
+      "dropdown": {
+        "timestamps_label": "显示时间戳",
+        "network_label": "隐藏网络信息"
+      }
+    },
+    "header": {
+      "input_placeholder": "搜索消息",
+      "clear_button_text": "清除",
+      "copy_button_tooltip": "复制所有日志到剪贴板",
+      "dropdown": {
+        "filter_button_all": "所有日志",
+        "filter_button_custom": "自定义",
+        "log_item": "日志",
+        "info_item": "信息",
+        "error_item": "错误",
+        "warning_item": "警告"
+      },
+      "success_toast": "已复制到剪贴板"
+    },
+    "footer": {
+      "show_timestamps_label": "显示时间戳",
+      "hide_network_label": "隐藏网络信息",
+      "tooltip": "控制台设置",
+      "error_count_text": "{error_count, plural, =1 {# 个错误} other {# 个错误}}",
+      "warn_count_text": "{warn_count, plural, =1 {# 个警告} other {# 个警告}}"
+    },
+    "list": {
+      "empty_state": {
+        "heading": "还没有日志",
+        "default_text": "发送一个请求即可在控制台中查看其详情。",
+        "search_text": "未找到“{search_query}”的结果"
+      },
+      "item": {
+        "left_icon_title": {
+          "error": "错误",
+          "warning": "警告",
+          "info": "信息",
+          "log": "日志"
+        },
+        "details": {
+          "clear": {
+            "text_content": "控制台已清空",
+            "tooltip_label": "控制台已被前置脚本或测试脚本清空"
+          },
+          "network": {
+            "right_icon_title": {
+              "redirect": "此请求由重定向触发",
+              "info": "此请求由 GraphQL 内省触发"
+            },
+            "button_text": {
+              "show_raw": "显示原始日志",
+              "show_pretty": "显示格式化日志"
+            },
+            "pretty_view": {
+              "client_certificate": "客户端证书",
+              "proxy": "代理",
+              "network": "网络",
+              "request_headers": "请求头",
+              "request_body": "请求体",
+              "response_headers": "响应头",
+              "response_body": "响应体",
+              "open_in_editor_tooltip": "在编辑器中打开",
+              "warning": {
+                "request_header": "此请求没有完整发送，可能缺少部分必需的系统请求头。",
+                "request_header_xhr_agent": "部分请求头可能缺失。使用 Postman 桌面代理发送此请求可查看准确的请求头。",
+                "response_header_xhr_agent": "部分响应头可能缺失。使用 Postman 桌面代理发送此请求可查看准确的响应头。",
+                "network": "此请求没有完整发送，可能缺少部分必需的网络信息。"
+              },
+              "ignored_body_text": "内容超过 10 KB，只能在编辑器中查看。<0>在编辑器中查看</0>",
+              "unsupported_media_files": "控制台不支持查看包含媒体文件的请求体。",
+              "view_in_editor_tooltip": "在编辑器中查看"
+            },
+            "raw_view": {
+              "unsupported_media_files": "控制台不支持查看包含媒体文件的响应体。",
+              "ignored_body_text": "控制台只能内联显示小于 10 KB 的 {body_type} 内容。要查看完整内容，请点击<0>在编辑器中查看</0>"
+            }
+          }
+        },
+        "right_icon_title": {
+          "indirect_request": "此请求由脚本中的函数触发",
+          "indirect_auth": "此请求由授权辅助工具触发",
+          "source_cloud": "此日志在云端生成"
+        }
+      }
+    },
+    "blob_viewer": {
+      "response_languages": {
+        "json": "JSON",
+        "xml": "XML",
+        "html": "HTML",
+        "javascript": "JavaScript",
+        "raw": "原始",
+        "base64": "Base64",
+        "hexdump": "十六进制",
+        "text": "文本",
+        "auto": "自动"
+      },
+      "heading_label": "{body_type} 内容",
+      "truncated_label": "已截断",
+      "truncated_tooltip_copy": "控制台会截断大于 5 MB 的内容",
+      "back_button_tooltip": "返回控制台日志"
+    }
+  },
+  "terminal": {
+    "label": "终端",
+    "switch_agent_tooltip": "切换到 Postman 桌面代理，才能在 Postman 网页版中使用终端。",
+    "agent_not_ready_tooltip": "请确认已安装并运行 Postman 桌面代理。",
+    "unsupported_agent_tooltip": "更新 Postman 桌面代理，才能在 Postman 网页版中使用终端。"
+  },
+  "find_and_replace": {
+    "label": "查找和替换",
+    "tooltip": "查找和替换",
+    "disabled_in_filesystem_mode": "本地模式下不支持查找和替换"
+  },
+  "desktop_only_tooltip": "本地文件访问仅在桌面应用中可用",
+  "capture_request": {
+    "label": "代理",
+    "popover_heading": "捕获并调试 HTTPS 流量",
+    "popover_text": "要捕获并检查浏览器中的流量，请下载 Postman 的 Interceptor 扩展。",
+    "chrome_download_alt": "下载适用于 Google Chrome 的 Postman Interceptor",
+    "safari_download_alt": "下载适用于 Safari 的 Postman Interceptor",
+    "firefox_download_alt": "下载适用于 Mozilla Firefox 的 Postman Interceptor",
+    "edge_download_alt": "下载适用于 Microsoft Edge 的 Postman Interceptor",
+    "start_proxy_session_button_text": "开始代理会话",
+    "start_proxy_button_text": "启动代理",
+    "start_proxy_button_text_active": "代理已启用",
+    "first_time_popover_header": "请求和 Cookie 捕获功能在这里",
+    "first_time_popover_content": "在下方状态栏中选择“捕获请求和 Cookie”即可开始捕获。",
+    "first_time_popover_button_text": "知道了",
+    "button_text": "捕获请求",
+    "port_label": "端口："
+  },
+  "reset_layout": {
+    "label": "重置布局"
+  },
+  "tools_menu": {
+    "label": "工具"
+  },
+  "browser_tab": {
+    "label": "浏览器"
+  }
+}

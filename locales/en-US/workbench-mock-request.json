@@ -1,0 +1,99 @@
+{
+ "header_tabs": {
+  "completed_steps": {
+   "select_collection": "<0></0> <1> Select a collection to mock</1>",
+   "set_mock_server": "<0></0> <1> Set up the mock server</1>",
+   "next_steps": "<0></0> <1> Next steps</1>"
+  },
+  "active_steps": {
+   "select_collection": "1. <0>Select a collection to mock</0>",
+   "set_mock_server": "2. <0>Set up the mock server</0>",
+   "next_steps": "3. <0>Next steps</0>"
+  }
+ },
+ "de_config": {
+  "columns": {
+   "method": "Method",
+   "request_path": "Request Path",
+   "path": "Path",
+   "request_body": "Request Body",
+   "description": "Description",
+   "response_code": "Response Code",
+   "value": "value",
+   "response_body": "Response Body"
+  },
+  "delete_row_tooltip": "Delete row"
+ },
+ "create_new_mock_modal": {
+  "step_1": {
+   "collection_empty_message": "This workspace doesn't have any collections.",
+   "tabs": {
+    "create_new_collection": "Create a new collection",
+    "select_existing_collection": "Select an existing collection"
+   },
+   "mock_modal": {
+    "header": "Mock servers let you simulate your API endpoints without having to set up a backend.",
+    "no_collection_found": "No collections found",
+    "try_viewing_other_collection": "Please try viewing other collections in this workspace.",
+    "caption": "<0>Enter request paths for your API endpoints and then the expected response code and response body to create an</0> <1><0>example</0></1><2>. To add a body or description to the request, click the (•••) icon.</2>",
+    "footer": "<0>Learn how mock servers and examples can </0> <1><0>speed up your API development</0></1> <2>.</2>"
+   }
+  }
+ },
+ "setup_mock_server": {
+  "heading": "Name the mock server",
+  "empty_server_error": "Please enter a mock server name.",
+  "tag": "Tag",
+  "environment_label": "Select an environment (optional)",
+  "help_content": "Choose a collection tag for this mock server. If the collection is not linked to an API, the mock server can only be created on the current tag.",
+  "no_environment_placeholder": "No Environment",
+  "no_environment_found": "No environments found",
+  "environment_info": "Environments are groups of variables. The mock server will use the variable values from the selected environment in the request and response.",
+  "make_private": "Make this mock server private",
+  "note": "Note: To call a private mock server, you'll need to add an <0>x-api-key</0> header to your requests. See how to generate a <1><0>Postman API key</0></1>",
+  "save_url_as_environment": "Save the mock server URL as an environment variable",
+  "environment_note": "Note: This will create a new environment containing the URL.",
+  "toast_success_msg": "Mock URL copied",
+  "environment_dropdown_options": {
+   "no_environment": "No Environment",
+   "default_label": "Postman API"
+  }
+ },
+ "next_actions": {
+  "create_environment_heading": "Mock server, collection and environment created",
+  "create_environment_sub_heading": "To keep things easy, they're all named <0>{selectedOptionsName}</0> .",
+  "default_heading": "Mock server and collection created",
+  "default_sub_heading": "To keep things easy, they're both named <0>{selectedOptionsName}</0> .",
+  "mock_server_created_heading": "Mock server created",
+  "try_it_out": " Try it out:",
+  "call_mock_server": "To call the mock server:",
+  "learn_about_examples": "<0><0>Add examples responses to each request that the mock server will return.</0><1><0>Learn what examples are and how to use them</0></1></0>",
+  "private_option_content": "<0>Add an <1>x-api-key</1> header to your requests.<3><0>Generate Postman API key</0></3></0>",
+  "send_request_to_mock_url": "<0>Then just send a request to the following URL, followed by the request path: </0> <1>{mockUrl}</1>",
+  "select_request_path": "<0>Or select the <1>{selectedOptionsName}</1> environment and enter <3>{urlPlaceholderWithBrackets}</3> followed by the request path.</0>",
+  "copy_mock_url": "Copy Mock URL",
+  "usage_limit_note": "<0>Note: Calls to a mock server count against your plan's monthly call limits. Be sure to check your </0> <1><0>usage limits</0></1> <2>.</2>"
+ },
+ "footer_actions": {
+  "next_btn": "Next",
+  "back_btn": "Back",
+  "close_btn": "Close",
+  "create_mock_server": "Create Mock Server"
+ },
+ "errors": {
+  "is_user_delinquent": {
+   "action": "Make Payment",
+   "message": "Cannot access Postman servers"
+  },
+  "subtitle": {
+   "billing_subtitle": "Your team does not have access to certain Postman services due to non-payment of invoices.  Pay the current invoice to continue.",
+   "default_subtitle": "Your team does not have access to certain Postman services due to non-payment of invoices. Contact your team’s billing manager for more information about your team’s payment.",
+   "is_sync_disabled_subtitle": "Your team has disabled syncing with Postman services. Contact support to resume using these features.",
+   "collection_status_subtitle": "Something went wrong while creating this mock. You can try again later.",
+   "is_offline_subtitle": "Please check your internet connection and try again.",
+   "error_fetching_error": "An error occurred while fetching collection information.",
+   "config_status_error": "There was an unexpected error. Please try again."
+  },
+  "try_again": "Try again"
+ }
+}

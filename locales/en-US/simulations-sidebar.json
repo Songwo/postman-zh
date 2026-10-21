@@ -1,0 +1,20 @@
+{
+ "entity_type_icon": {
+  "label": "Simulation"
+ },
+ "status_active": "Active",
+ "status_idle": "Idle",
+ "row_aria_label": "{name} ({status})",
+ "copy_simulation_url_tooltip": "Copy Mock URL",
+ "more_actions_tooltip": "View more actions",
+ "menu_start": "Start",
+ "menu_stop": "Stop",
+ "menu_copy_link": "Copy Link",
+ "menu_rename": "Rename",
+ "menu_delete": "Delete",
+ "rename_input_aria_label": "Rename simulation",
+ "delete_modal_heading": "Delete simulation?",
+ "delete_modal_body": "Are you sure you want to delete this simulation? This action cannot be undone.",
+ "delete_modal_cancel": "Cancel",
+ "delete_modal_confirm": "Delete"
+}

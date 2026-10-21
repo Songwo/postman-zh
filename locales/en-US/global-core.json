@@ -1,0 +1,171 @@
+{
+ "user_card": {
+  "user_info_actions": {
+   "add_account": "Add Account",
+   "view_profile": "View Profile"
+  }
+ },
+ "team_card": {
+  "create_team": "Add Team",
+  "individual": "Individual",
+  "partner": "Partner",
+  "guest": "Guest"
+ },
+ "context_menu": {
+  "undo": "Undo",
+  "redo": "Redo",
+  "cut": "Cut",
+  "copy": "Copy",
+  "paste": "Paste",
+  "select_all": "Select All",
+  "copy_image": "Copy Image",
+  "save_image_as": "Save Image As",
+  "inspect_element": "Inspect Element",
+  "find_selection": "Find: {selectedText}",
+  "encode_uri_component": "EncodeURIComponent",
+  "decode_uri_component": "DecodeURIComponent",
+  "comment": "Comment",
+  "save_to_package_library": "Save to Package Library",
+  "existing_package": "Existing Package",
+  "new_package": "New Package",
+  "set_as_variable": "Set as variable",
+  "postbot_in_context_menu": "Use Postbot",
+  "agent_in_context_menu": "Use Agent",
+  "add_to_agent": "Ask AI"
+ },
+ "error": {
+  "tooltips": {
+   "disabled": {
+    "no_permission": "You don't have permission to take this action.",
+    "no_permissions": "You do not have permissions to perform this action.",
+    "is_offline": "You can take this action when you're back online.",
+    "is_scratchpad": "You need to be in a workspace to perform this action.",
+    "is_published_api": "You can't make changes to a published version of an API.",
+    "signed_out": "You need to be signed-in to a team to perform this action.",
+    "get_online_to_perform_action": "Get online to perform this action",
+    "need_sign_in": "You need to be signed-in to a team to perform this action.",
+    "sharing_unavailable_in_filesystem_mode": "Sharing is not currently available in filesystem mode"
+   }
+  }
+ },
+ "unable_to_perform_action": {
+  "heading": "Unable to perform action",
+  "description": "We are trying to establish a connection with our servers. You can take this action once you’re connected."
+ },
+ "required_permissions_error_toast": "You do not have required permissions to perform this action.",
+ "creation_error": {
+  "retry_button": "Retry now",
+  "title": "Something went wrong"
+ },
+ "data_editor": {
+  "header_actions": {
+   "toggle_column_header": "Show columns"
+  }
+ },
+ "variable_tooltip": {
+  "unresolved": {
+   "heading": "Unresolved Variable",
+   "desc": "<0><0>Make sure the variable is defined and enabled in the </0><1><0><0>active environment</0></0></1><2>, </2><3><0><0>collection</0></0></3><4> or </4><5><0><0>globals</0></0></5><6>.</6></0>",
+   "no_active_environment": "<0><0>To use environment variables here, you can </0><1><0><0>select an environment</0></0></1><2> as active.</2></0>",
+   "not_extensible_collection": {
+    "button_label": "Add new variable",
+    "tooltip": "Add a variable name between {wrapSentenceSymbol} to perform this action"
+   }
+  },
+  "resolved": {
+   "meta_item": {
+    "value": "VALUE",
+    "scope": "SCOPE",
+    "current": "CURRENT",
+    "initial": "INITIAL"
+   },
+   "copy_button_tooltip": {
+    "copied": "Copied!",
+    "copy": "Copy"
+   }
+  }
+ },
+ "user_sign_out": {
+  "heading": "Sign out of Postman",
+  "description": "Signing out removes your synced history, collections and environments from local storage. You can access them again by signing back in anytime",
+  "confirmation_message": "Are you sure you wish to sign out?",
+  "checking_for_unsaved_changes": "Checking for unsaved changes...",
+  "unsaved_changes_warning": "You have unsaved changes",
+  "steps_to_save_changes": "You will lose your unsaved changes if you sign out now. To save your changes, follow these steps:",
+  "export_data_from_settings_step": "Export your data from  Settings > Data to create a backup",
+  "have_a_working_directory_step": "Ensure you have a working internet connection",
+  "quit_app_step": "Quit the app (be sure to stay signed in)",
+  "reopen_app_step": "Re-open the app again",
+  "sign_out_without_saving": "Sign out without saving my changes",
+  "sign_out_error": {
+   "title": "Something Went Wrong",
+   "description": "Unable to sign out right now. Try again later."
+  },
+  "actions": {
+   "cancel": "Cancel",
+   "sign_out_and_remove_local_data": "Sign out and remove local data",
+   "sign_out": "Sign Out"
+  }
+ },
+ "sidebar": {
+  "collections": {
+   "title": "Collections"
+  },
+  "apis": {
+   "title": "APIs"
+  },
+  "environments": {
+   "title": "Environments"
+  },
+  "mock_servers": {
+   "title": "Mock servers"
+  },
+  "monitors": {
+   "title": "Monitors"
+  },
+  "flows": {
+   "title": "Flows"
+  },
+  "insights": {
+   "title": "Insights"
+  },
+  "history": {
+   "title": "History"
+  },
+  "specs": {
+   "title": "Specs"
+  },
+  "files": {
+   "title": "Files"
+  }
+ },
+ "file_upload": {
+  "select_file": "Select File",
+  "select_files": "Select Files",
+  "selected_files": "{count} files selected"
+ },
+ "deep_link": {
+  "redirect_view": {
+   "action": "We are opening the link in the desktop app…",
+   "explanation": "Taking too long? If the desktop app isn’t opened automatically then make sure the app is on v11.40.0 or higher.",
+   "open_in_browser": "Open in Browser",
+   "always_open_in_browser": "<0>Prefer using Postman in your browser? <1><0><0>Always open in browser</0></0></1></0>",
+   "download_postman_instruction": "Or download the Postman app:",
+   "download_button_label": "Download for {platformName}"
+  },
+  "onboarding_modal": {
+   "header": "Open in desktop app instead?",
+   "description": "You can change this anytime in settings.",
+   "checkbox_label": "Always open in desktop app",
+   "open_button": "Open in desktop"
+  },
+  "top_banner": {
+   "title": "Open this workspace in desktop app instead?",
+   "button_text": "Open in desktop"
+  }
+ },
+ "http_method_dropdown": {
+  "open_dropdown": "Open dropdown",
+  "close_dropdown": "Close dropdown"
+ }
+}

@@ -1,0 +1,91 @@
+{
+ "create_new_environment": "Create new environment",
+ "environment_name": "environment name",
+ "entity_type_icon": {
+  "label": "Environment"
+ },
+ "no_environment_empty_state": {
+  "heading": "You don’t have any environments.",
+  "description": "An environment is a set of variables that allows you to switch the context of your requests.",
+  "create_environment_button": "Create environment",
+  "no_items": "No items in this panel",
+  "create": "Create"
+ },
+ "set_inactive": "Set inactive",
+ "set_active": "Set active",
+ "not_a_fork": "This environment is not a fork.",
+ "globals": "Globals",
+ "create_first_environment": "Create your first environment",
+ "could_not_load_panel": "Panel content couldn't load.",
+ "retry": "Retry",
+ "could_not_perform_action": "Could not {action} {entity} successfully",
+ "set_active_environment_error": "There was a error while setting the active environment",
+ "environment_not_a_fork_error": "Environment is not a fork",
+ "delete_environment_confirmation": {
+  "heading": {
+   "default": "Delete this forked environment?",
+   "with_name": "Delete \"{environmentDisplayName}\"?"
+  },
+  "description": "Deleting this environment might cause any monitors, scheduled runs or mock servers using it to stop functioning properly. Are you sure you want to continue?",
+  "description_with_pinning": "This will impact the monitors, scheduled runs, or mock servers that rely on this environment. Additionally, this environment will be removed from all collections where it is currently pinned.",
+  "environment_deleted_successfully": "{name} Environment was deleted successfully.",
+  "deleting": "Deleting",
+  "delete": "Delete"
+ },
+ "actions": {
+  "copy_link": {
+   "label": "Copy Link"
+  },
+  "open_in_new_tab": {
+   "label": "Open In New Tab"
+  },
+  "share": {
+   "label": "Share"
+  },
+  "move": {
+   "label": "Move"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "duplicate": {
+   "label": "Duplicate"
+  },
+  "create_a_fork": {
+   "label": "Fork"
+  },
+  "create_pull_request": {
+   "label": "Create pull request"
+  },
+  "merge_changes": {
+   "label": "Merge changes"
+  },
+  "pull_changes": {
+   "label": "Pull changes"
+  },
+  "export": {
+   "label": "Export"
+  },
+  "manage_roles": {
+   "label": "Manage Roles"
+  },
+  "delete": {
+   "label": "Delete"
+  }
+ },
+ "dependency_actions": {
+  "update": {
+   "label": "Update"
+  },
+  "delete": {
+   "label": "Delete"
+  }
+ },
+ "forbidden_access": {
+  "title": "Access to Environments revoked by Admin",
+  "message": "This could be possibly due to security policies. Please contact your admin for further details or assistance."
+ },
+ "disabled_tool_tip_is_offline": "You can take this action when you're back online.",
+ "disabled_tool_tip_no_permission": "You don't have permission to take this action.",
+ "duplicate_environment_error": "Failed to save changes before we could duplicate the environment. Please try again."
+}

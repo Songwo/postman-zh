@@ -1,0 +1,183 @@
+{
+ "name_cell": {
+  "contributors_count": "{count, plural, one {# contributor} other {# contributors}}"
+ },
+ "created_by_cell": {
+  "private_user_label": "Private user",
+  "view_profile_aria_label": "View profile for {name}"
+ },
+ "favorite_cell": {
+  "unstar_aria_label": "Unstar workspace",
+  "star_aria_label": "Star workspace"
+ },
+ "type_cell": {
+  "personal": "Internal",
+  "team": "Internal",
+  "private": "Internal",
+  "partner": "Partner",
+  "public": "Public"
+ },
+ "access_cell": {
+  "personal": "Only you and invited people",
+  "team": "Everyone in your team",
+  "private": "Only you and invited people",
+  "partner": "Only invited partners",
+  "public": "Anyone on the internet"
+ },
+ "creator_column": {
+  "header": "Creator",
+  "self_label": "You"
+ },
+ "filters": {
+  "search_placeholder": "Search workspaces",
+  "created_by": "Created by",
+  "created_by_count": "{count, plural, one {1 creator} other {{count} creators}}",
+  "created_by_placeholder": "Select creators",
+  "you": "{name} (You)",
+  "type": "Type",
+  "type_team": "Internal",
+  "type_public": "Public",
+  "type_partner": "Partner",
+  "access": "Access",
+  "access_invited": "Only you and invited people",
+  "access_team": "Everyone in your team",
+  "access_partner": "Only invited partners",
+  "access_public": "Anyone on the internet"
+ },
+ "team_cell": {
+  "private_team_label": "Private team",
+  "view_profile_aria_label": "View {teamName} profile"
+ },
+ "external_user_cell": {
+  "private_user_label": "Private user",
+  "view_profile_aria_label": "View {name} profile"
+ },
+ "identity_cell": {
+  "loading": "Loading..."
+ },
+ "role_cell": {
+  "admin": "Admin",
+  "editor": "Editor",
+  "collaborator": "Collaborator",
+  "viewer": "Viewer",
+  "partner_lead": "Partner Lead"
+ },
+ "columns": {
+  "name": "Name",
+  "contributors": "Contributors",
+  "last_activity": "Last activity",
+  "archived_on": "Archived on",
+  "archived_by": "Archived by",
+  "access": "Access",
+  "role": "Your role",
+  "owned_by": "Owned by"
+ },
+ "actions": {
+  "move": "Move",
+  "delete": "Delete",
+  "archive": "Archive",
+  "restore": "Restore",
+  "retry": "Try again",
+  "copy_link": "Copy link"
+ },
+ "permissions": {
+  "no_permission": "You don't have permission to perform this action"
+ },
+ "bulk_disabled": {
+  "archive": "All selected workspaces are already archived or you don't have permission to archive them",
+  "restore": "None of the selected workspaces are archived or you don't have permission to restore them",
+  "delete": "You don't have permission to delete any of the selected workspaces",
+  "move": "You don't have permission to move any of the selected workspaces"
+ },
+ "empty_state": {
+  "title": "No workspaces",
+  "description": "There are no workspaces in this team yet."
+ },
+ "filtered_empty_state": {
+  "title": "No workspaces found",
+  "description": "Try adjusting your search or filters."
+ },
+ "error_state": {
+  "title": "Couldn't load workspaces",
+  "description": "There was a problem loading workspaces."
+ },
+ "tab_empty_state": {
+  "all": {
+   "title": "No workspaces",
+   "description": "A workspace lets you organize and collaborate on APIs.",
+   "action": "Learn More"
+  },
+  "external": {
+   "title": "Waiting for the crew... No connections yet!",
+   "description": "When you are invited to join external workspaces by your partners, they will appear here, ready for you to explore and collaborate.",
+   "action": "Learn More"
+  },
+  "archived": {
+   "title": "You have no archived workspaces",
+   "description": "Archive workspaces to reduce clutter. You can restore them anytime."
+  }
+ },
+ "selected_count": "{count, plural, one {# workspace selected} other {# workspaces selected}}",
+ "confirm": {
+  "cancel": "Cancel",
+  "archive": {
+   "title": "Archive workspace",
+   "description": "Archiving removes the workspace from view and turns off monitors, but you can restore it anytime.",
+   "confirm": "Archive"
+  },
+  "archive_bulk": {
+   "title": "Archive workspaces",
+   "description": "{count, plural, one {Archive # workspace? This will remove it from view and turn off monitors, but you can restore it anytime.} other {Archive # workspaces? This will remove them from view and turn off their monitors, but you can restore them anytime.}}",
+   "confirm": "Archive"
+  },
+  "restore_bulk": {
+   "title": "Restore workspaces",
+   "description": "{count, plural, one {Restore # workspace? It will become visible to the team again.} other {Restore # workspaces? They will become visible to the team again.}}",
+   "confirm": "Restore"
+  }
+ },
+ "delete_modal": {
+  "title_single": "Delete workspace",
+  "title_plural": "Delete workspaces",
+  "description_single": "This workspace will be permanently deleted. This action cannot be undone.",
+  "description_plural": "{count, plural, one {Permanently delete # workspace? This action cannot be undone.} other {Permanently delete # workspaces? This action cannot be undone.}}",
+  "input_label": "delete",
+  "input_prompt": "Enter \"{value}\" to confirm",
+  "confirm": "Delete"
+ },
+ "move_modal": {
+  "title_single": "Move \"{name}\" workspace",
+  "title_plural": "Move {count} workspaces",
+  "description_single": "Once the workspace is moved, members of the original team will lose access.",
+  "description_plural": "Once moved, members of the original teams will lose access.",
+  "select_placeholder": "Select a team",
+  "confirm": "Move workspace",
+  "confirm_plural": "Move workspaces"
+ },
+ "toasts": {
+  "archive_success": "Workspace archived",
+  "archive_error": "Failed to archive workspace",
+  "restore_success": "Workspace restored",
+  "restore_error": "Failed to restore workspace",
+  "delete_success": "Workspace deleted",
+  "delete_error": "Failed to delete workspace",
+  "archive_bulk_success": "{count, plural, one {# workspace archived} other {# workspaces archived}}",
+  "archive_bulk_error": "Failed to archive some workspaces",
+  "delete_bulk_success": "{count, plural, one {# workspace deleted} other {# workspaces deleted}}",
+  "delete_bulk_error": "Failed to delete some workspaces",
+  "restore_bulk_success": "{count, plural, one {# workspace restored} other {# workspaces restored}}",
+  "restore_bulk_error": "Failed to restore some workspaces",
+  "copy_link_success": "Link copied to clipboard",
+  "copy_link_error": "Failed to copy link",
+  "star_success": "Workspace starred",
+  "star_error": "Failed to star workspace",
+  "unstar_success": "Workspace unstarred",
+  "unstar_error": "Failed to unstar workspace",
+  "move_success": "Workspace moved",
+  "move_success_plural": "{count, plural, one {# workspace moved} other {# workspaces moved}}",
+  "move_error": "Failed to move workspace",
+  "move_error_plural": "Failed to move workspaces",
+  "move_partial_error": "{succeeded} of {count} workspaces moved. Failed to move the rest.",
+  "delete_partial_error": "{succeeded} of {count} workspaces deleted. Failed to delete the rest."
+ }
+}

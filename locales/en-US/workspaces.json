@@ -1,0 +1,96 @@
+{
+ "metadata": {
+  "title": "Workspaces"
+ },
+ "heading": {
+  "team": "{teamName}'s Workspaces",
+  "personal": "Your Workspaces"
+ },
+ "description": {
+  "team": "A directory of your team's workspaces.",
+  "personal": "A directory of your workspaces."
+ },
+ "navigation_breadcrumbs": {
+  "first_breadcrumb_item_label": "Home",
+  "second_breadcrumb_item_label": "Workspaces"
+ },
+ "create_workspace_button_text": "Create workspace",
+ "filters": {
+  "search_workspaces_placeholder": "Search workspaces",
+  "filter_by_visibility_dropdown": {
+   "placeholder": "Visibility",
+   "label": "Filter by visibility",
+   "options": {
+    "all": "All",
+    "personal": "Personal",
+    "team": "Team",
+    "private": "Private",
+    "partner": "Partner",
+    "public": "Public"
+   }
+  },
+  "filter_by_owner_dropdown": {
+   "placeholder": "Created by",
+   "empty_state_message": "No users found",
+   "selected_user_label": "{userCount, plural, one {# user} other {# users}}"
+  },
+  "sort_workspaces_dropdown": {
+   "label": "Sort by",
+   "sort_by_name": "A to Z",
+   "sort_by_creation_date": "Recently created",
+   "sort_by_modification_date": "Recently updated"
+  }
+ },
+ "external_tag": "External",
+ "restricted_action": {
+  "tooltip_with_create": "Merge these changes into a workspace or make a new workspace to perform this action.",
+  "tooltip_visibility": "Merge these changes into a workspace or make a new workspace to change visibility.",
+  "tooltip_comment_creator": "Merge these changes into a workspace or make a new workspace to comment."
+ },
+ "pending_changes_banner": {
+  "source_prefix": "Changes from",
+  "source_icon_tooltip_cloud": "Cloud Agent Task",
+  "source_icon_tooltip_git": "Git Branch",
+  "fallback_source_name": "Untitled",
+  "actions": {
+   "merge": "Merge",
+   "merge_dropdown_label": "More merge options",
+   "make_new_workspace": "Make New Workspace",
+   "discard": "Discard",
+   "exit": "Exit",
+   "copy_link": "Copy link",
+   "copy_link_copied": "Link copied"
+  },
+  "discard_confirm": {
+   "title": "Discard pending changes?",
+   "message": "This permanently removes the pending changes. This action cannot be undone.",
+   "confirm": "Discard",
+   "cancel": "Cancel"
+  },
+  "toast": {
+   "merge_success": "Changes merged",
+   "merge_error_title": "Couldn't merge changes",
+   "merge_error_description": "Something went wrong. Please try again.",
+   "publish_success": "New workspace created",
+   "publish_error_title": "Couldn't create workspace",
+   "publish_error_description": "Something went wrong. Please try again.",
+   "discard_success": "Changes discarded",
+   "discard_error_title": "Couldn't discard changes",
+   "discard_error_description": "Something went wrong. Please try again.",
+   "copy_link_error_title": "Couldn't copy link",
+   "copy_link_error_description": "Something went wrong. Please try again."
+  },
+  "error": {
+   "fetch_failed": "Failed to load info",
+   "retry": "Retry"
+  }
+ },
+ "tabs": {
+  "all": "All",
+  "project_workspaces": "Project Workspaces",
+  "shared_partner": "External",
+  "archived": "Archived",
+  "inactive": "Inactive",
+  "pending_requests": "Pending Requests"
+ }
+}

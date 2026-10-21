@@ -1,0 +1,315 @@
+{
+ "errors": {
+  "reasons": {
+   "not_git_linked": "{model} is not git linked.",
+   "no_write_permission": "You don't have permission to save changes to the connected branch for this Git repository.\nFork the collection to make changes.",
+   "hash_mismatch": "The connected repo has changes that need to be pulled before updating the collection.",
+   "update_in_app": "Use Postman App to update this collection.",
+   "git_repo_secrets_restriction_error": "Git repository rule violations found. Secret detected in content",
+   "generic_connection_error_for_entity": "Something went wrong while connecting the collection to the repository. Please try again.",
+   "branch_not_found": "Branch not found on git repository",
+   "repository_disconnected": "Repository is disconnected.",
+   "conflict": "There are conflicts between your collection on Postman and the latest changes from GitHub. Resolve them to continue editing the collection.",
+   "invalid_token": "Your access token is invalid. Re-authenticate to resume syncing.",
+   "missing_token": "This {entity} is linked to a Git repository. Authenticate with your Git account and try again.",
+   "generic_error": "Something went wrong while saving changes to the Git repository. Try again later.",
+   "generic_error_for_entity": "Something went wrong while saving changes to the Git repository for {entityName}. Try again later.",
+   "conflict_popover_message": "There are conflicts between your collection on Postman and the latest changes from remote. Resolve them to continue editing.",
+   "conflict_popover_message_v2": "Merge conflicts found. Resolve them to sync changes.",
+   "choose_version": "Choose",
+   "pull_failed": "Failed to pull changes from Git repository. Please try again."
+  },
+  "branch_not_found": "Branch {branch} not found on git repository {repository}. Create/Restore branch or fix permission issues and refresh collection"
+ },
+ "conflicts": {
+  "success": {
+   "postman": "Your Postman changes were kept and synced to the Git branch.",
+   "git": "Your Git changes were pulled and synced to the Postman collection."
+  }
+ },
+ "forkPopover": {
+  "title": "Heads up: You’re about to save changes to '{branchName}'",
+  "description": "To avoid updating the primary branch directly, fork this collection and connect it to a feature branch to make edits.",
+  "forkButton": "Fork Collection",
+  "saveButton": "Save Anyway"
+ },
+ "connect_modal": {
+  "headers": {
+   "connect_repository": "Connect repository",
+   "connected_repository": "Connected repository",
+   "connected_to_repository": "Connected to Repository",
+   "wait_screen": "Connecting to {gitServiceName}...",
+   "successful_auth": "Authentication successful",
+   "failed_auth": "{gitServiceName} authorization failed"
+  },
+  "description": {
+   "connect_git_enterprise": "Authenticate with the authorized {gitServiceName} domain for your repository.",
+   "select_git_service": "Connect a Git repository to this {entityType} to sync changes<br /> between them.",
+   "loading_timeout_notice": "This may take up to 60 seconds.",
+   "enter_auth_token": "Enter the authorization token copied from the browser below",
+   "successful_auth": "You have re-authenticated with {gitServiceName} successfully.",
+   "failed_auth": "Verify your credentials and try again."
+  },
+  "labels": {
+   "button": {
+    "authenticate": "Authenticate",
+    "close": "Close",
+    "enter_token": "Enter Authorization Token"
+   },
+   "select": {
+    "git_domain": "{gitServiceName} domain"
+   },
+   "auth_token": "Authorization token",
+   "auth_on_service": "Authenticated on {gitServiceName} as",
+   "loading": "Loading..."
+  },
+  "placeholders": {
+   "select": "Select",
+   "paste_token": "Paste token here..."
+  }
+ },
+ "connect_form": {
+  "errors": {
+   "repo_not_found": "No repositories found in the organization.",
+   "branch_not_found": "No branches found in the repository.",
+   "repo_required": "A repository is required.",
+   "branch_required": "A branch is required.",
+   "org_required": "An organization is required.",
+   "owner_required": "An owner is required.",
+   "path_invalid": "The collection path is invalid.",
+   "failed_to_load": "Failed to load {entity}.",
+   "branch_permission": {
+    "title": "Unable to connect repository",
+    "description": "Your {gitServiceName} account is not authorised to connect to this repository or branch.",
+    "banner": "You don't have permissions to edit this branch"
+   },
+   "failed_connection": {
+    "title": "Error connecting {entityType}",
+    "description": "Something went wrong while connecting the {entityType} to the repository. Please try again."
+   },
+   "no_permission_to_push": "You do not have permission to push to this branch.",
+   "error_creating_branch": "Error creating branch. Please try again."
+  },
+  "labels": {
+   "select": {
+    "owner": "Owner",
+    "organization": "{gitServiceName} organization",
+    "repository": "Repository",
+    "branch": "Branch",
+    "collection_directory": "Collection directory"
+   },
+   "creating_branch": "Creating branch",
+   "create_branch_from": "Create branch \"{branchName}\" from"
+  },
+  "placeholders": {
+   "select": {
+    "owner": "Select owner",
+    "repository": "Select repository",
+    "branch": "Select branch",
+    "collection_directory": "Enter path to store collection file..."
+   }
+  },
+  "branch_helper_text": "Tip: Connect to the primary branch, then fork and link to the feature branch.",
+  "collection_directory_helper_text": "If left blank, a<Badge />directory will be created.",
+  "success_connection": "Successfully connected to {gitServiceName} repository.",
+  "install_github-app_helper_text": "If you don't see your organization, you may need to <Link><Text>install the GitHub App to your organization first.</Text></Link>",
+  "install_github-app_helper_text_new": "If you don't see any Github owners listed, try <Link><Text>installing the Postman app</Text></Link> on your personal account or organization.",
+  "learn_more": "To learn more, see <Link><Text>Github Docs</Text></Link>",
+  "learn_more_new": "<Link><Text>Learn more.</Text></Link>"
+ },
+ "re-connect_modal": {
+  "header": "{headerAction} with {gitServiceName}",
+  "header_action": {
+   "authenticating": "Authenticating",
+   "re-authenticating": "Re-authenticating"
+  }
+ },
+ "disconnect_modal": {
+  "header": "Disconnect repository?",
+  "warning_message": "will be permanently disconnected from",
+  "confirmation_label": "To confirm, type <strong>{collectionName}</strong> below.",
+  "labels": {
+   "button": {
+    "disconnect_repository": "Disconnect Repository"
+   }
+  }
+ },
+ "auth_popover": {
+  "authentication_message": "This {entityType} is linked to a Git repository. Authenticate with your {gitServiceName} account to make changes.",
+  "re-authentication_message": {
+   "default": "Your {gitServiceName} access token is invalid. Re-authenticate to resume syncing.",
+   "on_save": "Your {gitServiceName} access token is invalid. Re-authenticate to save changes and resume syncing."
+  },
+  "authentication_message_v2": "Authentication required to make changes",
+  "re-authentication_message_v2": "Re-authentication required to make changes",
+  "labels": {
+   "button": {
+    "authenticate": "Authenticate with {gitServiceName}",
+    "re-authenticate": "Re-authenticate with {gitServiceName}",
+    "authenticate_v2": "Authenticate",
+    "re-authenticate_v2": "Re-authenticate",
+    "open_postman_desktop_app": "Open Postman desktop app"
+   }
+  }
+ },
+ "on_boarding_banner": {
+  "title": "Inherit Git review and merge workflows",
+  "description": "Connect this collection to your Git repo, then fork and link to branch to keep your collection and code reviews in sync.",
+  "v2_message": "Fork + Git = Better workflow.",
+  "variants": {
+   "first": {
+    "title": "One workflow, one source of truth",
+    "description": "Auto-sync Collections with Git—no exports."
+   },
+   "second": {
+    "title": "Team-friendly workflows",
+    "description": "Link Collections to branches and use PRs with visual diffs."
+   },
+   "third": {
+    "title": "Local dev to CI/CD",
+    "description": "Run Collections across environments with synced tests."
+   }
+  },
+  "learn_more": "Learn more about",
+  "connect_docs_link": "Connecting git repo to a collection"
+ },
+ "git_conflict-modal": {
+  "header": "Resolve conflict",
+  "open_file": "Open {serviceName} collection file"
+ },
+ "labels": {
+  "button": {
+   "connect_to_repo": "Connect to Repo",
+   "cancel": "Cancel",
+   "save": "Save",
+   "retry": "Retry",
+   "connect": "Connect",
+   "refresh": "Refresh"
+  }
+ },
+ "folder_selector": {
+  "modal": {
+   "header": "Save Location",
+   "buttons": {
+    "create": "Create",
+    "cancel": "Cancel",
+    "select": "Select",
+    "change_location": "Change Location"
+   },
+   "search_placeholder": "Search directory",
+   "empty_states": {
+    "no_results": "No results found for \"{searchQuery}\"",
+    "no_directory": "Directory is empty"
+   },
+   "error_states": {
+    "unable_to_load_directory": "Unable to load directories. Please try again."
+   },
+   "tooltips": {
+    "block_actions_while_creating": "Please finish creating the new folder first.",
+    "open_folder": "Open {folderName}",
+    "loading_directories": "Loading directories.."
+   },
+   "validation": {
+    "empty_folder_not_allowed": "Creating empty folder is not allowed.",
+    "dot_and_dotdot_not_allowed": "Using ' . ' and ' .. ' in the folder name is not allowed.",
+    "dot_not_allowed": "Using ' {char} ' in the folder name is not allowed."
+   }
+  }
+ },
+ "sync_settings": {
+  "title": "Sync settings",
+  "description": "Sync saved changes with repository",
+  "subtitle": "Choose whether to push and pull changes yourself or automatically.",
+  "modes": {
+   "manual": "Manually",
+   "automatic": "Automatically"
+  },
+  "warning": {
+   "pending_changes": "Sync with the repository before changing this setting.",
+   "open_source_control": "Open Source control →"
+  },
+  "buttons": {
+   "cancel": "Cancel",
+   "save": "Save"
+  },
+  "toasts": {
+   "success": "Sync settings updated successfully",
+   "error": "Error updating sync settings. Please try again."
+  }
+ },
+ "repository_settings": {
+  "title": "Repository settings"
+ },
+ "branch_status_popover": {
+  "repository_label": "Repository",
+  "connect_again": "Connect again"
+ },
+ "source_control": {
+  "title": "Source Control",
+  "repository": {
+   "title": "Repository",
+   "disconnect_repository": "Disconnect from {gitServiceName}",
+   "create_pull_request": "Create pull request",
+   "pull_changes": {
+    "messages": {
+     "no_changes_to_pull": "No changes to pull",
+     "repository_ahead_by": "Repository is ahead by {count, plural, one{# commit} other{# commits}}.",
+     "auto_sync": "No changes to pull. Saved changes are automatically synced.",
+     "pull_success": "Changes have been successfully pulled from the repository.",
+     "fetch_commits_error": "Unable to fetch commits at this time.",
+     "pull_changes_error": "Unable to pull changes at this time."
+    },
+    "labels": {
+     "button": {
+      "pull_changes": "Pull changes",
+      "pulling": "Pulling changes...",
+      "try_again": "Try again"
+     }
+    }
+   }
+  },
+  "push_changes": {
+   "title": "Changes",
+   "commit_options": {
+    "skip_ci_workflows": "Skip CI workflows"
+   },
+   "status": {
+    "added": "added",
+    "modified": "modified",
+    "deleted": "deleted",
+    "conflicted": "conflicted"
+   },
+   "show_all_changes": "Show all {count}",
+   "show_less": "Show less",
+   "commit_message_placeholder": "Enter commit message",
+   "push_button": "Push changes",
+   "pushing": "Pushing...",
+   "all_changes_pushed": "All changes have been pushed to the repository",
+   "auto_sync": "No changes to push. Saved changes are automatically synced with the repository.",
+   "error_message": "Unable to fetch changes at this time.",
+   "push_error": "Error pushing changes to Git. Please try again.",
+   "push_success": "All changes successfully pushed to Git.",
+   "push_changes_tooltip": "Push changes to the connected branch",
+   "push_blocked_tooltip": "There are changes to pull"
+  },
+  "commits": {
+   "title": "Commits",
+   "show_all": "Show all",
+   "no_commits": "No commits yet",
+   "fetch_error": "Unable to fetch commits at this time.",
+   "fetch_changes_error": "Unable to fetch commit changes at this time."
+  },
+  "placeholders": {
+   "view_diff": "View diff",
+   "discard_changes": "Discard changes"
+  },
+  "diff_view": {
+   "title": "Changes",
+   "failed_to_load": "Failed to load diff view",
+   "no_changes": "No changes",
+   "empty_state": {
+    "title": "There are no changes to view at this time"
+   }
+  }
+ }
+}

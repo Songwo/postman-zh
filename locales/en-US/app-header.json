@@ -1,0 +1,680 @@
+{
+ "home": "Home",
+ "explore": "Explore",
+ "navigation_popover": {
+  "navigation_menu": "Navigation menu",
+  "home": "Home",
+  "api_catalog": "API Catalog",
+  "application_inventory": "Application Inventory",
+  "workspaces": "Workspaces",
+  "teams": "Teams",
+  "integrations": "Integrations",
+  "reports": "Reports",
+  "private_api_network": "Private API Network",
+  "unified_api_network": "Passport Access",
+  "public_api_network": "Public API Network",
+  "conversations": "Conversations",
+  "agents": "Agent Tasks",
+  "agent_context": "Agent Context",
+  "agents_beta_label": "Beta",
+  "agent_automations": "Agent Automations",
+  "api_catalog_disabled_tooltip": "API Catalog is available for users on the Enterprise plan.",
+  "application_inventory_disabled_tooltip": "Application Inventory is available for users on the Solo plan and above."
+ },
+ "notifications": {
+  "icon_tooltip": "New notifications",
+  "label": "Notifications",
+  "notification_settings_button": "Manage notifications",
+  "manage_preferences": "Manage Preferences",
+  "sign_in_message": "<0>Sign In</0><1> to view your notifications.</1>",
+  "no_more_notifications": "No more notifications",
+  "notification_tabs": {
+   "direct": "Direct",
+   "watching": "Watching",
+   "all": "All"
+  },
+  "no_notifications_state": {
+   "label": "You’re all caught up 🥳"
+  },
+  "category_icon_placeholder": "category icon",
+  "get_notified": "Get notified on {platform}",
+  "authorizing": "Authorizing...",
+  "initial_authorization_error": "Something went wrong while initiating authorization flow",
+  "could_not_authorize_error": "Something went wrong while performing authorization",
+  "integration_added_success": "Added a new integration",
+  "integration_added_error": "Something went wrong while adding a new integration"
+ },
+ "workspace_switcher": {
+  "label": "Workspaces",
+  "placeholder": "Search workspaces...",
+  "no_results_search_text": "Workspaces you visit will appear here.",
+  "create_workspace_button": "Create",
+  "view_all_workspaces": "View all workspaces",
+  "last_updated": "Last updated",
+  "network_error": {
+   "heading": "Unable to load workspaces",
+   "description": "You need to be online to view workspaces."
+  },
+  "sign_in_modal": {
+   "heading": "Join Postman to explore workspaces",
+   "description": "A workspace lets you organize and collaborate on APIs."
+  },
+  "could_not_load_workspaces": {
+   "heading": "Couldn’t load the workspaces",
+   "description": "Just a faulty wire. Try reloading.",
+   "could_not_load_list": "Couldn’t load the workspaces. Try reloading. ",
+   "reload_button": "Reload"
+  },
+  "all_workspaces_empty_state": {
+   "heading": "No workspaces",
+   "description": "A workspace lets you organize and collaborate on APIs. Learn more about <2><0>workspaces</0></2>",
+   "create_workspace_button": "Create workspace"
+  },
+  "no_results_found": {
+   "heading": "No workspaces found",
+   "description": "Check your spelling or try a different search term."
+  },
+  "no_workspaces_found": "No workspaces found",
+  "recently_visited": "Recently visited",
+  "more_workspaces": "More workspaces",
+  "multi_partner_mode": {
+   "on": "Multi-partner"
+  }
+ },
+ "workspace_switcher_new": {
+  "all_workspaces_empty_state": {
+   "heading": "No workspaces yet",
+   "description": "Find an existing workspace, or create one to collaborate with your team.",
+   "create_workspace_button": "Create workspace",
+   "browse_workspaces": "Browse workspaces"
+  },
+  "no_results_found": {
+   "heading": "No workspaces found",
+   "description": "Check your spelling or try a different search term."
+  },
+  "switcher_no_workspaces": {
+   "heading": "No workspaces yet",
+   "description": "You haven't visited any workspaces. Browse to find one or create your own."
+  }
+ },
+ "favorite_workspace_toggle": {
+  "toast_content": {
+   "title": "Unable to star workspace",
+   "description": "You've reached the maximum number of workspaces you can star."
+  },
+  "tooltip": {
+   "loading": "Loading...",
+   "unstar_workspace": "Unstar workspace",
+   "star_workspace": "Star workspace"
+  },
+  "button_text": {
+   "unstar": "Unstar",
+   "star": "Star"
+  }
+ },
+ "workspace_preview_popover": {
+  "partner_workspace_banner": {
+   "default": "Partners can access this workspace",
+   "multi_partner_workspace": "Shared with partners from multiple organizations"
+  },
+  "archived_workspace_banner": {
+   "text": "This workspace is archived"
+  },
+  "multi_partner_mode_label": "Multi-partner mode:",
+  "multi_partner_mode_on": "ON",
+  "multi_partner_mode_off": "OFF",
+  "multi_partner_mode_tooltip_on": "Partners cannot see other partners or make changes to this workspace",
+  "multi_partner_mode_tooltip_off": "Partners can see other partners in this workspace"
+ },
+ "more_options": "More",
+ "api_network_dropdown": {
+  "label": "API Network",
+  "disabled_tooltip": "You don't have permission to view this.",
+  "private_api_network": "Private API Network",
+  "public_api_network": "Public API Network",
+  "partner_api_network": "Partner API Network",
+  "public_api_network_dropdown": {
+   "card_title": "Postman API Network",
+   "card_subtitle": "Explore public APIs on Postman",
+   "public_card_heading": "Explore and integrate with public APIs",
+   "spotlight_tab": "API spotlight",
+   "trending_tab": "Trending APIs",
+   "public_cta": "View all public APIs →"
+  },
+  "private_api_network_dropdown": {
+   "card_title": "Private API Network",
+   "card_subtitle": "Reusable APIs across your Organization",
+   "private_card_heading": "Use internal team APIs to ease development",
+   "private_card_text": "A central hub for internal APIs, to streamline your development.",
+   "private_cta": "View internal APIs →"
+  }
+ },
+ "sign_in_modal": {
+  "heading": "CREATE AN ACCOUNT",
+  "description": "You need an account to continue exploring Postman.",
+  "actions": {
+   "create_account": "Create Account",
+   "sign_in": "Sign In"
+  },
+  "defaults": {
+   "heading": "Create an account",
+   "description": "You need to be signed in to perform this action. Go ahead and create an account. It is free!"
+  }
+ },
+ "users_info": {
+  "sign_in": "Sign In",
+  "sign_out": "Sign out",
+  "settings": "Settings",
+  "switch_account": "Switch account",
+  "sign_up_for_free": "Sign Up for Free",
+  "manage_accounts_tooltip": "Manage accounts",
+  "create_team": {
+   "button_label": "Add team",
+   "description": "Collaborate on a single source of truth for your API workflows.",
+   "image_alt_text": "Community icon. Illustration."
+  },
+  "teams": "Teams",
+  "switch_to": "Switch to",
+  "add_account": "Add account",
+  "view_account": "View account",
+  "account_settings": "Account settings"
+ },
+ "team_info": {
+  "reached_monthly_threshold_warning": "You have reached the monthly usage limits of your plan.",
+  "about_to_reach_monthly_threshold_warning": "You are about to reach the monthly usage limits of your plan.",
+  "create_free_team": "Create free team",
+  "create_team_account": "Create team account",
+  "view_team": "View team",
+  "view_org": "View organization",
+  "free_user_header_menu": {
+   "heading": "Postman works best with teams",
+   "description": "Collaborate in real-time and establish a single source of truth for your API workflows by creating a team."
+  },
+  "team_usage": {
+   "resource_limit_error": {
+    "heading": "Something went wrong!",
+    "description": "Something went wrong while fetching your team's usage data.",
+    "retry_action": "Retry"
+   },
+   "menu_options": {
+    "billing": "Billing",
+    "resource_usage": "Resource usage",
+    "billing_and_resource_usage": "Billing & resource usage",
+    "manage_public_elements": "Public elements",
+    "manage_postman_keys": "Postman keys",
+    "audit_logs": "Audit logs",
+    "team_settings": "Team settings",
+    "org_settings": "Organization settings"
+   }
+  },
+  "sandbox_header_button": "Sandbox",
+  "trial_ends_message": "Trial ends in {days, plural, one {# day} other {# days}}",
+  "upgrade_dropdown_button": "Upgrade",
+  "organization_dropdown_button": "Organization",
+  "team_dropdown_button": "Team"
+ },
+ "settings_dropdown": {
+  "tooltip": "Settings",
+  "options": {
+   "settings": "Settings",
+   "app_settings": "App settings",
+   "workspace_settings": "Workspace settings",
+   "organization_settings": "Organization settings",
+   "team_settings": "Team settings",
+   "account_settings": "Account settings",
+   "update_available_view": "Update available, view changes",
+   "update_available_restart": "Restart to update",
+   "update_failed": "Update failed, view details",
+   "help": "Help",
+   "release_notes": "Release Notes",
+   "learning_center": "Learning Center",
+   "support_center": "Support Center",
+   "trust_and_security": "Trust and Security",
+   "privacy_policy": "Privacy Policy",
+   "terms": "Terms",
+   "community": "Community",
+   "github_issues": "Github Issues",
+   "keyboard_shortcuts": "Keyboard shortcuts",
+   "switch_offline": "Switch to Offline API Client to modify settings."
+  }
+ },
+ "invite": {
+  "close_modal": "Close modal",
+  "heading": {
+   "google_directory": "Add people from your Google Directory",
+   "invite_partners": "Invite partners",
+   "invite_people": "Invite to workspace",
+   "invite_people_workspace": "Invite people to this workspace",
+   "invite_team_members": "Invite team members"
+  },
+  "learn_more": "Learn more",
+  "invite_button": {
+   "label": "Invite",
+   "disabled_tooltip": "You don't have permission to take this action.",
+   "default_tooltip": "Invite"
+  },
+  "copy_partner_link": "Copy partner link",
+  "copy_team_member_link": "Copy team link",
+  "partner_slot_full_modal": {
+   "heading": "Partner invites sent",
+   "description": "All invited partners cannot be Editors, as your team doesn’t have enough paid slots. Until more slots are added, they can access this workspace as Viewers.",
+   "partner_managers_notified": "We’ve notified Partner Managers to add more slots.",
+   "done": "Done"
+  },
+  "multi_partner_workspace_configuration_nudge": {
+   "heading": "Inviting partners from multiple organizations?",
+   "description": "Enable Multi-partner mode to prevent partners from seeing each other.",
+   "action_text": "Go to workspace settings",
+   "learn_more": "Learn more"
+  },
+  "email_input": {
+   "placeholder": "Enter name, group name or email..."
+  },
+  "could_not_find_workspace": "Couldn’t find this workspace.",
+  "share_workspace_error": "Something went wrong while sharing this workspace",
+  "pending_invites": {
+   "resend_success": "Invite has been resent",
+   "resend_error": "Something went wrong while resending the invite",
+   "revoke_success": "Invite has been revoked",
+   "revoke_error": "Something went wrong while revoking the invite"
+  },
+  "failed_to_assign_editor_role": "Failed to assign Flow Editor role to some users.",
+  "invited_to_workspace": "Invited to workspace",
+  "invited_to_workspace_for_non_team_users": "Invite request sent",
+  "error_inviting_to_workspace_toast": {
+   "heading": "Couldn’t invite",
+   "description": "Just a faulty wire. Try again."
+  },
+  "cant_invite_external_users_error": "You can’t invite people who are not part of your team.",
+  "inviting_will_change_to_visibility": "Inviting people will change this into a {toVisibility} workspace.",
+  "email_invalid_message": "{noOfEmails, plural, one {# email is invalid. Enter a valid email to send invite.} other {# emails are invalid. Enter valid emails to send invite.}}",
+  "permission_denied_message": "You don’t have permission to take this action.",
+  "invite_disabled_message": "Please enter a name or email to send an invite.",
+  "copy_invite_link_personal_workspace": "Inviting people opens the workspace to everyone in your team.",
+  "new_members_will_join_team_info_text": "New members will join your team once they accept your invite.",
+  "non_team_new_members_will_join_team_info_text": "We'll notify you once the reviewer approves your request.",
+  "suggestion_will_be_sent_to_team_admin_info_text": "Your suggestion will be sent to a Team Admin for approval.",
+  "team_setup_info_for_non_team_user": "After inviting, we’ll help you set up a team.",
+  "cant_invite_partners_users_error": "This partner is still part of your team. <1><0>Remove them</0></1> to re-invite.",
+  "personal_ws_to_team_ws_info": "Inviting people opens the workspace to everyone in your team. <1><0>Upgrade</0></1> to work with selected teammates.",
+  "cant_invite_team_member_as_partner": "You can’t invite a team member as partner to this workspace.",
+  "new_partners_can_access_workspace_info_text": "New partners will be able to access the workspace once they accept your invite.",
+  "common_domain_partner_invite_error": "You can only invite partners from your own domain.",
+  "team_size": "Team Size",
+  "manage_team": "Manage team",
+  "manage_org": "Manage",
+  "selected": "Selected",
+  "external_team_banner": "This workspace is owned by <1><0>{teamName}</0></1>.",
+  "invite_users_radio_group": {
+   "label": "Who would you like to invite?",
+   "options": {
+    "partners": {
+     "label": "Partners",
+     "helpertext": "<Link>Partners</Link> are external people outside of your organization."
+    },
+    "team_members": {
+     "label": "Team members",
+     "helpertext": "Team members are people from your organization."
+    }
+   },
+   "actions": {
+    "continue": "Continue",
+    "cancel": "Cancel"
+   }
+  },
+  "user_import": {
+   "try_again_action": "Try Again",
+   "loading_contacts": "Loading your contacts...",
+   "connected_account": "Connected account",
+   "search_input_placeholder": "Search in your directory",
+   "selected": "Selected",
+   "footer": {
+    "actions": {
+     "switch_google_account": "Switch Google Account",
+     "back": "Back",
+     "add": "Add"
+    }
+   }
+  },
+  "user_suggestions": {
+   "search_input_placeholder": "Search in your organization",
+   "select_all_checkbox_label": "Select all",
+   "could_not_find_anyone": "Oops, we couldn’t find anyone within your organization.",
+   "could_not_find_person": "Oops, we couldn’t find this person in your organization.",
+   "add_new_users_via_email": "You can still add new users by inviting them via email.",
+   "try_a_different_spelling_to_invite": "Try a different spelling or invite them via email."
+  },
+  "workspace_role_selection": {
+   "error_uploading_file": "There was an error uploading your file. Please try again",
+   "only_csv_and_txt_files_can_be_uploaded_error": "Only CSV and TXT files can be uploaded",
+   "max_file_size_exceeded_error": "File size is larger than {maxFileSize}MB, only files less than {maxFileSize}MB are supported.",
+   "name_or_email": "Name or email",
+   "invite_by_email": "Invite by email",
+   "name_email_or_group_name": "Name, email, or group name",
+   "select_file_to_add_people": "Select a TXT or CSV file to add people",
+   "add_from_file": "Add from file"
+  },
+  "role": "Role",
+  "assign_flow_editor_role": {
+   "label": "Assign Flow Editor role ",
+   "helpertext": "This will allow invited people to edit all flows in this team."
+  },
+  "new_tag_label": "New",
+  "assign_partner_lead_role": {
+   "label": "Make them {role}",
+   "description": "This allows them to invite and manage other partners in this workspace."
+  },
+  "invalid_emails_error_message": "Make sure the emails you’ve entered are valid.",
+  "blank_state": {
+   "heading": "Couldn’t load",
+   "description": "Just a faulty wire. Try reloading.",
+   "actions": {
+    "reload": "Reload"
+   }
+  },
+  "copy_link_for_workspace": {
+   "copy_invite_link": "Copy invite link",
+   "copied": "Copied",
+   "get_invite_link_error_message": "Something went wrong while generating the link.",
+   "cannot_send_invites_permission_message": "You do not have admin permission to perform this action"
+  },
+  "learn_about_partners": "Learn about <1><0>partners</0></1>",
+  "back": "Back",
+  "invite_partners": "Invite Partners",
+  "send_invite": "Send Invite",
+  "toast_content": {
+   "default_error": {
+    "description": "Unable to respond to request at the moment. Please try again."
+   },
+   "request_responded": {
+    "description": "You have responded to the request."
+   },
+   "request_not_found": {
+    "description": "Request not found."
+   }
+  },
+  "git_collaborators": {
+   "loading": "Loading Git collaborators...",
+   "error_collaborators": "Could not load Git collaborators.",
+   "retry": "Retry",
+   "empty_collaborators": "No collaborators found in recent Git history.",
+   "suggested_header": "Suggested invites",
+   "suggested_description": "Invite collaborators from your Git repo.",
+   "invite_all": "Invite all ({count})",
+   "dismiss": "Dismiss",
+   "all_invited": "All Git collaborators have been invited!",
+   "people_with_access": "People with access",
+   "show_all": "Show all"
+  }
+ },
+ "move_to_invite": {
+  "squad_member": {
+   "heading": "Move workspace to a team to collaborate",
+   "description": "You can only invite and collaborate with people in teams."
+  },
+  "non_squad_member": {
+   "heading": "Join a team in {teamName} to collaborate",
+   "description": "You can only invite and collaborate with people in teams."
+  }
+ },
+ "deny_share_request": {
+  "heading": "Deny Request?",
+  "description": "The request to access this {model} will be denied.",
+  "deny_cta": "Deny",
+  "cancel_cta": "Cancel",
+  "toast_content": {
+   "default_error": {
+    "description": "Unable to respond to request at the moment. Please try again."
+   },
+   "request_denied": {
+    "description": "Request denied"
+   },
+   "request_responded": {
+    "description": "You have responded to the request."
+   },
+   "request_not_found": {
+    "description": "Request not found."
+   }
+  }
+ },
+ "workspace_presence": {
+  "active_now": "Active now",
+  "active": "Active",
+  "no_active_team_members": "No active team members right now.",
+  "inactive": "Inactive",
+  "no_inactive_team_members": "No inactive team members right now.",
+  "name_with_you_label": "{name} (You)",
+  "visited": "Visited {visitedRelativeString}"
+ },
+ "get_relative_time": {
+  "a_few_seconds_ago": "a few seconds ago",
+  "seconds_ago": "{seconds} seconds ago",
+  "minutes_ago": "{minutes, plural, =1 {# minute} other {# minutes}} ago",
+  "hours_ago": "{hours, plural, =1 {# hour} other {# hours}} ago",
+  "days_ago": "{days, plural, =1 {# day} other {# days}} ago",
+  "months_ago": "{months, plural, =1 {# month} other {# months}} ago",
+  "years_ago": "{years, plural, =1 {# year} other {# years}} ago"
+ },
+ "dropdown": {
+  "tag_labels": {
+   "new": "NEW"
+  },
+  "input": {
+   "placeholders": {
+    "search_postman": "Search Postman (append > to see and run commands)",
+    "search_postman_short": "Search Postman",
+    "search_for_teams": "Search for teams on Postman",
+    "search_for_flows": "Search for exciting new flows",
+    "search_for_apis_explore": "Search for APIs you want to explore",
+    "search_for_team_apis_to_explore": "Search for team APIs you want to explore",
+    "search_for_apis_private_network": "Search for APIs in your Private API Network",
+    "search_for_team_apis_to_explore_like": "Search for team APIs you want to explore like {team1} and {team2}",
+    "search_for_apis_by_popular_teams": "Search for APIs by popular teams like {team1} and {team2}",
+    "search_for_team_workspaces_to_explore_like": "Search for team workspaces you want to explore like {team1} and {team2}",
+    "search_for_workspaces_by_popular_teams": "Search for workspaces by popular teams like {team1} and {team2}",
+    "search_for_team_collections_to_explore_like": "Search for team collections you want to explore like {team1} and {team2}",
+    "search_for_collections_by_popular_teams": "Search for collections by popular teams like {team1} and {team2}",
+    "search_for_team_requests_to_explore_like": "Search for team requests you want to explore like {team1} and {team2}",
+    "search_for_requests_by_popular_teams": "Search for requests by popular teams like {team1} and {team2}",
+    "search_for_team_flows_to_explore_like": "Search for team flows you want to explore like {team1} and {team2}",
+    "search_for_flows_by_popular_teams": "Search for flows by popular teams like {team1} and {team2}",
+    "search_for_teams_to_explore_like": "Search for teams you want to explore like {team1} and {team2}",
+    "search_for_popular_teams": "Search for popular teams like {team1} and {team2}",
+    "search_example_brevo": "Eg. What is the process for adding a webhook in {team}",
+    "search_example_google_maps": "Eg. Find the endpoint to display videos on {team}",
+    "search_example_kroger": "Eg. Retrieve user profile data from the {team}",
+    "search": "Search",
+    "search_in_current_workspace": "Search for an element within this workspace"
+   },
+   "clear_label": "Clear",
+   "see_all_results": "See all results for “{searchQuery}”",
+   "view_all_results": "View all results",
+   "press_enter": "Press ENTER",
+   "open_search": "Open search"
+  },
+  "type_filters": {
+   "hint": "Search for:",
+   "workspaces": "Workspaces",
+   "collections": "Collections",
+   "requests": "Requests",
+   "apis": "APIs",
+   "flows": "Flows",
+   "teams": "Teams",
+   "folders": "Folders"
+  },
+  "search_scopes": {
+   "choose_type": "Choose the type of entity you want to find",
+   "hint": "Search in",
+   "all_postman": "All of Postman",
+   "private_api_network": "Private API Network",
+   "public_api_network": "Public API Network",
+   "personal_space": "Personal Space",
+   "team": "Team {teamName}",
+   "current_workspace": "Workspace {activeWorkspaceName}"
+  },
+  "recent_views": {
+   "title": "RECENTLY VIEWED",
+   "created_by_you": "Created by you",
+   "created_by_name": "Created by {name}",
+   "last_viewed": "Last viewed {time}",
+   "viewed_prefix": "Viewed",
+   "remove_item_aria_label": "Remove {name}"
+  },
+  "search_results": {
+   "updated_prefix": "Updated",
+   "created_prefix": "Created"
+  },
+  "recent_searches": "RECENTLY SEARCHED",
+  "popular_entities": "Popular in the network",
+  "ai_suggestions": {
+   "ai_suggestion_header": "Ready-to-use requests by Postbot",
+   "generate_with_context": "Generate with more context"
+  },
+  "mobile_search_view": {
+   "search_instructions": "Search all workspaces, collections, specs, teams and users for"
+  },
+  "empty_states": {
+   "type_query_to_search": {
+    "title": "Start typing to search within this workspace or collection"
+   },
+   "no_results": {
+    "title": "No results found",
+    "description": "Check your spelling, try a different search term, or adjust the filters."
+   }
+  },
+  "error_states": {
+   "query_limit_exceeded": {
+    "title": "Search query too long",
+    "description": "Try searching with a shorter query."
+   },
+   "no_internet": {
+    "title": "Unable to search while offline",
+    "description": "You need to be online to perform a search.",
+    "refresh_button": "Refresh when online"
+   },
+   "unknown_error": {
+    "title": "Unable to search",
+    "description": "Sorry an unexpected error occurred.",
+    "try_again_button": "Try again"
+   }
+  },
+  "filters": {
+   "active_entity_filter_prefix": "Find in",
+   "active_entity_type_workspace": "Workspace",
+   "active_entity_type_collection": "Collection",
+   "private_api_network_only": "Private API Network",
+   "workspace_type": "Visibility",
+   "element_type": "Type",
+   "clear_all": "Clear all",
+   "aria_filter_applied": "{filterText} filter applied: {activeFilterLabel}. Click to change filter",
+   "aria_filter_not_applied": "{filterText} filter. Click to apply filter",
+   "workspace_types": {
+    "internal": "Internal",
+    "partner": "Partner",
+    "public": "Public",
+    "all": "All"
+   },
+   "element_types": {
+    "workspace": "Workspace",
+    "collection": "Collection",
+    "api": "API",
+    "request": "Request",
+    "environment": "Environment",
+    "document": "Document",
+    "code_mock": "Code Mock",
+    "flow": "Flow",
+    "team": "Publisher",
+    "folder": "Folder",
+    "spec": "Specs",
+    "all": "All",
+    "workspace_plural": "workspaces",
+    "collection_plural": "collections",
+    "api_plural": "APIs",
+    "request_plural": "requests",
+    "environment_plural": "environments",
+    "document_plural": "documents",
+    "code_mock_plural": "code mocks",
+    "flow_plural": "flows",
+    "team_plural": "teams",
+    "folder_plural": "folders",
+    "spec_plural": "specs"
+   },
+   "by_filter": {
+    "name": "By",
+    "label_multiple_value": "{count} members",
+    "search_placeholder": "Search user",
+    "group_selected": "Selected",
+    "group_users": "Users",
+    "no_results": "No users found",
+    "clear_selected": "Clear selected",
+    "current_user_suffix": " (you)"
+   },
+   "organization_filter": {
+    "name": "Org",
+    "label_multiple_value": "{count, plural, one {# organization} other {# organizations}}",
+    "search_placeholder": "Search organization",
+    "group_selected": "Selected",
+    "group_organizations": "Organizations",
+    "no_results": "No organizations found",
+    "clear_selected": "Clear selected",
+    "current_team_suffix": " (your organization)"
+   },
+   "in_filter": {
+    "name": "In",
+    "label_single": "In: {name}",
+    "label_multiple": "In: {count} places",
+    "label_multiple_value": "{count} places",
+    "search_placeholder": "Search for workspaces and collections",
+    "group_selected": "Selected",
+    "group_current": "Current",
+    "group_suggestions": "Suggestions",
+    "group_collections_current_workspace": "Collections in current workspace",
+    "group_workspaces_current_team": "Workspaces in current team",
+    "group_collections_other_workspaces": "Collections in other workspaces",
+    "group_workspaces_other_teams": "Workspaces in other teams",
+    "no_results": "No workspaces or collections found",
+    "clear_selected": "Clear selected",
+    "showing_type_only": "Showing {type}s only. Deselect to filter by {otherType}.",
+    "type_workspace": "workspace",
+    "type_collection": "collection"
+   },
+   "tag_filter": {
+    "name": "Tag",
+    "label_single": "Tag: {tag}",
+    "label_multiple": "Tag: {count} tags",
+    "label_multiple_value": "{count} tags",
+    "search_placeholder": "Search tags",
+    "group_selected": "Selected",
+    "group_tags_current_workspace": "Tags in current workspace",
+    "group_suggestions": "Suggestions",
+    "group_tags_other_workspaces": "Tags in other workspaces",
+    "no_results": "No tags found",
+    "clear_selected": "Clear selected"
+   },
+   "team_filter": {
+    "name": "Team",
+    "label_multiple_value": "{count} teams",
+    "search_placeholder": "Search teams",
+    "group_selected": "Selected",
+    "group_suggestions": "Suggestions",
+    "group_matching_teams": "Matching teams",
+    "no_results": "No teams found",
+    "clear_selected": "Clear selected"
+   }
+  },
+  "commands": {
+   "show_and_run_commands": "Show and run commands"
+  }
+ },
+ "window_controls": {
+  "win_menu_tooltip": "Menu",
+  "go_back_mac_tooltip": "Go back (⌘[)",
+  "go_back_win_tooltip": "Go back (Alt+Left arrow)",
+  "go_forward_mac_tooltip": "Go forward (⌘])",
+  "go_forward_win_tooltip": "Go forward (Alt+Right arrow)",
+  "minimize_win_tooltip": "Minimize",
+  "restore_down_win_tooltip": "Restore down",
+  "maximize_win_tooltip": "Maximize",
+  "close_win_tooltip": "Close"
+ }
+}

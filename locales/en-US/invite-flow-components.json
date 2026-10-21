@@ -1,0 +1,17 @@
+{
+ "invite_user": {
+  "default_title": "Name, email, or group name",
+  "select_file_to_add_people": "Select a TXT or CSV file to add people",
+  "add_from_file": "Add from file",
+  "invite_status": {
+   "pending": "Invite Pending",
+   "approval_pending": "Pending Approval"
+  },
+  "error_messages": {
+   "already_a_team_member": "{email} is already your team member",
+   "wrong_file_type": "Only CSV and TXT files can be uploaded",
+   "file_too_large": "File size is larger than {max_file_size}MB, only files less than {max_file_size}MB are supported.",
+   "file_read_error": "There was an error uploading your file. Please try again"
+  }
+ }
+}

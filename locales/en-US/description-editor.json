@@ -1,0 +1,185 @@
+{
+ "toolbar": {
+  "font_size_options": {
+   "normal": "Normal text",
+   "heading1": "Heading 1",
+   "heading2": "Heading 2",
+   "heading3": "Heading 3",
+   "heading4": "Heading 4",
+   "heading5": "Heading 5",
+   "heading6": "Heading 6"
+  },
+  "switch_to_markdown_label": "Switch to Markdown editor",
+  "switch_to_postman_label": "Switch to Postman editor",
+  "editor_options_label": {
+   "postman": "Postman editor",
+   "markdown": "Markdown editor"
+  },
+  "markdown_tabs_label": {
+   "markdown": "Markdown",
+   "preview": "Preview"
+  },
+  "tooltips": {
+   "bold": "Bold",
+   "italic": "Italic",
+   "strikethrough": "Strikethrough",
+   "unordered_list": "Unordered List",
+   "ordered_list": "Ordered List",
+   "task_list": "Task List",
+   "undo": "Undo",
+   "redo": "Redo",
+   "table": "Table",
+   "image": "Image",
+   "video": "Video",
+   "add_link": "Add link",
+   "link": "Link",
+   "blockquote": "Blockquote",
+   "horizontal_rule": "Horizontal rule",
+   "codespan": "Codespan",
+   "codeblock": "Codeblock",
+   "wrap_lines": "Wrap Lines",
+   "copied": "Copied",
+   "copy": "Copy",
+   "copy_failed": "Could not copy code"
+  },
+  "code_block": {
+   "dialog_label": "Edit code block",
+   "language_label": "Code block language",
+   "plain_text": "Plain Text"
+  },
+  "popover": {
+   "dialog_label": "Editor options"
+  },
+  "image_popup": {
+   "dialog_label": "Image options",
+   "url_label": "Image URL",
+   "alt_text_label": "Alternative text",
+   "caption_label": "Image caption",
+   "edit_image_label": "Edit image",
+   "preview_button_label": "Preview image",
+   "preview_dialog_label": "Image preview",
+   "preview_loading_label": "Loading image preview",
+   "preview_error_label": "Image preview could not be loaded. Select the image to retry.",
+   "decorative_label": "Decorative image",
+   "required_label": "(required)",
+   "url_validation_error": "Enter a valid HTTP(S) or relative image URL",
+   "alt_text_validation_error": "Add alternative text or mark the image as decorative",
+   "insert_button": "Insert image",
+   "save_button": "Save image",
+   "tabs_label": {
+    "upload": "Upload",
+    "embed_url": "Embed URL"
+   },
+   "browse": "Browse",
+   "uploading": "Uploading...",
+   "supported_types": "PNG, JPG, SVG, and GIFs are supported.",
+   "max_size": "Maximum 5MB.",
+   "image_url_input_placeholder": "Image URL",
+   "edit_button": "Save",
+   "embed_button": "Embed",
+   "delete_button_tooltip": "Delete image",
+   "error_message": "Couldn't upload. Try again.",
+   "usage_bar": {
+    "info": "{usageText} MB of {limitText} MB used.",
+    "warning": "Your {limitText} MB storage is full."
+   },
+   "legacy": {
+    "image_url": "Image URL",
+    "edit_button": "Save",
+    "embed_button": "Embed"
+   }
+  },
+  "link_popup": {
+   "validation_error_message": "Please enter a valid URL",
+   "text_placeholder": "Text (optional)",
+   "url_placeholder": "URL",
+   "edit_button": "Save",
+   "open": "Open",
+   "add_button": "Add",
+   "edit_link": "Edit link",
+   "remove_link": "Remove link",
+   "copy_link": "Copy link",
+   "delete_link": "Delete link"
+  },
+  "media_popup": {
+   "validation_error_message": "Please enter a valid URL",
+   "unsupported_platform_error_message": "Unsupported media platform",
+   "heading": "Embed URL",
+   "description": "Only Youtube and Vimeo links are supported.",
+   "video_url_placeholder": "Video URL",
+   "edit_button": "Save",
+   "embed_button": "Embed",
+   "unsupported_media_platform": "Unsupported media platform. However, you can choose to <Link><Text>add URL as a link.</Text></Link>"
+  },
+  "table_options": {
+   "add_row": "Add row",
+   "add_column": "Add column",
+   "add_row_above": "Add row above",
+   "add_row_below": "Add row below",
+   "add_column_left": "Add column left",
+   "add_column_right": "Add column right",
+   "delete_column": "Delete column",
+   "delete_table": "Delete table",
+   "delete_row": "Delete row",
+   "dialog_label": "Table options",
+   "size_picker_label": "Table size"
+  },
+  "add_a_caption": "Add a caption..."
+ },
+ "mentions": {
+  "view_profile": "View Profile",
+  "user_inactive_popover": "Deactivated",
+  "user_inactive_pill": "{fullName} (Deactivated)",
+  "private_user_tooltip": "This user profile is private.",
+  "private_user_label": "Private User"
+ },
+ "link-unfurling": {
+  "accessible_label": "{entityType}: {label}",
+  "entity": {
+   "workspace": "Workspace",
+   "collection": "Collection",
+   "folder": "Folder",
+   "request": "Request",
+   "example": "Example",
+   "environment": "Environment"
+  },
+  "loading": "Loading...",
+  "options": "Link options",
+  "unfurl_limit_reached": "URL previews are shown only for the first {requestUnfurlLimit} urls to maintain optimal performance."
+ },
+ "image_upload": {
+  "toolbar_label": "Upload image",
+  "drop_zone": "Drop image to upload",
+  "uploading": "Uploading...",
+  "failed": "Upload failed",
+  "unavailable": "Image unavailable",
+  "retry": "Retry",
+  "remove": "Remove"
+ },
+ "slate-node-validator": {
+  "slatedata_empty_content": "The content seems to be empty. Please add some content and try again.",
+  "text_invalid_content": "There is an issue with the text content. Please review the text and try again.",
+  "text_bold_invalid_content": "There is an unsupported text style: bold. Please remove or correct it.",
+  "text_italic_invalid_content": "There is an unsupported text style: italic. Please remove or correct it.",
+  "text_underline_invalid_content": "There is an unsupported text style: underline. Please remove or correct it.",
+  "text_strikethrough_invalid_content": "There is an unsupported text style: strikethrough. Please remove or correct it.",
+  "text_code_invalid_content": "There is an unsupported text style: code. Please remove or correct it.",
+  "ul_empty_content": "The unordered list seems to be empty. Please add some content and try again.",
+  "ol_empty_content": "The ordered list seems to be empty. Please add some content and try again.",
+  "li_empty_content": "The list item seems to be empty. Please add some content and try again.",
+  "code_block_empty_content": "The code block seems to be empty. Please add some content and try again.",
+  "table_empty_content": "The table seems to be empty. Please add some content and try again.",
+  "tr_empty_content": "The table row seems to be empty. Please add some content and try again.",
+  "ul_invalid_structure": "There is an issue with the list structure. Please review and correct the list items.",
+  "ol_invalid_structure": "There is an issue with the list structure. Please review and correct the list items.",
+  "li_invalid_content": "There is an issue with the list item. Please ensure it contains valid content.",
+  "table_invalid_structure": "There is an issue with the table structure. Please check the rows and columns.",
+  "tr_invalid_structure": "There seems to be an issue with the table cells. Please ensure the cells are correct.",
+  "img_invalid_content": "There is an issue with the image properties. Please ensure the image URL and dimensions are correct",
+  "a_invalid_content": "There is an issue with the link URL. Please ensure it is correct.",
+  "code_block_invalid_structure": "There is an issue with the code block structure. Please ensure the code is properly formatted.",
+  "unsupported_node": "There is an issue with the content structure. Please review the content and try again.",
+  "check_content": "Check now"
+ },
+ "default_placeholder": "Instant Markdown styling is supported. Try **bold**,  *italic*, or `inline code`"
+}

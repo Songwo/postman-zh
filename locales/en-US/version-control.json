@@ -1,0 +1,116 @@
+{
+ "collection_fork_label": "<0>This collection is forked from </0><1>{baseCollectionName}</1>",
+ "fork": {
+  "workbench": {
+   "sign_in_modal": {
+    "title": "Sign in to create a fork",
+    "subtitle": "You need to be logged in to fork a collection. Go ahead and create an account. It's free!"
+   },
+   "signed_out_state": {
+    "title": "You are signed out",
+    "description": "Please sign in to continue forking",
+    "sign_in_button": "Sign in"
+   },
+   "offline_state": {
+    "title": "You are offline",
+    "body": "Unable to connect to the servers. Please check your network settings.",
+    "retry_button": "Retry"
+   },
+   "error_state": {
+    "title": "Unable to fetch source {modelDisplayName, select, collection {collection} environment {environment} flow {flow} other {}}",
+    "description": "We could not fetch information about the source {modelDisplayName, select, collection {collection} environment {environment} flow {flow} other {}}. Please try again."
+   },
+   "no_permission_state": {
+    "description": "You don’t have permission to fork into this team’s workspaces.",
+    "no_workspaces_description": "You don’t have any workspaces you can fork into. Create a workspace to get started.",
+    "no_workspaces_no_permission_description": "You don’t have any workspaces you can fork into. Contact your team admin for workspace access.",
+    "create_workspace_button": "Create Workspace",
+    "close_button": "Close"
+   },
+   "fork_tab_header": {
+    "title": "Fork {modelDisplayName, select, collection {collection} environment {environment} flow {flow} other {}}",
+    "source_label": "Source {modelDisplayName, select, collection {collection} environment {environment} flow {flow} other {}}",
+    "by": "<0>By</0><1>{teamName}</1>"
+   }
+  },
+  "fork_table_body": {
+   "learn_more_about_forks": "Learn more about forks",
+   "learn_more_about_forks_default": "<span>Learn more about </span> <Flex><Text><Link>forks</Link></Text><IconActionOpenWebStroke /></Flex>",
+   "retry_button": "Retry",
+   "fork_singular": "fork",
+   "fork_plural": "forks",
+   "offline_state": {
+    "title": "You are offline",
+    "message": "Please check your internet connection and try again."
+   },
+   "forbidden_title": "Access Forbidden",
+   "error_title": "Error",
+   "forbidden_message": "You don't have permission to view this content.",
+   "error_message": "An error occurred. Please try again later.",
+   "total_forks_title": "{totalForks} {forkText} of {modelName}",
+   "no_forks_title": "There are no forks",
+   "hidden_forks_message": "They aren't visible because they're in workspaces you don't have access to.",
+   "all_forks_message": "All forks created from this {modelName} will appear here.",
+   "fork_label": "Fork label",
+   "created_by": "Created by",
+   "created_on": "Created on",
+   "of_text": "of",
+   "hidden_forks_text": "of those aren't in this list because they're in workspaces you don't have access to.",
+   "forks_label": "Forks ({modelName})",
+   "fork_list_description": "{count, plural, one {# fork} other {# forks}} of {modelName}.",
+   "fork_list_description_line2": " {hiddenForks} of those aren't in this list because they're in workspaces you don't have access to.",
+   "created_on_date": "{dateObj, date, medium}",
+   "pagination": {
+    "no_more_pages": "No more pages to load"
+   }
+  },
+  "forks_tooltip": "Forks",
+  "create_fork_tab": "Create Fork",
+  "created_success": "Fork created",
+  "error": {
+   "title": "Forking is in progress",
+   "info": "{model} is being forked in the background. Please check the {model} list later to view the fork.",
+   "generic_message": "Something went wrong while creating a fork. Please try again."
+  }
+ },
+ "pull_changes": {
+  "tab_title": "Pull Changes"
+ },
+ "fork_recommendation_popup": {
+  "title": "Create a fork to save changes",
+  "message": "You don't have permission to make changes to this collection. Fork the collection to your workspace to save changes.",
+  "button_label": "Create Fork & Save",
+  "error_message": "You do not have permissions required to perform this action.",
+  "upgrade_partner_error_message": "You don't have permissions to perform this action. Please upgrade to the Editor role.",
+  "sign_in_title": "Sign in to create a fork",
+  "sign_in_subtitle": "You need to be logged in to fork a collection. Go ahead and create an account. It's free!"
+ },
+ "navigate": {
+  "creating_fork_message": "Forking collection to {teamName} team",
+  "switch_teams_message": "Teleporting you to team {teamName}",
+  "do_not_close_tab_message": "Hang on for a few seconds. Please don’t close or refresh this tab."
+ },
+ "public_collection_fork_banner": {
+  "description": "To make changes to this collection, fork it to your workspace.",
+  "button_label": "Fork Collection"
+ },
+ "fork_label": {
+  "fork_info": {
+   "last_updated": "Last updated: {relativeTime}",
+   "source_collection_error": "You do not have access to the source collection or it has been deleted.",
+   "copy_collection_id_tooltip": "Copy {entityType, select, collection {collection} specification {specification} environment {environment} flow {flow} other {entity}} ID",
+   "copy_collection_url_tooltip": "Copy {entityType, select, collection {collection} specification {specification} environment {environment} flow {flow} other {entity}} URL",
+   "pulling_changes_message": "Pulling changes in the background...",
+   "changes_available_message": "There are changes to pull.",
+   "pull_changes_link": "Pull changes",
+   "merge_conflicts_message": "Merge conflicts found. Resolve them to pull changes.",
+   "view_diff_link": "View Diff",
+   "auto_sync_config": {
+    "auto_sync_changes_label": "Auto-pull changes: ",
+    "auto_sync_status_on": "On",
+    "auto_sync_status_off": "Off",
+    "edit_auto_sync_config": "Edit"
+   }
+  }
+ }
+}

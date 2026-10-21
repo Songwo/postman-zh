@@ -1,0 +1,252 @@
+{
+ "common": {
+  "actions": {
+   "create_automation": "Create automation",
+   "cancel": "Cancel",
+   "delete": "Delete",
+   "refresh": "Refresh",
+   "actions_menu_tooltip": "Actions"
+  },
+  "empty": {
+   "search_hint": "Try a different search term, adjust your filters or check for typos."
+  },
+  "pagination": {
+   "previous_page": "Previous page",
+   "next_page": "Next page"
+  }
+ },
+ "tabs": {
+  "team": "Team",
+  "mine": "Mine"
+ },
+ "page": {
+  "breadcrumb_section": "Agent Automations",
+  "title": "Automations",
+  "subtitle": "Set up automations that run on a schedule or when events happen.",
+  "loading_aria_label": "Loading automations",
+  "loading_label": "Loading automations…",
+  "error_title": "Unable to load automations",
+  "error_description": "Something went wrong while fetching automations. Please try again later.",
+  "refetch_aria_label": "Refreshing automations"
+ },
+ "table": {
+  "search_placeholder": "Search automations",
+  "headers": {
+   "name": "Name",
+   "status": "Status",
+   "trigger": "Trigger",
+   "creator": "Creator",
+   "actions": ""
+  },
+  "status": {
+   "active": "Active",
+   "inactive": "Inactive"
+  },
+  "empty": {
+   "title": "Create your first automation",
+   "description": "Run agents on a schedule or when events happen, and deliver results where your team works.",
+   "search_title": "No automations found"
+  },
+  "row_actions": {
+   "view_run_history": "View run history",
+   "run_now": "Run now",
+   "edit": "Edit"
+  },
+  "trigger": {
+   "github_pr": "GitHub pull request",
+   "github_push": "GitHub push",
+   "schedule": "Schedule"
+  }
+ },
+ "run_status": {
+  "claimed": "Claimed",
+  "dispatched": "Dispatched",
+  "completed": "Completed",
+  "failed": "Failed"
+ },
+ "templates": {
+  "section_title": "Start from a template",
+  "use_template": "Add",
+  "coming_soon": "Coming soon",
+  "items": {
+   "github_pr": {
+    "trigger_label": "GitHub pull request",
+    "title": "API design review on PR",
+    "description": "Review API/schema changes on every PR and post findings as a comment."
+   },
+   "weekly_schedule": {
+    "trigger_label": "Weekly schedule",
+    "title": "Deprecated API audit",
+    "description": "Scan for deprecated APIs weekly and post a scorecard to Slack."
+   },
+   "breaking_change_detection": {
+    "trigger_label": "GitHub pull request",
+    "title": "Breaking change detection",
+    "description": "Detect breaking API changes on every PR and flag risks before they reach production."
+   },
+   "event_driven_automation": {
+    "trigger_label": "Postman Events",
+    "title": "Event-driven automation",
+    "description": "Respond to Postman Events like collection updates and automatically route insights to your team."
+   }
+  }
+ },
+ "create": {
+  "active_label": "Active",
+  "loading_aria_label": "Loading automation",
+  "loading_label": "Loading automation…",
+  "error_title": "Unable to load automation",
+  "error_description": "Something went wrong while fetching the automation. Go back and try again.",
+  "name_aria_label": "Automation name",
+  "creating_pending": "Creating…",
+  "toast_success": "Automation created",
+  "toast_error": "Failed to create automation. Please try again.",
+  "fields": {
+   "name_label": "Name",
+   "name_placeholder": "e.g. Review API design on PRs",
+   "workspace_select_workspace": "Select workspace",
+   "workspace_no_workspace": "No workspace",
+   "workspace_no_results": "No workspaces found",
+   "trigger_label": "Trigger",
+   "github_owner": "Owner",
+   "github_owner_placeholder": "Select owner",
+   "github_repo": "Repository",
+   "github_repo_placeholder": "Select repository",
+   "github_branch": "Branch",
+   "github_branch_placeholder": "Select branch",
+   "github_any_branch": "Any branch",
+   "github_connect": "Connect GitHub",
+   "github_connecting": "Connecting…",
+   "github_reconnect": "Reconnect GitHub",
+   "github_checking": "Checking GitHub connection…",
+   "github_connect_error": "We couldn't connect to GitHub. Please try again.",
+   "github_account": "Account",
+   "github_account_placeholder": "Select account",
+   "github_install_app_helper_text": "If you don't see your organization, you may need to <Link><Text>install the Postman app</Text></Link> on your personal account or organization.",
+   "instructions_label": "Agent instructions",
+   "instructions_placeholder": "Describe what the agent should do...",
+   "notify_slack_label": "Notify a Slack or Microsoft Teams channel or chat",
+   "remove_channel": "Remove channel",
+   "github_reconnect_required": "Your GitHub connection expired. Reconnect to keep using this automation.",
+   "slack_connect": "Connect Slack",
+   "slack_connecting": "Connecting to Slack…",
+   "slack_connecting_hint": "Complete the authorization in the browser tab we just opened. This can take up to 60 seconds.",
+   "slack_reconnect": "Reconnect Slack",
+   "slack_reconnect_required": "Your Slack connection expired. Reconnect to keep delivering notifications.",
+   "slack_connect_error": "We couldn't connect to Slack. Please try again.",
+   "slack_workspace_label": "Workspace",
+   "slack_workspace_placeholder": "Workspace",
+   "slack_channel_label": "Channel",
+   "slack_channel_placeholder": "Type to search for a channel",
+   "slack_wrong_workspace_toast_title": "Wrong Slack workspace",
+   "slack_wrong_workspace_toast_description": "The channel you picked is from a different workspace. Remove the existing one or reconnect with the matching workspace.",
+   "delivery_targets_label": "Delivery targets",
+   "add_delivery_target": "Add delivery target",
+   "delivery_target_github_pr_comment": "Comment on Pull Request",
+   "delivery_target_slack": "Send to Slack",
+   "delivery_target_remove": "Remove delivery target",
+   "delivery_target_to": "to",
+   "trigger_placeholder": "Select trigger...",
+   "trigger_clear": "Clear selection",
+   "trigger_group_scheduled": "Scheduled",
+   "trigger_option_hourly": "Every hour",
+   "trigger_option_daily": "Every day",
+   "trigger_option_weekly": "Every week",
+   "trigger_option_pr_opened": "Pull request opened",
+   "trigger_option_pr_pushed": "Pull request pushed",
+   "trigger_option_pr_merged": "Pull request merged",
+   "trigger_option_push_to_branch": "New push to branch",
+   "schedule_time_label": "Time",
+   "schedule_day_label": "Day",
+   "schedule_timezone_label": "Timezone",
+   "day_monday": "Monday",
+   "day_tuesday": "Tuesday",
+   "day_wednesday": "Wednesday",
+   "day_thursday": "Thursday",
+   "day_friday": "Friday",
+   "day_saturday": "Saturday",
+   "day_sunday": "Sunday",
+   "workspace_label": "Workspace",
+   "workspace_placeholder": "Select workspace",
+   "collection_label": "Collection",
+   "collection_placeholder": "Select collection",
+   "monitor_label": "Monitor",
+   "monitor_placeholder": "Select monitor",
+   "monitor_partial_warning": "Some monitors couldn’t be loaded. The list may be incomplete.",
+   "monitor_load_error": "Couldn’t load monitors. Try again.",
+   "status_label": "Run result",
+   "status_success": "Success",
+   "status_failure": "Failed"
+  }
+ },
+ "edit": {
+  "title": "Edit automation",
+  "tab_run_history": "Run history",
+  "tab_settings": "Settings",
+  "saving_pending": "Saving…",
+  "toast_success": "Automation saved",
+  "toast_error": "Failed to save automation. Please try again.",
+  "toggle_activated": "Automation activated",
+  "toggle_deactivated": "Automation deactivated",
+  "toggle_error": "Failed to update automation status. Please try again.",
+  "actions": {
+   "save": "Save changes"
+  }
+ },
+ "readonly": {
+  "banner": "You can view this automation but cannot edit it.",
+  "admin_banner": "As an admin, you can only delete or toggle this automation.",
+  "delete_tooltip": "Delete automation"
+ },
+ "delete_modal": {
+  "title": "Delete automation?",
+  "body": "Are you sure you want to delete <strong>{name}</strong>?",
+  "toast_success": "Automation deleted",
+  "toast_error": "Failed to delete automation. Please try again."
+ },
+ "validation": {
+  "form_invalid": "Please fill in all required fields.",
+  "name_required": "Name is required",
+  "trigger_required": "Trigger is required",
+  "instructions_required": "Instructions are required",
+  "delivery_target_required": "At least one delivery target is required",
+  "github_owner_required": "Owner is required",
+  "github_repo_required": "Repository is required",
+  "github_branch_required": "Branch is required",
+  "workspace_required": "Workspace is required",
+  "collection_required": "Collection is required",
+  "monitor_required": "Monitor is required"
+ },
+ "run_history": {
+  "search_placeholder": "Search runs...",
+  "filter_result": "Result",
+  "action_edit_automation": "Edit automation",
+  "action_view_task": "View agent task",
+  "action_copy_id": "Copy run ID",
+  "copy_id_toast_success": "Run ID copied to clipboard",
+  "copy_id_toast_error": "Could not copy run ID",
+  "action_copy_task_id": "Copy task ID",
+  "copy_task_id_toast_success": "Task ID copied to clipboard",
+  "copy_task_id_toast_error": "Could not copy task ID",
+  "action_retry": "Retry",
+  "retry_toast_success": "Run queued for retry",
+  "retry_toast_error": "Failed to retry run. Please try again.",
+  "header_trigger": "Trigger",
+  "header_status": "Status",
+  "header_started": "Started",
+  "header_duration": "Duration",
+  "loading_aria_label": "Loading run history",
+  "loading_label": "Loading run history…",
+  "error_title": "Unable to load run history",
+  "error_description": "Something went wrong while fetching run history. Please try again later.",
+  "refetch_aria_label": "Refreshing run history",
+  "empty_search_title": "No runs found",
+  "empty_title": "No runs yet.",
+  "refresh_aria_label": "Refresh run history",
+  "run_now_aria_label": "Run automation now"
+ },
+ "run_now": {
+  "toast_success": "Run queued successfully",
+  "toast_error": "Failed to trigger run. Please try again."
+ }
+}

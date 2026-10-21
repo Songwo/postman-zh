@@ -1,0 +1,10 @@
+{
+ "header": {
+  "heading": "Quick Help",
+  "open_lc_tooltip": "Open in Learning Center"
+ },
+ "error_state": {
+  "heading": "Couldn't load information",
+  "description": "<Text>We are experiencing issues accessing the Learning Center content. Please try again in a few minutes or access it directly through <Link>our website.</Link></Text>"
+ }
+}

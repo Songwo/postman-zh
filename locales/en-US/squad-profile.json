@@ -1,0 +1,45 @@
+{
+ "error": {
+  "title": "Something went wrong",
+  "description": "We couldn't load the team profile. Please try again.",
+  "retry": "Try again"
+ },
+ "breadcrumbs": {
+  "teams": "Teams",
+  "aria_label": "Squad profile breadcrumb"
+ },
+ "no_access": {
+  "title": "You don't have access",
+  "description": "Only team members can view this page.",
+  "request_raised": "You have already requested to join this team. You'll automatically join once approved."
+ },
+ "avatar_stack": {
+  "more": "+{count} more"
+ },
+ "default_team_name": "the team",
+ "members_popover": {
+  "title_one": "{count} member",
+  "title_other": "{count} members",
+  "trigger_label": "Show members",
+  "private_user": "Private User"
+ },
+ "tabs": {
+  "workspaces": {
+   "title": "Workspaces",
+   "create_button": "Create Workspace",
+   "search_limit": "Showing the first 500 results. Refine your search to find more.",
+   "empty_state": {
+    "text": "No workspaces yet",
+    "subtext": "Create or Move existing workspaces to this team to get started."
+   }
+  },
+  "members": {
+   "title": "Members",
+   "add_button": "Add members",
+   "empty_state": {
+    "text": "No members yet",
+    "subtext": "Join or Invite teammates to this team to get started."
+   }
+  }
+ }
+}

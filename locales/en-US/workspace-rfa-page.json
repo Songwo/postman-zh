@@ -1,0 +1,26 @@
+{
+ "text_area_info_text": "A short note that will help workspace admins approve your request...",
+ "add_note_text": "Add note",
+ "switch_accounts_cta": "Switch Accounts",
+ "go_to_workspace_cta": "Go to Workspace",
+ "creating_request_heading": "Looks like you don't have access",
+ "creating_request_subheading": "Send a request to the workspace admin to gain access to this workspace.",
+ "submit_cta": "Request Access",
+ "pending_request_heading": "Looks like you still don't have access",
+ "pending_request_subheading": "Your request to access this workspace is in a pending state.",
+ "current_sign_in_account_text": "You are signed in as",
+ "toast_content": {
+  "workspace_rfa_sent": {
+   "title": "Request sent",
+   "description": "You'll be notified of the workspace admin's response."
+  },
+  "email_not_verified": {
+   "title": "Verify your account first",
+   "description": "Once verified, you can then request to join the team. Please check your inbox for the latest verification email."
+  },
+  "default_error": {
+   "title": "Couldn't send request",
+   "description": "Just a faulty wire. Try again."
+  }
+ }
+}

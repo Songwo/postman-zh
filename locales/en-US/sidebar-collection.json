@@ -1,0 +1,567 @@
+{
+ "entity_type_icon": {
+  "collection": "Collection"
+ },
+ "unknown_item": {
+  "tooltip": "This item type isn't supported in your version of Postman. Update the app to view it.",
+  "modal": {
+   "heading": "Unsupported item type",
+   "body": "This item is of a type that this version of Postman doesn't support. Update Postman to the latest version to view it.",
+   "body_named": "\"{name}\" is of a type that this version of Postman doesn't support. Update Postman to the latest version to view it.",
+   "dismiss": "Got it"
+  }
+ },
+ "offline_error_state": {
+  "heading": "Unable to load data",
+  "description": "We are trying to establish a connection with our servers. Your data may not be up to date until you’re connected.",
+  "reload": "Reload"
+ },
+ "error_fetching_data": {
+  "heading": "Couldn’t fetch your data",
+  "description": "Just a faulty wire. Your data is safely synced to Postman’s servers.",
+  "refresh": "Refresh"
+ },
+ "no_collections_present": {
+  "create_collection_for_requests_heading": "Create a collection for your requests",
+  "default_heading": "You don’t have any collections",
+  "description": "A collection lets you group related requests and easily set common authorization, tests, scripts, and variables for all requests in it.",
+  "create_collection": "Create Collection"
+ },
+ "sign_in_to_perform_action": "You need to be signed-in to a team to perform this action",
+ "meta_icons_info": {
+  "read_only": "Read only"
+ },
+ "dropdown_toggle_button": "dropdown toggle button",
+ "entity_is_empty": "This {entity, select, collection {collection} folder {folder} other {}} is empty.",
+ "add_request_to_start_working": "<0>Add a request</0>to start working.",
+ "no_results_found": {
+  "heading": "No results found for \"{searchQuery}\"",
+  "description": "Please try again using different keywords, and don’t forget to check for typos. You can search by names, urls and fork labels."
+ },
+ "could_not_load_requests": "Couldn’t load requests. <1>Try Again</1>",
+ "sidebar_actions_menu": {
+  "disable_trash_tooltip": {
+   "members_only": "Only members of this workspace can recover deleted collections",
+   "default": "Recover your deleted collections",
+   "offline": "You can perform this action once you’re back online"
+  },
+  "create_collection_tooltip": "Create new collection",
+  "disabled_tooltip_no_permission": "You don’t have permission to take this action.",
+  "disabled_git_on_prem_on_web": "Please use Postman App to update this collection",
+  "disabled_git_on_prem_on_web_label_popover": "This collection is connected to a GitHub Enterprise repository. To make changes, use the Postman Desktop App.",
+  "disabled_tooltip_is_offline": "You can take this action when you’re back online.",
+  "disabled_tooltip_nothing_to_paste": "No entities available to paste",
+  "open_trash": "Open Trash",
+  "create_new_button": "Create new button",
+  "blank_collection": "Blank collection",
+  "collection_template": "Collection template",
+  "ai_generated_collection": "AI-generated collection",
+  "disabled_tooltip_no_permission_run": "You do not have permission to run this collection",
+  "disabled_tooltip_no_permission_add": "You do not have permission to add items",
+  "disabled_tooltip_no_permission_remove": "You do not have permission to remove this collection"
+ },
+ "live_collection_onboarding": {
+  "connection_success": {
+   "heading": "Collection is live!",
+   "postman_will_keep_collections_synced": "Postman will always keep your collection in sync.",
+   "test_it_out": "Test it out by <1><0>sending a request</0></1>."
+  },
+  "strategy_selection": {
+   "unable_to_save_preference": "Unable to save your preference. Retry from <1><0>Live Settings</0></1>.",
+   "heading": "You have one or more requests",
+   "description": "Select how to stay updated on upcoming requests",
+   "automatically_update": "Automatically update",
+   "review_before_updating": "Review before updating",
+   "save": "Save"
+  },
+  "onboarding_complete": {
+   "collection_will_update_automatically": "All set! Your collection will update automatically.",
+   "notify_on_updates": "All set! As new updates become available, we'll notify you.",
+   "change_later_from_live_settings": "You can change this later from <1><0>Live settings</0></1>."
+  }
+ },
+ "collection_sidebar_actions": {
+  "open_in_new_tab": {
+   "label": "Open In New Tab"
+  },
+  "copy_link": {
+   "label": "Copy link"
+  },
+  "share": {
+   "label": "Share"
+  },
+  "move": {
+   "label": "Move",
+   "disabled_tooltip": "You don’t have permission to take this action."
+  },
+  "run_collection": {
+   "label": "Run",
+   "infoTooltip": "Send all requests in this collection",
+   "disabled_tooltip": "You don't have permission to run this collection."
+  },
+  "generate_tests": {
+   "label": "Generate tests"
+  },
+  "edit": {
+   "label": "Edit"
+  },
+  "view_details": {
+   "label": "View details"
+  },
+  "add_request": {
+   "label": "Add request",
+   "tooltip": "Add request"
+  },
+  "add_folder": {
+   "label": "Add folder"
+  },
+  "monitor_collection": {
+   "label": "Create Monitor"
+  },
+  "mock_collection": {
+   "label": "Mock"
+  },
+  "create_a_fork": {
+   "label": "Fork",
+   "disabled_tooltip": "You do not have permission to fork this collection"
+  },
+  "request_a_fork": {
+   "label": "Request to fork"
+  },
+  "create_pull_request": {
+   "label": "Create pull request",
+   "disabled_tooltip": "You do not have permission to create a pull request"
+  },
+  "merge_changes": {
+   "label": "Merge changes"
+  },
+  "connect_to_github": {
+   "label": "Connect to GitHub",
+   "infoTooltip": "Connect this collection to a GitHub repository to sync your changes."
+  },
+  "pull_changes_git": {
+   "label": "Pull changes"
+  },
+  "push_changes_git": {
+   "label": "Push changes"
+  },
+  "create_pull_request_git": {
+   "label": "Create pull request"
+  },
+  "repository_settings": {
+   "label": "Repository settings"
+  },
+  "run_folder": {
+   "label": "Run",
+   "infoTooltip": "Send all requests in this folder"
+  },
+  "open_in_tab": {
+   "label": "Open in Tab"
+  },
+  "add_example": {
+   "label": "Add example"
+  },
+  "pull_changes": {
+   "label": "Pull changes",
+   "info_tooltip": "Pull changes to fetch the latest updates from the original collection."
+  },
+  "view_changelog": {
+   "label": "View changelog"
+  },
+  "view_documentation": {
+   "label": "View documentation"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "duplicate": {
+   "label": "Duplicate",
+   "disabled_tooltip": "You don’t have permission to take this action."
+  },
+  "export": {
+   "label": "Export",
+   "disabled_tooltip": "You don't have permission to export this collection.",
+   "intent": {
+    "teammates": "Share with teammates",
+    "ci": "Run in CI/CD",
+    "git": "Store in a Git repo",
+    "other": "Other"
+   }
+  },
+  "manage_roles": {
+   "label": "Manage roles"
+  },
+  "copy": {
+   "label": "Copy"
+  },
+  "cut": {
+   "label": "Cut"
+  },
+  "paste": {
+   "label": "Paste"
+  },
+  "delete": {
+   "label": "Delete"
+  },
+  "comment": {
+   "label": "Comment"
+  },
+  "more": {
+   "label": "More",
+   "mock": "Create mock server",
+   "create_monitor": "Create monitor",
+   "generate_tests": "Generate tests",
+   "generate_specification": "Generate specification",
+   "generate_flows": "Create flow",
+   "connect_repository": "Connect repository",
+   "export": "Export collection",
+   "generate_sdk": "Generate SDK"
+  },
+  "visualize_collection": {
+   "label": "Generate Flow",
+   "error": "There was an error loading the flows module."
+  },
+  "generate_specification": {
+   "label": "Generate specification"
+  },
+  "turn_on_types": {
+   "label": "Turn on Types"
+  },
+  "turn_off_types": {
+   "label": "Turn off Types"
+  },
+  "add_to_agent_mode": {
+   "label": "Ask AI"
+  },
+  "apps": {
+   "label": "Apps"
+  },
+  "run": {
+   "label": "Run"
+  },
+  "ask_ai": {
+   "label": "Ask AI"
+  },
+  "fork": {
+   "label": "Fork"
+  },
+  "use": {
+   "label": "Use / Fork"
+  },
+  "sort": {
+   "label": "Sort",
+   "folders_first_default": "Folders first, Default",
+   "folders_first_a_to_z": "Folders first, A to Z",
+   "footer_text": "This only updates your view in the sidebar."
+  },
+  "bulk_cut": {
+   "label": "Cut"
+  },
+  "bulk_copy": {
+   "label": "Copy"
+  },
+  "bulk_paste": {
+   "label": "Paste"
+  },
+  "bulk_duplicate": {
+   "label": "Duplicate"
+  },
+  "bulk_delete": {
+   "label": "Delete"
+  },
+  "paste_linked_copy": {
+   "label": "Paste linked copy"
+  },
+  "add_to_favorites": {
+   "tooltip": "Add to favorites"
+  },
+  "remove_from_favorites": {
+   "tooltip": "Remove from favorites"
+  },
+  "more_actions": {
+   "tooltip": "View more actions"
+  }
+ },
+ "partner_viewer_nudges": {
+  "fork": {
+   "no_team_user_nudge": {
+    "heading": "Fork to your own team",
+    "description": "Create a team on a paid Postman plan to fork and create a copy of this collection.",
+    "button": "Upgrade your plan"
+   },
+   "free_team_user_nudge": {
+    "heading": "Fork to your own team",
+    "description": "Upgrade your team to a paid plan to fork and create a copy of this collection",
+    "button": "Upgrade your plan"
+   }
+  },
+  "export": {
+   "no_team_user_nudge": {
+    "heading": "You don’t have permission to export",
+    "description": "Create a team on a paid Postman plan to fork and create a copy of this collection",
+    "button": "Upgrade your plan"
+   },
+   "free_team_user_nudge": {
+    "heading": "You don’t have permission to export",
+    "description": "Upgrade your team to a paid plan to fork and create a copy of this collection",
+    "button": "Upgrade your plan"
+   }
+  }
+ },
+ "bulk_delete_confirmation": "Are you sure you want to delete {typeCountString}?",
+ "bulk_delete_confirmation_reusable": "You're about to delete {typeCountString}. Linked requests will no longer follow updates if an original is deleted.",
+ "permission_error": "You do not have permissions to perform this action",
+ "collection_is_not_a_fork": "Collection is not a fork.",
+ "this_collection_is_not_a_fork": "This collection is not a fork.",
+ "could_not_perform_action": "Could not {action} {entityType} successfully",
+ "bulk_delete_failed": "Bulk Delete Failed",
+ "move_entity_error": "Something went wrong while moving the {name}.",
+ "copied_to_collections_success": "Copied to collections in the sidebar.",
+ "copied_to_collections_error": "Could not copy to collections in the sidebar.",
+ "link_copied": "Link copied",
+ "move_folder_to_subfolder_error": "The folder cannot be moved into its own subfolder",
+ "bulk_duplicate_error": "Selected elements could not be duplicated. Please try again.",
+ "paste_error": "An error occurred while pasting the copied entities. Please try again.",
+ "reuse_error": "An error occurred while reusing the selected entities. Please try again.",
+ "bulk_move_entity_error": "An error occurred while moving the selected entities. Please try again.",
+ "examples_can_be_moved_under_request_error": "Examples can only be moved under a request.",
+ "could_not_move_items": "Could not move items",
+ "signed_out_message": "You can perform this action once you're signed in.",
+ "no_changes_to_pull": "No changes to pull",
+ "fork_from_latest_api_version": "You can only fork from the latest version of an API.",
+ "pull_changes_offline_toast": {
+  "heading": "You are offline",
+  "description": "You'll be able to pull changes once you're online."
+ },
+ "offline_action_tooltip": "You are offline. Please connect to the internet to use this feature.",
+ "more_actions_tooltip": "View more actions",
+ "cannot_move_response_different_protocol": "You cannot move a response to a request with a different protocol",
+ "cannot_duplicate_response_different_protocol": "You cannot duplicate a response to a request with a different protocol",
+ "move_success": "Successfully moved item(s)",
+ "entity_move_error": "An error occurred while moving the selected entity. Please try again.",
+ "invalid_move_operation": "Invalid move operation(s) involved",
+ "invalid_duplicate_operation": "Invalid duplicate operation(s) involved",
+ "bulk_delete_error": "An error occurred while deleting the selected items. Please try again.",
+ "bulk_delete_success": "Successfully deleted item(s)",
+ "common": {
+  "loading": "Loading...",
+  "error": "An error occurred",
+  "retry": "Retry",
+  "clear": "Clear"
+ },
+ "empty_state": {
+  "title": "No items in this panel",
+  "no_permission": "You don't have permissions to create collections in this workspace.",
+  "create": "Create",
+  "pull_from_cloud": "Pull from Postman Cloud",
+  "ask_ai": "Ask AI to create from local codebase",
+  "collection_empty": "Collection is empty",
+  "folder_empty": "Folder is empty",
+  "collection_empty_description": "Add a request or folder to structure your API workflow.",
+  "folder_empty_description": "Add a request, a folder, or drag items here to group them together.",
+  "collection_view_only_description": "Collection is empty.",
+  "folder_view_only_description": "Folder is empty."
+ },
+ "sort_indicator": {
+  "sorted": "Sorted: {name}."
+ },
+ "search": {
+  "loading": "Searching all collections…"
+ },
+ "children_error": {
+  "message": "Couldn't load items.",
+  "retry": "Retry"
+ },
+ "toast": {
+  "items_moved": "{count} items moved",
+  "could_not_move_items": "Could not move items",
+  "sort_blocked": "Clear sort to move items",
+  "items_linked": "{count} items linked",
+  "only_requests_can_be_linked": "Only requests can be linked",
+  "only_http_requests_can_be_linked": "Only HTTP requests can be linked",
+  "item_name_empty": "Item name cannot be empty",
+  "collection_duplicated": "Collection duplicated",
+  "collections_duplicated": "Collections duplicated",
+  "folder_duplicated": "Folder duplicated",
+  "request_duplicated": "Request duplicated",
+  "example_duplicated": "Example duplicated",
+  "link_copied": "Link copied to clipboard",
+  "could_not_paste_items": "Could not paste items",
+  "could_not_link_requests": "Could not link requests",
+  "disabled_paste_linked_copy": "Only copied requests can be pasted as linked copy",
+  "dependency_update_success_title": "Dependency updated",
+  "dependency_update_success_message": "{name} is now up to date.",
+  "dependency_update_error_title": "Couldn't update dependency",
+  "dependency_update_error_message": "{name} couldn't be updated. Check Console for details.",
+  "dependency_delete_success_title": "Dependency removed",
+  "dependency_delete_success_message": "{name} was removed from this workspace.",
+  "dependency_delete_error_title": "Couldn't remove dependency",
+  "dependency_delete_error_message": "{name} couldn't be removed. Check Console for details."
+ },
+ "request_types": {
+  "http": "HTTP",
+  "graphql": "GraphQL",
+  "ai": "AI",
+  "mcp": "MCP",
+  "grpc": "gRPC",
+  "websocket": "WebSocket",
+  "socketio": "Socket.IO",
+  "mqtt": "MQTT",
+  "kafka": "Kafka"
+ },
+ "dependency_actions": {
+  "update": {
+   "label": "Update"
+  },
+  "delete": {
+   "label": "Delete"
+  }
+ },
+ "ec_collection_sidebar_actions": {
+  "add_request": {
+   "label": "Add request",
+   "tooltip": "Add request"
+  },
+  "add_folder": {
+   "label": "Add folder"
+  },
+  "run": {
+   "label": "Run"
+  },
+  "share": {
+   "label": "Share"
+  },
+  "copy_link": {
+   "label": "Copy link"
+  },
+  "move": {
+   "label": "Move"
+  },
+  "manage_roles": {
+   "label": "Manage roles"
+  },
+  "fork": {
+   "label": "Create a fork"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "paste": {
+   "label": "Paste"
+  },
+  "duplicate": {
+   "label": "Duplicate"
+  },
+  "sort": {
+   "label": "Sort",
+   "footer_text": "This only updates your view in the sidebar."
+  },
+  "delete": {
+   "label": "Delete"
+  },
+  "open_in_new_tab": {
+   "label": "Open in new browser tab"
+  },
+  "add_to_favorites": {
+   "tooltip": "Add to favorites"
+  },
+  "remove_from_favorites": {
+   "tooltip": "Remove from favorites"
+  },
+  "more_actions": {
+   "tooltip": "View more actions"
+  }
+ },
+ "ec_folder_sidebar_actions": {
+  "add_request": {
+   "label": "Add request",
+   "tooltip": "Add request"
+  },
+  "add_folder": {
+   "label": "Add folder"
+  },
+  "run": {
+   "label": "Run"
+  },
+  "share": {
+   "label": "Share"
+  },
+  "copy_link": {
+   "label": "Copy link"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "paste": {
+   "label": "Paste"
+  },
+  "duplicate": {
+   "label": "Duplicate"
+  },
+  "sort": {
+   "label": "Sort",
+   "footer_text": "This only updates your view in the sidebar."
+  },
+  "delete": {
+   "label": "Delete"
+  },
+  "open_in_new_tab": {
+   "label": "Open in new browser tab"
+  },
+  "more_actions": {
+   "tooltip": "View more actions"
+  }
+ },
+ "ec_request_sidebar_actions": {
+  "add_example": {
+   "label": "Add example"
+  },
+  "share": {
+   "label": "Share"
+  },
+  "copy_link": {
+   "label": "Copy link"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "paste": {
+   "label": "Paste"
+  },
+  "duplicate": {
+   "label": "Duplicate"
+  },
+  "delete": {
+   "label": "Delete"
+  },
+  "open_in_new_tab": {
+   "label": "Open in new browser tab"
+  },
+  "more_actions": {
+   "tooltip": "View more actions"
+  }
+ },
+ "ec_example_sidebar_actions": {
+  "share": {
+   "label": "Share"
+  },
+  "copy_link": {
+   "label": "Copy link"
+  },
+  "rename": {
+   "label": "Rename"
+  },
+  "duplicate": {
+   "label": "Duplicate"
+  },
+  "delete": {
+   "label": "Delete"
+  },
+  "open_in_new_tab": {
+   "label": "Open in new browser tab"
+  },
+  "more_actions": {
+   "tooltip": "View more actions"
+  }
+ }
+}

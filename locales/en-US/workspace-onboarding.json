@@ -1,0 +1,47 @@
+{
+ "body": {
+  "public_api": {
+   "text": "Want to use a public API instead? Discover what’s new and popular on the <1>API Network</1>."
+  },
+  "import_an_existing_file": "Import an existing file",
+  "start_with_collection_template": "Start with a collection template",
+  "new": "NEW"
+ },
+ "personal": {
+  "title": "Welcome to your personal workspace 👋",
+  "description": "This is your space — only you can see the APIs, collections, and other projects you create here.",
+  "use_a_template": "Use a template",
+  "import": "Import"
+ },
+ "team": {
+  "title": "Welcome to your team’s workspace 👋",
+  "description": "Use this space to build, test, and deploy APIs with your team."
+ },
+ "step_name": "Welcome to workspace",
+ "how_would_you_start": "How would you like to start?",
+ "start_from_scratch": "Or start from scratch",
+ "use_an_ai": "Use AI to create an API",
+ "tags": {
+  "alpha": "Alpha"
+ },
+ "collection_template": {
+  "title": "Recommended templates",
+  "description": "Personalized recommendations that help you make the most of Postman.",
+  "blank_state": {
+   "title": "No templates available",
+   "description": "Could not find any collection template to use",
+   "close_button": {
+    "text": "Close"
+   }
+  },
+  "search_template": {
+   "placeholder": "Search templates"
+  },
+  "basics_tooltip": {
+   "header": "Well done!",
+   "subheader": "You got the basics.",
+   "body": "Postman also enables you to automate API testing, monitor API performance, mock APIs and more.",
+   "dismiss_quickstart": "Dismiss Quickstart"
+  }
+ }
+}

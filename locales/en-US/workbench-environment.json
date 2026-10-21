@@ -1,0 +1,104 @@
+{
+ "globals": {
+  "save_globals": "Save globals",
+  "export_globals": "Export globals",
+  "save": "Save",
+  "export": "Export"
+ },
+ "new_environment_placeholder": "New Environment",
+ "content_pane": {
+  "header": {
+   "placeholder": "Environment Name",
+   "actions": {
+    "fork": {
+     "disabled_tooltip": "Get online to create a fork or view existing forks.",
+     "label": "Create a fork"
+    },
+    "save": {
+     "save_label": "Save",
+     "saving_label": "Saving...",
+     "tooltip": {
+      "no_changes": "No new changes to save.",
+      "save_environment": "Save environment"
+     },
+     "toast_error": "Something went wrong while saving the environment."
+    },
+    "share": {
+     "label": "Share",
+     "tooltip": {
+      "share_environment": "Share environment"
+     }
+    },
+    "set_active": {
+     "disabled_text": "This environment is already active."
+    },
+    "set_as_active": {
+     "label": "Set as active environment"
+    },
+    "move": {
+     "label": "Move"
+    },
+    "export": {
+     "label": "Export"
+    },
+    "duplicate": {
+     "label": "Duplicate"
+    },
+    "pull_request": {
+     "label": "Create pull request"
+    },
+    "merge": {
+     "label": "Merge changes",
+     "disabled_text": "This environment is not a fork."
+    },
+    "pull_changes": {
+     "label": "Pull changes",
+     "disabled_text": "No changes to pull."
+    },
+    "manage_roles": {
+     "label": "Manage Roles"
+    },
+    "delete": {
+     "label": "Delete"
+    },
+    "remove_from_workspace": {
+     "disabled_text": "Get online to perform this action."
+    },
+    "download": {
+     "disabled_text": "Sign in to take this action"
+    },
+    "disabled_text": {
+     "get_online": "Get online to perform this action.",
+     "not_a_fork": "This environment is not a fork."
+    },
+    "toast_error": {
+     "no_permission": "You do not have permissions to perform this action"
+    }
+   }
+  },
+  "request_permission_info_bar": {
+   "message": "Request access to update the shared values of these variables. You can edit the local value."
+  }
+ },
+ "context_bar": {
+  "title": "Environment details",
+  "variable_sync_disable_impact_info_bar": {
+   "description": {
+    "all_disabled": "Mocks, Monitors and Newman will not be able to use values from any variables as variable syncing is disabled by team admin.",
+    "secret_disabled": "Mocks, Monitors and Newman will not be able to use values from secret variables as syncing for secret variables is disabled by team admin."
+   }
+  },
+  "system_environment": {
+   "label": "System Environment",
+   "none_option_label": "No System Environment",
+   "link_tooltip": "Link to System Environment",
+   "change_tooltip": "Change System Environment",
+   "open_tooltip": "Open System Environment",
+   "permission_denied_tooltip": "Only API Catalog Managers or Workspace Admins can link an environment to a System Environment."
+  }
+ },
+ "tab_conflict_message": {
+  "environment": "This environment has been modified since you last opened the tab.",
+  "globals": "Global variables has been modified since you last opened the tab."
+ }
+}

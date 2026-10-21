@@ -1,0 +1,712 @@
+{
+ "variable_suggestions": {
+  "dataset_subtitle": "Dataset",
+  "source_subtitle": "Source belonging to {datasetName}",
+  "view_subtitle": "View belonging to {datasetName}",
+  "loading": "Loading datasets…",
+  "view_dataset": "View dataset"
+ },
+ "entity_type_icon": {
+  "label": "Dataset"
+ },
+ "sidebar_row_actions": {
+  "add_view": "Add view",
+  "more_actions": "View more actions"
+ },
+ "source_type_tooltip": {
+  "file": "Upload a CSV, JSON, or Excel file from your computer, or reuse one already saved to this workspace.",
+  "local": "Use a file on your computer. It stays on your machine and is queried locally.",
+  "cloud": "Use a file saved to this workspace.",
+  "remote": "Fetch a data file from a public URL.",
+  "mysql": "Connect to a MySQL database and query a table as part of this dataset.",
+  "postgres": "Connect to a PostgreSQL database and query a table as part of this dataset.",
+  "sqlserver": "Connect to a SQL Server database and query a table as part of this dataset.",
+  "jdbc": "Connect to a database through its JDBC driver and query it as part of this dataset."
+ },
+ "upgrade_modal": {
+  "description": "Datasets let you store, connect, and reuse structured data in Postman, from files to live databases. Upgrade your plan to get started."
+ },
+ "source_type": {
+  "local": "Local File",
+  "remote": "Download from Remote URL",
+  "mysql": "MySQL",
+  "postgres": "PostgreSQL",
+  "sqlserver": "SQL Server",
+  "jdbc": "JDBC",
+  "cloud": "Postman Cloud Store"
+ },
+ "source_address_bar": {
+  "placeholder": {
+   "default": "Enter a URL or connection string",
+   "local_file": "No file selected",
+   "local_file_path": "Path to a local file",
+   "jdbc": "jdbc:vendor://host/database",
+   "remote_url": "https://example.com/data.csv"
+  },
+  "select_source": "Select a source",
+  "source_type_label": "Source type",
+  "remote_file": "Remote File",
+  "change_source_type": "Change source type",
+  "segment_placeholder": {
+   "host": "host",
+   "port": "port",
+   "database": "database"
+  },
+  "no_databases": "No databases found",
+  "file_dialog": {
+   "data_files": "Data files",
+   "all_files": "All files"
+  },
+  "source_kind": {
+   "local": "Local file",
+   "remote": "Remote file",
+   "mysql": "MySQL",
+   "postgres": "PostgreSQL",
+   "redis": "Redis"
+  }
+ },
+ "cartographer": {
+  "empty_state": {
+   "description": "Pick a source to explore its schema."
+  },
+  "loading": {
+   "description": "Loading schema…"
+  },
+  "selection_paused": {
+   "tooltip": "Field selection is paused because the current query can't be parsed. Fix the query in the editor to select fields again."
+  }
+ },
+ "source_pane": {
+  "committed_actions": {
+   "try_again": "Try again",
+   "remove": "Remove",
+   "update": "Update"
+  },
+  "form_actions": {
+   "save": "Save"
+  },
+  "empty_state": {
+   "title": "Configure your data sources and views",
+   "description": "Connect your databases or add data files to create views of your working data."
+  },
+  "configuration_label": "Configuration"
+ },
+ "source_config": {
+  "connection_status": {
+   "connected": "Connected",
+   "failed": "Connection Failed",
+   "validate_failed": "Couldn't connect to the database. Check the connection details and try again."
+  },
+  "test_connection": "Test connection",
+  "edit": "Edit",
+  "field": {
+   "host": "Host",
+   "port": "Port",
+   "database": "Database",
+   "username": "Username",
+   "password": "Password",
+   "table": "Table (optional)",
+   "table_help": "Optional. Leave table name blank to query and work with the whole database. Enter a table name if you'd want to combine its data with other datasources in the dataset.",
+   "schema": "Schema"
+  },
+  "validation": {
+   "host_required": "Host is required"
+  },
+  "ssh": {
+   "enable": "Connect through an SSH tunnel",
+   "description": "The database host must be reachable from this SSH server.",
+   "host": "SSH host",
+   "port": "SSH port",
+   "username": "SSH username",
+   "private_key": "SSH private key",
+   "host_key": "SSH host key",
+   "skip_host_key_verification": "Skip SSH host key verification",
+   "validation": {
+    "host_required": "SSH host is required",
+    "username_required": "SSH username is required",
+    "private_key_required": "SSH private key is required",
+    "private_key_vault_required": "Save the SSH private key to Vault before saving this source",
+    "host_key_required": "SSH host key is required unless host key verification is skipped"
+   }
+  },
+  "copy_to_workspace": {
+   "label": "Copy file to repository",
+   "description": "Copies the file into the repository so the dataset works when shared with others. Disable for very large files."
+  },
+  "location": {
+   "file_label": "File",
+   "url_label": "URL",
+   "connection_label": "Connection string",
+   "url_placeholder": "https://example.com/data.csv",
+   "choose_file": "Choose a file",
+   "change_file": "Change",
+   "remote_file": "Remote file"
+  }
+ },
+ "secret_field": {
+  "link_to_vault": "Link to vault secret",
+  "unlink_vault": "Unlink vault secret",
+  "view_in_vault": "View in Vault",
+  "new_secret": "New secret",
+  "link_aria_label": "Link {label} to vault secret",
+  "unlink_aria_label": "Unlink {label} from vault secret",
+  "search_placeholder": "Search secrets...",
+  "no_matching": "No matching secrets",
+  "no_available": "No vault secrets available",
+  "choose_file": "Choose a file",
+  "file_prompt_suffix": "(You can also paste your {label} below)",
+  "selected_file": "Selected file:",
+  "change_file": "Change",
+  "choose_file_aria_label": "Choose a {label} file",
+  "change_file_aria_label": "Change the selected {label} file",
+  "file_contents": "File contents",
+  "not_saved_to_vault": "Sensitive value, save to Vault",
+  "save_to_vault": "Save to Vault",
+  "secret_name": "Secret name",
+  "secret_name_required": "Enter a secret name.",
+  "contents_required": "Enter key contents before saving.",
+  "local_vault": "Local Vault",
+  "shared_vault": "Shared Vault",
+  "file_too_large": "Choose a file smaller than {maxSize}.",
+  "file_read_failed": "Could not read this file.",
+  "file_save_failed": "Could not save this value to Vault.",
+  "shared_vault_save_failed": "Could not save this value to Shared Vault. Check that Shared Vault is available for this workspace and that you have edit access, then retry. You can save it to Local Vault instead."
+ },
+ "errors": {
+  "ssh": {
+   "config_invalid": "The SSH tunnel configuration is incomplete or invalid. Check the bastion host, port, and username.",
+   "private_key_invalid": "The SSH private key is invalid or unsupported. Use an unencrypted OpenSSH or PEM private key.",
+   "host_key_invalid": "The SSH host key is invalid. Use one public host key, such as ssh-ed25519 AAAA…",
+   "host_key_mismatch": "SSH host key verification failed. Confirm the bastion’s current host key.",
+   "auth_failed": "The SSH server rejected the credentials. Check the SSH username and private key.",
+   "unreachable": "Could not reach the SSH server. Check the bastion host, port, and network access.",
+   "timeout": "The SSH connection timed out. Check the bastion and network, then try again.",
+   "forward_failed": "The SSH server could not reach the database. Check the database host and port as seen from the bastion."
+  },
+  "secret_resolution_timeout": "Postman could not access this datasource’s Vault secrets in time. Make sure Vault is unlocked, then retry.",
+  "secret_resolution_failed": "Postman could not resolve one or more Vault secrets used by this datasource. Unlock Vault and check that the linked secrets still exist.",
+  "postman_cloud_file_requires_cloud_workspace": "Postman Cloud File sources are only available in Cloud workspaces."
+ },
+ "workbench_header": {
+  "button": {
+   "save": "Save",
+   "add_new_source": "Add New Source"
+  }
+ },
+ "sidebar_empty_state": {
+  "sources_description": "No data sources configured.",
+  "views_description": "No views added."
+ },
+ "data_source_edit": {
+  "extend_with_ai": "Extend with AI",
+  "extend_with_ai_tooltip": "Generate and append synthetic rows",
+  "extend_with_ai_unavailable": "This source cannot be extended because its original data is read-only",
+  "loading": "Loading source...",
+  "last_refreshed_label": "Last refreshed",
+  "load_error_heading": "Failed to load source",
+  "tabs": {
+   "data": "Data",
+   "settings": "Settings"
+  },
+  "jdbc_preview_unavailable_heading": "Preview unavailable",
+  "jdbc_preview_unavailable_message": "Preview isn't available for sources that query the database directly. Run a query against your database by creating a view.",
+  "create_view": "Create view",
+  "jdbc_settings": {
+   "source_info": "Source information",
+   "source_type": "Source type",
+   "jdbc_type": "JDBC type",
+   "driver_class": "Driver class",
+   "driver_jars": "Driver JARs",
+   "java_runtime": "Java runtime",
+   "java_executable": "Java executable",
+   "java_detecting": "Detecting...",
+   "java_unavailable": "Not detected",
+   "connection": "Connection",
+   "url_template": "JDBC URL template",
+   "variables": "Configuration variables",
+   "properties": "Connection properties",
+   "ssh_tunnel": "SSH tunnel",
+   "ssh_host": "SSH host",
+   "ssh_port": "SSH port",
+   "ssh_username": "SSH username",
+   "ssh_private_key": "SSH private key",
+   "not_configured": "Not configured",
+   "local_note": "This JDBC type is currently available only in this dataset. Java is detected on this computer, and its path is not stored in the dataset."
+  },
+  "refresh": "Refresh",
+  "refreshed_at": "Refreshed at {timestamp}",
+  "row_count": "{count, plural, one {# row} other {# rows}}",
+  "row_count_capped": "Showing the first {count, number} rows",
+  "row_count_of_total": "Showing {shown, number} of {total, number} rows",
+  "update": "Update",
+  "update_anyway": "Update anyway",
+  "blank_table_breaks_views": "With no table, this source connects to the whole database and is queried only through native views. {count, plural, one {This view reads its table and will stop working} other {These # views read its table and will stop working}}: {views}."
+ },
+ "agent_schema": {
+  "row_count_unknown": "Row count unknown",
+  "row_count": "{count, plural, one {# row} other {# rows}}",
+  "columns_from_preview": "Columns resolved from a five-row preview"
+ },
+ "file_preview_modal": {
+  "title": "File preview",
+  "save_error_title": "Couldn't save the file",
+  "row_count": "{count, plural, one {# row} other {# rows}}",
+  "cancel": "Cancel",
+  "save": "Save",
+  "preview_unavailable": "Preview isn't available for this file type. You can still add it as a source.",
+  "preview_unavailable_large_file": "Preview isn't available for files over {size}.",
+  "preview_unavailable_large_file_hint": "You can still add it as a source, with all operations supported.",
+  "parse_error": {
+   "csv": "This file couldn't be parsed as CSV. Make sure it's a valid CSV file.",
+   "json": "This file couldn't be parsed as JSON. Make sure it's a valid JSON array of records."
+  },
+  "save_to_cloud": {
+   "label": "Save file to the Postman Cloud Store"
+  },
+  "destination_hint": {
+   "local": "Stays on this machine. Use Postman Cloud Store for access across devices, users, and cloud runs.",
+   "cloud": "Uploaded to Postman Cloud Store. Available across devices, users, and cloud runs."
+  }
+ },
+ "data_view": {
+  "run": "Run",
+  "save": "Save",
+  "save_options_label": "Save options",
+  "reset": "Reset",
+  "save_as_new_view": "Save as new view",
+  "data_label": "Data",
+  "query_label": "Query",
+  "jdbc_native_query_badge": "Native Query",
+  "jdbc_native_query_info_label": "About native queries",
+  "jdbc_native_query_tooltip": "This query is sent to your database server as-is. Write it in your database's own query language (SQL dialect). Autocomplete and query validation may be unavailable.",
+  "deleted_source": "[Deleted source]",
+  "empty_table": "Run a query to view the data",
+  "save_output_as_source": "Save as Source",
+  "use_view": "Use View",
+  "use_view_in_collection_run": "Collection run",
+  "use_view_in_monitor": "Monitor",
+  "more_header_actions": "More actions"
+ },
+ "save_view_output_modal": {
+  "title": "Save output as source",
+  "description": "Stores this view's output as a new Postman cloud source, so results from database sources can be reused in cloud runs, monitors, and other views.",
+  "name_label": "Source name",
+  "name_placeholder": "e.g. top_customers_snapshot",
+  "name_invalid": "Use letters, numbers and underscores, starting with a letter or underscore.",
+  "name_taken": "A source with this name already exists on this dataset. Choose another name.",
+  "row_count_hint": "{count, plural, one {# row will be uploaded} other {# rows will be uploaded}}",
+  "unsaved_query_hint": "The unsaved query currently shown will be used.",
+  "cancel": "Cancel",
+  "save": "Save",
+  "error_title": "Couldn't save the output",
+  "empty_result": "This view returned no rows, so there is nothing to save.",
+  "too_many_rows": "This view returns more rows than can be saved at once ({limit, number} maximum). Narrow the query and try again.",
+  "too_large": "This view’s output is larger than the {limit} that can be saved at once. Narrow the query and try again.",
+  "success_toast": "View output saved as a new source",
+  "no_dataset_file": "This dataset has no file on disk yet, so the output cannot be saved as a source."
+ },
+ "use_view_in_runner_modal": {
+  "title": "Use in a collection run",
+  "description": "Opens the Collection Runner with this view set as the run’s iteration data.",
+  "view_label": "Dataset view",
+  "collection_label": "Collection",
+  "collection_placeholder": "Select a collection",
+  "no_collections": "This workspace has no collections you can run.",
+  "load_error": "Couldn't load the collections in this workspace.",
+  "retry": "Retry",
+  "open_error": "Couldn't open the Collection Runner. Try again.",
+  "cancel": "Cancel",
+  "submit": "Open in runner"
+ },
+ "dataset_create": {
+  "new_dataset": "New Dataset",
+  "save_view": "Save View"
+ },
+ "dataset_overview": {
+  "name_label": "Name",
+  "name_placeholder": "Dataset name",
+  "description_label": "Description",
+  "empty_state_banner": {
+   "title": "What is a dataset?",
+   "description": "A dataset organizes reusable data from files and databases so you can query it with SQL and use it across collection runs, scripts, mock servers, and monitors.",
+   "learn_more": "Learn more"
+  },
+  "toasts": {
+   "success_title": "Success",
+   "source_created": "Source has been created successfully",
+   "source_updated": "Source has been updated successfully",
+   "source_deleted": "Source has been deleted successfully",
+   "view_deleted": "View has been deleted successfully"
+  },
+  "load_error": {
+   "title": "Couldn't load this dataset",
+   "retry": "Retry"
+  },
+  "sources": {
+   "title": "Data source(s)",
+   "subtitle": "The raw data behind this dataset.",
+   "subtitle_empty_hint": "Choose a source type below to add your first source.",
+   "drag_drop_hint": "You can also drag and drop a CSV, JSON, or spreadsheet file here to add it as a source.",
+   "drag_drop_hint_empty": "You can also drag and drop a CSV, JSON, or spreadsheet file here.",
+   "add_source": "Add source",
+   "new_jdbc_source": "New JDBC source",
+   "add_another": "Add another source",
+   "drop_overlay": "Drop file to add as a source",
+   "unsupported_file": {
+    "title": "Unsupported file type",
+    "description": "Only .csv and .json files can be added as sources."
+   },
+   "sample": {
+    "prompt": "Getting started? Start with a sample source.",
+    "name": "Customers",
+    "description": "Customer profiles with contact, location, and account status fields.",
+    "add_error": "Couldn't add this sample source. Try again."
+   },
+   "enterprise_upgrade": {
+    "feature": "{sourceLabel}",
+    "heading": "Upgrade to Enterprise to connect {sourceLabel}",
+    "description": "Connecting {sourceLabel} requires an Enterprise plan. Upgrade to add it to a dataset and query it with SQL alongside your other data."
+   },
+   "kind": {
+    "ai": "Add with AI",
+    "local": "Local File",
+    "cloud": "Postman Cloud Store",
+    "mysql": "MySQL",
+    "postgres": "Postgres",
+    "sqlserver": "SQL Server",
+    "jdbc": "JDBC Source",
+    "remote": "Public URL"
+   },
+   "add_busy": "Another source is still being added. Wait for it to finish, then try again."
+  },
+  "views": {
+   "title": "Data views",
+   "subtitle": "Named queries over your sources. A view defines a specific slice of data.",
+   "create_view": "Create view",
+   "create_disabled": "To add a view, add a source to this dataset first"
+  }
+ },
+ "delete_source": {
+  "title": "Delete Source",
+  "confirm_prompt": "Are you sure you want to delete the source <strong>{name}</strong>? This action cannot be undone.",
+  "dependent_views_warning": "Any views that query this source will stop working.",
+  "not_found": "Source \"{name}\" not found",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "deleting": "Deleting..."
+ },
+ "database_source_modal": {
+  "title": {
+   "mysql": "Connect MySQL",
+   "postgres": "Connect Postgres",
+   "sqlserver": "Connect SQL Server"
+  },
+  "submit": "Add source",
+  "cancel": "Cancel"
+ },
+ "jdbc_source_modal": {
+  "title": "Add JDBC datasource",
+  "reuse_title": "Add datasource",
+  "steps": {
+   "driver": "Driver",
+   "url": "Connection URL",
+   "datasource": "Datasource"
+  },
+  "driver_heading": "Select a JDBC driver",
+  "driver_description": "Pick a JDBC driver .jar and any dependency .jar files it needs. Postman reads the available driver classes and checks your Java runtime.",
+  "driver_jar": "Driver JARs",
+  "driver_jar_help": "The .jar file containing the JDBC driver and any companion .jar files it needs. Files are loaded in the order shown.",
+  "jar_hint": "Choose a JDBC driver .jar from your computer",
+  "browse": "Browse",
+  "add_jar": "Add JAR",
+  "change": "Change",
+  "type_name": "Type name",
+  "type_name_help": "What would you like to call this kind of a database connection? You can choose a name that helps you remember.",
+  "type_name_placeholder": "e.g. PostgreSQL JDBC",
+  "type_name_required": "Enter a name for this JDBC type.",
+  "driver_class": "Driver class",
+  "driver_class_help": "The actual implementation class in the .jar file that contains the code to talk to your database. Some .jar files can contain multiple of these, so please choose the one that is appropriate and supported.",
+  "driver_class_placeholder": "Select or enter a driver class",
+  "driver_class_not_detected": "No driver class was detected. Enter its fully qualified class name to continue.",
+  "driver_class_required": "Select a JDBC driver class.",
+  "multiple_classes": "Multiple JDBC drivers were found. Select the class to use.",
+  "driver_loading": "Loading driver from the JAR…",
+  "driver_loaded": "Driver loaded. {count} compatible driver class(es) found.",
+  "jar_error_title": "Couldn't read this JAR",
+  "jar_error_help": "Choose the JDBC driver JAR, not a source archive or bundle. It must expose a java.sql.Driver implementation.",
+  "select_jar_error": "Choose a JDBC driver JAR to continue.",
+  "java_runtime": "Java runtime",
+  "java_detecting": "Detecting Java…",
+  "java_not_detected": "A compatible Java runtime was not detected.",
+  "java_missing_title": "No compatible Java runtime found",
+  "java_missing_help": "This driver requires Java {version} or later. Install a compatible runtime, or point Postman at an existing JDK or JRE.",
+  "java_invalid_title": "Nothing runnable at the configured Java path",
+  "java_invalid_help": "Choose a Java {version}+ executable, or a JDK/JRE home directory that contains bin/java.",
+  "java_version_incompatible": "This is Java {detected}, but the selected driver requires Java {required} or later.",
+  "locate_java": "Locate Java",
+  "use_different_runtime": "Use a different runtime",
+  "hide_runtime_override": "Hide runtime override",
+  "java_path": "Java executable or runtime directory",
+  "java_path_help": "Choose a Java executable (…/bin/java) or a JDK/JRE home directory containing bin/java. This path stays on this computer and is not saved in YAML.",
+  "java_verified": "{runtime} verified on this computer.",
+  "verify": "Verify",
+  "url_heading": "Define the connection URL",
+  "url_description": "Every database addresses things differently: schemas, service names, instances. Fill in the URL format your database uses. Anything in double braces becomes a field you fill in when configuring your database connection.",
+  "common_patterns": "Start from common URL patterns",
+  "url_template": "JDBC URL template",
+  "url_required": "Enter a JDBC URL template.",
+  "url_variable_error": "Unclosed variable near character {position}. Every variable needs matching double braces.",
+  "detected_variables": "Configuration variables to be filled in next ({count} used in URL):",
+  "no_variables": "Add placeholders wrapped in double braces to create datasource fields.",
+  "driver_properties": "Driver properties",
+  "driver_suggestions": "Suggested from {jar}. Type a double opening brace to filter, or select a property to insert it.",
+  "template_parse_failed": "Template can't be parsed",
+  "properties_failed": "Postman could not read connection properties from this driver.",
+  "yaml_storage_hint": "The JDBC type and URL template are stored in the dataset YAML. The Java runtime path stays local to this computer.",
+  "source_name": "Source name",
+  "source_name_placeholder": "e.g. orders_db",
+  "source_name_required": "Enter a source name.",
+  "connection_details": "Connection",
+  "connection_properties": "Connection properties",
+  "add_from_suggestions": "Add a driver property",
+  "no_properties": "No additional connection properties selected.",
+  "remove_property": "Remove {name}",
+  "resolved_url": "Resolved URL",
+  "secrets_hint": "Use Vault references for credentials. Plaintext values are written to the dataset YAML.",
+  "test_connection": "Test connection",
+  "connection_testing": "Testing…",
+  "connection_connected": "Connected",
+  "connection_test_unavailable": "The driver configuration is valid. Full JDBC connection testing is not available in this prototype; add the source and run a native query to verify connectivity.",
+  "connection_test_success": "Connected successfully.",
+  "connection_test_failed": "Could not connect with this configuration.",
+  "setup_failed": "JDBC setup failed",
+  "java_missing": "Java 11 or later was not found.",
+  "no_driver_class": "No JDBC driver class was found in the selected JARs.",
+  "back": "Back",
+  "next": "Next",
+  "submit": "Add source"
+ },
+ "create_view_modal": {
+  "title": "Create view",
+  "name_label": "View name",
+  "name_placeholder": "e.g. active_users",
+  "sources_label": "Sources",
+  "sources_placeholder": "Select sources",
+  "native_query_label": "Query to execute (editable later)",
+  "native_query_info_label": "About native query execution",
+  "native_query_placeholder": "Write the query in this database's own SQL, e.g. SELECT * FROM my_table",
+  "native_query_tooltip": "This query is sent to your database server as-is. Write it in your database's own query language (SQL dialect). Autocomplete and query validation may be unavailable.",
+  "jdbc_single_source": "A source that runs queries directly on its database can only be used on its own and can't be mixed with other sources.",
+  "native_only_selected": "{name} runs queries directly on its database, so it can't be combined with other sources.",
+  "native_only_disabled": "{name} connects to the whole database and runs its own SQL, so it can't be combined with other sources.",
+  "submit": "Create view",
+  "cancel": "Cancel"
+ },
+ "description": {
+  "editor_placeholder": "Add description..."
+ },
+ "permissions": {
+  "no_create_permission": "You don't have permission to create a dataset in this workspace.",
+  "no_edit_permission": "You don't have permission to edit datasets in this workspace.",
+  "no_delete_permission": "You don't have permission to delete datasets in this workspace.",
+  "no_add_source_permission": "You don't have permission to add sources in this dataset.",
+  "no_delete_source_permission": "You don't have permission to delete sources in this dataset.",
+  "no_create_view_permission": "You don't have permission to create a view in this dataset.",
+  "no_delete_view_permission": "You don't have permission to delete views in this dataset.",
+  "no_edit_source_permission": "You don't have permission to edit sources in this dataset.",
+  "no_edit_view_permission": "You don't have permission to edit views in this dataset."
+ },
+ "common": {
+  "cancel": "Cancel",
+  "retry": "Retry",
+  "try_again": "Try Again",
+  "debug_with_ai": "Debug with AI",
+  "breadcrumb": {
+   "dataset_fallback": "Dataset",
+   "source_fallback": "Source",
+   "view_fallback": "View"
+  }
+ },
+ "agent_unavailable": {
+  "not_installed": {
+   "title": "Install Postman Desktop Agent to run this query",
+   "body": "This dataset uses a data source that runs on your local machine. Install the Postman Desktop Agent to query it from the browser.",
+   "cta": "Install Postman Desktop Agent"
+  },
+  "wrong_version": {
+   "title": "Update Postman Desktop Agent",
+   "body": "Your installed Postman Desktop Agent is out of date. Update it to at least version {minVersion} to run this query from the browser.",
+   "cta": "Update Postman Desktop Agent"
+  },
+  "not_ready": {
+   "title": "Postman Desktop Agent is starting up",
+   "body": "The Postman Desktop Agent is still initializing. Retry in a moment.",
+   "cta": "Retry"
+  },
+  "retry_cta": "Retry"
+ },
+ "mixed_source": {
+  "title": "This query mixes cloud and local data sources",
+  "body": "SQL that references both Postman-hosted files ({cloudSources}) and local sources ({localSources}) can't run on a single engine. Split the query so each part touches one side."
+ },
+ "request": {
+  "run": "Run",
+  "run_blocked": "Run (blocked)",
+  "cancel": "Cancel",
+  "run_hint": {
+   "pick_source": "Pick a source in the address bar before running.",
+   "mutation_off": "Mutation mode is off. Enable it in the Query tab to run write statements.",
+   "read_only_on": "Read-only is on for this request. Turn it off in the Settings tab to run write statements.",
+   "local_file_workspace": "Local file sources are only available in local workspaces on the desktop app. Use a database or remote file source to run here, or switch to a local workspace."
+  },
+  "choose_file": "Choose File",
+  "unsupported_source": "Source kind is not yet supported by the data daemon.",
+  "local_file_unavailable_web": "Local files aren't available on the web. Open the Postman desktop app to query a local file, or use a remote file or database source here.",
+  "schema": {
+   "search_placeholder": "Search schema",
+   "introspect_error": "Couldn't introspect this source.",
+   "retry": "Retry",
+   "reload": "Reload schema",
+   "icon_source": "Source",
+   "icon_table": "Table",
+   "icon_alias": "Table alias used in your query",
+   "icon_primary_key": "Primary key",
+   "icon_foreign_key": "Foreign key reference"
+  },
+  "result_table": {
+   "search_placeholder": "Search table",
+   "empty": "No results",
+   "running": "Running query…",
+   "sort": "Sort",
+   "sort_column": "Sort by {column}",
+   "sort_column_ascending": "Sort by {column}, sorted ascending",
+   "sort_column_descending": "Sort by {column}, sorted descending",
+   "resize_column": "Resize {column} column. Press Enter to fit it to its contents",
+   "detail": {
+    "copy": "Copy",
+    "copied": "Copied",
+    "char_count": "{count, plural, one {# character} other {# characters}}"
+   }
+  },
+  "tabs": {
+   "query": "Query",
+   "authorization": "Authorization",
+   "settings": "Settings"
+  },
+  "query_editor": {
+   "beautify": "Beautify"
+  },
+  "settings": {
+   "read_only_title": "Read-only",
+   "read_only_description": "Blocks queries that write data or change schema.",
+   "read_only_description_forced_suffix": " Remote file sources are read-only by transport — the toggle is locked on.",
+   "read_only_aria": "Read-only"
+  },
+  "pending_changes": {
+   "summary": "{count, plural, one {# row} other {# rows}} changed — not yet committed.",
+   "revert_hint": "Tab close, an idle timeout, or an explicit \"Roll back\" will revert these changes.",
+   "ddl_warning": "This statement runs a DDL operation. DDL cannot be rolled back on some engines.",
+   "roll_back": "Roll back",
+   "commit": "Commit",
+   "continue": "Continue",
+   "continue_countdown": "Continue ({seconds})"
+  },
+  "file_changes": {
+   "applied": "Changes applied to the in-memory copy.",
+   "unchanged_hint": "Original file on disk is unchanged.",
+   "discard": "Discard",
+   "export": "Export modified table"
+  },
+  "error_boundary": {
+   "title": "Something went wrong",
+   "description": "The {region} hit an unexpected error. Your request is safe — try again.",
+   "region_fallback": "view",
+   "try_again": "Try again"
+  },
+  "response": {
+   "heading": "Response",
+   "view_tab": "View",
+   "empty": "Run a query to view the data",
+   "clear": "Clear response",
+   "nothing_to_clear": "No response to clear.",
+   "more_actions": "More result actions",
+   "row_count": "{count, plural, one {# row} other {# rows}}",
+   "connection": {
+    "connecting": "Connecting to {kind}…",
+    "failed": "{kind} connection failed",
+    "connected": "Connected {kind}",
+    "connected_version": "Connected {kind} {version}"
+   },
+   "empty_state": {
+    "redis": "Send a Redis command to view the response",
+    "default": "Run a query to load the view"
+   },
+   "error": {
+    "generic": "Something went wrong. Restarting the app might help.",
+    "unknown": "An unknown error occurred.",
+    "agent_required": {
+     "heading": "Desktop Agent required",
+     "hint": "Switch to the Postman Desktop Agent to run data requests."
+    },
+    "unreachable": {
+     "heading": "Can't reach the data source",
+     "hint": "Check the host and port, and confirm the database is running and accepting connections."
+    },
+    "timeout": {
+     "heading": "The connection timed out",
+     "hint": "Verify the host, port, and your network. A VPN or firewall may be blocking the connection."
+    },
+    "host_unresolved": {
+     "heading": "Can't resolve the host",
+     "hint": "Double-check the host name for typos."
+    },
+    "auth_failed": {
+     "heading": "Authentication failed",
+     "hint": "Check the username and password in the Authorization tab."
+    },
+    "syntax": {
+     "heading": "Your query has a syntax error",
+     "hint": "Review the highlighted statement — a keyword, comma, or quote is likely off."
+    },
+    "not_found": {
+     "heading": "Something in your query couldn't be found",
+     "hint": "Check the table and column names against the schema in the cartographer."
+    },
+    "blocked": {
+     "heading": "This query was blocked",
+     "hint": "Read-only is on for this request. Turn it off in the Settings tab to run write statements."
+    },
+    "failed": {
+     "heading": "Query failed"
+    }
+   }
+  }
+ },
+ "quick_create": {
+  "title": "Create dataset from file",
+  "save_as_title": "Save as dataset",
+  "file_label": "File",
+  "drop_or_browse": "Drop a CSV or JSON file, or <browse>browse</browse>",
+  "replace_file": "Replace file",
+  "remove_file": "Remove file",
+  "unsupported_file": "Only CSV and JSON files can be added.",
+  "adds_to": "Adds the file as a source and view in \"{datasetName}\".",
+  "database_hint": "Only files can be added here. To add a database source, open the dataset from the sidebar and add it there.",
+  "saving_to_workspace": "Saving to this workspace.",
+  "saving_to_repository": "Saving to the repository folder.",
+  "more_options": "More options",
+  "dataset_label": "Dataset",
+  "new_dataset_target": "Create new dataset",
+  "dataset_name_label": "Dataset name",
+  "creates_dataset": "Creates \"{datasetName}\" with the file as a source and view.",
+  "view_name_label": "View name",
+  "description_label": "Description",
+  "description_placeholder": "What this data covers and when to use it",
+  "save": "Save",
+  "cancel": "Cancel",
+  "created": "Added \"{viewName}\" to \"{datasetName}\"",
+  "failed": "Failed to create dataset. Please try again.",
+  "file_too_large": "This file is too large to save as a dataset. Pick a file under {limitMb} MB, or save it to the workspace instead.",
+  "no_permission": "You don't have permission to create a dataset in this workspace, and there's no dataset here you can add to."
+ }
+}

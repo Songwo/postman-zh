@@ -1,0 +1,531 @@
+{
+ "performance_test_form": {
+  "header": {
+   "heading": "Set up your performance test"
+  },
+  "run_choice": {
+   "heading": "Run method",
+   "in_app": "App",
+   "in_app_helper": "Run this performance test in the app.",
+   "via_cli": "Postman CLI",
+   "via_cli_helper": "Configure CLI command to run on your build pipeline."
+  },
+  "postman_cli": {
+   "install_in_terminal": "Install in Terminal",
+   "run_in_terminal": "Run in Terminal",
+   "add_api_key_tooltip": "Add an API key to run this command",
+   "setup_collection_omitted": "The setup collection isn't included in this command because the Postman CLI can only run collections synced to Postman.",
+   "teardown_collection_omitted": "The teardown collection isn't included in this command because the Postman CLI can only run collections synced to Postman.",
+   "load_shape": {
+    "min_cli_version": "Your Postman CLI is v{installedVersion}. This command needs v{version} or later.",
+    "unavailable_tooltip": "The Postman CLI can't run this load shape",
+    "unsupported": {
+     "base_not_below_peak_initial_load": "The Postman CLI needs Initial load to be below the virtual users ({virtualUsers}). Lower it, or use the Fixed load profile for a flat run.",
+     "base_not_below_peak_base_load": "The Postman CLI needs Base load to be below the virtual users ({virtualUsers}). Lower it, or use the Fixed load profile for a flat run.",
+     "ramp_up_no_ramp": "The Postman CLI can't run a ramp-up that takes no time. Drag the handles apart on the graph.",
+     "ramp_up_fills_duration": "The Postman CLI can't run a ramp-up that reaches its peak only as the test ends. Drag the ramp-up handle earlier, or increase the duration.",
+     "spike_no_ramp_down": "The Postman CLI can't run a spike that drops back instantly. Drag the spike end handle later.",
+     "peak_no_hold_or_ramp_down": "The Postman CLI can't run a peak with no hold and no ramp-down. Drag the handles apart on the graph.",
+     "starts_past_peak": "The Postman CLI can't run a load shape that starts at its peak. Drag the first handle later."
+    }
+   }
+  },
+  "errors": {
+   "start_run": {
+    "title": "Run Limit Exceeded"
+   },
+   "pass_criteria": {
+    "min": "Min value {min}",
+    "max": "Max value {max}",
+    "empty_field": "Field cannot be empty"
+   },
+   "max_users": "You can simulate up to {maxUserCount} virtual users.",
+   "max_duration": "Test duration cannot exceed {maxDuration} minutes.",
+   "users": {
+    "empty": "Minimum 1",
+    "min": "Minimum 1",
+    "max": "Maximum 200",
+    "invalid_number": "Expecting a whole number",
+    "max_users_reached": "You can simulate up to {count} virtual {count, plural, one {user} other {users}}."
+   },
+   "duration": {
+    "empty": "Minimum 1",
+    "min": "Minimum 1",
+    "max": "Maximum 60",
+    "invalid_number": "Expecting a whole number",
+    "max_duration_reached": "Test duration cannot exceed {count} {count, plural, one {minute} other {minutes}}."
+   },
+   "ramp_up_duration": {
+    "invalid_number": "Expecting a whole number",
+    "min": "Minimum ",
+    "max": "Ramp up time can't be more than test duration"
+   },
+   "collection": {
+    "empty": "Drag a collection or folder from your sidebar to get started"
+   },
+   "request_selection": {
+    "no_requests": "You must select a request to start run"
+   },
+   "default": {
+    "error": "Resolve the errors to start run"
+   },
+   "graph": {
+    "error": "Resolve the errors to see preview"
+   },
+   "file_data": {
+    "file_missing": {
+     "suffix": "file not found in local storage. Add a file or continue without it.",
+     "msg": "As the file used for the previous run is not found in local storage, collection run will happen without data file"
+    },
+    "help_content": "<0>{bannerContent} Learn more about </0><1><0>formatting data files.</0></1>",
+    "error_msgs_map": {
+     "json_invalid_array": {
+      "title": "Selected JSON file is not an array of objects",
+      "description": "The JSON file needs to be an array of object(s) containing key-value pairs. These object(s) will be provided to the virtual users during the performance test run"
+     },
+     "undetermined_file_type": {
+      "title": "Selected data file type could not be determined",
+      "description": "The data file must be in CSV or JSON format"
+     },
+     "csv_parsing_error": {
+      "title": "Error while parsing CSV file type"
+     },
+     "json_parsing_error": {
+      "title": "Error while parsing JSON file type"
+     }
+    }
+   },
+   "system": {
+    "not_ready": "Something went wrong while setting up your system for performance testing."
+   },
+   "limit_exceeded": "Run Limit Exceeded",
+   "workload_running": "Another performance test is already in progress. Please wait for the current test to finish before starting a new one."
+  },
+  "tooltips": {
+   "booting": "Your system is being set up for performance testing. This may take a few seconds."
+  },
+  "banner": {
+   "heading": "Test how your APIs perform under load",
+   "desc": "<0>Simulate real-world traffic from your local machine and observe the performance of your APIs. Learn more about </0> <1><0>performance testing</0></1>",
+   "heading_v2": "Run performance tests at larger scales",
+   "desc_v2": "<0>Simulate real-world scenarios to validate stability and catch issues early.</0> <1><0> Learn more</0></1>"
+  },
+  "users": {
+   "label": "Virtual users",
+   "helper_text": "Each user runs the collection in parallel and repeatedly for the test duration."
+  },
+  "duration": {
+   "label": "Test duration",
+   "suffix": "mins"
+  },
+  "load_profile": {
+   "label": "Load profile",
+   "helper_text": "Determines how the number of virtual users changes during the test.",
+   "ramp_up_text": "Time taken to gradually increase to the maximum virtual users.",
+   "suffix": "profile"
+  },
+  "ramp_up_duration": {
+   "label": "Ramp up duration",
+   "helper_text": "Time taken to gradually increase to the maximum virtual users.",
+   "suffix": "mins"
+  },
+  "data_file": {
+   "label": "Data file",
+   "label_field_type": "optional",
+   "type_label": "Data file type",
+   "action_label": "Select file",
+   "info_text": "Data file enables you to assign unique datasets to each virtual user, simulating real-world scenarios.",
+   "preview_text": "Open preview",
+   "preview": {
+    "vu_column_header": "VUs",
+    "heading": "Data file",
+    "loading": "Parsing data file ...",
+    "column_loading": "Parsing ...",
+    "postfix": {
+     "rows": "rows",
+     "row": "row"
+    },
+    "btn_text": "Configure file",
+    "configuration": {
+     "heading": "Configure file",
+     "run_options": {
+      "label": "VU data mapping",
+      "options": {
+       "ordered": {
+        "label": "Ordered",
+        "helper_text": "Each VU uses data from a specific row."
+       },
+       "random": {
+        "label": "Randomized",
+        "helper_text": "Each VU uses data from a random row every time when running the collection."
+       }
+      }
+     }
+    },
+    "btn": {
+     "cancel": "Cancel",
+     "continue": "Continue"
+    },
+    "error": {
+     "validation": {
+      "err": "error",
+      "msg": "Error while parsing"
+     },
+     "default": "Preview not available as the contents of the file could not be read."
+    },
+    "data_distribution": {
+     "prefix": "File uses",
+     "mapping": "VU mapping",
+     "ordered": {
+      "value": "ordered",
+      "suffix": "where each VU receives data from a specific row."
+     },
+     "random": {
+      "value": "randomized",
+      "suffix": "where each VU receives data from a random row every time when running the collection."
+     }
+    }
+   }
+  },
+  "buttons": {
+   "run": "Start run",
+   "starting_run": "Starting run..."
+  },
+  "no_create_access": {
+   "public_ws": {
+    "title": "Fork a collection to run it",
+    "description": "You don’t have permission to run a collection in this public workspace. Fork the collection to your own workspace to run.",
+    "primary_action_text": "Fork collection"
+   },
+   "rfa": {
+    "title": "No permission to run performance tests",
+    "description": "You can request for edit access or fork this collection to your own workspace.",
+    "primary_action_text": "Request access",
+    "secondary_action_text": "Fork collection"
+   },
+   "api_collection": {
+    "title": "Coming soon!",
+    "description": "Performance testing is currently not available for collections inside an API. We are working on making this available soon!"
+   }
+  },
+  "pass_criteria": {
+   "expand_label": "Pass test if...",
+   "expand_label_info": "Set conditions to determine if the test passes or fails based on performance metrics.",
+   "invalid_criteria": "Invalid Pass/Fail Criteria"
+  },
+  "new_perf_flow": {
+   "duck_db_initializing": "Initializing performance test system. Please wait...",
+   "duck_db_initialization_error": "Failed to initialize performance testing system. Please try again.",
+   "duckdb_init_toast": {
+    "title": "Initialization error",
+    "timeout": "The performance runner extension download timed out. Check your network connection and firewall settings.",
+    "certificate": "A certificate issue blocked the performance runner extension download. If your organization uses a proxy, add its certificate to your system's trusted root certificates.",
+    "network": "A network issue blocked the performance runner extension download. Your IT team may need to allowlist the performance-test-artifacts.getpostman.com domain.",
+    "policy": "An application control policy blocked the Performance runner. Your IT team may need to allow execution for Postman files in app directory. [See possible solutions](https://learning.postman.com/v11/docs/collections/performance-testing/troubleshoot-performance-tests#possible-solutions). ",
+    "http": "The performance runner extension download was blocked or rejected. A proxy, firewall may be intercepting the request.",
+    "unknown": "The performance runner extension failed to install. Check Postman logs (search for PerformanceTestV2) to identify and resolve the issue, or share the logs with Postman support for assistance."
+   }
+  },
+  "warnings": {
+   "high_virtual_users": "High VU runs may impact your system performance.",
+   "high_vu_switch_description": "Your CPU and memory would limit this run.",
+   "switch_to_cloud": "Switch to Cloud"
+  },
+  "machine_limiting": {
+   "description": "{resource} peaked at {pct}%, your machine is limiting this run. Rerun in Cloud for accurate results.",
+   "resource_memory": "Memory",
+   "resource_cpu": "CPU",
+   "stop_rerun_cloud": "Stop and rerun in Cloud"
+  },
+  "delete_confirmation": {
+   "title": "Delete performance run",
+   "description_with_name": "Are you sure you want to delete <bold>{itemName}</bold> run? This can’t be undone.",
+   "description_without_name": "Are you sure you want to delete this performance test run? This can’t be undone.",
+   "delete": "Delete",
+   "cancel": "Cancel"
+  }
+ },
+ "cloud_run": {
+  "lifecycle_collections": {
+   "heading": "Lifecycle collections",
+   "setup": {
+    "label": "Setup collection (optional)",
+    "short_label": "Setup (optional)",
+    "info_aria_label": "About setup collections",
+    "environment_mutation_helper_text": "Runs before the test. Environment mutations carry over to the test and teardown.",
+    "placeholder": "Select a setup collection",
+    "trigger_add": "+ Setup",
+    "trigger_selected": "Setup: {name}",
+    "trigger_remove": "Remove setup collection",
+    "failed_primary_cause": "Setup lifecycle collection failed.",
+    "unknown_primary_cause": "Setup lifecycle collection outcome is unknown."
+   },
+   "teardown": {
+    "label": "Teardown collection (optional)",
+    "short_label": "Teardown (optional)",
+    "info_aria_label": "About teardown collections",
+    "environment_mutation_helper_text": "Runs after the test with carried-over environment mutations.",
+    "placeholder": "Select a teardown collection",
+    "trigger_add": "+ Teardown",
+    "trigger_selected": "Teardown: {name}",
+    "trigger_remove": "Remove teardown collection",
+    "failed_primary_cause": "Teardown lifecycle collection failed.",
+    "unknown_primary_cause": "Teardown lifecycle collection outcome is unknown."
+   },
+   "create_collection": "Create new collection",
+   "import_collection": "Import collection",
+   "open_collection": "Open collection in a new tab",
+   "create_collection_no_permission": "You do not have permission to create collections in this workspace.",
+   "import_collection_no_permission": "You do not have permission to import collections into this workspace.",
+   "environment_restore_failed": "The environment saved with this lifecycle run is unavailable. Restore that environment or clear the setup collection before running again.",
+   "gate_off_prefill": "Lifecycle collections are unavailable for this run. Run it again as a cloud test with lifecycle collections enabled.",
+   "load_error": "Collections could not be loaded. Try again before selecting a lifecycle collection.",
+   "unavailable_option": "{id} (Unavailable)",
+   "rejections": {
+    "feature_disabled": "Lifecycle collections are not available for new performance tests.",
+    "environment_required": "Select an environment to run a setup collection.",
+    "validation_failed": "The lifecycle collection configuration is invalid.",
+    "cloud_only": "Lifecycle collections are available only for cloud performance tests."
+   }
+  },
+  "rejections": {
+   "vuh_blocked": "Ask your admin to enable pay-as-you-go for Performance Test from the billing resource usage.",
+   "vuh_blocked_linked": "Ask your admin to enable pay-as-you-go for Performance Test from the <Link><Text>billing resource usage</Text></Link>.",
+   "internal_pool_forbidden": "Your team doesn't have access to Internal Staging Runners in this workspace. Choose another egress option.",
+   "internal_pool_unavailable": "Internal Staging Runners are temporarily unavailable. Try again later, or choose another egress option."
+  },
+  "status": {
+   "initializing": "Initializing",
+   "queued": "Queued",
+   "running": "Running",
+   "in_progress": "In Progress",
+   "finished": "Finished",
+   "error": "Error",
+   "stopped": "Stopped",
+   "aborted": "Aborted"
+  },
+  "actions": {
+   "stop_run": "Stop run",
+   "stop_test": "Stop Test",
+   "stopping": "Stopping…",
+   "cancel": "Cancel",
+   "cancel_test": "Cancel Test",
+   "continue_run": "Continue Run",
+   "run_again": "Run Again",
+   "retry": "Retry"
+  },
+  "stop_modal": {
+   "stop_heading": "Stop cloud test?",
+   "cancel_heading": "Cancel cloud test?",
+   "stop_description": "Are you sure you want to stop this test? Current iterations will complete before the test terminates.",
+   "cancel_description": "Are you sure you want to cancel this test? It will be removed from the queue."
+  },
+  "messages": {
+   "waiting_for_infra": "Waiting for cloud infrastructure…",
+   "terminated_no_data_title": "Run ended with no metrics",
+   "terminated_no_data_description": "This run terminated before generating any performance data. It may have failed during setup or been stopped before the test could start.",
+   "resolution_failure_reason": {
+    "dataset_no_compiled_data": "The selected dataset has no compiled data yet. Import a source before running.",
+    "dataset_unsupported_source": "Cloud runs don't support this dataset view's source. Upload the source to Postman first.",
+    "dataset_service_unconfigured": "Datasets aren't available for cloud runs in this environment. Contact Postman support if you need this enabled.",
+    "dataset_service_bad_response": "Something went wrong loading the dataset. Try again.",
+    "dataset_view_not_found": "Postman can't find this dataset or view, or you don't have access to it.",
+    "dataset_service_unreachable": "Couldn't load the dataset. Try again.",
+    "dataset_too_large": "The selected dataset view is too large for a cloud run. Narrow it with a row range (Start/End) or a filtered view."
+   },
+   "dataset_resolution_start_failure": "Couldn't load the selected dataset for this run. Make sure the dataset and view still exist and you have access, then try again.",
+   "test_running": "Test running…",
+   "metrics_pending": "Performance metrics will be available when the test completes.",
+   "run_in_progress_title": "Run in progress",
+   "run_in_progress_description": "Results will appear here once the run completes. Check the Execution tab to follow live progress.",
+   "phase_submitting_description": "Your cloud run is starting up.",
+   "phase_provisioning_description": "Setting up cloud infrastructure for your test.",
+   "phase_queued_description": "Allocating cloud resources and scaling up virtual users.",
+   "phase_running_description": "Virtual users are running. First results arriving shortly.",
+   "finishing_up": "Finishing up…",
+   "step_validating": "Starting",
+   "step_preparing": "Setting up",
+   "step_scaling": "Scaling",
+   "step_setup": "Setup",
+   "step_running": "Running",
+   "step_teardown": "Teardown",
+   "cloud_run_label": "Cloud run",
+   "last_updated_prefix": "Last updated: ",
+   "relative_just_now": "just now",
+   "relative_seconds": "{seconds}s ago",
+   "relative_minutes": "{minutes}m ago"
+  },
+  "run_choice": {
+   "cloud": "Cloud",
+   "cloud_helper": "Run on Postman Cloud",
+   "beta": "Beta"
+  },
+  "preview_notice": {
+   "heading": "Performance testing on Postman Cloud",
+   "description": "Running performance tests on Postman Cloud is a preview feature. It's available during preview within reasonable limits. Postman may apply restrictions at any time to prevent abuse. Pricing will be announced before General Availability.",
+   "got_it": "Got it"
+  },
+  "estimated_usage": "Estimated <Strong>{vuh} VUH</Strong>. <Link><Text>Learn more</Text></Link>",
+  "kept_settings": "Kept your settings: {vus} VUs, {duration} mins, {profile}",
+  "copied_from_run": "Copied from run #{runNumber}: {vus} VUs, {duration} mins, {profile}",
+  "upgrade": {
+   "heading": "Upgrade to run performance tests on the cloud",
+   "description": "Cloud runs execute your performance tests on Postman's cloud infrastructure, so you can scale up virtual users and duration without using your own machine. This is a preview feature, available within reasonable limits. Postman may apply restrictions at any time to prevent abuse. Pricing will be announced before General Availability."
+  },
+  "validation": {
+   "min_vus": "Cloud tests require at least {count} virtual {count, plural, one {user} other {users}}.",
+   "max_vus": "Your account allows up to {count} virtual {count, plural, one {user} other {users}}.",
+   "min_duration": "Cloud tests require a minimum duration of {count} {count, plural, one {minute} other {minutes}}.",
+   "max_duration": "Your account allows up to {count} {count, plural, one {minute} other {minutes}}.",
+   "contact_support_cta": "<Link><Text>Contact support</Text></Link> for a higher limit.",
+   "data_file_too_large_title": "Data file exceeds the {limitMb} MB limit for cloud tests.",
+   "data_file_too_large_msg": "Please select a smaller file or reduce the file size."
+  },
+  "column": {
+   "source": "Source",
+   "region": "Region"
+  },
+  "source": {
+   "cloud": "Cloud",
+   "cli": "CLI",
+   "app": "App"
+  },
+  "button": {
+   "run_on_cloud": "Start run",
+   "run_on_cloud_static_ip": "Start run (static IP)"
+  },
+  "static_ip": {
+   "label": "Egress routing strategy",
+   "info_aria_label": "Sets the source IPs your load generators send requests from.",
+   "shared_description": "Requests come from a shared pool of IP addresses.",
+   "static_description": "Requests come from static IPs you can allowlist in your firewall. <Link><Text>Learn More</Text></Link>",
+   "option_shared": "Dynamic IPs",
+   "option_static": "Static IPs",
+   "option_internal_stage": "Internal Staging Runners",
+   "internal_stage_description": "Requests come from Postman's Internal Staging Runners. For Postman staff only.",
+   "upgrade_heading": "Upgrade to run performance test on the cloud from a static IP",
+   "upgrade_description": "Route your cloud performance runs through static IPs that you can allowlist, so we can reach APIs behind firewalls. Upgrade your plan to get started."
+  },
+  "group_by": {
+   "label": "Group by",
+   "none": "None",
+   "region": "Region"
+  },
+  "topology": {
+   "title": "Execution",
+   "stages": {
+    "starting": "Starting",
+    "starting_empty": "Waiting for the cloud run to be accepted.",
+    "setting_up": "Setting up",
+    "setting_up_empty": "Waiting for cloud infrastructure to be provisioned.",
+    "scaling": "Scaling",
+    "scaling_empty": "Waiting for virtual users to be allocated and scaled.",
+    "running": "Running",
+    "running_empty": "Waiting for the test to start executing.",
+    "setup_collection": "Setup",
+    "setup_collection_empty": "Waiting for the setup collection to finish.",
+    "teardown_collection": "Teardown",
+    "teardown_collection_empty": "Waiting for the teardown collection to finish.",
+    "finishing": "Wrapping up",
+    "finishing_empty": "Wrapping up the run and making results available.",
+    "finishing_failed": "Results could not be aggregated from all instances. Partial results may be available in the Summary tab.",
+    "status": {
+     "pending": "Pending",
+     "active": "Active",
+     "completed": "Completed",
+     "completed_inferred": "Completed",
+     "failed": "Failed",
+     "stopped": "Stopped",
+     "unknown": "Unknown",
+     "skipped": "Skipped",
+     "not_run": "Not run"
+    },
+    "unavailable_detail": "Detailed activity is unavailable for this run. Stage progress is shown from the best available execution history.",
+    "inferred_detail": "This stage completed before detailed tracing was available. Stages further along confirm it ran.",
+    "synthetic_marker_user_stopped": "User stopped run"
+   },
+   "banners": {
+    "pre_instrumentation": "This run pre-dates execution tracing, so detailed activity is not available.",
+    "incomplete": "Partial activity logs — your results are unaffected.",
+    "user_aborted_untraced": "This run was stopped manually. Activity after the stop signal was not recorded."
+   },
+   "stage_strip": {
+    "title": "Run stages",
+    "in_progress": "In progress",
+    "completed": "Completed",
+    "completed_inferred": "Completed",
+    "inferred_tooltip": "Stage completed — detailed activity was not captured for this run"
+   },
+   "activity_log": {
+    "title": "Activity log",
+    "filter_all_stages": "All stages",
+    "filter_all_status": "All status",
+    "filter_status_ok": "OK",
+    "filter_status_error": "Error",
+    "filter_stage_label": "Filter by stage",
+    "filter_status_label": "Filter by status",
+    "search_placeholder": "Search events…",
+    "search_label": "Search activity log",
+    "duration": "Duration",
+    "empty_queued_title": "Waiting for the run to start",
+    "empty_queued_description": "Events will appear here once the run begins.",
+    "empty_collecting_title": "Collecting activity data",
+    "empty_collecting_description": "Events from completed stages will appear shortly.",
+    "empty_running_title": "Run started",
+    "empty_running_description": "Activity will stream in within a few seconds.",
+    "empty_filter_title": "No events match",
+    "empty_filter_description": "Try adjusting your stage or status filter, or clearing the search.",
+    "empty_default_title": "No activity recorded",
+    "empty_default_description": "No execution activity was captured for this run.",
+    "dataset_resolution_failed": "Dataset resolution failed",
+    "lifecycle": {
+     "setup_success": "Setup completed",
+     "setup_failure": "Setup failed",
+     "teardown_success": "Teardown completed",
+     "teardown_failure": "Teardown failed",
+     "total_requests": "Total requests",
+     "failed_requests": "Failed requests",
+     "reason_label": "Reason",
+     "assertion_truncated": "(truncated)",
+     "reason": {
+      "assertion_failed": "One or more assertions failed.",
+      "script_failed": "A script failed during collection execution.",
+      "request_failed": "One or more requests failed.",
+      "timeout": "The collection did not finish before the time limit.",
+      "cancelled": "The collection was cancelled.",
+      "environment_required": "An environment is required to run this lifecycle collection.",
+      "resource_resolution_failed": "The lifecycle collection resources could not be loaded.",
+      "runtime_initialization_failed": "The lifecycle collection runtime could not start.",
+      "resource_limit": "The lifecycle collection exceeded its execution resource limit.",
+      "limit_exceeded": "The lifecycle result exceeded the allowed size.",
+      "system": "The collection could not complete because of a system error."
+     }
+    }
+   }
+  },
+  "tabs": {
+   "tests_loading": "Run in progress — test results will appear here shortly.",
+   "errors_loading": "Run in progress — error data will appear here shortly."
+  },
+  "stop": {
+   "errors": {
+    "forbidden": "Only the test submitter can stop this test.",
+    "conflict": "The test has already completed.",
+    "not_found": "Test run not found.",
+    "generic": "Failed to stop the cloud test. Please try again."
+   }
+  }
+ },
+ "datasets": {
+  "upgrade": {
+   "heading": "Upgrade to use datasets as iteration data",
+   "description": "Datasets let you drive your performance test with reusable, shareable test data across app, CLI, and cloud runs. Upgrade your plan to attach a dataset view as iteration data."
+  }
+ },
+ "compare_runs": {
+  "footer": {
+   "default": "The most recent 20 runs from this collection are shown by default. Search by run name or number to compare with older runs.",
+   "search_results": "The most recent 20 runs matching the search term are shown."
+  }
+ }
+}

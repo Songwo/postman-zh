@@ -1,0 +1,46 @@
+{
+ "workbench_tab": {
+  "title": "Merge workspace"
+ },
+ "sidebar": {
+  "changes_section_label": "Changes",
+  "no_entity_changes": "No entity changes detected.",
+  "status_added": "Added",
+  "status_deleted": "Deleted",
+  "status_modified": "Modified",
+  "status_unreadable": "Unreadable",
+  "empty_title": "No changes to review",
+  "empty_description": "Open a draft workspace from the cloud to review its changes here.",
+  "loading_description": "Loading changes",
+  "error_title": "Failed to load changes"
+ },
+ "diff_body": {
+  "header_title": "Merge changes",
+  "empty_title": "No changes to merge",
+  "empty_description": "The draft and parent workspaces are in sync.",
+  "group_heading_collections": "Collections",
+  "group_heading_environments": "Environments",
+  "group_heading_specs": "Specs"
+ },
+ "file_diff": {
+  "status_added": "Added",
+  "status_modified": "Modified",
+  "status_deleted": "Deleted",
+  "status_unchanged": "Unchanged",
+  "status_unreadable": "Unreadable",
+  "no_changes": "No changes",
+  "unreadable_message": "This file couldn't be read, so its changes can't be shown.",
+  "lazy_load_hint": "Diff will load when the file is scrolled into view."
+ },
+ "line_diff": {
+  "compute_error_title": "There was an error computing the diff",
+  "no_changes": "No changes"
+ },
+ "display": {
+  "materialize_error_title": "Failed to load draft workspace",
+  "materialize_error_title_with_id": "Failed to load draft workspace {workspaceId}",
+  "unavailable_title": "Workspace merge unavailable",
+  "unavailable_load_description": "We couldn't load the changes for this draft workspace. Reopen the draft workspace to try again.",
+  "diff_error_title": "Failed to compute merge diff"
+ }
+}

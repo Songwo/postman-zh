@@ -1,0 +1,11 @@
+{
+ "untitled": "Untitled",
+ "read_only": "Read-only",
+ "loading_file": "Loading file...",
+ "failed_to_rename": "Failed to rename file: {error}",
+ "cut": "Cut",
+ "copy": "Copy",
+ "paste": "Paste",
+ "select_all": "Select All",
+ "open_request": "Open Request"
+}

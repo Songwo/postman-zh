@@ -1,0 +1,14 @@
+{
+ "vfs": {
+  "create_title": "Create collection or folder",
+  "delete_title": "Delete cloud entity",
+  "create_button": "Create",
+  "delete_button": "Delete",
+  "recursive_warning": "This deletes the collection or folder and all of its contents.",
+  "edit_button": "Apply edit",
+  "edit_file_title": "Edit file",
+  "create_file_title": "Create file",
+  "invalid_file_arguments": "The file operation has invalid arguments.",
+  "replace_all_notice": "This replacement applies to every matching occurrence."
+ }
+}

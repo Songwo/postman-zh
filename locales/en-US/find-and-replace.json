@@ -1,0 +1,165 @@
+{
+ "find": {
+  "title": "FIND",
+  "input": {
+   "regex": {
+    "value": "Regex"
+   },
+   "ignore_case": {
+    "value": "Ignore Case"
+   },
+   "find": {
+    "value": "Find",
+    "placeholder": "Enter text to find..."
+   }
+  }
+ },
+ "where": {
+  "title": "WHERE",
+  "everything_radio": "Everything",
+  "entities_to_find_radio": "Choose entities to find in",
+  "collections": {
+   "title": "Collections",
+   "count": "Collections ({items, plural, one {#} other {#}})"
+  },
+  "environments": {
+   "title": "Environments",
+   "count": "Environments ({items, plural, one {#} other {#}})"
+  },
+  "globals": {
+   "title": "Globals"
+  },
+  "open_tabs": {
+   "title": "Open tabs"
+  }
+ },
+ "replace_with": {
+  "title": "REPLACE WITH",
+  "placeholder": "Enter text to replace with...",
+  "input": {
+   "select_all": {
+    "value": "Select all"
+   },
+   "replace_selected": "Replace in {items, plural, one {#} other {#}} selected"
+  }
+ },
+ "result": {
+  "not_found": {
+   "description": "Try another search, or modify the entities to find in.",
+   "title": "Nothing found for \"{item}\""
+  },
+  "pre_result_message": "Enter the search query in the left to search across collections, environments and globals. When you find something, you'll see the search results here.",
+  "disabled_message": "Find and replace is not available in local mode. Switch to cloud mode to use this feature.",
+  "tabs": {
+   "open_tabs": {
+    "title": "Open tabs ({items})"
+   },
+   "collections_tab": {
+    "title": "Collections ({items})",
+    "content": {
+     "open_in_builder": "Open in builder"
+    },
+    "result_count": "({items, plural, one {# result} other {# results}})"
+   },
+   "environments_tab": {
+    "title": "Environments ({items})",
+    "content": {
+     "open": "Open"
+    }
+   },
+   "globals_tab": {
+    "title": "Globals ({items})",
+    "content": {
+     "open": "Open"
+    }
+   }
+  }
+ },
+ "replace": {
+  "replace_content_save_changes_collection": "Replacing content in a collection will save any unsaved changes in that collection.",
+  "replace_content_save_changes_environment": "Replacing content in an environment will save any unsaved changes in that environment.",
+  "replace_content_save_changes_globals": "Replacing content in globals will save any unsaved changes in that global."
+ },
+ "find_and_replace_target": {
+  "search": {
+   "placeholder": "Search for {item}"
+  },
+  "all_items": "All {item} ({count, plural, one {#} other {#}})",
+  "selected_items": "{items , plural, one {#} other {#}} selected",
+  "select_all": "Select all",
+  "unselect_all": "Unselect all",
+  "filters": {
+   "include": "INCLUDE FIELDS",
+   "selector_value_all": "FILTER (ALL FIELDS)",
+   "selector_value_count": "FILTER ({count} {count, plural, one {FIELD} other {FIELDS}})",
+   "collections": {
+    "value": "Collections",
+    "fields": {
+     "name": "Name",
+     "description": "Description",
+     "events_prerequest": "Pre-request script",
+     "events_test": "Tests",
+     "auth": "Authorization",
+     "variables": "Variable"
+    }
+   },
+   "folders": {
+    "value": "Folders",
+    "fields": {
+     "name": "Name",
+     "description": "Description",
+     "events_prerequest": "Pre-request script",
+     "events_test": "Tests",
+     "auth": "Authorization"
+    }
+   },
+   "requests": {
+    "value": "Requests",
+    "fields": {
+     "name": "Name",
+     "description": "Description",
+     "url": "URL",
+     "queryParams": "Query parameters",
+     "pathVariableData": "Path variables",
+     "headerData": "Headers",
+     "events_prerequest": "Pre-request script",
+     "events_test": "Tests",
+     "auth": "Authorization",
+     "data": "Request Body"
+    }
+   },
+   "responses": {
+    "value": "Examples",
+    "fields": {
+     "name": "Name",
+     "requestObject_url": "URL",
+     "requestObject_queryParams": "Query parameters",
+     "requestObject_pathVariableData": "Path variables",
+     "requestObject_headerData": "Request headers",
+     "requestObject_data": "Request body",
+     "text": "Response body",
+     "headers": "Headers"
+    }
+   },
+   "environments": {
+    "value": "Environments",
+    "fields": {
+     "name": "Name",
+     "values": "Variables"
+    }
+   },
+   "globals": {
+    "value": "Globals",
+    "fields": {
+     "values": "Variables"
+    }
+   },
+   "tab_requests": {
+    "value": "Requests"
+   },
+   "tab_examples": {
+    "value": "Examples"
+   }
+  }
+ }
+}

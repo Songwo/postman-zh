@@ -1,0 +1,710 @@
+{
+ "new_tag": "NEW",
+ "beta_tag": "BETA",
+ "general": {
+  "label": "General",
+  "tooltip_not_available": "This setting is not available while using the browser agent. Switch to the desktop agent to change this setting.",
+  "cloud_agent_tooltip_not_available": "This setting is not available while using the cloud agent. Switch to the desktop agent to change this setting.",
+  "request": {
+   "label": "Request",
+   "ssl_certificate_verification": "SSL certificate verification",
+   "ssl_keylogging": {
+    "label": "SSL/TLS key log",
+    "description": "Enable SSL/TLS session key logging for debugging encrypted connections",
+    "file_placeholder": "Select a file for SSL/TLS key logging",
+    "file_tooltip_no_file": "No file selected",
+    "file_tooltip_enable_first": "Enable SSL/TLS keylogging first",
+    "browse_button": "Choose",
+    "dialog_title": "Select SSL/TLS Keylogging File",
+    "dialog_button_label": "Select",
+    "web_warning": "SSL Keylog file selection is not available when cloud agent is active"
+   },
+   "lang_detection": "Response format detection",
+   "lang_detect_auto": "Auto",
+   "lang_detect_json": "JSON",
+   "request_timeout": {
+    "label": "Request timeout",
+    "desc": "Set how long a request should wait for a response before timing out. To never time out, set to 0.",
+    "unit": "ms"
+   },
+   "max_response_size": {
+    "label": "Max response size",
+    "desc": "Set the maximum size of a response to download. To download a response of any size, set to 0.",
+    "unit": "MB"
+   },
+   "protocol_version": {
+    "label": "HTTP version",
+    "desc": "Select the HTTP version to use for sending the request."
+   },
+   "disable_cookies": {
+    "label": "Disable cookies",
+    "desc": "Disable cookie jar for all requests."
+   }
+  },
+  "working_directory": {
+   "label": "Working directory",
+   "collaborate": "Collaborate on files used in requests by sharing your working directory. Learn how to <1><0>setup your working directory</0></1>",
+   "location": {
+    "label": "Location",
+    "button_label": "Choose",
+    "selected_dir_not_exist": "The selected working directory does not exist",
+    "dir_cannot_be_configured": "The working directory can’t be configured while using browser.",
+    "allow_reading_files": "Read files outside working directory",
+    "allow_reading_files_explanation": "Enabling this will allow any 3rd party collections to potentially read any file on your system.",
+    "dialog_button_label": "Select"
+   }
+  },
+  "headers": {
+   "label": "Headers",
+   "send_no-cache_header": "Send no-cache header",
+   "send_postman_header": "Send Postman Token header",
+   "retain_headers": "Retain headers when clicking on links",
+   "auto_follow_redirects": "Automatically follow redirects"
+  },
+  "user_interface": {
+   "label": "User interface",
+   "remove_tabs": "Remove tabs",
+   "remove_tabs_explanation": "Use browser tabs to navigate Postman.",
+   "open_sidebar_new_tab": "Always open sidebar item in new tab",
+   "ask_closing_tabs": "Always ask when closing unsaved tabs",
+   "show_icons_tab_names": "Show icons with tab names",
+   "two-pane_view": "Two-pane view",
+   "show_middle_workbench": "Show middle workbench",
+   "swap_left_right_sidebar": "Swap left and right sidebars",
+   "var_autocomplete": "Variable autocomplete",
+   "default_doc_editor": "Default documentation editor",
+   "postman_editor": "Postman editor",
+   "markdown_editor": "Markdown editor"
+  },
+  "editor_settings": {
+   "label": "Editor settings",
+   "reset_button_label": "Reset",
+   "reset_button_tooltip": "Reset editor settings to their default values",
+   "font_family": "Font Family",
+   "font_size": "Font Size (px)",
+   "font_size_unit": "px",
+   "indentation_count": "Indentation count",
+   "indentation_count_explanation": "Set number of indentations to add per code level.",
+   "indentation_type": "Indentation type",
+   "indentation_type_explanation": "Indent lines of code with either Space or Tab.",
+   "indentation_type_space": "Space",
+   "indentation_type_tab": "Tab",
+   "auto_close_brackets": "Auto close brackets",
+   "auto_close_quotes": "Auto close quotes"
+  },
+  "application": {
+   "label": "Application",
+   "autosave": "Autosave",
+   "autosave_explanation_only_requests": "Autosave changes to your requests.",
+   "send_anonymous_data": "Send anonymous usage data to Postman",
+   "send_anonymous_data_managed": "Turned off by your organization's Postman installation settings.",
+   "connection_mode": "Connection Mode",
+   "connection_mode_explanation": "Configure how the application connects to Postman servers.",
+   "connection_mode_auto": "Auto",
+   "connection_mode_http": "HTTP",
+   "os_notifications": "Show notification badge on app icon",
+   "os_notifications_explanation": "Show a count of unread notifications on the Postman app icon.",
+   "language": "Language",
+   "language_description": "Choose the language for the Postman app and email notifications.",
+   "language_loading": "Translating 1s and 0s… This could take a few minutes...",
+   "language_error": "Something went wrong while changing the application language. Try again.",
+   "deep_linking": {
+    "desktop": {
+     "manage": "Open in desktop app",
+     "manage_desc": "Automatically open links in desktop app when possible. You can update your preference in the Settings of Postman in your browser.",
+     "manage_button": "Open Postman on web"
+    },
+    "web": {
+     "open_links_desktop": "Always open in desktop app",
+     "open_links_desktop_desc": "Automatically open workspace related links in the desktop app. If unavailable, links will open in the browser."
+    }
+   }
+  },
+  "data-choices": {
+   "label": "Data choices",
+   "essential": "Store essential usage data needed for the app to function (auth tokens, audit logs, etc.)",
+   "functional": "Send anonymous functional usage data for product (error reporting, etc.)",
+   "analytics": "Send anonymous analytical usage data for product improvement",
+   "advertising": "Send anonymous data for advertising purposes",
+   "sale_of_info": "Send anonymous data for sale of information purposes",
+   "unknown": "Send anonymous data for unknown purposes"
+  }
+ },
+ "themes": {
+  "label": "Themes",
+  "original_description": "Personalize your experience with colors that matches your mood and style.",
+  "description": "Personalize your experience with themes that match your style. Manually select a theme or sync with system settings and let the machine set your day and night themes.",
+  "banners": {
+   "workspace_theme_applied_note": "This workspace has its own theme, so you can't apply or preview your selected themes here. No worries, your preference will be saved. <1><0>Learn more</0></1>"
+  },
+  "theme_option": {
+   "system": "System Default",
+   "light": "Light",
+   "dark": "Dark",
+   "dracula": "Dracula",
+   "monokai": "Monokai",
+   "ayu_light": "Ayu Light",
+   "ayu_dark": "Ayu Dark",
+   "high_contrast_light": "High Contrast Light",
+   "high_contrast_dark": "High Contrast Dark",
+   "night_owl_light": "Night Owl Light",
+   "night_owl_dark": "Night Owl Dark",
+   "solarized_light": "Solarized Light",
+   "solarized_dark": "Solarized Dark"
+  },
+  "reload_banner_text": "We've encountered an error while applying the theme. Reload the page to try again. <1>Reload</1>",
+  "banner_text": "We’re having trouble loading themes. <1>Try again</1>",
+  "mode": "Theme selection",
+  "mode_options": {
+   "single": "Manual",
+   "system": "Sync with system"
+  },
+  "mode_system": {
+   "headings": {
+    "day": "Day Theme",
+    "night": "Night Theme"
+   },
+   "descriptions": {
+    "day": "Active when system is set to light.",
+    "night": "Active when system is set to dark."
+   },
+   "badge": "Active"
+  }
+ },
+ "shortcuts": {
+  "label": "Shortcuts",
+  "toggle_switch_label": "Keyboard Shortcuts",
+  "restore_defaults_button_label": "Restore Defaults",
+  "groups": {
+   "tabs": "Tabs",
+   "sidebar": "Sidebar",
+   "request": "Request",
+   "interface": "Interface",
+   "window_and_modals": "Window and modals",
+   "console": "Console",
+   "postbot": "Postbot"
+  },
+  "open_new_tab": "Open New Tab",
+  "close_current_tab": "Close Tab",
+  "force_close_current_tab": "Force Close Tab",
+  "switch_to_next_tab": "Switch To Next Tab",
+  "switch_to_previous_tab": "Switch To Previous Tab",
+  "switch_to_tab_at_position": "Switch To Tab at Position",
+  "reopen_last_closed_tab": "Reopen Last Closed Tab",
+  "focus_next_split": "Focus Next Group",
+  "focus_previous_split": "Focus Previous Group",
+  "switch_to_last_tab": "Switch To Last Tab",
+  "request_url": "Request URL",
+  "save_current_request": "Save Request",
+  "save_current_request_as": "Save Request As",
+  "send_current_request": "Send Request",
+  "send_and_download_current_request": "Send And Download Request",
+  "send_current_request_with_ai": "Send Request with AI",
+  "search_tabs": "Search Tabs",
+  "search": "Search Sidebar",
+  "toggle_left_sidebar": "Toggle Left Sidebar",
+  "toggle_workbench": "Toggle Workbench",
+  "toggle_right_sidebar": "Toggle Right Sidebar",
+  "swap_sidebars": "Swap Sidebars",
+  "reset_layout": "Reset Layout",
+  "select": "Select Item",
+  "next_item": "Next Item",
+  "prev_item": "Previous Item",
+  "expand_item": "Expand Item",
+  "expand_all": "Expand All",
+  "collapse_item": "Collapse Item",
+  "collapse_all": "Collapse All",
+  "rename": "Rename Item",
+  "group_items": "Group Items",
+  "move_item_up": "Move Item Up",
+  "move_item_down": "Move Item Down",
+  "cut": "Cut Item",
+  "copy": "Copy Item",
+  "paste": "Paste Item",
+  "duplicate": "Duplicate Item",
+  "delete": "Delete Item",
+  "fork": "Create a fork",
+  "toggle_find_replace": "Find",
+  "import": "Import",
+  "settings": "Settings",
+  "shortcut_cheats": "Open Shortcut Help",
+  "open_create_new_modal": "New...",
+  "new_console_window": "New Console Window",
+  "new_requester_window": "New Postman Window",
+  "new_runner_tab": "New Runner Tab",
+  "navigate_to_previous_page": "Go back to the previous page",
+  "navigate_to_next_page": "Go back to the next page",
+  "increase_ui_zoom": "Zoom In",
+  "decrease_ui_zoom": "Zoom Out",
+  "reset_ui_zoom": "Reset Zoom",
+  "toggle_layout": "Toggle Two-Pane View",
+  "quit": "Quit Modal",
+  "space": "Space",
+  "focus_next": "Focus Next Item",
+  "universal_search_focus": "Search",
+  "universal_search_in_current_workspace": "Search in Current Workspace",
+  "environment_selector_focus": "Environment Selector",
+  "clear_console": "Clear Console",
+  "show_hide_console": "Show/Hide Console",
+  "trigger_postbot": "Open Postbot",
+  "open_agent_mode": "Open Agent Mode",
+  "open_vault": "Open Vault",
+  "open_browser_tab": "Open Browser Tab",
+  "cancel_conversation": "Cancel Conversation",
+  "accept_all_tool_call": "Accept All",
+  "reject_all_tool_call": "Reject All",
+  "search_variable": "Search Variable",
+  "tooltips": {
+   "conflict": {
+    "reassign_message_with_shortcut": "<0>The shortcut is already used by <1>{shortcut}.</1></0><1>Press {osKey} to reassign shortcut. ESC to cancel.</1>",
+    "reassign_message_without_shortcut": "<0>The shortcut is already used by <1>other shortcut.</1></0><1>Press {osKey} to reassign shortcut. ESC to cancel.</1>"
+   },
+   "error": {
+    "system_reserved_message_with_keylabel": "{keyLabel} shortcut is already used as a system shortcut. Try another combination.",
+    "system_reserved_message_without_keylabel": "This shortcut is already used as a system shortcut. Try another combination.",
+    "system_blacklisted_message": "Numeric keypads and some function and navigation keys aren’t supported. Try another combination.",
+    "no_modifier_key": {
+     "message_without_keylabel": "This is an invalid shortcut. Shortcut must include {modifiers} key",
+     "message_with_keylabel": "{keyLabel} is an invalid shortcut. Shortcut must include {modifiers} key"
+    }
+   },
+   "restore_default": "Restore default shortcut"
+  },
+  "keys_between_label": "through",
+  "empty_key_binding_placeholder": "Unassigned"
+ },
+ "data": {
+  "label": "Data",
+  "export_data": {
+   "label": "Export collections and environments",
+   "description": "Export all your collections and environments to a single dump file.",
+   "exporting_label": "Exporting",
+   "request_data_export_label": "Request Data Export",
+   "export_data_success_message": "Your data was exported successfully.",
+   "export_data_error_message": "Could not export the data. Please check the DevTools."
+  },
+  "import_data": {
+   "label": "Import data",
+   "description": "Import a Postman data dump. This may overwrite existing data.",
+   "upload_files_label": "Import Data File",
+   "format_not_recognised_error": "Error while importing: format not recognized",
+   "import_conflict_modal": {
+    "environment_already_exists": "An environment <0>{name}</0> already exists.",
+    "collection_already_exists": "A collection <0>{name}</0> already exists.",
+    "what_you_like_to_do": "What would you like to do?",
+    "apply_to_all": "Apply to all",
+    "replace": "Replace",
+    "import_as_copy": "Import as Copy"
+   }
+  },
+  "scratchpad_data_heading": "Scratch Pad Data",
+  "migrate_data": {
+   "label": "Migrate Scratch Pad data",
+   "description": "Migrate and sync all your Scratch Pad data to a workspace.",
+   "migrate_data_button_label": "Migrate Data"
+  },
+  "export_scratchpad_data": {
+   "label": "Export Scratch Pad data",
+   "description": "Export all your scratch Pad data into a single dump file.",
+   "export_data_button_label": "Export Scratch Pad Data"
+  }
+ },
+ "addons": {
+  "label": "Add-ons",
+  "postman_cli": {
+   "heading": "Postman CLI",
+   "section_summary": "Bring the power of Postman to your command line. Run collections, automate tests, and integrate with CI/CD workflows.",
+   "url": "https://www.npmjs.com/package/postman-cli",
+   "urlText": "Download from npm",
+   "installInTerminalText": "Install in terminal"
+  },
+  "postman_vscode": {
+   "heading": "Postman VS Code Extension",
+   "section_summary": "Send requests, test APIs, and manage collections — all from within your code editor. Also available for Cursor, Windsurf, and other compatible editors.",
+   "url": "https://learning.postman.com/docs/developer/vs-code-extension/install/",
+   "urlText": "Install on VS Code"
+  },
+  "postman_interceptor": {
+   "heading": "Postman Interceptor",
+   "section_summary": "Capture and sync cookies and requests directly from your browser to Postman. Use it to test authenticated APIs and debug browser-based workflows seamlessly.",
+   "url": "https://chromewebstore.google.com/detail/postman-interceptor/aicmkgpgakddgnaphhhpliifpcfhicfo?hl=en",
+   "urlText": "Install on Chrome"
+  }
+ },
+ "certificates": {
+  "label": "Certificates",
+  "not_supported": {
+   "heading": "Not supported",
+   "description": "Configuring SSL certificates is not supported when using the cloud agent. To view and set SSL certificates on a per-domain basis, use the Postman Desktop Agent."
+  },
+  "using_browser_certificates": {
+   "heading": "Using browser certificates",
+   "description": "By default, Postman uses your browser's SSL certificates when sending API requests. To view and set SSL certificates on a per-domain basis, use the Postman Desktop Agent."
+  },
+  "ca_certificates": {
+   "heading": "CA certificates",
+   "pem_file": {
+    "label": "PEM file",
+    "description": "The file should consist of one or more trusted certificates in PEM format.",
+    "file_format_error": "The selected PEM file is not readable. Please check file permissions."
+   }
+  },
+  "client_certificates": {
+   "heading": "Client certificates",
+   "add_certificate_label": "Add Certificate…",
+   "add_and_manage_ssl_certificates": "Add and manage SSL certificates on a per domain basis. Learn more about <0>working with certificates</0>",
+   "host": "HOST",
+   "passphrase": "Passphrase",
+   "remove_certificate_tooltip": "Remove certificate",
+   "crt_file": {
+    "label": "CRT file",
+    "error_message": "The selected CRT file is not readable, check file permissions."
+   },
+   "key_file": {
+    "label": "KEY file",
+    "error_message": "The selected KEY file is not readable, check file permissions."
+   },
+   "pfx_file": {
+    "label": "PFX file",
+    "error_message": "The selected PFX file is not readable, check file permissions."
+   }
+  },
+  "add_certificate": {
+   "heading": "Add certificate",
+   "host": {
+    "label": "Host",
+    "placeholder": "getpostman.com",
+    "prefix": "https://",
+    "error_message": "Hostname is required"
+   },
+   "port": {
+    "placeholder": "443"
+   },
+   "crt_file": "CRT file",
+   "key_file": "KEY file",
+   "pfx_file": "PFX file",
+   "passphrase": "Passphrase",
+   "add_button_label": "Add",
+   "cancel_button_label": "Cancel",
+   "working_with_certificates": "Learn more about <1><0>working with certificates</0></1>"
+  }
+ },
+ "connected_accounts": {
+  "label": "Connected accounts"
+ },
+ "experiments": {
+  "label": "Feature previews",
+  "global": {
+   "description": "Use beta features designed for early adopters. Expect fast iterations and updates as we refine the experience."
+  },
+  "live_debugging": {
+   "label": "Live Sessions"
+  },
+  "agent_mode": {
+   "label": "Try Agent Mode"
+  },
+  "perf_internal_runner_pool": {
+   "label": "Internal Staging Runners for performance tests",
+   "description": "Adds an Internal Staging Runners option to cloud performance test runs. For Postman staff only."
+  }
+ },
+ "proxy": {
+  "common": {
+   "username_label": "Username",
+   "password_label": "Password"
+  },
+  "global": {
+   "auth_label": "Proxy auth",
+   "auth_desc": "Uses basic authentication method.",
+   "bypass_label": "Proxy bypass",
+   "bypass_desc": "Enter comma separated hosts to bypass proxy settings.",
+   "heading": "Proxy configurations for sending requests",
+   "desc": "Specify a proxy setting to act as an intermediary for requests sent through the Builder in Postman. These configurations do not apply to any Postman services. Learn more about <0>using a custom proxy</0>",
+   "respect_variables_label": "Respect HTTP_PROXY, HTTPS_PROXY, and NO_PROXY environment variables",
+   "server_input_label": "Proxy server",
+   "type_HTTP_label": "HTTP",
+   "type_HTTPS_label": "HTTPS",
+   "type_selector_label": "Use proxy for",
+   "type_selector_desc": "Choose which request types use the proxy.",
+   "use_custom_proxy_label": "Use custom proxy configuration",
+   "use_system_proxy_label": "Use system proxy"
+  },
+  "system": {
+   "auth_label": "This proxy requires authentication",
+   "heading": "Default proxy configuration",
+   "summary": "Postman uses the system’s proxy configurations by default to connect to any online services, or to send API requests.",
+   "restart_button_text": "Save and restart Postman"
+  },
+  "cloud_state_msg": "Your requests are already proxied through the cloud agent. To customize proxy configurations, use the Postman Desktop Agent.",
+  "cloud_state_title": "Not applicable",
+  "label": "Proxy",
+  "xhr_state_msg": "By default, Postman uses your browser's proxy configurations when sending API requests. To customize proxy configurations, use the Postman Desktop Agent.",
+  "xhr_state_title": "Default proxy configuration",
+  "invalid_host": "Invalid Host",
+  "invalid_port": "Invalid Port"
+ },
+ "postman_passport": {
+  "label": "Passport Proxy",
+  "heading": "Passport Proxy",
+  "description": "Route API requests through your organization's Passport Proxy using a provisioned client certificate.",
+  "current_configuration": "Current configuration",
+  "proxy_url": "Proxy URL",
+  "certificate": "Certificate",
+  "cert_expires_in": "Certificate expires in",
+  "status": "Status",
+  "status_connected": "Connected",
+  "status_disconnected": "Disconnected",
+  "status_no_proxy": "No proxy configured",
+  "status_no_proxy_detail": "No Passport Proxy is configured for your team.",
+  "status_not_connected": "Not connected",
+  "status_not_connected_detail": "Could not provision certificates for the Passport Proxy.",
+  "error_generic": "Could not connect to the Passport Proxy.",
+  "error_timed_out": "Connection timed out. Check your network or VPN.",
+  "error_unreachable": "Could not reach the proxy management endpoint.",
+  "error_tls": "TLS handshake failed. The proxy certificate may have rotated.",
+  "use_secured_proxy": "Use Passport Proxy",
+  "override_banner": "Passport Proxy is enabled. Requests use the provisioned client certificate. Global proxy and certificate settings on this page are not applied while it is on. To change them, disable Passport Proxy first.",
+  "settings_disabled_tooltip": "Disabled while Passport Proxy is enabled. Turn off Passport Proxy to change these settings.",
+  "cloud_state_title": "Not applicable",
+  "cloud_state_msg": "Passport Proxy is not supported when using the cloud agent. To use Passport Proxy, switch to the Postman Desktop Agent.",
+  "xhr_state_title": "Use the Desktop Agent",
+  "xhr_state_msg": "Passport Proxy requires the Postman Desktop Agent. Switch to the desktop agent to configure Passport Proxy."
+ },
+ "update": {
+  "label": "Update",
+  "page_heading": "App updates",
+  "auto_update_major_version_toggle": {
+   "label": "Automatically download major updates",
+   "help": "Postman automatically downloads minor updates and bug fixes."
+  },
+  "update_status_idle": {
+   "heading": "You’re on Postman v{currentVersion}",
+   "cta": "Check for updates",
+   "cta_tooltip": "You need to be online to check for updates."
+  },
+  "update_status_update_available": {
+   "heading": "Update available",
+   "desc": "Current version: v{currentVersion}{updateVersion, select, null {} undefined {} other { → New version: v{updateVersion}}}",
+   "cta": "Download update",
+   "cta_tooltip": "You need to be online to download the update."
+  },
+  "update_status_checking": "Checking for updates...",
+  "update_status_update_not_available": {
+   "heading": "You are up to date!",
+   "desc": "Postman v{currentVersion} is the latest version.",
+   "cta": "Check for updates",
+   "cta_tooltip": "You need to be online to check for updates.",
+   "last_checked": "Last checked on {lastUpdateCheckedTimestamp, date, medium} at {lastUpdateCheckedTimestamp, time, short}."
+  },
+  "update_status_downloading": "Downloading update...",
+  "update_status_downloaded": {
+   "heading": "Update downloaded",
+   "desc": "Current version: v{currentVersion}{updateVersion, select, null {} undefined {} other { → New version: v{updateVersion}}}",
+   "cta": "Install update"
+  },
+  "update_status_error": {
+   "desc": "Something went wrong. Please check your connection and try restarting the app.",
+   "cta": "Retry",
+   "cta_tooltip": "You need to be online to check for updates."
+  },
+  "updates_through_snap": {
+   "up_to_date": {
+    "heading": "You're up to date!",
+    "desc": "You’re on <0>v{currentVersion}</0>. Snap will automatically update Postman whenever a new version is released."
+   },
+   "troubleshoot": {
+    "desc": "Having trouble with updates?",
+    "cta": "Read our troubleshooting doc"
+   }
+  }
+ },
+ "dev_options": {
+  "label": "Developer Options",
+  "page_heading": "Developer options",
+  "page_para": "These options are available to only internal Postman employees on the beta build.",
+  "active_track": {
+   "heading": "Active Track",
+   "sub_heading": "Switch the active track or enter a custom value.",
+   "search_placeholder": "Type to filter",
+   "button_tooltip": "Set active track and refresh the page"
+  },
+  "web_socket": {
+   "heading": "Disable Web Socket",
+   "sub_heading": "Turn on to disable the Web Socket connection from the app. The app needs to be refreshed/relaunched for the effect to take place",
+   "toasts": {
+    "title": "Reload the app",
+    "description": "Postman app needs to be refreshed/relaunched after changing the setting to enable/disable WebSocket."
+   }
+  },
+  "postman_gateway_request_details": {
+   "heading": "Show Postman Gateway request details as query params",
+   "sub_heading": "Enable to display request details (service, method and path) as query params for requests routed through the Postman Gateway Service.",
+   "toasts": {
+    "title": "Reload the app",
+    "description": "To apply changes in settings for showing or hiding request details, the Postman app requires a refresh or relaunch."
+   }
+  },
+  "web_socket_proxy": {
+   "heading": "Websocket proxy",
+   "sub_heading": "Connect to a custom websocket proxy instead of bifrost.",
+   "button_tooltip": "Set websocket proxy system",
+   "toasts": {
+    "success": "Connected to {webSocketProxyName} ",
+    "error": "Error establishing connection to websocket proxy"
+   }
+  },
+  "download_app_preview": {
+   "heading": "Download Desktop App Preview build",
+   "sub_heading": "This Desktop App Preview build is generated from the same commit as the web app build.",
+   "platforms": {
+    "osx": {
+     "intel": "Download Mac Intel App",
+     "arm64": "Download Mac ARM64 App"
+    },
+    "windows": {
+     "x64": "Download Windows 64 App",
+     "arm64": "Download Windows ARM64 App"
+    },
+    "linux": {
+     "x64": "Download Linux 64 App",
+     "arm64": "Download Linux ARM64 App"
+    }
+   }
+  },
+  "react_query_devtools": {
+   "heading": "Enable React Query Devtools",
+   "sub_heading": "Turn on to display the React Query Devtools button. This only works in development mode."
+  },
+  "new_http_workbench": {
+   "heading": "Enable New HTTP Workbench",
+   "sub_heading": "Turn on to enable the new HTTP Workbench for all HTTP Requests.",
+   "button_text": "Reload"
+  },
+  "react_grab": {
+   "heading": "Enable React Grab",
+   "sub_heading": "Hover over any UI element and press Cmd+C / Ctrl+C to copy its context. Auto-sends to Claude Code when the relay server is running (npx @react-grab/claude-code@latest)."
+  }
+ },
+ "ai_settings": {
+  "label": "AI",
+  "page_para": "Control AI-powered features within Postman",
+  "cloud_agent": {
+   "section_heading": "Cloud Agent",
+   "section_description": "Defaults applied when starting new cloud agent tasks.",
+   "default_model_label": "Default model",
+   "default_model_auto_option": "Auto",
+   "default_repo_label": "Default repo",
+   "load_error": "Couldn't load cloud agent settings.",
+   "update_error_toast_title": "Couldn't update cloud agent settings",
+   "update_error_toast_description": "Please try again."
+  },
+  "host_allowlist": {
+   "section_heading": "Host Allowlist",
+   "section_description": "Hosts that the AI Engineer is allowed to reach.",
+   "your_hosts_label": "Your hosts",
+   "add_host_button": "Add host",
+   "empty_state": "No custom hosts added. Default hosts still apply.",
+   "show_defaults_button": "Show default hosts ({count})",
+   "hide_defaults_button": "Hide default hosts ({count})",
+   "remove_host_aria_label": "Remove {host_pattern}",
+   "load_error_generic": "Unable to load the host allowlist. Please try again.",
+   "load_error_forbidden": "You do not have permission to view the host allowlist.",
+   "add_error_toast": "Unable to add host. Please try again later.",
+   "remove_error_toast": "Unable to remove host. Please try again later.",
+   "validation": {
+    "required": "Host pattern is required.",
+    "too_long": "Host pattern is too long.",
+    "invalid": "Use a valid hostname or *.example.com pattern."
+   },
+   "modal": {
+    "heading": "Add host",
+    "host_pattern_label": "Host pattern",
+    "host_pattern_placeholder": "*.example.com or api.partner.io",
+    "host_pattern_help": "Use *. to match any subdomain — *.example.com matches both api.example.com and deep.api.example.com. A bare hostname matches only that exact host. Case-insensitive.",
+    "cancel_button": "Cancel",
+    "save_button": "Add"
+   }
+  },
+  "memory": {
+   "tab_label": "Memory",
+   "memory_build_button": "Build",
+   "memory_refresh_button": "Refresh",
+   "memory_refresh_success_title": "Memory refresh queued",
+   "memory_refresh_success_description": "Postman will start building knowledge shortly.",
+   "memory_refresh_error_not_enabled": "Memory is not enabled for your team.",
+   "memory_refresh_error_generic": "Failed to start memory refresh. Please try again.",
+   "learning_prompt_label": "Team Knowledge",
+   "learning_prompt_description": "Optional instructions on what the agent should learn about your team. Provide details about third-party sources like GitHub, New Relic, or specific areas of your team's work.",
+   "learning_prompt_save_button": "Save",
+   "load_error": "Couldn't load memory settings.",
+   "update_error_toast_title": "Couldn't update memory settings",
+   "update_error_toast_description": "Please try again.",
+   "update_error_invalid_prompt": "Prompt must not be empty. Clear the field to remove it.",
+   "ai_disabled_title": "Postman AI isn't available for your account",
+   "ai_disabled_description": "Postman AI is currently disabled for you. Contact a team admin to request access.",
+   "non_admin_title": "Admin access required",
+   "non_admin_description": "Only team admins can manage memory settings."
+  },
+  "team_agents": {
+   "tab_label": "Agents",
+   "heading": "Agents",
+   "description": "Configure Postman Agent settings for your team.",
+   "section_heading": "Agents",
+   "agent_name_column_header": "Agent name",
+   "description_column_header": "Description",
+   "enabled_column_header": "Enabled",
+   "empty_value_placeholder": "—",
+   "agent_actions_aria_label": "Agent actions",
+   "toggle_aria_label": "Enable {agent_name} for your team",
+   "menu_item_update_user_scopes": "Update user scopes",
+   "menu_item_view_agent_scopes": "View scopes",
+   "no_agents_title": "No agents available",
+   "no_agents_description": "There are no agents to display right now.",
+   "load_error_title": "Unable to load agents",
+   "load_error_description": "Something went wrong while fetching agents. Please try again.",
+   "load_error_retry_button": "Retry",
+   "ai_disabled_title": "Postman AI isn't available for your account",
+   "ai_disabled_description": "Postman AI is currently disabled for you. Contact a team admin to request access.",
+   "view_scopes_modal": {
+    "content_label": "Agent scopes",
+    "fallback_heading": "Agent scopes",
+    "heading": "{agent_name} - Agent scopes",
+    "no_scopes": "This agent does not request any scopes.",
+    "okay_button": "Okay"
+   },
+   "update_scopes_modal": {
+    "content_label": "Update user scopes",
+    "fallback_heading": "Update user scopes",
+    "heading": "Update user scopes - {agent_name}",
+    "body": "Select the scopes this agent is allowed to use on your behalf. Deselect any scope to restrict the agent's access.",
+    "load_error": "Unable to load your current scope preferences. Close and try again.",
+    "save_error": "Unable to update scopes. Please try again.",
+    "no_scopes_to_configure": "This agent has no scopes to configure.",
+    "restore_defaults_button": "Restore default scopes",
+    "confirm_button": "Update user scopes",
+    "confirm_button_in_progress": "Updating…"
+   }
+  }
+ },
+ "about": {
+  "architecture": "Architecture",
+  "browser_and_os": "Browser & OS",
+  "os_platform": "OS platform",
+  "label": "About",
+  "postman_for_web": "Postman for Web",
+  "postman_for_darwin": "Postman for Mac",
+  "postman_for_win32": "Postman for Windows",
+  "postman_for_linux": "Postman for Linux",
+  "desktop_platform_version": "Desktop platform version",
+  "product_version": "Version",
+  "ui_version": "UI version",
+  "links": {
+   "website": "Website",
+   "twitter": "Twitter",
+   "privacy": "Privacy",
+   "release_notes": "Release notes",
+   "learning_center": "Learning center",
+   "report_issue": "Report an issue"
+  }
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "browser_empty_state": {
+  "title": "No cookies available",
+  "message": "Postman can't access cookies when sending requests through a browser. To capture and manage cookies, try the Postman Desktop Agent."
+ },
+ "generic_empty_state": {
+  "message": "You're using an older version of Postman Desktop Agent, which can not be used to add or edit cookies. \n\nUpdate the Desktop Agent by clicking on the Postman Agent icon in your toolbar or switch to use the Postman Cloud Agent.",
+  "secondary_action": "Switch to Cloud Agent"
+ },
+ "heading": {
+  "browser": "Manage Cookies",
+  "generic": "Cookies"
+ },
+ "tabs": {
+  "manage": {
+   "label": "Manage Cookies",
+   "domain_del_success_toast": "All cookies cleared successfully.",
+   "domain_del_error_toast": "Failed to delete cookies for domain {deletedDomain}.",
+   "cookie_domain_mismatch_toast": "Changing a cookie's domain isn't supported here - edit discarded.",
+   "cookie_save_error_toast": "Failed to save cookie changes.",
+   "cookie_name_missing_toast": "A cookie needs a name - edit discarded.",
+   "domain_allowlist_button": "Domains allowlist",
+   "domain_clear_all_button": "Clear all cookies"
+  },
+  "sync": {
+   "label": "Sync Cookies",
+   "capture_section": {
+    "help_text_with_proxy": "Learn more about <1><0>cookies</0></1> and how to capture them with <3><0>Interceptor and Proxy.</0></3>",
+    "help_text_only_interceptor": "Learn more about <1><0>cookies</0></1> and how to capture them with <3><0>Interceptor.</0></3>",
+    "tabs": {
+     "intercepter": {
+      "label": "Interceptor",
+      "input": {
+       "label": "Domains",
+       "info_text": "Adding domain names will automatically sync cookies for its subdomains as well",
+       "placeholder": "Enter domain name (domain.com) or (sub.domain.com)"
+      },
+      "add_button": "Add domain",
+      "connection_status": {
+       "connected": "CONNECTED",
+       "disconnected": "DISCONNECTED"
+      },
+      "capture_button": {
+       "intercepter_active": "Stop Syncing",
+       "intercepter_inactive": "Start Syncing",
+       "disabled_tooltip": "Connect interceptor to start syncing cookies."
+      },
+      "missing_interceptor": {
+       "header": "No connection to interceptor",
+       "body": "Make sure your browser is open and you've installed the <1><0>Interceptor extension.</0></1>",
+       "body_web": "Make sure you've installed the <1><0>Interceptor extension.</0></1>"
+      }
+     },
+     "proxy": {
+      "label": "Proxy",
+      "toggle_label": "Enable Postman as a proxy",
+      "desc": "Sync cookies from any device or browser with Postman's built-in proxy.",
+      "startup_banner": {
+       "title": "Capture HTTPS requests via Proxy",
+       "cert_install": "<0>Just install a certificate to start routing HTTPS requests through Postman's proxy server.</0> <1><0>Learn how to install a certificate</0></1>"
+      },
+      "port_input": {
+       "label": "Port",
+       "placeholder": "Port"
+      },
+      "domain_input": {
+       "label": "Domains",
+       "info_text": "Adding domain names will automatically sync cookies for its subdomains as well",
+       "placeholder": "Enter domain name (domain.com) or (sub.domain.com)"
+      },
+      "add_button": "Add domain",
+      "capture_button": {
+       "stop_auto_sync": "Stop Syncing",
+       "start_auto_sync": "Start Syncing",
+       "disabled_tooltip": "Enable proxy to start syncing cookies."
+      },
+      "domain_sync_error_message": "Domain needs to be added to start syncing cookies."
+     }
+    }
+   }
+  }
+ },
+ "domain_allowlist": {
+  "back_button": "Back to cookies",
+  "whitelist_container": {
+   "heading": "Domains Allowlist",
+   "desc": "Add a domain to allow cookies for that domain to be accessed in scripts. Learn more about <1><0>accessing cookies in scripts</0></1>",
+   "input_placeholder": "Add a domain to the Allowlist",
+   "add_button": "Add"
+  }
+ },
+ "add_domain_placeholder": "Type a domain name",
+ "add_domain_button": "Add domain",
+ "domains_list": {
+  "empty": "No Cookies available",
+  "add_cookie_button": "Add cookie"
+ }
+}

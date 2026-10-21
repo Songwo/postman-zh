@@ -1,0 +1,180 @@
+{
+ "heading": "Runners",
+ "add_cluster_button": "Add runner",
+ "retry_button": "Retry",
+ "description": "Runners execute Monitors inside your network so you can test private or firewall-restricted APIs.",
+ "learn_more": "Learn more",
+ "give_feedback": "Give feedback",
+ "search_placeholder": "Filter by runner name",
+ "invalid_page": "Invalid page. Private API runners feature is not enabled.",
+ "upgrade_to_enterprise": {
+  "title": "Upgrade your plan to manage runners",
+  "description": "<Para>Runner settings are available for teams on our <Strong>Enterprise</Strong> plan. Contact sales to upgrade to Enterprise plan. Learn more about <Link><LinkText>runners</LinkText></Link></Para>",
+  "primary_button": "Contact sales",
+  "upgrade_button": "Upgrade plan",
+  "feature_name": "Private API Runners",
+  "modal_heading": "Upgrade to the Enterprise plan to access Runners for private API"
+ },
+ "enterprise_access": {
+  "title": "Enable runner settings for your team",
+  "description": "<Para>Runner settings are available for teams on our <Strong>Enterprise</Strong> plan. Contact Postman Support to avail access for your team. Learn more about <Link><LinkText>runners</LinkText></Link></Para>",
+  "primary_button": "Contact support"
+ },
+ "filter": {
+  "all": "All",
+  "active": "Active",
+  "inactive": "Inactive",
+  "created_by_placeholder": "Created by: All"
+ },
+ "table": {
+  "cluster_name": "Runner Name",
+  "status": "Status",
+  "cluster_id": "Runner ID",
+  "allWorkspaces": "All workspaces",
+  "noWorkspace": "No workspace",
+  "unavailableWorkspace": "Unavailable",
+  "unavailableWorkspaceTooltip": "This workspace may be private or deleted. You don't have access to its details.",
+  "created_by": "Created by",
+  "created_on": "Created on",
+  "modified_on": "Modified on"
+ },
+ "dropdown": {
+  "rotate_key": "Rotate Key",
+  "install": "Install",
+  "edit": "Edit",
+  "delete": "Delete"
+ },
+ "empty_state": {
+  "message": "You don't have any runners yet.",
+  "suggestion": "Get started by creating your first runner.",
+  "filtered_message": "No runners match your filters",
+  "filtered_suggestion": "Try adjusting your search or filter criteria to see more results."
+ },
+ "refresh_key": {
+  "success": {
+   "title": "Runner key refreshed successfully",
+   "description": "The runner key has been refreshed successfully."
+  },
+  "error": {
+   "title": "Failed to refresh key",
+   "default_description": "An error occurred while refreshing the key."
+  }
+ },
+ "fetch_clusters": {
+  "error": {
+   "title": "Failed to fetch runners",
+   "default_description": "An error occurred while fetching runners."
+  }
+ },
+ "common": {
+  "cancel": "Cancel",
+  "done": "Done",
+  "next": "Next",
+  "save": "Save"
+ },
+ "delete_cluster": {
+  "modal": {
+   "heading": "Delete runner permanently?",
+   "confirmation": "<text>Are you sure you want to delete the runner <bold>\"{clusterName}\"</bold>?</text>",
+   "warning": "Deleting this runner will stop all monitors that use it.",
+   "cancel_button": "Cancel",
+   "delete_button": "Delete"
+  },
+  "success": {
+   "title": "Runner deleted successfully",
+   "description": "The runner \"{clusterName}\" has been deleted."
+  },
+  "error": {
+   "title": "Failed to delete runner",
+   "default_description": "An error occurred while deleting the runner.",
+   "default_message": "Failed to delete runner"
+  }
+ },
+ "add_cluster": {
+  "modal": {
+   "add_title": "Add Runner",
+   "created_title": "Runner Created",
+   "install_title": "Install Runner",
+   "update_title": "Updated Runner Key",
+   "next_button": "Next: install runner →",
+   "edit_title": "Edit Runner"
+  },
+  "form": {
+   "name_label": "Name",
+   "name_placeholder": "Enter runner name",
+   "name_helper_text": "e.g., Internal API Runner Beta 1",
+   "description_label": "Description",
+   "description_placeholder": "e.g., Executes monitor runs for beta APIs",
+   "custom_runner_created_by": "Created by your team"
+  },
+  "button": {
+   "generate": "Generate Key",
+   "add": "Add"
+  },
+  "validation": {
+   "name_required": "Runner name is required"
+  },
+  "success": {
+   "title": "Runner created successfully",
+   "description": "New runner has been created. Please copy the API key."
+  },
+  "update": {
+   "success": {
+    "title": "Runner updated successfully",
+    "description": "Runner has been updated successfully"
+   },
+   "error": {
+    "title": "Failed to update runner",
+    "description": "An error occurred while updating the runner."
+   }
+  },
+  "error": {
+   "title": "Failed to create runner",
+   "default_description": "An error occurred while creating the runner.",
+   "default_message": "Failed to create runner"
+  },
+  "copy": {
+   "success": {
+    "title": "Copied to clipboard",
+    "description": "API key copied to clipboard"
+   }
+  }
+ },
+ "runner": {
+  "runner_info_text": "You can select Postman runners in desired region or select runners within your own network to run monitors.",
+  "runner_setup_help": "To set up new runners, contact your team admin. ",
+  "auto_select": "Auto Select",
+  "manually_select": "Manually Select",
+  "add_runner": "Add Runner",
+  "setup": {
+   "reset_key": "Reset Runner Key",
+   "reset_key_tooltip": "Resetting runner key will invalidate the current runner key and generate a new one. You may need to re-configure already installed runners.",
+   "copy": {
+    "runner_id": "Copy Runner ID",
+    "runner_key": "Copy Runner Key",
+    "cli_command": "Copy to clipboard"
+   },
+   "steps": {
+    "title": "Follow these steps to install your runner",
+    "install_cli": {
+     "title": "1. Install Postman CLI"
+    },
+    "setup": {
+     "title": "2. Run this command in your terminal",
+     "security_warning_with_key": "Copy and store this key securely as it won't be accessible after closing this window. The key can be reset later if needed.",
+     "security_warning_without_key": "Lost the key? You can reset it, but this will disable any existing runners until they're updated with the new key."
+    }
+   }
+  },
+  "tooltip": {
+   "create_runner": "Add a runner to configure and monitor your APIs"
+  }
+ },
+ "refresh_text": "Refresh",
+ "runners_fetch_error": "Unable to fetch runners. Please check your network connectivity. If the problem persists, please reach out to Postman support.",
+ "runners_fetch_error_title": "Failed to fetch runners.",
+ "runner_details": {
+  "back_link_label": "All runners",
+  "breadcrumb_aria_label": "Runner details breadcrumb"
+ }
+}
